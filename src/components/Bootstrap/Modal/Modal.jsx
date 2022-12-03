@@ -51,40 +51,37 @@ const Modals = () => {
           <Collapse in={Annimation} className="mt-2">
             <pre>
               <code>
-                {`
- export function ModalZoom() {
-
- const [visible, setVisible] = useState(false);
-
- const show = () => {
-      setVisible(true);
-  };
-
-  const hide = () => {
-      setVisible(false);
-  };
-
-  return (
-      <div>
-          <Link to="#" className="modal-effect btn btn-primary-light d-grid mb-3" onClick={show}>Zoom</Link>
-          <Rodal visible={visible} onClose={hide} animation='Zoom' height={280}>
-              <div>Mesage Preview</div>
-              <hr />
-              <p> Why We Use Electoral College, Not Popular Vote It is a long
-                  established fact that a reader will be distracted by the readable
-                  content of a page when looking at its layout. The point of using
-                  Lorem Ipsum is that it has a more-or-less normal distribution of
-                  letters, as opposed to using 'Content here, content here', making it
-                  look like readable English.</p>
-              <hr />
-              <Button className="me-2" variant="primary" onClick={hide}>Save Changes</Button>
-              <Button variant="default" onClick={hide}>Close</Button>
-          </Rodal>
-      </div>
-  );
-}
-
-`}
+                {`export function ModalZoom() {
+                    
+                    const [visible, setVisible] = useState(false);
+                    
+                    const show = () => {
+                         setVisible(true);
+                     };
+                   
+                     const hide = () => {
+                         setVisible(false);
+                     };
+                   
+                     return (
+                         <div>
+                             <Link to="#" className="modal-effect btn btn-primary-light d-grid mb-3" onClick={show}>Zoom</Link>
+                             <Rodal visible={visible} onClose={hide} animation='Zoom' height={280}>
+                                 <div>Mesage Preview</div>
+                                 <hr />
+                                 <p> Why We Use Electoral College, Not Popular Vote It is a long
+                                     established fact that a reader will be distracted by the readable
+                                     content of a page when looking at its layout. The point of using
+                                     Lorem Ipsum is that it has a more-or-less normal distribution of
+                                     letters, as opposed to using 'Content here, content here', making it
+                                     look like readable English.</p>
+                                 <hr />
+                                 <Button className="me-2" variant="primary" onClick={hide}>Save Changes</Button>
+                                 <Button variant="default" onClick={hide}>Close</Button>
+                             </Rodal>
+                         </div>
+                     );
+                    }`}
               </code>
             </pre>
           </Collapse>
@@ -234,45 +231,44 @@ const Modals = () => {
                   <pre>
                     <code>
                       {`
-export function Fullscreen() {
-
-  let [fullScreen, setFullscreen] = useState("true");
-  const [show, setShow] = useState(false);
-
-  const fullscreenmodalClose = () => setShow(false);
-
-  function handleShow(breakpoint: any) {
-      setFullscreen(breakpoint);
-      setShow(true);
-  }
-
-  return (
-      <>
-
-  <Button variant="warning" className="bg-warning-gradient mt-3 mb-3 mb-md-0 me-1" onClick={() => handleShow(true)}>
-      Full screen
-
-  </Button>
-
-  <Modal show={show} fullscreen={fullScreen} onHide={() => setShow(false)}>
-      <Modal.Header>
-  <Modal.Title>Modal</Modal.Title>
-  <span className="d-flex ms-auto" onClick={fullscreenmodalClose}><i className='fe fe-x ms-auto' ></i></span>
-      </Modal.Header>
-      <Modal.Body>Modal body content</Modal.Body>
-      <Modal.Footer>
-  <Button variant="secondary" onClick={fullscreenmodalClose}>
-      Close
-  </Button>
-  <Button variant="primary" onClick={fullscreenmodalClose}>
-      Save Changes
-  </Button>
-      </Modal.Footer>
-  </Modal>
-      </>
-  )
-};
-`}
+                        export function Fullscreen() {
+                        
+                          let [fullScreen, setFullscreen] = useState("true");
+                          const [show, setShow] = useState(false);
+                        
+                          const fullscreenmodalClose = () => setShow(false);
+                        
+                          function handleShow(breakpoint: any) {
+                              setFullscreen(breakpoint);
+                              setShow(true);
+                          }
+                        
+                          return (
+                              <>
+                          
+                          <Button variant="warning" className="bg-warning-gradient mt-3 mb-3 mb-md-0 me-1" onClick={() => handleShow(true)}>
+                              Full screen
+                          
+                          </Button>
+                          
+                          <Modal show={show} fullscreen={fullScreen} onHide={() => setShow(false)}>
+                              <Modal.Header>
+                          <Modal.Title>Modal</Modal.Title>
+                          <span className="d-flex ms-auto" onClick={fullscreenmodalClose}><i className='fe fe-x ms-auto' ></i></span>
+                              </Modal.Header>
+                              <Modal.Body>Modal body content</Modal.Body>
+                              <Modal.Footer>
+                          <Button variant="secondary" onClick={fullscreenmodalClose}>
+                              Close
+                          </Button>
+                          <Button variant="primary" onClick={fullscreenmodalClose}>
+                              Save Changes
+                          </Button>
+                              </Modal.Footer>
+                          </Modal>
+                              </>
+                          )
+                        };`}
                     </code>
                   </pre>
                 </Collapse>
@@ -308,45 +304,44 @@ export function Fullscreen() {
                   <pre>
                     <code>
                       {`
-export function SelectInsideModal() {
-  const [show, setShow] = useState(false);
-
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
-
-  return (
-      <>
-          <Button className="me-3 mt-2" variant="pink" onClick={handleShow}>Select2 Modal</Button>
-          <Modal show={show} onHide={handleClose}>
-              <Modal.Header>
-                  <Modal.Title>Select2 Modal</Modal.Title>
-                  <span className="d-flex ms-auto" onClick={handleClose}><i className='fe fe-x ms-auto' ></i></span>
-              </Modal.Header>
-              <Modal.Body>
-                  <h6>Modal Body</h6>
-                  <Form.Select>
-                      <option>Choose one</option>
-                      <option value="1">Firefox</option>
-                      <option value="2">Chrome</option>
-                      <option value="3">Safari</option>
-                      <option value="4">Opera</option>
-                      <option value="5">Internet Explore</option>
-                  </Form.Select>
-                  <p className='mt-2'>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-              </Modal.Body>
-              <Modal.Footer>
-                  <Button variant="success" onClick={handleClose}>
-                      Save Changes
-                  </Button>
-                  <Button variant="danger" onClick={handleClose}>
-                      Close
-                  </Button>
-              </Modal.Footer>
-          </Modal>
-      </>
-  );
-}
-`}
+                        export function SelectInsideModal() {
+                          const [show, setShow] = useState(false);
+                        
+                          const handleClose = () => setShow(false);
+                          const handleShow = () => setShow(true);
+                        
+                          return (
+                              <>
+                                  <Button className="me-3 mt-2" variant="pink" onClick={handleShow}>Select2 Modal</Button>
+                                  <Modal show={show} onHide={handleClose}>
+                                      <Modal.Header>
+                                          <Modal.Title>Select2 Modal</Modal.Title>
+                                          <span className="d-flex ms-auto" onClick={handleClose}><i className='fe fe-x ms-auto' ></i></span>
+                                      </Modal.Header>
+                                      <Modal.Body>
+                                          <h6>Modal Body</h6>
+                                          <Form.Select>
+                                              <option>Choose one</option>
+                                              <option value="1">Firefox</option>
+                                              <option value="2">Chrome</option>
+                                              <option value="3">Safari</option>
+                                              <option value="4">Opera</option>
+                                              <option value="5">Internet Explore</option>
+                                          </Form.Select>
+                                          <p className='mt-2'>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+                                      </Modal.Body>
+                                      <Modal.Footer>
+                                          <Button variant="success" onClick={handleClose}>
+                                              Save Changes
+                                          </Button>
+                                          <Button variant="danger" onClick={handleClose}>
+                                              Close
+                                          </Button>
+                                      </Modal.Footer>
+                                  </Modal>
+                              </>
+                          );
+                        }`}
                     </code>
                   </pre>
                 </Collapse>
@@ -375,46 +370,44 @@ export function SelectInsideModal() {
                   <pre>
                     <code>
                       {`
-export function InputModal() {
-  const [show, setShow] = useState(false);
-
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
-
-  return (
-      <>
-          <Button className="me-3 mt-2" variant="green" onClick={handleShow}>Open modal for @mdo</Button>
-          <Modal show={show} onHide={handleClose}>
-              <Modal.Header>
-                  <Modal.Title>New Message to @mdo</Modal.Title>
-                  <span className="d-flex ms-auto" onClick={handleClose}><i className='fe fe-x ms-auto' ></i></span>
-              </Modal.Header>
-              <Modal.Body>
-                  <Form>
-                      <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-                          <Form.Label>Recipient:</Form.Label>
-                          <Form.Control type="text" autoFocus />
-                      </Form.Group>
-                      <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-                          <Form.Label>Message:</Form.Label>
-                          <Form.Control as="textarea" rows={3} />
-                      </Form.Group>
-                  </Form>
-              </Modal.Body>
-              <Modal.Footer>
-                  <Button variant="success" onClick={handleClose}>
-                      Save Changes
-                  </Button>
-                  <Button variant="danger" onClick={handleClose}>
-                      Close
-                  </Button>
-              </Modal.Footer>
-          </Modal>
-      </>
-  );
-}
-
-`}
+                          export function InputModal() {
+                          const [show, setShow] = useState(false);
+                          
+                          const handleClose = () => setShow(false);
+                          const handleShow = () => setShow(true);
+                          
+                          return (
+                              <>
+                                  <Button className="me-3 mt-2" variant="green" onClick={handleShow}>Open modal for @mdo</Button>
+                                  <Modal show={show} onHide={handleClose}>
+                                      <Modal.Header>
+                                          <Modal.Title>New Message to @mdo</Modal.Title>
+                                          <span className="d-flex ms-auto" onClick={handleClose}><i className='fe fe-x ms-auto' ></i></span>
+                                      </Modal.Header>
+                                      <Modal.Body>
+                                          <Form>
+                                              <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+                                                  <Form.Label>Recipient:</Form.Label>
+                                                  <Form.Control type="text" autoFocus />
+                                              </Form.Group>
+                                              <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
+                                                  <Form.Label>Message:</Form.Label>
+                                                  <Form.Control as="textarea" rows={3} />
+                                              </Form.Group>
+                                          </Form>
+                                      </Modal.Body>
+                                      <Modal.Footer>
+                                          <Button variant="success" onClick={handleClose}>
+                                              Save Changes
+                                          </Button>
+                                          <Button variant="danger" onClick={handleClose}>
+                                              Close
+                                          </Button>
+                                      </Modal.Footer>
+                                  </Modal>
+                              </>
+                          );
+                        }`}
                     </code>
                   </pre>
                 </Collapse>
@@ -489,44 +482,42 @@ export function InputModal() {
                   <pre>
                     <code>
                       {`
-export function BasicModal() {
-  const [show, setShow] = useState(false);
-
-  const viewDemoClose = () => setShow(false);
-  const viewDemoShow = () => setShow(true);
-
-  return (
-      <>
-          <Button variant="primary" onClick={viewDemoShow}>
-              View Live Demo
-          </Button>
-
-          <Modal
-              show={show}
-              onHide={viewDemoClose}
-              backdrop="static"
-              keyboard={false}
-          >
-              <Modal.Header >
-                  <Modal.Title>Message Preview</Modal.Title>
-                  <span className="d-flex ms-auto" onClick={viewDemoClose}><i className='fe fe-x ms-auto' ></i></span>
-              </Modal.Header>
-              <Modal.Body>
-                  Why We Use Electoral College, Not Popular Vote<br /><br />It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
-              </Modal.Body>
-              <Modal.Footer>
-                  <Button variant="primary">Save Changes</Button>
-                  <Button variant="light" onClick={viewDemoClose}>
-                      Close
-                  </Button>
-
-              </Modal.Footer>
-          </Modal>
-      </>
-  );
-}
-
-`}
+                          export function BasicModal() {
+                          const [show, setShow] = useState(false);
+                          
+                          const viewDemoClose = () => setShow(false);
+                          const viewDemoShow = () => setShow(true);
+                          
+                          return (
+                              <>
+                                  <Button variant="primary" onClick={viewDemoShow}>
+                                      View Live Demo
+                                  </Button>
+                          
+                                  <Modal
+                                      show={show}
+                                      onHide={viewDemoClose}
+                                      backdrop="static"
+                                      keyboard={false}
+                                  >
+                                      <Modal.Header >
+                                          <Modal.Title>Message Preview</Modal.Title>
+                                          <span className="d-flex ms-auto" onClick={viewDemoClose}><i className='fe fe-x ms-auto' ></i></span>
+                                      </Modal.Header>
+                                      <Modal.Body>
+                                          Why We Use Electoral College, Not Popular Vote<br /><br />It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
+                                      </Modal.Body>
+                                      <Modal.Footer>
+                                          <Button variant="primary">Save Changes</Button>
+                                          <Button variant="light" onClick={viewDemoClose}>
+                                              Close
+                                          </Button>
+                          
+                                      </Modal.Footer>
+                                  </Modal>
+                              </>
+                          );
+                        }`}
                     </code>
                   </pre>
                 </Collapse>
@@ -586,40 +577,39 @@ export function BasicModal() {
                   <pre>
                     <code>
                       {`
-export function SuccessAlert() {
-  const [show, setShow] = useState(false);
-
-  const viewDemoClose = () => setShow(false);
-  const viewDemoShow = () => setShow(true);
-
-  return (
-      <>
-          <Button variant="primary" onClick={viewDemoShow}>
-              View Live Demo
-          </Button>
-
-          <Modal
-              show={show}
-              onHide={viewDemoClose}
-              backdrop="static"
-          >
-              <Modal.Header>
-              <span className="d-flex ms-auto" onClick={viewDemoClose}><i className='fe fe-x ms-auto' ></i></span>
-              </Modal.Header>
-              <Modal.Body className="text-center p-4 pb-5" >
-                  <i className="icon icon-check fs-70 text-success lh-1 my-4 d-inline-block"></i>
-                  <h4 className="text-success mb-4">Congratulations!</h4>
-                  <p className="mb-4 mx-4">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</p>
-                  <Button variant="success" onClick={viewDemoClose}>
-                      Continue
-                  </Button>
-              </Modal.Body>
-
-          </Modal>
-      </>
-  );
-}
-`}
+                        export function SuccessAlert() {
+                        const [show, setShow] = useState(false);
+                        
+                        const viewDemoClose = () => setShow(false);
+                        const viewDemoShow = () => setShow(true);
+                        
+                        return (
+                            <>
+                                <Button variant="primary" onClick={viewDemoShow}>
+                                    View Live Demo
+                                </Button>
+                        
+                                <Modal
+                                    show={show}
+                                    onHide={viewDemoClose}
+                                    backdrop="static"
+                                >
+                                    <Modal.Header>
+                                    <span className="d-flex ms-auto" onClick={viewDemoClose}><i className='fe fe-x ms-auto' ></i></span>
+                                    </Modal.Header>
+                                    <Modal.Body className="text-center p-4 pb-5" >
+                                        <i className="icon icon-check fs-70 text-success lh-1 my-4 d-inline-block"></i>
+                                        <h4 className="text-success mb-4">Congratulations!</h4>
+                                        <p className="mb-4 mx-4">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</p>
+                                        <Button variant="success" onClick={viewDemoClose}>
+                                            Continue
+                                        </Button>
+                                    </Modal.Body>
+                        
+                                </Modal>
+                            </>
+                        );
+                      }`}
                     </code>
                   </pre>
                 </Collapse>
@@ -682,41 +672,40 @@ export function SuccessAlert() {
                   <pre>
                     <code>
                       {`
-export function WarningAlert() {
-  const [show, setShow] = useState(false);
-
-  const viewDemoClose = () => setShow(false);
-  const viewDemoShow = () => setShow(true);
-
-  return (
-      <>
-          <Button variant="primary" onClick={viewDemoShow}>
-              View Live Demo
-          </Button>
-
-          <Modal
-              show={show}
-              onHide={viewDemoClose}
-              backdrop="static"
-
-          >
-              <Modal.Header >
-              <span className="d-flex ms-auto" onClick={viewDemoClose}><i className='fe fe-x ms-auto' ></i></span>
-              </Modal.Header>
-              <Modal.Body className="text-center p-4 pb-5" >
-                  <i className="icon icon-close fs-70 text-danger lh-1 my-4 d-inline-block"></i>
-                  <h4 className="text-danger mb-20">Error: Cannot process your entry!</h4>
-                  <p className="mb-4 mx-4">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</p>
-                  <Button variant="danger" onClick={viewDemoClose}>
-                      Continue
-                  </Button>
-              </Modal.Body>
-
-          </Modal>
-      </>
-  );
-}
-`}
+                          export function WarningAlert() {
+                          const [show, setShow] = useState(false);
+                          
+                          const viewDemoClose = () => setShow(false);
+                          const viewDemoShow = () => setShow(true);
+                          
+                          return (
+                              <>
+                                  <Button variant="primary" onClick={viewDemoShow}>
+                                      View Live Demo
+                                  </Button>
+                          
+                                  <Modal
+                                      show={show}
+                                      onHide={viewDemoClose}
+                                      backdrop="static"
+                          
+                                  >
+                                      <Modal.Header >
+                                      <span className="d-flex ms-auto" onClick={viewDemoClose}><i className='fe fe-x ms-auto' ></i></span>
+                                      </Modal.Header>
+                                      <Modal.Body className="text-center p-4 pb-5" >
+                                          <i className="icon icon-close fs-70 text-danger lh-1 my-4 d-inline-block"></i>
+                                          <h4 className="text-danger mb-20">Error: Cannot process your entry!</h4>
+                                          <p className="mb-4 mx-4">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</p>
+                                          <Button variant="danger" onClick={viewDemoClose}>
+                                              Continue
+                                          </Button>
+                                      </Modal.Body>
+                          
+                                  </Modal>
+                              </>
+                          );
+                        }`}
                     </code>
                   </pre>
                 </Collapse>

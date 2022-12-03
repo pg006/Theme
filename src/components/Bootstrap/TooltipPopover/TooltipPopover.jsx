@@ -128,52 +128,113 @@ const TooltipPopover = () => {
                       <Tab eventKey="Static" title="Static" className="">
                         <pre>
                           <code>
-                            {`
-<div className="tooltip-static-demo mb-4 border br-3">
-<Row>
-  <Col sm={6} lg={3}>
-    <Tooltip placement="top">Tooltip on the top</Tooltip>
-  </Col>
-  <Col sm={6} lg={3} className="mg-t-30 mg-sm-t-0">
-    <Tooltip placement="bottom">Tooltip on the bottom</Tooltip>
-  </Col>
-  <Col sm={6} lg={3} className="mg-t-30 mg-lg-t-0">
-    <Tooltip placement="left">Tooltip on the left</Tooltip>
-  </Col>
-  <Col sm={6} lg={3} className="mg-t-30 mg-lg-t-0">
-    <Tooltip placement="right">Tooltip on the right</Tooltip>
-  </Col>
-</Row>
-</div>
-`}
+                            {`<div className="tooltip-static-demo mb-4 border br-3">
+                                <Row>
+                                  <Col sm={6} lg={3}>
+                                    <Tooltip placement="top">
+                                      Tooltip on the top
+                                    </Tooltip>
+                                  </Col>
+                                  <Col
+                                    sm={6}
+                                    lg={3}
+                                    className="mg-t-30 mg-sm-t-0"
+                                  >
+                                    <Tooltip placement="bottom">
+                                      Tooltip on the bottom
+                                    </Tooltip>
+                                  </Col>
+                                  <Col
+                                    sm={6}
+                                    lg={3}
+                                    className="mg-t-30 mg-lg-t-0"
+                                  >
+                                    <Tooltip placement="left">
+                                      Tooltip on the left
+                                    </Tooltip>
+                                  </Col>
+                                  <Col
+                                    sm={6}
+                                    lg={3}
+                                    className="mg-t-30 mg-lg-t-0"
+                                  >
+                                    <Tooltip placement="right">
+                                      Tooltip on the right
+                                    </Tooltip>
+                                  </Col>
+                                </Row>
+                              </div>`}
                           </code>
                         </pre>
                       </Tab>
                       <Tab eventKey="TSX" title="TSX">
                         <pre>
                           <code>
-                            {`
-<div className="bg-light p-3 border br-3">
-<Row className="text-center">
-  <Col sm={6} lg={3} className="mt-2 mb-2">
-    <OverlayTrigger placement="top" overlay={<Tooltip >Tooltip on top</Tooltip>}><Button className="ms-1" variant="primary">Hover me</Button></OverlayTrigger>
-  </Col>
+                            {`<div className="bg-light p-3 border br-3">
+                                <Row className="text-center">
+                                  <Col sm={6} lg={3} className="mt-2 mb-2">
+                                    <OverlayTrigger
+                                      placement="top"
+                                      overlay={
+                                        <Tooltip>Tooltip on top</Tooltip>
+                                      }
+                                    >
+                                      <Button
+                                        className="ms-1"
+                                        variant="primary"
+                                      >
+                                        Hover me
+                                      </Button>
+                                    </OverlayTrigger>
+                                  </Col>
 
-  <Col sm={6} lg={3} className="mt-2 mb-2">
-    <OverlayTrigger placement="bottom" overlay={<Tooltip >Tooltip on bottom</Tooltip>}><Button className="ms-1" variant="primary">Hover me</Button></OverlayTrigger>
-
-  </Col>
-  <Col sm={6} lg={3} className="mt-2 mb-2">
-    <OverlayTrigger placement="left" overlay={<Tooltip >Tooltip on left</Tooltip>}><Button className="ms-1" variant="primary">Hover me</Button></OverlayTrigger>
-
-  </Col>
-  <Col sm={6} lg={3} className="mt-2 mb-2">
-    <OverlayTrigger placement="right" overlay={<Tooltip >Tooltip on right</Tooltip>}><Button className="ms-1" variant="primary">Hover me</Button></OverlayTrigger>
-
-  </Col>
-</Row>
-</div>
-`}
+                                  <Col sm={6} lg={3} className="mt-2 mb-2">
+                                    <OverlayTrigger
+                                      placement="bottom"
+                                      overlay={
+                                        <Tooltip>Tooltip on bottom</Tooltip>
+                                      }
+                                    >
+                                      <Button
+                                        className="ms-1"
+                                        variant="primary"
+                                      >
+                                        Hover me
+                                      </Button>
+                                    </OverlayTrigger>
+                                  </Col>
+                                  <Col sm={6} lg={3} className="mt-2 mb-2">
+                                    <OverlayTrigger
+                                      placement="left"
+                                      overlay={
+                                        <Tooltip>Tooltip on left</Tooltip>
+                                      }
+                                    >
+                                      <Button
+                                        className="ms-1"
+                                        variant="primary"
+                                      >
+                                        Hover me
+                                      </Button>
+                                    </OverlayTrigger>
+                                  </Col>
+                                  <Col sm={6} lg={3} className="mt-2 mb-2">
+                                    <OverlayTrigger
+                                      placement="right"
+                                      overlay={
+                                        <Tooltip>Tooltip on right</Tooltip>
+                                      }
+                                    >
+                                      <Button
+                                        className="ms-1"
+                                        variant="primary"
+                                      >
+                                        Hover me
+                                      </Button>
+                                    </OverlayTrigger>
+                                  </Col>
+                                </Row>
+                              </div>`}
                           </code>
                         </pre>
                       </Tab>
@@ -295,48 +356,126 @@ const TooltipPopover = () => {
                       <Tab eventKey="Static" title="Static" className="">
                         <pre>
                           <code>
-                            {`
-<div className="tooltip-static-demo mb-4 border br-3">
-<Row>
-  <Col sm={6} lg={3}>
-    <Tooltip className="tooltip-primary" placement="top">Tooltip on the top</Tooltip>
-  </Col>
-  <Col sm={6} lg={3} className="mg-t-30 mg-sm-t-0">
-    <Tooltip className="tooltip-secondary" placement="bottom">Tooltip on the bottom</Tooltip>
-  </Col>
-  <Col sm={6} lg={3} className="mg-t-30 mg-lg-t-0">
-    <Tooltip className="tooltip-danger" placement="left">Tooltip on the left</Tooltip>
-  </Col>
-  <Col sm={6} lg={3} className="mg-t-30 mg-lg-t-0">
-    <Tooltip className="tooltip-info" placement="right">Tooltip on the right</Tooltip>
-  </Col>
-</Row>
-</div>
-`}
+                            {`<div className="tooltip-static-demo mb-4 border br-3">
+                                <Row>
+                                  <Col sm={6} lg={3}>
+                                    <Tooltip
+                                      className="tooltip-primary"
+                                      placement="top"
+                                    >
+                                      Tooltip on the top
+                                    </Tooltip>
+                                  </Col>
+                                  <Col
+                                    sm={6}
+                                    lg={3}
+                                    className="mg-t-30 mg-sm-t-0"
+                                  >
+                                    <Tooltip
+                                      className="tooltip-secondary"
+                                      placement="bottom"
+                                    >
+                                      Tooltip on the bottom
+                                    </Tooltip>
+                                  </Col>
+                                  <Col
+                                    sm={6}
+                                    lg={3}
+                                    className="mg-t-30 mg-lg-t-0"
+                                  >
+                                    <Tooltip
+                                      className="tooltip-danger"
+                                      placement="left"
+                                    >
+                                      Tooltip on the left
+                                    </Tooltip>
+                                  </Col>
+                                  <Col
+                                    sm={6}
+                                    lg={3}
+                                    className="mg-t-30 mg-lg-t-0"
+                                  >
+                                    <Tooltip
+                                      className="tooltip-info"
+                                      placement="right"
+                                    >
+                                      Tooltip on the right
+                                    </Tooltip>
+                                  </Col>
+                                </Row>
+                              </div>`}
                           </code>
                         </pre>
                       </Tab>
                       <Tab eventKey="TSX" title="TSX">
                         <pre>
                           <code>
-                            {`
-<div className="bg-light p-3 border br-3">
-<Row className="text-center">
-  <Col sm={6} lg={3} className="mt-2 mb-2">
-    <OverlayTrigger placement="top" overlay={<Tooltip className="tooltip-primary" >Tooltip on top</Tooltip>}><Button className="ms-1" variant="primary">Hover me</Button></OverlayTrigger>
-  </Col>
-  <Col sm={6} lg={3} className="mt-2 mb-2">
-    <OverlayTrigger placement="bottom" overlay={<Tooltip className="tooltip-secondary" >Tooltip on bottom</Tooltip>}><Button className="ms-1" variant="secondary">Hover me</Button></OverlayTrigger>
-  </Col>
-  <Col sm={6} lg={3} className="mt-2 mb-2">
-    <OverlayTrigger placement="left" overlay={<Tooltip className="tooltip-danger" >Tooltip on left</Tooltip>}><Button className="ms-1" variant="danger">Hover me</Button></OverlayTrigger>
-  </Col>
-  <Col sm={6} lg={3} className="mt-2 mb-2">
-    <OverlayTrigger placement="right" overlay={<Tooltip className="tooltip-info" >Tooltip on right</Tooltip>}><Button className="ms-1" variant="info">Hover me</Button></OverlayTrigger>
-  </Col>
-</Row>
-</div>
-`}
+                            {`<div className="bg-light p-3 border br-3">
+                                <Row className="text-center">
+                                  <Col sm={6} lg={3} className="mt-2 mb-2">
+                                    <OverlayTrigger
+                                      placement="top"
+                                      overlay={
+                                        <Tooltip className="tooltip-primary">
+                                          Tooltip on top
+                                        </Tooltip>
+                                      }
+                                    >
+                                      <Button
+                                        className="ms-1"
+                                        variant="primary"
+                                      >
+                                        Hover me
+                                      </Button>
+                                    </OverlayTrigger>
+                                  </Col>
+                                  <Col sm={6} lg={3} className="mt-2 mb-2">
+                                    <OverlayTrigger
+                                      placement="bottom"
+                                      overlay={
+                                        <Tooltip className="tooltip-secondary">
+                                          Tooltip on bottom
+                                        </Tooltip>
+                                      }
+                                    >
+                                      <Button
+                                        className="ms-1"
+                                        variant="secondary"
+                                      >
+                                        Hover me
+                                      </Button>
+                                    </OverlayTrigger>
+                                  </Col>
+                                  <Col sm={6} lg={3} className="mt-2 mb-2">
+                                    <OverlayTrigger
+                                      placement="left"
+                                      overlay={
+                                        <Tooltip className="tooltip-danger">
+                                          Tooltip on left
+                                        </Tooltip>
+                                      }
+                                    >
+                                      <Button className="ms-1" variant="danger">
+                                        Hover me
+                                      </Button>
+                                    </OverlayTrigger>
+                                  </Col>
+                                  <Col sm={6} lg={3} className="mt-2 mb-2">
+                                    <OverlayTrigger
+                                      placement="right"
+                                      overlay={
+                                        <Tooltip className="tooltip-info">
+                                          Tooltip on right
+                                        </Tooltip>
+                                      }
+                                    >
+                                      <Button className="ms-1" variant="info">
+                                        Hover me
+                                      </Button>
+                                    </OverlayTrigger>
+                                  </Col>
+                                </Row>
+                              </div>`}
                           </code>
                         </pre>
                       </Tab>
@@ -431,36 +570,70 @@ const TooltipPopover = () => {
                       <Tab eventKey="Static" title="Static" className="">
                         <pre>
                           <code>
-                            {`
-<div className="popover-static-demo mb-4 border br-3 pb-6">
-<Row className="row-sm">
-  <Col md={6} className="mt-4">
-    <Popover placement="top">
-      <Popover.Header as="h3">Popover top</Popover.Header>
-      <Popover.Body><p>Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p></Popover.Body>
-    </Popover>
-  </Col>
-  <Col md={6} className="mt-4">
-    <Popover placement="bottom">
-      <Popover.Header as="h3">Popover Bottom</Popover.Header>
-      <Popover.Body><p>Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p></Popover.Body>
-    </Popover>
-  </Col>
-  <Col md={6} className="mt-4">
-    <Popover placement="left">
-      <Popover.Header as="h3">Popover Left</Popover.Header>
-      <Popover.Body><p>Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p></Popover.Body>
-    </Popover>
-  </Col>
-  <Col md={6} className="mt-4">
-    <Popover placement="right">
-      <Popover.Header as="h3">Popover Right</Popover.Header>
-      <Popover.Body><p>Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p></Popover.Body>
-    </Popover>
-  </Col>
-</Row>
-</div>
-`}
+                            {`<div className="popover-static-demo mb-4 border br-3 pb-6">
+                                <Row className="row-sm">
+                                  <Col md={6} className="mt-4">
+                                    <Popover placement="top">
+                                      <Popover.Header as="h3">
+                                        Popover top
+                                      </Popover.Header>
+                                      <Popover.Body>
+                                        <p>
+                                          Sed posuere consectetur est at
+                                          lobortis. Aenean eu leo quam.
+                                          Pellentesque ornare sem lacinia quam
+                                          venenatis vestibulum.
+                                        </p>
+                                      </Popover.Body>
+                                    </Popover>
+                                  </Col>
+                                  <Col md={6} className="mt-4">
+                                    <Popover placement="bottom">
+                                      <Popover.Header as="h3">
+                                        Popover Bottom
+                                      </Popover.Header>
+                                      <Popover.Body>
+                                        <p>
+                                          Sed posuere consectetur est at
+                                          lobortis. Aenean eu leo quam.
+                                          Pellentesque ornare sem lacinia quam
+                                          venenatis vestibulum.
+                                        </p>
+                                      </Popover.Body>
+                                    </Popover>
+                                  </Col>
+                                  <Col md={6} className="mt-4">
+                                    <Popover placement="left">
+                                      <Popover.Header as="h3">
+                                        Popover Left
+                                      </Popover.Header>
+                                      <Popover.Body>
+                                        <p>
+                                          Sed posuere consectetur est at
+                                          lobortis. Aenean eu leo quam.
+                                          Pellentesque ornare sem lacinia quam
+                                          venenatis vestibulum.
+                                        </p>
+                                      </Popover.Body>
+                                    </Popover>
+                                  </Col>
+                                  <Col md={6} className="mt-4">
+                                    <Popover placement="right">
+                                      <Popover.Header as="h3">
+                                        Popover Right
+                                      </Popover.Header>
+                                      <Popover.Body>
+                                        <p>
+                                          Sed posuere consectetur est at
+                                          lobortis. Aenean eu leo quam.
+                                          Pellentesque ornare sem lacinia quam
+                                          venenatis vestibulum.
+                                        </p>
+                                      </Popover.Body>
+                                    </Popover>
+                                  </Col>
+                                </Row>
+                              </div>`}
                           </code>
                         </pre>
                       </Tab>
@@ -468,32 +641,31 @@ const TooltipPopover = () => {
                         <pre>
                           <code>
                             {`
-  export function DefaultpopOver() {
-    return (
-      <>
-        {popoverData.map((item:any, k:any) => (
-          <Col sm={6} lg={3} className="mt-2 mb-2" key={k}>
-          <OverlayTrigger
-            trigger="click"
-            
-            placement={item.placement}
-            overlay={
-              <Popover id={popover-positioned-{item.placement}} style={{ margin: "0px" }}>
-                <Popover.Header as="h3">{Popover {item.placement}}</Popover.Header>
-                <Popover.Body>
-                Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
-                </Popover.Body>
-              </Popover>
-            }
-          >
-            <Button variant={item.variant}>Click me</Button>
-          </OverlayTrigger>
-            </Col>
-        ))}
-      </>
-    );
-  }
-`}
+                              export function DefaultpopOver() {
+                                return (
+                                  <>
+                                    {popoverData.map((item:any, k:any) => (
+                                      <Col sm={6} lg={3} className="mt-2 mb-2" key={k}>
+                                      <OverlayTrigger
+                                        trigger="click"
+
+                                        placement={item.placement}
+                                        overlay={
+                                          <Popover id={popover-positioned-{item.placement}} style={{ margin: "0px" }}>
+                                            <Popover.Header as="h3">{Popover {item.placement}}</Popover.Header>
+                                            <Popover.Body>
+                                            Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
+                                            </Popover.Body>
+                                          </Popover>
+                                        }
+                                      >
+                                        <Button variant={item.variant}>Click me</Button>
+                                      </OverlayTrigger>
+                                        </Col>
+                                    ))}
+                                  </>
+                                );
+                              }`}
                           </code>
                         </pre>
                       </Tab>
@@ -567,24 +739,46 @@ const TooltipPopover = () => {
                       <Tab eventKey="Static" title="Static" className="">
                         <pre>
                           <code>
-                            {`
-<div className="popover-static-demo mb-4 border br-3 pb-6">
-<Row className="row-sm">
-  <Col md={6}>
-    <Popover placement="top" className="popover-head-primary">
-      <Popover.Header as="h3">Popover top</Popover.Header>
-      <Popover.Body><p>Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p></Popover.Body>
-    </Popover>
-  </Col>
-  <Col md={6} className="mt-5 mt-md-0">
-    <Popover placement="bottom" className="popover-head-secondary">
-      <Popover.Header as="h3">Popover Bottom</Popover.Header>
-      <Popover.Body><p>Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p></Popover.Body>
-    </Popover>
-  </Col>
-</Row>
-</div>
-`}
+                            {`<div className="popover-static-demo mb-4 border br-3 pb-6">
+                                <Row className="row-sm">
+                                  <Col md={6}>
+                                    <Popover
+                                      placement="top"
+                                      className="popover-head-primary"
+                                    >
+                                      <Popover.Header as="h3">
+                                        Popover top
+                                      </Popover.Header>
+                                      <Popover.Body>
+                                        <p>
+                                          Sed posuere consectetur est at
+                                          lobortis. Aenean eu leo quam.
+                                          Pellentesque ornare sem lacinia quam
+                                          venenatis vestibulum.
+                                        </p>
+                                      </Popover.Body>
+                                    </Popover>
+                                  </Col>
+                                  <Col md={6} className="mt-5 mt-md-0">
+                                    <Popover
+                                      placement="bottom"
+                                      className="popover-head-secondary"
+                                    >
+                                      <Popover.Header as="h3">
+                                        Popover Bottom
+                                      </Popover.Header>
+                                      <Popover.Body>
+                                        <p>
+                                          Sed posuere consectetur est at
+                                          lobortis. Aenean eu leo quam.
+                                          Pellentesque ornare sem lacinia quam
+                                          venenatis vestibulum.
+                                        </p>
+                                      </Popover.Body>
+                                    </Popover>
+                                  </Col>
+                                </Row>
+                              </div>`}
                           </code>
                         </pre>
                       </Tab>
@@ -592,33 +786,32 @@ const TooltipPopover = () => {
                         <pre>
                           <code>
                             {`
-export function StaticTooltip() {
-  
+                              export function StaticTooltip() {
 
-  return (
-    <>
-    {StaticTooltipData.map((item:any, k:any) => (
-      <Col sm={6} lg={3} className="mt-2 mb-2 text-center" key={k}>
-      <OverlayTrigger
-        trigger="click"
-        placement={item.placement}
-        overlay={
-          <Popover id={popover-positioned-{item.placement}} style={{ margin "0px" }}>
-            <Popover.Header className={item.classname} as="h3">{Popover {item.placement}}</Popover.Header>
-            <Popover.Body>
-            Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
-            </Popover.Body>
-          </Popover>
-        }
-      >
-        <Button variant={item.variant}>Click me</Button>
-      </OverlayTrigger>
-        </Col>
-    ))}
-  </>
-  );
-}
-`}
+                              
+                                return (
+                                  <>
+                                  {StaticTooltipData.map((item:any, k:any) => (
+                                    <Col sm={6} lg={3} className="mt-2 mb-2 text-center" key={k}>
+                                    <OverlayTrigger
+                                      trigger="click"
+                                      placement={item.placement}
+                                      overlay={
+                                        <Popover id={popover-positioned-{item.placement}} style={{ margin "0px" }}>
+                                          <Popover.Header className={item.classname} as="h3">{Popover {item.placement}}</Popover.Header>
+                                          <Popover.Body>
+                                          Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
+                                          </Popover.Body>
+                                        </Popover>
+                                      }
+                                    >
+                                      <Button variant={item.variant}>Click me</Button>
+                                    </OverlayTrigger>
+                                      </Col>
+                                  ))}
+                                </>
+                                );
+                              }`}
                           </code>
                         </pre>
                       </Tab>
@@ -692,24 +885,48 @@ export function StaticTooltip() {
                       <Tab eventKey="Static" title="Static" className="">
                         <pre>
                           <code>
-                            {`
-<div className="popover-static-demo mb-4 border br-3 pb-6">
-<Row className="row-sm">
-  <Col md={6} className="mt-4">
-    <Popover placement="top" className="popover popover-primary">
-      <Popover.Header as="h3">Popover top</Popover.Header>
-      <Popover.Body><p>Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p></Popover.Body>
-    </Popover>
-  </Col>
-  <Col md={6} className="mt-4">
-    <Popover placement="bottom" className="popover-secondary">
-      <Popover.Header as="h3">Popover Bottom</Popover.Header>
-      <Popover.Body><p>Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p></Popover.Body>
-    </Popover>
-  </Col>
-</Row>
-</div>
-`}
+                            {
+                              `<div className="popover-static-demo mb-4 border br-3 pb-6">
+                                <Row className="row-sm">
+                                  <Col md={6} className="mt-4">
+                                    <Popover
+                                      placement="top"
+                                      className="popover popover-primary"
+                                    >
+                                      <Popover.Header as="h3">
+                                        Popover top
+                                      </Popover.Header>
+                                      <Popover.Body>
+                                        <p>
+                                          Sed posuere consectetur est at
+                                          lobortis. Aenean eu leo quam.
+                                          Pellentesque ornare sem lacinia quam
+                                          venenatis vestibulum.
+                                        </p>
+                                      </Popover.Body>
+                                    </Popover>
+                                  </Col>
+                                  <Col md={6} className="mt-4">
+                                    <Popover
+                                      placement="bottom"
+                                      className="popover-secondary"
+                                    >
+                                      <Popover.Header as="h3">
+                                        Popover Bottom
+                                      </Popover.Header>
+                                      <Popover.Body>
+                                        <p>
+                                          Sed posuere consectetur est at
+                                          lobortis. Aenean eu leo quam.
+                                          Pellentesque ornare sem lacinia quam
+                                          venenatis vestibulum.
+                                        </p>
+                                      </Popover.Body>
+                                    </Popover>
+                                  </Col>
+                                </Row>
+                              </div>`
+                            }
                           </code>
                         </pre>
                       </Tab>
@@ -717,32 +934,31 @@ export function StaticTooltip() {
                         <pre>
                           <code>
                             {`
-export function ColoredTooltip() {
-  
-  return (
-    <>
-    {ColoredTooltipData.map((item:any, k:any) => (
-      <Col  sm={6} lg={3} className="mt-2 mb-2" key={k}>
-      <OverlayTrigger
-        trigger="click"
-        placement={item.placement}
-        overlay={
-          <Popover className={item.popoverclass} id={popover-positioned-{item.placement}} style={{ margin: "0px" }}>
-            <Popover.Body className="text-white">
-              <h4 className={item.popheaderclass} >{Popover {item.placement}}</h4>
-            Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
-            </Popover.Body>
-          </Popover>
-        }
-      >
-        <Button variant={item.variant}>Click me</Button>
-      </OverlayTrigger>
-        </Col>
-    ))}
-  </>
-  );
-}
-`}
+                                export function ColoredTooltip() {
+
+                                  return (
+                                    <>
+                                    {ColoredTooltipData.map((item:any, k:any) => (
+                                      <Col  sm={6} lg={3} className="mt-2 mb-2" key={k}>
+                                      <OverlayTrigger
+                                        trigger="click"
+                                        placement={item.placement}
+                                        overlay={
+                                          <Popover className={item.popoverclass} id={popover-positioned-{item.placement}} style={{ margin: "0px" }}>
+                                            <Popover.Body className="text-white">
+                                              <h4 className={item.popheaderclass} >{Popover {item.placement}}</h4>
+                                            Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
+                                            </Popover.Body>
+                                          </Popover>
+                                        }
+                                      >
+                                        <Button variant={item.variant}>Click me</Button>
+                                      </OverlayTrigger>
+                                        </Col>
+                                    ))}
+                                  </>
+                                  );
+                                }`}
                           </code>
                         </pre>
                       </Tab>

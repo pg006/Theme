@@ -62,16 +62,14 @@ const Paginations = () => {
                 <Collapse in={Basic} className="mt-2">
                   <pre>
                     <code>
-                      {`
- <Pagination className="mb-0">
-              <Pagination.Item>{1}</Pagination.Item>
-              <Pagination.Item>{2}</Pagination.Item>
-              <Pagination.Item>{3}</Pagination.Item>
-              <Pagination.Item>{4}</Pagination.Item>
-              <Pagination.Item>{5}</Pagination.Item>
-              <Pagination.Next />
-            </Pagination>
-`}
+                      {`<Pagination className="mb-0">
+                          <Pagination.Item>{1}</Pagination.Item>
+                          <Pagination.Item>{2}</Pagination.Item>
+                          <Pagination.Item>{3}</Pagination.Item>
+                          <Pagination.Item>{4}</Pagination.Item>
+                          <Pagination.Item>{5}</Pagination.Item>
+                          <Pagination.Next />
+                        </Pagination>`}
                     </code>
                   </pre>
                 </Collapse>
@@ -109,17 +107,14 @@ const Paginations = () => {
                 <Collapse in={Active} className="mt-2">
                   <pre>
                     <code>
-                      {`
- <Pagination>
- <Pagination.Item>Prev</Pagination.Item>
- <Pagination.Item active>{1}</Pagination.Item>
- <Pagination.Item>{2}</Pagination.Item>
- <Pagination.Item>{3}</Pagination.Item>
- <Pagination.Item>{4}</Pagination.Item>
- <Pagination.Item>Next</Pagination.Item>
-</Pagination>
-
-`}
+                      {`<Pagination>
+                          <Pagination.Item>Prev</Pagination.Item>
+                          <Pagination.Item active>{1}</Pagination.Item>
+                          <Pagination.Item>{2}</Pagination.Item>
+                          <Pagination.Item>{3}</Pagination.Item>
+                          <Pagination.Item>{4}</Pagination.Item>
+                          <Pagination.Item>Next</Pagination.Item>
+                        </Pagination>`}
                     </code>
                   </pre>
                 </Collapse>
@@ -163,18 +158,15 @@ const Paginations = () => {
                 <Collapse in={Disable} className="mt-2">
                   <pre>
                     <code>
-                      {`
- <Pagination>
- <Pagination.First />
- <Pagination.Prev />
- <Pagination.Item>{2}</Pagination.Item>
- <Pagination.Item active>{3}</Pagination.Item>
- <Pagination.Item>{4}</Pagination.Item>
- <Pagination.Next />
- <Pagination.Last />
-</Pagination>
-
-`}
+                      {`<Pagination>
+                          <Pagination.First />
+                          <Pagination.Prev />
+                          <Pagination.Item>{2}</Pagination.Item>
+                          <Pagination.Item active>{3}</Pagination.Item>
+                          <Pagination.Item>{4}</Pagination.Item>
+                          <Pagination.Next />
+                          <Pagination.Last />
+                        </Pagination>`}
                     </code>
                   </pre>
                 </Collapse>
@@ -232,34 +224,32 @@ const Paginations = () => {
                 <Collapse in={Samples} className="mt-2">
                   <pre>
                     <code>
-                      {`
- <Row>
- <Col md={12} lg={6}>
-   <Nav aria-label="Page" className='my-2'>
-     <Pagination>
-       <Pagination.First />
-       <Pagination.Prev />
-       <Pagination.Item active>{4}</Pagination.Item>
-       <Pagination.Ellipsis />
-       <Pagination.Item>{10}</Pagination.Item>
-       <Pagination.Next />
-       <Pagination.Last />
-     </Pagination>
-   </Nav>
- </Col>
- <Col md={6} lg={6}>
-   <Nav aria-label="Page example" className='my-2'>
-     <Pagination>
-       <Pagination.Prev />
-       <Pagination.Item >{1}</Pagination.Item>
-       <Pagination.Item >{2}</Pagination.Item>
-       <Pagination.Item >{3}</Pagination.Item>
-       <Pagination.Next />
-     </Pagination>
-   </Nav>
- </Col>
-</Row>
-`}
+                      {`<Row>
+                          <Col md={12} lg={6}>
+                            <Nav aria-label="Page" className="my-2">
+                              <Pagination>
+                                <Pagination.First />
+                                <Pagination.Prev />
+                                <Pagination.Item active>{4}</Pagination.Item>
+                                <Pagination.Ellipsis />
+                                <Pagination.Item>{10}</Pagination.Item>
+                                <Pagination.Next />
+                                <Pagination.Last />
+                              </Pagination>
+                            </Nav>
+                          </Col>
+                          <Col md={6} lg={6}>
+                            <Nav aria-label="Page example" className="my-2">
+                              <Pagination>
+                                <Pagination.Prev />
+                                <Pagination.Item>{1}</Pagination.Item>
+                                <Pagination.Item>{2}</Pagination.Item>
+                                <Pagination.Item>{3}</Pagination.Item>
+                                <Pagination.Next />
+                              </Pagination>
+                            </Nav>
+                          </Col>
+                        </Row>`}
                     </code>
                   </pre>
                 </Collapse>
@@ -314,31 +304,28 @@ const Paginations = () => {
                 <Collapse in={Size} className="mt-2">
                   <pre>
                     <code>
-                      {`
- <Nav aria-label="Page example">
-
- <Pagination size="lg" >
-   <Pagination.Prev />
-   <Pagination.Item active >{1}</Pagination.Item>
-   <Pagination.Item >{2}</Pagination.Item>
-   <Pagination.Item >{3}</Pagination.Item>
-   <Pagination.Next />
- </Pagination>
-
-</Nav><br />
-<Nav aria-label="Page example">
-
-
- <Pagination >
-   <Pagination.Item >Prev</Pagination.Item>
-   <Pagination.Item active >{1}</Pagination.Item>
-   <Pagination.Item >{2}</Pagination.Item>
-   <Pagination.Item >{3}</Pagination.Item>
-   <Pagination.Item >{4}</Pagination.Item>
-   <Pagination.Item >Next</Pagination.Item>
- </Pagination>
-</Nav>
-`}
+                      {`<div>
+                          <Nav aria-label="Page example">
+                            <Pagination size="lg">
+                              <Pagination.Prev />
+                              <Pagination.Item active>{1}</Pagination.Item>
+                              <Pagination.Item>{2}</Pagination.Item>
+                              <Pagination.Item>{3}</Pagination.Item>
+                              <Pagination.Next />
+                            </Pagination>
+                          </Nav>
+                          <br />
+                          <Nav aria-label="Page example">
+                            <Pagination>
+                              <Pagination.Item>Prev</Pagination.Item>
+                              <Pagination.Item active>{1}</Pagination.Item>
+                              <Pagination.Item>{2}</Pagination.Item>
+                              <Pagination.Item>{3}</Pagination.Item>
+                              <Pagination.Item>{4}</Pagination.Item>
+                              <Pagination.Item>Next</Pagination.Item>
+                            </Pagination>
+                          </Nav>
+                        </div>`}
                     </code>
                   </pre>
                 </Collapse>
@@ -399,43 +386,46 @@ const Paginations = () => {
                 <Collapse in={Alignment} className="mt-2">
                   <pre>
                     <code>
-                      {`
- <Nav aria-label="Page example" className='justify-content-left'>
-
- <Pagination >
-   <Pagination.Prev disabled />
-   <Pagination.Item >{1}</Pagination.Item>
-   <Pagination.Item active >{2}</Pagination.Item>
-   <Pagination.Item >{3}</Pagination.Item>
-   <Pagination.Next />
- </Pagination>
-
-
-</Nav><br />
-<Nav aria-label="Page example" className='justify-content-center'>
-
- <Pagination >
-   <Pagination.Prev disabled />
-   <Pagination.Item >{1}</Pagination.Item>
-   <Pagination.Item active >{2}</Pagination.Item>
-   <Pagination.Item >{3}</Pagination.Item>
-   <Pagination.Next />
- </Pagination>
-
-</Nav><br />
-<Nav aria-label="Page example" className='justify-content-end'>
-
- <Pagination  >
-   <Pagination.Prev disabled />
-   <Pagination.Item >{1}</Pagination.Item>
-   <Pagination.Item active >{2}</Pagination.Item>
-   <Pagination.Item >{3}</Pagination.Item>
-   <Pagination.Next />
- </Pagination>
-
-</Nav>
-
-`}
+                      {`<div>
+                          <Nav
+                            aria-label="Page example"
+                            className="justify-content-left"
+                          >
+                            <Pagination>
+                              <Pagination.Prev disabled />
+                              <Pagination.Item>{1}</Pagination.Item>
+                              <Pagination.Item active>{2}</Pagination.Item>
+                              <Pagination.Item>{3}</Pagination.Item>
+                              <Pagination.Next />
+                            </Pagination>
+                          </Nav>
+                          <br />
+                          <Nav
+                            aria-label="Page example"
+                            className="justify-content-center"
+                          >
+                            <Pagination>
+                              <Pagination.Prev disabled />
+                              <Pagination.Item>{1}</Pagination.Item>
+                              <Pagination.Item active>{2}</Pagination.Item>
+                              <Pagination.Item>{3}</Pagination.Item>
+                              <Pagination.Next />
+                            </Pagination>
+                          </Nav>
+                          <br />
+                          <Nav
+                            aria-label="Page example"
+                            className="justify-content-end"
+                          >
+                            <Pagination>
+                              <Pagination.Prev disabled />
+                              <Pagination.Item>{1}</Pagination.Item>
+                              <Pagination.Item active>{2}</Pagination.Item>
+                              <Pagination.Item>{3}</Pagination.Item>
+                              <Pagination.Next />
+                            </Pagination>
+                          </Nav>
+                        </div>`}
                     </code>
                   </pre>
                 </Collapse>

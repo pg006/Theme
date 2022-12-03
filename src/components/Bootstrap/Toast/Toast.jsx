@@ -1,7 +1,19 @@
 import React, { useState } from "react";
-import { Card, Row, Col, Form, Collapse } from 'react-bootstrap';
+import { Card, Row, Col, Form, Collapse } from "react-bootstrap";
 import PageHeader from "../../../commonComponents/PageHeader/PageHeader";
-import { Basictoast, ColourAtoast, ColourBtoast, ColourCtoast, ColourDtoast, CustomContenttoast, Customtoast, Placementtoast, StackingAtoast, StackingBtoast, Translucenttoast } from "../../../Data/Boostrap/ToastData";
+import {
+  Basictoast,
+  ColourAtoast,
+  ColourBtoast,
+  ColourCtoast,
+  ColourDtoast,
+  CustomContenttoast,
+  Customtoast,
+  Placementtoast,
+  StackingAtoast,
+  StackingBtoast,
+  Translucenttoast,
+} from "../../../Data/Boostrap/ToastData";
 import "./Toast.scss";
 
 const Toast = () => {
@@ -42,29 +54,29 @@ const Toast = () => {
                   <pre>
                     <code>
                       {`
-export function Basictoast() {
-  const [showA, setShowA] = useState(true);
-
-  const toggleShow = () => setShowA(!showA);
-  
-  return (
-      <div>
-          <Toast show={showA} onClose={toggleShow}>
-              <Toast.Header>
-              <img src={require("../../assets/images/brand/logo-2.png")} alt="" className="me-2" height="18"/>
-                  <strong className="me-auto">Bootstrap</strong>
-                  <small>11 mins ago</small>
-                  
-              </Toast.Header>
-              <Toast.Body>Hello, world! This is a toast message.</Toast.Body>
-          </Toast>
-          <Col md={12} className="mt-2 mt-md-0">
-                <Button  variant="primary" className="mt-5" onClick={toggleShow}>Show live toast</Button>
-              </Col>
-      </div>
-  );
-}
-`}
+                        export function Basictoast() {
+                          const [showA, setShowA] = useState(true);
+                        
+                          const toggleShow = () => setShowA(!showA);
+                          
+                          return (
+                              <div>
+                                  <Toast show={showA} onClose={toggleShow}>
+                                      <Toast.Header>
+                                      <img src={require("../../assets/images/brand/logo-2.png")} alt="" className="me-2" height="18"/>
+                                          <strong className="me-auto">Bootstrap</strong>
+                                          <small>11 mins ago</small>
+                                          
+                                      </Toast.Header>
+                                      <Toast.Body>Hello, world! This is a toast message.</Toast.Body>
+                                  </Toast>
+                                  <Col md={12} className="mt-2 mt-md-0">
+                                        <Button  variant="primary" className="mt-5" onClick={toggleShow}>Show live toast</Button>
+                                      </Col>
+                              </div>
+                          );
+                        }
+                        `}
                     </code>
                   </pre>
                 </Collapse>
@@ -93,25 +105,23 @@ export function Basictoast() {
                   <pre>
                     <code>
                       {`
-  export function Translucenttoast() {
-    const [showA, setShowA] = useState(true);
-
-    const toggleShowA = () => setShowA(!showA);
-
-    return (
-        <div>
-            <Toast show={showA} onClose={toggleShowA}>
-                <Toast.Header>
-                <img src={require("../../assets/images/brand/logo-2.png")} alt="" className="me-2" height="18"/>
-  <strong className="me-auto">Bootstrap</strong>
-  <small>11 mins ago</small>
-                </Toast.Header>
-                <Toast.Body>Hello, world! This is a toast message.</Toast.Body>
-            </Toast>
-        </div>
-    );
-}
-`}
+                        export function Translucenttoast() {
+                          const [showA, setShowA] = useState(true);
+                        
+                          const toggleShowA = () => setShowA(!showA);
+                        
+                          return (
+                              <div>
+                                  <Toast show={showA} onClose={toggleShowA}>
+                                      <Toast.Header>
+                                      <img src={require("../../assets/images/brand/logo-2.png")} alt="" className="me-2" height="18"/>
+                        <strong className="me-auto">Bootstrap</strong>
+                        <small>11 mins ago</small>
+                                      </Toast.Header>
+                                      <Toast.Body>Hello, world! This is a toast message.</Toast.Body>
+                                  </Toast>
+                              </div>
+                          );}`}
                     </code>
                   </pre>
                 </Collapse>
@@ -150,44 +160,42 @@ export function Basictoast() {
                   <pre>
                     <code>
                       {`
+                        export function CustomContenttoast() {
+                        const [showA, setShowA] = useState(true);
+                        
+                        const toggleShowA = () => setShowA(!showA);
+                        
+                        return (
+                            <div>
+                                <Toast show={showA} onClose={toggleShowA}>
+                                    <Toast.Header>
+                                        <strong className="me-auto">Hello, world! This is a toast message.</strong>
+                                    </Toast.Header>
+                        
+                                </Toast>
+                            </div>
+                        );
+                      }
 
-export function CustomContenttoast() {
-  const [showA, setShowA] = useState(true);
-
-  const toggleShowA = () => setShowA(!showA);
-
-  return (
-      <div>
-          <Toast show={showA} onClose={toggleShowA}>
-              <Toast.Header>
-                  <strong className="me-auto">Hello, world! This is a toast message.</strong>
-              </Toast.Header>
-
-          </Toast>
-      </div>
-  );
-}
-
-export function Customtoast() {
-  const [showA, setShowA] = useState(true);
-  const toggleShowA = () => setShowA(!showA);
-  return (
-      <div>
-          <Toast show={showA} onClose={toggleShowA}>
-              <ToastHeader className='justify-content-between'>
-                  Hello, world! This is a toast message.
-              </ToastHeader>
-              <Toast.Body className="mt-2 pt-2">
-                  <Button size="sm" variant="primary me-1">Take Action</Button>
-                  <Button size="sm" variant="secondary" onClick={() => setShowA(false)}>
-                      Close
-                  </Button>
-              </Toast.Body>
-          </Toast>
-      </div>
-  );
-}
-`}
+                      export function Customtoast() {
+                      const [showA, setShowA] = useState(true);
+                      const toggleShowA = () => setShowA(!showA);
+                      return (
+                          <div>
+                              <Toast show={showA} onClose={toggleShowA}>
+                                  <ToastHeader className='justify-content-between'>
+                                      Hello, world! This is a toast message.
+                                  </ToastHeader>
+                                  <Toast.Body className="mt-2 pt-2">
+                                      <Button size="sm" variant="primary me-1">Take Action</Button>
+                                      <Button size="sm" variant="secondary" onClick={() => setShowA(false)}>
+                                          Close
+                                      </Button>
+                                  </Toast.Body>
+                              </Toast>
+                          </div>
+                      );
+                    }`}
                     </code>
                   </pre>
                 </Collapse>
@@ -267,68 +275,67 @@ export function Customtoast() {
                   <pre>
                     <code>
                       {`
-export function ColourAtoast() {
-  const [showA, setShowA] = useState(true);
+                        export function ColourAtoast() {
+                        const [showA, setShowA] = useState(true);
+                        
+                        const toggleShowA = () => setShowA(!showA);
+                        
+                        return (
+                            <div>
+                                <Toast show={showA} onClose={toggleShowA}>
+                                    <Toast.Header className="bg-primary text-white">
+                                        <strong className="me-auto">Hello, world! This is a toast message.</strong>
+                                    </Toast.Header>
+                                </Toast>
+                            </div>
+                        );
+                      }
 
-  const toggleShowA = () => setShowA(!showA);
-
-  return (
-      <div>
-          <Toast show={showA} onClose={toggleShowA}>
-              <Toast.Header className="bg-primary text-white">
-                  <strong className="me-auto">Hello, world! This is a toast message.</strong>
-              </Toast.Header>
-          </Toast>
-      </div>
-  );
-}
-
-export function ColourBtoast() {
-  const [showA, setShowA] = useState(true);
-
-  const toggleShowA = () => setShowA(!showA);
-
-  return (
-      <div>
-          <Toast show={showA} onClose={toggleShowA}>
-              <Toast.Header className="bg-secondary text-white">
-                  <strong className="me-auto">Hello, world! This is a toast message.</strong>
-              </Toast.Header>
-          </Toast>
-      </div>
-  );
-}
-export function ColourCtoast() {
-  const [showA, setShowA] = useState(true);
-
-  const toggleShowA = () => setShowA(!showA);
-
-  return (
-      <div>
-          <Toast show={showA} onClose={toggleShowA}>
-              <Toast.Header className="bg-success text-white">
-                  <strong className="me-auto">Hello, world! This is a toast message.</strong>
-              </Toast.Header>
-          </Toast>
-      </div>
-  );
-}
-export function ColourDtoast() {
-  const [showA, setShowA] = useState(true);
-
-  const toggleShowA = () => setShowA(!showA);
-
-  return (
-      <div>
-          <Toast show={showA} onClose={toggleShowA}>
-              <Toast.Header className="bg-danger text-white">
-                  <strong className="me-auto">Hello, world! This is a toast message.</strong>
-              </Toast.Header>
-          </Toast>
-      </div>
-  );
-}
-`}
+                        export function ColourBtoast() {
+                        const [showA, setShowA] = useState(true);
+                        
+                        const toggleShowA = () => setShowA(!showA);
+                        
+                        return (
+                            <div>
+                                <Toast show={showA} onClose={toggleShowA}>
+                                    <Toast.Header className="bg-secondary text-white">
+                                        <strong className="me-auto">Hello, world! This is a toast message.</strong>
+                                    </Toast.Header>
+                                </Toast>
+                            </div>
+                        );
+                      }
+                        export function ColourCtoast() {
+                        const [showA, setShowA] = useState(true);
+                        
+                        const toggleShowA = () => setShowA(!showA);
+                        
+                        return (
+                            <div>
+                                <Toast show={showA} onClose={toggleShowA}>
+                                    <Toast.Header className="bg-success text-white">
+                                        <strong className="me-auto">Hello, world! This is a toast message.</strong>
+                                    </Toast.Header>
+                                </Toast>
+                            </div>
+                        );
+                      }
+                        export function ColourDtoast() {
+                        const [showA, setShowA] = useState(true);
+                        
+                        const toggleShowA = () => setShowA(!showA);
+                        
+                        return (
+                            <div>
+                                <Toast show={showA} onClose={toggleShowA}>
+                                    <Toast.Header className="bg-danger text-white">
+                                        <strong className="me-auto">Hello, world! This is a toast message.</strong>
+                                    </Toast.Header>
+                                </Toast>
+                            </div>
+                        );
+                      }`}
                     </code>
                   </pre>
                 </Collapse>
@@ -366,43 +373,43 @@ export function ColourDtoast() {
                   <pre>
                     <code>
                       {`
-export function StackingAtoast() {
-  const [showA, setShowA] = useState(true);
-
-  const toggleShowA = () => setShowA(!showA);
-
-  return (
-      <div>
-          <Toast show={showA} onClose={toggleShowA} >
-              <Toast.Header>
-              <img src={require("../../assets/images/brand/logo-2.png")} alt="" className="me-2" height="18"/>
-                  <strong className="me-auto">Bootstrap</strong>
-                  <small className="text-muted">just now</small>
-              </Toast.Header>
-              <Toast.Body>See? Just like this.</Toast.Body>
-          </Toast>
-      </div>
-  );
-}
-export function StackingBtoast() {
-  const [showA, setShowA] = useState(true);
-
-  const toggleShowA = () => setShowA(!showA);
-
-  return (
-      <div>
-          <Toast show={showA} onClose={toggleShowA}>
-              <Toast.Header>
-              <img src={require("../../assets/images/brand/logo-2.png")} alt="" className="me-2" height="18"/>
-                  <strong className="me-auto">Bootstrap</strong>
-                  <small className="text-muted">2 seconds ago</small>
-              </Toast.Header>
-              <Toast.Body>Heads up, toasts will stack automatically</Toast.Body>
-          </Toast>
-      </div>
-  );
-}
-`}
+                        export function StackingAtoast() {
+                          const [showA, setShowA] = useState(true);
+                        
+                          const toggleShowA = () => setShowA(!showA);
+                        
+                          return (
+                              <div>
+                                  <Toast show={showA} onClose={toggleShowA} >
+                                      <Toast.Header>
+                                      <img src={require("../../assets/images/brand/logo-2.png")} alt="" className="me-2" height="18"/>
+                                          <strong className="me-auto">Bootstrap</strong>
+                                          <small className="text-muted">just now</small>
+                                      </Toast.Header>
+                                      <Toast.Body>See? Just like this.</Toast.Body>
+                                  </Toast>
+                              </div>
+                          );
+                        }
+                        export function StackingBtoast() {
+                          const [showA, setShowA] = useState(true);
+                        
+                          const toggleShowA = () => setShowA(!showA);
+                        
+                          return (
+                              <div>
+                                  <Toast show={showA} onClose={toggleShowA}>
+                                      <Toast.Header>
+                                      <img src={require("../../assets/images/brand/logo-2.png")} alt="" className="me-2" height="18"/>
+                                          <strong className="me-auto">Bootstrap</strong>
+                                          <small className="text-muted">2 seconds ago</small>
+                                      </Toast.Header>
+                                      <Toast.Body>Heads up, toasts will stack automatically</Toast.Body>
+                                  </Toast>
+                              </div>
+                          );
+                        }
+                        `}
                     </code>
                   </pre>
                 </Collapse>
@@ -439,25 +446,25 @@ export function StackingBtoast() {
                   <pre>
                     <code>
                       {`
-export function Placementtoast() {
-  const [showA, setShowA] = useState(true);
-
-  const toggleShowA = () => setShowA(!showA);
-
-  return (
-      <div>
-          <Toast show={showA} onClose={toggleShowA}>
-              <Toast.Header>
-              <img src={require("../../assets/images/brand/logo-2.png")} alt="" className="me-2" height="18"/>
-                  <strong className="me-auto">Bootstrap</strong>
-                  <small className="text-muted">11 mins ago</small>
-              </Toast.Header>
-              <Toast.Body>Hello, world! This is a toast message.</Toast.Body>
-          </Toast>
-      </div>
-  );
-}
-`}
+                      export function Placementtoast() {
+                        const [showA, setShowA] = useState(true);
+                      
+                        const toggleShowA = () => setShowA(!showA);
+                      
+                        return (
+                            <div>
+                                <Toast show={showA} onClose={toggleShowA}>
+                                    <Toast.Header>
+                                    <img src={require("../../assets/images/brand/logo-2.png")} alt="" className="me-2" height="18"/>
+                                        <strong className="me-auto">Bootstrap</strong>
+                                        <small className="text-muted">11 mins ago</small>
+                                    </Toast.Header>
+                                    <Toast.Body>Hello, world! This is a toast message.</Toast.Body>
+                                </Toast>
+                            </div>
+                        );
+                      }
+                      `}
                     </code>
                   </pre>
                 </Collapse>

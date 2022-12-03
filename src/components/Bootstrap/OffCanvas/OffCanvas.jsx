@@ -43,81 +43,80 @@ const OffCanvas = () => {
                   <pre>
                     <code>
                       {`
- export function Defaultlink() {
-  const [show, setShow] = useState(false);
+                          export function Defaultlink() {
+                          const [show, setShow] = useState(false);
+                          
+                          const handleClose = () => setShow(false);
+                          const handleShow = () => setShow(true);
+                          
+                          return (
+                            <>
+                              <Button variant="primary" onClick={handleShow}>
+                                Link with href
+                              </Button>
+                          
+                              <Offcanvas show={show} onHide={handleClose}>
+                                <Offcanvas.Header>
+                                  <Offcanvas.Title>Offcanvas</Offcanvas.Title>
+                                  <span className="d-flex ms-auto" onClick={handleClose}><i className='fe fe-x ms-auto'></i></span>
+                                </Offcanvas.Header>
+                          
+                                <Offcanvas.Body>
+                                  Some text as placeholder. In real life you can have the elements you
+                                  have chosen. Like, text, images, lists, etc.
+                                  <Dropdown className="mt-5">
+                                    <Dropdown.Toggle>
+                                      Dropdown button
+                                    </Dropdown.Toggle>
+                                    <Dropdown.Menu>
+                                      <Dropdown.Item eventkey="1">Action</Dropdown.Item>
+                                      <Dropdown.Item eventkey="2">Another Action</Dropdown.Item>
+                                      <Dropdown.Item eventkey="3">Something else</Dropdown.Item>
+                                    </Dropdown.Menu>
+                                  </Dropdown>
+                                </Offcanvas.Body>
+                              </Offcanvas>
+                            </>
+                          );
+                        }
 
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
 
-  return (
-    <>
-      <Button variant="primary" onClick={handleShow}>
-        Link with href
-      </Button>
-
-      <Offcanvas show={show} onHide={handleClose}>
-        <Offcanvas.Header>
-          <Offcanvas.Title>Offcanvas</Offcanvas.Title>
-          <span className="d-flex ms-auto" onClick={handleClose}><i className='fe fe-x ms-auto'></i></span>
-        </Offcanvas.Header>
-
-        <Offcanvas.Body>
-          Some text as placeholder. In real life you can have the elements you
-          have chosen. Like, text, images, lists, etc.
-          <Dropdown className="mt-5">
-            <Dropdown.Toggle>
-              Dropdown button
-            </Dropdown.Toggle>
-            <Dropdown.Menu>
-              <Dropdown.Item eventkey="1">Action</Dropdown.Item>
-              <Dropdown.Item eventkey="2">Another Action</Dropdown.Item>
-              <Dropdown.Item eventkey="3">Something else</Dropdown.Item>
-            </Dropdown.Menu>
-          </Dropdown>
-        </Offcanvas.Body>
-      </Offcanvas>
-    </>
-  );
-}
-
-
-export function Databutton() {
-  const [show, setShow] = useState(false);
-
-  const handleClose1 = () => setShow(false);
-  const handleShow1 = () => setShow(true);
-
-  return (
-    <>
-      <Button variant="primary" onClick={handleShow1}>
-        Button with data-bs-target
-      </Button>
-
-      <Offcanvas show={show} onHide={handleClose1}>
-        <Offcanvas.Header>
-          <Offcanvas.Title>Offcanvas</Offcanvas.Title>
-          <span className="d-flex ms-auto" onClick={handleClose1}><i className='fe fe-x ms-auto'></i></span>
-        </Offcanvas.Header>
-
-        <Offcanvas.Body>
-          Some text as placeholder. In real life you can have the elements you
-          have chosen. Like, text, images, lists, etc.
-          <Dropdown className="mt-5">
-            <Dropdown.Toggle>
-              Dropdown button
-            </Dropdown.Toggle>
-            <Dropdown.Menu>
-              <Dropdown.Item eventkey="1">Action</Dropdown.Item>
-              <Dropdown.Item eventkey="2">Another Action</Dropdown.Item>
-              <Dropdown.Item eventkey="3">Something else</Dropdown.Item>
-            </Dropdown.Menu>
-          </Dropdown>
-        </Offcanvas.Body>
-      </Offcanvas>
-    </>
-  );
-}
-`}
+                        export function Databutton() {
+                          const [show, setShow] = useState(false);
+                        
+                          const handleClose1 = () => setShow(false);
+                          const handleShow1 = () => setShow(true);
+                        
+                          return (
+                            <>
+                              <Button variant="primary" onClick={handleShow1}>
+                                Button with data-bs-target
+                              </Button>
+                          
+                              <Offcanvas show={show} onHide={handleClose1}>
+                                <Offcanvas.Header>
+                                  <Offcanvas.Title>Offcanvas</Offcanvas.Title>
+                                  <span className="d-flex ms-auto" onClick={handleClose1}><i className='fe fe-x ms-auto'></i></span>
+                                </Offcanvas.Header>
+                          
+                                <Offcanvas.Body>
+                                  Some text as placeholder. In real life you can have the elements you
+                                  have chosen. Like, text, images, lists, etc.
+                                  <Dropdown className="mt-5">
+                                    <Dropdown.Toggle>
+                                      Dropdown button
+                                    </Dropdown.Toggle>
+                                    <Dropdown.Menu>
+                                      <Dropdown.Item eventkey="1">Action</Dropdown.Item>
+                                      <Dropdown.Item eventkey="2">Another Action</Dropdown.Item>
+                                      <Dropdown.Item eventkey="3">Something else</Dropdown.Item>
+                                    </Dropdown.Menu>
+                                  </Dropdown>
+                                </Offcanvas.Body>
+                              </Offcanvas>
+                            </>
+                          );
+                        }`}
                     </code>
                   </pre>
                 </Collapse>

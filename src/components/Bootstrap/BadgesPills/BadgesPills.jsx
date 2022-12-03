@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import PageHeader from "../../../commonComponents/PageHeader/PageHeader";
-import { Badge, Button, Card, Row, Col, Form, Collapse } from 'react-bootstrap';
+import { Badge, Button, Card, Row, Col, Form, Collapse } from "react-bootstrap";
 import "./BadgesPills.scss";
 
 const BadgesPills = () => {
@@ -39,12 +39,12 @@ const BadgesPills = () => {
                   appearance of a badge.
                 </p>
                 <div className="example">
-                  <Badge bg="default">Default</Badge>{" "}
-                  <Badge bg="primary">Primary</Badge>{" "}
-                  <Badge bg="success">Success</Badge>{" "}
-                  <Badge bg="danger">Danger</Badge>{" "}
-                  <Badge bg="info">Info</Badge>{" "}
-                  <Badge bg="warning">Warning</Badge>{" "}
+                  <Badge bg="default">Default</Badge>
+                  <Badge bg="primary">Primary</Badge>
+                  <Badge bg="success">Success</Badge>
+                  <Badge bg="danger">Danger</Badge>
+                  <Badge bg="info">Info</Badge>
+                  <Badge bg="warning">Warning</Badge>
                 </div>
                 <Collapse in={Badges} className="mt-2">
                   <pre>
@@ -83,42 +83,42 @@ const BadgesPills = () => {
               </Card.Header>
               <Card.Body>
                 <p className="text-muted card-sub-title">
-                  Use the{" "}
-                  <code className="highlighter-rouge">.rounded-pill</code>{" "}
+                  Use the
+                  <code className="highlighter-rouge">.rounded-pill</code>
                   modifier className to make badges more rounded.
                 </p>
                 <div className="example">
                   <Badge pill bg="default">
                     Default
-                  </Badge>{" "}
+                  </Badge>
                   <Badge pill bg="primary">
                     Primary
-                  </Badge>{" "}
+                  </Badge>
                   <Badge pill bg="success">
                     Success
-                  </Badge>{" "}
+                  </Badge>
                   <Badge pill bg="danger">
                     Danger
-                  </Badge>{" "}
+                  </Badge>
                   <Badge pill bg="info">
                     Info
-                  </Badge>{" "}
+                  </Badge>
                   <Badge pill bg="warning">
                     Warning
-                  </Badge>{" "}
+                  </Badge>
                 </div>
                 <Collapse in={Pill} className="mt-2">
                   <pre>
                     <code>
                       {`
-     <div className="example">
-     <Badge pill bg="default">Default</Badge> {' '}
-     <Badge pill bg="primary">Primary</Badge>{' '}
-     <Badge pill bg="success">Success</Badge>{' '}
-     <Badge pill bg="danger">Danger</Badge>{' '}
-     <Badge pill bg="info">Info</Badge>{' '}
-     <Badge pill bg="warning">Warning</Badge>{' '}
-   </div>
+                      <div className="example">
+                          <Badge pill bg="default">Default</Badge> {' '}
+                          <Badge pill bg="primary">Primary</Badge>{' '}
+                          <Badge pill bg="success">Success</Badge>{' '}
+                          <Badge pill bg="danger">Danger</Badge>{' '}
+                          <Badge pill bg="info">Info</Badge>{' '}
+                          <Badge pill bg="warning">Warning</Badge>{' '}
+                      </div>
 `}
                     </code>
                   </pre>
@@ -147,27 +147,24 @@ const BadgesPills = () => {
                   appearance of a badge.
                 </p>
                 <div className="example">
-                  <Badge bg="default">Default</Badge>{" "}
-                  <Badge bg="primary-gradient">Primary</Badge>{" "}
-                  <Badge bg="success-gradient">Success</Badge>{" "}
-                  <Badge bg="danger-gradient">Danger</Badge>{" "}
-                  <Badge bg="info-gradient">Info</Badge>{" "}
-                  <Badge bg="warning-gradient">Warning</Badge>{" "}
+                  <Badge bg="default">Default</Badge>
+                  <Badge bg="primary-gradient">Primary</Badge>
+                  <Badge bg="success-gradient">Success</Badge>
+                  <Badge bg="danger-gradient">Danger</Badge>
+                  <Badge bg="info-gradient">Info</Badge>
+                  <Badge bg="warning-gradient">Warning</Badge>
                 </div>
                 <Collapse in={Gradient} className="mt-2">
                   <pre>
                     <code>
-                      {`
-    <div className="example">
-    <Badge bg="default">Default</Badge> {' '}
-    <Badge bg="primary-gradient">Primary</Badge>{' '}
-    <Badge bg="success-gradient">Success</Badge>{' '}
-    <Badge bg="danger-gradient">Danger</Badge>{' '}
-    <Badge bg="info-gradient">Info</Badge>{' '}
-    <Badge bg="warning-gradient">Warning</Badge>{' '}
-
-  </div>
-`}
+                      {`<div className="example">
+                          <Badge bg="default">Default</Badge>
+                          <Badge bg="primary-gradient">Primary</Badge>
+                          <Badge bg="success-gradient">Success</Badge>
+                          <Badge bg="danger-gradient">Danger</Badge>
+                          <Badge bg="info-gradient">Info</Badge>
+                          <Badge bg="warning-gradient">Warning</Badge>
+                        </div>`}
                     </code>
                   </pre>
                 </Collapse>
@@ -191,44 +188,53 @@ const BadgesPills = () => {
               </Card.Header>
               <Card.Body>
                 <p className="text-muted card-sub-title">
-                  Use the{" "}
-                  <code className="highlighter-rouge">.rounded-pill</code>{" "}
+                  Use the
+                  <code className="highlighter-rouge">.rounded-pill</code>
                   modifier className to make badges more rounded.
                 </p>
                 <div className="example">
                   <Badge pill bg="default">
                     Default
-                  </Badge>{" "}
+                  </Badge>
                   <Badge pill bg="primary-gradient">
                     Primary
-                  </Badge>{" "}
+                  </Badge>
                   <Badge pill bg="success-gradient">
                     Success
-                  </Badge>{" "}
+                  </Badge>
                   <Badge pill bg="danger-gradient">
                     Danger
-                  </Badge>{" "}
+                  </Badge>
                   <Badge pill bg="info-gradient">
                     Info
-                  </Badge>{" "}
+                  </Badge>
                   <Badge pill bg="warning-gradient">
                     Warning
-                  </Badge>{" "}
+                  </Badge>
                 </div>
                 <Collapse in={Gradientpill} className="mt-2">
                   <pre>
                     <code>
-                      {`
-   <div className="example">
-   <Badge pill bg="default">Default</Badge> {' '}
-   <Badge pill bg="primary-gradient">Primary</Badge>{' '}
-   <Badge pill bg="success-gradient">Success</Badge>{' '}
-   <Badge pill bg="danger-gradient">Danger</Badge>{' '}
-   <Badge pill bg="info-gradient">Info</Badge>{' '}
-   <Badge pill bg="warning-gradient">Warning</Badge>{' '}
- </div>
-
-`}
+                      {`<div className="example">
+                          <Badge pill bg="default">
+                            Default
+                          </Badge>
+                          <Badge pill bg="primary-gradient">
+                            Primary
+                          </Badge>
+                          <Badge pill bg="success-gradient">
+                            Success
+                          </Badge>
+                          <Badge pill bg="danger-gradient">
+                            Danger
+                          </Badge>
+                          <Badge pill bg="info-gradient">
+                            Info
+                          </Badge>
+                          <Badge pill bg="warning-gradient">
+                            Warning
+                          </Badge>
+                        </div>`}
                     </code>
                   </pre>
                 </Collapse>
@@ -306,22 +312,52 @@ const BadgesPills = () => {
                 <Collapse in={Buton} className="mt-2">
                   <pre>
                     <code>
-                      {`
- <div className="example2">
+                      {`<div className="example2">
+                          <Button className="mt-1  mb-1 me-3" variant="primary">
+                            Notifications
+                            <Badge bg="white" className="text-primary ms-2">
+                              2
+                            </Badge>
+                          </Button>
 
- <Button className="mt-1  mb-1 me-3" variant="primary">Notifications<Badge bg="white" className="text-primary ms-2">2</Badge></Button>
+                          <Button
+                            className="mt-1  mb-1 me-3"
+                            variant="secondary"
+                          >
+                            Notifications
+                            <Badge bg="white" className="text-secondary ms-2">
+                              2
+                            </Badge>
+                          </Button>
 
- <Button className="mt-1  mb-1 me-3" variant="secondary">Notifications<Badge bg="white" className="text-secondary ms-2">2</Badge></Button>
+                          <Button className="mt-1  mb-1 me-3" variant="success">
+                            Notifications
+                            <Badge bg="white" className="text-success ms-2">
+                              2
+                            </Badge>
+                          </Button>
 
- <Button className="mt-1  mb-1 me-3" variant="success">Notifications<Badge bg="white" className="text-success ms-2">2</Badge></Button>
+                          <Button className="mt-1  mb-1 me-3" variant="info">
+                            Notifications
+                            <Badge bg="white" className="text-info ms-2">
+                              2
+                            </Badge>
+                          </Button>
 
- <Button className="mt-1  mb-1 me-3" variant="info">Notifications<Badge bg="white" className="text-info ms-2">2</Badge></Button>
+                          <Button className="mt-1  mb-1 me-3" variant="warning">
+                            Notifications
+                            <Badge bg="white" className="text-warning ms-2">
+                              2
+                            </Badge>
+                          </Button>
 
- <Button className="mt-1  mb-1 me-3" variant="warning">Notifications<Badge bg="white" className="text-warning ms-2">2</Badge></Button>
-
- <Button className="mt-1  mb-1 me-3" variant="danger">Notifications<Badge bg="white" className="text-danger ms-2">2</Badge></Button>
-</div>
-`}
+                          <Button className="mt-1  mb-1 me-3" variant="danger">
+                            Notifications
+                            <Badge bg="white" className="text-danger ms-2">
+                              2
+                            </Badge>
+                          </Button>
+                        </div>`}
                     </code>
                   </pre>
                 </Collapse>
@@ -353,7 +389,6 @@ const BadgesPills = () => {
                     variant="primary"
                     className="position-relative me-5 mb-3"
                   >
-                    {" "}
                     Projects
                     <Badge
                       bg="danger"
@@ -368,7 +403,6 @@ const BadgesPills = () => {
                     variant="secondary"
                     className="position-relative me-5 mb-3"
                   >
-                    {" "}
                     Projects
                     <Badge
                       bg="danger"
@@ -383,7 +417,6 @@ const BadgesPills = () => {
                     variant="success"
                     className="position-relative me-5 mb-3"
                   >
-                    {" "}
                     Projects
                     <Badge
                       bg="danger"
@@ -398,7 +431,6 @@ const BadgesPills = () => {
                     variant="info"
                     className="position-relative me-5 mb-3"
                   >
-                    {" "}
                     Projects
                     <Badge
                       bg="danger"
@@ -413,7 +445,6 @@ const BadgesPills = () => {
                     variant="warning"
                     className="position-relative me-5 mb-3"
                   >
-                    {" "}
                     Projects
                     <Badge
                       bg="danger"
@@ -428,7 +459,6 @@ const BadgesPills = () => {
                     variant="green"
                     className="position-relative me-5 mb-3"
                   >
-                    {" "}
                     Projects
                     <Badge
                       bg="danger"
@@ -442,35 +472,109 @@ const BadgesPills = () => {
                 <Collapse in={Rounded} className="mt-2">
                   <pre>
                     <code>
-                      {`
-<div className="example">
+                      {`<div className="example">
+                          <Button
+                            variant="primary"
+                            className="position-relative me-5 mb-2"
+                          >
+                            
+                            Projects
+                            <Badge
+                              bg="danger"
+                              className="position-absolute top-0 start-100 translate-middle badge rounded-pill"
+                            >
+                              20+
+                            </Badge>
+                            <span className="visually-hidden">
+                              unread messages
+                            </span>
+                          </Button>
 
-<Button variant="primary" className="position-relative me-5 mb-2"> Projects
-  <Badge bg="danger" className="position-absolute top-0 start-100 translate-middle badge rounded-pill">20+</Badge>
-  <span className="visually-hidden">unread messages</span></Button>
+                          <Button
+                            variant="secondary"
+                            className="position-relative me-5 mb-2"
+                          >
+                            
+                            Projects
+                            <Badge
+                              bg="danger"
+                              className="position-absolute top-0 start-100 translate-middle badge rounded-pill"
+                            >
+                              20+
+                            </Badge>
+                            <span className="visually-hidden">
+                              unread messages
+                            </span>
+                          </Button>
 
+                          <Button
+                            variant="success"
+                            className="position-relative me-5 mb-2"
+                          >
+                            
+                            Projects
+                            <Badge
+                              bg="danger"
+                              className="position-absolute top-0 start-100 translate-middle badge rounded-pill"
+                            >
+                              20+
+                            </Badge>
+                            <span className="visually-hidden">
+                              unread messages
+                            </span>
+                          </Button>
 
-<Button variant="secondary" className="position-relative me-5 mb-2"> Projects
-  <Badge bg="danger" className="position-absolute top-0 start-100 translate-middle badge rounded-pill">20+</Badge>
-  <span className="visually-hidden">unread messages</span></Button>
+                          <Button
+                            variant="info"
+                            className="position-relative me-5 mb-2"
+                          >
+                            
+                            Projects
+                            <Badge
+                              bg="danger"
+                              className="position-absolute top-0 start-100 translate-middle badge rounded-pill"
+                            >
+                              20+
+                            </Badge>
+                            <span className="visually-hidden">
+                              unread messages
+                            </span>
+                          </Button>
 
-<Button variant="success" className="position-relative me-5 mb-2"> Projects
-  <Badge bg="danger" className="position-absolute top-0 start-100 translate-middle badge rounded-pill">20+</Badge>
-  <span className="visually-hidden">unread messages</span></Button>
+                          <Button
+                            variant="warning"
+                            className="position-relative me-5 mb-2"
+                          >
+                            
+                            Projects
+                            <Badge
+                              bg="danger"
+                              className="position-absolute top-0 start-100 translate-middle badge rounded-pill"
+                            >
+                              20+
+                            </Badge>
+                            <span className="visually-hidden">
+                              unread messages
+                            </span>
+                          </Button>
 
-<Button variant="info" className="position-relative me-5 mb-2"> Projects
-  <Badge bg="danger" className="position-absolute top-0 start-100 translate-middle badge rounded-pill">20+</Badge>
-  <span className="visually-hidden">unread messages</span></Button>
-
-<Button variant="warning" className="position-relative me-5 mb-2"> Projects
-  <Badge bg="danger" className="position-absolute top-0 start-100 translate-middle badge rounded-pill">20+</Badge>
-  <span className="visually-hidden">unread messages</span></Button>
-
-<Button variant="green" className="position-relative me-5 mb-2"> Projects
-  <Badge bg="danger" className="position-absolute top-0 start-100 translate-middle badge rounded-pill">20+</Badge>
-  <span className="visually-hidden">unread messages</span></Button>
-</div>
-`}
+                          <Button
+                            variant="green"
+                            className="position-relative me-5 mb-2"
+                          >
+                            
+                            Projects
+                            <Badge
+                              bg="danger"
+                              className="position-absolute top-0 start-100 translate-middle badge rounded-pill"
+                            >
+                              20+
+                            </Badge>
+                            <span className="visually-hidden">
+                              unread messages
+                            </span>
+                          </Button>
+                        </div>`}
                     </code>
                   </pre>
                 </Collapse>
@@ -500,7 +604,7 @@ const BadgesPills = () => {
               <Card.Body>
                 <p>
                   Badges scale to match the size of the immediate parent element
-                  by using relative font sizing and{" "}
+                  by using relative font sizing and
                   <code className="highlighter-rouge">em</code> units. As of v5,
                   badges no longer have focus or hover styles for links.
                 </p>
@@ -527,16 +631,26 @@ const BadgesPills = () => {
                 <Collapse in={Heading} className="mt-2">
                   <pre>
                     <code>
-                      {`
- <div className="example">
- <h1>Heading 01<Badge bg="default">New</Badge></h1>
- <h2>Heading 01<Badge bg="default">New</Badge></h2>
- <h3>Heading 01<Badge bg="default">New</Badge></h3>
- <h4>Heading 01<Badge bg="default">New</Badge></h4>
- <h5>Heading 01<Badge bg="default">New</Badge></h5>
- <h6>Heading 01<Badge bg="default">New</Badge></h6>
-</div>
-`}
+                      {`<div className="example">
+                          <h1>
+                            Heading 01<Badge bg="default">New</Badge>
+                          </h1>
+                          <h2>
+                            Heading 01<Badge bg="default">New</Badge>
+                          </h2>
+                          <h3>
+                            Heading 01<Badge bg="default">New</Badge>
+                          </h3>
+                          <h4>
+                            Heading 01<Badge bg="default">New</Badge>
+                          </h4>
+                          <h5>
+                            Heading 01<Badge bg="default">New</Badge>
+                          </h5>
+                          <h6>
+                            Heading 01<Badge bg="default">New</Badge>
+                          </h6>
+                        </div>`}
                     </code>
                   </pre>
                 </Collapse>
@@ -561,7 +675,7 @@ const BadgesPills = () => {
               <Card.Body>
                 <p>
                   Badges scale to match the size of the immediate parent element
-                  by using relative font sizing and{" "}
+                  by using relative font sizing and
                   <code className="highlighter-rouge">em</code> units. As of v5,
                   badges no longer have focus or hover styles for links.
                 </p>
@@ -588,18 +702,28 @@ const BadgesPills = () => {
                 <Collapse in={color} className="mt-2">
                   <pre>
                     <code>
-                      {`
-    <div className="example">
-    <h1 className="text-primary" >Heading 01<Badge bg="primary">New</Badge></h1>
-    <h2 className="text-red" >Heading 01<Badge bg="danger">New</Badge></h2>
-    <h3 className="text-yellow" >Heading 01<Badge bg="warning">New</Badge></h3>
-    <h4 className="text-green" >Heading 01<Badge bg="success">New</Badge></h4>
-    <h5 className="text-info" >Heading 01<Badge bg="info">New</Badge></h5>
-    <h6 className="text-secondary" >Heading 01<Badge bg="secondary">New</Badge></h6>
-
-  </div>
-
-`}
+                      {
+                        `<div className="example">
+                          <h1 className="text-primary">
+                            Heading 01<Badge bg="primary">New</Badge>
+                          </h1>
+                          <h2 className="text-red">
+                            Heading 01<Badge bg="danger">New</Badge>
+                          </h2>
+                          <h3 className="text-yellow">
+                            Heading 01<Badge bg="warning">New</Badge>
+                          </h3>
+                          <h4 className="text-green">
+                            Heading 01<Badge bg="success">New</Badge>
+                          </h4>
+                          <h5 className="text-info">
+                            Heading 01<Badge bg="info">New</Badge>
+                          </h5>
+                          <h6 className="text-secondary">
+                            Heading 01<Badge bg="secondary">New</Badge>
+                          </h6>
+                        </div>`
+                      }
                     </code>
                   </pre>
                 </Collapse>

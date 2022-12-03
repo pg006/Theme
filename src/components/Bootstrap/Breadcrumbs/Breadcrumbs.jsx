@@ -55,23 +55,21 @@ const Breadcrumbs = () => {
                 <Collapse in={Simple} className="mt-2">
                   <pre>
                     <code>
-                      {`
-<div>
-   <Breadcrumb className="breadcrumb1">
-   <Breadcrumb.Item >Home</Breadcrumb.Item>
-   <Breadcrumb.Item >About</Breadcrumb.Item>
- </Breadcrumb>
- <Breadcrumb className="breadcrumb1">
-   <Breadcrumb.Item active>Home</Breadcrumb.Item>
-   <Breadcrumb.Item>Library</Breadcrumb.Item>
- </Breadcrumb>
- <Breadcrumb className="breadcrumb1">
-   <Breadcrumb.Item active>Home</Breadcrumb.Item>
-   <Breadcrumb.Item active>Library</Breadcrumb.Item>
-   <Breadcrumb.Item >Data</Breadcrumb.Item>
- </Breadcrumb>
- </div>
-                  `}
+                      {`<div>
+                          <Breadcrumb className="breadcrumb1">
+                            <Breadcrumb.Item>Home</Breadcrumb.Item>
+                            <Breadcrumb.Item>About</Breadcrumb.Item>
+                          </Breadcrumb>
+                          <Breadcrumb className="breadcrumb1">
+                            <Breadcrumb.Item active>Home</Breadcrumb.Item>
+                            <Breadcrumb.Item>Library</Breadcrumb.Item>
+                          </Breadcrumb>
+                          <Breadcrumb className="breadcrumb1">
+                            <Breadcrumb.Item active>Home</Breadcrumb.Item>
+                            <Breadcrumb.Item active>Library</Breadcrumb.Item>
+                            <Breadcrumb.Item>Data</Breadcrumb.Item>
+                          </Breadcrumb>
+                        </div>`}
                     </code>
                   </pre>
                 </Collapse>
@@ -128,23 +126,44 @@ const Breadcrumbs = () => {
                 <Collapse in={Example1} className="mt-2">
                   <pre>
                     <code>
-                      {`
-<div className="breadcrumb-style2">
-<Breadcrumb className="breadcrumb1">
-  <Breadcrumb.Item className="breadcrumb-item1" >Home</Breadcrumb.Item>
-  <Breadcrumb.Item className="breadcrumb-item1" >About</Breadcrumb.Item>
-</Breadcrumb>
-<Breadcrumb className="breadcrumb1">
-  <Breadcrumb.Item className="breadcrumb-item1" active>Home</Breadcrumb.Item>
-  <Breadcrumb.Item className="breadcrumb-item1" >Library</Breadcrumb.Item>
-</Breadcrumb>
-<Breadcrumb className="breadcrumb1">
-  <Breadcrumb.Item className="breadcrumb-item1" active>Home</Breadcrumb.Item>
-  <Breadcrumb.Item className="breadcrumb-item1" active>Library</Breadcrumb.Item>
-  <Breadcrumb.Item className="breadcrumb-item1" >Data</Breadcrumb.Item>
-</Breadcrumb>
-</div>
-                  `}
+                      {`<div className="breadcrumb-style2">
+                          <Breadcrumb className="breadcrumb1">
+                            <Breadcrumb.Item className="breadcrumb-item1">
+                              Home
+                            </Breadcrumb.Item>
+                            <Breadcrumb.Item className="breadcrumb-item1">
+                              About
+                            </Breadcrumb.Item>
+                          </Breadcrumb>
+                          <Breadcrumb className="breadcrumb1">
+                            <Breadcrumb.Item
+                              className="breadcrumb-item1"
+                              active
+                            >
+                              Home
+                            </Breadcrumb.Item>
+                            <Breadcrumb.Item className="breadcrumb-item1">
+                              Library
+                            </Breadcrumb.Item>
+                          </Breadcrumb>
+                          <Breadcrumb className="breadcrumb1">
+                            <Breadcrumb.Item
+                              className="breadcrumb-item1"
+                              active
+                            >
+                              Home
+                            </Breadcrumb.Item>
+                            <Breadcrumb.Item
+                              className="breadcrumb-item1"
+                              active
+                            >
+                              Library
+                            </Breadcrumb.Item>
+                            <Breadcrumb.Item className="breadcrumb-item1">
+                              Data
+                            </Breadcrumb.Item>
+                          </Breadcrumb>
+                        </div>`}
                     </code>
                   </pre>
                 </Collapse>
@@ -201,23 +220,44 @@ const Breadcrumbs = () => {
                 <Collapse in={Example2} className="mt-2">
                   <pre>
                     <code>
-                      {`
-<div className="breadcrumb-style3">
-<Breadcrumb className="breadcrumb1">
-  <Breadcrumb.Item className="breadcrumb-item1">Home</Breadcrumb.Item>
-  <Breadcrumb.Item className="breadcrumb-item1">About</Breadcrumb.Item>
-</Breadcrumb>
-<Breadcrumb className="breadcrumb1">
-  <Breadcrumb.Item active className="breadcrumb-item1">Home</Breadcrumb.Item>
-  <Breadcrumb.Item className="breadcrumb-item1">Library</Breadcrumb.Item>
-</Breadcrumb>
-<Breadcrumb className="breadcrumb1">
-  <Breadcrumb.Item active className="breadcrumb-item1">Home</Breadcrumb.Item>
-  <Breadcrumb.Item active className="breadcrumb-item1">Library</Breadcrumb.Item>
-  <Breadcrumb.Item className="breadcrumb-item1">Data</Breadcrumb.Item>
-</Breadcrumb>
-</div>
-                  `}
+                      {`<div className="breadcrumb-style3">
+                          <Breadcrumb className="breadcrumb1">
+                            <Breadcrumb.Item className="breadcrumb-item1">
+                              Home
+                            </Breadcrumb.Item>
+                            <Breadcrumb.Item className="breadcrumb-item1">
+                              About
+                            </Breadcrumb.Item>
+                          </Breadcrumb>
+                          <Breadcrumb className="breadcrumb1">
+                            <Breadcrumb.Item
+                              active
+                              className="breadcrumb-item1"
+                            >
+                              Home
+                            </Breadcrumb.Item>
+                            <Breadcrumb.Item className="breadcrumb-item1">
+                              Library
+                            </Breadcrumb.Item>
+                          </Breadcrumb>
+                          <Breadcrumb className="breadcrumb1">
+                            <Breadcrumb.Item
+                              active
+                              className="breadcrumb-item1"
+                            >
+                              Home
+                            </Breadcrumb.Item>
+                            <Breadcrumb.Item
+                              active
+                              className="breadcrumb-item1"
+                            >
+                              Library
+                            </Breadcrumb.Item>
+                            <Breadcrumb.Item className="breadcrumb-item1">
+                              Data
+                            </Breadcrumb.Item>
+                          </Breadcrumb>
+                        </div>`}
                     </code>
                   </pre>
                 </Collapse>
@@ -278,27 +318,39 @@ const Breadcrumbs = () => {
                 <Collapse in={center} className="mt-2">
                   <pre>
                     <code>
-                      {`
-   <div className="breadcrumb-3">
-   <Breadcrumb className="breadcrumb1">
-     <Breadcrumb.Item className="breadcrumb-item1" >Home</Breadcrumb.Item>
-     <Breadcrumb.Item className="breadcrumb-item1">About</Breadcrumb.Item>
-   </Breadcrumb>
- </div>
- <div className="breadcrumb-4">
-   <Breadcrumb className="breadcrumb1">
-     <Breadcrumb.Item className="breadcrumb-item1">Home</Breadcrumb.Item>
-     <Breadcrumb.Item className="breadcrumb-item1 active">Library</Breadcrumb.Item>
-   </Breadcrumb>
- </div>
- <div className="breadcrumb-5">
-   <Breadcrumb className="breadcrumb1 mb-0">
-     <Breadcrumb.Item className="breadcrumb-item1">Home</Breadcrumb.Item>
-     <Breadcrumb.Item className="breadcrumb-item1">Library</Breadcrumb.Item>
-     <Breadcrumb.Item className="breadcrumb-item1 active">Data</Breadcrumb.Item>
-   </Breadcrumb>
- </div>
-                  `}
+                      {`<div className="breadcrumb-3">
+                            <Breadcrumb className="breadcrumb1">
+                              <Breadcrumb.Item className="breadcrumb-item1">
+                                Home
+                              </Breadcrumb.Item>
+                              <Breadcrumb.Item className="breadcrumb-item1">
+                                About
+                              </Breadcrumb.Item>
+                            </Breadcrumb>
+                          </div>
+                          <div className="breadcrumb-4">
+                            <Breadcrumb className="breadcrumb1">
+                              <Breadcrumb.Item className="breadcrumb-item1">
+                                Home
+                              </Breadcrumb.Item>
+                              <Breadcrumb.Item className="breadcrumb-item1 active">
+                                Library
+                              </Breadcrumb.Item>
+                            </Breadcrumb>
+                          </div>
+                          <div className="breadcrumb-5">
+                            <Breadcrumb className="breadcrumb1 mb-0">
+                              <Breadcrumb.Item className="breadcrumb-item1">
+                                Home
+                              </Breadcrumb.Item>
+                              <Breadcrumb.Item className="breadcrumb-item1">
+                                Library
+                              </Breadcrumb.Item>
+                              <Breadcrumb.Item className="breadcrumb-item1 active">
+                                Data
+                              </Breadcrumb.Item>
+                            </Breadcrumb>
+                          </div>`}
                     </code>
                   </pre>
                 </Collapse>
@@ -361,29 +413,41 @@ const Breadcrumbs = () => {
                 <Collapse in={right} className="mt-2">
                   <pre>
                     <code>
-                      {`
-  <div>
-  <div className="breadcrumb-1">
-    <Breadcrumb className="breadcrumb1">
-      <Breadcrumb.Item className="breadcrumb-item1">Home</Breadcrumb.Item>
-      <Breadcrumb.Item className="breadcrumb-item1 active">About</Breadcrumb.Item>
-    </Breadcrumb>
-  </div>
-  <div className="breadcrumb-2">
-    <Breadcrumb className="breadcrumb1">
-      <Breadcrumb.Item className="breadcrumb-item1">Home</Breadcrumb.Item>
-      <Breadcrumb.Item className="breadcrumb-item1">Library</Breadcrumb.Item>
-    </Breadcrumb>
-  </div>
-  <div className="breadcrumb-6">
-    <Breadcrumb className="breadcrumb1 mb-0">
-      <Breadcrumb.Item className="breadcrumb-item1">Home</Breadcrumb.Item>
-      <Breadcrumb.Item className="breadcrumb-item1">Library</Breadcrumb.Item>
-      <Breadcrumb.Item className="breadcrumb-item1 active">Data</Breadcrumb.Item>
-    </Breadcrumb>
-  </div>
-</div>
-                  `}
+                      {`<div>
+                          <div className="breadcrumb-1">
+                            <Breadcrumb className="breadcrumb1">
+                              <Breadcrumb.Item className="breadcrumb-item1">
+                                Home
+                              </Breadcrumb.Item>
+                              <Breadcrumb.Item className="breadcrumb-item1 active">
+                                About
+                              </Breadcrumb.Item>
+                            </Breadcrumb>
+                          </div>
+                          <div className="breadcrumb-2">
+                            <Breadcrumb className="breadcrumb1">
+                              <Breadcrumb.Item className="breadcrumb-item1">
+                                Home
+                              </Breadcrumb.Item>
+                              <Breadcrumb.Item className="breadcrumb-item1">
+                                Library
+                              </Breadcrumb.Item>
+                            </Breadcrumb>
+                          </div>
+                          <div className="breadcrumb-6">
+                            <Breadcrumb className="breadcrumb1 mb-0">
+                              <Breadcrumb.Item className="breadcrumb-item1">
+                                Home
+                              </Breadcrumb.Item>
+                              <Breadcrumb.Item className="breadcrumb-item1">
+                                Library
+                              </Breadcrumb.Item>
+                              <Breadcrumb.Item className="breadcrumb-item1 active">
+                                Data
+                              </Breadcrumb.Item>
+                            </Breadcrumb>
+                          </div>
+                        </div>`}
                     </code>
                   </pre>
                 </Collapse>
@@ -437,22 +501,44 @@ const Breadcrumbs = () => {
                 <Collapse in={Color} className="mt-2">
                   <pre>
                     <code>
-                      {`
-<div>
-<Breadcrumb className="breadcrumb1 bg-info colorbreadcrumb" >
-  <Breadcrumb.Item className="breadcrumb-item1" active><i className="fa fa-star-o me-2 text-white"></i>Home</Breadcrumb.Item>
-</Breadcrumb>
-<Breadcrumb className="breadcrumb1 bg-success colorbreadcrumb">
-  <Breadcrumb.Item className="breadcrumb-item1"><i className="fa fa-star-o me-2 text-white"></i>Home</Breadcrumb.Item>
-  <Breadcrumb.Item className="breadcrumb-item1" active><i className="fa fa-star-o mx-2 text-white"></i>Library</Breadcrumb.Item>
-</Breadcrumb>
-<Breadcrumb className="breadcrumb1 bg-secondary colorbreadcrumb">
-  <Breadcrumb.Item className="breadcrumb-item1 "><i className="fa fa-star-o text-white me-2 "></i>Home</Breadcrumb.Item>
-  <Breadcrumb.Item className="breadcrumb-item1 "><i className="fa fa-star-o text-white mx-2 "></i>Library</Breadcrumb.Item>
-  <Breadcrumb.Item className="breadcrumb-item1 "><i className="fa fa-star-o text-white mx-2 "></i>Data</Breadcrumb.Item>
-</Breadcrumb>
-</div>  
-                  `}
+                      {`<div>
+                          <Breadcrumb className="breadcrumb1 bg-info colorbreadcrumb">
+                            <Breadcrumb.Item
+                              className="breadcrumb-item1"
+                              active
+                            >
+                              <i className="fa fa-star-o me-2 text-white"></i>
+                              Home
+                            </Breadcrumb.Item>
+                          </Breadcrumb>
+                          <Breadcrumb className="breadcrumb1 bg-success colorbreadcrumb">
+                            <Breadcrumb.Item className="breadcrumb-item1">
+                              <i className="fa fa-star-o me-2 text-white"></i>
+                              Home
+                            </Breadcrumb.Item>
+                            <Breadcrumb.Item
+                              className="breadcrumb-item1"
+                              active
+                            >
+                              <i className="fa fa-star-o mx-2 text-white"></i>
+                              Library
+                            </Breadcrumb.Item>
+                          </Breadcrumb>
+                          <Breadcrumb className="breadcrumb1 bg-secondary colorbreadcrumb">
+                            <Breadcrumb.Item className="breadcrumb-item1 ">
+                              <i className="fa fa-star-o text-white me-2 "></i>
+                              Home
+                            </Breadcrumb.Item>
+                            <Breadcrumb.Item className="breadcrumb-item1 ">
+                              <i className="fa fa-star-o text-white mx-2 "></i>
+                              Library
+                            </Breadcrumb.Item>
+                            <Breadcrumb.Item className="breadcrumb-item1 ">
+                              <i className="fa fa-star-o text-white mx-2 "></i>
+                              Data
+                            </Breadcrumb.Item>
+                          </Breadcrumb>
+                        </div>`}
                     </code>
                   </pre>
                 </Collapse>
