@@ -109,6 +109,32 @@ import TreeView from "../components/App/TreeView/TreeView";
 import Userlist from "../components/App/Userlist/Userlist";
 import Widgets from "../components/App/Widgets/Widgets";
 import TimeLine from "../components/App/TimeLine/TimeLine";
+import Accordians from "../components/Bootstrap/Accordians/Accordians";
+import BootstrapAlerts from "../components/Bootstrap/BootstrapAlerts/BootstrapAlerts";
+import AvatarRadius from "../components/Bootstrap/AvatarRadius/AvatarRadius";
+import AvatarSquare from "../components/Bootstrap/AvatarSquare/AvatarSquare";
+import AvatarRounded from "../components/Bootstrap/AvatarRounded/AvatarRounded";
+import BadgesPills from "../components/Bootstrap/BadgesPills/BadgesPills";
+import Breadcrumbs from "../components/Bootstrap/Breadcrumbs/Breadcrumbs";
+import Buttons from "../components/Bootstrap/Buttons/Buttons";
+import Carousels from "../components/Bootstrap/Carousels/Carousels";
+import Colors from "../components/Bootstrap/Colors/Colors";
+import DropDowns from "../components/Bootstrap/DropDowns/DropDowns";
+import MediaObject from "../components/Bootstrap/MediaObject/MediaObject";
+import Navigation from "../components/Bootstrap/Navigation/Navigation";
+import OffCanvas from "../components/Bootstrap/OffCanvas/OffCanvas";
+import Paginations from "../components/Bootstrap/Pagination/Pagination";
+import Panels from "../components/Bootstrap/Panels/Panels";
+import Progress from "../components/Bootstrap/Progress/Progress";
+import BoostrapTabs from "../components/Bootstrap/Tabs/Tabs";
+import Tags from "../components/Bootstrap/Tags/Tags";
+import Thumbnails from "../components/Bootstrap/Thumbnails/Thumbnails";
+import Toast from "../components/Bootstrap/Toast/Toast";
+import TooltipPopover from "../components/Bootstrap/TooltipPopover/TooltipPopover";
+import Typography from "../components/Bootstrap/Typography/Typography";
+import Ribbons from "../components/Bootstrap/Ribbons/Ribbons";
+import Modals from "../components/Bootstrap/Modal/Modal";
+import ListGroups from "../components/Bootstrap/ListGroup/ListGroup";
 
 const AllRoutes = () => {
     return (
@@ -154,6 +180,36 @@ const AllRoutes = () => {
                             <Route path={`/apps/treeview`} element={<TreeView />} />,
                             <Route path={`/apps/userlist`} element={<Userlist />} />,
                             <Route path={`/apps/widgets`} element={<Widgets />} />,
+                        </Route>
+
+                        {/* bootstrap */}
+                        <Route>
+                            <Route path={`/bootstrap/accordian`} element={<Accordians />} />,
+                            <Route path={`/bootstrap/bootstrapalerts`} element={<BootstrapAlerts />} />,
+                            <Route path={`/bootstrap/avatarradius`} element={<AvatarRadius />} />,
+                            <Route path={`/bootstrap/avatarsquare`} element={<AvatarSquare />} />,
+                            <Route path={`/bootstrap/avatarrounded`} element={<AvatarRounded />} />,
+                            <Route path={`/bootstrap/badgespills`} element={<BadgesPills />} />,
+                            <Route path={`/bootstrap/breadcrumbs`} element={<Breadcrumbs />} />,
+                            <Route path={`/bootstrap/buttons`} element={<Buttons />} />,
+                            <Route path={`/bootstrap/carousels`} element={<Carousels />} />,
+                            <Route path={`/bootstrap/colors`} element={<Colors />} />,
+                            <Route path={`/bootstrap/dropdowns`} element={<DropDowns />} />,
+                            <Route path={`/bootstrap/listgroups`} element={<ListGroups />} />,
+                            <Route path={`/bootstrap/mediaobject`} element={<MediaObject />} />,
+                            <Route path={`/bootstrap/modal`} element={<Modals />} />,
+                            <Route path={`/bootstrap/navigation`} element={<Navigation />} />,
+                            <Route path={`/bootstrap/offcanvas`} element={<OffCanvas />} />,
+                            <Route path={`/bootstrap/pagination`} element={<Paginations />} />,
+                            <Route path={`/bootstrap/panels`} element={<Panels />} />,
+                            <Route path={`/bootstrap/progress`} element={<Progress />} />,
+                            <Route path={`/bootstrap/tabs`} element={<BoostrapTabs />} />,
+                            <Route path={`/bootstrap/tags`} element={<Tags />} />,
+                            <Route path={`/bootstrap/thumbnails`} element={<Thumbnails />} />,
+                            <Route path={`/bootstrap/toast`} element={<Toast />} />,
+                            <Route path={`/bootstrap/tooltippopover`} element={<TooltipPopover />} />,
+                            <Route path={`/bootstrap/typography`} element={<Typography />} />,
+                            <Route path={`/bootstrap/ribbons`} element={<Ribbons />} />,
                         </Route>
 
                         {/* Charts */}
