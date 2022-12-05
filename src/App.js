@@ -1,8 +1,10 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
 import "./App.css";
+import BacktoTop from "./commonComponents/Backtotop/Backtotop";
 import Footer from "./commonComponents/Footer/Footer";
 import Header from "./commonComponents/Header/Header";
+import Rightside from "./commonComponents/Rightside/Rightside";
 import { Sidebar } from "./commonComponents/Sidebar/Sidebar";
 
 function App() {
@@ -35,6 +37,8 @@ function App() {
           </div>
           <Footer />
         </div>
+        <Rightside />
+        <BacktoTop />
       </div>
     </React.Fragment>
   );

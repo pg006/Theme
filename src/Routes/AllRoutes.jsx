@@ -135,6 +135,8 @@ import Typography from "../components/Bootstrap/Typography/Typography";
 import Ribbons from "../components/Bootstrap/Ribbons/Ribbons";
 import Modals from "../components/Bootstrap/Modal/Modal";
 import ListGroups from "../components/Bootstrap/ListGroup/ListGroup";
+import Landing from "../components/Landing";
+import Switcherapp from "../components/Switcherapp";
 
 const AllRoutes = () => {
     return (
@@ -321,6 +323,13 @@ const AllRoutes = () => {
 
                     <Route path={`/`} element={<CustomPage />}>
                         <Route path={`/pages/extension/underconstruction`} element={<UnderConstructionPage />} />
+                    </Route>
+
+                    <Route>
+                        <Route path={`/pages/switcher/switcherstyle1`} element={<Switcherapp />} />,
+                    </Route>
+                    <Route >
+                        <Route path={`/landingPage/landingPage`} element={<Landing />} />
                     </Route>
                     <Route path="*" element={<Error500 />} />
                 </Routes>

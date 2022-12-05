@@ -23256,13 +23256,13 @@ img {
 .landing-top-header::before {
     position: absolute;
     content: "";
-    left: -19%;
+    left: -20%;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     right: 0;
-    width: 35%;
-    height: 80%;
+    width: 30%;
+    height: 70%;
     overflow: hidden;
     background-image: url(../images/landing/bg.png);
 }
@@ -23635,10 +23635,10 @@ img {
     background-position: center;
     background-size: cover;
     content: "";
-    left: -19%;
+    left: -20%;
     right: 0;
     width: 35%;
-    height: 80%;
+    height: 65%;
     background-image: url(../images/landing/bg.png);
 }
 
@@ -24035,7 +24035,7 @@ img {
 }
 
 .landing-page .bg-primary-transparent {
-    background-color: rgba(108, 95, 252, 0.1) !important;
+    background-color: rgba(247, 183, 49, 0.1) !important;
 }
 
 @media (min-width: 1276px) {
@@ -24631,23 +24631,23 @@ img {
 }
 
 .dark-mode.landing-page {
-    background-color: #1a1a3c;
+    background-color: #254E58;
 }
 
 @media (min-width: 992px) {
     .dark-mode.landing-page .app-sidebar.horizontal-main.fixed-header {
         border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-        background-color: #1a1a3c !important;
+        background-color: #112D32 !important;
         box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.2);
     }
 }
 
 .dark-mode.landing-page .landing-top-header {
-    background-image: url(../images/landing/bg4-dark.png);
+    background-image: url(../images/landing/bg5-dark.png);
 }
 
 .dark-mode.landing-page .landing-top-header::before {
-    background-image: url(../images/landing/bg-dark.png);
+    background-image: url(../images/landing/bg7-dark.png);
 }
 
 .dark-mode.landing-page .logo-2 {
@@ -24683,7 +24683,7 @@ img {
 }
 
 .dark-mode.landing-page .bg-landing {
-    background-color: #2a2a4a;
+    background-color: #112D32;
 }
 
 .dark-mode.landing-page .card {
@@ -24691,13 +24691,13 @@ img {
 }
 
 .dark-mode.landing-page .demo-footer {
-    background-color: #2a2a4a;
+    background-color: #112D32;
 }
 
 .dark-mode.landing-page .demo-footer .btn-list .btn-icon {
     border: 1px solid rgba(0, 0, 0, 0.1);
     color: rgba(255, 255, 255, 0.7);
-    background-color: #1a1a3c;
+    background-color: #1E4149;
 }
 
 .dark-mode.landing-page .top-footer img {
@@ -24709,15 +24709,15 @@ img {
 }
 
 .dark-mode.landing-page .bg-image-landing {
-    background-image: url(../images/landing/bg4-dark.png);
+    background-image: url(../images/landing/bg5-dark.png);
 }
 
 .dark-mode.landing-page .bg-image-landing::before {
-    background-image: url(../images/landing/bg-dark.png);
+    background-image: url(../images/landing/bg7-dark.png);
 }
 
 .dark-mode.landing-page .bg-image-style {
-    background-image: url(../images/landing/bg3-dark.png);
+    background-image: url(../images/landing/bg6-dark.png);
 }
 
 .dark-mode.landing-page .card .card {
@@ -24740,7 +24740,7 @@ img {
 }
 
 .dark-mode.landing-page .pricing-card.card {
-    background-color: #1a1a3c;
+    background-color: #254E58;
 }
 
 .rtl.landing-page .main-features .bg-img {

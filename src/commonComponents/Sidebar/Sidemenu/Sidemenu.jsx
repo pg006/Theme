@@ -213,7 +213,7 @@ export const MENUITEMS = [
                             { path: `${process.env.PUBLIC_URL}/pages/forms/forminputspinner`, type: 'link', active: false, selected: false, title: 'Form-input-spinner' },
                         ]
                     },
-                    // { path: `${process.env.PUBLIC_URL}/pages/switcher/switcherstyle1`, type: 'link', active: false, selected: false, title: 'Switcher' },
+                    { path: `${process.env.PUBLIC_URL}/pages/switcher/switcherstyle1`, type: 'link', active: false, selected: false, title: 'Switcher' },
                     
                 ]
             },
