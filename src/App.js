@@ -6,6 +6,7 @@ import Footer from "./commonComponents/Footer/Footer";
 import Header from "./commonComponents/Header/Header";
 import Rightside from "./commonComponents/Rightside/Rightside";
 import { Sidebar } from "./commonComponents/Sidebar/Sidebar";
+import Switcher from "./commonComponents/Switcher/Switcher";
 
 function App() {
   document
@@ -17,6 +18,7 @@ function App() {
   return (
     <React.Fragment>
       <div className="horizontalMenucontainer">
+        <Switcher />
         <div className="page">
           <div className="page-main">
             <Header />
