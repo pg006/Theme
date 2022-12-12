@@ -423,12 +423,15 @@ a.text-primary:focus {
 
 .login-img {
     position: relative;
-    background-image: url(../images/media/bg2.jpg);
+    background-image: url(../images/media/bg10.jpg);
 }
 
 .login-img::before {
     content: "";
-    background: linear-gradient(to right, var(--primary06) 0%, rgba(5, 195, 251, 0.568627451) 100%);
+    /* background: linear-gradient(to right, var(--primary06) 0%, rgba(5, 195, 251, 0.568627451) 100%); */
+    /* background-image: linear-gradient(to right, rgba(31, 89, 91, 0.9) 0%, rgba(5, 101, 31, 0.57) 100%); */
+    background-image: linear-gradient(to right, rgb(49 87 88 / 90%) 0%, rgb(8 153 155 / 89%) 100%);
+    height: 100%;
     height: 100%;
     width: 100%;
     position: absolute;

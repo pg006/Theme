@@ -164,63 +164,8 @@ const Header = () => {
                 alt="logo"
               />
             </Link>
-            <div className="main-header-center ms-3 d-none d-lg-block">
-              <FormControl
-                onChange={(ele) => {
-                  myfunction(ele.target.value);
-                  setInputValue(ele.target.value);
-                }}
-                onClick={() => {
-                  setShow1(true);
-                }}
-                placeholder="Search for results..."
-                type="search"
-              />
-              <button className="btn px-0 pt-2">
-                <i className="fe fe-search" aria-hidden="false"></i>
-              </button>
-              {show1 ? (
-                <div className="card search-result p-absolute w-100 card border mt-1">
-                  <div className="card-header">
-                    <h4 className="card-title me-2 text-break">
-                      Search result of "{InputValue}"{" "}
-                    </h4>
-                  </div>
-                  <ul className="card-body list-group">
-                    {show2 ? (
-                      NavData.map((e) => (
-                        <li key={Math.random()}>
-                          <Link className="list-group-item" to={`${e.path}/`}>
-                            {e.title}
-                          </Link>
-                        </li>
-                      ))
-                    ) : (
-                      <b className={`${searchcolor} list-group-item`}>
-                        {searchval}
-                      </b>
-                    )}
-                  </ul>
-                </div>
-              ) : (
-                ""
-              )}
-            </div>
 
             <Navbar className="d-flex order-lg-2 ms-auto header-right-icons">
-              <Dropdown className="dropdown d-none">
-                <Link to="#" className="nav-link icon ">
-                  <i className="fe fe-search"></i>
-                </Link>
-                <Dropdown.Menu className="header-search dropdown-menu-start ">
-                  <InputGroup className="input-group w-100 p-2">
-                    <FormControl type="text" placeholder="Search...." />
-                    <InputGroup.Text className="btn btn-primary">
-                      <i className="fe fe-search" aria-hidden="true"></i>
-                    </InputGroup.Text>
-                  </InputGroup>
-                </Dropdown.Menu>
-              </Dropdown>
               <Navbar.Toggle className="d-lg-none ms-auto header2">
                 <span className="navbar-toggler-icon fe fe-more-vertical"></span>
               </Navbar.Toggle>
@@ -228,23 +173,6 @@ const Header = () => {
               <div className="responsive-navbar p-0">
                 <Navbar.Collapse className="" id="navbarSupportedContent-4">
                   <div className="d-flex order-lg-2">
-                    <Dropdown className="d-lg-none d-flex">
-                      <Dropdown.Toggle
-                        href="#"
-                        className="nav-link icon no-caret"
-                      >
-                        <i className="fe fe-search"></i>
-                      </Dropdown.Toggle>
-                      <Dropdown.Menu className="header-search dropdown-menu-start">
-                        <InputGroup className="w-100 p-2">
-                          <FormControl type="text" placeholder="Search...." />
-                          <InputGroup.Text>
-                            <i className="fa fa-search" aria-hidden="true"></i>
-                          </InputGroup.Text>
-                        </InputGroup>
-                      </Dropdown.Menu>
-                    </Dropdown>
-
                     {/* Country Select Modal */}
 
                     <div className="d-flex country">

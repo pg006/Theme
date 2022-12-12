@@ -1,9 +1,13 @@
 import React from "react";
 import PageHeader from "../../../commonComponents/PageHeader/PageHeader";
-import { Link } from 'react-router-dom';
-import { Card, Col, Row, Table } from 'react-bootstrap';
+import { Link } from "react-router-dom";
+import { Card, Col, Row, Table } from "react-bootstrap";
 import "./FileDetails.scss";
-import { LightGallery, RecentFolder } from "../../../Data/DataFileManger/DataFIleDetails";
+import {
+  LightGallery,
+  RecentFolder,
+} from "../../../Data/DataFileManger/DataFIleDetails";
+import TopImg from "../../../assets/images/FileImages/TopImg.jpg";
 
 const FileDetails = () => {
   return (
@@ -14,30 +18,16 @@ const FileDetails = () => {
           active="File Manager Details"
           items={["Componets"]}
         />
-        {/* <!-- Row --> */}
-        <Row className="row-sm">
-          <Col xl={8} lg={12} md={12}>
+        {/* <<--- Row --->>> */}
+        <Row>
+          <Col xl={7} lg={12} md={12}>
             <Card className="custom-card overflow-hidden">
               <Card.Body className="p-3">
                 <Link to="#">
-                  <img
-                    src={require("../../../assets/images/media/files/img3.jpg")}
-                    alt="img"
-                    className="br-5 w-100"
-                  />
+                  <img src={TopImg} alt="img" className="br-5 w-100" />
                 </Link>
               </Card.Body>
             </Card>
-            <Card className="custom-card">
-              <Card.Header className="border-bottom-0">
-                Related Files
-              </Card.Header>
-              <Card.Body className="pt-0 h-100">
-                <RecentFolder />
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col xl={4} lg={12} md={12}>
             <Card className="custom-card">
               <Card.Body>
                 <h5 className="mb-3">File details</h5>
@@ -105,6 +95,16 @@ const FileDetails = () => {
                 </div>
               </Card.Body>
             </Card>
+          </Col>
+          <Col xl={5} lg={12} md={12}>
+            <Card className="custom-card">
+              <Card.Header className="border-bottom-0">
+                Related Files
+              </Card.Header>
+              <Card.Body className="pt-0 h-100">
+                <RecentFolder />
+              </Card.Body>
+            </Card>
             <Card className="custom-card">
               <Card.Body className="pb-0">
                 <h5 className="mb-3">Recent Files</h5>
@@ -113,7 +113,13 @@ const FileDetails = () => {
             </Card>
           </Col>
         </Row>
-        {/* <!-- End Row--> */}
+        {/* <<--- Row End --->>> */}
+        {/* <<--- Row 2--->>> */}
+
+        <Row>
+          <Col xl={7} lg={12} md={12}></Col>
+        </Row>
+        {/* <<--- Row 2 End --->>> */}
       </div>
     </React.Fragment>
   );

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import "./FullCalender.scss";
 import { Col, Row, Card, Dropdown } from "react-bootstrap";
 import FullCalendar from "@fullcalendar/react";
@@ -15,7 +15,6 @@ import "@fullcalendar/list/main.css";
 import PageHeader from "../../../commonComponents/PageHeader/PageHeader";
 
 const FullCalender = () => {
-  const [calendarWeekends, setCalendarWeekends] = useState(true);
 
   const events = [
     {
@@ -74,20 +73,18 @@ const FullCalender = () => {
 
   useEffect(() => {
     let draggableEl = document.getElementById("external-events");
-    console.log(draggableEl,'draggableEldraggableEl');
     new Draggable(draggableEl, {
       itemSelector: ".fc-event",
       eventData: function (eventEl) {
-        console.log(eventEl,"eventEleventEleventEl");
         let title = eventEl.getAttribute("title");
-        let id = eventEl.getAttribute("datatype");
+        let id = eventEl.getAttribute("data");
         return {
-          title,
-          id,
+          title: title,
+          id: id,
         };
       },
     });
-  }, [])
+  }, []);
 
   const eventClick = (eventClick) => {
     Alert.fire({
@@ -307,7 +304,7 @@ const FullCalender = () => {
                     droppable={true}
                     plugins={[dayGridPlugin, timeGridPlugin, interactionPlugin]}
                     events={calendarEvents}
-                    eventClick={() => eventClick()}
+                    eventClick={eventClick}
                     selectable={true}
                   />
                 </Col>

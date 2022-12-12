@@ -5,6 +5,20 @@ import "./FileManager.scss";
 import { DataFileManager } from "../../../Data/DataFileManger/DataFileManager";
 import PageHeader from "../../../commonComponents/PageHeader/PageHeader";
 
+import Folder from '../../../assets/images/FileImages/Folder.png'
+import PDF from '../../../assets/images/FileImages/SmallPngs/PDF.png'
+import Excel from '../../../assets/images/FileImages/SmallPngs/Excel.png'
+import PPT from '../../../assets/images/FileImages/SmallPngs/PPT.png'
+import Car from '../../../assets/images/FileImages/File7.jpg'
+import F8 from '../../../assets/images/FileImages/File8.jpg'
+import F9 from '../../../assets/images/FileImages/File9.jpg'
+import F10 from '../../../assets/images/FileImages/File10.jpg'
+import F11 from '../../../assets/images/FileImages/File11.jpg'
+import F12 from '../../../assets/images/FileImages/File12.jpg'
+
+
+
+
 const FileManager = () => {
   return (
     <React.Fragment>
@@ -34,13 +48,13 @@ const FileManager = () => {
                       </Link>
                     </div>
                     <div className="text-end ms-auto mt-3">
-                      <span className="fs-11  text-dark">20 MB</span>
+                      <span className="fs-11  text-dark">50 MB</span>
                     </div>
                   </div>
                   <ProgressBar
                     className="progress-xs mb-3 ms-2"
                     variant="success"
-                    now={30}
+                    now={50}
                   />
                   <div className="d-flex">
                     <div>
@@ -53,13 +67,13 @@ const FileManager = () => {
                       </Link>
                     </div>
                     <div className="text-end ms-auto mt-3">
-                      <span className="fs-11  text-dark">32.5 MB</span>
+                      <span className="fs-11  text-dark">90 MB</span>
                     </div>
                   </div>
                   <ProgressBar
                     className="progress-xs mb-3 ms-2"
                     variant="secondary"
-                    now={40}
+                    now={90}
                   />
                   <div className="d-flex">
                     <div>
@@ -67,18 +81,18 @@ const FileManager = () => {
                         to="#"
                         className="list-group-item  d-flex align-items-center px-0"
                       >
-                        <i className="fe fe-file-text fs-18 me-2 text-primary p-2"></i>{" "}
+                        <i className="fe fe-file-text fs-18 me-2 text-primary p-2"></i>
                         Docs
                       </Link>
                     </div>
                     <div className="text-end ms-auto mt-3">
-                      <span className="fs-11  text-dark">14.2 MB</span>
+                      <span className="fs-11  text-dark">10 MB</span>
                     </div>
                   </div>
                   <ProgressBar
                     className="progress-xs mb-3 ms-2"
                     variant="primary"
-                    now={25}
+                    now={10}
                   />
                   <div className="d-flex">
                     <div>
@@ -86,12 +100,12 @@ const FileManager = () => {
                         to="#"
                         className="list-group-item  d-flex align-items-center px-0"
                       >
-                        <i className="fe fe-music fs-18 me-2 text-warning p-2"></i>{" "}
+                        <i className="fe fe-music fs-18 me-2 text-warning p-2"></i>
                         Music
                       </Link>
                     </div>
                     <div className="text-end ms-auto mt-3">
-                      <span className="fs-11  text-dark">13 MB</span>
+                      <span className="fs-11  text-dark">30 MB</span>
                     </div>
                   </div>
                   <ProgressBar
@@ -105,18 +119,18 @@ const FileManager = () => {
                         to="#"
                         className="list-group-item  d-flex align-items-center px-0"
                       >
-                        <i className="fe fe-download fs-18 me-2 text-info p-2"></i>{" "}
+                        <i className="fe fe-download fs-18 me-2 text-info p-2"></i>
                         Downloads
                       </Link>
                     </div>
                     <div className="text-end ms-auto mt-3">
-                      <span className="fs-11  text-dark">19.3 MB</span>
+                      <span className="fs-11  text-dark">70 MB</span>
                     </div>
                   </div>
                   <ProgressBar
                     className="progress-xs mb-3 ms-2"
                     variant="info"
-                    now={40}
+                    now={70}
                   />
                   <div className="d-flex">
                     <div>
@@ -124,18 +138,18 @@ const FileManager = () => {
                         to="#"
                         className="list-group-item  d-flex align-items-center px-0"
                       >
-                        <i className="fe fe-grid fs-18 me-2 text-danger p-2"></i>{" "}
+                        <i className="fe fe-grid fs-18 me-2 text-danger p-2"></i>
                         More
                       </Link>
                     </div>
                     <div className="text-end ms-auto mt-3">
-                      <span className="fs-11  text-dark">23 MB</span>
+                      <span className="fs-11  text-dark">5 MB</span>
                     </div>
                   </div>
                   <ProgressBar
                     className="progress-xs mb-3 ms-2"
                     variant="danger"
-                    now={45}
+                    now={5}
                   />
                 </ListGroup>
               </Card.Body>
@@ -213,8 +227,8 @@ const FileManager = () => {
                 <div className="d-flex">
                   <Link to="#" className="file-manager-image">
                     <img
-                      src={require("../../../assets/images/media/folder1.png")}
-                      alt="img"
+                      src={Folder}
+                      alt="Folder"
                     />
                   </Link>
                   <h3 className="ms-3 mt-5 fw-semibold">467 Files</h3>
@@ -240,7 +254,7 @@ const FileManager = () => {
                     <div className="d-flex">
                       <div>
                         <h6 className="mt-2">
-                          <i className="fe fe-circle text-success fs-12"></i>{" "}
+                          <i className="fe fe-circle text-success fs-12"></i>
                           Total Storage
                         </h6>
                         <span className="text-muted">128 GB</span>
@@ -276,7 +290,7 @@ const FileManager = () => {
                           viewBox="0 0 24 24"
                         >
                           <path
-                            fill="#645acf"
+                            fill="#05c3fb"
                             d="M9.3 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4H10L12 6H20C21.1 6 22 6.9 22 8V14.6C20.6 13.6 18.9 13 17 13C13.5 13 10.4 15.1 9.1 18.3L8.8 19L9.1 19.7C9.2 19.8 9.2 19.9 9.3 20M23 19C22.1 21.3 19.7 23 17 23S11.9 21.3 11 19C11.9 16.7 14.3 15 17 15S22.1 16.7 23 19M19.5 19C19.5 17.6 18.4 16.5 17 16.5S14.5 17.6 14.5 19 15.6 21.5 17 21.5 19.5 20.4 19.5 19M17 18C16.4 18 16 18.4 16 19S16.4 20 17 20 18 19.6 18 19 17.6 18 17 18"
                           />
                         </svg>
@@ -305,7 +319,7 @@ const FileManager = () => {
                   <Card.Footer className="border-top-0">
                     <div className="d-flex">
                       <div>
-                        <h5 className="text-primary">Videos</h5>
+                        <h5 className="text-secondary">Videos</h5>
                         <p className="text-muted fs-13 mb-0">35 Files</p>
                       </div>
                       <div className="ms-auto mt-4">
@@ -693,35 +707,10 @@ const FileManager = () => {
                 <Card className="overflow-hidden">
                   <Link
                     to={`${process.env.PUBLIC_URL}/filemanager/filedetails`}
-                    className="mx-auto my-3"
                   >
                     <img
-                      src={require("../../../assets/images/media/files/pdf.png")}
-                      alt="img"
-                    />
-                  </Link>
-                  <Card.Footer>
-                    <div className="d-flex">
-                      <div className="">
-                        <h5 className="mb-0 fw-semibold text-break">
-                          file.pdf
-                        </h5>
-                      </div>
-                      <div className="ms-auto my-auto">
-                        <span className="text-muted mb-0">32 KB</span>
-                      </div>
-                    </div>
-                  </Card.Footer>
-                </Card>
-              </Col>
-              <Col xl={4} xxl={3} lg={6} md={6} sm={6}>
-                <Card className="overflow-hidden">
-                  <Link
-                    to={`${process.env.PUBLIC_URL}/filemanager/filedetails`}
-                  >
-                    <img
-                      src={require("../../../assets/images/media/files/07.jpg")}
-                      alt="img"
+                      src={F8}
+                      alt="Img"
                       className="w-100 file-manager-list"
                     />
                   </Link>
@@ -729,7 +718,7 @@ const FileManager = () => {
                     <div className="d-flex">
                       <div className="">
                         <h5 className="mb-0 fw-semibold text-break">
-                          image1.jpg
+                          Sunset.jpg
                         </h5>
                       </div>
                       <div className="ms-auto my-auto">
@@ -746,15 +735,15 @@ const FileManager = () => {
                     className="mx-auto my-3"
                   >
                     <img
-                      src={require("../../../assets/images/media/files/excel.png")}
-                      alt="img"
+                      src={Excel}
+                      alt="Excel"
                     />
                   </Link>
                   <Card.Footer>
                     <div className="d-flex">
                       <div className="">
                         <h5 className="mb-0 fw-semibold text-break">
-                          excel.xls
+                          Sheet.xls
                         </h5>
                       </div>
                       <div className="ms-auto my-auto">
@@ -768,9 +757,34 @@ const FileManager = () => {
                 <Card className="overflow-hidden">
                   <Link
                     to={`${process.env.PUBLIC_URL}/filemanager/filedetails`}
+                    className="mx-auto my-3"
                   >
                     <img
-                      src={require("../../../assets/images/media/files/06.jpg")}
+                      src={PDF}
+                      alt="PDF"
+                    />
+                  </Link>
+                  <Card.Footer>
+                    <div className="d-flex">
+                      <div className="">
+                        <h5 className="mb-0 fw-semibold text-break">
+                          Theme.pdf
+                        </h5>
+                      </div>
+                      <div className="ms-auto my-auto">
+                        <span className="text-muted mb-0">32 KB</span>
+                      </div>
+                    </div>
+                  </Card.Footer>
+                </Card>
+              </Col>
+              <Col xl={4} xxl={3} lg={6} md={6} sm={6}>
+                <Card className="overflow-hidden">
+                  <Link
+                    to={`${process.env.PUBLIC_URL}/filemanager/filedetails`}
+                  >
+                    <img
+                      src={F9}
                       alt="img"
                       className="w-100 file-manager-list"
                     />
@@ -779,7 +793,32 @@ const FileManager = () => {
                     <div className="d-flex">
                       <div className="">
                         <h5 className="mb-0 fw-semibold text-break">
-                          nature.jpg
+                          City.jpg
+                        </h5>
+                      </div>
+                      <div className="ms-auto my-auto">
+                        <span className="text-muted mb-0">320 KB</span>
+                      </div>
+                    </div>
+                  </Card.Footer>
+                </Card>
+              </Col>
+              <Col xl={4} xxl={3} lg={6} md={6} sm={6}>
+                <Card className="overflow-hidden">
+                  <Link
+                    to={`${process.env.PUBLIC_URL}/filemanager/filedetails`}
+                  >
+                    <img
+                      src={Car}
+                      alt="car"
+                      className="w-100 file-manager-list"
+                    />
+                  </Link>
+                  <Card.Footer>
+                    <div className="d-flex">
+                      <div className="">
+                        <h5 className="mb-0 fw-semibold text-break">
+                          Car.jpg
                         </h5>
                       </div>
                       <div className="ms-auto my-auto">
@@ -796,7 +835,7 @@ const FileManager = () => {
                     className="mx-auto my-3"
                   >
                     <img
-                      src={require("../../../assets/images/media/files/ppt1.png")}
+                      src={PPT}
                       alt="img"
                     />
                   </Link>
@@ -804,7 +843,7 @@ const FileManager = () => {
                     <div className="d-flex">
                       <div className="">
                         <h5 className="mb-0 fw-semibold text-break">
-                          demo.ppt
+                          Demo.ppt
                         </h5>
                       </div>
                       <div className="ms-auto my-auto">
@@ -868,31 +907,6 @@ const FileManager = () => {
                 <Card className="overflow-hidden">
                   <Link
                     to={`${process.env.PUBLIC_URL}/filemanager/filedetails`}
-                  >
-                    <img
-                      src={require("../../../assets/images/media/files/01.jpg")}
-                      alt="img"
-                      className="w-100 file-manager-list"
-                    />
-                  </Link>
-                  <Card.Footer>
-                    <div className="d-flex">
-                      <div className="">
-                        <h5 className="mb-0 fw-semibold text-break">
-                          mountain.jpg
-                        </h5>
-                      </div>
-                      <div className="ms-auto my-auto">
-                        <span className="text-muted mb-0">320 KB</span>
-                      </div>
-                    </div>
-                  </Card.Footer>
-                </Card>
-              </Col>
-              <Col xl={4} xxl={3} lg={6} md={6} sm={6}>
-                <Card className="overflow-hidden">
-                  <Link
-                    to={`${process.env.PUBLIC_URL}/filemanager/filedetails`}
                     className="mx-auto my-3"
                   >
                     <img
@@ -904,7 +918,7 @@ const FileManager = () => {
                     <div className="d-flex">
                       <div className="">
                         <h5 className="mb-0 fw-semibold text-break">
-                          file.pdf
+                          Theme.pdf
                         </h5>
                       </div>
                       <div className="ms-auto my-auto">
@@ -921,19 +935,17 @@ const FileManager = () => {
                     className="mx-auto my-3"
                   >
                     <img
-                      src={require("../../../assets/images/media/files/excel.png")}
-                      alt="img"
+                      src={require("../../../assets/images/media/files/zip1.png")}
+                      alt="zip"
                     />
                   </Link>
                   <Card.Footer>
                     <div className="d-flex">
                       <div className="">
-                        <h5 className="mb-0 fw-semibold text-break">
-                          excel.xls
-                        </h5>
+                        <h5 className="mb-0 fw-semibold text-break">exe.zip</h5>
                       </div>
                       <div className="ms-auto my-auto">
-                        <span className="text-muted mb-0">34 KB</span>
+                        <span className="text-muted mb-0">320 KB</span>
                       </div>
                     </div>
                   </Card.Footer>
@@ -945,7 +957,7 @@ const FileManager = () => {
                     to={`${process.env.PUBLIC_URL}/filemanager/filedetails`}
                   >
                     <img
-                      src={require("../../../assets/images/media/files/02.jpg")}
+                      src={F10}
                       alt="img"
                       className="w-100 file-manager-list"
                     />
@@ -954,7 +966,7 @@ const FileManager = () => {
                     <div className="d-flex">
                       <div className="d-flex">
                         <h5 className="mb-0 fw-semibold text-break">
-                          image1.jpg
+                          Books.jpg
                         </h5>
                       </div>
                       <div className="ms-auto my-auto">
@@ -971,7 +983,32 @@ const FileManager = () => {
                     className="mx-auto my-3"
                   >
                     <img
-                      src={require("../../../assets/images/media/files/ppt1.png")}
+                      src={Excel}
+                      alt="img"
+                    />
+                  </Link>
+                  <Card.Footer>
+                    <div className="d-flex">
+                      <div className="">
+                        <h5 className="mb-0 fw-semibold text-break">
+                          New_Sheet.xls
+                        </h5>
+                      </div>
+                      <div className="ms-auto my-auto">
+                        <span className="text-muted mb-0">34 KB</span>
+                      </div>
+                    </div>
+                  </Card.Footer>
+                </Card>
+              </Col>
+              <Col xl={4} xxl={3} lg={6} md={6} sm={6}>
+                <Card className="overflow-hidden">
+                  <Link
+                    to={`${process.env.PUBLIC_URL}/filemanager/filedetails`}
+                    className="mx-auto my-3"
+                  >
+                    <img
+                      src={PPT}
                       alt="img"
                     />
                   </Link>
@@ -995,7 +1032,7 @@ const FileManager = () => {
                     to={`${process.env.PUBLIC_URL}/filemanager/filedetails`}
                   >
                     <img
-                      src={require("../../../assets/images/media/files/04.jpg")}
+                      src={F11}
                       alt="img"
                       className="w-100 file-manager-list"
                     />
@@ -1004,7 +1041,7 @@ const FileManager = () => {
                     <div className="d-flex">
                       <div className="">
                         <h5 className="mb-0 fw-semibold text-break">
-                          image2.jpg
+                          Nature.jpg
                         </h5>
                       </div>
                       <div className="ms-auto my-auto">
@@ -1020,7 +1057,7 @@ const FileManager = () => {
                     to={`${process.env.PUBLIC_URL}/filemanager/filedetails`}
                   >
                     <img
-                      src={require("../../../assets/images/media/files/05.jpg")}
+                      src={F12}
                       alt="img"
                       className="w-100 file-manager-list"
                     />
@@ -1029,34 +1066,11 @@ const FileManager = () => {
                     <div className="d-flex">
                       <div className="">
                         <h5 className="mb-0 fw-semibold text-break">
-                          nature.jpg
+                          Room.jpg
                         </h5>
                       </div>
                       <div className="ms-auto my-auto">
                         <span className="text-muted mb-0">66 KB</span>
-                      </div>
-                    </div>
-                  </Card.Footer>
-                </Card>
-              </Col>
-              <Col xl={4} xxl={3} lg={6} md={6} sm={6}>
-                <Card className="overflow-hidden">
-                  <Link
-                    to={`${process.env.PUBLIC_URL}/filemanager/filedetails`}
-                    className="mx-auto my-3"
-                  >
-                    <img
-                      src={require("../../../assets/images/media/files/zip1.png")}
-                      alt="img"
-                    />
-                  </Link>
-                  <Card.Footer>
-                    <div className="d-flex">
-                      <div className="">
-                        <h5 className="mb-0 fw-semibold text-break">exe.zip</h5>
-                      </div>
-                      <div className="ms-auto my-auto">
-                        <span className="text-muted mb-0">320 KB</span>
                       </div>
                     </div>
                   </Card.Footer>

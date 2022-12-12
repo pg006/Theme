@@ -1,8 +1,19 @@
 import React from "react";
 import PageHeader from "../../../commonComponents/PageHeader/PageHeader";
-import { Card, Row, Col, ButtonGroup, Button } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Card, Row, Col, ButtonGroup, Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import "./FileAttachments.scss";
+import F1 from "../../../assets/images/FileImages/File1.jpg";
+import F2 from "../../../assets/images/FileImages/File2.jpg";
+import F3 from "../../../assets/images/FileImages/File3.jpg";
+import F4 from "../../../assets/images/FileImages/File4.jpg";
+import F5 from "../../../assets/images/FileImages/File5.jpg";
+import F6 from "../../../assets/images/FileImages/File6.jpg";
+import Doc from "../../../assets/images/FileImages/Document.png";
+import XLS from "../../../assets/images/FileImages/XLS.png";
+import PDF from "../../../assets/images/FileImages/PDF.png";
+import IMG from "../../../assets/images/FileImages/IMG.png";
+
 
 const FileAttachments = () => {
   return (
@@ -34,7 +45,7 @@ const FileAttachments = () => {
                       className="text-white"
                       type="button"
                     >
-                      <i className="mdi mdi-file-image me-2"></i> Image_file.jpg{" "}
+                      <i className="mdi mdi-file-image me-2"></i> Image_file.jpg
                     </Button>
                     <Button
                       variant="primary"
@@ -146,7 +157,7 @@ const FileAttachments = () => {
                     aria-label="Basic example"
                   >
                     <Button variant="primary" className="btn-pill text-white">
-                      <i className="mdi mdi-file-image me-2"></i> Image_file.jpg{" "}
+                      <i className="mdi mdi-file-image me-2"></i> Image_file.jpg
                     </Button>
                     <Button
                       variant="primary"
@@ -257,8 +268,8 @@ const FileAttachments = () => {
                     role="group"
                     aria-label="Basic example"
                   >
-                    <Button variant="outline-primary" className="">
-                      <i className="mdi mdi-file-image me-2"></i> Image_file.jpg{" "}
+                    <Button variant="outline-primary">
+                      <i className="mdi mdi-file-image me-2"></i> Image_file.jpg
                     </Button>
                     <Button
                       variant="outline-primary"
@@ -274,7 +285,7 @@ const FileAttachments = () => {
                     role="group"
                     aria-label="Basic example"
                   >
-                    <Button variant="outline-secondary" className="">
+                    <Button variant="outline-secondary">
                       <i className="mdi mdi-file-word me-2"></i> Word_file.doc
                     </Button>
                     <Button
@@ -291,7 +302,7 @@ const FileAttachments = () => {
                     role="group"
                     aria-label="Basic example"
                   >
-                    <Button variant="outline-success" className="">
+                    <Button variant="outline-success">
                       <i className="mdi mdi-file-excel me-2"></i> Excel_file.xls
                     </Button>
                     <Button
@@ -308,7 +319,7 @@ const FileAttachments = () => {
                     role="group"
                     aria-label="Basic example"
                   >
-                    <Button variant="outline-warning" className="">
+                    <Button variant="outline-warning">
                       <i className="mdi mdi-file-pdf me-2"></i> pdf_file.pdf
                     </Button>
                     <Button
@@ -325,7 +336,7 @@ const FileAttachments = () => {
                     role="group"
                     aria-label="Basic example"
                   >
-                    <Button variant="outline-danger" className="">
+                    <Button variant="outline-danger">
                       <i className="mdi mdi-file-video me-2"></i> Video_file.mp4
                     </Button>
                     <Button
@@ -342,7 +353,7 @@ const FileAttachments = () => {
                     role="group"
                     aria-label="Basic example"
                   >
-                    <Button variant="outline-info" className="">
+                    <Button variant="outline-info">
                       <i className="mdi mdi-file-music me-2"></i> Audio_file.mp3
                     </Button>
                     <Button
@@ -370,7 +381,7 @@ const FileAttachments = () => {
                     aria-label="Basic example"
                   >
                     <Button variant="outline-primary" className="btn-pill">
-                      <i className="mdi mdi-file-image me-2"></i> Image_file.jpg{" "}
+                      <i className="mdi mdi-file-image me-2"></i> Image_file.jpg
                     </Button>
                     <Button
                       variant="outline-primary"
@@ -483,8 +494,8 @@ const FileAttachments = () => {
                     role="group"
                     aria-label="Basic example"
                   >
-                    <Button variant="primary-light" className="">
-                      <i className="mdi mdi-file-image me-2"></i> Image_file.jpg{" "}
+                    <Button variant="primary-light">
+                      <i className="mdi mdi-file-image me-2"></i> Image_file.jpg
                     </Button>
                     <Button
                       variant="primary-light"
@@ -500,7 +511,7 @@ const FileAttachments = () => {
                     role="group"
                     aria-label="Basic example"
                   >
-                    <Button variant="secondary-light" className="">
+                    <Button variant="secondary-light">
                       <i className="mdi mdi-file-word me-2"></i> Word_file.doc
                     </Button>
                     <Button
@@ -517,7 +528,7 @@ const FileAttachments = () => {
                     role="group"
                     aria-label="Basic example"
                   >
-                    <Button variant="success-light" className="">
+                    <Button variant="success-light">
                       <i className="mdi mdi-file-excel me-2"></i> Excel_file.xls
                     </Button>
                     <Button
@@ -534,7 +545,7 @@ const FileAttachments = () => {
                     role="group"
                     aria-label="Basic example"
                   >
-                    <Button variant="warning-light" className="">
+                    <Button variant="warning-light">
                       <i className="mdi mdi-file-pdf me-2"></i> pdf_file.pdf
                     </Button>
                     <Button
@@ -551,7 +562,7 @@ const FileAttachments = () => {
                     role="group"
                     aria-label="Basic example"
                   >
-                    <Button variant="danger-light" className="">
+                    <Button variant="danger-light">
                       <i className="mdi mdi-file-video me-2"></i> Video_file.mp4
                     </Button>
                     <Button
@@ -568,7 +579,7 @@ const FileAttachments = () => {
                     role="group"
                     aria-label="Basic example"
                   >
-                    <Button variant="info-light" className="">
+                    <Button variant="info-light">
                       <i className="mdi mdi-file-music me-2"></i> Audio_file.mp3
                     </Button>
                     <Button
@@ -598,7 +609,7 @@ const FileAttachments = () => {
                     aria-label="Basic example"
                   >
                     <Button variant="primary-light" className="btn-pill">
-                      <i className="mdi mdi-file-image me-2"></i> Image_file.jpg{" "}
+                      <i className="mdi mdi-file-image me-2"></i> Image_file.jpg
                     </Button>
                     <Button
                       variant="primary-light"
@@ -706,7 +717,7 @@ const FileAttachments = () => {
               </Card.Header>
               <Card.Body className="p-4 p-sm-5">
                 <p>
-                  Square File_Attachment with{" "}
+                  Square File_Attachment with
                   <code className="highlighter-rouge">&lt;Link&gt;</code> tag.
                 </p>
                 <div className="tags">
@@ -733,7 +744,7 @@ const FileAttachments = () => {
                     aria-label="Basic example"
                   >
                     <Link to="#" className="btn btn-outline-secondary">
-                      <i className="mdi mdi-file-image me-2"></i> Image_file.jpg{" "}
+                      <i className="mdi mdi-file-image me-2"></i> Image_file.jpg
                     </Link>
                     <Link
                       to="#"
@@ -750,7 +761,7 @@ const FileAttachments = () => {
                     aria-label="Basic example"
                   >
                     <Link to="#" className="btn btn-success-light">
-                      <i className="mdi mdi-file-image me-2"></i> Image_file.jpg{" "}
+                      <i className="mdi mdi-file-image me-2"></i> Image_file.jpg
                     </Link>
                     <Link
                       to="#"
@@ -773,7 +784,7 @@ const FileAttachments = () => {
               </Card.Header>
               <Card.Body className="p-4 p-sm-5">
                 <p>
-                  Rounded File_Attachment with{" "}
+                  Rounded File_Attachment with
                   <code className="highlighter-rouge">&lt;Link&gt;</code> tag.
                 </p>
                 <div className="tags">
@@ -800,7 +811,7 @@ const FileAttachments = () => {
                     aria-label="Basic example"
                   >
                     <Link to="#" className="btn btn-pill btn-outline-warning">
-                      <i className="mdi mdi-file-image me-2"></i> Image_file.jpg{" "}
+                      <i className="mdi mdi-file-image me-2"></i> Image_file.jpg
                     </Link>
                     <Link
                       to="#"
@@ -817,7 +828,7 @@ const FileAttachments = () => {
                     aria-label="Basic example"
                   >
                     <Link to="#" className="btn btn-pill btn-danger-light">
-                      <i className="mdi mdi-file-image me-2"></i> Image_file.jpg{" "}
+                      <i className="mdi mdi-file-image me-2"></i> Image_file.jpg
                     </Link>
                     <Link
                       to="#"
@@ -878,7 +889,7 @@ const FileAttachments = () => {
                     role="group"
                     aria-label="Basic example"
                   >
-                    <Button variant="pink" size="lg" className="">
+                    <Button variant="pink" size="lg">
                       <i className="mdi mdi-file-pdf fs-20 me-2"></i>AMN0012.pdf
                     </Button>
                     <Button
@@ -970,7 +981,7 @@ const FileAttachments = () => {
               </Card.Header>
               <Card.Body className="p-4 p-sm-5">
                 <p>
-                  Square File_Attachment Sizes with{" "}
+                  Square File_Attachment Sizes with
                   <code className="highlighter-rouge">&lt;Link&gt;</code> tag.
                 </p>
                 <div className="tags">
@@ -1037,7 +1048,7 @@ const FileAttachments = () => {
               </Card.Header>
               <Card.Body className="p-4 p-sm-5">
                 <p>
-                  Rounded File_Attachment Sizes with{" "}
+                  Rounded File_Attachment Sizes with
                   <code className="highlighter-rouge">&lt;Link&gt;</code> tag.
                 </p>
                 <div className="tags">
@@ -1115,18 +1126,14 @@ const FileAttachments = () => {
               </Card.Header>
               <Card.Body>
                 <div className="text-wrap">
-                  <div className="">
+                  <div>
                     <Row>
                       <Col xl={2} lg={3} md={4} sm={4}>
                         <div className="file-image p-2">
                           <Link
                             to={`${process.env.PUBLIC_URL}/filemanager/filedetails`}
                           >
-                            <img
-                              src={require("../../../assets/images/pngs/4.jpg")}
-                              alt="png-4"
-                              className="w-100"
-                            />
+                            <img src={F1} alt="png-4" className="w-100" />
                           </Link>
                           <ul className="icons">
                             <li>
@@ -1158,11 +1165,7 @@ const FileAttachments = () => {
                           <Link
                             to={`${process.env.PUBLIC_URL}/filemanager/filedetails`}
                           >
-                            <img
-                              src={require("../../../assets/images/pngs/file-image2.jpg")}
-                              alt="file-2"
-                              className="w-100"
-                            />
+                            <img src={F2} alt="file-2" className="w-100" />
                           </Link>
                           <ul className="icons">
                             <li>
@@ -1194,11 +1197,7 @@ const FileAttachments = () => {
                           <Link
                             to={`${process.env.PUBLIC_URL}/filemanager/filedetails`}
                           >
-                            <img
-                              src={require("../../../assets/images/pngs/file-image3.jpg")}
-                              alt="file-3"
-                              className="w-100"
-                            />
+                            <img src={F3} alt="Image03" className="w-100" />
                           </Link>
                           <ul className="icons">
                             <li>
@@ -1230,11 +1229,7 @@ const FileAttachments = () => {
                           <Link
                             to={`${process.env.PUBLIC_URL}/filemanager/filedetails`}
                           >
-                            <img
-                              src={require("../../../assets/images/pngs/file-image4.jpg")}
-                              alt="file-4"
-                              className="w-100"
-                            />
+                            <img src={F4} alt="file-4" className="w-100" />
                           </Link>
                           <ul className="icons">
                             <li>
@@ -1266,11 +1261,7 @@ const FileAttachments = () => {
                           <Link
                             to={`${process.env.PUBLIC_URL}/filemanager/filedetails`}
                           >
-                            <img
-                              src={require("../../../assets/images/pngs/file-image5.jpg")}
-                              alt="file-5"
-                              className="w-100"
-                            />
+                            <img src={F5} alt="file-5" className="w-100" />
                           </Link>
                           <ul className="icons">
                             <li>
@@ -1302,11 +1293,7 @@ const FileAttachments = () => {
                           <Link
                             to={`${process.env.PUBLIC_URL}/filemanager/filedetails`}
                           >
-                            <img
-                              src={require("../../../assets/images/pngs/file-image1.jpg")}
-                              alt="file-1"
-                              className="w-100"
-                            />
+                            <img src={F6} alt="file-1" className="w-100" />
                           </Link>
                           <ul className="icons">
                             <li>
@@ -1359,11 +1346,7 @@ const FileAttachments = () => {
                     <Link
                       to={`${process.env.PUBLIC_URL}/filemanager/filedetails`}
                     >
-                      <img
-                        src={require("../../../assets/images/pngs/4.jpg")}
-                        className="br-5"
-                        alt="pngs-4"
-                      />
+                      <img src={F4} className="br-5" alt="pngs-4" />
                     </Link>
                     <ul className="icons">
                       <li>
@@ -1392,7 +1375,7 @@ const FileAttachments = () => {
                       to={`${process.env.PUBLIC_URL}/filemanager/filedetails`}
                     >
                       <img
-                        src={require("../../../assets/images/media/files/doc.png")}
+                        src={Doc}
                         alt="file-details"
                       />
                     </Link>
@@ -1423,7 +1406,7 @@ const FileAttachments = () => {
                       to={`${process.env.PUBLIC_URL}/filemanager/filedetails`}
                     >
                       <img
-                        src={require("../../../assets/images/media/files/file2.png")}
+                        src={XLS}
                         alt="file-2"
                       />
                     </Link>
@@ -1454,8 +1437,8 @@ const FileAttachments = () => {
                       to={`${process.env.PUBLIC_URL}/filemanager/filedetails`}
                     >
                       <img
-                        src={require("../../../assets/images/media/files/file.png")}
-                        alt="file-1"
+                        src={PDF}
+                        alt="PDF File"
                       />
                     </Link>
                     <ul className="icons">
@@ -1485,7 +1468,7 @@ const FileAttachments = () => {
                       to={`${process.env.PUBLIC_URL}/filemanager/filedetails`}
                     >
                       <img
-                        src={require("../../../assets/images/media/files/imgformat.png")}
+                        src={IMG}
                         className="br-5"
                         alt="formart"
                       />
@@ -1536,11 +1519,7 @@ const FileAttachments = () => {
                     <Link
                       to={`${process.env.PUBLIC_URL}/filemanager/filedetails`}
                     >
-                      <img
-                        src={require("../../../assets/images/pngs/4.jpg")}
-                        className="br-5"
-                        alt="pngs-4"
-                      />
+                      <img src={F6} className="br-5" alt="pngs-4" />
                     </Link>
                     <ul className="icons">
                       <li>
@@ -1569,7 +1548,7 @@ const FileAttachments = () => {
                       to={`${process.env.PUBLIC_URL}/filemanager/filedetails`}
                     >
                       <img
-                        src={require("../../../assets/images/media/files/doc.png")}
+                        src={Doc}
                         alt="file-docs"
                       />
                     </Link>
@@ -1600,7 +1579,7 @@ const FileAttachments = () => {
                       to={`${process.env.PUBLIC_URL}/filemanager/filedetails`}
                     >
                       <img
-                        src={require("../../../assets/images/media/files/file2.png")}
+                        src={XLS}
                         alt="file-2"
                       />
                     </Link>
@@ -1631,8 +1610,8 @@ const FileAttachments = () => {
                       to={`${process.env.PUBLIC_URL}/filemanager/filedetails`}
                     >
                       <img
-                        src={require("../../../assets/images/media/files/file.png")}
-                        alt="file-1"
+                        src={PDF}
+                        alt=""
                       />
                     </Link>
                     <ul className="icons">
@@ -1662,7 +1641,7 @@ const FileAttachments = () => {
                       to={`${process.env.PUBLIC_URL}/filemanager/filedetails`}
                     >
                       <img
-                        src={require("../../../assets/images/media/files/imgformat.png")}
+                        src={IMG}
                         className="br-5"
                         alt="file-5"
                       />
@@ -1713,11 +1692,7 @@ const FileAttachments = () => {
                     <Link
                       to={`${process.env.PUBLIC_URL}/filemanager/filedetails`}
                     >
-                      <img
-                        src={require("../../../assets/images/pngs/4.jpg")}
-                        className="br-5"
-                        alt="pngs-4"
-                      />
+                      <img src={F3} className="br-5" alt="pngs-4" />
                     </Link>
                     <ul className="icons">
                       <li>
@@ -1746,7 +1721,7 @@ const FileAttachments = () => {
                       to={`${process.env.PUBLIC_URL}/filemanager/filedetails`}
                     >
                       <img
-                        src={require("../../../assets/images/media/files/doc.png")}
+                        src={Doc}
                         alt="file-details"
                       />
                     </Link>
@@ -1777,7 +1752,7 @@ const FileAttachments = () => {
                       to={`${process.env.PUBLIC_URL}/filemanager/filedetails`}
                     >
                       <img
-                        src={require("../../../assets/images/media/files/file2.png")}
+                        src={XLS}
                         alt="file-2"
                       />
                     </Link>
@@ -1808,7 +1783,7 @@ const FileAttachments = () => {
                       to={`${process.env.PUBLIC_URL}/filemanager/filedetails`}
                     >
                       <img
-                        src={require("../../../assets/images/media/files/file.png")}
+                        src={PDF}
                         alt="file-1"
                       />
                     </Link>
@@ -1839,9 +1814,9 @@ const FileAttachments = () => {
                       to={`${process.env.PUBLIC_URL}/filemanager/filedetails`}
                     >
                       <img
-                        src={require("../../../assets/images/media/files/imgformat.png")}
+                        src={IMG}
                         className="br-5"
-                        alt="file-3"
+                        alt="image01"
                       />
                     </Link>
                     <ul className="icons">

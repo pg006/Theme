@@ -137,11 +137,13 @@ import Modals from "../components/Bootstrap/Modal/Modal";
 import ListGroups from "../components/Bootstrap/ListGroup/ListGroup";
 import Landing from "../components/Landing";
 import Switcherapp from "../components/Switcherapp";
+import Loader from "../commonComponents/Loader/Loader";
 
 const AllRoutes = () => {
     return (
         <React.Fragment>
             <BrowserRouter>
+            <React.Suspense fallback={<Loader />}>
                 <Routes>
                     <Route path={`/`} element={<ThemeAuth />}>
                         <Route index element={<AuthLogin />} />
@@ -333,6 +335,7 @@ const AllRoutes = () => {
                     </Route>
                     <Route path="*" element={<Error500 />} />
                 </Routes>
+            </React.Suspense>
             </BrowserRouter>
         </React.Fragment>
     );

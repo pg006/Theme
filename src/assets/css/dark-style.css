@@ -3337,7 +3337,7 @@ body.dark-mode *:hover::-webkit-scrollbar-thumb {
 
 @media (max-width: 991px) {
     .dark-mode .responsive-navbar .navbar-collapse {
-        background: #2a2a4a;
+        background: #112D32;
         box-shadow: 0 12px 11px -3px rgba(104, 113, 123, 0.1);
         border-top-color: rgba(255, 255, 255, 0.1);
     }
