@@ -4,6 +4,10 @@ import { Link } from 'react-router-dom';
 import Swal from "sweetalert2";
 import Select from 'react-select';
 import PageHeader from "../../../commonComponents/PageHeader/PageHeader";
+import P1 from '../../../assets/images/ProductImages/jpgs/P1.jpg'
+import P2 from '../../../assets/images/ProductImages/jpgs/P2.jpg'
+import P3 from '../../../assets/images/ProductImages/jpgs/P3.jpg'
+
 
 const Checkout = () => {
   const HandleClick = () => {
@@ -294,7 +298,7 @@ const Checkout = () => {
                   <div className="d-flex">
                     <img
                       className="avatar-xxl br-7"
-                      src={require("../../../assets/images/pngs/4.jpg")}
+                      src={P1}
                       alt="img"
                     />
                     <div className="ms-3">
@@ -302,7 +306,7 @@ const Checkout = () => {
                         <Link
                           to={`${process.env.PUBLIC_URL}/ecommerce/productdetails`}
                         >
-                          Flower Pot for Home Decor
+                          Black Open Toy Car
                         </Link>
                       </h4>
                       <div className="text-warning fs-14">
@@ -318,7 +322,7 @@ const Checkout = () => {
                       </p>
                     </div>
                     <div className="ms-auto">
-                      <span className="fs-16 fw-semibold">$438</span>
+                      <span className="fs-16 fw-semibold">$138</span>
                     </div>
                   </div>
                 </div>
@@ -326,7 +330,7 @@ const Checkout = () => {
                   <div className="d-flex">
                     <img
                       className="avatar-xxl br-7"
-                      src={require("../../../assets/images/pngs/6.jpg")}
+                      src={P2}
                       alt="img"
                     />
                     <div className="ms-3">
@@ -334,7 +338,7 @@ const Checkout = () => {
                         <Link
                           to={`${process.env.PUBLIC_URL}/ecommerce/productdetails`}
                         >
-                          Black Digital Camera
+                          Syska LED Lamp 
                         </Link>
                       </h4>
                       <div className="text-warning fs-14">
@@ -350,7 +354,7 @@ const Checkout = () => {
                       </p>
                     </div>
                     <div className="ms-auto">
-                      <span className="fs-16 fw-semibold">$765</span>
+                      <span className="fs-16 fw-semibold">$50</span>
                     </div>
                   </div>
                 </div>
@@ -358,7 +362,7 @@ const Checkout = () => {
                   <div className="d-flex">
                     <img
                       className="avatar-xxl br-7"
-                      src={require("../../../assets/images/pngs/5.jpg")}
+                      src={P3}
                       alt="img"
                     />
                     <div className="ms-3">
@@ -366,7 +370,7 @@ const Checkout = () => {
                         <Link
                           to={`${process.env.PUBLIC_URL}/ecommerce/productdetails`}
                         >
-                          Men shirt for party wear
+                          Men Watch
                         </Link>
                       </h4>
                       <div className="text-warning fs-14">
@@ -382,14 +386,14 @@ const Checkout = () => {
                       </p>
                     </div>
                     <div className="ms-auto">
-                      <span className="fs-16 fw-semibold">$543</span>
+                      <span className="fs-16 fw-semibold">$500</span>
                     </div>
                   </div>
                 </div>
                 <ListGroup className="border br-7 mt-5">
                   <ListGroup.Item className="border-0">
                     Sub Total
-                    <span className="h6 fw-bold mb-0 float-end">$4,360</span>
+                    <span className="h6 fw-bold mb-0 float-end">$688</span>
                   </ListGroup.Item>
                   <ListGroup.Item className="border-0">
                     Discount
@@ -401,7 +405,7 @@ const Checkout = () => {
                   </ListGroup.Item>
                   <ListGroup.Item className="border-0">
                     Total
-                    <span className="h4 fw-bold mb-0 float-end">$3,976</span>
+                    <span className="h4 fw-bold mb-0 float-end">$654</span>
                   </ListGroup.Item>
                 </ListGroup>
               </Card.Body>

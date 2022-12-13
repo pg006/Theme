@@ -1,23 +1,33 @@
 import React from "react";
-import { Link } from 'react-router-dom';
-import { Row, Col, Card, ListGroup, ProgressBar, Dropdown } from 'react-bootstrap';
+import { Link } from "react-router-dom";
+import {
+  Row,
+  Col,
+  Card,
+  ListGroup,
+  ProgressBar,
+  Dropdown,
+} from "react-bootstrap";
 import "./FileManager.scss";
 import { DataFileManager } from "../../../Data/DataFileManger/DataFileManager";
 import PageHeader from "../../../commonComponents/PageHeader/PageHeader";
 
-import Folder from '../../../assets/images/FileImages/Folder.png'
-import PDF from '../../../assets/images/FileImages/SmallPngs/PDF.png'
-import Excel from '../../../assets/images/FileImages/SmallPngs/Excel.png'
-import PPT from '../../../assets/images/FileImages/SmallPngs/PPT.png'
-import Car from '../../../assets/images/FileImages/File7.jpg'
-import F8 from '../../../assets/images/FileImages/File8.jpg'
-import F9 from '../../../assets/images/FileImages/File9.jpg'
-import F10 from '../../../assets/images/FileImages/File10.jpg'
-import F11 from '../../../assets/images/FileImages/File11.jpg'
-import F12 from '../../../assets/images/FileImages/File12.jpg'
-
-
-
+import Folder from "../../../assets/images/FileImages/Folder.png";
+import PDF from "../../../assets/images/FileImages/SmallPngs/PDF.png";
+import Excel from "../../../assets/images/FileImages/SmallPngs/Excel.png";
+import PPT from "../../../assets/images/FileImages/SmallPngs/PPT.png";
+import Video from "../../../assets/images/FileImages/SmallPngs/Video.png";
+import DOC from "../../../assets/images/FileImages/SmallPngs/DOC.png";
+import ZIP from "../../../assets/images/FileImages/SmallPngs/ZIP.png";
+import Car from "../../../assets/images/FileImages/File7.jpg";
+import F8 from "../../../assets/images/FileImages/File8.jpg";
+import F9 from "../../../assets/images/FileImages/File9.jpg";
+import F10 from "../../../assets/images/FileImages/File10.jpg";
+import F11 from "../../../assets/images/FileImages/File11.jpg";
+import F12 from "../../../assets/images/FileImages/File12.jpg";
+import F7 from "../../../assets/images/FileImages/File13.jpg";
+import F5 from "../../../assets/images/FileImages/File19.jpg";
+import F13 from "../../../assets/images/FileImages/File16.jpg";
 
 const FileManager = () => {
   return (
@@ -226,10 +236,7 @@ const FileManager = () => {
               <Card.Body>
                 <div className="d-flex">
                   <Link to="#" className="file-manager-image">
-                    <img
-                      src={Folder}
-                      alt="Folder"
-                    />
+                    <img src={Folder} alt="Folder" />
                   </Link>
                   <h3 className="ms-3 mt-5 fw-semibold">467 Files</h3>
                   <div className="ms-5 ms-auto">
@@ -734,10 +741,7 @@ const FileManager = () => {
                     to={`${process.env.PUBLIC_URL}/filemanager/filedetails`}
                     className="mx-auto my-3"
                   >
-                    <img
-                      src={Excel}
-                      alt="Excel"
-                    />
+                    <img src={Excel} alt="Excel" />
                   </Link>
                   <Card.Footer>
                     <div className="d-flex">
@@ -759,10 +763,7 @@ const FileManager = () => {
                     to={`${process.env.PUBLIC_URL}/filemanager/filedetails`}
                     className="mx-auto my-3"
                   >
-                    <img
-                      src={PDF}
-                      alt="PDF"
-                    />
+                    <img src={PDF} alt="PDF" />
                   </Link>
                   <Card.Footer>
                     <div className="d-flex">
@@ -807,6 +808,28 @@ const FileManager = () => {
                 <Card className="overflow-hidden">
                   <Link
                     to={`${process.env.PUBLIC_URL}/filemanager/filedetails`}
+                    className="mx-auto my-3"
+                  >
+                    <img src={Video} alt="img" />
+                  </Link>
+                  <Card.Footer>
+                    <div className="d-flex">
+                      <div className="">
+                        <h5 className="mb-0 fw-semibold text-break">
+                          video.mp4
+                        </h5>
+                      </div>
+                      <div className="ms-auto my-auto mt-3">
+                        <span className="text-muted mb-0">320 KB</span>
+                      </div>
+                    </div>
+                  </Card.Footer>
+                </Card>
+              </Col>
+              <Col xl={4} xxl={3} lg={6} md={6} sm={6}>
+                <Card className="overflow-hidden">
+                  <Link
+                    to={`${process.env.PUBLIC_URL}/filemanager/filedetails`}
                   >
                     <img
                       src={Car}
@@ -817,9 +840,7 @@ const FileManager = () => {
                   <Card.Footer>
                     <div className="d-flex">
                       <div className="">
-                        <h5 className="mb-0 fw-semibold text-break">
-                          Car.jpg
-                        </h5>
+                        <h5 className="mb-0 fw-semibold text-break">Car.jpg</h5>
                       </div>
                       <div className="ms-auto my-auto">
                         <span className="text-muted mb-0">66 KB</span>
@@ -834,10 +855,7 @@ const FileManager = () => {
                     to={`${process.env.PUBLIC_URL}/filemanager/filedetails`}
                     className="mx-auto my-3"
                   >
-                    <img
-                      src={PPT}
-                      alt="img"
-                    />
+                    <img src={PPT} alt="img" />
                   </Link>
                   <Card.Footer>
                     <div className="d-flex">
@@ -859,90 +877,14 @@ const FileManager = () => {
                     to={`${process.env.PUBLIC_URL}/filemanager/filedetails`}
                     className="mx-auto my-3"
                   >
-                    <img
-                      src={require("../../../assets/images/media/file-video.png")}
-                      alt="img"
-                    />
+                    <img src={DOC} alt="img" />
                   </Link>
                   <Card.Footer>
                     <div className="d-flex">
                       <div className="">
                         <h5 className="mb-0 fw-semibold text-break">
-                          video.mp4
+                          Test.doc
                         </h5>
-                      </div>
-                      <div className="ms-auto my-auto mt-3">
-                        <span className="text-muted mb-0">320 KB</span>
-                      </div>
-                    </div>
-                  </Card.Footer>
-                </Card>
-              </Col>
-              <Col xl={4} xxl={3} lg={6} md={6} sm={6}>
-                <Card className="overflow-hidden">
-                  <Link
-                    to={`${process.env.PUBLIC_URL}/filemanager/filedetails`}
-                    className="mx-auto my-3"
-                  >
-                    <img
-                      src={require("../../../assets/images/media/files/word.png")}
-                      alt="img"
-                    />
-                  </Link>
-                  <Card.Footer>
-                    <div className="d-flex">
-                      <div className="">
-                        <h5 className="mb-0 fw-semibold text-break">
-                          word.doc
-                        </h5>
-                      </div>
-                      <div className="ms-auto my-auto">
-                        <span className="text-muted mb-0">320 KB</span>
-                      </div>
-                    </div>
-                  </Card.Footer>
-                </Card>
-              </Col>
-              <Col xl={4} xxl={3} lg={6} md={6} sm={6}>
-                <Card className="overflow-hidden">
-                  <Link
-                    to={`${process.env.PUBLIC_URL}/filemanager/filedetails`}
-                    className="mx-auto my-3"
-                  >
-                    <img
-                      src={require("../../../assets/images/media/files/pdf.png")}
-                      alt="img"
-                    />
-                  </Link>
-                  <Card.Footer>
-                    <div className="d-flex">
-                      <div className="">
-                        <h5 className="mb-0 fw-semibold text-break">
-                          Theme.pdf
-                        </h5>
-                      </div>
-                      <div className="ms-auto my-auto">
-                        <span className="text-muted mb-0">32 KB</span>
-                      </div>
-                    </div>
-                  </Card.Footer>
-                </Card>
-              </Col>
-              <Col xl={4} xxl={3} lg={6} md={6} sm={6}>
-                <Card className="overflow-hidden">
-                  <Link
-                    to={`${process.env.PUBLIC_URL}/filemanager/filedetails`}
-                    className="mx-auto my-3"
-                  >
-                    <img
-                      src={require("../../../assets/images/media/files/zip1.png")}
-                      alt="zip"
-                    />
-                  </Link>
-                  <Card.Footer>
-                    <div className="d-flex">
-                      <div className="">
-                        <h5 className="mb-0 fw-semibold text-break">exe.zip</h5>
                       </div>
                       <div className="ms-auto my-auto">
                         <span className="text-muted mb-0">320 KB</span>
@@ -982,10 +924,7 @@ const FileManager = () => {
                     to={`${process.env.PUBLIC_URL}/filemanager/filedetails`}
                     className="mx-auto my-3"
                   >
-                    <img
-                      src={Excel}
-                      alt="img"
-                    />
+                    <img src={Excel} alt="img" />
                   </Link>
                   <Card.Footer>
                     <div className="d-flex">
@@ -996,31 +935,6 @@ const FileManager = () => {
                       </div>
                       <div className="ms-auto my-auto">
                         <span className="text-muted mb-0">34 KB</span>
-                      </div>
-                    </div>
-                  </Card.Footer>
-                </Card>
-              </Col>
-              <Col xl={4} xxl={3} lg={6} md={6} sm={6}>
-                <Card className="overflow-hidden">
-                  <Link
-                    to={`${process.env.PUBLIC_URL}/filemanager/filedetails`}
-                    className="mx-auto my-3"
-                  >
-                    <img
-                      src={PPT}
-                      alt="img"
-                    />
-                  </Link>
-                  <Card.Footer>
-                    <div className="d-flex">
-                      <div className="">
-                        <h5 className="mb-0 fw-semibold text-break">
-                          profile.ppt
-                        </h5>
-                      </div>
-                      <div className="ms-auto my-auto">
-                        <span className="text-muted mb-0">67 KB</span>
                       </div>
                     </div>
                   </Card.Footer>
@@ -1071,6 +985,137 @@ const FileManager = () => {
                       </div>
                       <div className="ms-auto my-auto">
                         <span className="text-muted mb-0">66 KB</span>
+                      </div>
+                    </div>
+                  </Card.Footer>
+                </Card>
+              </Col>
+              <Col xl={4} xxl={3} lg={6} md={6} sm={6}>
+                <Card className="overflow-hidden">
+                  <a href={`${process.env.PUBLIC_URL}/filemanager/filedetails`}>
+                    <img
+                      src={F5}
+                      alt="tree"
+                      className="file-manager-list w-100"
+                    />
+                  </a>
+                  <Card.Footer>
+                    <div className="d-flex">
+                      <div className="">
+                        <h5 className="mb-0 fw-semibold text-break">
+                          Tree.jpg
+                        </h5>
+                      </div>
+                      <div className="ms-auto my-auto">
+                        <span className="text-muted mb-0">500 KB</span>
+                      </div>
+                    </div>
+                  </Card.Footer>
+                </Card>
+              </Col>
+              <Col xl={4} xxl={3} lg={6} md={6} sm={6}>
+                <Card className="overflow-hidden">
+                  <Link
+                    to={`${process.env.PUBLIC_URL}/filemanager/filedetails`}
+                    className="mx-auto my-3"
+                  >
+                    <img src={PDF} alt="img" />
+                  </Link>
+                  <Card.Footer>
+                    <div className="d-flex">
+                      <div className="">
+                        <h5 className="mb-0 fw-semibold text-break">
+                          Theme2.pdf
+                        </h5>
+                      </div>
+                      <div className="ms-auto my-auto">
+                        <span className="text-muted mb-0">32 KB</span>
+                      </div>
+                    </div>
+                  </Card.Footer>
+                </Card>
+              </Col>
+              <Col xl={4} xxl={3} lg={6} md={6} sm={6}>
+                <Card className="overflow-hidden">
+                  <a href={`${process.env.PUBLIC_URL}/filemanager/filedetails`}>
+                    <img
+                      src={F13}
+                      alt="img"
+                      className="file-manager-list w-100"
+                    />
+                  </a>
+                  <Card.Footer>
+                    <div className="d-flex">
+                      <div className="">
+                        <h5 className="mb-0 fw-semibold text-break">3D.jpg</h5>
+                      </div>
+                      <div className="ms-auto my-auto">
+                        <span className="text-muted mb-0">5 MB</span>
+                      </div>
+                    </div>
+                  </Card.Footer>
+                </Card>
+              </Col>
+              <Col xl={4} xxl={3} lg={6} md={6} sm={6}>
+                <Card className="overflow-hidden">
+                  <Link
+                    to={`${process.env.PUBLIC_URL}/filemanager/filedetails`}
+                    className="mx-auto my-3"
+                  >
+                    <img src={ZIP} alt="zip" />
+                  </Link>
+                  <Card.Footer>
+                    <div className="d-flex">
+                      <div className="">
+                        <h5 className="mb-0 fw-semibold text-break">New.zip</h5>
+                      </div>
+                      <div className="ms-auto my-auto">
+                        <span className="text-muted mb-0">320 KB</span>
+                      </div>
+                    </div>
+                  </Card.Footer>
+                </Card>
+              </Col>
+              <Col xl={4} xxl={3} lg={6} md={6} sm={6}>
+                <Card className="overflow-hidden">
+                  <a href={`${process.env.PUBLIC_URL}/filemanager/filedetails`}>
+                    <img
+                      src={F7}
+                      alt="car"
+                      className="file-manager-list w-100"
+                    />
+                  </a>
+                  <Card.Footer>
+                    <div className="d-flex">
+                      <div className="">
+                        <h5 className="mb-0 fw-semibold text-break">
+                          Sport Car.jpg
+                        </h5>
+                      </div>
+                      <div className="ms-auto my-auto">
+                        <span className="text-muted mb-0">1 MB</span>
+                      </div>
+                    </div>
+                  </Card.Footer>
+                </Card>
+              </Col>
+              <Col xl={4} xxl={3} lg={6} md={6} sm={6}>
+                <Card className="overflow-hidden">
+                  <Link
+                    to={`${process.env.PUBLIC_URL}/filemanager/filedetails`}
+                    className="mx-auto my-3"
+                  >
+                    <img src={PPT} alt="img" />
+                  </Link>
+                  <Card.Footer>
+                    <div className="d-flex">
+                      <div className="">
+                        <h5 className="mb-0 fw-semibold text-break">
+                          Plan.ppt
+                        </h5>
+                      </div>
+                      <div className="ms-auto my-auto">
+                        <span className="text-muted mb-0">67 KB</span>
                       </div>
                     </div>
                   </Card.Footer>

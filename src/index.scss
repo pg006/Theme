@@ -931,7 +931,14 @@ svg g text {
     border: 1px solid $border;
     border-radius: 10px;
 }
-
+.Product-details{
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+}
+.slick-slider{
+    width: 394px !important;
+}
 .table-border {
     border: 1px solid $border  !important;
     padding: 0.45rem;

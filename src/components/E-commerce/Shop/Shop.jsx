@@ -15,6 +15,14 @@ import { Link } from "react-router-dom";
 import Slider from "@mui/material/Slider";
 import Select from "react-select";
 import PageHeader from "../../../commonComponents/PageHeader/PageHeader";
+import P1 from "../../../assets/images/ProductImages/jpgs/P1.jpg";
+import P2 from "../../../assets/images/ProductImages/jpgs/P2.jpg";
+import P3 from "../../../assets/images/ProductImages/jpgs/P3.jpg";
+import P4 from "../../../assets/images/ProductImages/jpgs/P4.jpg";
+import P5 from "../../../assets/images/ProductImages/jpgs/P5.jpg";
+import P6 from "../../../assets/images/ProductImages/jpgs/P6.jpg";
+import P7 from "../../../assets/images/ProductImages/jpgs/P7.jpg";
+import P8 from "../../../assets/images/ProductImages/jpgs/P8.jpg";
 
 const Shop = () => {
   const Mark = [{ value: 80 }, { value: 950 }];
@@ -55,6 +63,57 @@ const Shop = () => {
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
+
+  const ProductDetailList = [
+    {
+      img: P1,
+      productName: "Black Toy Car",
+      CurrentPrice: "$9,999",
+      OldPrice: "$10,900",
+    },
+    {
+      img: P2,
+      productName: "Syska LED Lamp",
+      CurrentPrice: "$199",
+      OldPrice: "$300",
+    },
+    {
+      img: P3,
+      productName: "Men Watch",
+      CurrentPrice: "$10,999",
+      OldPrice: "$15,900",
+    },
+    {
+      img: P4,
+      productName: "Sport Shoes For Men",
+      CurrentPrice: "$12,999",
+      OldPrice: "$17,000",
+    },
+    {
+      img: P5,
+      productName: "Ladies Shoes",
+      CurrentPrice: "$699",
+      OldPrice: "$899",
+    },
+    {
+      img: P6,
+      productName: "Fastrack Watch",
+      CurrentPrice: "$1,999",
+      OldPrice: "$2,500",
+    },
+    {
+      img: P7,
+      productName: "Classic Toy Car",
+      CurrentPrice: "10,999",
+      OldPrice: "$12,999",
+    },
+    {
+      img: P8,
+      productName: "Black Goggles",
+      CurrentPrice: "$999",
+      OldPrice: "$11,999",
+    },
+  ];
 
   return (
     <React.Fragment>
@@ -440,706 +499,91 @@ const Shop = () => {
                       <Tab.Pane eventKey="first">
                         <div className="tab-pane active" id="tab-11">
                           <Row>
-                            <Col md={6} xl={4} sm={6}>
-                              <Card>
-                                <div className="product-grid6">
-                                  <div className="product-image6 p-5">
-                                    <ul className="icons">
-                                      <li>
-                                        <Link
-                                          to={`${process.env.PUBLIC_URL}/ecommerce/productdetails`}
-                                          className="btn btn-primary"
-                                        >
-                                          <i className="fe fe-eye"> </i>
-                                        </Link>
-                                      </li>
-                                      <li>
-                                        <Link
-                                          to={`${process.env.PUBLIC_URL}/ecommerce/addproduct`}
-                                          className="btn btn-success"
-                                        >
-                                          <i className="fe fe-edit"></i>
-                                        </Link>
-                                      </li>
-                                      <li>
-                                        <Link to="#" className="btn btn-danger">
-                                          <i className="fe fe-x"></i>
-                                        </Link>
-                                      </li>
-                                    </ul>
-                                    <Link
-                                      to={`${process.env.PUBLIC_URL}/ecommerce/productdetails`}
-                                    >
-                                      <img
-                                        className="img-fluid br-7 w-100"
-                                        src={require("../../../assets/images/pngs/9.jpg")}
-                                        alt="img"
-                                      />
-                                    </Link>
-                                  </div>
-                                  <Card.Body className="pt-0">
-                                    <div className="product-content text-center">
-                                      <h1 className="title fw-bold fs-20">
+                            {ProductDetailList.map((val, index) => {
+                              return (
+                                <Col md={6} xl={4} sm={6} key={index}>
+                                  <Card>
+                                    <div className="product-grid6">
+                                      <div className="product-image6 p-5">
+                                        <ul className="icons">
+                                          <li>
+                                            <Link
+                                              to={`${process.env.PUBLIC_URL}/ecommerce/productdetails`}
+                                              className="btn btn-primary"
+                                            >
+                                              <i className="fe fe-eye"> </i>
+                                            </Link>
+                                          </li>
+                                          <li>
+                                            <Link
+                                              to={`${process.env.PUBLIC_URL}/ecommerce/addproduct`}
+                                              className="btn btn-success"
+                                            >
+                                              <i className="fe fe-edit"></i>
+                                            </Link>
+                                          </li>
+                                          <li>
+                                            <Link
+                                              to="#"
+                                              className="btn btn-danger"
+                                            >
+                                              <i className="fe fe-x"></i>
+                                            </Link>
+                                          </li>
+                                        </ul>
                                         <Link
                                           to={`${process.env.PUBLIC_URL}/ecommerce/productdetails`}
                                         >
-                                          Candy Pure Rose Water
+                                          <img
+                                            className="img-fluid br-7 w-100"
+                                            src={val.img}
+                                            alt="img"
+                                          />
                                         </Link>
-                                      </h1>
-                                      <div className="mb-2 text-warning">
-                                        <i className="fa fa-star text-warning"></i>
-                                        <i className="fa fa-star text-warning"></i>
-                                        <i className="fa fa-star text-warning"></i>
-                                        <i className="fa fa-star-half-o text-warning"></i>
-                                        <i className="fa fa-star-o text-warning"></i>
                                       </div>
-                                      <div className="price">
-                                        $599<span className="ms-4">$799</span>
-                                      </div>
+                                      <Card.Body className="pt-0">
+                                        <div className="product-content text-center">
+                                          <h1 className="title fw-bold fs-20">
+                                            <Link
+                                              to={`${process.env.PUBLIC_URL}/ecommerce/productdetails`}
+                                            >
+                                              {val.productName}
+                                            </Link>
+                                          </h1>
+                                          <div className="mb-2 text-warning">
+                                            <i className="fa fa-star text-warning"></i>
+                                            <i className="fa fa-star text-warning"></i>
+                                            <i className="fa fa-star text-warning"></i>
+                                            <i className="fa fa-star-half-o text-warning"></i>
+                                            <i className="fa fa-star-o text-warning"></i>
+                                          </div>
+                                          <div className="price">
+                                            {val.CurrentPrice}
+                                            <span className="ms-4">{val.OldPrice}</span>
+                                          </div>
+                                        </div>
+                                      </Card.Body>
+                                      <Card.Footer className="text-center">
+                                        <Link
+                                          to={`${process.env.PUBLIC_URL}/ecommerce/shoppingcart`}
+                                          className="btn me-2 btn-primary mb-1"
+                                        >
+                                          <i className="fe fe-shopping-cart mx-2"></i>
+                                          Add to cart
+                                        </Link>
+                                        <Link
+                                          to={`${process.env.PUBLIC_URL}/ecommerce/wishlist`}
+                                          className="btn me-2 btn-outline-primary mb-1"
+                                        >
+                                          <i className="fe fe-heart mx-2 wishlist-icon"></i>
+                                          Add to wishlist
+                                        </Link>
+                                      </Card.Footer>
                                     </div>
-                                  </Card.Body>
-                                  <Card.Footer className="text-center">
-                                    <Link
-                                      to={`${process.env.PUBLIC_URL}/ecommerce/shoppingcart`}
-                                      className="btn me-2 btn-primary mb-1"
-                                    >
-                                      <i className="fe fe-shopping-cart mx-2"></i>
-                                      Add to cart
-                                    </Link>
-                                    <Link
-                                      to={`${process.env.PUBLIC_URL}/ecommerce/wishlist`}
-                                      className="btn me-2 btn-outline-primary mb-1"
-                                    >
-                                      <i className="fe fe-heart mx-2 wishlist-icon"></i>
-                                      Add to wishlist
-                                    </Link>
-                                  </Card.Footer>
-                                </div>
-                              </Card>
-                            </Col>
-                            <Col md={6} xl={4} sm={6}>
-                              <Card>
-                                <div className="product-grid6">
-                                  <div className="product-image6 p-5">
-                                    <ul className="icons">
-                                      <li>
-                                        <Link
-                                          to={`${process.env.PUBLIC_URL}/ecommerce/productdetails`}
-                                          className="btn btn-primary"
-                                        >
-                                          <i className="fe fe-eye"> </i>
-                                        </Link>
-                                      </li>
-                                      <li>
-                                        <Link
-                                          to={`${process.env.PUBLIC_URL}/ecommerce/addproduct`}
-                                          className="btn btn-success"
-                                        >
-                                          <i className="fe fe-edit"></i>
-                                        </Link>
-                                      </li>
-                                      <li>
-                                        <Link to="#" className="btn btn-danger">
-                                          <i className="fe fe-x"></i>
-                                        </Link>
-                                      </li>
-                                    </ul>
-                                    <Link
-                                      to={`${process.env.PUBLIC_URL}/ecommerce/productdetails`}
-                                    >
-                                      <img
-                                        className="img-fluid br-7 w-100"
-                                        src={require("../../../assets/images/pngs/10.jpg")}
-                                        alt="img"
-                                      />
-                                    </Link>
-                                  </div>
-                                  <Card.Body className="pt-0">
-                                    <div className="product-content text-center">
-                                      <h1 className="title fw-bold fs-20">
-                                        <Link
-                                          to={`${process.env.PUBLIC_URL}/ecommerce/productdetails`}
-                                        >
-                                          White Tshirt for Men
-                                        </Link>
-                                      </h1>
-                                      <div className="mb-2 text-warning">
-                                        <i className="fa fa-star text-warning"></i>
-                                        <i className="fa fa-star text-warning"></i>
-                                        <i className="fa fa-star text-warning"></i>
-                                        <i className="fa fa-star-half-o text-warning"></i>
-                                        <i className="fa fa-star-o text-warning"></i>
-                                      </div>
-                                      <div className="price">
-                                        $1,399
-                                        <span className="ms-4">$1,599</span>
-                                      </div>
-                                    </div>
-                                  </Card.Body>
-                                  <Card.Footer className="text-center">
-                                    <Link
-                                      to={`${process.env.PUBLIC_URL}/ecommerce/shoppingcart`}
-                                      className="btn me-2 btn-primary mb-1"
-                                    >
-                                      <i className="fe fe-shopping-cart mx-2"></i>
-                                      Add to cart
-                                    </Link>
-                                    <Link
-                                      to={`${process.env.PUBLIC_URL}/ecommerce/wishlist`}
-                                      className="btn me-2 btn-outline-primary mb-1"
-                                    >
-                                      <i className="fe fe-heart mx-2 wishlist-icon"></i>
-                                      Add to wishlist
-                                    </Link>
-                                  </Card.Footer>
-                                </div>
-                              </Card>
-                            </Col>
-                            <Col md={6} xl={4} sm={6}>
-                              <Card>
-                                <div className="product-grid6">
-                                  <div className="product-image6 p-5">
-                                    <ul className="icons">
-                                      <li>
-                                        <Link
-                                          to={`${process.env.PUBLIC_URL}/ecommerce/productdetails`}
-                                          className="btn btn-primary"
-                                        >
-                                          <i className="fe fe-eye"> </i>
-                                        </Link>
-                                      </li>
-                                      <li>
-                                        <Link
-                                          to={`${process.env.PUBLIC_URL}/ecommerce/addproduct`}
-                                          className="btn btn-success"
-                                        >
-                                          <i className="fe fe-edit"></i>
-                                        </Link>
-                                      </li>
-                                      <li>
-                                        <Link to="#" className="btn btn-danger">
-                                          <i className="fe fe-x"></i>
-                                        </Link>
-                                      </li>
-                                    </ul>
-                                    <Link
-                                      to={`${process.env.PUBLIC_URL}/ecommerce/productdetails`}
-                                    >
-                                      <img
-                                        className="img-fluid br-7 w-100"
-                                        src={require("../../../assets/images/pngs/4.jpg")}
-                                        alt="img"
-                                      />
-                                    </Link>
-                                  </div>
-                                  <Card.Body className="pt-0">
-                                    <div className="product-content text-center">
-                                      <h1 className="title fw-bold fs-20">
-                                        <Link
-                                          to={`${process.env.PUBLIC_URL}/ecommerce/productdetails`}
-                                        >
-                                          Flower Pot for Home Decor
-                                        </Link>
-                                      </h1>
-                                      <div className="mb-2 text-warning">
-                                        <i className="fa fa-star text-warning"></i>
-                                        <i className="fa fa-star text-warning"></i>
-                                        <i className="fa fa-star text-warning"></i>
-                                        <i className="fa fa-star-half-o text-warning"></i>
-                                        <i className="fa fa-star-o text-warning"></i>
-                                      </div>
-                                      <div className="price">
-                                        $1,299
-                                        <span className="ms-4">$1,899</span>
-                                      </div>
-                                    </div>
-                                  </Card.Body>
-                                  <Card.Footer className="text-center">
-                                    <Link
-                                      to={`${process.env.PUBLIC_URL}/ecommerce/shoppingcart`}
-                                      className="btn me-2 btn-primary mb-1"
-                                    >
-                                      <i className="fe fe-shopping-cart mx-2"></i>
-                                      Add to cart
-                                    </Link>
-                                    <Link
-                                      to={`${process.env.PUBLIC_URL}/ecommerce/wishlist`}
-                                      className="btn me-2 btn-outline-primary mb-1"
-                                    >
-                                      <i className="fe fe-heart mx-2 wishlist-icon"></i>
-                                      Add to wishlist
-                                    </Link>
-                                  </Card.Footer>
-                                </div>
-                              </Card>
-                            </Col>
-                            <Col md={6} xl={4} sm={6}>
-                              <Card>
-                                <div className="product-grid6">
-                                  <div className="product-image6 p-5">
-                                    <ul className="icons">
-                                      <li>
-                                        <a
-                                          href={`${process.env.PUBLIC_URL}/ecommerce/productdetails`}
-                                          className="btn btn-primary"
-                                        >
-                                          <i className="fe fe-eye"> </i>
-                                        </a>
-                                      </li>
-                                      <li>
-                                        <Link
-                                          to={`${process.env.PUBLIC_URL}/ecommerce/addproduct`}
-                                          className="btn btn-success"
-                                        >
-                                          <i className="fe fe-edit"></i>
-                                        </Link>
-                                      </li>
-                                      <li>
-                                        <Link to="#" className="btn btn-danger">
-                                          <i className="fe fe-x"></i>
-                                        </Link>
-                                      </li>
-                                    </ul>
-                                    <Link
-                                      to={`${process.env.PUBLIC_URL}/ecommerce/productdetails`}
-                                    >
-                                      <img
-                                        className="img-fluid br-7 w-100"
-                                        src={require("../../../assets/images/pngs/8.jpg")}
-                                        alt="img"
-                                      />
-                                    </Link>
-                                  </div>
-                                  <Card.Body className="pt-0">
-                                    <div className="product-content text-center">
-                                      <h1 className="title fw-bold fs-20">
-                                        <Link
-                                          to={`${process.env.PUBLIC_URL}/ecommerce/productdetails`}
-                                        >
-                                          Stylish Rockerz 255 Ear Pods
-                                        </Link>
-                                      </h1>
-                                      <div className="mb-2 text-warning">
-                                        <i className="fa fa-star text-warning"></i>
-                                        <i className="fa fa-star text-warning"></i>
-                                        <i className="fa fa-star text-warning"></i>
-                                        <i className="fa fa-star-half-o text-warning"></i>
-                                        <i className="fa fa-star-o text-warning"></i>
-                                      </div>
-                                      <div className="price">
-                                        $16,599
-                                        <span className="ms-4">$19,799</span>
-                                      </div>
-                                    </div>
-                                  </Card.Body>
-                                  <Card.Footer className="text-center">
-                                    <Link
-                                      to={`${process.env.PUBLIC_URL}/ecommerce/shoppingcart`}
-                                      className="btn me-2 btn-primary mb-1"
-                                    >
-                                      <i className="fe fe-shopping-cart mx-2"></i>
-                                      Add to cart
-                                    </Link>
-                                    <Link
-                                      to={`${process.env.PUBLIC_URL}/ecommerce/wishlist`}
-                                      className="btn me-2 btn-outline-primary mb-1"
-                                    >
-                                      <i className="fe fe-heart mx-2 wishlist-icon"></i>
-                                      Add to wishlist
-                                    </Link>
-                                  </Card.Footer>
-                                </div>
-                              </Card>
-                            </Col>
-                            <Col md={6} xl={4} sm={6}>
-                              <Card>
-                                <div className="product-grid6">
-                                  <div className="product-image6 p-5">
-                                    <ul className="icons">
-                                      <li>
-                                        <Link
-                                          to={`${process.env.PUBLIC_URL}/ecommerce/productdetails`}
-                                          className="btn btn-primary"
-                                        >
-                                          <i className="fe fe-eye"> </i>
-                                        </Link>
-                                      </li>
-                                      <li>
-                                        <Link
-                                          to={`${process.env.PUBLIC_URL}/ecommerce/addproduct`}
-                                          className="btn btn-success"
-                                        >
-                                          <i className="fe fe-edit"></i>
-                                        </Link>
-                                      </li>
-                                      <li>
-                                        <Link to="#" className="btn btn-danger">
-                                          <i className="fe fe-x"></i>
-                                        </Link>
-                                      </li>
-                                    </ul>
-                                    <Link
-                                      to={`${process.env.PUBLIC_URL}/ecommerce/productdetails`}
-                                    >
-                                      <img
-                                        className="img-fluid br-7 w-100"
-                                        src={require("../../../assets/images/pngs/1.jpg")}
-                                        alt="img"
-                                      />
-                                    </Link>
-                                  </div>
-                                  <Card.Body className="pt-0">
-                                    <div className="product-content text-center">
-                                      <h1 className="title fw-bold fs-20">
-                                        <Link
-                                          to={`${process.env.PUBLIC_URL}/ecommerce/productdetails`}
-                                        >
-                                          Women Party Wear Dress
-                                        </Link>
-                                      </h1>
-                                      <div className="mb-2 text-warning">
-                                        <i className="fa fa-star text-warning"></i>
-                                        <i className="fa fa-star text-warning"></i>
-                                        <i className="fa fa-star text-warning"></i>
-                                        <i className="fa fa-star-half-o text-warning"></i>
-                                        <i className="fa fa-star-o text-warning"></i>
-                                      </div>
-                                      <div className="price">
-                                        $2,299
-                                        <span className="ms-4">$1,599</span>
-                                      </div>
-                                    </div>
-                                  </Card.Body>
-                                  <Card.Footer className="text-center">
-                                    <Link
-                                      to={`${process.env.PUBLIC_URL}/ecommerce/shoppingcart`}
-                                      className="btn me-2 btn-primary mb-1"
-                                    >
-                                      <i className="fe fe-shopping-cart mx-2"></i>
-                                      Add to cart
-                                    </Link>
-                                    <Link
-                                      to={`${process.env.PUBLIC_URL}/ecommerce/wishlist`}
-                                      className="btn me-2 btn-outline-primary mb-1"
-                                    >
-                                      <i className="fe fe-heart mx-2 wishlist-icon"></i>
-                                      Add to wishlist
-                                    </Link>
-                                  </Card.Footer>
-                                </div>
-                              </Card>
-                            </Col>
-                            <Col md={6} xl={4} sm={6}>
-                              <Card>
-                                <div className="product-grid6">
-                                  <div className="product-image6 p-5">
-                                    <ul className="icons">
-                                      <li>
-                                        <Link
-                                          to={`${process.env.PUBLIC_URL}/ecommerce/productdetails`}
-                                          className="btn btn-primary"
-                                        >
-                                          <i className="fe fe-eye"> </i>
-                                        </Link>
-                                      </li>
-                                      <li>
-                                        <Link
-                                          to={`${process.env.PUBLIC_URL}/ecommerce/addproduct`}
-                                          className="btn btn-success"
-                                        >
-                                          <i className="fe fe-edit"></i>
-                                        </Link>
-                                      </li>
-                                      <li>
-                                        <Link to="#" className="btn btn-danger">
-                                          <i className="fe fe-x"></i>
-                                        </Link>
-                                      </li>
-                                    </ul>
-                                    <Link
-                                      to={`${process.env.PUBLIC_URL}/ecommerce/productdetails`}
-                                    >
-                                      <img
-                                        className="img-fluid br-7 w-100"
-                                        src={require("../../../assets/images/pngs/6.jpg")}
-                                        alt="img"
-                                      />
-                                    </Link>
-                                  </div>
-                                  <div className="card-body pt-0">
-                                    <div className="product-content text-center">
-                                      <h1 className="title fw-bold fs-20">
-                                        <Link
-                                          to={`${process.env.PUBLIC_URL}/ecommerce/productdetails`}
-                                        >
-                                          Black Digital Camera
-                                        </Link>
-                                      </h1>
-                                      <div className="mb-2 text-warning">
-                                        <i className="fa fa-star text-warning"></i>
-                                        <i className="fa fa-star text-warning"></i>
-                                        <i className="fa fa-star text-warning"></i>
-                                        <i className="fa fa-star-half-o text-warning"></i>
-                                        <i className="fa fa-star-o text-warning"></i>
-                                      </div>
-                                      <div className="price">
-                                        $56,599
-                                        <span className="ms-4">$59,799</span>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <Card.Footer className="text-center">
-                                    <Link
-                                      to={`${process.env.PUBLIC_URL}/ecommerce/shoppingcart`}
-                                      className="btn me-2 btn-primary mb-1"
-                                    >
-                                      <i className="fe fe-shopping-cart mx-2"></i>
-                                      Add to cart
-                                    </Link>
-                                    <Link
-                                      to={`${process.env.PUBLIC_URL}/ecommerce/wishlist`}
-                                      className="btn me-2 btn-outline-primary mb-1"
-                                    >
-                                      <i className="fe fe-heart mx-2 wishlist-icon"></i>
-                                      Add to wishlist
-                                    </Link>
-                                  </Card.Footer>
-                                </div>
-                              </Card>
-                            </Col>
-                            <Col md={6} xl={4} sm={6}>
-                              <Card>
-                                <div className="product-grid6">
-                                  <div className="product-image6 p-5">
-                                    <ul className="icons">
-                                      <li>
-                                        <Link
-                                          to={`${process.env.PUBLIC_URL}/ecommerce/productdetails`}
-                                          className="btn btn-primary"
-                                        >
-                                          <i className="fe fe-eye"> </i>
-                                        </Link>
-                                      </li>
-                                      <li>
-                                        <Link
-                                          to={`${process.env.PUBLIC_URL}/ecommerce/addproduct`}
-                                          className="btn btn-success"
-                                        >
-                                          <i className="fe fe-edit"></i>
-                                        </Link>
-                                      </li>
-                                      <li>
-                                        <Link to="#" className="btn btn-danger">
-                                          <i className="fe fe-x"></i>
-                                        </Link>
-                                      </li>
-                                    </ul>
-                                    <Link
-                                      to={`${process.env.PUBLIC_URL}/ecommerce/productdetails`}
-                                    >
-                                      <img
-                                        className="img-fluid br-7 w-100"
-                                        src={require("../../../assets/images/pngs/5.jpg")}
-                                        alt="img"
-                                      />
-                                    </Link>
-                                  </div>
-                                  <Card.Body className="pt-0">
-                                    <div className="product-content text-center">
-                                      <h1 className="title fw-bold fs-20">
-                                        <Link
-                                          to={`${process.env.PUBLIC_URL}/ecommerce/productdetails`}
-                                        >
-                                          Men shirt for party wear
-                                        </Link>
-                                      </h1>
-                                      <div className="mb-2 text-warning">
-                                        <i className="fa fa-star text-warning"></i>
-                                        <i className="fa fa-star text-warning"></i>
-                                        <i className="fa fa-star text-warning"></i>
-                                        <i className="fa fa-star-half-o text-warning"></i>
-                                        <i className="fa fa-star-o text-warning"></i>
-                                      </div>
-                                      <div className="price">
-                                        $3,599
-                                        <span className="ms-4">$3,799</span>
-                                      </div>
-                                    </div>
-                                  </Card.Body>
-                                  <Card.Footer className="text-center">
-                                    <Link
-                                      to={`${process.env.PUBLIC_URL}/ecommerce/shoppingcart`}
-                                      className="btn me-2 btn-primary mb-1"
-                                    >
-                                      <i className="fe fe-shopping-cart mx-2"></i>
-                                      Add to cart
-                                    </Link>
-                                    <Link
-                                      to={`${process.env.PUBLIC_URL}/ecommerce/wishlist`}
-                                      className="btn me-2 btn-outline-primary mb-1"
-                                    >
-                                      <i className="fe fe-heart mx-2 wishlist-icon"></i>
-                                      Add to wishlist
-                                    </Link>
-                                  </Card.Footer>
-                                </div>
-                              </Card>
-                            </Col>
-                            <Col md={6} xl={4} sm={6}>
-                              <Card>
-                                <div className="product-grid6">
-                                  <div className="product-image6 p-5">
-                                    <ul className="icons">
-                                      <li>
-                                        <Link
-                                          to={`${process.env.PUBLIC_URL}/ecommerce/productdetails`}
-                                          className="btn btn-primary"
-                                        >
-                                          <i className="fe fe-eye"> </i>
-                                        </Link>
-                                      </li>
-                                      <li>
-                                        <Link
-                                          to={`${process.env.PUBLIC_URL}/ecommerce/addproduct`}
-                                          className="btn btn-success"
-                                        >
-                                          <i className="fe fe-edit"></i>
-                                        </Link>
-                                      </li>
-                                      <li>
-                                        <Link to="#" className="btn btn-danger">
-                                          <i className="fe fe-x"></i>
-                                        </Link>
-                                      </li>
-                                    </ul>
-                                    <a
-                                      href={`${process.env.PUBLIC_URL}/ecommerce/productdetails`}
-                                    >
-                                      <img
-                                        className="img-fluid br-7 w-100"
-                                        src={require("../../../assets/images/pngs/7.jpg")}
-                                        alt="img"
-                                      />
-                                    </a>
-                                  </div>
-                                  <Card.Body className="pt-0">
-                                    <div className="product-content text-center">
-                                      <h1 className="title fw-bold fs-20">
-                                        <Link
-                                          to={`${process.env.PUBLIC_URL}/ecommerce/productdetails`}
-                                        >
-                                          Light pink nail polish
-                                        </Link>
-                                      </h1>
-                                      <div className="mb-2 text-warning">
-                                        <i className="fa fa-star text-warning"></i>
-                                        <i className="fa fa-star text-warning"></i>
-                                        <i className="fa fa-star text-warning"></i>
-                                        <i className="fa fa-star-half-o text-warning"></i>
-                                        <i className="fa fa-star-o text-warning"></i>
-                                      </div>
-                                      <div className="price">
-                                        $399<span className="ms-4">499</span>
-                                      </div>
-                                    </div>
-                                  </Card.Body>
-                                  <Card.Footer className="text-center">
-                                    <Link
-                                      to={`${process.env.PUBLIC_URL}/ecommerce/shoppingcart`}
-                                      className="btn me-2 btn-primary mb-1"
-                                    >
-                                      <i className="fe fe-shopping-cart mx-2"></i>
-                                      Add to cart
-                                    </Link>
-                                    <Link
-                                      to={`${process.env.PUBLIC_URL}/ecommerce/wishlist`}
-                                      className="btn me-2 btn-outline-primary mb-1"
-                                    >
-                                      <i className="fe fe-heart mx-2 wishlist-icon"></i>
-                                      Add to wishlist
-                                    </Link>
-                                  </Card.Footer>
-                                </div>
-                              </Card>
-                            </Col>
-                            <Col md={6} xl={4} sm={6}>
-                              <Card>
-                                <div className="product-grid6">
-                                  <div className="product-image6 p-5">
-                                    <ul className="icons">
-                                      <li>
-                                        <Link
-                                          to={`${process.env.PUBLIC_URL}/ecommerce/productdetails`}
-                                          className="btn btn-primary"
-                                        >
-                                          <i className="fe fe-eye"> </i>
-                                        </Link>
-                                      </li>
-                                      <li>
-                                        <Link
-                                          to={`${process.env.PUBLIC_URL}/ecommerce/addproduct`}
-                                          className="btn btn-success"
-                                        >
-                                          <i className="fe fe-edit"></i>
-                                        </Link>
-                                      </li>
-                                      <li>
-                                        <Link to="#" className="btn btn-danger">
-                                          <i className="fe fe-x"></i>
-                                        </Link>
-                                      </li>
-                                    </ul>
-                                    <Link
-                                      to={`${process.env.PUBLIC_URL}/ecommerce/productdetails`}
-                                    >
-                                      <img
-                                        className="img-fluid br-7 w-100"
-                                        src={require("../../../assets/images/pngs/3.jpg")}
-                                        alt="img"
-                                      />
-                                    </Link>
-                                  </div>
-                                  <Card.Body className="pt-0">
-                                    <div className="product-content text-center">
-                                      <h1 className="title fw-bold fs-20">
-                                        <Link
-                                          to={`${process.env.PUBLIC_URL}/ecommerce/productdetails`}
-                                        >
-                                          Running Shoes for men
-                                        </Link>
-                                      </h1>
-                                      <div className="mb-2 text-warning">
-                                        <i className="fa fa-star text-warning"></i>
-                                        <i className="fa fa-star text-warning"></i>
-                                        <i className="fa fa-star text-warning"></i>
-                                        <i className="fa fa-star-half-o text-warning"></i>
-                                        <i className="fa fa-star-o text-warning"></i>
-                                      </div>
-                                      <div className="price">
-                                        $6,599
-                                        <span className="ms-4">$9,799</span>
-                                      </div>
-                                    </div>
-                                  </Card.Body>
-                                  <Card.Footer className="text-center">
-                                    <Link
-                                      to={`${process.env.PUBLIC_URL}/ecommerce/shoppingcart`}
-                                      className="btn me-2 btn-primary mb-1"
-                                    >
-                                      <i className="fe fe-shopping-cart mx-2"></i>
-                                      Add to cart
-                                    </Link>
-                                    <Link
-                                      to={`${process.env.PUBLIC_URL}/ecommerce/wishlist`}
-                                      className="btn me-2 btn-outline-primary mb-1"
-                                    >
-                                      <i className="fe fe-heart mx-2 wishlist-icon"></i>
-                                      Add to wishlist
-                                    </Link>
-                                  </Card.Footer>
-                                </div>
-                              </Card>
-                            </Col>
+                                  </Card>
+                                </Col>
+                              );
+                            })}
                             <div className="mb-5">
                               <div className="float-end">
                                 <Pagination>

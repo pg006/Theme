@@ -1,11 +1,72 @@
 import React from "react";
 import PageHeader from "../../../commonComponents/PageHeader/PageHeader";
 import "./ProductDetails.scss";
-import { Card, Col, Row, Form, Badge, Tabs, Tab } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
-import CenterMode, { QuantityItems } from "../../../Data/DataECommerce/DataProductDetails";
+import { Card, Col, Row, Form, Badge, Tabs, Tab } from "react-bootstrap";
+import { Link } from "react-router-dom";
+import CenterMode, {
+  QuantityItems,
+} from "../../../Data/DataECommerce/DataProductDetails";
+import P1 from "../../../assets/images/ProductImages/jpgs/P1.jpg";
+import P2 from "../../../assets/images/ProductImages/jpgs/P2.jpg";
+import P3 from "../../../assets/images/ProductImages/jpgs/P3.jpg";
+import P4 from "../../../assets/images/ProductImages/jpgs/P4.jpg";
+import P5 from "../../../assets/images/ProductImages/jpgs/P5.jpg";
+import P6 from "../../../assets/images/ProductImages/jpgs/P6.jpg";
+import P7 from "../../../assets/images/ProductImages/jpgs/P7.jpg";
+import P8 from "../../../assets/images/ProductImages/jpgs/P8.jpg";
 
 const ProductDetails = () => {
+  const RelatedProductDetails = [
+    {
+      img: P1,
+      productName: "Black Toy Car",
+      CurrentPrice: "$9,999",
+      OldPrice: "$10,900",
+    },
+    {
+      img: P2,
+      productName: "Syska LED Lamp",
+      CurrentPrice: "$199",
+      OldPrice: "$300",
+    },
+    {
+      img: P3,
+      productName: "Men Watch",
+      CurrentPrice: "$10,999",
+      OldPrice: "$15,900",
+    },
+    {
+      img: P4,
+      productName: "Sport Shoes For Men",
+      CurrentPrice: "$12,999",
+      OldPrice: "$17,000",
+    },
+    {
+      img: P5,
+      productName: "Ladies Shoes",
+      CurrentPrice: "$699",
+      OldPrice: "$899",
+    },
+    {
+      img: P6,
+      productName: "Fastrack Watch",
+      CurrentPrice: "$1,999",
+      OldPrice: "$2,500",
+    },
+    {
+      img: P7,
+      productName: "Classic Toy Car",
+      CurrentPrice: "10,999",
+      OldPrice: "$12,999",
+    },
+    {
+      img: P8,
+      productName: "Black Goggles",
+      CurrentPrice: "$999",
+      OldPrice: "$11,999",
+    },
+  ];
+
   return (
     <React.Fragment>
       <div>
@@ -30,8 +91,7 @@ const ProductDetails = () => {
                   <Col xl={7} lg={12} md={12} className="details mt-4 mt-xl-0">
                     <div className="mt-2 mb-4">
                       <h3 className="mb-3 fw-semibold">
-                        Trending Half Hands Tshirt (Best Fabric Premium made
-                        T-shirt for Casual wear.)
+                      Double Wall Vacuum Insulated Stainless Steel Life Flask Bpa Free Thermos Travel Water Bottle Sipper 450 Ml - Hot and Cold 12 Hours 
                       </h3>
                       <p className="text-muted float-start me-3">
                         <span className="fa fa-star text-warning"></span>
@@ -40,9 +100,7 @@ const ProductDetails = () => {
                         <span className="fa fa-star-half-o text-warning"></span>
                         <span className="fa fa-star-o text-warning"></span>
                       </p>
-                      <p className="text-muted mb-4">
-                        ( 40 Customers Reviews){" "}
-                      </p>
+                      <p className="text-muted mb-4">( 40 Customers Reviews)</p>
                       <h4 className="mt-4">
                         <b> Description</b>
                       </h4>
@@ -60,15 +118,15 @@ const ProductDetails = () => {
                         demoralized .
                       </p>
                       <h3 className="mb-4">
-                        <span className="me-2 fw-bold fs-25">$299 USD/</span>
+                        <span className="me-2 fw-bold fs-25">$599 USD/</span>
                         <span>
-                          <del className="fs-18 text-muted">$599</del>
+                          <del className="fs-18 text-muted">$899</del>
                         </span>
                       </h3>
                       <div className=" mt-4 mb-5">
                         <span className="fw-bold me-2">Offer : </span>
                         <span className="fw-bold text-primary">
-                          15% Cashback{" "}
+                          15% Cashback
                         </span>
                         by using icici bank credit card.
                         <small className="text-muted">
@@ -82,7 +140,7 @@ const ProductDetails = () => {
                       <div className="colors d-flex me-3 mt-4 mb-5">
                         <span className="mt-2 fw-bold">Colors:</span>
                         <Row className="gutters-xs ms-4">
-                          <div className="col-3">
+                          <div className="col-6">
                             <label className="colorinput">
                               <input
                                 name="color"
@@ -90,10 +148,10 @@ const ProductDetails = () => {
                                 defaultValue="azure"
                                 className="colorinput-input"
                               />
-                              <span className="colorinput-color bg-danger rounded-10"></span>
+                              <span className="colorinput-color rounded-10" style={{backgroundColor:"#023330"}}></span>
                             </label>
                           </div>
-                          <div className="col-3">
+                          <div className="col-6">
                             <label className="colorinput">
                               <input
                                 name="color"
@@ -101,29 +159,7 @@ const ProductDetails = () => {
                                 defaultValue="indigo"
                                 className="colorinput-input"
                               />
-                              <span className="colorinput-color bg-dark rounded-10"></span>
-                            </label>
-                          </div>
-                          <div className="col-3">
-                            <label className="colorinput">
-                              <input
-                                name="color"
-                                type="radio"
-                                defaultValue="purple"
-                                className="colorinput-input"
-                              />
-                              <span className="colorinput-color bg-info rounded-10"></span>
-                            </label>
-                          </div>
-                          <div className="col-3">
-                            <label className="colorinput">
-                              <input
-                                name="color"
-                                type="radio"
-                                defaultValue="pink"
-                                className="colorinput-input"
-                              />
-                              <span className="colorinput-color bg-success rounded-10"></span>
+                              <span className="colorinput-color rounded-10" style={{backgroundColor:"#b5948f"}}></span>
                             </label>
                           </div>
                         </Row>
@@ -204,9 +240,8 @@ const ProductDetails = () => {
                                 <tr>
                                   <td className="fw-bold">Best Sellers Rank</td>
                                   <td>
-                                    {" "}
-                                    #141 in Clothing & Accessories (See Top 100
-                                    in Clothing & Accessories)
+                                    #141 in Best Bottles supplies (See Top 100+
+                                    Types Bottles)
                                   </td>
                                 </tr>
                                 <tr>
@@ -358,12 +393,11 @@ const ProductDetails = () => {
                 <div className="media mb-5">
                   <div className="me-3">
                     <Link to="#">
-                      {" "}
                       <img
                         className="media-object rounded-circle thumb-sm"
                         alt="64x64"
                         src={require("../../../assets/images/users/5.jpg")}
-                      />{" "}
+                      />
                     </Link>
                   </div>
                   <div className="media-body">
@@ -399,12 +433,11 @@ const ProductDetails = () => {
                 <div className="media mb-5">
                   <div className=" me-3">
                     <Link to="#">
-                      {" "}
                       <img
                         className="media-object rounded-circle thumb-sm"
                         alt="64x64"
                         src={require("../../../assets/images/users/15.jpg")}
-                      />{" "}
+                      />
                     </Link>
                   </div>
                   <div className="media-body">
@@ -419,7 +452,7 @@ const ProductDetails = () => {
                     <p className="font-13 text-muted">
                       Very nice ! On the other hand, we denounce with righteous
                       indignation and dislike men who are so beguiled and
-                      demoralized by the{" "}
+                      demoralized by the
                     </p>
                     <Link className="like" to="#">
                       <Badge
@@ -444,12 +477,11 @@ const ProductDetails = () => {
                 <div className="media mb-0">
                   <div className=" me-3">
                     <Link to="#">
-                      {" "}
                       <img
                         className="media-object rounded-circle thumb-sm"
                         alt="64x64"
                         src={require("../../../assets/images/users/5.jpg")}
-                      />{" "}
+                      />
                     </Link>
                   </div>
                   <div className="media-body">
@@ -514,330 +546,96 @@ const ProductDetails = () => {
           </Col>
 
           <h3 className="p-3 mb-5">Related Products</h3>
-          <Col md={6} xl={3}>
-            <Card>
-              <div className="product-grid6">
-                <div className="product-image6 p-5">
-                  <ul className="icons">
-                    <li>
+          {RelatedProductDetails.map((val,index) => {
+            return (
+              <Col md={6} xl={3} key={index}>
+                <Card>
+                  <div className="product-grid6">
+                    <div className="product-image6 p-5">
+                      <ul className="icons">
+                        <li>
+                          <Link
+                            to={`${process.env.PUBLIC_URL}/ecommerce/shoppingcart`}
+                            className="bg-primary text-white border-primary border"
+                          >
+                            <i className="fe fe-eye "> </i>
+                          </Link>
+                        </li>
+                        <li>
+                          <Link
+                            to={`${process.env.PUBLIC_URL}/ecommerce/addproduct`}
+                            className="bg-success text-white border-success border"
+                          >
+                            <i className="fe fe-edit"></i>
+                          </Link>
+                        </li>
+                        <li>
+                          <Link
+                            to="#"
+                            className="bg-danger text-white border-danger border"
+                          >
+                            <i className="fe fe-x"></i>
+                          </Link>
+                        </li>
+                      </ul>
                       <Link
                         to={`${process.env.PUBLIC_URL}/ecommerce/shoppingcart`}
-                        className="bg-primary text-white border-primary border"
+                        className="bg-light"
                       >
-                        {" "}
-                        <i className="fe fe-eye "> </i>{" "}
+                        <img
+                          className="img-fluid br-7 w-100"
+                          src={val.img}
+                          alt="img"
+                        />
                       </Link>
-                    </li>
-                    <li>
-                      <Link
-                        to={`${process.env.PUBLIC_URL}/ecommerce/addproduct`}
-                        className="bg-success text-white border-success border"
-                      >
-                        <i className="fe fe-edit"></i>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        to="#"
-                        className="bg-danger text-white border-danger border"
-                      >
-                        <i className="fe fe-x"></i>
-                      </Link>
-                    </li>
-                  </ul>
-                  <Link
-                    to={`${process.env.PUBLIC_URL}/ecommerce/shoppingcart`}
-                    className="bg-light"
-                  >
-                    <img
-                      className="img-fluid br-7 w-100"
-                      src={require("../../../assets/images/pngs/4.jpg")}
-                      alt="img"
-                    />
-                  </Link>
-                </div>
-                <Card.Body className="pt-0">
-                  <div className="product-content text-center">
-                    <h1 className="title fw-bold fs-20">
-                      <Link
-                        to={`${process.env.PUBLIC_URL}/ecommerce/productdetails`}
-                      >
-                        Flower Pot for Home Decor
-                      </Link>
-                    </h1>
-                    <div className="mb-2 text-warning">
-                      <i className="fa fa-star text-warning"></i>
-                      <i className="fa fa-star text-warning"></i>
-                      <i className="fa fa-star text-warning"></i>
-                      <i className="fa fa-star-half-o text-warning"></i>
-                      <i className="fa fa-star-o text-warning"></i>
                     </div>
-                    <div className="price">
-                      $16,599<span className="ms-4">$18,299</span>
-                    </div>
-                  </div>
-                </Card.Body>
-                <Card.Footer className="text-center">
-                  <Link to={`${process.env.PUBLIC_URL}/ecommerce/shoppingcart`}>
-                    <button type="button" className="btn btn-primary mb-1 ms-3">
-                      <i className="fe fe-shopping-cart me-2"></i>Add to cart
-                    </button>
-                  </Link>
-                  <Link to={`${process.env.PUBLIC_URL}/ecommerce/wishlist`}>
-                    <button
-                      type="button"
-                      className="btn btn-outline-primary mb-1 ms-3"
-                    >
-                      <i className="fe fe-heart me-2"></i>Add to wishlist
-                    </button>
-                  </Link>
-                </Card.Footer>
-              </div>
-            </Card>
-          </Col>
-          <Col md={6} xl={3}>
-            <Card>
-              <div className="product-grid6">
-                <div className="product-image6 p-5">
-                  <ul className="icons">
-                    <li>
+                    <Card.Body className="pt-0">
+                      <div className="product-content text-center">
+                        <h1 className="title fw-bold fs-20">
+                          <Link
+                            to={`${process.env.PUBLIC_URL}/ecommerce/productdetails`}
+                          >
+                            {val.productName}
+                          </Link>
+                        </h1>
+                        <div className="mb-2 text-warning">
+                          <i className="fa fa-star text-warning"></i>
+                          <i className="fa fa-star text-warning"></i>
+                          <i className="fa fa-star text-warning"></i>
+                          <i className="fa fa-star-half-o text-warning"></i>
+                          <i className="fa fa-star-o text-warning"></i>
+                        </div>
+                        <div className="price">
+                          {val.CurrentPrice}<span className="ms-4">{val.OldPrice}</span>
+                        </div>
+                      </div>
+                    </Card.Body>
+                    <Card.Footer className="text-center">
                       <Link
                         to={`${process.env.PUBLIC_URL}/ecommerce/shoppingcart`}
-                        className="bg-primary text-white border-primary border"
                       >
-                        {" "}
-                        <i className="fe fe-eye "> </i>{" "}
+                        <button
+                          type="button"
+                          className="btn btn-primary mb-1 ms-3"
+                        >
+                          <i className="fe fe-shopping-cart me-2"></i>Add to
+                          cart
+                        </button>
                       </Link>
-                    </li>
-                    <li>
-                      <Link
-                        to={`${process.env.PUBLIC_URL}/ecommerce/addproduct`}
-                        className="bg-success text-white border-success border"
-                      >
-                        <i className="fe fe-edit"></i>
+                      <Link to={`${process.env.PUBLIC_URL}/ecommerce/wishlist`}>
+                        <button
+                          type="button"
+                          className="btn btn-outline-primary mb-1 ms-3"
+                        >
+                          <i className="fe fe-heart me-2"></i>Add to wishlist
+                        </button>
                       </Link>
-                    </li>
-                    <li>
-                      <Link
-                        to="#"
-                        className="bg-danger text-white border-danger border"
-                      >
-                        <i className="fe fe-x"></i>
-                      </Link>
-                    </li>
-                  </ul>
-                  <Link
-                    to={`${process.env.PUBLIC_URL}/ecommerce/shoppingcart`}
-                    className="bg-light"
-                  >
-                    <img
-                      className="img-fluid br-7 w-100"
-                      src={require("../../../assets/images/pngs/6.jpg")}
-                      alt="img"
-                    />
-                  </Link>
-                </div>
-                <Card.Body className="pt-0">
-                  <div className="product-content text-center">
-                    <h1 className="title fw-bold fs-20">
-                      <Link
-                        to={`${process.env.PUBLIC_URL}/ecommerce/productdetails`}
-                      >
-                        Black Digital Camera
-                      </Link>
-                    </h1>
-                    <div className="mb-2 text-warning">
-                      <i className="fa fa-star text-warning"></i>
-                      <i className="fa fa-star text-warning"></i>
-                      <i className="fa fa-star text-warning"></i>
-                      <i className="fa fa-star-half-o text-warning"></i>
-                      <i className="fa fa-star-o text-warning"></i>
-                    </div>
-                    <div className="price">
-                      $16,599<span className="ms-4">$56,599</span>
-                    </div>
+                    </Card.Footer>
                   </div>
-                </Card.Body>
-                <Card.Footer className="text-center">
-                  <Link to={`${process.env.PUBLIC_URL}/ecommerce/shoppingcart`}>
-                    <button type="button" className="btn btn-primary mb-1 ms-3">
-                      <i className="fe fe-shopping-cart me-2"></i>Add to cart
-                    </button>
-                  </Link>
-                  <Link to={`${process.env.PUBLIC_URL}/ecommerce/wishlist`}>
-                    <button
-                      type="button"
-                      className="btn btn-outline-primary mb-1 ms-3"
-                    >
-                      <i className="fe fe-heart me-2"></i>Add to wishlist
-                    </button>
-                  </Link>
-                </Card.Footer>
-              </div>
-            </Card>
-          </Col>
-          <Col md={6} xl={3}>
-            <Card>
-              <div className="product-grid6">
-                <div className="product-image6 p-5">
-                  <ul className="icons">
-                    <li>
-                      <Link
-                        to={`${process.env.PUBLIC_URL}/ecommerce/shoppingcart`}
-                        className="bg-primary text-white border-primary border"
-                      >
-                        {" "}
-                        <i className="fe fe-eye "> </i>{" "}
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        to={`${process.env.PUBLIC_URL}/ecommerce/addproduct`}
-                        className="bg-success text-white border-success border"
-                      >
-                        <i className="fe fe-edit"></i>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        to="#"
-                        className="bg-danger text-white border-danger border"
-                      >
-                        <i className="fe fe-x"></i>
-                      </Link>
-                    </li>
-                  </ul>
-                  <Link
-                    to={`${process.env.PUBLIC_URL}/ecommerce/shoppingcart`}
-                    className="bg-light"
-                  >
-                    <img
-                      className="img-fluid br-7 w-100"
-                      src={require("../../../assets/images/pngs/9.jpg")}
-                      alt="img"
-                    />
-                  </Link>
-                </div>
-                <Card.Body className="pt-0">
-                  <div className="product-content text-center">
-                    <h1 className="title fw-bold fs-20">
-                      <Link
-                        to={`${process.env.PUBLIC_URL}/ecommerce/productdetails`}
-                      >
-                        Candy Pure Rose Water
-                      </Link>
-                    </h1>
-                    <div className="mb-2 text-warning">
-                      <i className="fa fa-star text-warning"></i>
-                      <i className="fa fa-star text-warning"></i>
-                      <i className="fa fa-star text-warning"></i>
-                      <i className="fa fa-star-half-o text-warning"></i>
-                      <i className="fa fa-star-o text-warning"></i>
-                    </div>
-                    <div className="price">
-                      $16,599<span className="ms-4">$25,599</span>
-                    </div>
-                  </div>
-                </Card.Body>
-                <Card.Footer className="text-center">
-                  <Link to={`${process.env.PUBLIC_URL}/ecommerce/shoppingcart`}>
-                    <button type="button" className="btn btn-primary mb-1 ms-3">
-                      <i className="fe fe-shopping-cart me-2"></i>Add to cart
-                    </button>
-                  </Link>
-                  <Link to={`${process.env.PUBLIC_URL}/ecommerce/wishlist`}>
-                    <button
-                      type="button"
-                      className="btn btn-outline-primary mb-1 ms-3"
-                    >
-                      <i className="fe fe-heart me-2"></i>Add to wishlist
-                    </button>
-                  </Link>
-                </Card.Footer>
-              </div>
-            </Card>
-          </Col>
-          <Col md={6} xl={3}>
-            <Card>
-              <div className="product-grid6">
-                <div className="product-image6 p-5">
-                  <ul className="icons">
-                    <li>
-                      <Link
-                        to={`${process.env.PUBLIC_URL}/ecommerce/shoppingcart`}
-                        className="bg-primary text-white border-primary border"
-                      >
-                        {" "}
-                        <i className="fe fe-eye "> </i>{" "}
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        to={`${process.env.PUBLIC_URL}/ecommerce/addproduct`}
-                        className="bg-success text-white border-success border"
-                      >
-                        <i className="fe fe-edit"></i>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        to="#"
-                        className="bg-danger text-white border-danger border"
-                      >
-                        <i className="fe fe-x"></i>
-                      </Link>
-                    </li>
-                  </ul>
-                  <Link
-                    to={`${process.env.PUBLIC_URL}/ecommerce/shoppingcart`}
-                    className="bg-light"
-                  >
-                    <img
-                      className="img-fluid br-7 w-100"
-                      src={require("../../../assets/images/pngs/10.jpg")}
-                      alt="img"
-                    />
-                  </Link>
-                </div>
-                <Card.Body className="pt-0">
-                  <div className="product-content text-center">
-                    <h1 className="title fw-bold fs-20">
-                      <Link
-                        to={`${process.env.PUBLIC_URL}/ecommerce/productdetails`}
-                      >
-                        White Tshirt for Men
-                      </Link>
-                    </h1>
-                    <div className="mb-2 text-warning">
-                      <i className="fa fa-star text-warning"></i>
-                      <i className="fa fa-star text-warning"></i>
-                      <i className="fa fa-star text-warning"></i>
-                      <i className="fa fa-star-half-o text-warning"></i>
-                      <i className="fa fa-star-o text-warning"></i>
-                    </div>
-                    <div className="price">
-                      $16,599<span className="ms-4">$18,399</span>
-                    </div>
-                  </div>
-                </Card.Body>
-                <Card.Footer className="text-center">
-                  <Link to={`${process.env.PUBLIC_URL}/ecommerce/shoppingcart`}>
-                    <button type="button" className="btn btn-primary mb-1 ms-3">
-                      <i className="fe fe-shopping-cart me-2"></i>Add to cart
-                    </button>
-                  </Link>
-                  <Link to={`${process.env.PUBLIC_URL}/ecommerce/wishlist`}>
-                    <button
-                      type="button"
-                      className="btn btn-outline-primary mb-1 ms-3"
-                    >
-                      <i className="fe fe-heart me-2"></i>Add to wishlist
-                    </button>
-                  </Link>
-                </Card.Footer>
-              </div>
-            </Card>
-          </Col>
+                </Card>
+              </Col>
+            );
+          })}
         </Row>
         {/* <!-- ROW-1 CLOSED --> */}
       </div>
