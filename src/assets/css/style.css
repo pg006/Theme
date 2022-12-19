@@ -18750,20 +18750,33 @@ a.icon:hover {
     display: none;
     text-align: center;
     z-index: 10000;
-    height: 50px;
-    width: 50px;
+    height: 45px;
+    width: 45px;
     background-repeat: no-repeat;
     background-position: center;
     transition: background-color 0.1s linear;
     -moz-transition: background-color 0.1s linear;
     -webkit-transition: background-color 0.1s linear;
     -o-transition: background-color 0.1s linear;
-    border-radius: 7px;
+    border-radius: 50%;
+}
+
+.top-btn::before{
+    background: #f7b731;
+    height: 70px;
+    width: 70px;
+    content: '';
+    position: fixed;
+    display: block;
+    right: 7px;
+    bottom: 7px;
+    border-radius: 50px;
+    animation: pulse 1.5s infinite;
 }
 
 #back-to-top i {
-    padding-top: 15px;
-    font-size: 16px;
+    /* padding-top: 15px; */
+    font-size: 40px;
 }
 
 #back-to-top:hover {

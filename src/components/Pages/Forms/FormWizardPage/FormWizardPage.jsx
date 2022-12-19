@@ -1,9 +1,13 @@
 import React from "react";
 import PageHeader from "../../../../commonComponents/PageHeader/PageHeader";
 import "./FormWizardPage.scss";
-import { Row, Col, Card } from 'react-bootstrap';
-import BasicFormWizard, { BasicContentFormWizard, BasicForm, ValidationForm, VerticalOrientationWizard } from "../../../../Data/Pages/Forms/DataFormWizard";
-
+import { Row, Col, Card } from "react-bootstrap";
+import BasicFormWizard, {
+  BasicContentFormWizard,
+  BasicForm,
+  ValidationForm,
+  VerticalOrientationWizard,
+} from "../../../../Data/Pages/Forms/DataFormWizard";
 
 const FormWizardPage = () => {
   return (
@@ -14,20 +18,21 @@ const FormWizardPage = () => {
           active="Form-Wizard"
           items={["Forms"]}
         />
-        {/* <!--Row open--> */}
+
+        {/* <!-- Row --> */}
         <Row>
-          <Col>
+          <Col md={12}>
             <Card>
               <Card.Header className="border-bottom-0">
-                <Card.Title as="h3">Form Wizard</Card.Title>
+                <Card.Title>Basic Content Wizard</Card.Title>
               </Card.Header>
               <Card.Body>
-                <BasicForm />
+                <BasicContentFormWizard />
               </Card.Body>
             </Card>
           </Col>
         </Row>
-        {/* <!--row closed--> */}
+        {/* <!--/Row --> */}
 
         {/* <!--row open--> */}
         <Row>
@@ -43,20 +48,21 @@ const FormWizardPage = () => {
           </Col>
         </Row>
         {/* <!--row closed--> */}
-        {/* <!-- Row --> */}
+
+        {/* <!--Row open--> */}
         <Row>
-          <Col md={12}>
+          <Col>
             <Card>
               <Card.Header className="border-bottom-0">
-                <Card.Title>Basic Content Wizard</Card.Title>
+                <Card.Title as="h3">Form Wizard</Card.Title>
               </Card.Header>
               <Card.Body>
-                <BasicContentFormWizard />
+                <BasicForm />
               </Card.Body>
             </Card>
           </Col>
         </Row>
-        {/* <!--/Row --> */}
+        {/* <!--row closed--> */}
 
         {/* <!--Row --> */}
         <Row>

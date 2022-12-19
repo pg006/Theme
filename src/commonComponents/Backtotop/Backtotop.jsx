@@ -19,15 +19,17 @@ const BacktoTop = () => {
     });
   };
   return (
-    <div>
-      <Link
-        to="#"
-        id="back-to-top"
-        onClick={screenup}
-        className={`${BacktoTop}`}
-      >
-        <i className="fa fa-angle-up"></i>
-      </Link>
+    <div className={`${BacktoTop}`} style={{display:"none"}}>
+      <div className="top-btn">
+        <Link
+          to="#"
+          id="back-to-top"
+          onClick={screenup}
+          className={`${BacktoTop}`}
+        >
+          <i className="fe fe-chevrons-up"></i>
+        </Link>
+      </div>
     </div>
   );
 };

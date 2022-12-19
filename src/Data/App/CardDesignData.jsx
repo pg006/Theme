@@ -1,16 +1,13 @@
 import React, { useState } from "react";
 import { Collapse } from "@mui/material";
-import { Alert, Button, Card, Modal, Row } from "react-bootstrap";
+import { Alert, Button, Card, Form, Modal, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 // CONTACT CARD 1
 
-export function ContactCardMike() {
+export const ContactCard1 = () => {
   const [expanded, setExpanded] = useState(true);
 
-  const handleExpandClick = () => {
-    setExpanded(!expanded);
-  };
   const [show, setShow] = useState(true);
 
   return (
@@ -20,7 +17,12 @@ export function ContactCardMike() {
           <Card.Header>
             <Card.Title>Contact card</Card.Title>
             <div className="card-options">
-              <Link to="#" onClick={handleExpandClick}>
+              <Link
+                to="#"
+                onClick={() => {
+                  setExpanded(!expanded);
+                }}
+              >
                 <i
                   className={`fe ${
                     expanded ? "fe-chevron-up" : "fe-chevron-down"
@@ -66,16 +68,13 @@ export function ContactCardMike() {
       ) : null}
     </div>
   );
-}
+};
 
 // CONTACT CARD 2
 
-export function ContactCardNorda() {
+export const ContactCard2 = () => {
   const [expanded, setExpanded] = useState(true);
 
-  const handleExpandClick = () => {
-    setExpanded(!expanded);
-  };
   const [show, setShow] = useState(true);
 
   return (
@@ -85,7 +84,12 @@ export function ContactCardNorda() {
           <Card.Header>
             <Card.Title>Contact card</Card.Title>
             <div className="card-options">
-              <Link to="#" onClick={handleExpandClick}>
+              <Link
+                to="#"
+                onClick={() => {
+                  setExpanded(!expanded);
+                }}
+              >
                 <i
                   className={`fe ${
                     expanded ? "fe-chevron-up" : "fe-chevron-down"
@@ -131,16 +135,13 @@ export function ContactCardNorda() {
       ) : null}
     </div>
   );
-}
+};
 
 // CONTACT CARD 3
 
-export function ContactCardWillie() {
+export const ContactCard3 = () => {
   const [expanded, setExpanded] = useState(true);
 
-  const handleExpandClick = () => {
-    setExpanded(!expanded);
-  };
   const [show, setShow] = useState(true);
 
   return (
@@ -150,7 +151,12 @@ export function ContactCardWillie() {
           <Card.Header>
             <Card.Title>Contact card</Card.Title>
             <div className="card-options">
-              <Link to="#" onClick={handleExpandClick}>
+              <Link
+                to="#"
+                onClick={() => {
+                  setExpanded(!expanded);
+                }}
+              >
                 <i
                   className={`fe ${
                     expanded ? "fe-chevron-up" : "fe-chevron-down"
@@ -196,15 +202,12 @@ export function ContactCardWillie() {
       ) : null}
     </div>
   );
-}
+};
 // CONTACT CARD 4
 
-export function ContactCardDon() {
+export const ContactCard4 = () => {
   const [expanded, setExpanded] = useState(true);
 
-  const handleExpandClick = () => {
-    setExpanded(!expanded);
-  };
   const [show, setShow] = useState(true);
 
   return (
@@ -214,7 +217,12 @@ export function ContactCardDon() {
           <Card.Header>
             <Card.Title>Contact card</Card.Title>
             <div className="card-options">
-              <Link to="#" onClick={handleExpandClick}>
+              <Link
+                to="#"
+                onClick={() => {
+                  setExpanded(!expanded);
+                }}
+              >
                 <i
                   className={`fe ${
                     expanded ? "fe-chevron-up" : "fe-chevron-down"
@@ -260,16 +268,13 @@ export function ContactCardDon() {
       ) : null}
     </div>
   );
-}
+};
 
 // Basic card
 
-export function BasicCard() {
+export const BasicCard = () => {
   const [expanded, setExpanded] = useState(true);
 
-  const handleExpandClick = () => {
-    setExpanded(!expanded);
-  };
   const [show, setShow] = useState(true);
 
   return (
@@ -279,7 +284,12 @@ export function BasicCard() {
           <Card.Header>
             <Card.Title>Basic card</Card.Title>
             <div className="card-options">
-              <Link to="#" onClick={handleExpandClick}>
+              <Link
+                to="#"
+                onClick={() => {
+                  setExpanded(!expanded);
+                }}
+              >
                 <i
                   className={`fe ${
                     expanded ? "fe-chevron-up" : "fe-chevron-down"
@@ -304,16 +314,13 @@ export function BasicCard() {
       ) : null}
     </div>
   );
-}
+};
 
 // Basic color card-header
 
-export function BasicColorCardHeader() {
+export const BasicColorCardHeader = () => {
   const [expanded, setExpanded] = useState(true);
 
-  const handleExpandClick = () => {
-    setExpanded(!expanded);
-  };
   const [show, setShow] = useState(true);
 
   return (
@@ -325,7 +332,12 @@ export function BasicColorCardHeader() {
               Basic color card-header
             </Card.Title>
             <div className="card-options ">
-              <Link to="#" onClick={handleExpandClick}>
+              <Link
+                to="#"
+                onClick={() => {
+                  setExpanded(!expanded);
+                }}
+              >
                 <i className="fe fe-chevron-up text-white"></i>
               </Link>
               <Link to="#" onClick={() => setShow(false)} aria-label="close">
@@ -346,16 +358,13 @@ export function BasicColorCardHeader() {
       ) : null}
     </div>
   );
-}
+};
 
 // Basic color card-footer
 
-export function BasicColorCardFooter() {
+export const BasicColorCardFooter = () => {
   const [expanded, setExpanded] = useState(true);
 
-  const handleExpandClick = () => {
-    setExpanded(!expanded);
-  };
   const [show, setShow] = useState(true);
 
   return (
@@ -365,7 +374,12 @@ export function BasicColorCardFooter() {
           <Card.Header>
             <Card.Title>Basic color card-footer</Card.Title>
             <div className="card-options">
-              <Link to="#" onClick={handleExpandClick}>
+              <Link
+                to="#"
+                onClick={() => {
+                  setExpanded(!expanded);
+                }}
+              >
                 <i
                   className={`fe ${
                     expanded ? "fe-chevron-up" : "fe-chevron-down"
@@ -392,16 +406,13 @@ export function BasicColorCardFooter() {
       ) : null}
     </div>
   );
-}
+};
 
 // Card with success alert
 
-export function CardwithSuccessAlert() {
+export const CardwithSuccessAlert = () => {
   const [expanded, setExpanded] = useState(true);
 
-  const handleExpandClick = () => {
-    setExpanded(!expanded);
-  };
   const [show, setShow] = useState(true);
 
   return (
@@ -409,9 +420,14 @@ export function CardwithSuccessAlert() {
       {show ? (
         <Card>
           <Card.Header>
-            <Card.Title>Card with alert</Card.Title>
+            <Card.Title>Card with success alert</Card.Title>
             <div className="card-options">
-              <Link to="#" onClick={handleExpandClick}>
+              <Link
+                to="#"
+                onClick={() => {
+                  setExpanded(!expanded);
+                }}
+              >
                 <i
                   className={`fe ${
                     expanded ? "fe-chevron-up" : "fe-chevron-down"
@@ -438,16 +454,13 @@ export function CardwithSuccessAlert() {
       ) : null}
     </div>
   );
-}
+};
 
 // Card with danger alert
 
-export function CardwithDangerAlert() {
+export const CardwithDangerAlert = () => {
   const [expanded, setExpanded] = useState(true);
 
-  const handleExpandClick = () => {
-    setExpanded(!expanded);
-  };
   const [show, setShow] = useState(true);
 
   return (
@@ -455,9 +468,14 @@ export function CardwithDangerAlert() {
       {show ? (
         <Card>
           <Card.Header>
-            <Card.Title>Card with alert</Card.Title>
+            <Card.Title>Card with error alert</Card.Title>
             <div className="card-options">
-              <Link to="#" onClick={handleExpandClick}>
+              <Link
+                to="#"
+                onClick={() => {
+                  setExpanded(!expanded);
+                }}
+              >
                 <i
                   className={`fe ${
                     expanded ? "fe-chevron-up" : "fe-chevron-down"
@@ -484,16 +502,13 @@ export function CardwithDangerAlert() {
       ) : null}
     </div>
   );
-}
+};
 
 // Initial collapsed card
 
-export function InitialCollapsedCard() {
+export const InitialCollapsedCard = () => {
   const [expanded, setExpanded] = useState(false);
 
-  const handleExpandClick = () => {
-    setExpanded(!expanded);
-  };
   const [show, setShow] = useState(true);
 
   return (
@@ -503,7 +518,12 @@ export function InitialCollapsedCard() {
           <Card.Header>
             <Card.Title>Initial collapsed card</Card.Title>
             <div className="card-options">
-              <Link to="#" onClick={handleExpandClick}>
+              <Link
+                to="#"
+                onClick={() => {
+                  setExpanded(!expanded);
+                }}
+              >
                 <i
                   className={`fe ${
                     expanded ? "fe-chevron-up" : "fe-chevron-down"
@@ -527,16 +547,46 @@ export function InitialCollapsedCard() {
       ) : null}
     </div>
   );
-}
+};
+
+// Card with switch
+
+export const CardWithSwitch = () => {
+  const [expanded, setExpanded] = useState(true);
+
+  return (
+    <Card>
+      <Card.Header>
+        <Card.Title>Card with switch</Card.Title>
+        <div className="card-options">
+          <Form.Check
+            className="m-0"
+            type="switch"
+            id="custom-switch"
+            onChange={(e) => {
+              e.target.checked ? setExpanded(true) : setExpanded(false);
+            }}
+            checked={expanded}
+          />
+        </div>
+      </Card.Header>
+      <Collapse in={expanded} timeout="auto">
+        <Card.Body>
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+          dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est
+          laborum
+        </Card.Body>
+      </Collapse>
+    </Card>
+  );
+};
 
 // Card With List
 
-export function CardwithList() {
+export const CardwithList = () => {
   const [expanded, setExpanded] = useState(true);
 
-  const handleExpandClick = () => {
-    setExpanded(!expanded);
-  };
   const [show, setShow] = useState(true);
 
   return (
@@ -546,7 +596,12 @@ export function CardwithList() {
           <Card.Header>
             <Card.Title>Card With List</Card.Title>
             <div className="card-options">
-              <Link to="#" onClick={handleExpandClick}>
+              <Link
+                to="#"
+                onClick={() => {
+                  setExpanded(!expanded);
+                }}
+              >
                 <i
                   className={`fe ${
                     expanded ? "fe-chevron-up" : "fe-chevron-down"
@@ -613,16 +668,13 @@ export function CardwithList() {
       ) : null}
     </div>
   );
-}
+};
 
 // Sample card
 
-export function SampleCard() {
+export const SampleCard = () => {
   const [expanded, setExpanded] = useState(true);
 
-  const handleExpandClick = () => {
-    setExpanded(!expanded);
-  };
   const [show, setShow] = useState(true);
 
   return (
@@ -632,7 +684,12 @@ export function SampleCard() {
           <Card.Header>
             <Card.Title>Sample card</Card.Title>
             <div className="card-options">
-              <Link to="#" onClick={handleExpandClick}>
+              <Link
+                to="#"
+                onClick={() => {
+                  setExpanded(!expanded);
+                }}
+              >
                 <i
                   className={`fe ${
                     expanded ? "fe-chevron-up" : "fe-chevron-down"
@@ -663,15 +720,12 @@ export function SampleCard() {
       ) : null}
     </div>
   );
-}
+};
 
 // card-with image
-export function CardwithImage() {
+export const CardwithImage = () => {
   const [expanded, setExpanded] = useState(true);
 
-  const handleExpandClick = () => {
-    setExpanded(!expanded);
-  };
   const [show, setShow] = useState(true);
 
   return (
@@ -681,7 +735,12 @@ export function CardwithImage() {
           <Card.Header className="z-index2  border-transparent">
             <Card.Title className="text-white ">card-with image</Card.Title>
             <div className="card-options">
-              <Link to="#" onClick={handleExpandClick}>
+              <Link
+                to="#"
+                onClick={() => {
+                  setExpanded(!expanded);
+                }}
+              >
                 <i className="fe fe-chevron-up text-white"></i>
               </Link>
               <Link to="#" onClick={() => setShow(false)} aria-label="close">
@@ -701,15 +760,12 @@ export function CardwithImage() {
       ) : null}
     </div>
   );
-}
+};
 // Card blue
 
-export function CardBlue() {
+export const CardBlue = () => {
   const [expanded, setExpanded] = useState(true);
 
-  const handleExpandClick = () => {
-    setExpanded(!expanded);
-  };
   const [show, setShow] = useState(true);
 
   return (
@@ -720,7 +776,12 @@ export function CardBlue() {
           <Card.Header>
             <Card.Title>Card blue</Card.Title>
             <div className="card-options">
-              <Link to="#" onClick={handleExpandClick}>
+              <Link
+                to="#"
+                onClick={() => {
+                  setExpanded(!expanded);
+                }}
+              >
                 <i
                   className={`fe ${
                     expanded ? "fe-chevron-up" : "fe-chevron-down"
@@ -744,16 +805,13 @@ export function CardBlue() {
       ) : null}
     </div>
   );
-}
+};
 
 // Card status on left side
 
-export function CardLeftSide() {
+export const CardLeftSide = () => {
   const [expanded, setExpanded] = useState(true);
 
-  const handleExpandClick = () => {
-    setExpanded(!expanded);
-  };
   const [show, setShow] = useState(true);
 
   return (
@@ -764,7 +822,12 @@ export function CardLeftSide() {
           <Card.Header>
             <Card.Title>Card status on left side</Card.Title>
             <div className="card-options">
-              <Link to="#" onClick={handleExpandClick}>
+              <Link
+                to="#"
+                onClick={() => {
+                  setExpanded(!expanded);
+                }}
+              >
                 <i
                   className={`fe ${
                     expanded ? "fe-chevron-up" : "fe-chevron-down"
@@ -788,11 +851,11 @@ export function CardLeftSide() {
       ) : null}
     </div>
   );
-}
+};
 
 // fullscreen button
 
-export function FullScreenDialog() {
+export const FullScreenDialog = () => {
   const [expanded, setExpanded] = useState(true);
   let [fullScreen, setFullscreen] = useState("true");
   const [show, setShow] = useState(false);
@@ -804,9 +867,6 @@ export function FullScreenDialog() {
     setShow(true);
   }
 
-  const handleExpandClick = () => {
-    setExpanded(!expanded);
-  };
   const [shows, setShows] = useState(true);
 
   return (
@@ -816,7 +876,12 @@ export function FullScreenDialog() {
           <Card.Header>
             <Card.Title>Fullscreen button</Card.Title>
             <div className="card-options">
-              <Link to="#" onClick={handleExpandClick}>
+              <Link
+                to="#"
+                onClick={() => {
+                  setExpanded(!expanded);
+                }}
+              >
                 <i
                   className={`fe ${
                     expanded ? "fe-chevron-up" : "fe-chevron-down"
@@ -868,4 +933,4 @@ export function FullScreenDialog() {
       ) : null}
     </div>
   );
-}
+};

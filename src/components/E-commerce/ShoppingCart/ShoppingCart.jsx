@@ -1,8 +1,15 @@
 import React from "react";
 import PageHeader from "../../../commonComponents/PageHeader/PageHeader";
-import { Card, Row, Table, Col, FormControl, InputGroup } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
-import { Cart } from './../../../Data/DataECommerce/DataShoppingCart';
+import {
+  Card,
+  Row,
+  Table,
+  Col,
+  FormControl,
+  InputGroup,
+} from "react-bootstrap";
+import { Link } from "react-router-dom";
+import { Cart } from "./../../../Data/DataECommerce/DataShoppingCart";
 
 const ShoppingCart = () => {
   return (

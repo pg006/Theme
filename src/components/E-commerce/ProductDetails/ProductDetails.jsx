@@ -6,66 +6,9 @@ import { Link } from "react-router-dom";
 import CenterMode, {
   QuantityItems,
 } from "../../../Data/DataECommerce/DataProductDetails";
-import P1 from "../../../assets/images/ProductImages/jpgs/P1.jpg";
-import P2 from "../../../assets/images/ProductImages/jpgs/P2.jpg";
-import P3 from "../../../assets/images/ProductImages/jpgs/P3.jpg";
-import P4 from "../../../assets/images/ProductImages/jpgs/P4.jpg";
-import P5 from "../../../assets/images/ProductImages/jpgs/P5.jpg";
-import P6 from "../../../assets/images/ProductImages/jpgs/P6.jpg";
-import P7 from "../../../assets/images/ProductImages/jpgs/P7.jpg";
-import P8 from "../../../assets/images/ProductImages/jpgs/P8.jpg";
+import { RelatedProductDetails } from "../../../Data/DataECommerce/Mock";
 
 const ProductDetails = () => {
-  const RelatedProductDetails = [
-    {
-      img: P1,
-      productName: "Black Toy Car",
-      CurrentPrice: "$9,999",
-      OldPrice: "$10,900",
-    },
-    {
-      img: P2,
-      productName: "Syska LED Lamp",
-      CurrentPrice: "$199",
-      OldPrice: "$300",
-    },
-    {
-      img: P3,
-      productName: "Men Watch",
-      CurrentPrice: "$10,999",
-      OldPrice: "$15,900",
-    },
-    {
-      img: P4,
-      productName: "Sport Shoes For Men",
-      CurrentPrice: "$12,999",
-      OldPrice: "$17,000",
-    },
-    {
-      img: P5,
-      productName: "Ladies Shoes",
-      CurrentPrice: "$699",
-      OldPrice: "$899",
-    },
-    {
-      img: P6,
-      productName: "Fastrack Watch",
-      CurrentPrice: "$1,999",
-      OldPrice: "$2,500",
-    },
-    {
-      img: P7,
-      productName: "Classic Toy Car",
-      CurrentPrice: "10,999",
-      OldPrice: "$12,999",
-    },
-    {
-      img: P8,
-      productName: "Black Goggles",
-      CurrentPrice: "$999",
-      OldPrice: "$11,999",
-    },
-  ];
 
   return (
     <React.Fragment>

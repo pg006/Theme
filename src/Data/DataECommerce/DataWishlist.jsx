@@ -1,90 +1,17 @@
 import React from "react";
 import { Card, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import { ProductData } from "./Mock";
 
-const itemData = [
-  {
-    id: "1",
-    img: require("../../assets/images/pngs/8.jpg"),
-    heading: "Stylish Rockerz 255 Ear Pods",
-    price1: "$16,599",
-    price2: "$19,799",
-    status: "In Stock",
-    bg: "success",
-  },
-  {
-    id: "2",
-    img: require("../../assets/images/pngs/9.jpg"),
-    heading: "Candy Pure Rose Water",
-    price1: "$599",
-    price2: "$799",
-    status: "In Stock",
-    bg: "success",
-  },
-  {
-    id: "3",
-    img: require("../../assets/images/pngs/10.jpg"),
-    heading: "White Tshirt for Men",
-    price1: "$1,399",
-    price2: "$1,599",
-    status: "Out Of Stock",
-    bg: "danger",
-  },
-  {
-    id: "4",
-    img: require("../../assets/images/pngs/4.jpg"),
-    heading: "Flower Pot for Home Decor",
-    price1: "$1,299",
-    price2: "$1,899",
-    status: "In Stock",
-    bg: "success",
-  },
-  {
-    id: "5",
-    img: require("../../assets/images/pngs/1.jpg"),
-    heading: "Women Party Wear Dress",
-    price1: "$2,299",
-    price2: "$1,599",
-    status: "Out Of Stock",
-    bg: "danger",
-  },
-  {
-    id: "6",
-    img: require("../../assets/images/pngs/3.jpg"),
-    heading: "Running Shoes for men",
-    price1: "$6,599",
-    price2: "$9,799",
-    status: "In Stock",
-    bg: "success",
-  },
-  {
-    id: "7",
-    img: require("../../assets/images/pngs/6.jpg"),
-    heading: "Black Digital Camera",
-    price1: "$56,599",
-    price2: "$59,799",
-    status: "Out Of Stock",
-    bg: "danger",
-  },
-  {
-    id: "8",
-    img: require("../../assets/images/pngs/5.jpg"),
-    heading: "Men shirt for party wear",
-    price1: "$3,599",
-    price2: "$3,799",
-    status: "In Stock",
-    bg: "success",
-  },
-];
 export function DataWishlist() {
-  const [idx, setidx] = React.useState(itemData);
+  const [product, setProduct] = React.useState(ProductData);
   function handleRemove(id) {
-    const newList = idx.filter((idx) => idx.id !== id);
-    setidx(newList);
+    const newList = product.filter((idx) => idx.id !== id);
+    setProduct(newList);
   }
   return (
     <Row>
-      {idx.map((item) => (
+      {product.map((item) => (
         <Col sm={6} md={6} xl={3} className="alert" key={item.id}>
           <Card>
             <div className="product-grid6">
@@ -117,7 +44,7 @@ export function DataWishlist() {
                     <Link
                       to={`${process.env.PUBLIC_URL}/Ecommerce/shoppingcart`}
                     >
-                      {item.heading}
+                      {item.productName}
                     </Link>
                   </h1>
                   <div className="mb-2 text-warning">
@@ -128,11 +55,13 @@ export function DataWishlist() {
                     <i className="fa fa-star-o text-warning"></i>
                   </div>
                   <div className="price mb-2">
-                    {item.price1}
-                    <span className="ms-4">{item.price2}</span>
+                    {item.CurrentPrice}
+                    <span className="ms-4">{item.OldPrice}</span>
                   </div>
-                  <span className={`text-${item.bg} fs-18 fw-semibold`}>
-                    {item.status}
+                  <span
+                    className={`text-${item.StatusColor} fs-18 fw-semibold`}
+                  >
+                    {item.ProductStatus}
                   </span>
                 </div>
               </Card.Body>

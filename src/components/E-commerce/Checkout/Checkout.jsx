@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom';
 import Swal from "sweetalert2";
 import Select from 'react-select';
 import PageHeader from "../../../commonComponents/PageHeader/PageHeader";
-import P1 from '../../../assets/images/ProductImages/jpgs/P1.jpg'
-import P2 from '../../../assets/images/ProductImages/jpgs/P2.jpg'
-import P3 from '../../../assets/images/ProductImages/jpgs/P3.jpg'
+import P1 from '../../../assets/images/ProductImages/P1.jpg'
+import P2 from '../../../assets/images/ProductImages/P2.jpg'
+import P3 from '../../../assets/images/ProductImages/P3.jpg'
 
 
 const Checkout = () => {

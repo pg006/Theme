@@ -15,14 +15,7 @@ import { Link } from "react-router-dom";
 import Slider from "@mui/material/Slider";
 import Select from "react-select";
 import PageHeader from "../../../commonComponents/PageHeader/PageHeader";
-import P1 from "../../../assets/images/ProductImages/jpgs/P1.jpg";
-import P2 from "../../../assets/images/ProductImages/jpgs/P2.jpg";
-import P3 from "../../../assets/images/ProductImages/jpgs/P3.jpg";
-import P4 from "../../../assets/images/ProductImages/jpgs/P4.jpg";
-import P5 from "../../../assets/images/ProductImages/jpgs/P5.jpg";
-import P6 from "../../../assets/images/ProductImages/jpgs/P6.jpg";
-import P7 from "../../../assets/images/ProductImages/jpgs/P7.jpg";
-import P8 from "../../../assets/images/ProductImages/jpgs/P8.jpg";
+import { ProductDetailList, TopProducts } from "../../../Data/DataECommerce/Mock";
 
 const Shop = () => {
   const Mark = [{ value: 80 }, { value: 950 }];
@@ -64,57 +57,6 @@ const Shop = () => {
     setValue(newValue);
   };
 
-  const ProductDetailList = [
-    {
-      img: P1,
-      productName: "Black Toy Car",
-      CurrentPrice: "$9,999",
-      OldPrice: "$10,900",
-    },
-    {
-      img: P2,
-      productName: "Syska LED Lamp",
-      CurrentPrice: "$199",
-      OldPrice: "$300",
-    },
-    {
-      img: P3,
-      productName: "Men Watch",
-      CurrentPrice: "$10,999",
-      OldPrice: "$15,900",
-    },
-    {
-      img: P4,
-      productName: "Sport Shoes For Men",
-      CurrentPrice: "$12,999",
-      OldPrice: "$17,000",
-    },
-    {
-      img: P5,
-      productName: "Ladies Shoes",
-      CurrentPrice: "$699",
-      OldPrice: "$899",
-    },
-    {
-      img: P6,
-      productName: "Fastrack Watch",
-      CurrentPrice: "$1,999",
-      OldPrice: "$2,500",
-    },
-    {
-      img: P7,
-      productName: "Classic Toy Car",
-      CurrentPrice: "10,999",
-      OldPrice: "$12,999",
-    },
-    {
-      img: P8,
-      productName: "Black Goggles",
-      CurrentPrice: "$999",
-      OldPrice: "$11,999",
-    },
-  ];
-
   return (
     <React.Fragment>
       <div>
@@ -126,6 +68,82 @@ const Shop = () => {
           <Col xl={3} lg={4}>
             <Row>
               <Col md={12} lg={12}>
+                <Card>
+                  <Card.Header>
+                    <Card.Title>Top Products</Card.Title>
+                  </Card.Header>
+                  <Card.Body>
+                    <div className="">
+                      {TopProducts.map((val, index) => {
+                        return (
+                          <div
+                            className="d-flex overflow-visible mt-5"
+                            key={index}
+                          >
+                            <img
+                              className="bradius avatar-xl me-4 p-2"
+                              src={val.img}
+                              alt="avatar-img"
+                            />
+                            <div className="media-body valign-middle">
+                              <Link to="#" className="fw-semibold text-dark">
+                                {val.productName}
+                              </Link>
+                              <div className="mb-1 text-warning">
+                                <i className="fa fa-star"></i>
+                                <i className="fa fa-star"></i>
+                                <i className="fa fa-star"></i>
+                                <i className="fa fa-star-half-o"></i>
+                                <i className="fa fa-star-o"></i>
+                              </div>
+                              <h5 className="fw-bold">{val.Price}</h5>
+                            </div>
+                          </div>
+                        );
+                      })}
+                    </div>
+                  </Card.Body>
+                </Card>
+                <Card>
+                  <Card.Body>
+                    <Form.Group>
+                      <Form.Label>Category</Form.Label>
+
+                      <Select
+                        classNamePrefix="Select"
+                        options={Category}
+                        placeholder="Select"
+                      />
+                    </Form.Group>
+                    <Form.Group>
+                      <Form.Label>Brand</Form.Label>
+
+                      <Select
+                        classNamePrefix="Select"
+                        options={Brand}
+                        placeholder="Select"
+                      />
+                    </Form.Group>
+                    <Form.Group>
+                      <Form.Label>Type</Form.Label>
+
+                      <Select
+                        classNamePrefix="Select"
+                        options={Size}
+                        placeholder="Select"
+                      />
+                    </Form.Group>
+                    <Form.Group>
+                      <Form.Label>Color</Form.Label>
+
+                      <Select
+                        classNamePrefix="Select"
+                        options={Brand}
+                        placeholder="Select"
+                      />
+                    </Form.Group>
+                  </Card.Body>
+                </Card>
                 <Card>
                   <Card.Header>
                     <Card.Title>Categories</Card.Title>
@@ -309,135 +327,6 @@ const Shop = () => {
                     </form>
                   </Card.Body>
                 </Card>
-                <Card>
-                  <Card.Body>
-                    <Form.Group>
-                      <Form.Label>Category</Form.Label>
-
-                      <Select
-                        classNamePrefix="Select"
-                        options={Category}
-                        placeholder="Select"
-                      />
-                    </Form.Group>
-                    <Form.Group>
-                      <Form.Label>Brand</Form.Label>
-
-                      <Select
-                        classNamePrefix="Select"
-                        options={Brand}
-                        placeholder="Select"
-                      />
-                    </Form.Group>
-                    <Form.Group>
-                      <Form.Label>Type</Form.Label>
-
-                      <Select
-                        classNamePrefix="Select"
-                        options={Size}
-                        placeholder="Select"
-                      />
-                    </Form.Group>
-                    <Form.Group>
-                      <Form.Label>Color</Form.Label>
-
-                      <Select
-                        classNamePrefix="Select"
-                        options={Brand}
-                        placeholder="Select"
-                      />
-                    </Form.Group>
-                  </Card.Body>
-                </Card>
-                <Card>
-                  <Card.Header>
-                    <Card.Title>Top Products</Card.Title>
-                  </Card.Header>
-                  <Card.Body>
-                    <div className="">
-                      <div className="d-flex overflow-visible">
-                        <img
-                          className="avatar bradius avatar-xl me-4 p-2 bg-white border"
-                          src={require("../../../assets/images/pngs/8.png")}
-                          alt="avatar-img"
-                        />
-                        <div className="media-body valign-middle">
-                          <Link to="#" className="fw-semibold text-dark">
-                            Hand Bag
-                          </Link>
-                          <div className="mb-1 text-warning">
-                            <i className="fa fa-star"></i>
-                            <i className="fa fa-star"></i>
-                            <i className="fa fa-star"></i>
-                            <i className="fa fa-star-half-o"></i>
-                            <i className="fa fa-star-o"></i>
-                          </div>
-                          <h5 className="fw-bold">$345</h5>
-                        </div>
-                      </div>
-                      <div className="d-flex overflow-visible mt-5">
-                        <img
-                          className="avatar bradius avatar-xl me-4 p-2 bg-white border"
-                          src={require("../../../assets/images/pngs/5.png")}
-                          alt="avatar-img"
-                        />
-                        <div className="media-body valign-middle">
-                          <Link to="#" className="fw-semibold text-dark">
-                            Chair
-                          </Link>
-                          <div className="mb-1 text-warning">
-                            <i className="fa fa-star"></i>
-                            <i className="fa fa-star"></i>
-                            <i className="fa fa-star"></i>
-                            <i className="fa fa-star-half-o"></i>
-                            <i className="fa fa-star-o"></i>
-                          </div>
-                          <h5 className="fw-bold">$345</h5>
-                        </div>
-                      </div>
-                      <div className="d-flex overflow-visible mt-5">
-                        <img
-                          className="avatar bradius avatar-xl me-4 p-2 bg-white border"
-                          src={require("../../../assets/images/pngs/1.png")}
-                          alt="avatar-img"
-                        />
-                        <div className="media-body valign-middle">
-                          <Link to="#" className="fw-semibold text-dark">
-                            Laptop Bag
-                          </Link>
-                          <div className="mb-1 text-warning">
-                            <i className="fa fa-star"></i>
-                            <i className="fa fa-star"></i>
-                            <i className="fa fa-star"></i>
-                            <i className="fa fa-star-half-o"></i>
-                            <i className="fa fa-star-o"></i>
-                          </div>
-                          <h5 className="fw-bold">$345</h5>
-                        </div>
-                      </div>
-                      <div className="d-flex overflow-visible mt-5">
-                        <img
-                          className="avatar bradius avatar-xl me-4 p-2 bg-white border"
-                          src={require("../../../assets/images/pngs/6.png")}
-                          alt="avatar-img"
-                        />
-                        <div className="media-body valign-middle">
-                          <Link to="#" className="fw-semibold text-dark">
-                            Watch
-                          </Link>
-                          <div className="mb-1 text-warning">
-                            <i className="fa fa-star"></i>
-                            <i className="fa fa-star"></i>
-                            <i className="fa fa-star"></i>
-                            <i className="fa fa-star-half-o"></i>
-                            <i className="fa fa-star-o"></i>
-                          </div>
-                          <h5 className="fw-bold">$345</h5>
-                        </div>
-                      </div>
-                    </div>
-                  </Card.Body>
-                </Card>
               </Col>
             </Row>
           </Col>
@@ -559,7 +448,9 @@ const Shop = () => {
                                           </div>
                                           <div className="price">
                                             {val.CurrentPrice}
-                                            <span className="ms-4">{val.OldPrice}</span>
+                                            <span className="ms-4">
+                                              {val.OldPrice}
+                                            </span>
                                           </div>
                                         </div>
                                       </Card.Body>
@@ -605,758 +496,161 @@ const Shop = () => {
                       <Tab.Pane eventKey="second">
                         <div className="tab-pane" id="tab-12">
                           <Row>
-                            <Col xl={12} lg={12} md={12}>
-                              <Card className="overflow-hidden">
-                                <Card.Body>
-                                  <Row className="g-0">
-                                    <Col xl={3} lg={12} md={12}>
-                                      <div className="product-list">
-                                        <div className="product-image">
-                                          <ul className="icons">
-                                            <li>
+                            {ProductDetailList.map((val, index) => {
+                              return (
+                                <Col xl={12} lg={12} md={12} key={index}>
+                                  <Card className="overflow-hidden">
+                                    <Card.Body>
+                                      <Row className="g-0">
+                                        <Col xl={3} lg={12} md={12}>
+                                          <div className="product-list">
+                                            <div className="product-image">
+                                              <ul className="icons">
+                                                <li>
+                                                  <Link
+                                                    to={`${process.env.PUBLIC_URL}/ecommerce/productdetails`}
+                                                    className="btn btn-primary"
+                                                  >
+                                                    <i className="fe fe-eye text-white "></i>
+                                                  </Link>
+                                                </li>
+                                                <li>
+                                                  <Link
+                                                    to={`${process.env.PUBLIC_URL}/ecommerce/addproduct`}
+                                                    className="btn btn-success"
+                                                  >
+                                                    <i className="fe fe-edit text-white "></i>
+                                                  </Link>
+                                                </li>
+                                                <li>
+                                                  <Link
+                                                    to={`${process.env.PUBLIC_URL}/ecommerce/wishlist`}
+                                                    className="btn btn-danger"
+                                                  >
+                                                    <i className="fe fe-x text-white"></i>
+                                                  </Link>
+                                                </li>
+                                              </ul>
+                                            </div>
+                                            <div className="br-be-0 br-te-0">
                                               <Link
                                                 to={`${process.env.PUBLIC_URL}/ecommerce/productdetails`}
-                                                className="btn btn-primary"
+                                                className=""
                                               >
-                                                <i className="fe fe-eye text-white "></i>
+                                                <img
+                                                  src={val.img}
+                                                  alt="img"
+                                                  className="cover-image br-7 w-100"
+                                                />
                                               </Link>
-                                            </li>
-                                            <li>
-                                              <Link
-                                                to={`${process.env.PUBLIC_URL}/ecommerce/addproduct`}
-                                                className="btn btn-success"
-                                              >
-                                                <i className="fe fe-edit text-white "></i>
-                                              </Link>
-                                            </li>
-                                            <li>
-                                              <Link
-                                                to={`${process.env.PUBLIC_URL}/ecommerce/wishlist`}
-                                                className="btn btn-danger"
-                                              >
-                                                <i className="fe fe-x text-white"></i>
-                                              </Link>
-                                            </li>
-                                          </ul>
-                                        </div>
-                                        <div className="br-be-0 br-te-0">
-                                          <Link
-                                            to={`${process.env.PUBLIC_URL}/ecommerce/productdetails`}
-                                            className=""
-                                          >
-                                            <img
-                                              src={require("../../../assets/images/pngs/9.jpg")}
-                                              alt="img"
-                                              className="cover-image br-7 w-100"
-                                            />
-                                          </Link>
-                                        </div>
-                                      </div>
-                                    </Col>
-                                    <Col
-                                      xl={6}
-                                      lg={12}
-                                      md={12}
-                                      className="border-end my-auto"
-                                    >
-                                      <Card.Body>
-                                        <div className="mb-3">
-                                          <Link
-                                            to={`${process.env.PUBLIC_URL}/ecommerce/productdetails`}
-                                            className=""
-                                          >
-                                            <h3 className="fw-bold fs-30 mb-3">
-                                              Candy Pure Rose Water
-                                            </h3>
-                                            <div className="mb-2 text-warning">
-                                              <i className="fa fa-star fs-18 text-warning"></i>
-                                              <i className="fa fa-star fs-18 text-warning"></i>
-                                              <i className="fa fa-star fs-18 text-warning"></i>
-                                              <i className="fa fa-star-half-o fs-18 text-warning"></i>
-                                              <i className="fa fa-star-o fs-18 text-warning"></i>
                                             </div>
-                                          </Link>
-                                          <p className="fs-16">
-                                            Ut enim ad minim veniam, quis
-                                            nostrud exercitation ullamco laboris
-                                            nisi ut aliquip commodo
-                                            consequat,quis nostrud exercitation
-                                            ullamco laboris nisi ut aliquip
-                                            commodo consequat
-                                          </p>
-                                          <form className="shop__filter">
-                                            <Row className="gutters-xs">
-                                              <div className="col-auto">
-                                                <label className="colorinput">
-                                                  <input
-                                                    type="checkbox"
-                                                    name="color"
-                                                    value="azure"
-                                                    className="colorinput-input"
-                                                    defaultChecked
-                                                  />
-                                                  <span className="colorinput-color bg-azure"></span>
-                                                </label>
-                                              </div>
-                                              <div className="col-auto">
-                                                <label className="colorinput">
-                                                  <input
-                                                    type="checkbox"
-                                                    name="color"
-                                                    value="indigo"
-                                                    className="colorinput-input"
-                                                  />
-                                                  <span className="colorinput-color bg-indigo"></span>
-                                                </label>
-                                              </div>
-                                              <div className="col-auto">
-                                                <label className="colorinput">
-                                                  <input
-                                                    type="checkbox"
-                                                    name="color"
-                                                    value="purple"
-                                                    className="colorinput-input"
-                                                  />
-                                                  <span className="colorinput-color bg-purple"></span>
-                                                </label>
-                                              </div>
-                                            </Row>
-                                          </form>
-                                        </div>
-                                      </Card.Body>
-                                    </Col>
-                                    <Col
-                                      xl={3}
-                                      lg={12}
-                                      md={12}
-                                      className="my-auto"
-                                    >
-                                      <Card.Body className="p-0">
-                                        <div className="price h3 text-center mb-5 fw-bold">
-                                          $599
-                                        </div>
-                                        <Link
-                                          to={`${process.env.PUBLIC_URL}/ecommerce/shoppingcart`}
-                                          className="btn me-2 btn-primary btn-block"
+                                          </div>
+                                        </Col>
+                                        <Col
+                                          xl={6}
+                                          lg={12}
+                                          md={12}
+                                          className="border-end my-auto"
                                         >
-                                          <i className="fe fe-shopping-cart mx-2"></i>
-                                          Add to cart
-                                        </Link>
-                                        <Link
-                                          to={`${process.env.PUBLIC_URL}/ecommerce/wishlist`}
-                                          className="btn me-2 btn-outline-primary btn-block mt-2"
-                                        >
-                                          <i className="fe fe-heart mx-2 wishlist-icon"></i>
-                                          Add to wishlist
-                                        </Link>
-                                      </Card.Body>
-                                    </Col>
-                                  </Row>
-                                </Card.Body>
-                              </Card>
-                            </Col>
-                            <Col xl={12} lg={12} md={12}>
-                              <Card className="overflow-hidden">
-                                <Card.Body>
-                                  <Row className="g-0">
-                                    <Col xl={3} lg={12} md={12}>
-                                      <div className="product-list">
-                                        <div className="product-image">
-                                          <ul className="icons">
-                                            <li>
+                                          <Card.Body>
+                                            <div className="mb-3">
                                               <Link
                                                 to={`${process.env.PUBLIC_URL}/ecommerce/productdetails`}
-                                                className="btn btn-primary"
+                                                className=""
                                               >
-                                                <i className="fe fe-eye text-white "></i>
+                                                <h3 className="fw-bold fs-30 mb-3">
+                                                  {val.productName}
+                                                </h3>
+                                                <div className="mb-2 text-warning">
+                                                  <i className="fa fa-star fs-18 text-warning"></i>
+                                                  <i className="fa fa-star fs-18 text-warning"></i>
+                                                  <i className="fa fa-star fs-18 text-warning"></i>
+                                                  <i className="fa fa-star-half-o fs-18 text-warning"></i>
+                                                  <i className="fa fa-star-o fs-18 text-warning"></i>
+                                                </div>
                                               </Link>
-                                            </li>
-                                            <li>
-                                              <Link
-                                                to={`${process.env.PUBLIC_URL}/ecommerce/addproduct`}
-                                                className="btn btn-success"
-                                              >
-                                                <i className="fe fe-edit text-white "></i>
-                                              </Link>
-                                            </li>
-                                            <li>
-                                              <Link
-                                                to={`${process.env.PUBLIC_URL}/ecommerce/wishlist`}
-                                                className="btn btn-danger"
-                                              >
-                                                <i className="fe fe-x text-white"></i>
-                                              </Link>
-                                            </li>
-                                          </ul>
-                                        </div>
-                                        <div className="br-be-0 br-te-0">
-                                          <Link
-                                            to={`${process.env.PUBLIC_URL}/ecommerce/productdetails`}
-                                            className=""
-                                          >
-                                            <img
-                                              src={require("../../../assets/images/pngs/10.jpg")}
-                                              alt="img"
-                                              className="cover-image br-7 w-100"
-                                            />
-                                          </Link>
-                                        </div>
-                                      </div>
-                                    </Col>
-                                    <Col
-                                      xl={6}
-                                      lg={12}
-                                      md={12}
-                                      className="border-end my-auto"
-                                    >
-                                      <Card.Body>
-                                        <div className="mb-3">
-                                          <Link
-                                            to={`${process.env.PUBLIC_URL}/ecommerce/productdetails`}
-                                            className=""
-                                          >
-                                            <h3 className="fw-bold fs-30 mb-3">
-                                              White Tshirt for Men
-                                            </h3>
-                                            <div className="mb-2 text-warning">
-                                              <i className="fa fa-star fs-18 text-warning"></i>
-                                              <i className="fa fa-star fs-18 text-warning"></i>
-                                              <i className="fa fa-star fs-18 text-warning"></i>
-                                              <i className="fa fa-star-half-o fs-18 text-warning"></i>
-                                              <i className="fa fa-star-o fs-18 text-warning"></i>
+                                              <p className="fs-16">
+                                                Ut enim ad minim veniam, quis
+                                                nostrud exercitation ullamco
+                                                laboris nisi ut aliquip commodo
+                                                consequat,quis nostrud
+                                                exercitation ullamco laboris
+                                                nisi ut aliquip commodo
+                                                consequat
+                                              </p>
+                                              <form className="shop__filter">
+                                                <Row className="gutters-xs">
+                                                  <div className="col-auto">
+                                                    <label className="colorinput">
+                                                      <input
+                                                        type="checkbox"
+                                                        name="color"
+                                                        value="azure"
+                                                        className="colorinput-input"
+                                                        defaultChecked
+                                                      />
+                                                      <span className="colorinput-color bg-azure"></span>
+                                                    </label>
+                                                  </div>
+                                                  <div className="col-auto">
+                                                    <label className="colorinput">
+                                                      <input
+                                                        type="checkbox"
+                                                        name="color"
+                                                        value="indigo"
+                                                        className="colorinput-input"
+                                                      />
+                                                      <span className="colorinput-color bg-indigo"></span>
+                                                    </label>
+                                                  </div>
+                                                  <div className="col-auto">
+                                                    <label className="colorinput">
+                                                      <input
+                                                        type="checkbox"
+                                                        name="color"
+                                                        value="purple"
+                                                        className="colorinput-input"
+                                                      />
+                                                      <span className="colorinput-color bg-purple"></span>
+                                                    </label>
+                                                  </div>
+                                                </Row>
+                                              </form>
                                             </div>
-                                          </Link>
-                                          <p className="fs-16">
-                                            Ut enim ad minim veniam, quis
-                                            nostrud exercitation ullamco laboris
-                                            nisi ut aliquip commodo
-                                            consequat,quis nostrud exercitation
-                                            ullamco laboris nisi ut aliquip
-                                            commodo consequat
-                                          </p>
-                                          <Form className="shop__filter">
-                                            <Row className="gutters-xs">
-                                              <div className="col-auto">
-                                                <label className="colorinput">
-                                                  <input
-                                                    type="checkbox"
-                                                    name="color"
-                                                    value="azure"
-                                                    className="colorinput-input"
-                                                  />
-                                                  <span className="colorinput-color bg-azure"></span>
-                                                </label>
-                                              </div>
-                                              <div className="col-auto">
-                                                <label className="colorinput">
-                                                  <input
-                                                    type="checkbox"
-                                                    name="color"
-                                                    value="indigo"
-                                                    className="colorinput-input"
-                                                  />
-                                                  <span className="colorinput-color bg-indigo"></span>
-                                                </label>
-                                              </div>
-                                              <div className="col-auto">
-                                                <label className="colorinput">
-                                                  <input
-                                                    type="checkbox"
-                                                    name="color"
-                                                    value="purple"
-                                                    className="colorinput-input"
-                                                  />
-                                                  <span className="colorinput-color bg-purple"></span>
-                                                </label>
-                                              </div>
-                                            </Row>
-                                          </Form>
-                                        </div>
-                                      </Card.Body>
-                                    </Col>
-                                    <Col
-                                      xl={3}
-                                      lg={12}
-                                      md={12}
-                                      className="my-auto"
-                                    >
-                                      <Card.Body className="p-0">
-                                        <div className="price h3 text-center mb-5 fw-bold">
-                                          $1,399
-                                        </div>
-                                        <Link
-                                          to={`${process.env.PUBLIC_URL}/ecommerce/shoppingcart`}
-                                          className="btn me-2 btn-primary btn-block"
+                                          </Card.Body>
+                                        </Col>
+                                        <Col
+                                          xl={3}
+                                          lg={12}
+                                          md={12}
+                                          className="my-auto"
                                         >
-                                          <i className="fe fe-shopping-cart mx-2"></i>
-                                          Add to cart
-                                        </Link>
-                                        <Link
-                                          to={`${process.env.PUBLIC_URL}/ecommerce/wishlist`}
-                                          className="btn me-2 btn-outline-primary btn-block mt-2"
-                                        >
-                                          <i className="fe fe-heart mx-2 wishlist-icon"></i>
-                                          Add to wishlist
-                                        </Link>
-                                      </Card.Body>
-                                    </Col>
-                                  </Row>
-                                </Card.Body>
-                              </Card>
-                            </Col>
-                            <Col xl={12} lg={12} md={12}>
-                              <Card className="overflow-hidden">
-                                <Card.Body>
-                                  <Row className="g-0">
-                                    <Col xl={3} lg={12} md={12}>
-                                      <div className="product-list">
-                                        <div className="product-image">
-                                          <ul className="icons">
-                                            <li>
-                                              <Link
-                                                to={`${process.env.PUBLIC_URL}/ecommerce/productdetails`}
-                                                className="btn btn-primary"
-                                              >
-                                                <i className="fe fe-eye text-white "></i>
-                                              </Link>
-                                            </li>
-                                            <li>
-                                              <Link
-                                                to={`${process.env.PUBLIC_URL}/ecommerce/addproduct`}
-                                                className="btn btn-success"
-                                              >
-                                                <i className="fe fe-edit text-white "></i>
-                                              </Link>
-                                            </li>
-                                            <li>
-                                              <Link
-                                                to={`${process.env.PUBLIC_URL}/ecommerce/wishlist`}
-                                                className="btn btn-danger"
-                                              >
-                                                <i className="fe fe-x text-white"></i>
-                                              </Link>
-                                            </li>
-                                          </ul>
-                                        </div>
-                                        <div className="br-be-0 br-te-0">
-                                          <Link
-                                            to={`${process.env.PUBLIC_URL}/ecommerce/productdetails`}
-                                            className=""
-                                          >
-                                            <img
-                                              src={require("../../../assets/images/pngs/8.jpg")}
-                                              alt="img"
-                                              className="cover-image br-7 w-100"
-                                            />
-                                          </Link>
-                                        </div>
-                                      </div>
-                                    </Col>
-                                    <Col
-                                      xl={6}
-                                      lg={12}
-                                      md={12}
-                                      className="border-end my-auto"
-                                    >
-                                      <Card.Body>
-                                        <div className="mb-3">
-                                          <Link
-                                            to={`${process.env.PUBLIC_URL}/ecommerce/productdetails`}
-                                            className=""
-                                          >
-                                            <h3 className="fw-bold fs-30 mb-3">
-                                              Stylish Rockerz 255 Ear Pods
-                                            </h3>
-                                            <div className="mb-2 text-warning">
-                                              <i className="fa fa-star fs-18 text-warning"></i>
-                                              <i className="fa fa-star fs-18 text-warning"></i>
-                                              <i className="fa fa-star fs-18 text-warning"></i>
-                                              <i className="fa fa-star-half-o fs-18 text-warning"></i>
-                                              <i className="fa fa-star-o fs-18 text-warning"></i>
+                                          <Card.Body className="p-0">
+                                            <div className="price h3 text-center mb-5 fw-bold">
+                                              {val.CurrentPrice}
                                             </div>
-                                          </Link>
-                                          <p className="fs-16">
-                                            Ut enim ad minim veniam, quis
-                                            nostrud exercitation ullamco laboris
-                                            nisi ut aliquip commodo
-                                            consequat,quis nostrud exercitation
-                                            ullamco laboris nisi ut aliquip
-                                            commodo consequat
-                                          </p>
-                                          <Form className="shop__filter">
-                                            <Row className="gutters-xs">
-                                              <div className="col-auto">
-                                                <label className="colorinput">
-                                                  <input
-                                                    type="checkbox"
-                                                    name="color"
-                                                    value="azure"
-                                                    className="colorinput-input"
-                                                  />
-                                                  <span className="colorinput-color bg-azure"></span>
-                                                </label>
-                                              </div>
-                                              <div className="col-auto">
-                                                <label className="colorinput">
-                                                  <input
-                                                    type="checkbox"
-                                                    name="color"
-                                                    value="indigo"
-                                                    className="colorinput-input"
-                                                  />
-                                                  <span className="colorinput-color bg-indigo"></span>
-                                                </label>
-                                              </div>
-                                              <div className="col-auto">
-                                                <label className="colorinput">
-                                                  <input
-                                                    type="checkbox"
-                                                    name="color"
-                                                    value="purple"
-                                                    className="colorinput-input"
-                                                  />
-                                                  <span className="colorinput-color bg-purple"></span>
-                                                </label>
-                                              </div>
-                                            </Row>
-                                          </Form>
-                                        </div>
-                                      </Card.Body>
-                                    </Col>
-                                    <Col
-                                      xl={3}
-                                      lg={12}
-                                      md={12}
-                                      className="my-auto"
-                                    >
-                                      <Card.Body className="p-0">
-                                        <div className="price h3 text-center mb-5 fw-bold">
-                                          $16,599
-                                        </div>
-                                        <Link
-                                          to={`${process.env.PUBLIC_URL}/ecommerce/shoppingcart`}
-                                        >
-                                          <span className="btn btn-primary btn-block">
-                                            <i className="fe fe-shopping-cart mx-2"></i>
-                                            Add to cart
-                                          </span>
-                                        </Link>
-                                        <Link
-                                          to={`${process.env.PUBLIC_URL}/ecommerce/wishlist`}
-                                        >
-                                          <span className="btn btn-outline-primary btn-block mt-2">
-                                            <i className="fe fe-heart mx-2 wishlist-icon"></i>
-                                            Add to wishlist
-                                          </span>
-                                        </Link>
-                                      </Card.Body>
-                                    </Col>
-                                  </Row>
-                                </Card.Body>
-                              </Card>
-                            </Col>
-                            <Col xl={12} lg={12} md={12}>
-                              <Card className="overflow-hidden">
-                                <Card.Body>
-                                  <Row className="g-0">
-                                    <Col xl={3} lg={12} md={12}>
-                                      <div className="product-list">
-                                        <div className="product-image">
-                                          <ul className="icons">
-                                            <li>
-                                              <Link
-                                                to={`${process.env.PUBLIC_URL}/ecommerce/productdetails`}
-                                                className="btn btn-primary"
-                                              >
-                                                <i className="fe fe-eye text-white "></i>
-                                              </Link>
-                                            </li>
-                                            <li>
-                                              <Link
-                                                to={`${process.env.PUBLIC_URL}/ecommerce/addproduct`}
-                                                className="btn btn-success"
-                                              >
-                                                <i className="fe fe-edit text-white "></i>
-                                              </Link>
-                                            </li>
-                                            <li>
-                                              <Link
-                                                to={`${process.env.PUBLIC_URL}/ecommerce/wishlist`}
-                                                className="btn btn-danger"
-                                              >
-                                                <i className="fe fe-x text-white"></i>
-                                              </Link>
-                                            </li>
-                                          </ul>
-                                        </div>
-                                        <div className="br-be-0 br-te-0">
-                                          <Link
-                                            to={`${process.env.PUBLIC_URL}/ecommerce/productdetails`}
-                                            className=""
-                                          >
-                                            <img
-                                              src={require("../../../assets/images/pngs/4.jpg")}
-                                              alt="img"
-                                              className="cover-image br-7 w-100"
-                                            />
-                                          </Link>
-                                        </div>
-                                      </div>
-                                    </Col>
-                                    <Col
-                                      xl={6}
-                                      lg={12}
-                                      md={12}
-                                      className="border-end my-auto"
-                                    >
-                                      <Card.Body>
-                                        <div className="mb-3">
-                                          <Link
-                                            to={`${process.env.PUBLIC_URL}/ecommerce/productdetails`}
-                                            className=""
-                                          >
-                                            <h3 className="fw-bold fs-30 mb-3">
-                                              Flower Pot for Home Decor
-                                            </h3>
-                                            <div className="mb-2 text-warning">
-                                              <i className="fa fa-star fs-18 text-warning"></i>
-                                              <i className="fa fa-star fs-18 text-warning"></i>
-                                              <i className="fa fa-star fs-18 text-warning"></i>
-                                              <i className="fa fa-star-half-o fs-18 text-warning"></i>
-                                              <i className="fa fa-star-o fs-18 text-warning"></i>
-                                            </div>
-                                          </Link>
-                                          <p className="fs-16">
-                                            Ut enim ad minim veniam, quis
-                                            nostrud exercitation ullamco laboris
-                                            nisi ut aliquip commodo
-                                            consequat,quis nostrud exercitation
-                                            ullamco laboris nisi ut aliquip
-                                            commodo consequat
-                                          </p>
-                                          <Form className="shop__filter">
-                                            <Row className="gutters-xs">
-                                              <div className="col-auto">
-                                                <label className="colorinput">
-                                                  <input
-                                                    type="checkbox"
-                                                    name="color"
-                                                    value="azure"
-                                                    className="colorinput-input"
-                                                  />
-                                                  <span className="colorinput-color bg-azure"></span>
-                                                </label>
-                                              </div>
-                                              <div className="col-auto">
-                                                <label className="colorinput">
-                                                  <input
-                                                    type="checkbox"
-                                                    name="color"
-                                                    value="indigo"
-                                                    className="colorinput-input"
-                                                  />
-                                                  <span className="colorinput-color bg-indigo"></span>
-                                                </label>
-                                              </div>
-                                              <div className="col-auto">
-                                                <label className="colorinput">
-                                                  <input
-                                                    type="checkbox"
-                                                    name="color"
-                                                    value="purple"
-                                                    className="colorinput-input"
-                                                  />
-                                                  <span className="colorinput-color bg-purple"></span>
-                                                </label>
-                                              </div>
-                                            </Row>
-                                          </Form>
-                                        </div>
-                                      </Card.Body>
-                                    </Col>
-                                    <Col
-                                      xl={3}
-                                      lg={12}
-                                      md={12}
-                                      className="my-auto"
-                                    >
-                                      <Card.Body className="p-0">
-                                        <div className="price h3 text-center mb-5 fw-bold">
-                                          $1,299
-                                        </div>
-                                        <Link
-                                          to={`${process.env.PUBLIC_URL}/ecommerce/shoppingcart`}
-                                        >
-                                          <span className="btn btn-primary btn-block">
-                                            <i className="fe fe-shopping-cart mx-2"></i>
-                                            Add to cart
-                                          </span>
-                                        </Link>
-                                        <Link
-                                          to={`${process.env.PUBLIC_URL}/ecommerce/wishlist`}
-                                        >
-                                          <span className="btn btn-outline-primary btn-block mt-2">
-                                            <i className="fe fe-heart mx-2 wishlist-icon"></i>
-                                            Add to wishlist
-                                          </span>
-                                        </Link>
-                                      </Card.Body>
-                                    </Col>
-                                  </Row>
-                                </Card.Body>
-                              </Card>
-                            </Col>
-                            <Col xl={12} lg={12} md={12}>
-                              <Card className="overflow-hidden">
-                                <Card.Body>
-                                  <Row className="g-0">
-                                    <Col xl={3} lg={12} md={12}>
-                                      <div className="product-list">
-                                        <div className="product-image">
-                                          <ul className="icons">
-                                            <li>
-                                              <Link
-                                                to={`${process.env.PUBLIC_URL}/ecommerce/productdetails`}
-                                                className="btn btn-primary"
-                                              >
-                                                <i className="fe fe-eye text-white "></i>
-                                              </Link>
-                                            </li>
-                                            <li>
-                                              <Link
-                                                to={`${process.env.PUBLIC_URL}/ecommerce/addproduct`}
-                                                className="btn btn-success"
-                                              >
-                                                <i className="fe fe-edit text-white "></i>
-                                              </Link>
-                                            </li>
-                                            <li>
-                                              <Link
-                                                to={`${process.env.PUBLIC_URL}/ecommerce/wishlist`}
-                                                className="btn btn-danger"
-                                              >
-                                                <i className="fe fe-x text-white"></i>
-                                              </Link>
-                                            </li>
-                                          </ul>
-                                        </div>
-                                        <div className="br-be-0 br-te-0">
-                                          <Link
-                                            to={`${process.env.PUBLIC_URL}/ecommerce/productdetails`}
-                                            className=""
-                                          >
-                                            <img
-                                              src={require("../../../assets/images/pngs/3.jpg")}
-                                              alt="img"
-                                              className="cover-image br-7 w-100"
-                                            />
-                                          </Link>
-                                        </div>
-                                      </div>
-                                    </Col>
-                                    <Col
-                                      xl={6}
-                                      lg={12}
-                                      md={12}
-                                      className="border-end my-auto"
-                                    >
-                                      <Card.Body>
-                                        <div className="mb-3">
-                                          <Link
-                                            to={`${process.env.PUBLIC_URL}/ecommerce/productdetails`}
-                                            className=""
-                                          >
-                                            <h3 className="fw-bold fs-30 mb-3">
-                                              Running Shoes for men
-                                            </h3>
-                                            <div className="mb-2 text-warning">
-                                              <i className="fa fa-star fs-18 text-warning"></i>
-                                              <i className="fa fa-star fs-18 text-warning"></i>
-                                              <i className="fa fa-star fs-18 text-warning"></i>
-                                              <i className="fa fa-star-half-o fs-18 text-warning"></i>
-                                              <i className="fa fa-star-o fs-18 text-warning"></i>
-                                            </div>
-                                          </Link>
-                                          <p className="fs-16">
-                                            Ut enim ad minim veniam, quis
-                                            nostrud exercitation ullamco laboris
-                                            nisi ut aliquip commodo
-                                            consequat,quis nostrud exercitation
-                                            ullamco laboris nisi ut aliquip
-                                            commodo consequat
-                                          </p>
-                                          <Form className="shop__filter">
-                                            <Row className="gutters-xs">
-                                              <div className="col-auto">
-                                                <label className="colorinput">
-                                                  <input
-                                                    type="checkbox"
-                                                    name="color"
-                                                    value="azure"
-                                                    className="colorinput-input"
-                                                  />
-                                                  <span className="colorinput-color bg-azure"></span>
-                                                </label>
-                                              </div>
-                                              <div className="col-auto">
-                                                <label className="colorinput">
-                                                  <input
-                                                    type="checkbox"
-                                                    name="color"
-                                                    value="indigo"
-                                                    className="colorinput-input"
-                                                  />
-                                                  <span className="colorinput-color bg-indigo"></span>
-                                                </label>
-                                              </div>
-                                              <div className="col-auto">
-                                                <label className="colorinput">
-                                                  <input
-                                                    type="checkbox"
-                                                    name="color"
-                                                    value="purple"
-                                                    className="colorinput-input"
-                                                  />
-                                                  <span className="colorinput-color bg-purple"></span>
-                                                </label>
-                                              </div>
-                                            </Row>
-                                          </Form>
-                                        </div>
-                                      </Card.Body>
-                                    </Col>
-                                    <Col
-                                      xl={3}
-                                      lg={12}
-                                      md={12}
-                                      className="my-auto"
-                                    >
-                                      <Card.Body className="p-0">
-                                        <div className="price h3 text-center mb-5 fw-bold">
-                                          $6,599
-                                        </div>
-                                        <Link
-                                          to={`${process.env.PUBLIC_URL}/ecommerce/shoppingcart`}
-                                        >
-                                          <span className="btn btn-primary btn-block">
-                                            <i className="fe fe-shopping-cart mx-2"></i>
-                                            Add to cart
-                                          </span>
-                                        </Link>
-                                        <Link
-                                          to={`${process.env.PUBLIC_URL}/ecommerce/wishlist`}
-                                        >
-                                          <span className="btn btn-outline-primary btn-block mt-2">
-                                            <i className="fe fe-heart mx-2 wishlist-icon"></i>
-                                            Add to wishlist
-                                          </span>
-                                        </Link>
-                                      </Card.Body>
-                                    </Col>
-                                  </Row>
-                                </Card.Body>
-                              </Card>
-                            </Col>
+                                            <Link
+                                              to={`${process.env.PUBLIC_URL}/ecommerce/shoppingcart`}
+                                              className="btn me-2 btn-primary btn-block"
+                                            >
+                                              <i className="fe fe-shopping-cart mx-2"></i>
+                                              Add to cart
+                                            </Link>
+                                            <Link
+                                              to={`${process.env.PUBLIC_URL}/ecommerce/wishlist`}
+                                              className="btn me-2 btn-outline-primary btn-block mt-2"
+                                            >
+                                              <i className="fe fe-heart mx-2 wishlist-icon"></i>
+                                              Add to wishlist
+                                            </Link>
+                                          </Card.Body>
+                                        </Col>
+                                      </Row>
+                                    </Card.Body>
+                                  </Card>
+                                </Col>
+                              );
+                            })}
                             <div className="mb-5">
                               <div className="float-end">
                                 <Pagination>

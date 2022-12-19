@@ -9,7 +9,7 @@ export default class CenterMode extends Component {
         return (
           <div className="thumb">
             <img
-              src={require(`../../assets/images/ProductImages/jpgs/B${
+              src={require(`../../assets/images/ProductImages/B${
                 i + 1
               }.jpg`)}
               alt="Product"
@@ -29,13 +29,13 @@ export default class CenterMode extends Component {
         <Slider {...settings}>
           <div className="slider-thumb">
             <img
-              src={require("../../assets/images/ProductImages/jpgs/B1.jpg")}
+              src={require("../../assets/images/ProductImages/B1.jpg")}
               alt="B1"
             />
           </div>
           <div className="slider-thumb">
             <img
-              src={require("../../assets/images/ProductImages/jpgs/B2.jpg")}
+              src={require("../../assets/images/ProductImages/B2.jpg")}
               alt="B2"
             />
           </div>

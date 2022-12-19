@@ -17,14 +17,15 @@ import {
   BasicColorCardHeader,
   CardBlue,
   CardLeftSide,
+  CardWithSwitch,
   CardwithDangerAlert,
   CardwithImage,
   CardwithList,
   CardwithSuccessAlert,
-  ContactCardDon,
-  ContactCardMike,
-  ContactCardNorda,
-  ContactCardWillie,
+  ContactCard1,
+  ContactCard2,
+  ContactCard3,
+  ContactCard4,
   FullScreenDialog,
   InitialCollapsedCard,
   SampleCard,
@@ -36,7 +37,8 @@ const CardsDesign = () => {
     <React.Fragment>
       <div>
         <PageHeader titles="Cards" active="Cards" items={["Apps"]} />
-        {/* <!-- ROW-1 OPEN --> */}
+
+        {/* <--<-< ROW OPEN >->--> */}
         <Row>
           <Col md={6} xl={4}>
             <Card className="text-primary bg-primary-transparent card-transparent">
@@ -49,7 +51,7 @@ const CardsDesign = () => {
               </Card.Body>
             </Card>
           </Col>
-          {/* <!-- COL END --> */}
+          {/* <*--< COL END >--*> */}
           <Col md={6} xl={4}>
             <Card className="text-secondary bg-secondary-transparent card-transparent">
               <Card.Body>
@@ -61,7 +63,7 @@ const CardsDesign = () => {
               </Card.Body>
             </Card>
           </Col>
-          {/* <!-- COL END --> */}
+          {/* <*--< COL END >--*> */}
           <Col md={6} xl={4}>
             <Card className="text-success bg-success-transparent card-transparent">
               <Card.Body>
@@ -73,7 +75,7 @@ const CardsDesign = () => {
               </Card.Body>
             </Card>
           </Col>
-          {/* <!-- COL END --> */}
+          {/* <*--< COL END >--*> */}
           <Col md={6} xl={4}>
             <Card className="text-danger bg-danger-transparent card-transparent">
               <Card.Body>
@@ -85,7 +87,7 @@ const CardsDesign = () => {
               </Card.Body>
             </Card>
           </Col>
-          {/* <!-- COL END --> */}
+          {/* <*--< COL END >--*> */}
           <Col md={6} xl={4}>
             <Card className="text-info bg-info-transparent card-transparent">
               <Card.Body>
@@ -97,7 +99,7 @@ const CardsDesign = () => {
               </Card.Body>
             </Card>
           </Col>
-          {/* <!-- COL END --> */}
+          {/* <*--< COL END >--*> */}
           <Col md={6} xl={4}>
             <Card className="text-warning bg-warning-transparent card-transparent">
               <Card.Body>
@@ -109,119 +111,11 @@ const CardsDesign = () => {
               </Card.Body>
             </Card>
           </Col>
-          {/* <!-- COL END --> */}
+          {/* <*--< COL END >--*> */}
         </Row>
-        {/* <!-- ROW-1 CLOSED --> */}
+        {/* <--<-< ROW CLOSED >->--> */}
 
-        {/* <!-- ROW-2 OPEN --> */}
-        <Row>
-          <Col md={6} xl={4}>
-            <Card>
-              <Card.Body>
-                <Card.Title className="pb-2">Card title</Card.Title>
-                <Card.Subtitle className="mb-2 text-muted">
-                  Card subtitle
-                </Card.Subtitle>
-                <Card.Text>
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </Card.Text>
-                <Card.Link href="#">Card link</Card.Link>
-                <Card.Link href="#">Another link</Card.Link>
-              </Card.Body>
-            </Card>
-          </Col>
-          {/* <!-- COL END --> */}
-          <Col md={6} xl={4}>
-            <Card>
-              <Card.Header>
-                <Card.Title>Card-Header</Card.Title>
-              </Card.Header>
-              <Card.Body>
-                <Card.Text>
-                  With supporting text below as a natural lead-in to additional
-                  content.
-                </Card.Text>
-                <Button variant="primary">Go somewhere</Button>
-              </Card.Body>
-            </Card>
-          </Col>
-          {/* <!-- COL END --> */}
-          <Col md={6} xl={4}>
-            <Card>
-              <Card.Body>
-                <Card.Text>
-                  With supporting text below as a natural lead-in to additional
-                  content.
-                </Card.Text>
-                <Button variant="primary">Go somewhere</Button>
-              </Card.Body>
-              <Card.Footer>
-                <Card.Title>Card-footer</Card.Title>
-              </Card.Footer>
-            </Card>
-          </Col>
-          {/* <!-- COL END --> */}
-          <Col md={6} xl={4}>
-            <Card>
-              <Card.Body>
-                <Card.Title>Special title treatment</Card.Title>
-                <Card.Text>
-                  With supporting text below as a natural lead-in to additional
-                  content.
-                </Card.Text>
-                <Button variant="primary">Go somewhere</Button>
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col md={6} xl={4}>
-            <Card className="text-end">
-              <Card.Body>
-                <Card.Title>Special title treatment</Card.Title>
-                <Card.Text>
-                  With supporting text below as a natural lead-in to additional
-                  content.
-                </Card.Text>
-                <Button variant="primary">Go somewhere</Button>
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col md={6} xl={4}>
-            <Card className="text-center">
-              <Card.Body>
-                <Card.Title>Special title treatment</Card.Title>
-                <Card.Text>
-                  With supporting text below as a natural lead-in to additional
-                  content.
-                </Card.Text>
-                <Button variant="primary">Go somewhere</Button>
-              </Card.Body>
-            </Card>
-          </Col>
-        </Row>
-        {/* <!-- ROW-2 CLOSED --> */}
-
-        {/* <!-- ROW-3 OPEN --> */}
-        <Row className="row-cols-4">
-          <Col xl={3} sm={6} md={6}>
-            <ContactCardMike />
-          </Col>
-          {/* <!-- COL END --> */}
-          <Col xl={3} sm={6} md={6}>
-            <ContactCardNorda />
-          </Col>
-          {/* <!-- COL END --> */}
-          <Col xl={3} sm={6} md={6}>
-            <ContactCardWillie />
-          </Col>
-          <Col xl={3} sm={6} md={6}>
-            <ContactCardDon />
-          </Col>
-          {/* <!-- COL END --> */}
-        </Row>
-        {/* <!-- ROW-3 CLOSED --> */}
-
-        {/* <!-- ROW-4 OPEN --> */}
+        {/* <--<-< ROW OPEN >->--> */}
         <Row>
           <Col md={4} xl={4}>
             <Card className="text-white bg-primary">
@@ -234,7 +128,7 @@ const CardsDesign = () => {
               </Card.Body>
             </Card>
           </Col>
-          {/* <!-- COL END --> */}
+          {/* <*--< COL END >--*> */}
           <Col md={4} xl={4}>
             <Card className="text-white bg-secondary">
               <Card.Body>
@@ -246,7 +140,7 @@ const CardsDesign = () => {
               </Card.Body>
             </Card>
           </Col>
-          {/* <!-- COL END --> */}
+          {/* <*--< COL END >--*> */}
           <Col md={4} xl={4}>
             <Card className="text-white bg-success">
               <Card.Body>
@@ -258,7 +152,7 @@ const CardsDesign = () => {
               </Card.Body>
             </Card>
           </Col>
-          {/* <!-- COL END --> */}
+          {/* <*--< COL END >--*> */}
           <Col md={4} xl={4}>
             <Card className="text-white bg-danger">
               <Card.Body>
@@ -270,7 +164,7 @@ const CardsDesign = () => {
               </Card.Body>
             </Card>
           </Col>
-          {/* <!-- COL END --> */}
+          {/* <*--< COL END >--*> */}
           <Col md={4} xl={4}>
             <Card className="text-white bg-info">
               <Card.Body>
@@ -282,7 +176,7 @@ const CardsDesign = () => {
               </Card.Body>
             </Card>
           </Col>
-          {/* <!-- COL END --> */}
+          {/* <*--< COL END >--*> */}
           <Col xl={4} md={4}>
             <Card className="text-white bg-warning">
               <Card.Body>
@@ -294,23 +188,44 @@ const CardsDesign = () => {
               </Card.Body>
             </Card>
           </Col>
-          {/* <!-- COL END --> */}
+          {/* <*--< COL END >--*> */}
           <Col md={4} xl={4}>
             <BasicCard />
           </Col>
-          {/* <!-- COL END --> */}
+          {/* <*--< COL END >--*> */}
           <Col md={4} xl={4}>
             <BasicColorCardHeader />
           </Col>
-          {/* <!-- COL END --> */}
+          {/* <*--< COL END >--*> */}
           <Col md={4} xl={4}>
             <BasicColorCardFooter />
           </Col>
-          {/* <!-- COL END --> */}
+          {/* <*--< COL END >--*> */}
+          {/* <*--< COL END >--*> */}
+          <Col md={4} xl={4}>
+            <FullScreenDialog />
+          </Col>
+          {/* <*--< COL END >--*> */}
+          <Col xl={4} md={4}>
+            <CardWithSwitch />
+          </Col>
+          {/* <*--< COL END >--*> */}
+          <Col xl={4} md={4}>
+            <InitialCollapsedCard />
+          </Col>
+          {/* <*--< COL END >--*> */}
+          <Col md={6} xl={6}>
+            <CardwithDangerAlert />
+          </Col>
+          {/* <*--< COL END >--*> */}
+          <Col md={6} xl={6}>
+            <CardwithSuccessAlert />
+          </Col>
+          {/* <*--< COL END >--*> */}
           <Col md={6} xl={6}>
             <Card>
               <Card.Header>
-                <Card.Title>Panel with custom buttons</Card.Title>
+                <Card.Title>Card with custom buttons</Card.Title>
                 <div className="card-options">
                   <Card.Link href="#" className="btn btn-primary btn-sm">
                     Action 1
@@ -328,7 +243,7 @@ const CardsDesign = () => {
               </Card.Body>
             </Card>
           </Col>
-          {/* <!-- COL END --> */}
+          {/* <*--< COL END >--*> */}
           <Col md={6} xl={6}>
             <Card>
               <Card.Header>
@@ -362,53 +277,121 @@ const CardsDesign = () => {
               </Card.Body>
             </Card>
           </Col>
-          {/* <!-- COL END --> */}
-          <Col md={6} xl={6}>
-            <CardwithSuccessAlert />
-          </Col>
-          {/* <!-- COL END --> */}
-          <Col md={6} xl={6}>
-            <CardwithDangerAlert />
-          </Col>
-          {/* <!-- COL END --> */}
-          <Col md={4} xl={4}>
-            <FullScreenDialog />
-          </Col>
-          {/* <!-- COL END --> */}
-          <Col xl={4} md={4}>
+          {/* <*--< COL END >--*> */}
+        </Row>
+        {/* <--<-< ROW CLOSED >->--> */}
+
+        {/* <--<-< ROW OPEN >->--> */}
+        <Row>
+          <Col md={6} xl={4}>
             <Card>
               <Card.Header>
-                <Card.Title>Card with switch</Card.Title>
-                <div className="card-options">
-                  {/* <label className="custom-switch m-0">
-                <input type="checkbox" value="1" className="custom-switch-input" defaultChecked />
-                <span className="custom-switch-indicator"></span>
-              </label> */}
-                  <Form.Check
-                    className="mb-2 mt-0"
-                    type="switch"
-                    id="custom-switch"
-                    defaultChecked
-                  />
-                </div>
+                <Card.Title>Card-Header</Card.Title>
               </Card.Header>
               <Card.Body>
-                Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                cupidatat non proident, sunt in culpa qui officia deserunt
-                mollit anim id est laborum
+                <Card.Text>
+                  With supporting text below as a natural lead-in to additional
+                  content.
+                </Card.Text>
+                <Button variant="primary">Go somewhere</Button>
               </Card.Body>
             </Card>
           </Col>
-          {/* <!-- COL END --> */}
-          <Col xl={4} md={4}>
-            <InitialCollapsedCard />
+          {/* <*--< COL END >--*> */}
+          <Col md={6} xl={4}>
+            <Card>
+              <Card.Body>
+                <Card.Subtitle className="mb-2 text-muted">
+                  Card subtitle
+                </Card.Subtitle>
+                <Card.Text>
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </Card.Text>
+              </Card.Body>
+              <Card.Footer>
+                <Button variant="primary">Go somewhere</Button>
+              </Card.Footer>
+            </Card>
           </Col>
-          {/* <!-- COL END --> */}
+          {/* <*--< COL END >--*> */}
+          <Col md={6} xl={4}>
+            <Card>
+              <Card.Body>
+                <Card.Title className="pb-2">Card title</Card.Title>
+                <Card.Subtitle className="mb-2 text-muted">
+                  Card subtitle
+                </Card.Subtitle>
+                <Card.Text>
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </Card.Text>
+                <Card.Link href="#">Card link</Card.Link>
+                <Card.Link href="#">Another link</Card.Link>
+              </Card.Body>
+            </Card>
+          </Col>
+          {/* <*--< COL END >--*> */}
+          <Col md={6} xl={4}>
+            <Card>
+              <Card.Body>
+                <Card.Title>Special title treatment</Card.Title>
+                <Card.Text>
+                  With supporting text below as a natural lead-in to additional
+                  content.
+                </Card.Text>
+                <Button variant="primary">Go somewhere</Button>
+              </Card.Body>
+            </Card>
+          </Col>
+          <Col md={6} xl={4}>
+            <Card className="text-center">
+              <Card.Body>
+                <Card.Title>Special title treatment</Card.Title>
+                <Card.Text>
+                  With supporting text below as a natural lead-in to additional
+                  content.
+                </Card.Text>
+                <Button variant="primary">Go somewhere</Button>
+              </Card.Body>
+            </Card>
+          </Col>
+          <Col md={6} xl={4}>
+            <Card className="text-end">
+              <Card.Body>
+                <Card.Title>Special title treatment</Card.Title>
+                <Card.Text>
+                  With supporting text below as a natural lead-in to additional
+                  content.
+                </Card.Text>
+                <Button variant="primary">Go somewhere</Button>
+              </Card.Body>
+            </Card>
+          </Col>
         </Row>
-        {/* <!-- ROW-4 CLOSED --> */}
+        {/* <--<-< ROW CLOSED >->--> */}
 
-        {/* <!-- ROW-5 OPEN --> */}
+        {/* <--<-< ROW OPEN >->--> */}
+        <Row className="row-cols-4">
+          <Col xl={3} sm={6} md={6}>
+            <ContactCard1 />
+          </Col>
+          {/* <*--< COL END >--*> */}
+          <Col xl={3} sm={6} md={6}>
+            <ContactCard2 />
+          </Col>
+          {/* <*--< COL END >--*> */}
+          <Col xl={3} sm={6} md={6}>
+            <ContactCard3 />
+          </Col>
+          <Col xl={3} sm={6} md={6}>
+            <ContactCard4 />
+          </Col>
+          {/* <*--< COL END >--*> */}
+        </Row>
+        {/* <--<-< ROW CLOSED >->--> */}
+
+        {/* <--<-< ROW OPEN >->--> */}
         <Row>
           <Col xl={4} md={12}>
             <Card className="overflow-hidden">
@@ -472,9 +455,9 @@ const CardsDesign = () => {
             </Card>
           </Col>
         </Row>
-        {/* <!-- ROW-5 CLOSED --> */}
+        {/* <--<-< ROW CLOSED >->--> */}
 
-        {/* <!-- ROW-6 OPEN --> */}
+        {/* <--<-< ROW OPEN >->--> */}
         <Row>
           <Col xl={4} md={12}>
             <Card>
@@ -492,7 +475,7 @@ const CardsDesign = () => {
               </Card.Body>
             </Card>
           </Col>
-          {/* <!-- COL END --> */}
+          {/* <*--< COL END >--*> */}
           <Col md={12} xl={4}>
             <Card>
               <Card.Body className="text-center">
@@ -509,7 +492,7 @@ const CardsDesign = () => {
               </Card.Body>
             </Card>
           </Col>
-          {/* <!-- COL END --> */}
+          {/* <*--< COL END >--*> */}
           <Col md={12} xl={4}>
             <Card>
               <Card.Body className="text-end">
@@ -526,15 +509,15 @@ const CardsDesign = () => {
               </Card.Body>
             </Card>
           </Col>
-          {/* <!-- COL END --> */}
+          {/* <*--< COL END >--*> */}
           <Col md={12} xl={4}>
             <CardwithList />
           </Col>
-          {/* <!-- COL END --> */}
+          {/* <*--< COL END >--*> */}
           <Col md={12} xl={4}>
             <SampleCard />
           </Col>
-          {/* <!-- COL END --> */}
+          {/* <*--< COL END >--*> */}
           <Col md={12} xl={4}>
             <Card className="d-flex m-b-20">
               <Card.Header>
@@ -566,11 +549,11 @@ const CardsDesign = () => {
               </Card.Body>
             </Card>
           </Col>
-          {/* <!-- COL END --> */}
+          {/* <*--< COL END >--*> */}
         </Row>
-        {/* <!-- ROW-6 CLOSED --> */}
+        {/* <--<-< ROW CLOSED >->--> */}
 
-        {/* <!-- ROW-7 OPEN --> */}
+        {/* <--<-< ROW OPEN >->--> */}
         <Row>
           <Col md={12} xl={4}>
             <Card className="card-blog-overlay1 overflow-hidden">
@@ -586,7 +569,7 @@ const CardsDesign = () => {
               </Card.Footer>
             </Card>
           </Col>
-          {/* <!-- COL END --> */}
+          {/* <*--< COL END >--*> */}
           <Col md={12} xl={4}>
             <Card className="card-blog-overlay2  overflow-hidden">
               <Card.Body className="text-white">
@@ -601,28 +584,28 @@ const CardsDesign = () => {
               </Card.Footer>
             </Card>
           </Col>
-          {/* <!-- COL END --> */}
+          {/* <*--< COL END >--*> */}
           <Col md={12} xl={4}>
             <CardwithImage />
           </Col>
-          {/* <!-- COL END --> */}
+          {/* <*--< COL END >--*> */}
         </Row>
-        {/* <!-- ROW-7 CLOSED --> */}
+        {/* <--<-< ROW CLOSED >->--> */}
 
-        {/* <!-- ROW-8 OPEN --> */}
+        {/* <--<-< ROW OPEN >->--> */}
         <Row>
           <Col md={12} xl={6}>
             <CardBlue />
           </Col>
-          {/* <!-- COL END --> */}
+          {/* <*--< COL END >--*> */}
           <Col md={12} xl={6}>
             <CardLeftSide />
           </Col>
-          {/* <!-- COL END --> */}
+          {/* <*--< COL END >--*> */}
         </Row>
-        {/* <!-- ROW-8 CLOSED --> */}
+        {/* <--<-< ROW CLOSED >->--> */}
 
-        {/* <!-- ROW-9 OPEN --> */}
+        {/* <--<-< ROW OPEN >->--> */}
         <Row>
           <Col md={12} xl={6}>
             <Card>
@@ -681,9 +664,9 @@ const CardsDesign = () => {
             </Card>
           </Col>
         </Row>
-        {/* <!-- ROW-9 CLOSED --> */}
+        {/* <--<-< ROW CLOSED >->--> */}
 
-        {/* <!-- ROW-10 OPEN --> */}
+        {/* <--<-< ROW OPEN >->--> */}
         <Row>
           <Col xl={12} md={12}>
             <div className="mb-5 card-group overflow-hidden">
@@ -809,7 +792,7 @@ const CardsDesign = () => {
             </Card>
           </Col>
         </Row>
-        {/* <!-- ROW-10 CLOSED --> */}
+        {/* <--<-< ROW CLOSED >->--> */}
       </div>
     </React.Fragment>
   );

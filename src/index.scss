@@ -1727,7 +1727,9 @@ tr {
 ol.progtrckr li:before {
     bottom: -3.9rem !important;
 }
-
+.dark-mode ol.progtrckr li.progtrckr-done{
+    color: white !important;
+}
 @media (max-width: 650px) {
 
     ol.progtrckr li.progtrckr-doing,
