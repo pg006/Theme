@@ -3,6 +3,12 @@ import { Link } from "react-router-dom";
 import { Container, Button, Badge } from "react-bootstrap";
 import "./NotificationListPage.scss";
 import PageHeader from "../../../commonComponents/PageHeader/PageHeader";
+import U1 from '../../../assets/images/UserImages/U1.jpg'
+import U2 from '../../../assets/images/UserImages/U2.jpg'
+import U4 from '../../../assets/images/UserImages/U4.jpg'
+import U12 from '../../../assets/images/UserImages/U12.jpg'
+import U13 from '../../../assets/images/UserImages/U13.jpg'
+import U14 from '../../../assets/images/UserImages/U14.jpg'
 
 const NotificationListPage = () => {
   return (
@@ -35,7 +41,7 @@ const NotificationListPage = () => {
                     <img
                       alt="avatar"
                       className="br-7"
-                      src={require("../../../assets/images/users/1.jpg")}
+                      src={U1}
                     />
                   </div>
                   <div className="media-body ms-3 d-flex">
@@ -107,7 +113,7 @@ const NotificationListPage = () => {
                     <img
                       alt="avatar"
                       className="br-7"
-                      src={require("../../../assets/images/users/2.jpg")}
+                      src={U2}
                     />
                   </div>
                   <div className="media-body ms-3 d-flex">
@@ -147,7 +153,7 @@ const NotificationListPage = () => {
                     <img
                       alt="avatar"
                       className="br-7"
-                      src={require("../../../assets/images/users/12.jpg")}
+                      src={U12}
                     />
                   </div>
                   <div className="media-body ms-3 d-flex">
@@ -219,7 +225,7 @@ const NotificationListPage = () => {
                     <img
                       alt="avatar"
                       className="br-7"
-                      src={require("../../../assets/images/users/13.jpg")}
+                      src={U13}
                     />
                   </div>
                   <div className="media-body ms-3 d-flex">
@@ -259,7 +265,7 @@ const NotificationListPage = () => {
                     <img
                       alt="avatar"
                       className="br-7"
-                      src={require("../../../assets/images/users/4.jpg")}
+                      src={U4}
                     />
                   </div>
                   <div className="media-body ms-3 d-flex">
@@ -294,7 +300,7 @@ const NotificationListPage = () => {
                     <img
                       alt="avatar"
                       className="br-7"
-                      src={require("../../../assets/images/users/14.jpg")}
+                      src={U14}
                     />
                   </div>
                   <div className="media-body ms-3 d-flex">

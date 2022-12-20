@@ -2,6 +2,16 @@ import React from "react";
 import PageHeader from "../../../commonComponents/PageHeader/PageHeader";
 import { Card, Col, Row } from 'react-bootstrap';
 import "./AvatarSquare.scss";
+import U1 from '../../../assets/images/UserImages/U1.jpg'
+import U2 from '../../../assets/images/UserImages/U2.jpg'
+import U3 from '../../../assets/images/UserImages/U3.jpg'
+import U4 from '../../../assets/images/UserImages/U4.jpg'
+import U5 from '../../../assets/images/UserImages/U5.jpg'
+import U6 from '../../../assets/images/UserImages/U6.jpg'
+import U7 from '../../../assets/images/UserImages/U7.jpg'
+import U8 from '../../../assets/images/UserImages/U8.jpg'
+import U9 from '../../../assets/images/UserImages/U9.jpg'
+import U11 from '../../../assets/images/UserImages/U11.jpg'
 
 const AvatarSquare = () => {
   return (
@@ -30,27 +40,27 @@ const AvatarSquare = () => {
                       <img
                         className="avatar cover-image"
                         alt="user1"
-                        src={require("../../../assets/images/users/1.jpg")}
+                        src={U1}
                       />
                       <img
                         className="avatar cover-image"
                         alt="user2"
-                        src={require("../../../assets/images/users/2.jpg")}
+                        src={U2}
                       />
                       <img
                         className="avatar cover-image"
                         alt="user1"
-                        src={require("../../../assets/images/users/1.jpg")}
+                        src={U1}
                       />
                       <img
                         className="avatar cover-image"
                         alt="user2"
-                        src={require("../../../assets/images/users/2.jpg")}
+                        src={U2}
                       />
                       <img
                         className="avatar cover-image"
                         alt="user3"
-                        src={require("../../../assets/images/users/3.jpg")}
+                        src={U3}
                       />
                     </div>
                   </div>
@@ -79,27 +89,27 @@ const AvatarSquare = () => {
                       <img
                         className="avatar cover-image"
                         alt="user21"
-                        src={require("../../../assets/images/users/21.jpg")}
+                        src={U9}
                       />
                       <img
                         className="avatar cover-image"
                         alt="user21"
-                        src={require("../../../assets/images/users/21.jpg")}
+                        src={U9}
                       />
                       <img
                         className="avatar cover-image"
                         alt="user9"
-                        src={require("../../../assets/images/users/9.jpg")}
+                        src={U8}
                       />
                       <img
                         className="avatar cover-image"
                         alt="user21"
-                        src={require("../../../assets/images/users/21.jpg")}
+                        src={U9}
                       />
                       <img
                         className="avatar cover-image"
                         alt="user11"
-                        src={require("../../../assets/images/users/11.jpg")}
+                        src={U11}
                       />
                       <span className="avatar bg-primary">+8</span>
                     </div>
@@ -130,14 +140,14 @@ const AvatarSquare = () => {
                       <img
                         className="avatar cover-image"
                         alt="user21"
-                        src={require("../../../assets/images/users/21.jpg")}
+                        src={U9}
                       />
 
                       <div className="avatar bradius cover-image">
                         <img
                           className="avatar cover-image"
                           alt="user5"
-                          src={require("../../../assets/images/users/5.jpg")}
+                          src={U5}
                         />
                         <span className="avatar-status bg-primary"></span>
                       </div>
@@ -146,7 +156,7 @@ const AvatarSquare = () => {
                         <img
                           className="avatar cover-image"
                           alt="user9"
-                          src={require("../../../assets/images/users/9.jpg")}
+                          src={U8}
                         />
                         <span className="avatar-status bg-red"></span>
                       </div>
@@ -155,7 +165,7 @@ const AvatarSquare = () => {
                         <img
                           className="avatar cover-image"
                           alt="user6"
-                          src={require("../../../assets/images/users/6.jpg")}
+                          src={U6}
                         />
                         <span className="avatar-status bg-green"></span>
                       </div>
@@ -164,7 +174,7 @@ const AvatarSquare = () => {
                         <img
                           className="avatar cover-image"
                           alt="user7"
-                          src={require("../../../assets/images/users/7.jpg")}
+                          src={U7}
                         />
                         <span className="avatar-status bg-yellow"></span>
                       </div>
@@ -192,7 +202,7 @@ const AvatarSquare = () => {
                         <img
                           className="avatar avatar-md cover-image"
                           alt="user5"
-                          src={require("../../../assets/images/users/5.jpg")}
+                          src={U5}
                         />
                         <span className="badge rounded-pill avatar-badges bg-primary fs-10">
                           3
@@ -203,7 +213,7 @@ const AvatarSquare = () => {
                         <img
                           className="avatar avatar-md cover-image"
                           alt="user5"
-                          src={require("../../../assets/images/users/5.jpg")}
+                          src={U5}
                         />
                         <span className="badge rounded-pill avatar-badges bg-secondary fs-10">
                           1
@@ -214,7 +224,7 @@ const AvatarSquare = () => {
                         <img
                           className="avatar avatar-md cover-image"
                           alt="user9"
-                          src={require("../../../assets/images/users/9.jpg")}
+                          src={U8}
                         />
                         <span className="badge rounded-pill avatar-badges bg-red fs-10">
                           4
@@ -225,7 +235,7 @@ const AvatarSquare = () => {
                         <img
                           className="avatar avatar-md cover-image"
                           alt="user6"
-                          src={require("../../../assets/images/users/6.jpg")}
+                          src={U6}
                         />
                         <span className="badge rounded-pill avatar-badges bg-green fs-10">
                           6
@@ -236,7 +246,7 @@ const AvatarSquare = () => {
                         <img
                           className="avatar avatar-md cover-image"
                           alt="user7"
-                          src={require("../../../assets/images/users/7.jpg")}
+                          src={U7}
                         />
                         <span className="badge rounded-pill avatar-badges bg-yellow  fs-10">
                           4
@@ -271,7 +281,7 @@ const AvatarSquare = () => {
                         <img
                           className="cover-image"
                           alt="user21"
-                          src={require("../../../assets/images/users/21.jpg")}
+                          src={U9}
                         />
                         <span className="badge rounded-pill avatar-icons bg-primary">
                           <i className="fe fe-edit fs-12"></i>
@@ -282,7 +292,7 @@ const AvatarSquare = () => {
                         <img
                           className="cover-image"
                           alt="user5"
-                          src={require("../../../assets/images/users/5.jpg")}
+                          src={U5}
                         />
                         <span className="badge rounded-pill avatar-icons bg-secondary">
                           <i className="fe fe-arrow-down fs-12"></i>
@@ -293,7 +303,7 @@ const AvatarSquare = () => {
                         <img
                           className="cover-image"
                           alt="user9"
-                          src={require("../../../assets/images/users/9.jpg")}
+                          src={U8}
                         />
                         <span className="badge rounded-pill avatar-icons bg-red">
                           <i className="fe fe-lock fs-12"></i>
@@ -304,7 +314,7 @@ const AvatarSquare = () => {
                         <img
                           className="cover-image"
                           alt="user6"
-                          src={require("../../../assets/images/users/6.jpg")}
+                          src={U6}
                         />
                         <span className="badge rounded-pill avatar-icons bg-green">
                           <i className="fe fe-camera fs-12"></i>
@@ -315,7 +325,7 @@ const AvatarSquare = () => {
                         <img
                           className="cover-image"
                           alt="user7"
-                          src={require("../../../assets/images/users/7.jpg")}
+                          src={U7}
                         />
                         <span className="badge rounded-pill avatar-icons bg-green">
                           <i className="fe fe-bell fs-12"></i>
@@ -348,32 +358,32 @@ const AvatarSquare = () => {
                       <img
                         className="avatar avatar-sm cover-image"
                         alt="user4"
-                        src={require("../../../assets/images/users/4.jpg")}
+                        src={U4}
                       />
                       <img
                         className="avatar cover-image"
                         alt="user3"
-                        src={require("../../../assets/images/users/3.jpg")}
+                        src={U3}
                       />
                       <img
                         className="avatar avatar-md cover-image"
                         alt="user5"
-                        src={require("../../../assets/images/users/5.jpg")}
+                        src={U5}
                       />
                       <img
                         className="avatar avatar-lg cover-image"
                         alt="user6"
-                        src={require("../../../assets/images/users/6.jpg")}
+                        src={U6}
                       />
                       <img
                         className="avatar avatar-xl cover-image"
                         alt="user4"
-                        src={require("../../../assets/images/users/4.jpg")}
+                        src={U4}
                       />
                       <img
                         className="avatar avatar-xxl cover-image"
                         alt="user7"
-                        src={require("../../../assets/images/users/7.jpg")}
+                        src={U7}
                       />
                     </div>
                   </div>

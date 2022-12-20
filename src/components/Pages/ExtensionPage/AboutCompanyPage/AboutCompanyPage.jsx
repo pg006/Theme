@@ -3,6 +3,10 @@ import PageHeader from "../../../../commonComponents/PageHeader/PageHeader";
 import { Link } from "react-router-dom";
 import { Row, Col, Card, Button } from "react-bootstrap";
 import "./AboutCompanyPage.scss";
+import U2 from '../../../../assets/images/UserImages/U2.jpg'
+import U4 from '../../../../assets/images/UserImages/U4.jpg'
+import U7 from '../../../../assets/images/UserImages/U7.jpg'
+import U15 from '../../../../assets/images/UserImages/U15.jpg'
 
 const AboutCompanyPage = () => {
   return (
@@ -164,7 +168,7 @@ const AboutCompanyPage = () => {
                   <img
                     className="avatar avatar-xxl bradius cover-image"
                     alt="user 2"
-                    src={require("../../../../assets/images/users/2.jpg")}
+                    src={U2}
                   />
                   <h4 className="h4 mb-0 mt-3">Mike Rowe-Soft</h4>
                   <Card.Text>Web designer</Card.Text>
@@ -201,7 +205,7 @@ const AboutCompanyPage = () => {
                   <img
                     className="avatar avatar-xxl bradius cover-image"
                     alt="user 4"
-                    src={require("../../../../assets/images/users/4.jpg")}
+                    src={U4}
                   />
                   <h4 className="h4 mb-0 mt-3">Mike Rowe-Soft</h4>
                   <Card.Text>Web designer</Card.Text>
@@ -238,7 +242,7 @@ const AboutCompanyPage = () => {
                   <img
                     className="avatar avatar-xxl bradius cover-image"
                     alt="user7"
-                    src={require("../../../../assets/images/users/7.jpg")}
+                    src={U7}
                   />
                   <h4 className="h4 mb-0 mt-3">Mike Rowe-Soft</h4>
                   <Card.Text>Web designer</Card.Text>
@@ -275,7 +279,7 @@ const AboutCompanyPage = () => {
                   <img
                     className="avatar avatar-xxl bradius cover-image"
                     alt="user 15"
-                    src={require("../../../../assets/images/users/15.jpg")}
+                    src={U15}
                   />
                   <h4 className="h4 mb-0 mt-3">Mike Rowe-Soft</h4>
                   <Card.Text>Web designer</Card.Text>

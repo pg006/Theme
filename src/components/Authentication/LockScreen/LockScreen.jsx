@@ -2,6 +2,7 @@ import React from "react";
 import { Form } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Password from "../../../Data/Authenticatepage/DataAuthentication";
+import U9 from '../../../assets/images/UserImages/U9.jpg' 
 
 const LockScreen = () => {
   return (
@@ -13,7 +14,7 @@ const LockScreen = () => {
             <Form className="login100-form validate-form">
               <div className="text-center mb-4">
                 <img
-                  src={require("../../../assets/images/users/21.jpg")}
+                  src={U9}
                   alt="lockscreen pic"
                   className="avatar avatar-xxl brround mb-2"
                 />

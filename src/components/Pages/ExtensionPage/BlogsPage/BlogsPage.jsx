@@ -2,6 +2,10 @@ import React from "react";
 import { Breadcrumb, Row, Col, Card, Pagination, InputGroup, FormControl, Badge, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import "./BlogsPage.scss";
+import U6 from '../../../../assets/images/UserImages/U6.jpg'
+import U7 from '../../../../assets/images/UserImages/U7.jpg'
+import U16 from '../../../../assets/images/UserImages/U16.jpg'
+import U18 from '../../../../assets/images/UserImages/U18.jpg'
 
 const BlogsPage = () => {
   return (
@@ -53,7 +57,7 @@ const BlogsPage = () => {
                   <img
                     className="avatar brround avatar-md me-3 cover-image"
                     alt="user 18"
-                    src={require("../../../../assets/images/users/18.jpg")}
+                    src={U18}
                   />
                   <div>
                     <Link
@@ -108,7 +112,7 @@ const BlogsPage = () => {
                   <img
                     className="avatar  brround avatar-md me-3 cover-image"
                     alt="user 6"
-                    src={require("../../../../assets/images/users/6.jpg")}
+                    src={U6}
                   />
                   <div>
                     <Link
@@ -167,7 +171,7 @@ const BlogsPage = () => {
                   <img
                     className="avatar brround avatar-md me-3 cover-image"
                     alt="user 16"
-                    src={require("../../../../assets/images/users/16.jpg")}
+                    src={U16}
                   />
                   <div>
                     <Link
@@ -222,7 +226,7 @@ const BlogsPage = () => {
                   <img
                     className="avatar brround avatar-md me-3 cover-image"
                     alt="user 7"
-                    src={require("../../../../assets/images/users/7.jpg")}
+                    src={U7}
                   />
                   <div>
                     <Link

@@ -1,6 +1,16 @@
 import React from "react";
 import { Card, Tab, Nav, ListGroup } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import U2 from '../../assets/images/UserImages/U2.jpg'
+import U4 from '../../assets/images/UserImages/U4.jpg'
+import U7 from '../../assets/images/UserImages/U7.jpg'
+import U9 from '../../assets/images/UserImages/U9.jpg'
+import U10 from '../../assets/images/UserImages/U10.jpg'
+import U11 from '../../assets/images/UserImages/U11.jpg'
+import U12 from '../../assets/images/UserImages/U12.jpg'
+import U13 from '../../assets/images/UserImages/U13.jpg'
+import U14 from '../../assets/images/UserImages/U14.jpg'
+import U15 from '../../assets/images/UserImages/U15.jpg'
 
 const switcherOpen = () => {
   //leftsidemenu
@@ -41,13 +51,13 @@ const Rightside = () => (
                 </Nav.Item>
                 <Nav.Item>
                   <Nav.Link eventKey="Chat">
-                    <i className="fe fe-message-circle me-1 d-inline-block"></i>{" "}
+                    <i className="fe fe-message-circle me-1 d-inline-block"></i>
                     Chat
                   </Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
                   <Nav.Link eventKey="Timeline">
-                    <i className="fe fe-anchor me-1  d-inline-block"></i>{" "}
+                    <i className="fe fe-anchor me-1  d-inline-block"></i>
                     Timeline
                   </Nav.Link>
                 </Nav.Item>
@@ -281,7 +291,7 @@ const Rightside = () => (
                           <img
                             className="avatar avatar-md brround cover-image"
                             alt="user-2"
-                            src={require("../../assets/images/users/2.jpg")}
+                            src={U2}
                           />
                         </div>
                         <div className="">
@@ -294,8 +304,7 @@ const Rightside = () => (
                               Addie Minstra
                             </div>
                             <p className="mb-0 fs-12 text-muted">
-                              {" "}
-                              Hey! there I' am available....{" "}
+                              Hey! there I' am available....
                             </p>
                           </Link>
                         </div>
@@ -305,7 +314,7 @@ const Rightside = () => (
                           <img
                             className="avatar avatar-md brround cover-image"
                             alt="user-11"
-                            src={require("../../assets/images/users/11.jpg")}
+                            src={U11}
                           />
                           <span className="avatar-status bg-success"></span>
                         </div>
@@ -319,8 +328,7 @@ const Rightside = () => (
                               Rose Bush
                             </div>
                             <p className="mb-0 fs-12 text-muted">
-                              {" "}
-                              Okay...I will be waiting for you{" "}
+                              Okay...I will be waiting for you
                             </p>
                           </Link>
                         </div>
@@ -330,7 +338,7 @@ const Rightside = () => (
                           <img
                             className="avatar avatar-md brround cover-image"
                             alt="user-10"
-                            src={require("../../assets/images/users/10.jpg")}
+                            src={U10}
                           />
                         </div>
                         <div className="">
@@ -343,7 +351,6 @@ const Rightside = () => (
                               Claude Strophobia
                             </div>
                             <p className="mb-0 fs-12 text-muted">
-                              {" "}
                               Hi we can explain our new project......
                             </p>
                           </Link>
@@ -354,7 +361,7 @@ const Rightside = () => (
                           <img
                             className="avatar avatar-md brround cover-image"
                             alt="user-13"
-                            src={require("../../assets/images/users/13.jpg")}
+                            src={U13}
                           />
                         </div>
                         <div className="">
@@ -367,8 +374,7 @@ const Rightside = () => (
                               Eileen Dover
                             </div>
                             <p className="mb-0 fs-12 text-muted">
-                              {" "}
-                              New product Launching...{" "}
+                              New product Launching...
                             </p>
                           </Link>
                         </div>
@@ -378,7 +384,7 @@ const Rightside = () => (
                           <img
                             className="avatar avatar-md brround cover-image"
                             alt="user-12"
-                            src={require("../../assets/images/users/12.jpg")}
+                            src={U12}
                           />
                           <span className="avatar-status bg-success"></span>
                         </div>
@@ -392,8 +398,7 @@ const Rightside = () => (
                               Willie Findit
                             </div>
                             <p className="mb-0 fs-12 text-muted">
-                              {" "}
-                              Okay...I will be waiting for you{" "}
+                              Okay...I will be waiting for you
                             </p>
                           </Link>
                         </div>
@@ -403,7 +408,7 @@ const Rightside = () => (
                           <img
                             className="avatar avatar-md brround cover-image"
                             alt="user-15"
-                            src={require("../../assets/images/users/15.jpg")}
+                            src={U15}
                           />
                         </div>
                         <div className="">
@@ -416,7 +421,6 @@ const Rightside = () => (
                               Manny Jah
                             </div>
                             <p className="mb-0 fs-12 text-muted">
-                              {" "}
                               Hi we can explain our new project......
                             </p>
                           </Link>
@@ -427,7 +431,7 @@ const Rightside = () => (
                           <img
                             className="avatar avatar-md brround cover-image"
                             alt="user-4"
-                            src={require("../../assets/images/users/4.jpg")}
+                            src={U4}
                           />
                         </div>
                         <div className="">
@@ -440,7 +444,6 @@ const Rightside = () => (
                               Cherry Blossom
                             </div>
                             <p className="mb-0 fs-12 text-muted">
-                              {" "}
                               Hey! there I' am available....
                             </p>
                           </Link>
@@ -452,7 +455,7 @@ const Rightside = () => (
                           <img
                             className="avatar avatar-md brround cover-image"
                             alt="user-7"
-                            src={require("../../assets/images/users/7.jpg")}
+                            src={U7}
                           />
                           <span className="avatar-status bg-success"></span>
                         </div>
@@ -466,7 +469,7 @@ const Rightside = () => (
                               Simon Sais
                             </div>
                             <p className="mb-0 fs-12 text-muted">
-                              Schedule Realease......{" "}
+                              Schedule Realease......
                             </p>
                           </Link>
                         </div>
@@ -476,7 +479,7 @@ const Rightside = () => (
                           <img
                             className="avatar avatar-md brround cover-image"
                             alt="user-9"
-                            src={require("../../assets/images/users/9.jpg")}
+                            src={U9}
                           />
                         </div>
                         <div className="">
@@ -489,7 +492,6 @@ const Rightside = () => (
                               Laura Biding
                             </div>
                             <p className="mb-0 fs-12 text-muted">
-                              {" "}
                               Hi we can explain our new project......
                             </p>
                           </Link>
@@ -500,7 +502,7 @@ const Rightside = () => (
                           <img
                             className="avatar avatar-md brround cover-image"
                             alt="user-2"
-                            src={require("../../assets/images/users/2.jpg")}
+                            src={U2}
                           />
                           <span className="avatar-status bg-success"></span>
                         </div>
@@ -524,7 +526,7 @@ const Rightside = () => (
                           <img
                             className="avatar avatar-md brround cover-image"
                             alt="user-9"
-                            src={require("../../assets/images/users/9.jpg")}
+                            src={U9}
                           />
                         </div>
                         <div className="">
@@ -537,7 +539,6 @@ const Rightside = () => (
                               Ivan Notheridiya
                             </div>
                             <p className="mb-0 fs-12 text-muted">
-                              {" "}
                               Hi we can explain our new project......
                             </p>
                           </Link>
@@ -548,7 +549,7 @@ const Rightside = () => (
                           <img
                             className="avatar avatar-md brround cover-image"
                             alt="user-14"
-                            src={require("../../assets/images/users/14.jpg")}
+                            src={U14}
                           />
                         </div>
                         <div className="">
@@ -561,8 +562,7 @@ const Rightside = () => (
                               Dulcie Veeta
                             </div>
                             <p className="mb-0 fs-12 text-muted">
-                              {" "}
-                              Okay...I will be waiting for you{" "}
+                              Okay...I will be waiting for you
                             </p>
                           </Link>
                         </div>
@@ -572,7 +572,7 @@ const Rightside = () => (
                           <img
                             className="avatar avatar-md brround cover-image"
                             alt="user-11"
-                            src={require("../../assets/images/users/11.jpg")}
+                            src={U11}
                           />
                         </div>
                         <div className="">
@@ -595,7 +595,7 @@ const Rightside = () => (
                           <img
                             className="avatar avatar-md brround cover-image"
                             alt="user-11"
-                            src={require("../../assets/images/users/4.jpg")}
+                            src={U4}
                           />
                           <span className="avatar-status bg-success"></span>
                         </div>
@@ -632,7 +632,6 @@ const Rightside = () => (
                           <p className="text-muted fs-12">
                             Adam Berry finished task on
                             <Link to="#" className="fw-semibold">
-                              {" "}
                               Project Management
                             </Link>
                           </p>
@@ -656,9 +655,8 @@ const Rightside = () => (
                             </span>
                           </h6>
                           <p className="text-muted fs-12">
-                            Victoria commented on Project{" "}
+                            Victoria commented on Project
                             <Link to="#" className="fw-semibold">
-                              {" "}
                               AngularJS Template
                             </Link>
                           </p>
@@ -682,9 +680,8 @@ const Rightside = () => (
                             </span>
                           </h6>
                           <p className="text-muted fs-12">
-                            Victoria commented on Project{" "}
+                            Victoria commented on Project
                             <Link to="#" className="fw-semibold">
-                              {" "}
                               AngularJS Template
                             </Link>
                           </p>
@@ -708,9 +705,8 @@ const Rightside = () => (
                             </span>
                           </h6>
                           <p className="text-muted mb-0 fs-12">
-                            Petey Cruiser finished task{" "}
+                            Petey Cruiser finished task
                             <Link to="#" className="fw-semibold">
-                              {" "}
                               Integrated management
                             </Link>
                           </p>
@@ -734,9 +730,8 @@ const Rightside = () => (
                             </span>
                           </h6>
                           <p className="text-muted mb-0 fs-12">
-                            Petey Cruiser finished task{" "}
+                            Petey Cruiser finished task
                             <Link to="#" className="fw-semibold">
-                              {" "}
                               Integrated management
                             </Link>
                           </p>
@@ -762,7 +757,6 @@ const Rightside = () => (
                           <p className="text-muted fs-12">
                             Adam Berry finished task on
                             <Link to="#" className="fw-semibold">
-                              {" "}
                               Project Management
                             </Link>
                           </p>

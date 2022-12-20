@@ -2,6 +2,16 @@ import React from "react";
 import { Card, Row, Col } from 'react-bootstrap';
 import PageHeader from "../../../commonComponents/PageHeader/PageHeader";
 import "./AvatarRadius.scss";
+import U1 from '../../../assets/images/UserImages/U1.jpg'
+import U2 from '../../../assets/images/UserImages/U2.jpg'
+import U3 from '../../../assets/images/UserImages/U3.jpg'
+import U4 from '../../../assets/images/UserImages/U4.jpg'
+import U5 from '../../../assets/images/UserImages/U5.jpg'
+import U6 from '../../../assets/images/UserImages/U6.jpg'
+import U7 from '../../../assets/images/UserImages/U7.jpg'
+import U8 from '../../../assets/images/UserImages/U8.jpg'
+import U9 from '../../../assets/images/UserImages/U9.jpg'
+import U11 from '../../../assets/images/UserImages/U11.jpg'
 
 const AvatarRadius = () => {
   return (
@@ -23,7 +33,7 @@ const AvatarRadius = () => {
                 <div className="text-wrap">
                   <p>
                     Use classes
-                    <code className="highlighter-rouge">.avatar</code> in{" "}
+                    <code className="highlighter-rouge">.avatar</code> in
                     <code className="highlighter-rouge">.bradius</code>.
                   </p>
                   <div className="example">
@@ -31,27 +41,27 @@ const AvatarRadius = () => {
                       <img
                         className="avatar bradius cover-image"
                         alt="user1"
-                        src={require("../../../assets/images/users/1.jpg")}
+                        src={U1}
                       />
                       <img
                         className="avatar bradius cover-image"
                         alt="user2"
-                        src={require("../../../assets/images/users/2.jpg")}
+                        src={U2}
                       />
                       <img
                         className="avatar bradius cover-image"
                         alt="user3"
-                        src={require("../../../assets/images/users/1.jpg")}
+                        src={U1}
                       />
                       <img
                         className="avatar bradius cover-image"
                         alt="user4"
-                        src={require("../../../assets/images/users/2.jpg")}
+                        src={U2}
                       />
                       <img
                         className="avatar bradius cover-image"
                         alt="user5"
-                        src={require("../../../assets/images/users/3.jpg")}
+                        src={U3}
                       />
                     </div>
                   </div>
@@ -68,7 +78,7 @@ const AvatarRadius = () => {
               <Card.Body>
                 <div className="text-wrap">
                   <p>
-                    Use classes{" "}
+                    Use classes
                     <code className="highlighter-rouge">.avatar-badges</code> .
                   </p>
                   <div className="example">
@@ -77,7 +87,7 @@ const AvatarRadius = () => {
                         <img
                           className=" bradius cover-image"
                           alt="user5"
-                          src={require("../../../assets/images/users/5.jpg")}
+                          src={U5}
                         />
                         <span className="badge rounded-pill avatar-badges bg-secondary fs-10">
                           1
@@ -88,7 +98,7 @@ const AvatarRadius = () => {
                         <img
                           className=" bradius cover-image"
                           alt="user9"
-                          src={require("../../../assets/images/users/9.jpg")}
+                          src={U8}
                         />
                         <span className="badge rounded-pill avatar-badges bg-danger fs-10">
                           4
@@ -99,7 +109,7 @@ const AvatarRadius = () => {
                         <img
                           className=" bradius cover-image"
                           alt="user6"
-                          src={require("../../../assets/images/users/6.jpg")}
+                          src={U6}
                         />
                         <span className="badge rounded-pill avatar-badges bg-success fs-10">
                           6
@@ -110,7 +120,7 @@ const AvatarRadius = () => {
                         <img
                           className=" bradius cover-image"
                           alt="user7"
-                          src={require("../../../assets/images/users/7.jpg")}
+                          src={U7}
                         />
                         <span className="badge rounded-pill avatar-badges bg-warning fs-10">
                           4
@@ -136,7 +146,7 @@ const AvatarRadius = () => {
               <Card.Body>
                 <div className="text-wrap">
                   <p>
-                    Use classes{" "}
+                    Use classes
                     <code className="highlighter-rouge">.avatar-icons</code> .
                   </p>
                   <div className="example">
@@ -145,7 +155,7 @@ const AvatarRadius = () => {
                         <img
                           className=" bradius cover-image"
                           alt="user21"
-                          src={require("../../../assets/images/users/21.jpg")}
+                          src={U9}
                         />
                         <span className="badge rounded-pill avatar-icons bg-primary">
                           <i className="fe fe-edit fs-12"></i>
@@ -156,7 +166,7 @@ const AvatarRadius = () => {
                         <img
                           className=" bradius cover-image"
                           alt="user5"
-                          src={require("../../../assets/images/users/5.jpg")}
+                          src={U5}
                         />
                         <span className="badge rounded-pill avatar-icons bg-secondary">
                           <i className="fe fe-arrow-down fs-12"></i>
@@ -167,7 +177,7 @@ const AvatarRadius = () => {
                         <img
                           className=" bradius cover-image"
                           alt="user9"
-                          src={require("../../../assets/images/users/9.jpg")}
+                          src={U8}
                         />
                         <span className="badge rounded-pill avatar-icons bg-danger">
                           <i className="fe fe-lock fs-12"></i>
@@ -178,7 +188,7 @@ const AvatarRadius = () => {
                         <img
                           className=" bradius cover-image"
                           alt="user6"
-                          src={require("../../../assets/images/users/6.jpg")}
+                          src={U6}
                         />
                         <span className="badge rounded-pill avatar-icons bg-success">
                           <i className="fe fe-camera fs-12"></i>
@@ -189,7 +199,7 @@ const AvatarRadius = () => {
                         <img
                           className=" bradius cover-image"
                           alt="user7"
-                          src={require("../../../assets/images/users/7.jpg")}
+                          src={U7}
                         />
                         <span className="badge rounded-pill avatar-icons bg-warning">
                           <i className="fe fe-bell fs-12"></i>
@@ -211,11 +221,11 @@ const AvatarRadius = () => {
                 <div className="text-wrap">
                   <div className="example">
                     <p>
-                      Use classes{" "}
-                      <code className="highlighter-rouge">.avatar-sm</code> ,{" "}
-                      <code className="highlighter-rouge">.avatar-md</code> ,{" "}
-                      <code className="highlighter-rouge">.avatar-lg</code> ,{" "}
-                      <code className="highlighter-rouge">.avatar-xl</code> ,{" "}
+                      Use classes
+                      <code className="highlighter-rouge">.avatar-sm</code> ,
+                      <code className="highlighter-rouge">.avatar-md</code> ,
+                      <code className="highlighter-rouge">.avatar-lg</code> ,
+                      <code className="highlighter-rouge">.avatar-xl</code> ,
                       <code className="highlighter-rouge">.avatar-xxl</code> .
                     </p>
                     <div className="avatar-list">
@@ -255,7 +265,7 @@ const AvatarRadius = () => {
               <Card.Body>
                 <div className="text-wrap">
                   <p>
-                    Use classes{" "}
+                    Use classes
                     <code className="highlighter-rouge">.avatar-status</code> .
                   </p>
                   <div className="example">
@@ -263,14 +273,14 @@ const AvatarRadius = () => {
                       <img
                         className="avatar bradius cover-image"
                         alt="user 21"
-                        src={require("../../../assets/images/users/21.jpg")}
+                        src={U9}
                       />
 
                       <div className="avatar bradius cover-image">
                         <img
                           className=" bradius cover-image"
                           alt="user5"
-                          src={require("../../../assets/images/users/5.jpg")}
+                          src={U5}
                         />
                         <span className="avatar-status bg-secondary"></span>
                       </div>
@@ -279,7 +289,7 @@ const AvatarRadius = () => {
                         <img
                           className=" bradius cover-image"
                           alt="user9"
-                          src={require("../../../assets/images/users/9.jpg")}
+                          src={U8}
                         />
                         <span className="avatar-status bg-red"></span>
                       </div>
@@ -288,7 +298,7 @@ const AvatarRadius = () => {
                         <img
                           className=" bradius cover-image"
                           alt="user6"
-                          src={require("../../../assets/images/users/6.jpg")}
+                          src={U6}
                         />
                         <span className="avatar-status bg-green"></span>
                       </div>
@@ -297,7 +307,7 @@ const AvatarRadius = () => {
                         <img
                           className=" bradius cover-image"
                           alt="user7"
-                          src={require("../../../assets/images/users/7.jpg")}
+                          src={U7}
                         />
                         <span className="avatar-status bg-yellow"></span>
                       </div>
@@ -316,9 +326,9 @@ const AvatarRadius = () => {
               <Card.Body>
                 <div className="text-wrap ">
                   <p>
-                    Use classes{" "}
-                    <code className="highlighter-rouge">.avatar-list </code> in{" "}
-                    <code className="highlighter-rouge">.bradius</code> and{" "}
+                    Use classes
+                    <code className="highlighter-rouge">.avatar-list </code> in
+                    <code className="highlighter-rouge">.bradius</code> and
                     <code className="highlighter-rouge">
                       .avatar-list-stacked
                     </code>
@@ -329,27 +339,27 @@ const AvatarRadius = () => {
                       <img
                         className="avatar bradius cover-image"
                         alt="user21"
-                        src={require("../../../assets/images/users/21.jpg")}
+                        src={U9}
                       />
                       <img
                         className="avatar bradius cover-image"
                         alt="user21"
-                        src={require("../../../assets/images/users/21.jpg")}
+                        src={U9}
                       />
                       <img
                         className="avatar bradius cover-image"
                         alt="user9"
-                        src={require("../../../assets/images/users/9.jpg")}
+                        src={U8}
                       />
                       <img
                         className="avatar bradius cover-image"
                         alt="user21"
-                        src={require("../../../assets/images/users/21.jpg")}
+                        src={U9}
                       />
                       <img
                         className="avatar bradius cover-image"
                         alt="user11"
-                        src={require("../../../assets/images/users/11.jpg")}
+                        src={U11}
                       />
                       <span className="avatar bradius bg-primary">+8</span>
                     </div>
@@ -367,11 +377,11 @@ const AvatarRadius = () => {
               <Card.Body>
                 <div className="text-wrap">
                   <p>
-                    Use classes{" "}
-                    <code className="highlighter-rouge">.avatar-sm</code> ,{" "}
-                    <code className="highlighter-rouge">.avatar-md</code> ,{" "}
-                    <code className="highlighter-rouge">.avatar-lg</code> ,{" "}
-                    <code className="highlighter-rouge">.avatar-xl</code> ,{" "}
+                    Use classes
+                    <code className="highlighter-rouge">.avatar-sm</code> ,
+                    <code className="highlighter-rouge">.avatar-md</code> ,
+                    <code className="highlighter-rouge">.avatar-lg</code> ,
+                    <code className="highlighter-rouge">.avatar-xl</code> ,
                     <code className="highlighter-rouge">.avatar-xxl</code> .
                   </p>
                   <div className="example">
@@ -379,32 +389,32 @@ const AvatarRadius = () => {
                       <img
                         className="avatar avatar-sm bradius cover-image"
                         alt="user4"
-                        src={require("../../../assets/images/users/4.jpg")}
+                        src={U4}
                       />
                       <img
                         className="avatar bradius cover-image"
                         alt="user3"
-                        src={require("../../../assets/images/users/3.jpg")}
+                        src={U3}
                       />
                       <img
                         className="avatar avatar-md bradius cover-image"
                         alt="user5"
-                        src={require("../../../assets/images/users/5.jpg")}
+                        src={U5}
                       />
                       <img
                         className="avatar avatar-lg bradius cover-image"
                         alt="user6"
-                        src={require("../../../assets/images/users/6.jpg")}
+                        src={U6}
                       />
                       <img
                         className="avatar avatar-xl bradius cover-image"
                         alt="user4"
-                        src={require("../../../assets/images/users/4.jpg")}
+                        src={U4}
                       />
                       <img
                         className="avatar avatar-xxl bradius cover-image"
                         alt="user7"
-                        src={require("../../../assets/images/users/7.jpg")}
+                        src={U7}
                       />
                     </div>
                   </div>

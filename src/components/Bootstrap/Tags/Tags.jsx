@@ -1,8 +1,16 @@
 import React from "react";
 import PageHeader from "../../../commonComponents/PageHeader/PageHeader";
 import "./Tags.scss";
-import { Card, Col, Row } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Card, Col, Row } from "react-bootstrap";
+import { Link } from "react-router-dom";
+import U1 from "../../../assets/images/UserImages/U1.jpg";
+import U4 from "../../../assets/images/UserImages/U4.jpg";
+import U7 from "../../../assets/images/UserImages/U7.jpg";
+import U6 from "../../../assets/images/UserImages/U6.jpg";
+import U11 from "../../../assets/images/UserImages/U11.jpg";
+import U16 from "../../../assets/images/UserImages/U16.jpg";
+import U17 from "../../../assets/images/UserImages/U17.jpg";
+import U18 from "../../../assets/images/UserImages/U18.jpg";
 
 const Tags = () => {
   return (
@@ -128,7 +136,7 @@ const Tags = () => {
                   <div className="example">
                     <div className="tags">
                       <span className="tag tag-rounded tag-icon tag-red">
-                        <i className="fe fe-map-pin"></i>First tag{" "}
+                        <i className="fe fe-map-pin"></i>First tag
                         <Link
                           to="#"
                           className="tag-addon tag-addon-cross tag-red"
@@ -137,7 +145,7 @@ const Tags = () => {
                         </Link>
                       </span>
                       <span className="tag tag-rounded tag-icon tag-green">
-                        <i className="fe fe-calendar"></i>Second tag{" "}
+                        <i className="fe fe-calendar"></i>Second tag
                         <Link
                           to="#"
                           className="tag-addon tag-addon-cross tag-green"
@@ -146,7 +154,7 @@ const Tags = () => {
                         </Link>
                       </span>
                       <span className="tag tag-rounded tag-icon tag-orange">
-                        <i className="fe fe-bell"></i>Third tag{" "}
+                        <i className="fe fe-bell"></i>Third tag
                         <Link
                           to="#"
                           className="tag-addon tag-addon-cross tag-orange"
@@ -155,7 +163,7 @@ const Tags = () => {
                         </Link>
                       </span>
                       <span className="tag tag-rounded tag-icon tag-pink">
-                        <i className="fe fe-filter"></i>Third tag{" "}
+                        <i className="fe fe-filter"></i>Third tag
                         <Link
                           to="#"
                           className="tag-addon tag-addon-cross tag-pink"
@@ -252,7 +260,7 @@ const Tags = () => {
                         <img
                           className="tag-avatar avatar cover-image"
                           alt="user11"
-                          src={require("../../../assets/images/users/11.jpg")}
+                          src={U11}
                         />
                         Victoria
                       </span>
@@ -260,56 +268,56 @@ const Tags = () => {
                         <img
                           className="tag-avatar avatar cover-image"
                           alt="user4"
-                          src={require("../../../assets/images/users/4.jpg")}
-                        />{" "}
+                          src={U4}
+                        />
                         Nathan
                       </span>
                       <span className="tag">
                         <img
                           className="tag-avatar avatar cover-image"
                           alt="user1"
-                          src={require("../../../assets/images/users/1.jpg")}
-                        />{" "}
+                          src={U1}
+                        />
                         Alice
                       </span>
                       <span className="tag">
                         <img
                           className="tag-avatar avatar cover-image"
                           alt="user18"
-                          src={require("../../../assets/images/users/18.jpg")}
-                        />{" "}
+                          src={U18}
+                        />
                         Rose
                       </span>
                       <span className="tag">
                         <img
                           className="tag-avatar avatar cover-image"
                           alt="user16"
-                          src={require("../../../assets/images/users/16.jpg")}
-                        />{" "}
+                          src={U16}
+                        />
                         Peter
                       </span>
                       <span className="tag">
                         <img
                           className="tag-avatar avatar cover-image"
                           alt="user6"
-                          src={require("../../../assets/images/users/6.jpg")}
-                        />{" "}
+                          src={U6}
+                        />
                         Wayne
                       </span>
                       <span className="tag">
                         <img
                           className="tag-avatar avatar cover-image"
                           alt="user7"
-                          src={require("../../../assets/images/users/7.jpg")}
-                        />{" "}
+                          src={U7}
+                        />
                         Michelle
                       </span>
                       <span className="tag">
                         <img
                           className="tag-avatar avatar cover-image"
                           alt="user17"
-                          src={require("../../../assets/images/users/17.jpg")}
-                        />{" "}
+                          src={U17}
+                        />
                         Debra
                       </span>
                     </div>
@@ -326,7 +334,7 @@ const Tags = () => {
               <Card.Body>
                 <div className="text-wrap">
                   <p>
-                    You can create a list of tags with the{" "}
+                    You can create a list of tags with the
                     <code className="highlighter-rouge">.tags</code> container.
                   </p>
                   <div className="example">

@@ -16,6 +16,16 @@ import PageHeader from "../../../commonComponents/PageHeader/PageHeader";
 import PerfectScrollbar from "react-perfect-scrollbar";
 import "./Chat.scss";
 import { Media } from "../../../Data/App/DataChat";
+import { OnlineUsers } from "./Mock";
+import U1 from '../../../assets/images/UserImages/U1.jpg'
+import U2 from '../../../assets/images/UserImages/U2.jpg'
+import U3 from '../../../assets/images/UserImages/U3.jpg'
+import U4 from '../../../assets/images/UserImages/U4.jpg'
+import U5 from '../../../assets/images/UserImages/U5.jpg'
+import U6 from '../../../assets/images/UserImages/U6.jpg'
+import U7 from '../../../assets/images/UserImages/U7.jpg'
+import U9 from '../../../assets/images/UserImages/U9.jpg'
+import U12 from '../../../assets/images/UserImages/U12.jpg'
 
 const Chat = () => {
   return (
@@ -33,11 +43,11 @@ const Chat = () => {
                       <div className="main-img-user online">
                         <img
                           alt="avatar"
-                          src={require("../../../assets/images/users/21.jpg")}
+                          src={U9}
                         />
                       </div>
                       <div className="main-chat-msg-name">
-                        <h6>Percy Kewshun</h6>
+                        <h6>Olivia Smith</h6>
                         <span className="dot-label bg-success"></span>
                         <small className="me-3">Available</small>
                       </div>
@@ -91,78 +101,19 @@ const Chat = () => {
                                 className="main-chat-contacts lightSlider lsGrab lSSlide ps-0"
                                 id="chatActiveContacts"
                               >
-                                <div className="lslide active position-relative">
-                                  <img
-                                    className="avatar avatar-md bradius cover-image"
-                                    alt="user5"
-                                    src={require("../../../assets/images/users/5.jpg")}
-                                  />
-                                  <span className="avatar-status bg-secondary"></span>
-                                  <small>Ariana</small>
-                                </div>
-                                <div className="lslide position-relative">
-                                  <img
-                                    className="avatar avatar-md bradius cover-image"
-                                    alt="user9"
-                                    src={require("../../../assets/images/users/9.jpg")}
-                                  />
-                                  <span className="avatar-status bg-red"></span>
-                                  <small>Monino</small>
-                                </div>
-                                <div className="lslide position-relative">
-                                  <img
-                                    className="avatar avatar-md bradius cover-image"
-                                    alt="user6"
-                                    src={require("../../../assets/images/users/6.jpg")}
-                                  />
-                                  <span className="avatar-status bg-green"></span>
-                                  <small>Reynante</small>
-                                </div>
-                                <div className="lslide position-relative">
-                                  <img
-                                    className="avatar avatar-md bradius cover-image"
-                                    alt="user7"
-                                    src={require("../../../assets/images/users/7.jpg")}
-                                  />
-                                  <span className="avatar-status bg-yellow"></span>
-                                  <small>Labares</small>
-                                </div>
-                                <div className="lslide position-relative">
-                                  <img
-                                    className="avatar avatar-md bradius cover-image"
-                                    alt="user5"
-                                    src={require("../../../assets/images/users/5.jpg")}
-                                  />
-                                  <span className="avatar-status bg-secondary"></span>
-                                  <small>Rolando</small>
-                                </div>
-                                <div className="lslide position-relative">
-                                  <img
-                                    className="avatar avatar-md bradius cover-image"
-                                    alt="user9"
-                                    src={require("../../../assets/images/users/9.jpg")}
-                                  />
-                                  <span className="avatar-status bg-red"></span>
-                                  <small>Paloso</small>
-                                </div>
-                                <div className="lslide position-relative">
-                                  <img
-                                    className="avatar avatar-md bradius cover-image"
-                                    alt="user6"
-                                    src={require("../../../assets/images/users/6.jpg")}
-                                  />
-                                  <span className="avatar-status bg-green"></span>
-                                  <small>Maricel</small>
-                                </div>
-                                <div className="lslide position-relative">
-                                  <img
-                                    className="avatar avatar-md bradius cover-image"
-                                    alt="user7"
-                                    src={require("../../../assets/images/users/7.jpg")}
-                                  />
-                                  <span className="avatar-status bg-yellow"></span>
-                                  <small>Villalon</small>
-                                </div>
+                                {OnlineUsers.map((val,index) => {
+                                  return (
+                                    <div className="lslide active position-relative" key={index}>
+                                      <img
+                                        className="avatar avatar-md bradius cover-image"
+                                        alt="user5"
+                                        src={val.profileImg}
+                                      />
+                                      <span className="avatar-status bg-secondary"></span>
+                                      <small>{val.name}</small>
+                                    </div>
+                                  );
+                                })}
                                 <div className="lslide position-relative">
                                   <div className="avatar avatar-md bradius text-primary">
                                     <i className="fe fe-plus"></i>
@@ -202,7 +153,7 @@ const Chat = () => {
                               <div className="main-img-user online">
                                 <img
                                   alt="user5"
-                                  src={require("../../../assets/images/users/5.jpg")}
+                                  src={U5}
                                 />
                               </div>
                               <div className="media-body">
@@ -217,7 +168,7 @@ const Chat = () => {
                               <div className="main-img-user">
                                 <img
                                   alt="user6"
-                                  src={require("../../../assets/images/users/6.jpg")}
+                                  src={U6}
                                 />
                                 <span>3</span>
                               </div>
@@ -232,7 +183,7 @@ const Chat = () => {
                               <div className="main-img-user online">
                                 <img
                                   alt="user9"
-                                  src={require("../../../assets/images/users/9.jpg")}
+                                  src={U9}
                                 />
                               </div>
                               <div className="media-body">
@@ -258,7 +209,7 @@ const Chat = () => {
                               <div className="main-img-user">
                                 <img
                                   alt="user4"
-                                  src={require("../../../assets/images/users/4.jpg")}
+                                  src={U4}
                                 />
                               </div>
                               <div className="media-body">
@@ -288,7 +239,7 @@ const Chat = () => {
                               <div className="main-img-user">
                                 <img
                                   alt="user21"
-                                  src={require("../../../assets/images/users/21.jpg")}
+                                  src={U9}
                                 />
                               </div>
                               <div className="media-body">
@@ -315,7 +266,7 @@ const Chat = () => {
                               <div className="main-img-user">
                                 <img
                                   alt="user5"
-                                  src={require("../../../assets/images/users/5.jpg")}
+                                  src={U5}
                                 />
                               </div>
                               <div className="media-body">
@@ -342,7 +293,7 @@ const Chat = () => {
                               <div className="main-img-user">
                                 <img
                                   alt="user3"
-                                  src={require("../../../assets/images/users/3.jpg")}
+                                  src={U3}
                                 />
                               </div>
                               <div className="media-body">
@@ -357,7 +308,7 @@ const Chat = () => {
                               <div className="main-img-user">
                                 <img
                                   alt="user7"
-                                  src={require("../../../assets/images/users/7.jpg")}
+                                  src={U7}
                                 />
                               </div>
                               <div className="media-body">
@@ -372,7 +323,7 @@ const Chat = () => {
                               <div className="main-img-user">
                                 <img
                                   alt="user6"
-                                  src={require("../../../assets/images/users/6.jpg")}
+                                  src={U6}
                                 />
                               </div>
                               <div className="media-body">
@@ -397,7 +348,7 @@ const Chat = () => {
                                 <div className="main-img-user online text-primary">
                                   <img
                                     alt="user4"
-                                    src={require("../../../assets/images/users/4.jpg")}
+                                    src={U4}
                                   />
                                   <span>2</span>
                                 </div>
@@ -422,7 +373,7 @@ const Chat = () => {
                                 <div className="main-img-user online">
                                   <img
                                     alt="user4"
-                                    src={require("../../../assets/images/users/4.jpg")}
+                                    src={U4}
                                   />
                                   <span>2</span>
                                 </div>
@@ -447,7 +398,7 @@ const Chat = () => {
                                 <div className="main-img-user online">
                                   <img
                                     alt="user9"
-                                    src={require("../../../assets/images/users/9.jpg")}
+                                    src={U9}
                                   />
                                   <span>2</span>
                                 </div>
@@ -472,7 +423,7 @@ const Chat = () => {
                                 <div className="main-img-user online">
                                   <img
                                     alt="user12"
-                                    src={require("../../../assets/images/users/12.jpg")}
+                                    src={U12}
                                   />
                                   <span>2</span>
                                 </div>
@@ -497,7 +448,7 @@ const Chat = () => {
                                 <div className="main-img-user online">
                                   <img
                                     alt="user6"
-                                    src={require("../../../assets/images/users/6.jpg")}
+                                    src={U6}
                                   />
                                   <span>2</span>
                                 </div>
@@ -522,7 +473,7 @@ const Chat = () => {
                                 <div className="main-img-user online">
                                   <img
                                     alt="user7"
-                                    src={require("../../../assets/images/users/7.jpg")}
+                                    src={U7}
                                   />
                                   <span>2</span>
                                 </div>
@@ -554,7 +505,7 @@ const Chat = () => {
                                 <div className="main-img-user online">
                                   <img
                                     alt="user3"
-                                    src={require("../../../assets/images/users/3.jpg")}
+                                    src={U3}
                                   />
                                   <span>2</span>
                                 </div>
@@ -581,7 +532,7 @@ const Chat = () => {
                                 <div className="main-img-user online">
                                   <img
                                     alt="user9"
-                                    src={require("../../../assets/images/users/9.jpg")}
+                                    src={U9}
                                   />
                                   <span>2</span>
                                 </div>
@@ -608,7 +559,7 @@ const Chat = () => {
                                 <div className="main-img-user online">
                                   <img
                                     alt="user4"
-                                    src={require("../../../assets/images/users/4.jpg")}
+                                    src={U4}
                                   />
                                   <span>2</span>
                                 </div>
@@ -638,7 +589,7 @@ const Chat = () => {
                                 <div className="main-img-user online">
                                   <img
                                     alt="user5"
-                                    src={require("../../../assets/images/users/5.jpg")}
+                                    src={U5}
                                   />
                                   <span>2</span>
                                 </div>
@@ -668,7 +619,7 @@ const Chat = () => {
                                 <div className="main-img-user online">
                                   <img
                                     alt=""
-                                    src={require("../../../assets/images/users/5.jpg")}
+                                    src={U5}
                                   />
                                   <span>2</span>
                                 </div>
@@ -695,7 +646,7 @@ const Chat = () => {
                                 <div className="main-img-user online">
                                   <img
                                     alt=""
-                                    src={require("../../../assets/images/users/21.jpg")}
+                                    src={U9}
                                   />
                                   <span>2</span>
                                 </div>
@@ -722,7 +673,7 @@ const Chat = () => {
                                 <div className="main-img-user online">
                                   <img
                                     alt="user2"
-                                    src={require("../../../assets/images/users/2.jpg")}
+                                    src={U2}
                                   />
                                   <span>2</span>
                                 </div>
@@ -752,7 +703,7 @@ const Chat = () => {
                                 <div className="main-img-user online">
                                   <img
                                     alt="user7"
-                                    src={require("../../../assets/images/users/7.jpg")}
+                                    src={U7}
                                   />
                                   <span>2</span>
                                 </div>
@@ -779,7 +730,7 @@ const Chat = () => {
                                 <div className="main-img-user online">
                                   <img
                                     alt="user12"
-                                    src={require("../../../assets/images/users/12.jpg")}
+                                    src={U12}
                                   />
                                   <span>2</span>
                                 </div>
@@ -806,7 +757,7 @@ const Chat = () => {
                                 <div className="main-img-user online">
                                   <img
                                     alt="user1"
-                                    src={require("../../../assets/images/users/1.jpg")}
+                                    src={U1}
                                   />
                                   <span>2</span>
                                 </div>
@@ -836,7 +787,7 @@ const Chat = () => {
                                 <div className="main-img-user online">
                                   <img
                                     alt="user4"
-                                    src={require("../../../assets/images/users/4.jpg")}
+                                    src={U4}
                                   />
                                   <span>2</span>
                                 </div>
@@ -954,275 +905,6 @@ const Chat = () => {
               </div>
             </Card>
           </Col>
-          <Col sm={12} md={12} lg={12} xl={5}>
-            <Card>
-              <div className="main-content-app pt-0">
-                <div className="main-content-body main-content-body-chat h-100">
-                  <div className="main-chat-header pt-3 d-block d-sm-flex">
-                    <div className="main-img-user online">
-                      <img
-                        alt="avatar"
-                        src={require("../../../assets/images/users/1.jpg")}
-                      />
-                    </div>
-                    <div className="main-chat-msg-name mt-2">
-                      <h6>Saul Goodmate</h6>
-                      <span className="dot-label bg-success"></span>
-                      <small className="me-3">online</small>
-                    </div>
-                    <Nav>
-                      <div className="">
-                        <InputGroup>
-                          <FormControl type="text" placeholder="Search ..." />
-                          <InputGroup.Text className="btn bg-white text-muted border-start-0">
-                            <i className="fe fe-search"></i>
-                          </InputGroup.Text>
-                        </InputGroup>
-                      </div>
-                      <Dropdown>
-                        <Dropdown.Toggle
-                          className="text-muted fs-20 no-caret"
-                          as="a"
-                        >
-                          <i className="fe fe-more-horizontal mx-3"></i>
-                        </Dropdown.Toggle>
-                        <Dropdown.Menu className="dropdown-menu-end">
-                          <Dropdown.Item href="#">
-                            <i className="fe fe-phone-call me-1"></i> Phone Call
-                          </Dropdown.Item>
-                          <Dropdown.Item href="#">
-                            <i className="fe fe-video me-1"></i> Video Call
-                          </Dropdown.Item>
-                          <Dropdown.Item href="#">
-                            <i className="fe fe-user-plus me-1"></i> Add Contact
-                          </Dropdown.Item>
-                          <Dropdown.Item href="#">
-                            <i className="fe fe-trash-2 me-1"></i> Delete
-                          </Dropdown.Item>
-                        </Dropdown.Menu>
-                      </Dropdown>
-                    </Nav>
-                  </div>
-                  {/* <!-- main-chat-header --> */}
-                  <div className="main-chat-body flex-2" id="ChatBody">
-                    <PerfectScrollbar>
-                      <div className="content-inner">
-                        <label className="main-chat-time">
-                          <span>2 days ago</span>
-                        </label>
-                        <div className="media flex-row-reverse chat-right">
-                          <div className="main-img-user online">
-                            <img
-                              alt="avatar"
-                              src={require("../../../assets/images/users/21.jpg")}
-                            />
-                          </div>
-                          <div className="media-body">
-                            <div className="main-msg-wrapper">
-                              Nulla consequat massa quis enim. Donec pede justo,
-                              fringilla vel...
-                            </div>
-                            <div className="main-msg-wrapper">
-                              rhoncus ut, imperdiet a, venenatis vitae, justo...
-                            </div>
-                            <div>
-                              <span>9:48 am</span>
-                              <Link to="">
-                                <i className="icon ion-android-more-horizontal"></i>
-                              </Link>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="media chat-left">
-                          <div className="main-img-user online">
-                            <img
-                              alt="avatar"
-                              src={require("../../../assets/images/users/1.jpg")}
-                            />
-                          </div>
-                          <div className="media-body">
-                            <div className="main-msg-wrapper">
-                              Lorem ipsum dolor sit amet, consectetuer
-                              adipiscing elit. Aenean commodo ligula eget dolor.
-                            </div>
-                            <div>
-                              <span>9:32 am</span>
-                              <Link to="">
-                                <i className="icon ion-android-more-horizontal"></i>
-                              </Link>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="media flex-row-reverse chat-right">
-                          <div className="main-img-user online">
-                            <img
-                              alt="avatar"
-                              src={require("../../../assets/images/users/21.jpg")}
-                            />
-                          </div>
-                          <div className="media-body">
-                            <div className="main-msg-wrapper">
-                              Lorem ipsum dolor sit amet, consectetuer
-                              adipiscing elit. Aenean commodo ligula eget dolor
-                            </div>
-                            <div className="main-msg-wrapper">
-                              <span className="text-dark">
-                                <span>
-                                  <i className="fa fa-image fs-14 text-muted pe-2"></i>
-                                </span>
-                                <span className="fs-14 mt-1">
-                                  Image_attachment.jpg
-                                </span>
-                                <i className="fe fe-download mt-3 text-muted ps-2"></i>
-                              </span>
-                            </div>
-                            <div>
-                              <span>11:22 am</span>
-                              <Link to="">
-                                <i className="icon ion-android-more-horizontal"></i>
-                              </Link>
-                            </div>
-                          </div>
-                        </div>
-                        <label className="main-chat-time">
-                          <span>Yesterday</span>
-                        </label>
-                        <div className="media chat-left">
-                          <div className="main-img-user online">
-                            <img
-                              alt="avatar"
-                              src={require("../../../assets/images/users/1.jpg")}
-                            />
-                          </div>
-                          <div className="media-body">
-                            <div className="main-msg-wrapper">
-                              Lorem ipsum dolor sit amet, consectetuer
-                              adipiscing elit. Aenean commodo ligula eget dolor.
-                            </div>
-                            <div>
-                              <span>9:32 am</span>
-                              <Link to="">
-                                <i className="icon ion-android-more-horizontal"></i>
-                              </Link>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="media flex-row-reverse chat-right">
-                          <div className="main-img-user online">
-                            <img
-                              alt="avatar"
-                              src={require("../../../assets/images/users/21.jpg")}
-                            />
-                          </div>
-                          <div className="media-body">
-                            <div className="main-msg-wrapper">
-                              Donec quam felis, ultricies nec, pellentesque eu,
-                              pretium quis, sem. Nulla consequat massa quis
-                              enim. Donec pede justo, fringilla vel, aliquet
-                              nec. In enim justo, rhoncus ut, imperdiet a,
-                              venenatis vitae, justo.
-                            </div>
-                            <div className="main-msg-wrapper">
-                              Nullam dictum felis eu pede mollis pretium
-                            </div>
-                            <div>
-                              <span>9:48 am</span>
-                              <Link to="">
-                                <i className="icon ion-android-more-horizontal"></i>
-                              </Link>
-                            </div>
-                          </div>
-                        </div>
-                        <label className="main-chat-time">
-                          <span>Today</span>
-                        </label>
-                        <div className="media chat-left">
-                          <div className="main-img-user online">
-                            <img
-                              alt="avatar"
-                              src={require("../../../assets/images/users/1.jpg")}
-                            />
-                          </div>
-                          <div className="media-body">
-                            <div className="main-msg-wrapper">
-                              Maecenas tempus, tellus eget condimentum rhoncus
-                            </div>
-                            <div className="main-msg-wrapper">
-                              <img
-                                alt="avatar"
-                                className="w-10 h-10 me-1"
-                                src={require("../../../assets/images/media/3.jpg")}
-                              />
-                              <img
-                                alt="avatar"
-                                className="w-10 h-10 me-1"
-                                src={require("../../../assets/images/media/4.jpg")}
-                              />
-                              <img
-                                alt="avatar"
-                                className="w-10 h-10 me-1"
-                                src={require("../../../assets/images/media/5.jpg")}
-                              />
-                            </div>
-                            <div>
-                              <span>10:12 am</span>
-                              <Link to="">
-                                <i className="icon ion-android-more-horizontal"></i>
-                              </Link>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="media flex-row-reverse chat-right">
-                          <div className="main-img-user online">
-                            <img
-                              alt="avatar"
-                              src={require("../../../assets/images/users/21.jpg")}
-                            />
-                          </div>
-                          <div className="media-body">
-                            <div className="main-msg-wrapper">
-                              Maecenas tempus, tellus eget condimentum rhoncus
-                            </div>
-                            <div className="main-msg-wrapper">
-                              Nam quam nunc, blandit vel, luctus pulvinar,
-                              hendrerit id, lorem. Maecenas nec odio et ante
-                              tincidunt tempus. Donec vitae sapien ut libero
-                              venenatis faucibus.
-                            </div>
-                            <div>
-                              <span>09:40 am</span>
-                              <Link to="">
-                                <i className="icon ion-android-more-horizontal"></i>
-                              </Link>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </PerfectScrollbar>
-                  </div>
-                  <div className="main-chat-footer">
-                    <input
-                      className="form-control"
-                      placeholder="Type your message here..."
-                      type="text"
-                    />
-                    <Link
-                      className="nav-link"
-                      data-bs-toggle="tooltip"
-                      to=""
-                      title="Attach a File"
-                    >
-                      <i className="fe fe-paperclip"></i>
-                    </Link>
-                    <Button className="btn btn-icon  btn-primary brround">
-                      <i className="fa fa-paper-plane-o"></i>
-                    </Button>
-                    <nav className="nav"></nav>
-                  </div>
-                </div>
-              </div>
-            </Card>
-          </Col>
           <Col sm={12} md={12} lg={12} xl={3}>
             <Card>
               <PerfectScrollbar>
@@ -1264,7 +946,7 @@ const Chat = () => {
                         >
                           <img
                             alt="avatar"
-                            src={require("../../../assets/images/users/7.jpg")}
+                            src={U7}
                             className="brround"
                           />
                         </Link>
@@ -1437,6 +1119,275 @@ const Chat = () => {
                   </div>
                 </Card.Body>
               </PerfectScrollbar>
+            </Card>
+          </Col>
+          <Col sm={12} md={12} lg={12} xl={5}>
+            <Card>
+              <div className="main-content-app pt-0">
+                <div className="main-content-body main-content-body-chat h-100">
+                  <div className="main-chat-header pt-3 d-block d-sm-flex">
+                    <div className="main-img-user online">
+                      <img
+                        alt="avatar"
+                        src={U1}
+                      />
+                    </div>
+                    <div className="main-chat-msg-name mt-2">
+                      <h6>Saul Goodmate</h6>
+                      <span className="dot-label bg-success"></span>
+                      <small className="me-3">online</small>
+                    </div>
+                    <Nav>
+                      <div className="">
+                        <InputGroup>
+                          <FormControl type="text" placeholder="Search ..." />
+                          <InputGroup.Text className="btn bg-white text-muted border-start-0">
+                            <i className="fe fe-search"></i>
+                          </InputGroup.Text>
+                        </InputGroup>
+                      </div>
+                      <Dropdown>
+                        <Dropdown.Toggle
+                          className="text-muted fs-20 no-caret"
+                          as="a"
+                        >
+                          <i className="fe fe-more-horizontal mx-3"></i>
+                        </Dropdown.Toggle>
+                        <Dropdown.Menu className="dropdown-menu-end">
+                          <Dropdown.Item href="#">
+                            <i className="fe fe-phone-call me-1"></i> Phone Call
+                          </Dropdown.Item>
+                          <Dropdown.Item href="#">
+                            <i className="fe fe-video me-1"></i> Video Call
+                          </Dropdown.Item>
+                          <Dropdown.Item href="#">
+                            <i className="fe fe-user-plus me-1"></i> Add Contact
+                          </Dropdown.Item>
+                          <Dropdown.Item href="#">
+                            <i className="fe fe-trash-2 me-1"></i> Delete
+                          </Dropdown.Item>
+                        </Dropdown.Menu>
+                      </Dropdown>
+                    </Nav>
+                  </div>
+                  {/* <!-- main-chat-header --> */}
+                  <div className="main-chat-body flex-2" id="ChatBody">
+                    <PerfectScrollbar>
+                      <div className="content-inner">
+                        <label className="main-chat-time">
+                          <span>2 days ago</span>
+                        </label>
+                        <div className="media flex-row-reverse chat-right">
+                          <div className="main-img-user online">
+                            <img
+                              alt="avatar"
+                              src={U9}
+                            />
+                          </div>
+                          <div className="media-body">
+                            <div className="main-msg-wrapper">
+                              Nulla consequat massa quis enim. Donec pede justo,
+                              fringilla vel...
+                            </div>
+                            <div className="main-msg-wrapper">
+                              rhoncus ut, imperdiet a, venenatis vitae, justo...
+                            </div>
+                            <div>
+                              <span>9:48 am</span>
+                              <Link to="">
+                                <i className="icon ion-android-more-horizontal"></i>
+                              </Link>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="media chat-left">
+                          <div className="main-img-user online">
+                            <img
+                              alt="avatar"
+                              src={U1}
+                            />
+                          </div>
+                          <div className="media-body">
+                            <div className="main-msg-wrapper">
+                              Lorem ipsum dolor sit amet, consectetuer
+                              adipiscing elit. Aenean commodo ligula eget dolor.
+                            </div>
+                            <div>
+                              <span>9:32 am</span>
+                              <Link to="">
+                                <i className="icon ion-android-more-horizontal"></i>
+                              </Link>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="media flex-row-reverse chat-right">
+                          <div className="main-img-user online">
+                            <img
+                              alt="avatar"
+                              src={U9}
+                            />
+                          </div>
+                          <div className="media-body">
+                            <div className="main-msg-wrapper">
+                              Lorem ipsum dolor sit amet, consectetuer
+                              adipiscing elit. Aenean commodo ligula eget dolor
+                            </div>
+                            <div className="main-msg-wrapper">
+                              <span className="text-dark">
+                                <span>
+                                  <i className="fa fa-image fs-14 text-muted pe-2"></i>
+                                </span>
+                                <span className="fs-14 mt-1">
+                                  Image_attachment.jpg
+                                </span>
+                                <i className="fe fe-download mt-3 text-muted ps-2"></i>
+                              </span>
+                            </div>
+                            <div>
+                              <span>11:22 am</span>
+                              <Link to="">
+                                <i className="icon ion-android-more-horizontal"></i>
+                              </Link>
+                            </div>
+                          </div>
+                        </div>
+                        <label className="main-chat-time">
+                          <span>Yesterday</span>
+                        </label>
+                        <div className="media chat-left">
+                          <div className="main-img-user online">
+                            <img
+                              alt="avatar"
+                              src={U1}
+                            />
+                          </div>
+                          <div className="media-body">
+                            <div className="main-msg-wrapper">
+                              Lorem ipsum dolor sit amet, consectetuer
+                              adipiscing elit. Aenean commodo ligula eget dolor.
+                            </div>
+                            <div>
+                              <span>9:32 am</span>
+                              <Link to="">
+                                <i className="icon ion-android-more-horizontal"></i>
+                              </Link>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="media flex-row-reverse chat-right">
+                          <div className="main-img-user online">
+                            <img
+                              alt="avatar"
+                              src={U9}
+                            />
+                          </div>
+                          <div className="media-body">
+                            <div className="main-msg-wrapper">
+                              Donec quam felis, ultricies nec, pellentesque eu,
+                              pretium quis, sem. Nulla consequat massa quis
+                              enim. Donec pede justo, fringilla vel, aliquet
+                              nec. In enim justo, rhoncus ut, imperdiet a,
+                              venenatis vitae, justo.
+                            </div>
+                            <div className="main-msg-wrapper">
+                              Nullam dictum felis eu pede mollis pretium
+                            </div>
+                            <div>
+                              <span>9:48 am</span>
+                              <Link to="">
+                                <i className="icon ion-android-more-horizontal"></i>
+                              </Link>
+                            </div>
+                          </div>
+                        </div>
+                        <label className="main-chat-time">
+                          <span>Today</span>
+                        </label>
+                        <div className="media chat-left">
+                          <div className="main-img-user online">
+                            <img
+                              alt="avatar"
+                              src={U1}
+                            />
+                          </div>
+                          <div className="media-body">
+                            <div className="main-msg-wrapper">
+                              Maecenas tempus, tellus eget condimentum rhoncus
+                            </div>
+                            <div className="main-msg-wrapper">
+                              <img
+                                alt="avatar"
+                                className="w-10 h-10 me-1"
+                                src={require("../../../assets/images/media/3.jpg")}
+                              />
+                              <img
+                                alt="avatar"
+                                className="w-10 h-10 me-1"
+                                src={require("../../../assets/images/media/4.jpg")}
+                              />
+                              <img
+                                alt="avatar"
+                                className="w-10 h-10 me-1"
+                                src={require("../../../assets/images/media/5.jpg")}
+                              />
+                            </div>
+                            <div>
+                              <span>10:12 am</span>
+                              <Link to="">
+                                <i className="icon ion-android-more-horizontal"></i>
+                              </Link>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="media flex-row-reverse chat-right">
+                          <div className="main-img-user online">
+                            <img
+                              alt="avatar"
+                              src={U9}
+                            />
+                          </div>
+                          <div className="media-body">
+                            <div className="main-msg-wrapper">
+                              Maecenas tempus, tellus eget condimentum rhoncus
+                            </div>
+                            <div className="main-msg-wrapper">
+                              Nam quam nunc, blandit vel, luctus pulvinar,
+                              hendrerit id, lorem. Maecenas nec odio et ante
+                              tincidunt tempus. Donec vitae sapien ut libero
+                              venenatis faucibus.
+                            </div>
+                            <div>
+                              <span>09:40 am</span>
+                              <Link to="">
+                                <i className="icon ion-android-more-horizontal"></i>
+                              </Link>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </PerfectScrollbar>
+                  </div>
+                  <div className="main-chat-footer">
+                    <input
+                      className="form-control"
+                      placeholder="Type your message here..."
+                      type="text"
+                    />
+                    <Link
+                      className="nav-link"
+                      data-bs-toggle="tooltip"
+                      to=""
+                      title="Attach a File"
+                    >
+                      <i className="fe fe-paperclip"></i>
+                    </Link>
+                    <Button className="btn btn-icon  btn-primary brround">
+                      <i className="fa fa-paper-plane-o"></i>
+                    </Button>
+                    <nav className="nav"></nav>
+                  </div>
+                </div>
+              </div>
             </Card>
           </Col>
         </Row>

@@ -18,18 +18,18 @@ import {
 
 // pics
 
-import pic1 from "../../assets/images/users/16.jpg";
-import pic2 from "../../assets/images/users/15.jpg";
-import pic3 from "../../assets/images/users/4.jpg";
-import pic4 from "../../assets/images/users/18.jpg";
-import pic5 from "../../assets/images/users/19.jpg";
-import pic6 from "../../assets/images/users/21.jpg";
-import pic7 from "../../assets/images/users/12.jpg";
-import pic8 from "../../assets/images/users/1.jpg";
-import pic9 from "../../assets/images/users/12.jpg";
-import pic10 from "../../assets/images/users/15.jpg";
-import pic11 from "../../assets/images/users/12.jpg";
-import pic12 from "../../assets/images/users/4.jpg";
+import pic1 from "../../assets/images/UserImages/U16.jpg";
+import pic2 from "../../assets/images/UserImages/U15.jpg";
+import pic3 from "../../assets/images/UserImages/U4.jpg";
+import pic4 from "../../assets/images/UserImages/U18.jpg";
+import pic5 from "../../assets/images/UserImages/U19.jpg";
+import pic6 from "../../assets/images/UserImages/U21.jpg";
+import pic7 from "../../assets/images/UserImages/U12.jpg";
+import pic8 from "../../assets/images/UserImages/U1.jpg";
+import pic9 from "../../assets/images/UserImages/U12.jpg";
+import pic10 from "../../assets/images/UserImages/U15.jpg";
+import pic11 from "../../assets/images/UserImages/U12.jpg";
+import pic12 from "../../assets/images/UserImages/U4.jpg";
 
 export const COLUMNS = [
   {

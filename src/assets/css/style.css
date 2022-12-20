@@ -5048,7 +5048,7 @@ input[type=button].btn-block {
 }
 
 .card-blog-overlay {
-    background: url("../images/media/thumbnails/thumb2.jpg");
+    background: url("../images/FileImages/CardBackgrounds/BG3.jpg");
     background-size: cover;
     position: relative;
 }
@@ -5077,12 +5077,12 @@ input[type=button].btn-block {
 }
 
 .card-blog-overlay1 {
-    background: url("../images/media/thumbnails/thumb3.jpg");
+    background: url("../images//FileImages/CardBackgrounds/BG4.jpg");
     background-size: cover;
 }
 
 .card-blog-overlay2 {
-    background: url("../images/media/22.jpg");
+    background: url("../images//FileImages/CardBackgrounds/BG2.jpg");
     background-size: cover;
 }
 
@@ -24322,6 +24322,7 @@ img {
     -ms-touch-action: pan-y;
     touch-action: pan-y;
     -webkit-tap-highlight-color: transparent;
+    width: unset;
 }
 
 .landing-page .slick-list {

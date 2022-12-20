@@ -13,6 +13,8 @@ import { Link } from "react-router-dom";
 import listWeek from "@fullcalendar/list";
 import "@fullcalendar/list/main.css";
 import PageHeader from "../../../commonComponents/PageHeader/PageHeader";
+import U12 from '../../../assets/images/UserImages/U12.jpg'
+import U16 from '../../../assets/images/UserImages/U16.jpg'
 
 const FullCalender = () => {
 
@@ -204,7 +206,7 @@ const FullCalender = () => {
                         <div className="media media-xs overflow-visible">
                           <img
                             className="avatar brround avatar-md me-3"
-                            src={require("../../../assets/images/users/12.jpg")}
+                            src={U12}
                             alt="avatar-img"
                           />
                           <div className="media-body valign-middle">
@@ -261,7 +263,7 @@ const FullCalender = () => {
                         <div className="media media-xs overflow-visible">
                           <img
                             className="avatar brround avatar-md me-3"
-                            src={require("../../../assets/images/users/16.jpg")}
+                            src={U16}
                             alt="avatar-img"
                           />
                           <div className="media-body valign-middle">

@@ -31,6 +31,15 @@ import {
   SampleCard,
 } from "../../../Data/App/CardDesignData";
 import "./CardsDesign.scss";
+import File21 from "../../../assets/images/FileImages/File21.jpg";
+import File22 from "../../../assets/images/FileImages/File22.jpg";
+import File23 from "../../../assets/images/FileImages/File23.jpg";
+import File24 from "../../../assets/images/FileImages/File24.jpg";
+import File25 from "../../../assets/images/FileImages/File25.jpg";
+import File26 from "../../../assets/images/FileImages/File29.jpg";
+import File27 from "../../../assets/images/FileImages/File27.jpg";
+import File28 from "../../../assets/images/FileImages/File28.jpg";
+
 
 const CardsDesign = () => {
   return (
@@ -395,11 +404,7 @@ const CardsDesign = () => {
         <Row>
           <Col xl={4} md={12}>
             <Card className="overflow-hidden">
-              <img
-                src={require("../../../assets/images/media/8.jpg")}
-                className="card-img-top"
-                alt="img"
-              />
+              <img src={File21} className="card-img-top" alt="img" />
               <Card.Body>
                 <Card.Title>Card title</Card.Title>
                 <Card.Text>
@@ -423,20 +428,12 @@ const CardsDesign = () => {
                   <small className="text-muted">Last updated 3 mins ago</small>
                 </Card.Text>
               </Card.Body>
-              <img
-                src={require("../../../assets/images/media/9.jpg")}
-                className="card-img-bottom"
-                alt="img"
-              />
+              <img src={File22} className="card-img-bottom" alt="img" />
             </Card>
           </Col>
           <Col xl={4} md={12}>
             <Card>
-              <img
-                src={require("../../../assets/images/media/media1.jpg")}
-                className="card-img-top"
-                alt="img"
-              />
+              <img src={File23} className="card-img-top" alt="img" />
               <Card.Body className="border-bottom">
                 <Card.Text>
                   Some quick example text to build on the card title and make up
@@ -595,24 +592,11 @@ const CardsDesign = () => {
         {/* <--<-< ROW OPEN >->--> */}
         <Row>
           <Col md={12} xl={6}>
-            <CardBlue />
-          </Col>
-          {/* <*--< COL END >--*> */}
-          <Col md={12} xl={6}>
-            <CardLeftSide />
-          </Col>
-          {/* <*--< COL END >--*> */}
-        </Row>
-        {/* <--<-< ROW CLOSED >->--> */}
-
-        {/* <--<-< ROW OPEN >->--> */}
-        <Row>
-          <Col md={12} xl={6}>
             <Card>
               <Row className="g-0">
                 <Col md={4}>
                   <img
-                    src={require("../../../assets/images/media/22.jpg")}
+                    src={File24}
                     className="card-img-left h-100"
                     alt="img"
                   />
@@ -655,7 +639,7 @@ const CardsDesign = () => {
                 </Col>
                 <Col md={4}>
                   <img
-                    src={require("../../../assets/images/media/22.jpg")}
+                    src={File25}
                     className="card-img-right h-100"
                     alt="img"
                   />
@@ -672,7 +656,7 @@ const CardsDesign = () => {
             <div className="mb-5 card-group overflow-hidden">
               <Card className="shadow-none">
                 <img
-                  src={require("../../../assets/images/media/22.jpg")}
+                  src={File26}
                   className="card-img-top"
                   alt="img"
                 />
@@ -692,7 +676,7 @@ const CardsDesign = () => {
               </Card>
               <Card className="shadow-none border-style">
                 <img
-                  src={require("../../../assets/images/media/18.jpg")}
+                  src={File28}
                   className="card-img-top"
                   alt="img"
                 />
@@ -711,7 +695,7 @@ const CardsDesign = () => {
               </Card>
               <Card className="shadow-none">
                 <img
-                  src={require("../../../assets/images/media/6.jpg")}
+                  src={File27}
                   className="card-img-top"
                   alt="img"
                 />
@@ -730,6 +714,12 @@ const CardsDesign = () => {
                 </div>
               </Card>
             </div>
+          </Col>
+          <Col md={12} xl={6}>
+            <CardBlue />
+          </Col>
+          <Col md={12} xl={6}>
+            <CardLeftSide />
           </Col>
           <Col xl={6} md={12}>
             <Card>

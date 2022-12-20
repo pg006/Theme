@@ -6,6 +6,10 @@ import Select from "react-select";
 import "./BlogPostPage.scss";
 import { FormTextEditor } from "../../../../Data/Pages/Forms/DataFormEditor";
 import { FileuploadCustomised } from "../../../../Data/Pages/Forms/FormAdvanceData/DataFormAdvanced";
+import U12 from '../../../../assets/images/UserImages/U12.jpg'
+import U2 from '../../../../assets/images/UserImages/U2.jpg'
+import U9 from '../../../../assets/images/UserImages/U9.jpg'
+import U4 from '../../../../assets/images/UserImages/U4.jpg'
 
 const BlogPostPage = () => {
 
@@ -191,7 +195,7 @@ const BlogPostPage = () => {
                   <div className="d-flex overflow-visible">
                     <img
                       className="avatar bradius avatar-xl me-3"
-                      src={require("../../../../assets/images/users/12.jpg")}
+                      src={U12}
                       alt="avatar-img"
                     />
                     <div className="media-body valign-middle">
@@ -210,7 +214,7 @@ const BlogPostPage = () => {
                   <div className="d-flex overflow-visible mt-5">
                     <img
                       className="avatar bradius avatar-xl me-3"
-                      src={require("../../../../assets/images/users/2.jpg")}
+                      src={U2}
                       alt="avatar-img"
                     />
                     <div className="media-body valign-middle">
@@ -229,7 +233,7 @@ const BlogPostPage = () => {
                   <div className="d-flex overflow-visible mt-5">
                     <img
                       className="avatar bradius avatar-xl me-3"
-                      src={require("../../../../assets/images/users/9.jpg")}
+                      src={U9}
                       alt="avatar-img"
                     />
                     <div className="media-body valign-middle">
@@ -248,7 +252,7 @@ const BlogPostPage = () => {
                   <div className="d-flex overflow-visible mt-5">
                     <img
                       className="avatar bradius avatar-xl me-3"
-                      src={require("../../../../assets/images/users/4.jpg")}
+                      src={U4}
                       alt="avatar-img"
                     />
                     <div className="media-body valign-middle">

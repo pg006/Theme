@@ -5,6 +5,7 @@ import Select from "react-select";
 import PageHeader from "../../../commonComponents/PageHeader/PageHeader";
 import "./EditprofilePage.scss";
 import { Current } from "../../../Data/Pages/DataEditProfilePages";
+import U7 from '../../../assets/images/UserImages/U7.jpg'
 
 const EditprofilePage = () => {
   const DOBdata = [
@@ -117,7 +118,7 @@ const EditprofilePage = () => {
                     >
                       <img
                         alt="avatar"
-                        src={require("../../../assets/images/users/7.jpg")}
+                        src={U7}
                         className="brround"
                       />
                     </Link>

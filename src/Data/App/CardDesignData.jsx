@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import { Collapse } from "@mui/material";
 import { Alert, Button, Card, Form, Modal, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import U15 from '../../assets/images/UserImages/U15.jpg'
+import U18 from '../../assets/images/UserImages/U18.jpg'
+import U20 from '../../assets/images/UserImages/U20.jpg'
 
 // CONTACT CARD 1
 
@@ -38,7 +41,7 @@ export const ContactCard1 = () => {
             <Card.Body className="text-center">
               <img
                 className="avatar-xxl brround cover-image"
-                src={require("../../assets/images/users/15.jpg")}
+                src={U15}
                 alt="user15"
               />
               <h4 className="mb-0 mt-3">Mike Rowe-Soft</h4>
@@ -105,7 +108,7 @@ export const ContactCard2 = () => {
             <Card.Body className="text-center">
               <img
                 className="avatar-xxl brround cover-image"
-                src={require("../../assets/images/users/15.jpg")}
+                src={U15}
                 alt="user15"
               />
               <h4 className="mb-0 mt-3">Laura Norda</h4>
@@ -172,7 +175,7 @@ export const ContactCard3 = () => {
             <Card.Body className="text-center">
               <img
                 className="avatar-xxl brround cover-image"
-                src={require("../../assets/images/users/15.jpg")}
+                src={U15}
                 alt="user15"
               />
               <h4 className="mb-0 mt-3">Willie Makit</h4>
@@ -238,7 +241,7 @@ export const ContactCard4 = () => {
             <Card.Body className="text-center">
               <img
                 className="avatar-xxl brround cover-image"
-                src={require("../../assets/images/users/15.jpg")}
+                src={U15}
                 alt="user15"
               />
               <h4 className="mb-0 mt-3">Don Messwidme</h4>
@@ -620,7 +623,7 @@ export const CardwithList = () => {
                   <img
                     className="brround avatar-md me-3"
                     alt="avatra-img"
-                    src={require("../../assets/images/users/18.jpg")}
+                    src={U18}
                   />
                   <div className="media-body">
                     <Card.Link href="" className="text-default fw-semibold">
@@ -635,7 +638,7 @@ export const CardwithList = () => {
                   <img
                     className="brround avatar-md me-3"
                     alt="avatra-img"
-                    src={require("../../assets/images/users/20.jpg")}
+                    src={U20}
                   />
                   <div className="media-body">
                     <Card.Link href="" className="text-default fw-semibold">
@@ -650,7 +653,7 @@ export const CardwithList = () => {
                   <img
                     className="brround avatar-md me-3"
                     alt="avatra-img"
-                    src={require("../../assets/images/users/18.jpg")}
+                    src={U18}
                   />
                   <div className="media-body">
                     <Card.Link href="" className="text-default fw-semibold">

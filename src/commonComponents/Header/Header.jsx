@@ -1,19 +1,13 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import styles from "./Header.module.scss";
 import { Link } from "react-router-dom";
-import {
-  FormControl,
-  Nav,
-  Modal,
-  Row,
-  Col,
-  Dropdown,
-  Badge,
-  Navbar,
-  InputGroup,
-} from "react-bootstrap";
+import { Nav, Modal, Row, Col, Dropdown, Badge, Navbar } from "react-bootstrap";
 import PerfectScrollbar from "react-perfect-scrollbar";
-import { MENUITEMS } from "../Sidebar/Sidemenu/Sidemenu";
+import U1 from "../../assets/images/UserImages/U1.jpg";
+import U2 from "../../assets/images/UserImages/U2.jpg";
+import U3 from "../../assets/images/UserImages/U3.jpg";
+import U4 from "../../assets/images/UserImages/U4.jpg";
+import U9 from "../../assets/images/UserImages/U9.jpg";
 const SideMenuIcon = () => {
   //leftsidemenu
   document.querySelector(".app")?.classList.toggle("sidenav-toggled");
@@ -45,6 +39,7 @@ const Fullscreen = (vale) => {
       document.exitFullscreen();
       i = true;
       break;
+    default:
   }
 };
 
@@ -72,70 +67,8 @@ const Header = () => {
 
   // For CountrySelector Modal
   const [show, setShow] = useState(false);
-  const [show1, setShow1] = useState(false);
-  const [show2, setShow2] = useState(false);
-  const [InputValue, setInputValue] = useState("");
-  const [searchval, setsearchval] = useState("Type something");
-  const [searchcolor, setsearchcolor] = useState("text-dark");
-  const [NavData, setNavData] = useState([]);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
-
-  useEffect(() => {});
-  let myfunction = (inputvalue) => {
-    document.querySelector(".search-result")?.classList.remove("d-none");
-    console.log("ok");
-
-    let i = [];
-    let allElement2 = [];
-
-    MENUITEMS.map((mainlevel) => {
-      if (mainlevel.Items) {
-        mainlevel.Items.map((sublevel) => {
-          // console.log("sublevel --- ", sublevel)
-          if (sublevel.children) {
-            sublevel.children.map((sublevel1) => {
-              // console.log("sublevel1 --- ", sublevel1)
-              i.push(sublevel1);
-              if (sublevel1.children) {
-                sublevel1.children.map((sublevel2) => {
-                  // console.log("sublevel2 --- ", sublevel2)
-                  i.push(sublevel2);
-                  return sublevel2;
-                });
-              }
-              return sublevel1;
-            });
-          }
-          return sublevel;
-        });
-      }
-      return mainlevel;
-    });
-    for (let allElement of i) {
-      if (allElement.title.toLowerCase().includes(inputvalue.toLowerCase())) {
-        if (
-          allElement.title.toLowerCase().startsWith(inputvalue.toLowerCase())
-        ) {
-          setShow2(true);
-          allElement2.push(allElement);
-        }
-      }
-    }
-    if (!allElement2.length || inputvalue === "") {
-      if (inputvalue === "") {
-        setShow2(false);
-        setsearchval("Type something");
-        setsearchcolor("text-dark");
-      }
-      if (!allElement2.length) {
-        setShow2(false);
-        setsearchcolor("text-danger");
-        setsearchval("There is no component with this name");
-      }
-    }
-    setNavData(allElement2);
-  };
 
   return (
     <div className={styles.Header}>
@@ -702,7 +635,7 @@ const Header = () => {
                             <img
                               className="avatar avatar-md brround me-3 align-self-center cover-image"
                               alt="user-1"
-                              src={require("../../assets/images/users/1.jpg")}
+                              src={U1}
                             />
                             <div className="wd-90p">
                               <div className="d-flex">
@@ -721,7 +654,7 @@ const Header = () => {
                             <img
                               className="avatar avatar-md brround me-3 align-self-center cover-image"
                               alt="user-15"
-                              src={require("../../assets/images/users/15.jpg")}
+                              src={U2}
                             />
                             <div className="wd-90p">
                               <div className="d-flex">
@@ -740,7 +673,7 @@ const Header = () => {
                             <img
                               className="avatar avatar-md brround me-3 align-self-center cover-image"
                               alt="user-12"
-                              src={require("../../assets/images/users/12.jpg")}
+                              src={U3}
                             />
                             <div className="wd-90p">
                               <div className="d-flex">
@@ -759,7 +692,7 @@ const Header = () => {
                             <img
                               className="avatar avatar-md brround me-3 align-self-center cover-image"
                               alt="user-4"
-                              src={require("../../assets/images/users/4.jpg")}
+                              src={U4}
                             />
                             <div className="wd-90p">
                               <div className="d-flex">
@@ -806,7 +739,7 @@ const Header = () => {
                         className="nav-link leading-none d-flex no-caret"
                       >
                         <img
-                          src={require("../../assets/images/users/21.jpg")}
+                          src={U9}
                           alt="profile-user"
                           className="avatar  profile-user brround cover-image"
                         />

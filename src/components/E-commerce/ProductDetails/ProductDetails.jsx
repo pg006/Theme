@@ -7,6 +7,8 @@ import CenterMode, {
   QuantityItems,
 } from "../../../Data/DataECommerce/DataProductDetails";
 import { RelatedProductDetails } from "../../../Data/DataECommerce/Mock";
+import U5 from '../../../assets/images/UserImages/U5.jpg'
+import U15 from '../../../assets/images/UserImages/U15.jpg'
 
 const ProductDetails = () => {
 
@@ -339,7 +341,7 @@ const ProductDetails = () => {
                       <img
                         className="media-object rounded-circle thumb-sm"
                         alt="64x64"
-                        src={require("../../../assets/images/users/5.jpg")}
+                        src={U5}
                       />
                     </Link>
                   </div>
@@ -379,7 +381,7 @@ const ProductDetails = () => {
                       <img
                         className="media-object rounded-circle thumb-sm"
                         alt="64x64"
-                        src={require("../../../assets/images/users/15.jpg")}
+                        src={U15}
                       />
                     </Link>
                   </div>
@@ -423,7 +425,7 @@ const ProductDetails = () => {
                       <img
                         className="media-object rounded-circle thumb-sm"
                         alt="64x64"
-                        src={require("../../../assets/images/users/5.jpg")}
+                        src={U5}
                       />
                     </Link>
                   </div>

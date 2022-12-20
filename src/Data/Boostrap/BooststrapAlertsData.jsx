@@ -1,7 +1,10 @@
 import React, { useState } from "react";
 import { Alert, Card, Row, Form, Collapse, Tabs, Tab } from "react-bootstrap";
 import { Link } from "react-router-dom";
-
+import U5 from '../../assets/images/UserImages/U5.jpg'
+import U6 from '../../assets/images/UserImages/U6.jpg'
+import U15 from '../../assets/images/UserImages/U15.jpg'
+import U14 from '../../assets/images/UserImages/U14.jpg'
 // ALert Cards Method START
 
 // CARD 01
@@ -610,25 +613,25 @@ const AvatarList = [
     id: "1",
     classname: "alert-avatar alert-primary alert-dismissible",
     variant: "primary",
-    pic: require("../../assets/images/users/14.jpg"),
+    pic: U14,
   },
   {
     id: "2",
     classname: "alert-avatar alert-success alert-dismissible",
     variant: "success",
-    pic: require("../../assets/images/users/5.jpg"),
+    pic: U5,
   },
   {
     id: "3",
     classname: "alert-avatar alert-warning alert-dismissible",
     variant: "warning",
-    pic: require("../../assets/images/users/15.jpg"),
+    pic: U15,
   },
   {
     id: "4",
     classname: "alert-avatar alert-danger alert-dismissible",
     variant: "danger",
-    pic: require("../../assets/images/users/6.jpg"),
+    pic: U6,
   },
 ];
 

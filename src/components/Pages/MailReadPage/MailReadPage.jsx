@@ -3,7 +3,7 @@ import PageHeader from "../../../commonComponents/PageHeader/PageHeader";
 import "./MailReadPage.scss";
 import { Link } from 'react-router-dom';
 import { Row, Col, Card, ListGroup, Badge, OverlayTrigger, Tooltip, Button, Dropdown } from 'react-bootstrap';
-
+import U6 from '../../../assets/images/UserImages/U6.jpg'
 const MailReadPage = () => {
   return (
     <React.Fragment>
@@ -159,7 +159,7 @@ const MailReadPage = () => {
                   <div className="mt-0 d-sm-flex">
                     <img
                       className="me-2 rounded-circle avatar avatar-lg"
-                      src={require("../../../assets/images/users/6.jpg")}
+                      src={U6}
                       alt="avatar"
                     />
                     <div className="media-body pt-0 overflow-visible">

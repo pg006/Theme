@@ -1,9 +1,29 @@
 import React from "react";
 import PageHeader from "../../../commonComponents/PageHeader/PageHeader";
 import "./ProfilePage.scss";
-import { Link as Loki } from '@material-ui/core';
-import { Link } from 'react-router-dom';
-import { Button, Card, Col, Dropdown, Row, Form, OverlayTrigger, Tooltip } from 'react-bootstrap';
+import { Link as Loki } from "@material-ui/core";
+import { Link } from "react-router-dom";
+import {
+  Button,
+  Card,
+  Col,
+  Dropdown,
+  Row,
+  Form,
+  OverlayTrigger,
+  Tooltip,
+} from "react-bootstrap";
+import U2 from '../../../assets/images/UserImages/U2.jpg'
+import U9 from '../../../assets/images/UserImages/U9.jpg'
+import U16 from '../../../assets/images/UserImages/U16.jpg'
+import U12 from '../../../assets/images/UserImages/U12.jpg'
+import U8 from '../../../assets/images/UserImages/U8.jpg'
+import U4 from '../../../assets/images/UserImages/U4.jpg'
+import U3 from '../../../assets/images/UserImages/U3.jpg'
+import U5 from '../../../assets/images/UserImages/U5.jpg'
+import U6 from '../../../assets/images/UserImages/U6.jpg'
+import U7 from '../../../assets/images/UserImages/U7.jpg'
+import U18 from '../../../assets/images/UserImages/U18.jpg'
 
 const ProfilePage = () => {
   return (
@@ -23,10 +43,7 @@ const ProfilePage = () => {
                           <div className="profile-cover__action bg-img"></div>
                           <div className="profile-cover__img">
                             <div className="profile-img-1">
-                              <img
-                                src={require("../../../assets/images/users/21.jpg")}
-                                alt="user21"
-                              />
+                              <img src={U9} alt="user21" />
                             </div>
                             <div className="profile-img-content text-dark text-start">
                               <div className="text-dark">
@@ -40,15 +57,13 @@ const ProfilePage = () => {
                               variant="primary"
                               className="mt-1 mb-1 me-2"
                             >
-                              {" "}
                               <i className="fa fa-rss"></i> <span>Follow</span>
                             </Button>
                             <Button
                               variant="secondary"
                               className="mt-1 mb-1 me-2"
                             >
-                              {" "}
-                              <i className="fa fa-envelope"></i>{" "}
+                              <i className="fa fa-envelope"></i>
                               <span>Message</span>
                             </Button>
                           </div>
@@ -267,7 +282,7 @@ const ProfilePage = () => {
                           </div>
                           <div className="media-body">
                             <h6 className="font-weight-semibold mb-1">
-                              Web Designer at{" "}
+                              Web Designer at
                               <Link to="#" className="btn-link">
                                 Spruko
                               </Link>
@@ -296,7 +311,7 @@ const ProfilePage = () => {
                           </div>
                           <div className="media-body">
                             <h6 className="font-weight-semibold mb-1">
-                              Studied at{" "}
+                              Studied at
                               <Link to="#" className="btn-link">
                                 University
                               </Link>
@@ -368,7 +383,7 @@ const ProfilePage = () => {
                             <img
                               alt="user16"
                               className="rounded-circle avatar avatar-md"
-                              src={require("../../../assets/images/users/16.jpg")}
+                              src={U16}
                             />
                           </div>
                         </div>
@@ -421,27 +436,27 @@ const ProfilePage = () => {
                           <img
                             className="avatar brround"
                             alt="user12"
-                            src={require("../../../assets/images/users/12.jpg")}
+                            src={U12}
                           />
                           <img
                             className="avatar brround"
                             alt="user2"
-                            src={require("../../../assets/images/users/2.jpg")}
+                            src={U2}
                           />
                           <img
                             className="avatar brround"
                             alt="user9"
-                            src={require("../../../assets/images/users/9.jpg")}
+                            src={U8}
                           />
                           <img
                             className="avatar brround"
                             alt="user2"
-                            src={require("../../../assets/images/users/2.jpg")}
+                            src={U2}
                           />
                           <img
                             className="avatar brround"
                             alt="user4"
-                            src={require("../../../assets/images/users/4.jpg")}
+                            src={U4}
                           />
                           <span className="avatar brround text-primary">
                             +28
@@ -484,7 +499,7 @@ const ProfilePage = () => {
                             <img
                               alt="user16"
                               className="rounded-circle avatar avatar-md"
-                              src={require("../../../assets/images/users/16.jpg")}
+                              src={U16}
                             />
                           </div>
                         </div>
@@ -518,13 +533,9 @@ const ProfilePage = () => {
                     </div>
                     <div className="mt-4">
                       <div className="d-flex">
+                        <img src={U3} alt="user22" className="w-40 m-1 br-5" />
                         <img
-                          src={require("../../../assets/images/media/22.jpg")}
-                          alt="user22"
-                          className="w-40 m-1 br-5"
-                        />
-                        <img
-                          src={require("../../../assets/images//media/24.jpg")}
+                          src={U5}
                           alt="user24"
                           className="w-40 m-1 br-5"
                         />
@@ -547,27 +558,27 @@ const ProfilePage = () => {
                           <img
                             className="avatar brround"
                             alt="user12"
-                            src={require("../../../assets/images/users/12.jpg")}
+                            src={U12}
                           />
                           <img
                             className="avatar brround"
                             alt="user2"
-                            src={require("../../../assets/images/users/2.jpg")}
+                            src={U2}
                           />
                           <img
                             className="avatar brround"
                             alt="user9"
-                            src={require("../../../assets/images/users/9.jpg")}
+                            src={U8}
                           />
                           <img
                             className="avatar brround"
                             alt="user2"
-                            src={require("../../../assets/images/users/2.jpg")}
+                            src={U2}
                           />
                           <img
                             className="avatar brround"
                             alt="user4"
-                            src={require("../../../assets/images/users/4.jpg")}
+                            src={U4}
                           />
                           <span className="avatar brround text-primary">
                             +28
@@ -610,7 +621,7 @@ const ProfilePage = () => {
                             <img
                               alt="user16"
                               className="rounded-circle avatar avatar-md"
-                              src={require("../../../assets/images/users/16.jpg")}
+                              src={U16}
                             />
                           </div>
                         </div>
@@ -644,21 +655,9 @@ const ProfilePage = () => {
                     </div>
                     <div className="mt-4">
                       <div className="d-flex">
-                        <img
-                          src={require("../../../assets/images/media/26.jpg")}
-                          alt="user26"
-                          className="w-30 m-1 br-5"
-                        />
-                        <img
-                          src={require("../../../assets/images/media/23.jpg")}
-                          alt="user23"
-                          className="w-30 m-1 br-5"
-                        />
-                        <img
-                          src={require("../../../assets/images/media/21.jpg")}
-                          alt="user21"
-                          className="w-30 m-1 br-5"
-                        />
+                        <img src={U6} alt="user26" className="w-30 m-1 br-5" />
+                        <img src={U7} alt="user23" className="w-30 m-1 br-5" />
+                        <img src={U9} alt="user21" className="w-30 m-1 br-5" />
                       </div>
                       <h4 className="fw-semibold mt-3">
                         There is nothing more beautiful.
@@ -678,27 +677,27 @@ const ProfilePage = () => {
                           <img
                             className="avatar brround"
                             alt="user12"
-                            src={require("../../../assets/images/users/12.jpg")}
+                            src={U12}
                           />
                           <img
                             className="avatar brround"
                             alt="user2"
-                            src={require("../../../assets/images/users/2.jpg")}
+                            src={U2}
                           />
                           <img
                             className="avatar brround"
                             alt="user9"
-                            src={require("../../../assets/images/users/9.jpg")}
+                            src={U8}
                           />
                           <img
                             className="avatar brround"
                             alt="user2"
-                            src={require("../../../assets/images/users/2.jpg")}
+                            src={U2}
                           />
                           <img
                             className="avatar brround"
                             alt="user4"
-                            src={require("../../../assets/images/users/4.jpg")}
+                            src={U4}
                           />
                           <span className="avatar brround text-primary">
                             +28
@@ -743,7 +742,7 @@ const ProfilePage = () => {
                       <div className="media overflow-visible">
                         <img
                           className="avatar brround avatar-md me-3"
-                          src={require("../../../assets/images/users/18.jpg")}
+                          src={U18}
                           alt="avatar-user18"
                         />
                         <div className="media-body valign-middle mt-2">
@@ -777,7 +776,7 @@ const ProfilePage = () => {
                       <div className="media overflow-visible mt-sm-5">
                         <img
                           className="avatar brround avatar-md me-3"
-                          src={require("../../../assets/images/users/2.jpg")}
+                          src={U2}
                           alt="avatar-user2"
                         />
                         <div className="media-body valign-middle mt-2">
@@ -820,7 +819,7 @@ const ProfilePage = () => {
                       <div className="media media-xs overflow-visible">
                         <img
                           className="avatar bradius avatar-xl me-3"
-                          src={require("../../../assets/images/users/12.jpg")}
+                          src={U12}
                           alt="avatar-user12"
                         />
                         <div className="media-body valign-middle">
@@ -836,7 +835,7 @@ const ProfilePage = () => {
                       <div className="media media-xs overflow-visible mt-5">
                         <img
                           className="avatar bradius avatar-xl me-3"
-                          src={require("../../../assets/images/users/2.jpg")}
+                          src={U2}
                           alt="avatar-user2"
                         />
                         <div className="media-body valign-middle">
@@ -852,7 +851,7 @@ const ProfilePage = () => {
                       <div className="media media-xs overflow-visible mt-5">
                         <img
                           className="avatar bradius avatar-xl me-3"
-                          src={require("../../../assets/images/users/9.jpg")}
+                          src={U8}
                           alt="avatar-user9"
                         />
                         <div className="media-body valign-middle">
@@ -868,7 +867,7 @@ const ProfilePage = () => {
                       <div className="media media-xs overflow-visible mt-5">
                         <img
                           className="avatar bradius avatar-xl me-3"
-                          src={require("../../../assets/images/users/4.jpg")}
+                          src={U4}
                           alt="avatar-user4"
                         />
                         <div className="media-body valign-middle">
@@ -893,7 +892,7 @@ const ProfilePage = () => {
                       <div className="media media-xs overflow-visible">
                         <img
                           className="avatar brround avatar-md me-3"
-                          src={require("../../../assets/images/users/18.jpg")}
+                          src={U18}
                           alt="avatar-user18"
                         />
                         <div className="media-body valign-middle">
@@ -943,7 +942,7 @@ const ProfilePage = () => {
                       <div className="media media-xs overflow-visible mt-5">
                         <img
                           className="avatar brround avatar-md me-3"
-                          src={require("../../../assets/images/users/2.jpg")}
+                          src={U2}
                           alt="avatar-user2"
                         />
                         <div className="media-body valign-middle mt-0">

@@ -1,8 +1,26 @@
 import React from "react";
 import PageHeader from "../../../../commonComponents/PageHeader/PageHeader";
-import { Link } from 'react-router-dom';
-import { Badge, Button, Card, Col, Dropdown, Form, FormControl, InputGroup, ListGroup, Nav, Row } from 'react-bootstrap';
+import { Link } from "react-router-dom";
+import {
+  Badge,
+  Button,
+  Card,
+  Col,
+  Dropdown,
+  Form,
+  FormControl,
+  InputGroup,
+  ListGroup,
+  Nav,
+  Row,
+} from "react-bootstrap";
 import "./BlogDetailsPage.scss";
+import U1 from '../../../../assets/images/UserImages/U1.jpg'
+import U2 from '../../../../assets/images/UserImages/U2.jpg'
+import U3 from '../../../../assets/images/UserImages/U3.jpg'
+import U5 from '../../../../assets/images/UserImages/U5.jpg'
+import U8 from '../../../../assets/images/UserImages/U8.jpg'
+import U15 from '../../../../assets/images/UserImages/U15.jpg'
 
 const BlogDetailsPage = () => {
   return (
@@ -57,7 +75,6 @@ const BlogDetailsPage = () => {
                   the bulk of the card's content.
                 </Card.Text>
                 <p>
-                  {" "}
                   Lorem ipsum dolor sit amet, quis Neque porro quisquam est,
                   nostrud exercitation ullamco laboris commodo consequat.
                   There’s an old maxim that states, “No fun for the writer, no
@@ -82,12 +99,11 @@ const BlogDetailsPage = () => {
                 <div className="media mb-5 overflow-visible d-block d-sm-flex">
                   <div className="me-3 mb-2">
                     <Link to={`${process.env.PUBLIC_URL}/pages/profile`}>
-                      {" "}
                       <img
                         className="media-object rounded-circle thumb-sm"
                         alt="64x64"
-                        src={require("../../../../assets/images/users/5.jpg")}
-                      />{" "}
+                        src={U5}
+                      />
                     </Link>
                   </div>
                   <div className="media-body overflow-visible">
@@ -105,19 +121,19 @@ const BlogDetailsPage = () => {
                             style={{}}
                           >
                             <Dropdown.Item to="#">
-                              <i className="fe fe-edit me-1 d-inline-block"></i>{" "}
+                              <i className="fe fe-edit me-1 d-inline-block"></i>
                               Edit
                             </Dropdown.Item>
                             <Dropdown.Item to="#">
-                              <i className="fe fe-corner-up-left me-1 d-inline-block"></i>{" "}
+                              <i className="fe fe-corner-up-left me-1 d-inline-block"></i>
                               Reply
                             </Dropdown.Item>
                             <Dropdown.Item to="#">
-                              <i className="fe fe-flag me-1 d-inline-block"></i>{" "}
+                              <i className="fe fe-flag me-1 d-inline-block"></i>
                               Report Abuse
                             </Dropdown.Item>
                             <Dropdown.Item to="#">
-                              <i className="fe fe-trash-2 me-1 d-inline-block"></i>{" "}
+                              <i className="fe fe-trash-2 me-1 d-inline-block"></i>
                               Delete
                             </Dropdown.Item>
                           </Dropdown.Menu>
@@ -155,12 +171,11 @@ const BlogDetailsPage = () => {
                     <div className="media mb-5 overflow-visible">
                       <div className="me-3">
                         <Link to={`${process.env.PUBLIC_URL}/pages/profile`}>
-                          {" "}
                           <img
                             className="media-object rounded-circle thumb-sm"
                             alt="64x64"
-                            src={require("../../../../assets/images/users/2.jpg")}
-                          />{" "}
+                            src={U2}
+                          />
                         </Link>
                       </div>
                       <div className="media-body border p-4 overflow-visible br-5">
@@ -177,19 +192,19 @@ const BlogDetailsPage = () => {
                               style={{}}
                             >
                               <Dropdown.Item to="#">
-                                <i className="fe fe-edit me-1 d-inline-block"></i>{" "}
+                                <i className="fe fe-edit me-1 d-inline-block"></i>
                                 Edit
                               </Dropdown.Item>
                               <Dropdown.Item to="#">
-                                <i className="fe fe-corner-up-left me-1 d-inline-block"></i>{" "}
+                                <i className="fe fe-corner-up-left me-1 d-inline-block"></i>
                                 Reply
                               </Dropdown.Item>
                               <Dropdown.Item to="#">
-                                <i className="fe fe-flag me-1 d-inline-block"></i>{" "}
+                                <i className="fe fe-flag me-1 d-inline-block"></i>
                                 Report Abuse
                               </Dropdown.Item>
                               <Dropdown.Item to="#">
-                                <i className="fe fe-trash-2 me-1 d-inline-block"></i>{" "}
+                                <i className="fe fe-trash-2 me-1 d-inline-block"></i>
                                 Delete
                               </Dropdown.Item>
                             </Dropdown.Menu>
@@ -232,12 +247,11 @@ const BlogDetailsPage = () => {
                 <div className="media mb-5 overflow-visible">
                   <div className="me-3">
                     <Link to={`${process.env.PUBLIC_URL}/pages/profile`}>
-                      {" "}
                       <img
                         className="media-object rounded-circle thumb-sm"
                         alt="64x64"
-                        src={require("../../../../assets/images/users/15.jpg")}
-                      />{" "}
+                        src={U15}
+                      />
                     </Link>
                   </div>
                   <div className="media-body overflow-visible">
@@ -255,19 +269,19 @@ const BlogDetailsPage = () => {
                             style={{}}
                           >
                             <Dropdown.Item to="#">
-                              <i className="fe fe-edit me-1 d-inline-block"></i>{" "}
+                              <i className="fe fe-edit me-1 d-inline-block"></i>
                               Edit
                             </Dropdown.Item>
                             <Dropdown.Item to="#">
-                              <i className="fe fe-corner-up-left me-1 d-inline-block"></i>{" "}
+                              <i className="fe fe-corner-up-left me-1 d-inline-block"></i>
                               Reply
                             </Dropdown.Item>
                             <Dropdown.Item to="#">
-                              <i className="fe fe-flag me-1 d-inline-block"></i>{" "}
+                              <i className="fe fe-flag me-1 d-inline-block"></i>
                               Report Abuse
                             </Dropdown.Item>
                             <Dropdown.Item to="#">
-                              <i className="fe fe-trash-2 me-1 d-inline-block"></i>{" "}
+                              <i className="fe fe-trash-2 me-1 d-inline-block"></i>
                               Delete
                             </Dropdown.Item>
                           </Dropdown.Menu>
@@ -277,7 +291,7 @@ const BlogDetailsPage = () => {
                       <p className="font-13 text-muted">
                         Very nice ! On the other hand, we denounce with
                         righteous indignation and dislike men who are so
-                        beguiled and demoralized by the{" "}
+                        beguiled and demoralized by the
                       </p>
                       <Link className="like" to="#">
                         <Badge
@@ -304,12 +318,11 @@ const BlogDetailsPage = () => {
                 <div className="media mb-5 overflow-visible d-block d-sm-flex">
                   <div className="me-3 mb-1">
                     <Link to={`${process.env.PUBLIC_URL}/pages/profile`}>
-                      {" "}
                       <img
                         className="media-object rounded-circle thumb-sm"
                         alt="64x64"
-                        src={require("../../../../assets/images/users/5.jpg")}
-                      />{" "}
+                        src={U5}
+                      />
                     </Link>
                   </div>
                   <div className="media-body overflow-visible">
@@ -327,19 +340,19 @@ const BlogDetailsPage = () => {
                             style={{}}
                           >
                             <Dropdown.Item to="#">
-                              <i className="fe fe-edit me-1 d-inline-block"></i>{" "}
+                              <i className="fe fe-edit me-1 d-inline-block"></i>
                               Edit
                             </Dropdown.Item>
                             <Dropdown.Item to="#">
-                              <i className="fe fe-corner-up-left me-1 d-inline-block"></i>{" "}
+                              <i className="fe fe-corner-up-left me-1 d-inline-block"></i>
                               Reply
                             </Dropdown.Item>
                             <Dropdown.Item to="#">
-                              <i className="fe fe-flag me-1 d-inline-block"></i>{" "}
+                              <i className="fe fe-flag me-1 d-inline-block"></i>
                               Report Abuse
                             </Dropdown.Item>
                             <Dropdown.Item to="#">
-                              <i className="fe fe-trash-2 me-1 d-inline-block"></i>{" "}
+                              <i className="fe fe-trash-2 me-1 d-inline-block"></i>
                               Delete
                             </Dropdown.Item>
                           </Dropdown.Menu>
@@ -380,12 +393,11 @@ const BlogDetailsPage = () => {
                     <div className="media mb-5 overflow-visible d-block d-sm-flex">
                       <div className="me-3 mb-1">
                         <Link to={`${process.env.PUBLIC_URL}/pages/profile`}>
-                          {" "}
                           <img
                             className="media-object rounded-circle thumb-sm"
                             alt="64x64"
-                            src={require("../../../../assets/images/users/2.jpg")}
-                          />{" "}
+                            src={U2}
+                          />
                         </Link>
                       </div>
                       <div className="media-body overflow-visible">
@@ -403,19 +415,19 @@ const BlogDetailsPage = () => {
                                 style={{}}
                               >
                                 <Dropdown.Item to="#">
-                                  <i className="fe fe-edit me-1 d-inline-block"></i>{" "}
+                                  <i className="fe fe-edit me-1 d-inline-block"></i>
                                   Edit
                                 </Dropdown.Item>
                                 <Dropdown.Item to="#">
-                                  <i className="fe fe-corner-up-left me-1 d-inline-block"></i>{" "}
+                                  <i className="fe fe-corner-up-left me-1 d-inline-block"></i>
                                   Reply
                                 </Dropdown.Item>
                                 <Dropdown.Item to="#">
-                                  <i className="fe fe-flag me-1 d-inline-block"></i>{" "}
+                                  <i className="fe fe-flag me-1 d-inline-block"></i>
                                   Report Abuse
                                 </Dropdown.Item>
                                 <Dropdown.Item to="#">
-                                  <i className="fe fe-trash-2 me-1 d-inline-block"></i>{" "}
+                                  <i className="fe fe-trash-2 me-1 d-inline-block"></i>
                                   Delete
                                 </Dropdown.Item>
                               </Dropdown.Menu>
@@ -457,12 +469,11 @@ const BlogDetailsPage = () => {
                             <Link
                               to={`${process.env.PUBLIC_URL}/pages/profile`}
                             >
-                              {" "}
                               <img
                                 className="media-object rounded-circle thumb-sm"
                                 alt="64x64"
-                                src={require("../../../../assets/images/users/9.jpg")}
-                              />{" "}
+                                src={U8}
+                              />
                             </Link>
                           </div>
                           <div className="media-body border p-4 overflow-visible br-5">
@@ -479,19 +490,19 @@ const BlogDetailsPage = () => {
                                   style={{}}
                                 >
                                   <Dropdown.Item to="#">
-                                    <i className="fe fe-edit me-1 d-inline-block"></i>{" "}
+                                    <i className="fe fe-edit me-1 d-inline-block"></i>
                                     Edit
                                   </Dropdown.Item>
                                   <Dropdown.Item to="#">
-                                    <i className="fe fe-corner-up-left me-1 d-inline-block"></i>{" "}
+                                    <i className="fe fe-corner-up-left me-1 d-inline-block"></i>
                                     Reply
                                   </Dropdown.Item>
                                   <Dropdown.Item to="#">
-                                    <i className="fe fe-flag me-1 d-inline-block"></i>{" "}
+                                    <i className="fe fe-flag me-1 d-inline-block"></i>
                                     Report Abuse
                                   </Dropdown.Item>
                                   <Dropdown.Item to="#">
-                                    <i className="fe fe-trash-2 me-1 d-inline-block"></i>{" "}
+                                    <i className="fe fe-trash-2 me-1 d-inline-block"></i>
                                     Delete
                                   </Dropdown.Item>
                                 </Dropdown.Menu>
@@ -606,26 +617,26 @@ const BlogDetailsPage = () => {
                   <ListGroup.Item className="border-0 p-0">
                     <Link to="#">
                       <i className="fe fe-chevron-right"></i> Development
-                    </Link>{" "}
-                    <span className="product-label">22</span>{" "}
+                    </Link>
+                    <span className="product-label">22</span>
                   </ListGroup.Item>
                   <ListGroup.Item className="border-0 p-0">
                     <Link to="#">
                       <i className="fe fe-chevron-right"></i> Web Design
-                    </Link>{" "}
-                    <span className="product-label">15</span>{" "}
+                    </Link>
+                    <span className="product-label">15</span>
                   </ListGroup.Item>
                   <ListGroup.Item className="border-0 p-0">
                     <Link to="#">
                       <i className="fe fe-chevron-right"></i> Technology
-                    </Link>{" "}
-                    <span className="product-label">10</span>{" "}
+                    </Link>
+                    <span className="product-label">10</span>
                   </ListGroup.Item>
                   <ListGroup.Item className="border-0 p-0">
                     <Link to="#">
                       <i className="fe fe-chevron-right"></i> Sports
-                    </Link>{" "}
-                    <span className="product-label">88</span>{" "}
+                    </Link>
+                    <span className="product-label">88</span>
                   </ListGroup.Item>
                 </ListGroup>
               </Card.Body>
@@ -640,7 +651,7 @@ const BlogDetailsPage = () => {
                   <div className="d-flex overflow-visible">
                     <img
                       className="avatar bradius avatar-xl me-3"
-                      src={require("../../../../assets/images/users/1.jpg")}
+                      src={U1}
                       alt="avatar-img"
                     />
                     <div className="media-body valign-middle">
@@ -659,7 +670,7 @@ const BlogDetailsPage = () => {
                   <div className="d-flex overflow-visible mt-5">
                     <img
                       className="avatar bradius avatar-xl me-3"
-                      src={require("../../../../assets/images/users/3.jpg")}
+                      src={U3}
                       alt="avatar-img"
                     />
                     <div className="media-body valign-middle">
@@ -678,7 +689,7 @@ const BlogDetailsPage = () => {
                   <div className="d-flex overflow-visible mt-5">
                     <img
                       className="avatar bradius avatar-xl me-3"
-                      src={require("../../../../assets/images/users/5.jpg")}
+                      src={U5}
                       alt="avatar-img"
                     />
                     <div className="media-body valign-middle">
@@ -697,7 +708,7 @@ const BlogDetailsPage = () => {
                   <div className="d-flex overflow-visible mt-5">
                     <img
                       className="avatar bradius avatar-xl me-3"
-                      src={require("../../../../assets/images/users/15.jpg")}
+                      src={U15}
                       alt="avatar-img"
                     />
                     <div className="media-body valign-middle">
