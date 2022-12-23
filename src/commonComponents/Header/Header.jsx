@@ -748,7 +748,7 @@ const Header = () => {
                         <div className="drop-heading">
                           <div className="text-center">
                             <h5 className="text-dark mb-0 fs-14 fw-semibold">
-                              Percy Kewshun
+                              Olivia Smith
                             </h5>
                             <small className="text-muted">Senior Admin</small>
                           </div>

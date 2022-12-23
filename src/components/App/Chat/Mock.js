@@ -12,7 +12,7 @@ import U10 from "../../../assets/images/UserImages/U10.jpg";
 export const OnlineUsers = [
   {
     profileImg: U1,
-    name: "Olivia Smith",
+    name: "Lillian Smith",
   },
   {
     profileImg: U2,

@@ -225,7 +225,7 @@ const MailReadPage = () => {
                         </span>
                       </div>
                       <small className="mb-0">
-                        to Percy Kewshun ( percykewshun@gmail.com ){" "}
+                        to Olivia Smith ( percykewshun@gmail.com ){" "}
                       </small>
                       <small className="me-2 d-md-none">
                         June 15 , 2021 10:30 AM

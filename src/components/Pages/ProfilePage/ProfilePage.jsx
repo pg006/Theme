@@ -47,7 +47,7 @@ const ProfilePage = () => {
                             </div>
                             <div className="profile-img-content text-dark text-start">
                               <div className="text-dark">
-                                <h3 className="h3 mb-2">Percy Kewshun</h3>
+                                <h3 className="h3 mb-2">Olivia Smith</h3>
                                 <h5 className="text-muted">Web Developer</h5>
                               </div>
                             </div>

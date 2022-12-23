@@ -18,7 +18,7 @@ const LockScreen = () => {
                   alt="lockscreen pic"
                   className="avatar avatar-xxl brround mb-2"
                 />
-                <h4>Percy Kewshun</h4>
+                <h4>Olivia Smith</h4>
               </div>
 
               <Password />

@@ -126,7 +126,7 @@ const EditprofilePage = () => {
                   <div className="main-chat-msg-name">
                     <Link to={`${process.env.PUBLIC_URL}/pages/profile`}>
                       <h5 className="mb-1 text-dark fw-semibold">
-                        Percy Kewshun
+                        Olivia Smith
                       </h5>
                     </Link>
                     <p className="text-muted mt-0 mb-0 pt-0 fs-13">

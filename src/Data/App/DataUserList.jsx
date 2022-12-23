@@ -18,18 +18,18 @@ import {
 
 // pics
 
-import pic1 from "../../assets/images/UserImages/U16.jpg";
-import pic2 from "../../assets/images/UserImages/U15.jpg";
-import pic3 from "../../assets/images/UserImages/U4.jpg";
-import pic4 from "../../assets/images/UserImages/U18.jpg";
-import pic5 from "../../assets/images/UserImages/U19.jpg";
-import pic6 from "../../assets/images/UserImages/U21.jpg";
-import pic7 from "../../assets/images/UserImages/U12.jpg";
 import pic8 from "../../assets/images/UserImages/U1.jpg";
-import pic9 from "../../assets/images/UserImages/U12.jpg";
-import pic10 from "../../assets/images/UserImages/U15.jpg";
-import pic11 from "../../assets/images/UserImages/U12.jpg";
-import pic12 from "../../assets/images/UserImages/U4.jpg";
+import pic3 from "../../assets/images/UserImages/U2.jpg";
+import pic12 from "../../assets/images/UserImages/U3.jpg";
+import pic7 from "../../assets/images/UserImages/U4.jpg";
+import pic9 from "../../assets/images/UserImages/U5.jpg";
+import pic11 from "../../assets/images/UserImages/U6.jpg";
+import pic2 from "../../assets/images/UserImages/U8.jpg";
+import pic10 from "../../assets/images/UserImages/U10.jpg";
+import pic1 from "../../assets/images/UserImages/U11.jpg";
+import pic4 from "../../assets/images/UserImages/U12.jpg";
+import pic5 from "../../assets/images/UserImages/U13.jpg";
+import pic6 from "../../assets/images/UserImages/U21.jpg";
 
 export const COLUMNS = [
   {
@@ -77,8 +77,8 @@ export const DATATABLE = [
       </span>
     ),
     PHOTO: <img src={pic1} className="avatar avatar-md br-7" alt="" />,
-    NAME: "Adam Cotter",
-    DATE: "	09 Dec 2017",
+    NAME: "Roman Smith",
+    DATE: "10 Aug 2005",
   },
   {
     SNO: <Form.Check className="align-middle " />,
@@ -97,8 +97,8 @@ export const DATATABLE = [
       </span>
     ),
     PHOTO: <img src={pic2} className="avatar avatar-md br-7" alt="" />,
-    NAME: "Pauline Noble",
-    DATE: "	26 Jan 2018",
+    NAME: "Nora Miller",
+    DATE: "	16 feb 2008",
   },
   {
     SNO: <Form.Check className="align-middle " />,
@@ -117,8 +117,8 @@ export const DATATABLE = [
       </span>
     ),
     PHOTO: <img src={pic3} className="avatar avatar-md br-7" alt="" />,
-    NAME: "Sherilyn Metzel",
-    DATE: "	27 Jan 2018",
+    NAME: "Oliver josheph",
+    DATE: "	07 Jun 2011",
   },
   {
     SNO: <Form.Check className="align-middle " />,
@@ -137,8 +137,8 @@ export const DATATABLE = [
       </span>
     ),
     PHOTO: <img src={pic4} className="avatar avatar-md br-7" alt="" />,
-    NAME: "Terrie Boaler",
-    DATE: "	20 Jan 2018",
+    NAME: "Graham Garcia",
+    DATE: "	10 July 2008",
   },
   {
     SNO: <Form.Check className="align-middle " />,
@@ -157,8 +157,8 @@ export const DATATABLE = [
       </span>
     ),
     PHOTO: <img src={pic5} className="avatar avatar-md br-7" alt="" />,
-    NAME: "Rutter Pude",
-    DATE: "13 Jan 2018",
+    NAME: "Anthony Johnson",
+    DATE: "05 Jan 1998",
   },
   {
     SNO: <Form.Check className="align-middle " />,
@@ -177,8 +177,8 @@ export const DATATABLE = [
       </span>
     ),
     PHOTO: <img src={pic6} className="avatar avatar-md br-7" alt="" />,
-    NAME: "Clifford Benjamin",
-    DATE: "25 Jan 2018",
+    NAME: "Benjamin Williams",
+    DATE: "31 Dec 2019",
   },
   {
     SNO: <Form.Check className="align-middle " />,
@@ -197,8 +197,8 @@ export const DATATABLE = [
       </span>
     ),
     PHOTO: <img src={pic7} className="avatar avatar-md br-7" alt="" />,
-    NAME: "Thedric Romans",
-    DATE: "	12 Jan 2018",
+    NAME: "Ava Jones",
+    DATE: "	02 Feb 2018",
   },
   {
     SNO: <Form.Check className="align-middle " />,
@@ -217,8 +217,8 @@ export const DATATABLE = [
       </span>
     ),
     PHOTO: <img src={pic8} className="avatar avatar-md br-7" alt="" />,
-    NAME: "Haily Carthew",
-    DATE: "	27 Jan 2018",
+    NAME: "Camila Davis",
+    DATE: "	17 Jan 1999",
   },
   {
     SNO: <Form.Check className="align-middle " />,
@@ -237,8 +237,8 @@ export const DATATABLE = [
       </span>
     ),
     PHOTO: <img src={pic9} className="avatar avatar-md br-7" alt="" />,
-    NAME: "Dorothea Joicey",
-    DATE: "	12 Dec 2017",
+    NAME: "Jonathan Miller",
+    DATE: "	5 Dec 2007",
   },
   {
     SNO: <Form.Check className="align-middle " />,
@@ -257,8 +257,8 @@ export const DATATABLE = [
       </span>
     ),
     PHOTO: <img src={pic10} className="avatar avatar-md br-7" alt="" />,
-    NAME: "Mikaela Pinel",
-    DATE: "10 Dec 2017",
+    NAME: "Ellie Walker",
+    DATE: "10 Jan 2022",
   },
   {
     SNO: <Form.Check className="align-middle " />,
@@ -277,8 +277,8 @@ export const DATATABLE = [
       </span>
     ),
     PHOTO: <img src={pic11} className="avatar avatar-md br-7" alt="" />,
-    NAME: "Donnell Farries",
-    DATE: "	03 Dec 2017",
+    NAME: "David Davis",
+    DATE: "	03 Oct 2007",
   },
   {
     SNO: <Form.Check className="align-middle " />,
@@ -297,8 +297,8 @@ export const DATATABLE = [
       </span>
     ),
     PHOTO: <img src={pic12} className="avatar avatar-md br-7" alt="" />,
-    NAME: "Letizia Puncher",
-    DATE: "09 Dec 2017",
+    NAME: "John Puncher",
+    DATE: "19 Dec 2020",
   },
 ];
 export const UserList = () => {
@@ -419,10 +419,10 @@ export const UserList = () => {
               </table>
               <div className="d-flex mt-4 ">
                 <span className="">
-                  Page{" "}
+                  Page
                   <strong>
                     {pageIndex + 1} of {pageOptions.length}
-                  </strong>{" "}
+                  </strong>
                 </span>
                 <span className="ms-auto ">
                   <Button

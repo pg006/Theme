@@ -1,9 +1,15 @@
 import React from "react";
 import PageHeader from "../../../commonComponents/PageHeader/PageHeader";
-import { CountDaysLimit, DataCount, DayCounter, TimeCounting, TimeMinutesCounter } from "../../../Data/App/DataCounter";
+import {
+  CountDaysLimit,
+  DataCount,
+  DayCounter,
+  TimeCounting,
+  TimeMinutesCounter,
+} from "../../../Data/App/DataCounter";
 import "./Counters.scss";
-import CountUp from 'react-countup';
-import { Badge, Card, Col, Row } from 'react-bootstrap';
+import CountUp from "react-countup";
+import { Badge, Card, Col, Row } from "react-bootstrap";
 
 const Counters = () => {
   return (
@@ -12,10 +18,45 @@ const Counters = () => {
         <PageHeader titles="Counters" active="Counters" items={["Apps"]} />
         {/* <!-- ROW-1 OPEN --> */}
         <Row className="row-cards">
+          <Col md={12}>
+            <Card>
+              <Card.Header>
+                <Card.Title>Time Counting days Limit</Card.Title>
+              </Card.Header>
+              <Card.Body className="mx-auto">
+                <div className="example border border-secondary pb-4 px-5">
+                  <Badge bg="secondary" className="fs-14 me-2">
+                    Hurry Up!
+                  </Badge>
+                  <span>Only we have five days</span>
+                  <div>
+                    <span className="text-secondary fs-30 pe-5">
+                      <i className="bi bi-calendar"></i>
+                    </span>
+                    <span className="h2 text-secondary">
+                      {<CountDaysLimit />}
+                    </span>
+                  </div>
+                </div>
+              </Card.Body>
+            </Card>
+          </Col>
+          {/* <!-- COL-END --> */}
+          <Col md={12}>
+            <Card>
+              <Card.Header>
+                <Card.Title>Day Counter</Card.Title>
+              </Card.Header>
+              <Card.Body className="text-center">
+                <DayCounter />
+              </Card.Body>
+            </Card>
+          </Col>
+          {/* <!-- COL-END --> */}
           <Col md={12} xl={4}>
             <Card>
               <Card.Header>
-                <Card.Title>Time Counting From 0 to 3 min.</Card.Title>
+                <Card.Title>Time Counting From 0 to 10 min.</Card.Title>
               </Card.Header>
               <Card.Body>
                 <div className="example card-transparent bg-primary-transparent border-primary text-primary">
@@ -25,11 +66,11 @@ const Counters = () => {
                     </span>
                     <div className="">
                       <DataCount />
-                      <h5 className="mb-0 mt-1">Only 3 min left</h5>
+                      <h5 className="mb-0 mt-1">Only 10 min left</h5>
                     </div>
                     <div className="ms-auto text-end">
                       <h5 className="mb-1">Max Bid:</h5>
-                      <span className="h3 mb-0">$1000</span>
+                      <span className="h3 mb-0">$999</span>
                     </div>
                   </div>
                 </div>
@@ -83,30 +124,6 @@ const Counters = () => {
             </Card>
           </Col>
           {/* <!-- COL-END --> */}
-          <Col md={12}>
-            <Card>
-              <Card.Header>
-                <Card.Title>Time Counting days Limit</Card.Title>
-              </Card.Header>
-              <Card.Body className="mx-auto">
-                <div className="example border border-secondary pb-4 px-5">
-                  <Badge bg="secondary" className="fs-14 me-2">
-                    Hurry Up!
-                  </Badge>
-                  <span>Only we have two days</span>
-                  <div>
-                    <span className="text-secondary fs-30 pe-5">
-                      <i className="bi bi-calendar-day"></i>
-                    </span>
-                    <span className="h2 text-secondary">
-                      {<CountDaysLimit />}
-                    </span>
-                  </div>
-                </div>
-              </Card.Body>
-            </Card>
-          </Col>
-          {/* <!-- COL-END --> */}
           <Col md={12} lg={4} xl={4}>
             <Card>
               <Card.Header>
@@ -114,7 +131,6 @@ const Counters = () => {
               </Card.Header>
               <Card.Body className="text-center">
                 <div className="counter-icon bg-secondary-gradient box-shadow-secondary num-counter mx-auto">
-                  
                   <svg
                     style={{ width: "27px", height: "27px" }}
                     viewBox="0 0 24 24"
@@ -125,8 +141,8 @@ const Counters = () => {
                     />
                   </svg>
                 </div>
-                <h5>Employees</h5>
-                <CountUp className="h2" end={2569} />
+                <h5>Users</h5>
+                <CountUp className="h2" end={5896} />
               </Card.Body>
             </Card>
           </Col>
@@ -138,7 +154,6 @@ const Counters = () => {
               </Card.Header>
               <Card.Body className="text-center">
                 <div className="counter-icon bg-primary-gradient box-shadow-primary num-counter mx-auto">
-                  
                   <svg
                     style={{ width: "25px", height: "25px" }}
                     viewBox="0 0 24 24"
@@ -154,7 +169,7 @@ const Counters = () => {
                 <CountUp
                   className="h2"
                   start={0}
-                  end={56989.32}
+                  end={98989.32}
                   prefix="2,"
                   decimal="."
                   decimals={2}
@@ -170,7 +185,6 @@ const Counters = () => {
               </Card.Header>
               <Card.Body className="text-center">
                 <div className="counter-icon bg-danger-gradient box-shadow-danger num-counter mx-auto">
-                  
                   <svg
                     style={{ width: "25px", height: "25px" }}
                     viewBox="0 0 24 24"
@@ -182,18 +196,7 @@ const Counters = () => {
                   </svg>
                 </div>
                 <h5>Errors</h5>
-                <CountUp className="h2" end={8998} prefix="0." />
-              </Card.Body>
-            </Card>
-          </Col>
-          {/* <!-- COL-END --> */}
-          <Col md={12}>
-            <Card>
-              <Card.Header>
-                <Card.Title>Day Counter</Card.Title>
-              </Card.Header>
-              <Card.Body className="text-center">
-                <DayCounter />
+                <CountUp className="h2" end={9999} prefix="0." />
               </Card.Body>
             </Card>
           </Col>

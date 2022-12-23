@@ -12186,11 +12186,19 @@ export class RecentOrder extends React.Component {
           type: 'column',
           data: [27, 50, 28, 50, 28, 30, 22],
           color: '#05C3FB',
-        }, {
+        },
+        {
           type: 'column',
           data: [32, 58, 68, 65, 40, 68, 58],
           color: '#EC82EF',
-        }],
+        },
+        {
+          type: 'column',
+          data: [10, 80, 58, 25, 50, 48, 78],
+          color: '#f7b731A1',
+        },
+
+      ],
 
 
       options: {
@@ -12204,7 +12212,7 @@ export class RecentOrder extends React.Component {
         plotOptions: {
           bar: {
             borderRadius: 4,
-            columnWidth: '40',
+            columnWidth: '60',
             horizontal: false,
           }
         },

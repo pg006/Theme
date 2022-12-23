@@ -9,7 +9,7 @@ import Timecode from "react-timecode";
 export class DataCount extends Component {
   render() {
     return (
-      <Timer className="h3" active duration={180000}>
+      <Timer className="h3" active duration={6000000}>
         <Timecode className="text-break" />
       </Timer>
     );
@@ -60,7 +60,7 @@ const renderer = ({ days, hours, minutes, seconds, completed }) => {
 };
 export class CountDaysLimit extends React.Component {
   render() {
-    return <Countdown date={Date.now() + 259200000} renderer={renderer} />;
+    return <Countdown date={Date.now() + 459200000} renderer={renderer} />;
   }
 }
 
@@ -115,6 +115,6 @@ const rendering = ({ days, hours, minutes, seconds, completed }) => {
 };
 export class DayCounter extends React.Component {
   render() {
-    return <Countdown date={Date.now() + 3088800000} renderer={rendering} />;
+    return <Countdown date={Date.now() + 1010100000} renderer={rendering} />;
   }
 }

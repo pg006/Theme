@@ -276,7 +276,7 @@ const Checkout = () => {
               </Card.Header>
               <Card.Body>
                 <div className="">
-                  <h4 className="fw-semibold">Percy Kewshun</h4>
+                  <h4 className="fw-semibold">Olivia Smith</h4>
                   <p>4231 Bingamon Branch Road </p>
                   <p>Chicago, IL-60654</p>
                   <p>UTC-5: Eastern Standard Time (EST)</p>

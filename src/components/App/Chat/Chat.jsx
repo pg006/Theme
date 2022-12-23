@@ -24,8 +24,12 @@ import U4 from '../../../assets/images/UserImages/U4.jpg'
 import U5 from '../../../assets/images/UserImages/U5.jpg'
 import U6 from '../../../assets/images/UserImages/U6.jpg'
 import U7 from '../../../assets/images/UserImages/U7.jpg'
+import U8 from '../../../assets/images/UserImages/U8.jpg'
 import U9 from '../../../assets/images/UserImages/U9.jpg'
 import U12 from '../../../assets/images/UserImages/U12.jpg'
+import U19 from '../../../assets/images/UserImages/U19.jpg'
+import U20 from '../../../assets/images/UserImages/U20.jpg'
+import U21 from '../../../assets/images/UserImages/U21.jpg'
 
 const Chat = () => {
   return (
@@ -183,7 +187,7 @@ const Chat = () => {
                               <div className="main-img-user online">
                                 <img
                                   alt="user9"
-                                  src={U9}
+                                  src={U8}
                                 />
                               </div>
                               <div className="media-body">
@@ -239,7 +243,7 @@ const Chat = () => {
                               <div className="main-img-user">
                                 <img
                                   alt="user21"
-                                  src={U9}
+                                  src={U21}
                                 />
                               </div>
                               <div className="media-body">
@@ -532,7 +536,7 @@ const Chat = () => {
                                 <div className="main-img-user online">
                                   <img
                                     alt="user9"
-                                    src={U9}
+                                    src={U20}
                                   />
                                   <span>2</span>
                                 </div>
@@ -646,7 +650,7 @@ const Chat = () => {
                                 <div className="main-img-user online">
                                   <img
                                     alt=""
-                                    src={U9}
+                                    src={U19}
                                   />
                                   <span>2</span>
                                 </div>
@@ -954,7 +958,7 @@ const Chat = () => {
                       <div className="main-chat-msg-name">
                         <Link to={`${process.env.PUBLIC_URL}/pages/profile`}>
                           <h5 className="mb-1 text-dark fw-semibold">
-                            Percy Kewshun
+                            Olivia Smith
                           </h5>
                         </Link>
                         <span className="dot-label bg-success"></span>

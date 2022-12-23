@@ -138,7 +138,7 @@ const Dashboard = () => {
         {/* <!-- ROW-1 END --> */}
         {/* <!-- ROW-2 --> */}
         <Row>
-          <Col sm={12} md={12} lg={12} xl={9}>
+          <Col sm={12} md={12} lg={12} xl={12}>
             <Card>
               <Card.Header>
                 <Card.Title as="h3">Sales Analytics</Card.Title>
@@ -151,7 +151,7 @@ const Dashboard = () => {
             </Card>
           </Col>
           {/* <!-- COL END --> */}
-          <Col md={12} sm={12} lg={12} xl={3}>
+          <Col md={12} sm={12} lg={12} xl={6}>
             <Card className="overflow-hidden">
               <Card.Body className="pb-0 bg-recentorder">
                 <Card.Title as="h3" className="text-white">
@@ -168,11 +168,25 @@ const Dashboard = () => {
                     <i className="fe fe-check"></i>
                   </div>
                   <div className="">
+                    <h6 className="mb-1 fw-semibold">Received Orders</h6>
+                    <p className="fw-normal fs-12">
+                      <span className="text-success me-1">9.5%</span>
+                      increased
+                    </p>
+                  </div>
+                  <div className=" ms-auto my-auto">
+                    <p className="fw-bold fs-20"> 9,768 </p>
+                  </div>
+                </div>
+                <div className="d-flex mb-4 mt-3">
+                  <div className="avatar avatar-md bg-pink-transparent text-pink bradius me-3">
+                    <i className="fe fe-truck"></i>
+                  </div>
+                  <div className="">
                     <h6 className="mb-1 fw-semibold">Delivered Orders</h6>
                     <p className="fw-normal fs-12">
-                      {" "}
                       <span className="text-success me-1">3.5%</span>
-                      increased{" "}
+                      increased
                     </p>
                   </div>
                   <div className=" ms-auto my-auto">
@@ -180,15 +194,14 @@ const Dashboard = () => {
                   </div>
                 </div>
                 <div className="d-flex">
-                  <div className="avatar  avatar-md bg-pink-transparent text-pink bradius me-3">
+                  <div className="avatar  avatar-md bg-primary-transparent text-primary bradius me-3">
                     <i className="fe fe-x"></i>
                   </div>
                   <div className="">
                     <h6 className="mb-1 fw-semibold">Cancelled Orders</h6>
                     <p className="fw-normal fs-12">
-                      {" "}
                       <span className="text-success me-1">1.2%</span>
-                      increased{" "}
+                      increased
                     </p>
                   </div>
                   <div className=" ms-auto my-auto">
@@ -198,11 +211,216 @@ const Dashboard = () => {
               </Card.Body>
             </Card>
           </Col>
-          {/* <!-- COL END --> */}
-        </Row>
-        {/* <!-- ROW-2 END --> */}
-        <Row>
-          <Col xl={4} md={12}>
+          <Col xl={6} md={12} sm={12} lg={12}>
+            <Card>
+              <Card.Header>
+                <Card.Title as="h3" className="fw-semibold">
+                  Browser Usage
+                </Card.Title>
+              </Card.Header>
+              <Card.Body>
+                <div className="browser-stats">
+                  <Row className="mb-4">
+                    <Col sm={2} lg={1} md={1} xl={2} className="mb-sm-0 mb-3">
+                      <img
+                        src={
+                          require("../../assets/images/browsers/chrome.svg")
+                            .default
+                        }
+                        className="img-fluid"
+                        alt="img"
+                      />
+                    </Col>
+                    <Col sm={10} lg={11} md={11} xl={10} className="ps-sm-0">
+                      <div className="d-flex align-items-end justify-content-between mb-1">
+                        <h6 className="mb-1">Chrome</h6>
+                        <h6 className="fw-semibold mb-1">
+                          35,502
+                          <span className="text-success fs-11">
+                            (<i className="fe fe-arrow-up"></i>12.75%)
+                          </span>
+                        </h6>
+                      </div>
+                      <ProgressBar
+                        variant="primary"
+                        className="h-2 mb-3 "
+                        now={70}
+                      />
+                    </Col>
+                  </Row>
+                  <Row className="mb-4">
+                    <Col sm={2} lg={1} md={1} xl={2} className="mb-sm-0 mb-3">
+                      <img
+                        src={
+                          require("../../assets/images/browsers/opera.svg")
+                            .default
+                        }
+                        className="img-fluid"
+                        alt="img"
+                      />
+                    </Col>
+                    <Col sm={10} lg={11} md={11} xl={10} className="ps-sm-0">
+                      <div className="d-flex align-items-end justify-content-between mb-1">
+                        <h6 className="mb-1">Opera</h6>
+                        <h6 className="fw-semibold mb-1">
+                          12,563
+                          <span className="text-danger fs-11">
+                            (<i className="fe fe-arrow-down"></i>15.12%)
+                          </span>
+                        </h6>
+                      </div>
+                      <ProgressBar
+                        variant="secondary"
+                        className="h-2 mb-3 "
+                        now={40}
+                      />
+                    </Col>
+                  </Row>
+                  <Row className="mb-4">
+                    <Col sm={2} lg={1} md={1} xl={2} className="mb-sm-0 mb-3">
+                      <img
+                        src={
+                          require("../../assets/images/browsers/uc-browser.svg")
+                            .default
+                        }
+                        className="img-fluid"
+                        alt="img"
+                      />
+                    </Col>
+                    <Col sm={10} lg={11} md={11} xl={10} className="ps-sm-0">
+                      <div className="d-flex align-items-end justify-content-between mb-1">
+                        <h6 className="mb-1">UC</h6>
+                        <h6 className="fw-semibold mb-1">
+                          25,364
+                          <span className="text-success fs-11">
+                            (<i className="fe fe-arrow-down"></i>24.37%)
+                          </span>
+                        </h6>
+                      </div>
+                      <ProgressBar
+                        variant="success"
+                        className="h-2 mb-3 "
+                        now={50}
+                      />
+                    </Col>
+                  </Row>
+                  <Row className="mb-4">
+                    <Col sm={2} lg={1} md={1} xl={2} className="mb-sm-0 mb-3">
+                      <img
+                        src={
+                          require("../../assets/images/browsers/firefox.svg")
+                            .default
+                        }
+                        className="img-fluid"
+                        alt="img"
+                      />
+                    </Col>
+                    <Col sm={10} lg={11} md={11} xl={10} className="ps-sm-0">
+                      <div className="d-flex align-items-end justify-content-between mb-1">
+                        <h6 className="mb-1">Firefox</h6>
+                        <h6 className="fw-semibold mb-1">
+                          14,635
+                          <span className="text-success fs-11">
+                            (<i className="fe fe-arrow-down"></i>15.63%)
+                          </span>
+                        </h6>
+                      </div>
+                      <ProgressBar
+                        variant="danger"
+                        className="h-2 mb-3 "
+                        now={50}
+                      />
+                    </Col>
+                  </Row>
+                  <Row className="mb-4">
+                    <Col sm={2} lg={1} md={1} xl={2} className="mb-sm-0 mb-3">
+                      <img
+                        src={
+                          require("../../assets/images/browsers/edge.svg")
+                            .default
+                        }
+                        className="img-fluid"
+                        alt="img"
+                      />
+                    </Col>
+                    <Col sm={10} lg={11} md={11} xl={10} className="ps-sm-0">
+                      <div className="d-flex align-items-end justify-content-between mb-1">
+                        <h6 className="mb-1">Edge</h6>
+                        <h6 className="fw-semibold mb-1">
+                          15,453
+                          <span className="text-danger fs-11">
+                            (<i className="fe fe-arrow-down"></i>23.70%)
+                          </span>
+                        </h6>
+                      </div>
+                      <ProgressBar
+                        variant="warning"
+                        className="h-2 mb-3 "
+                        now={10}
+                      />
+                    </Col>
+                  </Row>
+                  <Row className="mb-4">
+                    <Col sm={2} lg={1} md={1} xl={2} className="mb-sm-0 mb-3">
+                      <img
+                        src={
+                          require("../../assets/images/browsers/safari.svg")
+                            .default
+                        }
+                        className="img-fluid"
+                        alt="img"
+                      />
+                    </Col>
+                    <Col sm={10} lg={11} md={11} xl={10} className="ps-sm-0">
+                      <div className="d-flex align-items-end justify-content-between mb-1">
+                        <h6 className="mb-1">Safari</h6>
+                        <h6 className="fw-semibold mb-1">
+                          10,054
+                          <span className="text-success fs-11">
+                            (<i className="fe fe-arrow-up"></i>11.04%)
+                          </span>
+                        </h6>
+                      </div>
+                      <ProgressBar
+                        variant="info"
+                        className="h-2 mb-3 "
+                        now={40}
+                      />
+                    </Col>
+                  </Row>
+                  <Row>
+                    <Col sm={2} lg={1} md={1} xl={2} className="mb-sm-0 mb-3">
+                      <img
+                        src={
+                          require("../../assets/images/browsers/netscape.svg")
+                            .default
+                        }
+                        className="img-fluid"
+                        alt="img"
+                      />
+                    </Col>
+                    <Col sm={10} lg={11} md={11} xl={10} className="ps-sm-0">
+                      <div className="d-flex align-items-end justify-content-between mb-1">
+                        <h6 className="mb-1">Netscape</h6>
+                        <h6 className="fw-semibold mb-1">
+                          35,502
+                          <span className="text-success fs-11">
+                            (<i className="fe fe-arrow-up"></i>12.75%)
+                          </span>
+                        </h6>
+                      </div>
+                      <ProgressBar
+                        variant="green"
+                        className="h-2 mb-3 "
+                        now={30}
+                      />
+                    </Col>
+                  </Row>
+                </div>
+              </Card.Body>
+            </Card>
+          </Col>
+          <Col xl={6} md={12} sm={12} lg={12}>
             <Card>
               <Card.Header>
                 <Card.Title as="h4" className="fw-semibold">
@@ -425,7 +643,7 @@ const Dashboard = () => {
               </Card.Body>
             </Card>
           </Col>
-          <Col xl={4} lg={6} md={12}>
+          <Col xl={6} md={12} sm={12} lg={12}>
             <Card className="overflow-hidden">
               <Card.Header>
                 <div>
@@ -521,215 +739,6 @@ const Dashboard = () => {
                     </tbody>
                   </Table>
                   {/* <!--end /table--> */}
-                </div>
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col xl={4} lg={6} md={12}>
-            <Card>
-              <Card.Header>
-                <Card.Title as="h3" className="fw-semibold">
-                  Browser Usage
-                </Card.Title>
-              </Card.Header>
-              <Card.Body>
-                <div className="browser-stats">
-                  <Row className="mb-4">
-                    <Col sm={2} lg={3} xl={3} xxl={2} className="mb-sm-0 mb-3">
-                      <img
-                        src={
-                          require("../../assets/images/browsers/chrome.svg")
-                            .default
-                        }
-                        className="img-fluid"
-                        alt="img"
-                      />
-                    </Col>
-                    <Col sm={10} lg={9} xl={9} xxl={10} className="ps-sm-0">
-                      <div className="d-flex align-items-end justify-content-between mb-1">
-                        <h6 className="mb-1">Chrome</h6>
-                        <h6 className="fw-semibold mb-1">
-                          35,502
-                          <span className="text-success fs-11">
-                            (<i className="fe fe-arrow-up"></i>12.75%)
-                          </span>
-                        </h6>
-                      </div>
-                      <ProgressBar
-                        variant="primary"
-                        className="h-2 mb-3 "
-                        now={70}
-                      />
-                    </Col>
-                  </Row>
-                  <Row className="mb-4">
-                    <Col sm={2} lg={3} xl={3} xxl={2} className="mb-sm-0 mb-3">
-                      <img
-                        src={
-                          require("../../assets/images/browsers/opera.svg")
-                            .default
-                        }
-                        className="img-fluid"
-                        alt="img"
-                      />
-                    </Col>
-                    <Col sm={10} lg={9} xl={9} xxl={10} className="ps-sm-0">
-                      <div className="d-flex align-items-end justify-content-between mb-1">
-                        <h6 className="mb-1">Opera</h6>
-                        <h6 className="fw-semibold mb-1">
-                          12,563
-                          <span className="text-danger fs-11">
-                            (<i className="fe fe-arrow-down"></i>15.12%)
-                          </span>
-                        </h6>
-                      </div>
-                      <ProgressBar
-                        variant="secondary"
-                        className="h-2 mb-3 "
-                        now={40}
-                      />
-                    </Col>
-                  </Row>
-                  <Row className="mb-4">
-                    <Col sm={2} lg={3} xl={3} xxl={2} className="mb-sm-0 mb-3">
-                      <img
-                        src={
-                          require("../../assets/images/browsers/uc-browser.svg")
-                            .default
-                        }
-                        className="img-fluid"
-                        alt="img"
-                      />
-                    </Col>
-                    <Col sm={10} lg={9} xl={9} xxl={10} className="ps-sm-0">
-                      <div className="d-flex align-items-end justify-content-between mb-1">
-                        <h6 className="mb-1">UC</h6>
-                        <h6 className="fw-semibold mb-1">
-                          25,364
-                          <span className="text-success fs-11">
-                            (<i className="fe fe-arrow-down"></i>24.37%)
-                          </span>
-                        </h6>
-                      </div>
-                      <ProgressBar
-                        variant="success"
-                        className="h-2 mb-3 "
-                        now={50}
-                      />
-                    </Col>
-                  </Row>
-                  <Row className="mb-4">
-                    <Col sm={2} lg={3} xl={3} xxl={2} className="mb-sm-0 mb-3">
-                      <img
-                        src={
-                          require("../../assets/images/browsers/firefox.svg")
-                            .default
-                        }
-                        className="img-fluid"
-                        alt="img"
-                      />
-                    </Col>
-                    <Col sm={10} lg={9} xl={9} xxl={10} className="ps-sm-0">
-                      <div className="d-flex align-items-end justify-content-between mb-1">
-                        <h6 className="mb-1">Firefox</h6>
-                        <h6 className="fw-semibold mb-1">
-                          14,635
-                          <span className="text-success fs-11">
-                            (<i className="fe fe-arrow-down"></i>15.63%)
-                          </span>
-                        </h6>
-                      </div>
-                      <ProgressBar
-                        variant="danger"
-                        className="h-2 mb-3 "
-                        now={50}
-                      />
-                    </Col>
-                  </Row>
-                  <Row className="mb-4">
-                    <Col sm={2} lg={3} xl={3} xxl={2} className="mb-sm-0 mb-3">
-                      <img
-                        src={
-                          require("../../assets/images/browsers/edge.svg")
-                            .default
-                        }
-                        className="img-fluid"
-                        alt="img"
-                      />
-                    </Col>
-                    <Col sm={10} lg={9} xl={9} xxl={10} className="ps-sm-0">
-                      <div className="d-flex align-items-end justify-content-between mb-1">
-                        <h6 className="mb-1">Edge</h6>
-                        <h6 className="fw-semibold mb-1">
-                          15,453
-                          <span className="text-danger fs-11">
-                            (<i className="fe fe-arrow-down"></i>23.70%)
-                          </span>
-                        </h6>
-                      </div>
-                      <ProgressBar
-                        variant="warning"
-                        className="h-2 mb-3 "
-                        now={10}
-                      />
-                    </Col>
-                  </Row>
-                  <Row className="mb-4">
-                    <Col sm={2} lg={3} xl={3} xxl={2} className="mb-sm-0 mb-3">
-                      <img
-                        src={
-                          require("../../assets/images/browsers/safari.svg")
-                            .default
-                        }
-                        className="img-fluid"
-                        alt="img"
-                      />
-                    </Col>
-                    <Col sm={10} lg={9} xl={9} xxl={10} className="ps-sm-0">
-                      <div className="d-flex align-items-end justify-content-between mb-1">
-                        <h6 className="mb-1">Safari</h6>
-                        <h6 className="fw-semibold mb-1">
-                          10,054
-                          <span className="text-success fs-11">
-                            (<i className="fe fe-arrow-up"></i>11.04%)
-                          </span>
-                        </h6>
-                      </div>
-                      <ProgressBar
-                        variant="info"
-                        className="h-2 mb-3 "
-                        now={40}
-                      />
-                    </Col>
-                  </Row>
-                  <Row>
-                    <Col sm={2} lg={3} xl={3} xxl={2} className="mb-sm-0 mb-3">
-                      <img
-                        src={
-                          require("../../assets/images/browsers/netscape.svg")
-                            .default
-                        }
-                        className="img-fluid"
-                        alt="img"
-                      />
-                    </Col>
-                    <Col sm={10} lg={9} xl={9} xxl={10} className="ps-sm-0">
-                      <div className="d-flex align-items-end justify-content-between mb-1">
-                        <h6 className="mb-1">Netscape</h6>
-                        <h6 className="fw-semibold mb-1">
-                          35,502
-                          <span className="text-success fs-11">
-                            (<i className="fe fe-arrow-up"></i>12.75%)
-                          </span>
-                        </h6>
-                      </div>
-                      <ProgressBar
-                        variant="green"
-                        className="h-2 mb-3 "
-                        now={30}
-                      />
-                    </Col>
-                  </Row>
                 </div>
               </Card.Body>
             </Card>

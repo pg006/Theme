@@ -21,7 +21,7 @@ ChartJS.register(
   Tooltip
 );
 
-const labels = ["January", "February", "March", "April", "May", "June", "July"];
+const labels = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
 export const data = {
   labels,
@@ -33,7 +33,7 @@ export const data = {
       borderColor: "#f7b731",
       borderWidth: 2,
       fill: false,
-      data: [100, 420, 210, 420, 210, 320, 350],
+      data: [450, 200, 350, 250, 480, 200, 400],
     },
     {
       type: "line",
@@ -41,7 +41,7 @@ export const data = {
       backgroundColor: "#05c3fb",
       borderColor: "#05c3fb",
       borderWidth: 2,
-      data: [450, 200, 350, 250, 480, 200, 400],
+      data: [100, 420, 210, 420, 210, 320, 350],
     },
     {
       type: "bar",
