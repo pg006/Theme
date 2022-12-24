@@ -1,7 +1,19 @@
 import React from "react";
-import { Card, Row, Col } from 'react-bootstrap';
+import { Card, Row, Col } from "react-bootstrap";
 import PageHeader from "../../../commonComponents/PageHeader/PageHeader";
-import { Alertdanger, Alertsecondary, Alertsuccess, Alertwarning, AvatarAlert, DefaultAlert, IconAlert, IconDissmissbleAlert, LinkAlert, MultiIconAlert, Removeicon } from "../../../Data/Boostrap/BooststrapAlertsData";
+import {
+  Alertdanger,
+  Alertsecondary,
+  Alertsuccess,
+  Alertwarning,
+  AvatarAlert,
+  DefaultAlert,
+  IconAlert,
+  IconDissmissbleAlert,
+  LinkAlert,
+  MultiIconAlert,
+  Removeicon,
+} from "../../../Data/Boostrap/BooststrapAlertsData";
 import "./BootstrapAlerts.scss";
 
 const BootstrapAlerts = () => {

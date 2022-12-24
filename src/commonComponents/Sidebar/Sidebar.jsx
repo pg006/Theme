@@ -92,7 +92,7 @@ export const Sidebar = () => {
               location.pathname === "/sash/preview/" ||
               location.pathname === "/sash/preview"
             ) {
-              location.pathname = "/Dashboard/";
+              location.pathname = "/dashboard/";
             }
 
             if (location.pathname === items.path + "/") {
@@ -196,7 +196,7 @@ export const Sidebar = () => {
           <div className="side-header">
             <Link
               className="header-brand1"
-              to={`${process.env.PUBLIC_URL}/Dashboard/`}
+              to={`${process.env.PUBLIC_URL}/dashboard/`}
             >
               <img
                 src={require("../../assets/images/brand/logo.png")}
