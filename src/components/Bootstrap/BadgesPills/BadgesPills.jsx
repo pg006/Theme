@@ -17,7 +17,7 @@ const BadgesPills = () => {
     <React.Fragment>
       <div>
         <PageHeader titles="Badges" active="Badges" items={["Componets"]} />
-        {/* <!-- ROW-1 OPEN --> */}
+        {/* <--<-- ROW OPEN -->--> */}
         <Row>
           <Col md={12} lg={6}>
             <Card>
@@ -38,35 +38,101 @@ const BadgesPills = () => {
                   Add any of the below mentioned modifier classes to change the
                   appearance of a badge.
                 </p>
-                <div className="example">
-                  <Badge bg="default">Default</Badge>
-                  <Badge bg="primary">Primary</Badge>
-                  <Badge bg="success">Success</Badge>
-                  <Badge bg="danger">Danger</Badge>
-                  <Badge bg="info">Info</Badge>
-                  <Badge bg="warning">Warning</Badge>
+                <div className="example d-flex justify-content-evenly">
+                  <Badge className="px-4 py-2" bg="default">
+                    Default
+                  </Badge>
+                  <Badge className="px-4 py-2" bg="primary">
+                    Primary
+                  </Badge>
+                  <Badge className="px-4 py-2" bg="success">
+                    Success
+                  </Badge>
+                  <Badge className="px-4 py-2" bg="danger">
+                    Danger
+                  </Badge>
+                  <Badge className="px-4 py-2" bg="info">
+                    Info
+                  </Badge>
+                  <Badge className="px-4 py-2" bg="warning">
+                    Warning
+                  </Badge>
                 </div>
                 <Collapse in={Badges} className="mt-2">
                   <pre>
                     <code>
-                      {`
-    <div className="example">
-    <Badge bg="default">Default</Badge> {' '}
-    <Badge bg="primary">Primary</Badge>{' '}
-    <Badge bg="success">Success</Badge>{' '}
-    <Badge bg="danger">Danger</Badge>{' '}
-    <Badge bg="info">Info</Badge>{' '}
-    <Badge bg="warning">Warning</Badge>{' '}
-
-  </div>
-`}
+                      {`<div className="example">
+                          <Badge className="px-4 py-2" bg="default">Default</Badge>
+                          <Badge className="px-4 py-2" bg="primary">Primary</Badge>
+                          <Badge className="px-4 py-2" bg="success">Success</Badge>
+                          <Badge className="px-4 py-2" bg="danger">Danger</Badge>
+                          <Badge className="px-4 py-2" bg="info">Info</Badge>
+                          <Badge className="px-4 py-2" bg="warning">Warning</Badge>
+                        </div>`}
                     </code>
                   </pre>
                 </Collapse>
               </Card.Body>
             </Card>
           </Col>
-          {/* <!-- COL-END --> */}
+          {/* <--<-- COL-END -->--> */}
+          <Col md={12} lg={6}>
+            <Card>
+              <Card.Header>
+                <Card.Title>Gradient Badges</Card.Title>
+                <Form className="ms-auto">
+                  <Form.Check
+                    type="switch"
+                    label="Show Code"
+                    id="custom-switch"
+                    onClick={() => setGradient(!Gradient)}
+                    className="showcode d-flex ms-auto mx-2"
+                  />
+                </Form>
+              </Card.Header>
+              <Card.Body>
+                <p>
+                  Add any of the below mentioned modifier classes to change the
+                  appearance of a badge.
+                </p>
+                <div className="example d-flex justify-content-evenly">
+                  <Badge className="px-4 py-2" bg="default">
+                    Default
+                  </Badge>
+                  <Badge className="px-4 py-2" bg="primary-gradient">
+                    Primary
+                  </Badge>
+                  <Badge className="px-4 py-2" bg="success-gradient">
+                    Success
+                  </Badge>
+                  <Badge className="px-4 py-2" bg="danger-gradient">
+                    Danger
+                  </Badge>
+                  <Badge className="px-4 py-2" bg="info-gradient">
+                    Info
+                  </Badge>
+                  <Badge className="px-4 py-2" bg="warning-gradient">
+                    Warning
+                  </Badge>
+                </div>
+                <Collapse in={Gradient} className="mt-2">
+                  <pre>
+                    <code>
+                      {`<div className="example">
+                          <Badge className="px-4 py-2" bg="default">Default</Badge>
+                          <Badge className="px-4 py-2" bg="primary-gradient">Primary</Badge>
+                          <Badge className="px-4 py-2" bg="success-gradient">Success</Badge>
+                          <Badge className="px-4 py-2" bg="danger-gradient">Danger</Badge>
+                          <Badge className="px-4 py-2" bg="info-gradient">Info</Badge>
+                          <Badge className="px-4 py-2" bg="warning-gradient">Warning</Badge>
+                        </div>`}
+                    </code>
+                  </pre>
+                </Collapse>
+              </Card.Body>
+            </Card>
+          </Col>
+          {/* <--<-- COL-END -->--> */}
           <Col md={12} lg={6}>
             <Card>
               <Card.Header>
@@ -87,23 +153,23 @@ const BadgesPills = () => {
                   <code className="highlighter-rouge">.rounded-pill</code>
                   modifier className to make badges more rounded.
                 </p>
-                <div className="example">
-                  <Badge pill bg="default">
+                <div className="example d-flex justify-content-evenly">
+                  <Badge pill bg="default" className="px-4 py-2">
                     Default
                   </Badge>
-                  <Badge pill bg="primary">
+                  <Badge pill bg="primary" className="px-4 py-2">
                     Primary
                   </Badge>
-                  <Badge pill bg="success">
+                  <Badge pill bg="success" className="px-4 py-2">
                     Success
                   </Badge>
-                  <Badge pill bg="danger">
+                  <Badge pill bg="danger" className="px-4 py-2">
                     Danger
                   </Badge>
-                  <Badge pill bg="info">
+                  <Badge pill bg="info" className="px-4 py-2">
                     Info
                   </Badge>
-                  <Badge pill bg="warning">
+                  <Badge pill bg="warning" className="px-4 py-2">
                     Warning
                   </Badge>
                 </div>
@@ -111,67 +177,22 @@ const BadgesPills = () => {
                   <pre>
                     <code>
                       {`
-                      <div className="example">
-                          <Badge pill bg="default">Default</Badge> {' '}
-                          <Badge pill bg="primary">Primary</Badge>{' '}
-                          <Badge pill bg="success">Success</Badge>{' '}
-                          <Badge pill bg="danger">Danger</Badge>{' '}
-                          <Badge pill bg="info">Info</Badge>{' '}
-                          <Badge pill bg="warning">Warning</Badge>{' '}
+                      <div className="example d-flex justify-content-evenly">
+                          <Badge pill className="px-4 py-2" bg="default">Default</Badge> 
+                          <Badge pill className="px-4 py-2" bg="primary">Primary</Badge>
+                          <Badge pill className="px-4 py-2" bg="success">Success</Badge>
+                          <Badge pill className="px-4 py-2" bg="danger">Danger</Badge>
+                          <Badge pill className="px-4 py-2" bg="info">Info</Badge>
+                          <Badge pill className="px-4 py-2" bg="warning">Warning</Badge>
                       </div>
-`}
+                      `}
                     </code>
                   </pre>
                 </Collapse>
               </Card.Body>
             </Card>
           </Col>
-          {/* <!-- COL-END --> */}
-          <Col md={12} lg={6}>
-            <Card>
-              <Card.Header>
-                <Card.Title>Gradient Badges</Card.Title>
-                <Form className="ms-auto">
-                  <Form.Check
-                    type="switch"
-                    label="Show Code"
-                    id="custom-switch"
-                    onClick={() => setGradient(!Gradient)}
-                    className="showcode d-flex ms-auto mx-2"
-                  />
-                </Form>
-              </Card.Header>
-              <Card.Body>
-                <p>
-                  Add any of the below mentioned modifier classes to change the
-                  appearance of a badge.
-                </p>
-                <div className="example">
-                  <Badge bg="default">Default</Badge>
-                  <Badge bg="primary-gradient">Primary</Badge>
-                  <Badge bg="success-gradient">Success</Badge>
-                  <Badge bg="danger-gradient">Danger</Badge>
-                  <Badge bg="info-gradient">Info</Badge>
-                  <Badge bg="warning-gradient">Warning</Badge>
-                </div>
-                <Collapse in={Gradient} className="mt-2">
-                  <pre>
-                    <code>
-                      {`<div className="example">
-                          <Badge bg="default">Default</Badge>
-                          <Badge bg="primary-gradient">Primary</Badge>
-                          <Badge bg="success-gradient">Success</Badge>
-                          <Badge bg="danger-gradient">Danger</Badge>
-                          <Badge bg="info-gradient">Info</Badge>
-                          <Badge bg="warning-gradient">Warning</Badge>
-                        </div>`}
-                    </code>
-                  </pre>
-                </Collapse>
-              </Card.Body>
-            </Card>
-          </Col>
-          {/* <!-- COL-END --> */}
+          {/* <--<-- COL-END -->--> */}
           <Col md={12} lg={6}>
             <Card>
               <Card.Header>
@@ -192,46 +213,46 @@ const BadgesPills = () => {
                   <code className="highlighter-rouge">.rounded-pill</code>
                   modifier className to make badges more rounded.
                 </p>
-                <div className="example">
-                  <Badge pill bg="default">
+                <div className="example d-flex justify-content-evenly">
+                  <Badge pill className="px-4 py-2" bg="default">
                     Default
                   </Badge>
-                  <Badge pill bg="primary-gradient">
+                  <Badge pill className="px-4 py-2" bg="primary-gradient">
                     Primary
                   </Badge>
-                  <Badge pill bg="success-gradient">
+                  <Badge pill className="px-4 py-2" bg="success-gradient">
                     Success
                   </Badge>
-                  <Badge pill bg="danger-gradient">
+                  <Badge pill className="px-4 py-2" bg="danger-gradient">
                     Danger
                   </Badge>
-                  <Badge pill bg="info-gradient">
+                  <Badge pill className="px-4 py-2" bg="info-gradient">
                     Info
                   </Badge>
-                  <Badge pill bg="warning-gradient">
+                  <Badge pill className="px-4 py-2" bg="warning-gradient">
                     Warning
                   </Badge>
                 </div>
                 <Collapse in={Gradientpill} className="mt-2">
                   <pre>
                     <code>
-                      {`<div className="example">
-                          <Badge pill bg="default">
+                      {`<div className="example d-flex justify-content-evenly">
+                          <Badge pill className="px-4 py-2" bg="default">
                             Default
                           </Badge>
-                          <Badge pill bg="primary-gradient">
+                          <Badge pill className="px-4 py-2" bg="primary-gradient">
                             Primary
                           </Badge>
-                          <Badge pill bg="success-gradient">
+                          <Badge pill className="px-4 py-2" bg="success-gradient">
                             Success
                           </Badge>
-                          <Badge pill bg="danger-gradient">
+                          <Badge pill className="px-4 py-2" bg="danger-gradient">
                             Danger
                           </Badge>
-                          <Badge pill bg="info-gradient">
+                          <Badge pill className="px-4 py-2" bg="info-gradient">
                             Info
                           </Badge>
-                          <Badge pill bg="warning-gradient">
+                          <Badge pill className="px-4 py-2" bg="warning-gradient">
                             Warning
                           </Badge>
                         </div>`}
@@ -241,353 +262,13 @@ const BadgesPills = () => {
               </Card.Body>
             </Card>
           </Col>
-          {/* <!-- COL-END --> */}
+          {/* <--<-- COL-END -->--> */}
         </Row>
-        {/* <!-- ROW-1 CLOSED --> */}
+        {/* <--<-- ROW CLOSED -->--> */}
 
-        {/* <!-- ROW-2 OPEN --> */}
+        {/* <--<-- ROW OPEN -->--> */}
         <Row>
-          <Col xl={12}>
-            <Card>
-              <Card.Header>
-                <Card.Title>Buttons with Badges</Card.Title>
-                <Form className="ms-auto">
-                  <Form.Check
-                    type="switch"
-                    label="Show Code"
-                    id="custom-switch"
-                    onClick={() => setButon(!Buton)}
-                    className="showcode d-flex ms-auto mx-2"
-                  />
-                </Form>
-              </Card.Header>
-              <Card.Body>
-                <p>
-                  Badges can be used as part of links or buttons to provide a
-                  counter.
-                </p>
-                <div className="example2">
-                  <Button className="mt-1  mb-1 me-3" variant="primary">
-                    Notifications
-                    <Badge bg="white" className="text-primary ms-2">
-                      2
-                    </Badge>
-                  </Button>
-
-                  <Button className="mt-1  mb-1 me-3" variant="secondary">
-                    Notifications
-                    <Badge bg="white" className="text-secondary ms-2">
-                      2
-                    </Badge>
-                  </Button>
-
-                  <Button className="mt-1  mb-1 me-3" variant="success">
-                    Notifications
-                    <Badge bg="white" className="text-success ms-2">
-                      2
-                    </Badge>
-                  </Button>
-
-                  <Button className="mt-1  mb-1 me-3" variant="info">
-                    Notifications
-                    <Badge bg="white" className="text-info ms-2">
-                      2
-                    </Badge>
-                  </Button>
-
-                  <Button className="mt-1  mb-1 me-3" variant="warning">
-                    Notifications
-                    <Badge bg="white" className="text-warning ms-2">
-                      2
-                    </Badge>
-                  </Button>
-
-                  <Button className="mt-1  mb-1 me-3" variant="danger">
-                    Notifications
-                    <Badge bg="white" className="text-danger ms-2">
-                      2
-                    </Badge>
-                  </Button>
-                </div>
-                <Collapse in={Buton} className="mt-2">
-                  <pre>
-                    <code>
-                      {`<div className="example2">
-                          <Button className="mt-1  mb-1 me-3" variant="primary">
-                            Notifications
-                            <Badge bg="white" className="text-primary ms-2">
-                              2
-                            </Badge>
-                          </Button>
-
-                          <Button
-                            className="mt-1  mb-1 me-3"
-                            variant="secondary"
-                          >
-                            Notifications
-                            <Badge bg="white" className="text-secondary ms-2">
-                              2
-                            </Badge>
-                          </Button>
-
-                          <Button className="mt-1  mb-1 me-3" variant="success">
-                            Notifications
-                            <Badge bg="white" className="text-success ms-2">
-                              2
-                            </Badge>
-                          </Button>
-
-                          <Button className="mt-1  mb-1 me-3" variant="info">
-                            Notifications
-                            <Badge bg="white" className="text-info ms-2">
-                              2
-                            </Badge>
-                          </Button>
-
-                          <Button className="mt-1  mb-1 me-3" variant="warning">
-                            Notifications
-                            <Badge bg="white" className="text-warning ms-2">
-                              2
-                            </Badge>
-                          </Button>
-
-                          <Button className="mt-1  mb-1 me-3" variant="danger">
-                            Notifications
-                            <Badge bg="white" className="text-danger ms-2">
-                              2
-                            </Badge>
-                          </Button>
-                        </div>`}
-                    </code>
-                  </pre>
-                </Collapse>
-              </Card.Body>
-            </Card>
-          </Col>
-          {/* <!-- COL-END --> */}
-          <Col xl={12}>
-            <Card>
-              <Card.Header>
-                <Card.Title>Buttons with Rounded Badges</Card.Title>
-                <Form className="ms-auto">
-                  <Form.Check
-                    type="switch"
-                    label="Show Code"
-                    id="custom-switch"
-                    onClick={() => setRounded(!Rounded)}
-                    className="showcode d-flex ms-auto mx-2"
-                  />
-                </Form>
-              </Card.Header>
-              <Card.Body>
-                <p>
-                  Badges can be used as part of links or buttons to provide a
-                  counter.
-                </p>
-                <div className="example">
-                  <Button
-                    variant="primary"
-                    className="position-relative me-5 mb-3"
-                  >
-                    Projects
-                    <Badge
-                      bg="danger"
-                      className="position-absolute top-0 start-100 translate-middle badge rounded-pill"
-                    >
-                      20+
-                    </Badge>
-                    <span className="visually-hidden">unread messages</span>
-                  </Button>
-
-                  <Button
-                    variant="secondary"
-                    className="position-relative me-5 mb-3"
-                  >
-                    Projects
-                    <Badge
-                      bg="danger"
-                      className="position-absolute top-0 start-100 translate-middle badge rounded-pill"
-                    >
-                      20+
-                    </Badge>
-                    <span className="visually-hidden">unread messages</span>
-                  </Button>
-
-                  <Button
-                    variant="success"
-                    className="position-relative me-5 mb-3"
-                  >
-                    Projects
-                    <Badge
-                      bg="danger"
-                      className="position-absolute top-0 start-100 translate-middle badge rounded-pill"
-                    >
-                      20+
-                    </Badge>
-                    <span className="visually-hidden">unread messages</span>
-                  </Button>
-
-                  <Button
-                    variant="info"
-                    className="position-relative me-5 mb-3"
-                  >
-                    Projects
-                    <Badge
-                      bg="danger"
-                      className="position-absolute top-0 start-100 translate-middle badge rounded-pill"
-                    >
-                      20+
-                    </Badge>
-                    <span className="visually-hidden">unread messages</span>
-                  </Button>
-
-                  <Button
-                    variant="warning"
-                    className="position-relative me-5 mb-3"
-                  >
-                    Projects
-                    <Badge
-                      bg="danger"
-                      className="position-absolute top-0 start-100 translate-middle badge rounded-pill"
-                    >
-                      20+
-                    </Badge>
-                    <span className="visually-hidden">unread messages</span>
-                  </Button>
-
-                  <Button
-                    variant="green"
-                    className="position-relative me-5 mb-3"
-                  >
-                    Projects
-                    <Badge
-                      bg="danger"
-                      className="position-absolute top-0 start-100 translate-middle badge rounded-pill"
-                    >
-                      20+
-                    </Badge>
-                    <span className="visually-hidden">unread messages</span>
-                  </Button>
-                </div>
-                <Collapse in={Rounded} className="mt-2">
-                  <pre>
-                    <code>
-                      {`<div className="example">
-                          <Button
-                            variant="primary"
-                            className="position-relative me-5 mb-2"
-                          >
-                            
-                            Projects
-                            <Badge
-                              bg="danger"
-                              className="position-absolute top-0 start-100 translate-middle badge rounded-pill"
-                            >
-                              20+
-                            </Badge>
-                            <span className="visually-hidden">
-                              unread messages
-                            </span>
-                          </Button>
-
-                          <Button
-                            variant="secondary"
-                            className="position-relative me-5 mb-2"
-                          >
-                            
-                            Projects
-                            <Badge
-                              bg="danger"
-                              className="position-absolute top-0 start-100 translate-middle badge rounded-pill"
-                            >
-                              20+
-                            </Badge>
-                            <span className="visually-hidden">
-                              unread messages
-                            </span>
-                          </Button>
-
-                          <Button
-                            variant="success"
-                            className="position-relative me-5 mb-2"
-                          >
-                            
-                            Projects
-                            <Badge
-                              bg="danger"
-                              className="position-absolute top-0 start-100 translate-middle badge rounded-pill"
-                            >
-                              20+
-                            </Badge>
-                            <span className="visually-hidden">
-                              unread messages
-                            </span>
-                          </Button>
-
-                          <Button
-                            variant="info"
-                            className="position-relative me-5 mb-2"
-                          >
-                            
-                            Projects
-                            <Badge
-                              bg="danger"
-                              className="position-absolute top-0 start-100 translate-middle badge rounded-pill"
-                            >
-                              20+
-                            </Badge>
-                            <span className="visually-hidden">
-                              unread messages
-                            </span>
-                          </Button>
-
-                          <Button
-                            variant="warning"
-                            className="position-relative me-5 mb-2"
-                          >
-                            
-                            Projects
-                            <Badge
-                              bg="danger"
-                              className="position-absolute top-0 start-100 translate-middle badge rounded-pill"
-                            >
-                              20+
-                            </Badge>
-                            <span className="visually-hidden">
-                              unread messages
-                            </span>
-                          </Button>
-
-                          <Button
-                            variant="green"
-                            className="position-relative me-5 mb-2"
-                          >
-                            
-                            Projects
-                            <Badge
-                              bg="danger"
-                              className="position-absolute top-0 start-100 translate-middle badge rounded-pill"
-                            >
-                              20+
-                            </Badge>
-                            <span className="visually-hidden">
-                              unread messages
-                            </span>
-                          </Button>
-                        </div>`}
-                    </code>
-                  </pre>
-                </Collapse>
-              </Card.Body>
-            </Card>
-          </Col>
-          {/* <!-- COL-END --> */}
-        </Row>
-        {/* <!-- ROW-2 CLOSED --> */}
-
-        {/* <!-- ROW-3 OPEN --> */}
-        <Row>
-          <Col md={12} xl={6}>
+          <Col md={12} xl={12}>
             <Card>
               <Card.Header>
                 <Card.Title>Heading Badges</Card.Title>
@@ -657,8 +338,8 @@ const BadgesPills = () => {
               </Card.Body>
             </Card>
           </Col>
-          {/* <!-- COL-END --> */}
-          <Col md={12} xl={6}>
+          {/* <--<-- COL-END -->--> */}
+          <Col md={12} xl={12}>
             <Card>
               <Card.Header>
                 <Card.Title>Color Heading Badges</Card.Title>
@@ -702,8 +383,7 @@ const BadgesPills = () => {
                 <Collapse in={color} className="mt-2">
                   <pre>
                     <code>
-                      {
-                        `<div className="example">
+                      {`<div className="example">
                           <h1 className="text-primary">
                             Heading 01<Badge bg="primary">New</Badge>
                           </h1>
@@ -722,8 +402,7 @@ const BadgesPills = () => {
                           <h6 className="text-secondary">
                             Heading 01<Badge bg="secondary">New</Badge>
                           </h6>
-                        </div>`
-                      }
+                        </div>`}
                     </code>
                   </pre>
                 </Collapse>
@@ -731,7 +410,346 @@ const BadgesPills = () => {
             </Card>
           </Col>
         </Row>
-        {/* <!-- ROW-3 CLOSED --> */}
+        {/* <--<-- ROW CLOSED -->--> */}
+         {/* <--<-- ROW OPEN -->--> */}
+         <Row>
+          <Col xl={12}>
+            <Card>
+              <Card.Header>
+                <Card.Title>Buttons with Badges</Card.Title>
+                <Form className="ms-auto">
+                  <Form.Check
+                    type="switch"
+                    label="Show Code"
+                    id="custom-switch"
+                    onClick={() => setButon(!Buton)}
+                    className="showcode d-flex ms-auto mx-2"
+                  />
+                </Form>
+              </Card.Header>
+              <Card.Body>
+                <p>
+                  Badges can be used as part of links or buttons to provide a
+                  counter.
+                </p>
+                <div className="example2">
+                  <Button className="mt-1  mb-1 me-3" variant="primary">
+                    Notifications
+                    <Badge bg="white" className="text-primary ms-2">
+                      1
+                    </Badge>
+                  </Button>
+
+                  <Button className="mt-1  mb-1 me-3" variant="secondary">
+                    Notifications
+                    <Badge bg="white" className="text-secondary ms-2">
+                      2
+                    </Badge>
+                  </Button>
+
+                  <Button className="mt-1  mb-1 me-3" variant="success">
+                    Notifications
+                    <Badge bg="white" className="text-success ms-2">
+                      3
+                    </Badge>
+                  </Button>
+
+                  <Button className="mt-1  mb-1 me-3" variant="info">
+                    Notifications
+                    <Badge bg="white" className="text-info ms-2">
+                      4
+                    </Badge>
+                  </Button>
+
+                  <Button className="mt-1  mb-1 me-3" variant="warning">
+                    Notifications
+                    <Badge bg="white" className="text-warning ms-2">
+                      5
+                    </Badge>
+                  </Button>
+
+                  <Button className="mt-1  mb-1 me-3" variant="danger">
+                    Notifications
+                    <Badge bg="white" className="text-danger ms-2">
+                      6
+                    </Badge>
+                  </Button>
+                </div>
+                <Collapse in={Buton} className="mt-2">
+                  <pre>
+                    <code>
+                      {`<div className="example2">
+                          <Button className="mt-1  mb-1 me-3" variant="primary">
+                            Notifications
+                            <Badge bg="white" className="text-primary ms-2">
+                              2
+                            </Badge>
+                          </Button>
+
+                          <Button
+                            className="mt-1  mb-1 me-3"
+                            variant="secondary"
+                          >
+                            Notifications
+                            <Badge bg="white" className="text-secondary ms-2">
+                              2
+                            </Badge>
+                          </Button>
+
+                          <Button className="mt-1  mb-1 me-3" variant="success">
+                            Notifications
+                            <Badge bg="white" className="text-success ms-2">
+                              2
+                            </Badge>
+                          </Button>
+
+                          <Button className="mt-1  mb-1 me-3" variant="info">
+                            Notifications
+                            <Badge bg="white" className="text-info ms-2">
+                              2
+                            </Badge>
+                          </Button>
+
+                          <Button className="mt-1  mb-1 me-3" variant="warning">
+                            Notifications
+                            <Badge bg="white" className="text-warning ms-2">
+                              2
+                            </Badge>
+                          </Button>
+
+                          <Button className="mt-1  mb-1 me-3" variant="danger">
+                            Notifications
+                            <Badge bg="white" className="text-danger ms-2">
+                              2
+                            </Badge>
+                          </Button>
+                        </div>`}
+                    </code>
+                  </pre>
+                </Collapse>
+              </Card.Body>
+            </Card>
+          </Col>
+          {/* <--<-- COL-END -->--> */}
+          <Col xl={12}>
+            <Card>
+              <Card.Header>
+                <Card.Title>Buttons with Rounded Badges</Card.Title>
+                <Form className="ms-auto">
+                  <Form.Check
+                    type="switch"
+                    label="Show Code"
+                    id="custom-switch"
+                    onClick={() => setRounded(!Rounded)}
+                    className="showcode d-flex ms-auto mx-2"
+                  />
+                </Form>
+              </Card.Header>
+              <Card.Body>
+                <p>
+                  Badges can be used as part of links or buttons to provide a
+                  counter.
+                </p>
+                <div className="example">
+                  <Button
+                    variant="primary"
+                    className="position-relative me-5 mb-3"
+                  >
+                    Projects
+                    <Badge
+                      bg="danger"
+                      className="position-absolute top-0 start-100 translate-middle badge rounded-pill"
+                    >
+                      99+
+                    </Badge>
+                    <span className="visually-hidden">unread messages</span>
+                  </Button>
+
+                  <Button
+                    variant="secondary"
+                    className="position-relative me-5 mb-3"
+                  >
+                    Projects
+                    <Badge
+                      bg="danger"
+                      className="position-absolute top-0 start-100 translate-middle badge rounded-pill"
+                    >
+                      99+
+                    </Badge>
+                    <span className="visually-hidden">unread messages</span>
+                  </Button>
+
+                  <Button
+                    variant="success"
+                    className="position-relative me-5 mb-3"
+                  >
+                    Projects
+                    <Badge
+                      bg="danger"
+                      className="position-absolute top-0 start-100 translate-middle badge rounded-pill"
+                    >
+                      99+
+                    </Badge>
+                    <span className="visually-hidden">unread messages</span>
+                  </Button>
+
+                  <Button
+                    variant="info"
+                    className="position-relative me-5 mb-3"
+                  >
+                    Projects
+                    <Badge
+                      bg="danger"
+                      className="position-absolute top-0 start-100 translate-middle badge rounded-pill"
+                    >
+                      99+
+                    </Badge>
+                    <span className="visually-hidden">unread messages</span>
+                  </Button>
+
+                  <Button
+                    variant="warning"
+                    className="position-relative me-5 mb-3"
+                  >
+                    Projects
+                    <Badge
+                      bg="danger"
+                      className="position-absolute top-0 start-100 translate-middle badge rounded-pill"
+                    >
+                      99+
+                    </Badge>
+                    <span className="visually-hidden">unread messages</span>
+                  </Button>
+
+                  <Button
+                    variant="green"
+                    className="position-relative me-5 mb-3"
+                  >
+                    Projects
+                    <Badge
+                      bg="danger"
+                      className="position-absolute top-0 start-100 translate-middle badge rounded-pill"
+                    >
+                      99+
+                    </Badge>
+                    <span className="visually-hidden">unread messages</span>
+                  </Button>
+                </div>
+                <Collapse in={Rounded} className="mt-2">
+                  <pre>
+                    <code>
+                      {`<div className="example">
+                          <Button
+                            variant="primary"
+                            className="position-relative me-5 mb-2"
+                          >
+                            
+                            Projects
+                            <Badge
+                              bg="danger"
+                              className="position-absolute top-0 start-100 translate-middle badge rounded-pill"
+                            >
+                              99+
+                            </Badge>
+                            <span className="visually-hidden">
+                              unread messages
+                            </span>
+                          </Button>
+
+                          <Button
+                            variant="secondary"
+                            className="position-relative me-5 mb-2"
+                          >
+                            
+                            Projects
+                            <Badge
+                              bg="danger"
+                              className="position-absolute top-0 start-100 translate-middle badge rounded-pill"
+                            >
+                              99+
+                            </Badge>
+                            <span className="visually-hidden">
+                              unread messages
+                            </span>
+                          </Button>
+
+                          <Button
+                            variant="success"
+                            className="position-relative me-5 mb-2"
+                          >
+                            
+                            Projects
+                            <Badge
+                              bg="danger"
+                              className="position-absolute top-0 start-100 translate-middle badge rounded-pill"
+                            >
+                              99+
+                            </Badge>
+                            <span className="visually-hidden">
+                              unread messages
+                            </span>
+                          </Button>
+
+                          <Button
+                            variant="info"
+                            className="position-relative me-5 mb-2"
+                          >
+                            
+                            Projects
+                            <Badge
+                              bg="danger"
+                              className="position-absolute top-0 start-100 translate-middle badge rounded-pill"
+                            >
+                              99+
+                            </Badge>
+                            <span className="visually-hidden">
+                              unread messages
+                            </span>
+                          </Button>
+
+                          <Button
+                            variant="warning"
+                            className="position-relative me-5 mb-2"
+                          >
+                            
+                            Projects
+                            <Badge
+                              bg="danger"
+                              className="position-absolute top-0 start-100 translate-middle badge rounded-pill"
+                            >
+                              99+
+                            </Badge>
+                            <span className="visually-hidden">
+                              unread messages
+                            </span>
+                          </Button>
+
+                          <Button
+                            variant="green"
+                            className="position-relative me-5 mb-2"
+                          >
+                            
+                            Projects
+                            <Badge
+                              bg="danger"
+                              className="position-absolute top-0 start-100 translate-middle badge rounded-pill"
+                            >
+                              99+
+                            </Badge>
+                            <span className="visually-hidden">
+                              unread messages
+                            </span>
+                          </Button>
+                        </div>`}
+                    </code>
+                  </pre>
+                </Collapse>
+              </Card.Body>
+            </Card>
+          </Col>
+          {/* <--<-- COL-END -->--> */}
+        </Row>
+        {/* <--<-- ROW CLOSED -->--> */}
       </div>
     </React.Fragment>
   );

@@ -45,7 +45,7 @@ const Buttons = () => {
         <PageHeader titles="Buttons" active="Buttons" items={["Componets"]} />
         {/* <!-- ROW-1 OPEN --> */}
         <Row>
-          <Col md={12} xl={6}>
+          <Col md={12} xl={12}>
             <Card>
               <Card.Header>
                 <Card.Title>Default Button</Card.Title>
@@ -62,7 +62,7 @@ const Buttons = () => {
               <Card.Body>
                 <div className="text-wrap">
                   <p>
-                    Use any of the available{" "}
+                    Use any of the available
                     <code className="highlighter-rouge">.btn btn-</code> classes
                     to quickly create a styled button.
                   </p>
@@ -131,7 +131,7 @@ const Buttons = () => {
             </Card>
           </Col>
           {/* <!-- COL END --> */}
-          <Col md={12} xl={6}>
+          <Col md={12} xl={12}>
             <Card>
               <Card.Header>
                 <Card.Title>Disable Default Button</Card.Title>
@@ -148,10 +148,10 @@ const Buttons = () => {
               <Card.Body>
                 <div className="text-wrap">
                   <p>
-                    Use any of the available{" "}
+                    Use any of the available
                     <code className="highlighter-rouge">.btn btn-</code> classes
-                    you must add the{" "}
-                    <code className="highlighter-rouge">.disabled</code>{" "}
+                    you must add the
+                    <code className="highlighter-rouge">.disabled</code>
                     className to make it visually appear disabled.
                   </p>
                   <div className="example">
@@ -227,7 +227,7 @@ const Buttons = () => {
 
         {/* <!-- ROW-2 OPEN --> */}
         <Row>
-          <Col md={12} xl={6}>
+          <Col md={12} xl={12}>
             <Card>
               <Card.Header>
                 <Card.Title>Rounded Button</Card.Title>
@@ -244,7 +244,7 @@ const Buttons = () => {
               <Card.Body>
                 <div className="text-wrap">
                   <p>
-                    Use any of the available{" "}
+                    Use any of the available
                     <code className="highlighter-rouge">.btn-pill</code> classes
                     to quickly create a styled button.
                   </p>
@@ -307,7 +307,7 @@ const Buttons = () => {
             </Card>
           </Col>
           {/* <!-- COL END --> */}
-          <Col md={12} xl={6}>
+          <Col md={12} xl={12}>
             <Card>
               <Card.Header>
                 <Card.Title>Outline Button</Card.Title>
@@ -324,8 +324,8 @@ const Buttons = () => {
               <Card.Body>
                 <div className="text-wrap">
                   <p>
-                    Use any of the available{" "}
-                    <code className="highlighter-rouge">.btn-outline-</code>{" "}
+                    Use any of the available
+                    <code className="highlighter-rouge">.btn-outline-</code>
                     classes to quickly create a styled button.
                   </p>
                   <div className="example">
@@ -392,7 +392,7 @@ const Buttons = () => {
 
         {/* <!-- ROW-3 OPEN --> */}
         <Row>
-          <Col md={12} xl={6}>
+          <Col md={12} xl={12}>
             <Card>
               <Card.Header>
                 <Card.Title>Light Button</Card.Title>
@@ -409,8 +409,8 @@ const Buttons = () => {
               <Card.Body>
                 <div className="text-wrap">
                   <p>
-                    Use any of the available{" "}
-                    <code className="highlighter-rouge">.btn-light-</code>{" "}
+                    Use any of the available
+                    <code className="highlighter-rouge">.btn-light-</code>
                     classes to quickly create a styled button.
                   </p>
                   <div className="example">
@@ -472,7 +472,7 @@ const Buttons = () => {
             </Card>
           </Col>
           {/* <!-- COL END --> */}
-          <Col md={12} xl={6}>
+          <Col md={12} xl={12}>
             <Card>
               <Card.Header>
                 <Card.Title>Button with icon</Card.Title>
@@ -550,7 +550,7 @@ const Buttons = () => {
 
         {/* <!-- ROW-4 OPEN --> */}
         <Row>
-          <Col md={12} xl={6}>
+          <Col md={12} xl={12}>
             <Card>
               <Card.Header>
                 <Card.Title>Button size</Card.Title>
@@ -567,7 +567,7 @@ const Buttons = () => {
               <Card.Body>
                 <div className="text-wrap">
                   <p>
-                    Add <code className="highlighter-rouge">.btn-lg</code> or{" "}
+                    Add <code className="highlighter-rouge">.btn-lg</code> or
                     <code className="highlighter-rouge">.btn-sm</code> for
                     additional sizes.
                   </p>
@@ -656,7 +656,7 @@ const Buttons = () => {
             </Card>
           </Col>
           {/* <!-- COL END --> */}
-          <Col md={12} xl={6}>
+          <Col md={12} xl={12}>
             <Card>
               <Card.Header>
                 <Card.Title>Block Button</Card.Title>
@@ -673,7 +673,7 @@ const Buttons = () => {
               <Card.Body>
                 <div className="text-wrap">
                   <p>
-                    Add <code className="highlighter-rouge">.d-grid</code> or{" "}
+                    Add <code className="highlighter-rouge">.d-grid</code> or
                     <code className="highlighter-rouge">.gap-2</code> for
                     additional sizes.
                   </p>
@@ -709,182 +709,9 @@ const Buttons = () => {
         </Row>
         {/* <!-- ROW-4 CLOSED --> */}
 
-        {/* <!-- ROW-5 OPEN --> */}
-        <Row>
-          <Col md={12} xl={6}>
-            <Card>
-              <Card.Header>
-                <Card.Title>Icon buttons</Card.Title>
-                <Form className="ms-auto">
-                  <Form.Check
-                    type="switch"
-                    label="Show Code"
-                    id="custom-switch"
-                    onClick={() => setIconbtn(!Iconbtn)}
-                    className="showcode d-flex ms-auto mx-2"
-                  />
-                </Form>
-              </Card.Header>
-              <Card.Body>
-                <div className="text-wrap">
-                  <p>
-                    Icon only button. Add{" "}
-                    <code className="highlighter-rouge">.btn-icon</code> classes
-                    to quickly create a styled button..
-                  </p>
-                  <div className="example">
-                    <div className="btn-list">
-                      <Button className="btn-icon" variant="primary">
-                        <i className="fe fe-activity"></i>
-                      </Button>
-                      <Button className="btn-icon" variant="github">
-                        <i className="fe fe-github"></i>
-                      </Button>
-                      <Button className="btn-icon" variant="success">
-                        <i className="fe fe-bell"></i>
-                      </Button>
-                      <Button className="btn-icon" variant="warning">
-                        <i className="fe fe-star"></i>
-                      </Button>
-                      <Button className="btn-icon" variant="danger">
-                        <i className="fe fe-trash"></i>
-                      </Button>
-                      <Button className="btn-icon" variant="purple">
-                        <i className="fe fe-mail"></i>
-                      </Button>
-                      <Button className="btn-icon" variant="secondary">
-                        <i className="fe fe-git-merge"></i>
-                      </Button>
-                    </div>
-                  </div>
-                </div>
-                <Collapse in={Iconbtn} className="mt-2">
-                  <pre>
-                    <code>
-                      {`<div className="btn-list">
-                          <Button className="btn-icon" variant="primary">
-                            <i className="fe fe-activity"></i>
-                          </Button>
-                          <Button className="btn-icon" variant="github">
-                            <i className="fe fe-github"></i>
-                          </Button>
-                          <Button className="btn-icon" variant="success">
-                            <i className="fe fe-bell"></i>
-                          </Button>
-                          <Button className="btn-icon" variant="warning">
-                            <i className="fe fe-star"></i>
-                          </Button>
-                          <Button className="btn-icon" variant="danger">
-                            <i className="fe fe-trash"></i>
-                          </Button>
-                          <Button className="btn-icon" variant="purple">
-                            <i className="fe fe-mail"></i>
-                          </Button>
-                          <Button className="btn-icon" variant="secondary">
-                            <i className="fe fe-git-merge"></i>
-                          </Button>
-                        </div>`}
-                    </code>
-                  </pre>
-                </Collapse>
-              </Card.Body>
-            </Card>
-          </Col>
-          {/* <!-- COL END --> */}
-          <Col md={12} xl={6}>
-            <Card>
-              <Card.Header>
-                <Card.Title>Social buttons</Card.Title>
-                <Form className="ms-auto">
-                  <Form.Check
-                    type="switch"
-                    label="Show Code"
-                    id="custom-switch"
-                    onClick={() => setSocial(!Social)}
-                    className="showcode d-flex ms-auto mx-2"
-                  />
-                </Form>
-              </Card.Header>
-              <Card.Body>
-                <div className="text-wrap">
-                  <p>You can use only icons.</p>
-                  <div className="example">
-                    <div className="btn-list">
-                      <Button className="btn-icon" variant="facebook">
-                        <i className="fa fa-facebook"></i>
-                      </Button>
-                      <Button className="btn-icon" variant="twitter">
-                        <i className="fa fa-twitter"></i>
-                      </Button>
-                      <Button className="btn-icon" variant="google">
-                        <i className="fa fa-google"></i>
-                      </Button>
-                      <Button className="btn-icon" variant="youtube">
-                        <i className="fa fa-youtube"></i>
-                      </Button>
-                      <Button className="btn-icon" variant="vimeo">
-                        <i className="fa fa-vimeo"></i>
-                      </Button>
-                      <Button className="btn-icon" variant="dribbble">
-                        <i className="fa fa-dribbble"></i>
-                      </Button>
-                      <Button className="btn-icon" variant="github">
-                        <i className="fa fa-github"></i>
-                      </Button>
-                      <Button className="btn-icon" variant="instagram">
-                        <i className="fa fa-instagram"></i>
-                      </Button>
-                      <Button className="btn-icon" variant="pinterest">
-                        <i className="fa fa-pinterest"></i>
-                      </Button>
-                    </div>
-                  </div>
-                </div>
-                <Collapse in={Social} className="mt-2">
-                  <pre>
-                    <code>
-                      {` <div className="btn-list">
-                          <Button className="btn-icon" variant="facebook">
-                            <i className="fa fa-facebook"></i>
-                          </Button>
-                          <Button className="btn-icon" variant="twitter">
-                            <i className="fa fa-twitter"></i>
-                          </Button>
-                          <Button className="btn-icon" variant="google">
-                            <i className="fa fa-google"></i>
-                          </Button>
-                          <Button className="btn-icon" variant="youtube">
-                            <i className="fa fa-youtube"></i>
-                          </Button>
-                          <Button className="btn-icon" variant="vimeo">
-                            <i className="fa fa-vimeo"></i>
-                          </Button>
-                          <Button className="btn-icon" variant="dribbble">
-                            <i className="fa fa-dribbble"></i>
-                          </Button>
-                          <Button className="btn-icon" variant="github">
-                            <i className="fa fa-github"></i>
-                          </Button>
-                          <Button className="btn-icon" variant="instagram">
-                            <i className="fa fa-instagram"></i>
-                          </Button>
-                          <Button className="btn-icon" variant="pinterest">
-                            <i className="fa fa-pinterest"></i>
-                          </Button>
-                        </div>`}
-                    </code>
-                  </pre>
-                </Collapse>
-              </Card.Body>
-            </Card>
-          </Col>
-          {/* <!-- COL END --> */}
-        </Row>
-        {/* <!-- ROW-5 CLOSED --> */}
-
         {/* <!-- ROW-6 OPEN --> */}
         <Row>
-          <Col md={12} xl={6}>
+          <Col md={12} xl={12}>
             <Card>
               <Card.Header>
                 <Card.Title>Button Tags</Card.Title>
@@ -901,8 +728,8 @@ const Buttons = () => {
               <Card.Body>
                 <div className="text-wrap">
                   <p>
-                    Add <code className="highlighter-rouge">.btn</code>,{" "}
-                    <code className="highlighter-rouge">&lt;input&gt;</code>,{" "}
+                    Add <code className="highlighter-rouge">.btn</code>,
+                    <code className="highlighter-rouge">&lt;input&gt;</code>,
                     <code className="highlighter-rouge">&lt;a&gt;</code>classes
                     to quickly create a styled button..
                   </p>
@@ -969,7 +796,7 @@ const Buttons = () => {
             </Card>
           </Col>
           {/* <!-- COL END --> */}
-          <Col md={12} xl={6}>
+          <Col md={12} xl={12}>
             <Card>
               <Card.Header>
                 <Card.Title>Toggle buttons</Card.Title>
@@ -986,13 +813,13 @@ const Buttons = () => {
               <Card.Body>
                 <div className="text-wrap">
                   <p>
-                    Add{" "}
+                    Add
                     <code className="highlighter-rouge">
                       data-bs-toggle="button"
-                    </code>{" "}
-                    to toggle a button{" "}
+                    </code>
+                    to toggle a button
                     <code className="highlighter-rouge">.active</code> className
-                    & required{" "}
+                    & required
                     <code className="highlighter-rouge">
                       aria-pressed="true"
                     </code>
@@ -1027,10 +854,160 @@ const Buttons = () => {
           {/* <!-- COL END --> */}
         </Row>
         {/* <!-- ROW-6 CLOSED --> */}
-
-        {/* <!-- ROW-7 OPEN --> */}
+        {/* <!-- ROW-12 OPEN --> */}
         <Row>
           <Col md={12} xl={6}>
+            <Card>
+              <Card.Header>
+                <Card.Title>Button Group Sizes</Card.Title>
+                <Form className="ms-auto">
+                  <Form.Check
+                    type="switch"
+                    label="Show Code"
+                    id="custom-switch"
+                    onClick={() => setBtngrpSize(!BtngrpSize)}
+                    className="showcode d-flex ms-auto mx-2"
+                  />
+                </Form>
+              </Card.Header>
+              <Card.Body>
+                <div className="text-wrap">
+                  <p>
+                    Use any of the available
+                    <code className="highlighter-rouge">.btn-group-*</code> in
+                    <code className="highlighter-rouge">.btn-group</code>
+                    classes to quickly create a styled button.
+                  </p>
+                  <div className="example">
+                    <ButtonGroup className="btn-group-lg mb-3">
+                      <Button variant="primary">Left</Button>
+                      <Button variant="primary">Middle</Button>
+                      <Button variant="primary">Right</Button>
+                    </ButtonGroup>
+                    <br />
+                    <ButtonGroup className="mb-3">
+                      <Button variant="primary">Left</Button>
+                      <Button variant="primary">Middle</Button>
+                      <Button variant="primary">Right</Button>
+                    </ButtonGroup>
+                    <br />
+                    <ButtonGroup className="btn-group-sm">
+                      <Button variant="primary">Left</Button>
+                      <Button variant="primary">Middle</Button>
+                      <Button variant="primary">Right</Button>
+                    </ButtonGroup>
+                  </div>
+                </div>
+                <Collapse in={BtngrpSize} className="mt-2">
+                  <pre>
+                    <code>
+                      {`<div className="example">
+                          <ButtonGroup className="btn-group-lg mb-3">
+                            <Button variant="primary">Left</Button>
+                            <Button variant="primary">Middle</Button>
+                            <Button variant="primary">Right</Button>
+                          </ButtonGroup>
+                          <br />
+                          <ButtonGroup className="mb-3">
+                            <Button variant="primary">Left</Button>
+                            <Button variant="primary">Middle</Button>
+                            <Button variant="primary">Right</Button>
+                          </ButtonGroup>
+                          <br />
+                          <ButtonGroup className="btn-group-sm">
+                            <Button variant="primary">Left</Button>
+                            <Button variant="primary">Middle</Button>
+                            <Button variant="primary">Right</Button>
+                          </ButtonGroup>
+                        </div>`}
+                    </code>
+                  </pre>
+                </Collapse>
+              </Card.Body>
+            </Card>
+          </Col>
+          {/* <!-- COL END --> */}
+          <Col md={12} xl={6}>
+            <Card>
+              <Card.Header>
+                <Card.Title>Vertical Button Group</Card.Title>
+                <Form className="ms-auto">
+                  <Form.Check
+                    type="switch"
+                    label="Show Code"
+                    id="custom-switch"
+                    onClick={() => setVerticalBtngrp(!VerticalBtngrp)}
+                    className="showcode d-flex ms-auto mx-2"
+                  />
+                </Form>
+              </Card.Header>
+              <Card.Body>
+                <div className="text-wrap">
+                  <p>
+                    Use any of the available
+                    <code className="highlighter-rouge">
+                      .btn-group-vertical
+                    </code>
+                    classes to quickly create a styled button.
+                  </p>
+                  <div className="example">
+                    <ButtonGroup vertical>
+                      <Button variant="primary">Button</Button>
+                      <Button variant="primary">Button</Button>
+                      <Dropdown>
+                        <Dropdown.Toggle className="br-0">
+                          Dropdown
+                        </Dropdown.Toggle>
+                        <Dropdown.Menu>
+                          <Dropdown.Item eventKey="1">
+                            Dropdown Link
+                          </Dropdown.Item>
+                          <Dropdown.Item eventKey="2">
+                            Dropdown Link
+                          </Dropdown.Item>
+                        </Dropdown.Menu>
+                      </Dropdown>
+                      <Button variant="primary">Button</Button>
+                      <Button variant="primary">Button</Button>
+                    </ButtonGroup>
+                  </div>
+                </div>
+                <Collapse in={VerticalBtngrp} className="mt-2">
+                  <pre>
+                    <code>
+                      {`<div className="example">
+                          <ButtonGroup vertical>
+                            <Button variant="primary">Button</Button>
+                            <Button variant="primary">Button</Button>
+                            <Dropdown>
+                              <Dropdown.Toggle className="br-0">
+                                Dropdown
+                              </Dropdown.Toggle>
+                              <Dropdown.Menu>
+                                <Dropdown.Item eventKey="1">
+                                  Dropdown Link
+                                </Dropdown.Item>
+                                <Dropdown.Item eventKey="2">
+                                  Dropdown Link
+                                </Dropdown.Item>
+                              </Dropdown.Menu>
+                            </Dropdown>
+                            <Button variant="primary">Button</Button>
+                            <Button variant="primary">Button</Button>
+                          </ButtonGroup>
+                        </div>`}
+                    </code>
+                  </pre>
+                </Collapse>
+              </Card.Body>
+            </Card>
+          </Col>
+          {/* <!-- COL END --> */}
+        </Row>
+        {/* <!-- ROW-12 CLOSED --> */}
+        {/* <!-- ROW-7 OPEN --> */}
+        <Row>
+          <Col md={12} xl={12}>
             <Card>
               <Card.Header>
                 <Card.Title>Color variations</Card.Title>
@@ -1148,7 +1125,7 @@ const Buttons = () => {
             </Card>
           </Col>
           {/* <!-- COL END --> */}
-          <Col md={12} xl={6}>
+          <Col md={12} xl={12}>
             <Card>
               <Card.Header>
                 <Card.Title>Social buttons</Card.Title>
@@ -1259,7 +1236,7 @@ const Buttons = () => {
 
         {/* <!-- ROW-8 OPEN --> */}
         <Row>
-          <Col md={12} xl={6}>
+          <Col md={12} xl={12}>
             <Card>
               <Card.Header>
                 <Card.Title>Loading button</Card.Title>
@@ -1276,13 +1253,13 @@ const Buttons = () => {
               <Card.Body>
                 <div className="text-wrap">
                   <p>
-                    Add <code className="highlighter-rouge">.btn-loading</code>{" "}
+                    Add <code className="highlighter-rouge">.btn-loading</code>
                     to use a loading state on a button. The width of the button
                     depends on the length of the text inside Since the loading
                     spinner is implemented using the element.
                   </p>
                   <div className="example">
-                    <div className="btn-list">
+                    <div className="btn-list d-flex">
                       <Button className="btn-loading" variant="primary">
                         Button text
                       </Button>
@@ -1309,7 +1286,7 @@ const Buttons = () => {
                 <Collapse in={Loading} className="mt-2">
                   <pre>
                     <code>
-                      {`<div className="btn-list">
+                      {`<div className="btn-list d-flex">
                           <Button className="btn-loading" variant="primary">
                             Button text
                           </Button>
@@ -1344,7 +1321,7 @@ const Buttons = () => {
             </Card>
           </Col>
           {/* <!-- COL END --> */}
-          <Col md={12} xl={6}>
+          <Col md={12} xl={12}>
             <Card>
               <Card.Header>
                 <Card.Title>Button dropdown</Card.Title>
@@ -1361,21 +1338,21 @@ const Buttons = () => {
               <Card.Body>
                 <div className="text-wrap">
                   <p>
-                    Wrap the dropdown’s toggle using different colors and icons
+                    Wrap the dropdown's toggle using different colors and icons
                     implemented in different dropdowns styles (your button or
-                    link) and the dropdown menu within{" "}
+                    link) and the dropdown menu within
                     <code className="highlighter-rouge">.dropdown</code>, or
-                    another element that declares{" "}
+                    another element that declares
                     <code className="highlighter-rouge">
                       position: relative;
                     </code>
-                    . Dropdowns can be triggered from{" "}
-                    <code className="highlighter-rouge">&lt;a&gt;</code> or{" "}
-                    <code className="highlighter-rouge">&lt;button&gt;</code>{" "}
+                    . Dropdowns can be triggered from
+                    <code className="highlighter-rouge">&lt;a&gt;</code> or
+                    <code className="highlighter-rouge">&lt;button&gt;</code>
                     elements to better fit your potential needs.
                   </p>
                   <div className="example">
-                    <div className="btn-list">
+                    <div className="btn-list d-flex">
                       <Dropdown>
                         <Dropdown.Toggle variant="secondary">
                           <i className="fe fe-calendar"></i>
@@ -1479,7 +1456,7 @@ const Buttons = () => {
 
         {/* <!-- ROW-9 OPEN --> */}
         <Row>
-          <Col md={12} xl={6}>
+          <Col md={12} xl={12}>
             <Card>
               <Card.Header>
                 <Card.Title>Basic Button Group</Card.Title>
@@ -1496,9 +1473,9 @@ const Buttons = () => {
               <Card.Body>
                 <div className="text-wrap">
                   <p>
-                    Use any of the available{" "}
-                    <code className="highlighter-rouge">.btn</code> in{" "}
-                    <code className="highlighter-rouge">.btn-group</code>{" "}
+                    Use any of the available
+                    <code className="highlighter-rouge">.btn</code> in
+                    <code className="highlighter-rouge">.btn-group</code>
                     classes to quickly create a styled button.
                   </p>
                   <div className="example">
@@ -1532,7 +1509,7 @@ const Buttons = () => {
             </Card>
           </Col>
           {/* <!-- COL END --> */}
-          <Col md={12} xl={6}>
+          <Col md={12} xl={12}>
             <Card>
               <Card.Header>
                 <Card.Title>Button Toolbar</Card.Title>
@@ -1610,7 +1587,7 @@ const Buttons = () => {
 
         {/* <!-- ROW-10 OPEN --> */}
         <Row>
-          <Col md={12} xl={6}>
+          <Col md={12} xl={12}>
             <Card>
               <Card.Header>
                 <Card.Title>Outline Button Group</Card.Title>
@@ -1627,11 +1604,11 @@ const Buttons = () => {
               <Card.Body>
                 <div className="text-wrap">
                   <p>
-                    Use any of the available{" "}
+                    Use any of the available
                     <code className="highlighter-rouge">
                       .btn .btn-outline-
-                    </code>{" "}
-                    in <code className="highlighter-rouge">.btn-group</code>{" "}
+                    </code>
+                    in <code className="highlighter-rouge">.btn-group</code>
                     classes to quickly create a styled button.
                   </p>
                   <div className="example">
@@ -1659,7 +1636,7 @@ const Buttons = () => {
             </Card>
           </Col>
           {/* <!-- COL END --> */}
-          <Col md={12} xl={6}>
+          <Col md={12} xl={12}>
             <Card>
               <Card.Header>
                 <Card.Title>Min-Width Buttons</Card.Title>
@@ -1676,10 +1653,10 @@ const Buttons = () => {
               <Card.Body>
                 <div className="text-wrap">
                   <p>
-                    Add <code className="highlighter-rouge">.btn</code>,{" "}
-                    <code className="highlighter-rouge">.w-xs</code>,{" "}
-                    <code className="highlighter-rouge">.w-sm</code>,{" "}
-                    <code className="highlighter-rouge">.w-md</code>,{" "}
+                    Add <code className="highlighter-rouge">.btn</code>,
+                    <code className="highlighter-rouge">.w-xs</code>,
+                    <code className="highlighter-rouge">.w-sm</code>,
+                    <code className="highlighter-rouge">.w-md</code>,
                     <code className="highlighter-rouge">.w-lg</code>, classes to
                     quickly create a styled button..
                   </p>
@@ -1729,7 +1706,7 @@ const Buttons = () => {
 
         {/* <!-- ROW-11 OPEN --> */}
         <Row>
-          <Col md={12} xl={6}>
+          <Col md={12} xl={12}>
             <Card>
               <Card.Header>
                 <Card.Title>Checkbox Button Group</Card.Title>
@@ -1746,9 +1723,9 @@ const Buttons = () => {
               <Card.Body>
                 <div className="text-wrap">
                   <p>
-                    Use any of the available{" "}
-                    <code className="highlighter-rouge">.btn</code> in{" "}
-                    <code className="highlighter-rouge">.btn-group</code>{" "}
+                    Use any of the available
+                    <code className="highlighter-rouge">.btn</code> in
+                    <code className="highlighter-rouge">.btn-group</code>
                     classes to quickly create a styled button.
                   </p>
                   <div className="example">
@@ -1788,7 +1765,7 @@ const Buttons = () => {
               </Card.Body>
             </Card>
           </Col>
-          <Col md={12} lg={6}>
+          <Col md={12} lg={12}>
             <Card>
               <Card.Header>
                 <Card.Title>Radio Button Group</Card.Title>
@@ -1805,9 +1782,9 @@ const Buttons = () => {
               <Card.Body>
                 <div className="text-wrap">
                   <p>
-                    Use any of the available{" "}
-                    <code className="highlighter-rouge">.btn</code> in{" "}
-                    <code className="highlighter-rouge">.btn-group</code>{" "}
+                    Use any of the available
+                    <code className="highlighter-rouge">.btn</code> in
+                    <code className="highlighter-rouge">.btn-group</code>
                     classes to quickly create a styled button.
                   </p>
                   <div className="example">
@@ -1848,20 +1825,19 @@ const Buttons = () => {
             </Card>
           </Col>
         </Row>
-        {/* <!-- ROW-11 CLOSED --> */}
-
-        {/* <!-- ROW-12 OPEN --> */}
+        {/* <!-- ROW CLOSED --> */}
+        {/* <!-- ROW OPEN --> */}
         <Row>
-          <Col md={12} xl={6}>
+          <Col md={12} xl={12}>
             <Card>
               <Card.Header>
-                <Card.Title>Button Group Sizes</Card.Title>
+                <Card.Title>Icon buttons</Card.Title>
                 <Form className="ms-auto">
                   <Form.Check
                     type="switch"
                     label="Show Code"
                     id="custom-switch"
-                    onClick={() => setBtngrpSize(!BtngrpSize)}
+                    onClick={() => setIconbtn(!Iconbtn)}
                     className="showcode d-flex ms-auto mx-2"
                   />
                 </Form>
@@ -1869,52 +1845,61 @@ const Buttons = () => {
               <Card.Body>
                 <div className="text-wrap">
                   <p>
-                    Use any of the available{" "}
-                    <code className="highlighter-rouge">.btn-group-*</code> in{" "}
-                    <code className="highlighter-rouge">.btn-group</code>{" "}
-                    classes to quickly create a styled button.
+                    Icon only button. Add
+                    <code className="highlighter-rouge">.btn-icon</code> classes
+                    to quickly create a styled button..
                   </p>
                   <div className="example">
-                    <ButtonGroup className="btn-group-lg mb-3">
-                      <Button variant="primary">Left</Button>
-                      <Button variant="primary">Middle</Button>
-                      <Button variant="primary">Right</Button>
-                    </ButtonGroup>
-                    <br />
-                    <ButtonGroup className="mb-3">
-                      <Button variant="primary">Left</Button>
-                      <Button variant="primary">Middle</Button>
-                      <Button variant="primary">Right</Button>
-                    </ButtonGroup>
-                    <br />
-                    <ButtonGroup className="btn-group-sm">
-                      <Button variant="primary">Left</Button>
-                      <Button variant="primary">Middle</Button>
-                      <Button variant="primary">Right</Button>
-                    </ButtonGroup>
+                    <div className="btn-list">
+                      <Button className="btn-icon" variant="primary">
+                        <i className="fe fe-activity"></i>
+                      </Button>
+                      <Button className="btn-icon" variant="github">
+                        <i className="fe fe-github"></i>
+                      </Button>
+                      <Button className="btn-icon" variant="success">
+                        <i className="fe fe-bell"></i>
+                      </Button>
+                      <Button className="btn-icon" variant="warning">
+                        <i className="fe fe-star"></i>
+                      </Button>
+                      <Button className="btn-icon" variant="danger">
+                        <i className="fe fe-trash"></i>
+                      </Button>
+                      <Button className="btn-icon" variant="purple">
+                        <i className="fe fe-mail"></i>
+                      </Button>
+                      <Button className="btn-icon" variant="secondary">
+                        <i className="fe fe-git-merge"></i>
+                      </Button>
+                    </div>
                   </div>
                 </div>
-                <Collapse in={BtngrpSize} className="mt-2">
+                <Collapse in={Iconbtn} className="mt-2">
                   <pre>
                     <code>
-                      {`<div className="example">
-                          <ButtonGroup className="btn-group-lg mb-3">
-                            <Button variant="primary">Left</Button>
-                            <Button variant="primary">Middle</Button>
-                            <Button variant="primary">Right</Button>
-                          </ButtonGroup>
-                          <br />
-                          <ButtonGroup className="mb-3">
-                            <Button variant="primary">Left</Button>
-                            <Button variant="primary">Middle</Button>
-                            <Button variant="primary">Right</Button>
-                          </ButtonGroup>
-                          <br />
-                          <ButtonGroup className="btn-group-sm">
-                            <Button variant="primary">Left</Button>
-                            <Button variant="primary">Middle</Button>
-                            <Button variant="primary">Right</Button>
-                          </ButtonGroup>
+                      {`<div className="btn-list">
+                          <Button className="btn-icon" variant="primary">
+                            <i className="fe fe-activity"></i>
+                          </Button>
+                          <Button className="btn-icon" variant="github">
+                            <i className="fe fe-github"></i>
+                          </Button>
+                          <Button className="btn-icon" variant="success">
+                            <i className="fe fe-bell"></i>
+                          </Button>
+                          <Button className="btn-icon" variant="warning">
+                            <i className="fe fe-star"></i>
+                          </Button>
+                          <Button className="btn-icon" variant="danger">
+                            <i className="fe fe-trash"></i>
+                          </Button>
+                          <Button className="btn-icon" variant="purple">
+                            <i className="fe fe-mail"></i>
+                          </Button>
+                          <Button className="btn-icon" variant="secondary">
+                            <i className="fe fe-git-merge"></i>
+                          </Button>
                         </div>`}
                     </code>
                   </pre>
@@ -1923,74 +1908,86 @@ const Buttons = () => {
             </Card>
           </Col>
           {/* <!-- COL END --> */}
-          <Col md={12} xl={6}>
+          <Col md={12} xl={12}>
             <Card>
               <Card.Header>
-                <Card.Title>Vertical Button Group</Card.Title>
+                <Card.Title>Social buttons</Card.Title>
                 <Form className="ms-auto">
                   <Form.Check
                     type="switch"
                     label="Show Code"
                     id="custom-switch"
-                    onClick={() => setVerticalBtngrp(!VerticalBtngrp)}
+                    onClick={() => setSocial(!Social)}
                     className="showcode d-flex ms-auto mx-2"
                   />
                 </Form>
               </Card.Header>
               <Card.Body>
                 <div className="text-wrap">
-                  <p>
-                    Use any of the available{" "}
-                    <code className="highlighter-rouge">
-                      .btn-group-vertical
-                    </code>{" "}
-                    classes to quickly create a styled button.
-                  </p>
+                  <p>You can use only icons.</p>
                   <div className="example">
-                    <ButtonGroup vertical>
-                      <Button variant="primary">Button</Button>
-                      <Button variant="primary">Button</Button>
-                      <Dropdown>
-                        <Dropdown.Toggle className="br-0">
-                          Dropdown
-                        </Dropdown.Toggle>
-                        <Dropdown.Menu>
-                          <Dropdown.Item eventKey="1">
-                            Dropdown Link
-                          </Dropdown.Item>
-                          <Dropdown.Item eventKey="2">
-                            Dropdown Link
-                          </Dropdown.Item>
-                        </Dropdown.Menu>
-                      </Dropdown>
-                      <Button variant="primary">Button</Button>
-                      <Button variant="primary">Button</Button>
-                    </ButtonGroup>
+                    <div className="btn-list">
+                      <Button className="btn-icon" variant="facebook">
+                        <i className="fa fa-facebook"></i>
+                      </Button>
+                      <Button className="btn-icon" variant="twitter">
+                        <i className="fa fa-twitter"></i>
+                      </Button>
+                      <Button className="btn-icon" variant="google">
+                        <i className="fa fa-google"></i>
+                      </Button>
+                      <Button className="btn-icon" variant="youtube">
+                        <i className="fa fa-youtube"></i>
+                      </Button>
+                      <Button className="btn-icon" variant="vimeo">
+                        <i className="fa fa-vimeo"></i>
+                      </Button>
+                      <Button className="btn-icon" variant="dribbble">
+                        <i className="fa fa-dribbble"></i>
+                      </Button>
+                      <Button className="btn-icon" variant="github">
+                        <i className="fa fa-github"></i>
+                      </Button>
+                      <Button className="btn-icon" variant="instagram">
+                        <i className="fa fa-instagram"></i>
+                      </Button>
+                      <Button className="btn-icon" variant="pinterest">
+                        <i className="fa fa-pinterest"></i>
+                      </Button>
+                    </div>
                   </div>
                 </div>
-                <Collapse in={VerticalBtngrp} className="mt-2">
+                <Collapse in={Social} className="mt-2">
                   <pre>
                     <code>
-                      {`<div className="example">
-                          <ButtonGroup vertical>
-                            <Button variant="primary">Button</Button>
-                            <Button variant="primary">Button</Button>
-                            <Dropdown>
-                              <Dropdown.Toggle className="br-0">
-                                Dropdown
-                              </Dropdown.Toggle>
-                              <Dropdown.Menu>
-                                <Dropdown.Item eventKey="1">
-                                  Dropdown Link
-                                </Dropdown.Item>
-                                <Dropdown.Item eventKey="2">
-                                  Dropdown Link
-                                </Dropdown.Item>
-                              </Dropdown.Menu>
-                            </Dropdown>
-                            <Button variant="primary">Button</Button>
-                            <Button variant="primary">Button</Button>
-                          </ButtonGroup>
+                      {` <div className="btn-list">
+                          <Button className="btn-icon" variant="facebook">
+                            <i className="fa fa-facebook"></i>
+                          </Button>
+                          <Button className="btn-icon" variant="twitter">
+                            <i className="fa fa-twitter"></i>
+                          </Button>
+                          <Button className="btn-icon" variant="google">
+                            <i className="fa fa-google"></i>
+                          </Button>
+                          <Button className="btn-icon" variant="youtube">
+                            <i className="fa fa-youtube"></i>
+                          </Button>
+                          <Button className="btn-icon" variant="vimeo">
+                            <i className="fa fa-vimeo"></i>
+                          </Button>
+                          <Button className="btn-icon" variant="dribbble">
+                            <i className="fa fa-dribbble"></i>
+                          </Button>
+                          <Button className="btn-icon" variant="github">
+                            <i className="fa fa-github"></i>
+                          </Button>
+                          <Button className="btn-icon" variant="instagram">
+                            <i className="fa fa-instagram"></i>
+                          </Button>
+                          <Button className="btn-icon" variant="pinterest">
+                            <i className="fa fa-pinterest"></i>
+                          </Button>
                         </div>`}
                     </code>
                   </pre>
@@ -2000,7 +1997,7 @@ const Buttons = () => {
           </Col>
           {/* <!-- COL END --> */}
         </Row>
-        {/* <!-- ROW-12 CLOSED --> */}
+        {/* <!-- ROW-5 CLOSED --> */}
       </div>
     </React.Fragment>
   );

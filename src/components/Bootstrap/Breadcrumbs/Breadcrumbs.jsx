@@ -20,7 +20,7 @@ const Breadcrumbs = () => {
         />
         {/* <!-- ROW-1 OPEN --> */}
         <Row>
-          <Col md={12} xl={6}>
+          <Col md={12} xl={12}>
             <Card>
               <Card.Header className="d-flex">
                 <Card.Title>Simple Breadcrumbs</Card.Title>
@@ -77,7 +77,7 @@ const Breadcrumbs = () => {
             </Card>
           </Col>
           {/* <!-- COL-END --> */}
-          <Col md={12} xl={6}>
+          <Col md={12} xl={12}>
             <Card>
               <Card.Header className="d-flex">
                 <Card.Title>Breadcrumbs Example2</Card.Title>
@@ -171,7 +171,7 @@ const Breadcrumbs = () => {
             </Card>
           </Col>
           {/* <!-- COL-END --> */}
-          <Col md={12} xl={6}>
+          <Col md={12} xl={12}>
             <Card>
               <Card.Header className="d-flex">
                 <Card.Title>Breadcrumbs Example2</Card.Title>
@@ -265,7 +265,7 @@ const Breadcrumbs = () => {
             </Card>
           </Col>
           {/* <!-- COL-END --> */}
-          <Col xl={6} md={12}>
+          <Col xl={12} md={12}>
             <Card>
               <Card.Header className="d-flex">
                 <Card.Title>Breadcrumbs-Center align</Card.Title>
@@ -358,7 +358,7 @@ const Breadcrumbs = () => {
             </Card>
           </Col>
           {/* <!-- COL-END --> */}
-          <Col xl={6} md={12}>
+          <Col xl={12} md={12}>
             <Card>
               <Card.Header className="d-flex">
                 <Card.Title>Breadcrumbs-Right align</Card.Title>
@@ -455,7 +455,7 @@ const Breadcrumbs = () => {
             </Card>
           </Col>
           {/* <!-- COL-END --> */}
-          <Col xl={6} md={12}>
+          <Col xl={12} md={12}>
             <Card>
               <Card.Header className="d-flex">
                 <Card.Title>Color Breadcrumbs</Card.Title>

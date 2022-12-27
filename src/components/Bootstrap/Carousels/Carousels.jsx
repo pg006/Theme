@@ -57,102 +57,66 @@ const Carousels = () => {
                 <Collapse in={Default} className="mt-2">
                   <pre>
                     <code>
-                      {`
-                        export class DefaultCarousel extends Component {
-                        render() {
-                            const settings = {
-                                dots: false,
-                                infinite: true,
-                                speed: 500,
-                                slidesToShow: 1,
-                                slidesToScroll: 1,
-                                arrows: false,
-                                autoplay: true,
-                                autoplaySpeed: 2000,
-                                cssEase: "linear",
-                            };
-                        return (
-                            <div>
-                              <Slider {...settings}>
+                      {`export const DefaultCarousel = () => {
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    cssEase: "linear",
+  };
+  return (
+    <React.Fragment>
+      <Slider {...settings}>
+        <img
+          className="d-block w-100 br-5"
+          alt=""
+          src={S1}
+          data-bs-holder-rendered="true"
+        />
 
-                                <img className="d-block w-100 br-5" alt="" src={require("../../assets/images/media/19.jpg")} data-bs-holder-rendered="true" />
+        <img
+          className="d-block w-100 br-5"
+          alt=""
+          src={S2}
+          data-bs-holder-rendered="true"
+        />
 
-                                <img className="d-block w-100 br-5" alt="" src={require("../../assets/images/media/20.jpg")} data-bs-holder-rendered="true" />
+        <img
+          className="d-block w-100 br-5"
+          alt=""
+          src={S3}
+          data-bs-holder-rendered="true"
+        />
 
-                                <img className="d-block w-100 br-5" alt="" src={require("../../assets/images/media/21.jpg")} data-bs-holder-rendered="true" />
+        <img
+          className="d-block w-100 br-5"
+          alt=""
+          src={S4}
+          data-bs-holder-rendered="true"
+        />
 
-                                <img className="d-block w-100 br-5" alt="" src={require("../../assets/images/media/22.jpg")} data-bs-holder-rendered="true" />
-
-                                <img className="d-block w-100 br-5" alt="" src={require("../../assets/images/media/23.jpg")} data-bs-holder-rendered="true" />
-                              </Slider>
-                            </div>
-                              );
-                          }
-                        }`}
+        <img
+          className="d-block w-100 br-5"
+          alt=""
+          src={S5}
+          data-bs-holder-rendered="true"
+        />
+      </Slider>
+    </React.Fragment>
+  );
+};`}
                     </code>
                   </pre>
                 </Collapse>
               </Card.Body>
             </Card>
           </Col>
-          <Col lg={6} xl={4}>
-            <Card>
-              <Card.Header>
-                <Card.Title as="h3">Carousel with indicators</Card.Title>
-                <Form className="ms-auto">
-                  <Form.Check
-                    type="switch"
-                    label="Show Code"
-                    id="custom-switch"
-                    onClick={() => setIndicator(!Indicator)}
-                    className="showcode d-flex ms-auto mx-2"
-                  />
-                </Form>
-              </Card.Header>
-              <Card.Body className="h-100">
-                <CarouselwithIndicator />
 
-                <Collapse in={Indicator} className="mt-2">
-                  <pre>
-                    <code>
-                      {`
-                      export class CarouselwithIndicator extends Component {
-                      render() {
-                        const settings = {
-                          dots: true,
-                          infinite: true,
-                          speed: 500,
-                          slidesToShow: 1,
-                          slidesToScroll: 1,
-                          arrows: false,
-                          autoplay: true,
-                          autoplaySpeed: 2000,
-                          cssEase: "linear"
-                        };
-                      return (
-                      <div>
-                        <Slider {...settings}>
-
-                            <img className="d-block w-100 br-5" alt="" src={require("../../assets/images/media/24.jpg")}/>
-
-                            <img className="d-block w-100 br-5" alt="" src={require("../../assets/images/media/25.jpg")}/>
-
-                            <img className="d-block w-100 br-5" alt="" src={require("../../assets/images/media/1.jpg")}/>
-
-                            <img className="d-block w-100 br-5" alt="" src={require("../../assets/images/media/2.jpg")}/>
-
-                            <img className="d-block w-100 br-5" alt="" src={require("../../assets/images/media/3.jpg")}/>
-                        </Slider>
-                      </div>
-                      );
-                    }
-                  }`}
-                    </code>
-                  </pre>
-                </Collapse>
-              </Card.Body>
-            </Card>
-          </Col>
           <Col lg={6} xl={4}>
             <Card>
               <Card.Header>
@@ -173,41 +137,41 @@ const Carousels = () => {
                   <pre>
                     <code>
                       {`
-                      export class CarouselwithControls extends Component {
-                        render() {
-                            const settings = {
-                                dots: false,
-                                infinite: true,
-                                speed: 500,
-                                slidesToShow: 1,
-                                slidesToScroll: 1,
-                                arrows: true,
-                                autoplay: false,
-                                autoplaySpeed: 2000,
-                                cssEase: "linear"
-                            };
-                            return (
-                                <div>
-                                  <Slider {...settings}>
-                
-                                    <img className="d-block w-100 br-5" alt="" src={require("../../assets/images/media/4.jpg")}/>
-
-                                    <img className="d-block w-100 br-5" alt="" src={require("../../assets/images/media/5.jpg")}/>
-
-                                    <img className="d-block w-100 br-5" alt="" src={require("../../assets/images/media/6.jpg")}/>
-
-                                    <img className="d-block w-100 br-5" alt="" src={require("../../assets/images/media/7.jpg")}/>
-
-                                    <img className="d-block w-100 br-5" alt="" src={require("../../assets/images/media/8.jpg")}/>
-                                  </Slider>
-                                </div>
-                            );}}`}
+                      export const CarouselwithControls = () => {
+                        const settings = {
+                          dots: false,
+                          infinite: true,
+                          speed: 500,
+                          slidesToShow: 1,
+                          slidesToScroll: 1,
+                          arrows: true,
+                          autoplay: false,
+                          autoplaySpeed: 2000,
+                          cssEase: "linear",
+                        };
+                        return (
+                          <div>
+                            <Slider {...settings}>
+                              <img className="d-block w-100 br-5" alt="" src={S11} />
+                      
+                              <img className="d-block w-100 br-5" alt="" src={S12} />
+                      
+                              <img className="d-block w-100 br-5" alt="" src={S13} />
+                      
+                              <img className="d-block w-100 br-5" alt="" src={S14} />
+                      
+                              <img className="d-block w-100 br-5" alt="" src={S15} />
+                            </Slider>
+                          </div>
+                        );
+                      };`}
                     </code>
                   </pre>
                 </Collapse>
               </Card.Body>
             </Card>
           </Col>
+
           <Col lg={6} xl={4}>
             <Card>
               <Card.Header>
@@ -227,214 +191,59 @@ const Carousels = () => {
                 <Collapse in={Bootstrap} className="mt-2">
                   <pre>
                     <code>
-                      {`
-                        export function CarouselwithCaption() {
-                        
-                          return (
+                     {`
+                     export const CarouselwithCaption = () => {
+                      return (
                         <Carousel>
                           <Carousel.Item>
-                              <img
-                                  className="d-block w-100 br-5 active"
-                                  src={require("../../assets/images/media/9.jpg")}
-                                  alt="First slide"
-                              />
-                              <Carousel.Caption>
+                            <img className="d-block w-100 br-5 active" src={S6} alt="First slide" />
+                            <Carousel.Caption>
                               <h3>Slide label</h3>
                               <p>Secure other greater pleasures</p>
-                              </Carousel.Caption>
+                            </Carousel.Caption>
                           </Carousel.Item>
                           <Carousel.Item>
-                              <img
-                                  className="d-block w-100 br-5"
-                                  src={require("../../assets/images/media/10.jpg")}
-                                  alt="Second slide"
-                              />
-                          
-                              <Carousel.Caption>
+                            <img className="d-block w-100 br-5" src={S7} alt="Second slide" />
+                    
+                            <Carousel.Caption>
                               <h3>Slide label</h3>
                               <p>Secure other greater pleasures</p>
-                              </Carousel.Caption>
+                            </Carousel.Caption>
                           </Carousel.Item>
                           <Carousel.Item>
-                              <img
-                                  className="d-block w-100 br-5"
-                                  src={require("../../assets/images/media/11.jpg")}
-                                  alt="Third slide"
-                              />
-                              
-                              <Carousel.Caption>
+                            <img className="d-block w-100 br-5" src={S8} alt="Third slide" />
+                    
+                            <Carousel.Caption>
                               <h3>Slide label</h3>
                               <p>Secure other greater pleasures</p>
-                              </Carousel.Caption>
+                            </Carousel.Caption>
                           </Carousel.Item>
                           <Carousel.Item>
-                              <img
-                                  className="d-block w-100 br-5"
-                                  src={require("../../assets/images/media/12.jpg")}
-                                  alt="Third slide"
-                              />
-                              
-                              <Carousel.Caption>
+                            <img className="d-block w-100 br-5" src={S9} alt="Third slide" />
+                    
+                            <Carousel.Caption>
                               <h3>Slide label</h3>
                               <p>Secure other greater pleasures</p>
-                              </Carousel.Caption>
+                            </Carousel.Caption>
                           </Carousel.Item>
                           <Carousel.Item>
-                              <img
-                                  className="d-block w-100 br-5"
-                                  src={require("../../assets/images/media/13.jpg")}
-                                  alt="Third slide"
-                              />
-                              
-                              <Carousel.Caption>
+                            <img className="d-block w-100 br-5" src={S10} alt="Third slide" />
+                    
+                            <Carousel.Caption>
                               <h3>Slide label</h3>
                               <p>Secure other greater pleasures</p>
-                              </Carousel.Caption>
+                            </Carousel.Caption>
                           </Carousel.Item>
                         </Carousel>
-                        )
-                        }`}
+                      );
+                    };`}
                     </code>
                   </pre>
                 </Collapse>
               </Card.Body>
             </Card>
           </Col>
-          <Col lg={6} xl={4}>
-            <Card>
-              <Card.Header>
-                <Card.Title as="h3">Carousel with top indicators</Card.Title>
-                <Form className="ms-auto">
-                  <Form.Check
-                    type="switch"
-                    label="Show Code"
-                    id="custom-switch"
-                    onClick={() => setTop(!Top)}
-                    className="showcode d-flex ms-auto mx-2"
-                  />
-                </Form>
-              </Card.Header>
-              <Card.Body className="h-100">
-                <div
-                  id="carousel-indicators1"
-                  className="carousel slide"
-                  data-bs-ride="carousel"
-                >
-                  <CarouselwithTopIndicator />
-                </div>
-                <Collapse in={Top} className="mt-2">
-                  <pre>
-                    <code>
-                      {`
-                        export class CarouselwithTopIndicator extends Component {
-                         render() {
-                             const settings = {
-                                 dots: true,
-                                 infinite: true,
-                                 speed: 500,
-                                 slidesToShow: 1,
-                                 slidesToScroll: 1,
-                                 arrows: false,
-                                 autoplay: true,
-                                 autoplaySpeed: 2000,
-                                 cssEase: "linear"
-                             };
-                             return (
-                                 <div className="Top">
-                                     <Slider {...settings}>
-
-                                                 <img className="d-block w-100 br-5" alt="" src={require("../../assets/images/media/14.jpg")}/>
-
-                                                 <img className="d-block w-100 br-5" alt="" src={require("../../assets/images/media/15.jpg")}/>
-
-                                                 <img className="d-block w-100 br-5" alt="" src={require("../../assets/images/media/16.jpg")}/>
-
-                                                 <img className="d-block w-100 br-5" alt="" src={require("../../assets/images/media/17.jpg")}/>
-
-                                                 <img className="d-block w-100 br-5" alt="" src={require("../../assets/images/media/18.jpg")}/>
-                                     </Slider>
-                                 </div>
-                             );
-                         }
-                        }
-`}
-                    </code>
-                  </pre>
-                </Collapse>
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col lg={6} xl={4}>
-            <Card>
-              <Card.Header>
-                <Card.Title as="h3">
-                  Carousel with top-right indicators
-                </Card.Title>
-                <Form className="ms-auto">
-                  <Form.Check
-                    type="switch"
-                    label="Show Code"
-                    id="custom-switch"
-                    onClick={() => setTopRight(!TopRight)}
-                    className="showcode d-flex ms-auto mx-2"
-                  />
-                </Form>
-              </Card.Header>
-              <Card.Body className="h-100">
-                <div
-                  id="carousel-indicators2"
-                  className="carousel slide"
-                  data-bs-ride="carousel"
-                >
-                  <CarouselwithTopRightIndicator />
-                </div>
-                <Collapse in={TopRight} className="mt-2">
-                  <pre>
-                    <code>
-                      {`
-                        export class CarouselwithTopRightIndicator extends Component {
-                         render() {
-                             const settings = {
-                                 dots: true,
-                                 infinite: true,
-                                 speed: 500,
-                                 slidesToShow: 1,
-                                 slidesToScroll: 1,
-                                 arrows: false,
-                                 autoplay: true,
-                                 autoplaySpeed: 2000,
-                                 cssEase: "linear"
-                             };
-                             return (
-                                 <div className="Top-right">
-                                     <Slider {...settings}>
-
-                                                 <img className="d-block w-100 br-5" alt="" src={require("../../assets/images/media/19.jpg")}/>
-
-                                                 <img className="d-block w-100 br-5" alt="" src={require("../../assets/images/media/20.jpg")}/>
-
-                                                 <img className="d-block w-100 br-5" alt="" src={require("../../assets/images/media/21.jpg")}/>
-
-                                                 <img className="d-block w-100 br-5" alt="" src={require("../../assets/images/media/22.jpg")}/>
-
-                                                 <img className="d-block w-100 br-5" alt="" src={require("../../assets/images/media/23.jpg")}/>
-                                     </Slider>
-                                 </div>
-                             );
-                         }
-                        }
-`}
-                    </code>
-                  </pre>
-                </Collapse>
-              </Card.Body>
-            </Card>
-          </Col>
-        </Row>
-        {/* <!-- ROW-1 CLOSED --> */}
-
-        {/* <!-- ROW-2 OPEN --> */}
-        <Row>
+          
           <Col lg={6} xl={4}>
             <Card>
               <Card.Header>
@@ -463,109 +272,167 @@ const Carousels = () => {
                   <pre>
                     <code>
                       {`
-                        export class CarouselwithTopLeftIndicator extends Component {
-                         render() {
-                             const settings = {
-                                 dots: true,
-                                 infinite: true,
-                                 speed: 500,
-                                 slidesToShow: 1,
-                                 slidesToScroll: 1,
-                                 arrows: false,
-                                 autoplay: true,
-                                 autoplaySpeed: 2000,
-                                 cssEase: "linear"
-                             };
-                             return (
-                                 <div className="Top-left">
-                                     <Slider {...settings}>
-                              
-                                                 <img className="d-block w-100 br-5" alt="" src={require("../../assets/images/media/24.jpg")}/>
-                              
-                                                 <img className="d-block w-100 br-5" alt="" src={require("../../assets/images/media/25.jpg")}/>
-                              
-                                                 <img className="d-block w-100 br-5" alt="" src={require("../../assets/images/media/1.jpg")}/>
-                              
-                                                 <img className="d-block w-100 br-5" alt="" src={require("../../assets/images/media/2.jpg")}/>
-                              
-                                                 <img className="d-block w-100 br-5" alt="" src={require("../../assets/images/media/3.jpg")}/>
-                                     </Slider>
-                                 </div>
-                             );
-                         }
-`}
+                      export const CarouselwithTopLeftIndicator = () => {
+                        const settings = {
+                          dots: true,
+                          infinite: true,
+                          speed: 500,
+                          slidesToShow: 1,
+                          slidesToScroll: 1,
+                          arrows: false,
+                          autoplay: true,
+                          autoplaySpeed: 2000,
+                          cssEase: "linear",
+                        };
+                        return (
+                          <div className="Top-left">
+                            <Slider {...settings}>
+                              <img className="d-block w-100 br-5" alt="" src={L1} />
+                    
+                              <img className="d-block w-100 br-5" alt="" src={L2} />
+                    
+                              <img className="d-block w-100 br-5" alt="" src={L3} />
+                    
+                              <img className="d-block w-100 br-5" alt="" src={L4} />
+                    
+                              <img className="d-block w-100 br-5" alt="" src={L5} />
+                            </Slider>
+                          </div>
+                        );
+                      }`}
                     </code>
                   </pre>
                 </Collapse>
               </Card.Body>
             </Card>
           </Col>
-          {/* <!-- COL-END --> */}
+
           <Col lg={6} xl={4}>
             <Card>
               <Card.Header>
-                <Card.Title as="h3">
-                  Carousel with bottom-right indicators
-                </Card.Title>
+                <Card.Title as="h3">Carousel with top indicators</Card.Title>
                 <Form className="ms-auto">
                   <Form.Check
                     type="switch"
                     label="Show Code"
                     id="custom-switch"
-                    onClick={() => setBottomRight(!BottomRight)}
+                    onClick={() => setTop(!Top)}
                     className="showcode d-flex ms-auto mx-2"
                   />
                 </Form>
               </Card.Header>
               <Card.Body className="h-100">
                 <div
-                  id="carousel-indicators4"
+                  id="carousel-indicators1"
                   className="carousel slide"
                   data-bs-ride="carousel"
                 >
-                  <CarouselwithbottomRightIndicator />
+                  <CarouselwithTopIndicator />
                 </div>
-                <Collapse in={BottomRight} className="mt-2">
+                <Collapse in={Top} className="mt-2">
                   <pre>
                     <code>
-                      {`
-                        export class CarouselwithbottomRightIndicator extends Component {
-                         render() {
-                             const settings = {
-                                 dots: true,
-                                 infinite: true,
-                                 speed: 500,
-                                 slidesToShow: 1,
-                                 slidesToScroll: 1,
-                                 arrows: false,
-                                 autoplay: true,
-                                 autoplaySpeed: 2000,
-                                 cssEase: "linear"
-                             };
-                             return (
-                                 <div className="bottom-right">
-                                     <Slider {...settings}>
-                              
-                                                 <img className="d-block w-100 br-5" alt="" src={require("../../assets/images/media/4.jpg")}/>
-                              
-                                                 <img className="d-block w-100 br-5" alt="" src={require("../../assets/images/media/5.jpg")}/>
-                              
-                                                 <img className="d-block w-100 br-5" alt="" src={require("../../assets/images/media/6.jpg")}/>
-                              
-                                                 <img className="d-block w-100 br-5" alt="" src={require("../../assets/images/media/7.jpg")}/>
-                              
-                                                 <img className="d-block w-100 br-5" alt="" src={require("../../assets/images/media/8.jpg")}/>
-                                     </Slider>
-                                 </div>
-                             );
-`}
+                     {`
+                     export const CarouselwithTopIndicator = () => {
+                      const settings = {
+                        dots: true,
+                        infinite: true,
+                        speed: 500,
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        arrows: false,
+                        autoplay: true,
+                        autoplaySpeed: 2000,
+                        cssEase: "linear",
+                      };
+                      return (
+                        <div className="Top">
+                          <Slider {...settings}>
+                            <img className="d-block w-100 br-5" alt="" src={L6} />
+                    
+                            <img className="d-block w-100 br-5" alt="" src={L7} />
+                    
+                            <img className="d-block w-100 br-5" alt="" src={L8} />
+                    
+                            <img className="d-block w-100 br-5" alt="" src={L9} />
+                    
+                            <img className="d-block w-100 br-5" alt="" src={L10} />
+                          </Slider>
+                        </div>
+                      );
+                    };`}
                     </code>
                   </pre>
                 </Collapse>
               </Card.Body>
             </Card>
           </Col>
-          {/* <!-- COL-END --> */}
+
+          <Col lg={6} xl={4}>
+            <Card>
+              <Card.Header>
+                <Card.Title as="h3">
+                  Carousel with top-right indicators
+                </Card.Title>
+                <Form className="ms-auto">
+                  <Form.Check
+                    type="switch"
+                    label="Show Code"
+                    id="custom-switch"
+                    onClick={() => setTopRight(!TopRight)}
+                    className="showcode d-flex ms-auto mx-2"
+                  />
+                </Form>
+              </Card.Header>
+              <Card.Body className="h-100">
+                <div
+                  id="carousel-indicators2"
+                  className="carousel slide"
+                  data-bs-ride="carousel"
+                >
+                  <CarouselwithTopRightIndicator />
+                </div>
+                <Collapse in={TopRight} className="mt-2">
+                  <pre>
+                    <code>
+                      {`
+                      export class CarouselwithbottomRightIndicator extends Component {
+                        render() {
+                          const settings = {
+                            dots: true,
+                            infinite: true,
+                            speed: 500,
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                            arrows: false,
+                            autoplay: true,
+                            autoplaySpeed: 2000,
+                            cssEase: "linear",
+                          };
+                          return (
+                            <div className="bottom-right">
+                              <Slider {...settings}>
+                                <img className="d-block w-100 br-5" alt="" src={img4} />
+                      
+                                <img className="d-block w-100 br-5" alt="" src={img5} />
+                      
+                                <img className="d-block w-100 br-5" alt="" src={img6} />
+                      
+                                <img className="d-block w-100 br-5" alt="" src={img7} />
+                      
+                                <img className="d-block w-100 br-5" alt="" src={img8} />
+                              </Slider>
+                            </div>
+                          );
+                        }
+                      }`}
+                    </code>
+                  </pre>
+                </Collapse>
+              </Card.Body>
+            </Card>
+          </Col>
+
           <Col lg={6} xl={4}>
             <Card>
               <Card.Header>
@@ -631,6 +498,128 @@ const Carousels = () => {
               </Card.Body>
             </Card>
           </Col>
+
+          <Col lg={6} xl={4}>
+            <Card>
+              <Card.Header>
+                <Card.Title as="h3">Carousel with indicators</Card.Title>
+                <Form className="ms-auto">
+                  <Form.Check
+                    type="switch"
+                    label="Show Code"
+                    id="custom-switch"
+                    onClick={() => setIndicator(!Indicator)}
+                    className="showcode d-flex ms-auto mx-2"
+                  />
+                </Form>
+              </Card.Header>
+              <Card.Body className="h-100">
+                <CarouselwithIndicator />
+
+                <Collapse in={Indicator} className="mt-2">
+                  <pre>
+                    <code>
+                      {`
+                      export const CarouselwithIndicator = () => {
+                        const settings = {
+                          dots: true,
+                          infinite: true,
+                          speed: 500,
+                          slidesToShow: 1,
+                          slidesToScroll: 1,
+                          arrows: false,
+                          autoplay: true,
+                          autoplaySpeed: 2000,
+                          cssEase: "linear",
+                        };
+                        return (
+                          <div>
+                            <Slider {...settings}>
+                              <img className="d-block w-100 br-5" alt="" src={S6} />
+                      
+                              <img className="d-block w-100 br-5" alt="" src={S7} />
+                      
+                              <img className="d-block w-100 br-5" alt="" src={S8} />
+                      
+                              <img className="d-block w-100 br-5" alt="" src={S9} />
+                      
+                              <img className="d-block w-100 br-5" alt="" src={S10} />
+                            </Slider>
+                          </div>
+                        );
+                      };`}
+                    </code>
+                  </pre>
+                </Collapse>
+              </Card.Body>
+            </Card>
+          </Col>
+
+          <Col lg={6} xl={4}>
+            <Card>
+              <Card.Header>
+                <Card.Title as="h3">
+                  Carousel with bottom-right indicators
+                </Card.Title>
+                <Form className="ms-auto">
+                  <Form.Check
+                    type="switch"
+                    label="Show Code"
+                    id="custom-switch"
+                    onClick={() => setBottomRight(!BottomRight)}
+                    className="showcode d-flex ms-auto mx-2"
+                  />
+                </Form>
+              </Card.Header>
+              <Card.Body className="h-100">
+                <div
+                  id="carousel-indicators4"
+                  className="carousel slide"
+                  data-bs-ride="carousel"
+                >
+                  <CarouselwithbottomRightIndicator />
+                </div>
+                <Collapse in={BottomRight} className="mt-2">
+                  <pre>
+                    <code>
+                      {`
+                        export class CarouselwithbottomRightIndicator extends Component {
+                         render() {
+                             const settings = {
+                                 dots: true,
+                                 infinite: true,
+                                 speed: 500,
+                                 slidesToShow: 1,
+                                 slidesToScroll: 1,
+                                 arrows: false,
+                                 autoplay: true,
+                                 autoplaySpeed: 2000,
+                                 cssEase: "linear"
+                             };
+                             return (
+                                 <div className="bottom-right">
+                                     <Slider {...settings}>
+                              
+                                                 <img className="d-block w-100 br-5" alt="" src={require("../../assets/images/media/4.jpg")}/>
+                              
+                                                 <img className="d-block w-100 br-5" alt="" src={require("../../assets/images/media/5.jpg")}/>
+                              
+                                                 <img className="d-block w-100 br-5" alt="" src={require("../../assets/images/media/6.jpg")}/>
+                              
+                                                 <img className="d-block w-100 br-5" alt="" src={require("../../assets/images/media/7.jpg")}/>
+                              
+                                                 <img className="d-block w-100 br-5" alt="" src={require("../../assets/images/media/8.jpg")}/>
+                                     </Slider>
+                                 </div>
+                             );
+`}
+                    </code>
+                  </pre>
+                </Collapse>
+              </Card.Body>
+            </Card>
+          </Col>
+
           {/* <!-- COL-END --> */}
           <div className="col-md-12 col-lg-6">
             <Card>

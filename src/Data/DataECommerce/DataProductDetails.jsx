@@ -26,7 +26,7 @@ export default class CenterMode extends Component {
     };
     return (
       <div className=" Product-details slider-carousel">
-        <Slider {...settings}>
+        <Slider {...settings} className='product-slick-slider'>
           <div className="slider-thumb">
             <img
               src={require("../../assets/images/ProductImages/B1.jpg")}
