@@ -2651,6 +2651,43 @@ fieldset:disabled a.btn {
     border-color: #76c9ef;
 }
 
+.btn-outline-pink {
+    color: #ec82ef;
+    background-color: transparent;
+    background-image: none;
+    border-color: #ec82ef;
+}
+
+.btn-outline-pink:hover {
+    color: #fff;
+    background-color: #ec82ef;
+    border-color: #ec82ef;
+}
+
+.btn-outline-pink:focus,
+.btn-outline-pink.focus {
+    box-shadow: 0 0 0 2px rgba(235, 111, 51, 0.9);
+}
+
+.btn-outline-pink.disabled,
+.btn-outline-pink:disabled {
+    color: #ec82ef;
+    background-color: transparent;
+}
+
+.btn-outline-pink:not(:disabled):not(.disabled):active,
+.btn-outline-pink:not(:disabled):not(.disabled).active {
+    color: #fff;
+    background-color: #ec82ef;
+    border-color: #ec82ef;
+}
+
+.show>.btn-outline-pink.dropdown-toggle {
+    color: #fff;
+    background-color: #ec82ef;
+    border-color: #ec82ef;
+}
+
 .btn-outline-success {
     color: #13bfa6;
     background-color: transparent;

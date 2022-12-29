@@ -2011,6 +2011,7 @@ body.dark-mode *:hover::-webkit-scrollbar-thumb {
 
 .dark-mode .example {
     border-color: rgba(255, 255, 255, 0.1);
+    background: #1E4149;
 }
 
 .dark-mode .example-bg {
@@ -3020,7 +3021,7 @@ body.dark-mode *:hover::-webkit-scrollbar-thumb {
 .dark-mode .list-group-item.disabled,
 .dark-mode .list-group-item:disabled {
     color: #545c74;
-    background-color: #252542;
+    background-color: #1E4149;
 }
 
 .dark-mode .list-group-item-primary {

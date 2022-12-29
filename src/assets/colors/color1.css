@@ -148,6 +148,25 @@ a.text-primary:focus {
     opacity: 0.9;
 }
 
+.btn-pink-light {
+    color: #ec82ef;
+    background: #ec82efa5 !important;
+    border-color: #ec82efa5 !important;
+}
+
+.btn-pink-light:hover {
+    color: #fff;
+    background-color: #ec82ef !important;
+    border-color: #ec82ef;
+    opacity: 0.9;
+}
+
+.btn-pink-light:focus,
+.btn-pink-light.focus {
+    box-shadow: 0 0 0 2px var(--primary09);
+    opacity: 0.9;
+}
+
 .btn-primary-gradient {
     color: #fff;
     background: var(--primary-bg-color) !important;

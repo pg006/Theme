@@ -17,7 +17,10 @@ const Paginations = () => {
   const [Disable, setDisable] = useState(false);
   const [Samples, setSamples] = useState(false);
   const [Size, setSize] = useState(false);
-  const [Alignment, setAlignment] = useState(false);
+  const [smSize, setSmSize] = useState(false);
+  const [leftAlignment, setLeftAlignment] = useState(false);
+  const [centerAlignment, setCenterAlignment] = useState(false);
+  const [rightAlignment, setRightAlignment] = useState(false);
 
   return (
     <React.Fragment>
@@ -27,7 +30,7 @@ const Paginations = () => {
           active="Pagination"
           items={["Componets"]}
         />
-        {/* <!-- Row --> */}
+        {/* <--<-- Row -->--> */}
         <Row>
           <Col md={12} xl={6}>
             <Card>
@@ -76,6 +79,7 @@ const Paginations = () => {
               </Card.Body>
             </Card>
           </Col>
+
           <Col md={12} xl={6}>
             <Card>
               <Card.Header>
@@ -121,11 +125,8 @@ const Paginations = () => {
               </Card.Body>
             </Card>
           </Col>
-        </Row>
-        {/* <!-- End Row --> */}
+          {/* <-- COL END --> */}
 
-        {/* <!-- Row --> */}
-        <Row>
           <Col md={12} xl={6}>
             <Card>
               <Card.Header>
@@ -175,6 +176,8 @@ const Paginations = () => {
             </Card>
             {/* <!-- section-wrapper --> */}
           </Col>
+          {/* <-- COL END --> */}
+
           <Col md={12} xl={6}>
             <Card>
               <Card.Header>
@@ -256,15 +259,12 @@ const Paginations = () => {
               </Card.Body>
             </Card>
           </Col>
-        </Row>
-        {/* <!-- End Row --> */}
+          {/* <-- COL END --> */}
 
-        {/* <!-- Row --> */}
-        <Row>
           <Col md={12} xl={6}>
             <Card>
               <Card.Header>
-                <Card.Title>Pagination Sizes</Card.Title>
+                <Card.Title>Pagination Large Sizes</Card.Title>
                 <Form className="ms-auto">
                   <Form.Check
                     type="switch"
@@ -277,9 +277,8 @@ const Paginations = () => {
               </Card.Header>
               <Card.Body>
                 <p>
-                  Use <code className="highlighter-rouge">.pagination-lg</code>{" "}
-                  or <code className="highlighter-rouge">.pagination-sm</code>{" "}
-                  for additional sizes.
+                  Use <code className="highlighter-rouge">.pagination-lg</code>
+                  for large size.
                 </p>
                 <Nav aria-label="Page example">
                   <Pagination size="lg">
@@ -288,17 +287,6 @@ const Paginations = () => {
                     <Pagination.Item>{2}</Pagination.Item>
                     <Pagination.Item>{3}</Pagination.Item>
                     <Pagination.Next />
-                  </Pagination>
-                </Nav>
-                <br />
-                <Nav aria-label="Page example">
-                  <Pagination>
-                    <Pagination.Item>Prev</Pagination.Item>
-                    <Pagination.Item active>{1}</Pagination.Item>
-                    <Pagination.Item>{2}</Pagination.Item>
-                    <Pagination.Item>{3}</Pagination.Item>
-                    <Pagination.Item>{4}</Pagination.Item>
-                    <Pagination.Item>Next</Pagination.Item>
                   </Pagination>
                 </Nav>
                 <Collapse in={Size} className="mt-2">
@@ -314,7 +302,48 @@ const Paginations = () => {
                               <Pagination.Next />
                             </Pagination>
                           </Nav>
-                          <br />
+                        </div>`}
+                    </code>
+                  </pre>
+                </Collapse>
+              </Card.Body>
+            </Card>
+          </Col>
+          {/* <-- COL END --> */}
+
+          <Col md={12} xl={6}>
+            <Card>
+              <Card.Header>
+                <Card.Title>Pagination Small Sizes</Card.Title>
+                <Form className="ms-auto">
+                  <Form.Check
+                    type="switch"
+                    label="Show Code"
+                    id="custom-switch"
+                    onClick={() => setSmSize(!smSize)}
+                    className="showcode d-flex ms-auto mx-2"
+                  />
+                </Form>
+              </Card.Header>
+              <Card.Body>
+                <p>
+                  Use <code className="highlighter-rouge">.pagination-sm</code>
+                  for small sizes.
+                </p>
+                <Nav aria-label="Page example">
+                  <Pagination>
+                    <Pagination.Item>Prev</Pagination.Item>
+                    <Pagination.Item active>{1}</Pagination.Item>
+                    <Pagination.Item>{2}</Pagination.Item>
+                    <Pagination.Item>{3}</Pagination.Item>
+                    <Pagination.Item>{4}</Pagination.Item>
+                    <Pagination.Item>Next</Pagination.Item>
+                  </Pagination>
+                </Nav>
+                <Collapse in={smSize} className="mt-2">
+                  <pre>
+                    <code>
+                      {`<div>
                           <Nav aria-label="Page example">
                             <Pagination>
                               <Pagination.Item>Prev</Pagination.Item>
@@ -332,23 +361,25 @@ const Paginations = () => {
               </Card.Body>
             </Card>
           </Col>
-          <Col md={12} xl={6}>
+          {/* <-- COL END --> */}
+
+          <Col md={6} xl={4}>
             <Card>
               <Card.Header>
-                <Card.Title>Pagination Alignments</Card.Title>
+                <Card.Title>Pagination Left Alignments</Card.Title>
                 <Form className="ms-auto">
                   <Form.Check
                     type="switch"
                     label="Show Code"
                     id="custom-switch"
-                    onClick={() => setAlignment(!Alignment)}
+                    onClick={() => setLeftAlignment(!leftAlignment)}
                     className="showcode d-flex ms-auto mx-2"
                   />
                 </Form>
               </Card.Header>
               <Card.Body>
                 <p>
-                  Change the alignment of pagination components with{" "}
+                  Change the alignment of pagination components with
                   <b>flexbox Utilities</b>
                 </p>
                 <Nav aria-label="Page example" className="justify-content-left">
@@ -360,30 +391,7 @@ const Paginations = () => {
                     <Pagination.Next />
                   </Pagination>
                 </Nav>
-                <br />
-                <Nav
-                  aria-label="Page example"
-                  className="justify-content-center"
-                >
-                  <Pagination>
-                    <Pagination.Prev disabled />
-                    <Pagination.Item>{1}</Pagination.Item>
-                    <Pagination.Item active>{2}</Pagination.Item>
-                    <Pagination.Item>{3}</Pagination.Item>
-                    <Pagination.Next />
-                  </Pagination>
-                </Nav>
-                <br />
-                <Nav aria-label="Page example" className="justify-content-end">
-                  <Pagination>
-                    <Pagination.Prev disabled />
-                    <Pagination.Item>{1}</Pagination.Item>
-                    <Pagination.Item active>{2}</Pagination.Item>
-                    <Pagination.Item>{3}</Pagination.Item>
-                    <Pagination.Next />
-                  </Pagination>
-                </Nav>
-                <Collapse in={Alignment} className="mt-2">
+                <Collapse in={leftAlignment} className="mt-2">
                   <pre>
                     <code>
                       {`<div>
@@ -399,7 +407,50 @@ const Paginations = () => {
                               <Pagination.Next />
                             </Pagination>
                           </Nav>
-                          <br />
+                        </div>`}
+                    </code>
+                  </pre>
+                </Collapse>
+              </Card.Body>
+            </Card>
+          </Col>
+          {/* <-- COL END --> */}
+
+          <Col md={6} xl={4}>
+            <Card>
+              <Card.Header>
+                <Card.Title>Pagination Center Alignments</Card.Title>
+                <Form className="ms-auto">
+                  <Form.Check
+                    type="switch"
+                    label="Show Code"
+                    id="custom-switch"
+                    onClick={() => setCenterAlignment(!centerAlignment)}
+                    className="showcode d-flex ms-auto mx-2"
+                  />
+                </Form>
+              </Card.Header>
+              <Card.Body>
+                <p>
+                  Change the alignment of pagination components with
+                  <b>flexbox Utilities</b>
+                </p>
+                <Nav
+                  aria-label="Page example"
+                  className="justify-content-center"
+                >
+                  <Pagination>
+                    <Pagination.Prev disabled />
+                    <Pagination.Item>{1}</Pagination.Item>
+                    <Pagination.Item active>{2}</Pagination.Item>
+                    <Pagination.Item>{3}</Pagination.Item>
+                    <Pagination.Next />
+                  </Pagination>
+                </Nav>
+                <Collapse in={centerAlignment} className="mt-2">
+                  <pre>
+                    <code>
+                      {`<div>
                           <Nav
                             aria-label="Page example"
                             className="justify-content-center"
@@ -412,7 +463,47 @@ const Paginations = () => {
                               <Pagination.Next />
                             </Pagination>
                           </Nav>
-                          <br />
+                        </div>`}
+                    </code>
+                  </pre>
+                </Collapse>
+              </Card.Body>
+            </Card>
+          </Col>
+          {/* <-- COL END --> */}
+
+          <Col md={6} xl={4}>
+            <Card>
+              <Card.Header>
+                <Card.Title>Pagination Right Alignments</Card.Title>
+                <Form className="ms-auto">
+                  <Form.Check
+                    type="switch"
+                    label="Show Code"
+                    id="custom-switch"
+                    onClick={() => setRightAlignment(!rightAlignment)}
+                    className="showcode d-flex ms-auto mx-2"
+                  />
+                </Form>
+              </Card.Header>
+              <Card.Body>
+                <p>
+                  Change the alignment of pagination components with
+                  <b>flexbox Utilities</b>
+                </p>
+                <Nav aria-label="Page example" className="justify-content-end">
+                  <Pagination>
+                    <Pagination.Prev disabled />
+                    <Pagination.Item>{1}</Pagination.Item>
+                    <Pagination.Item active>{2}</Pagination.Item>
+                    <Pagination.Item>{3}</Pagination.Item>
+                    <Pagination.Next />
+                  </Pagination>
+                </Nav>
+                <Collapse in={rightAlignment} className="mt-2">
+                  <pre>
+                    <code>
+                      {`<div>
                           <Nav
                             aria-label="Page example"
                             className="justify-content-end"
@@ -432,6 +523,7 @@ const Paginations = () => {
               </Card.Body>
             </Card>
           </Col>
+          {/* <-- COL END --> */}
         </Row>
         {/* <!-- End  Row --> */}
       </div>

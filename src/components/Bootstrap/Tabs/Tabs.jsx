@@ -27,9 +27,9 @@ const BoostrapTabs = () => {
     <React.Fragment>
       <div>
         <PageHeader titles="Tabs" active="Tabs" items={["Advanced Elements"]} />
-        {/* <!-- ROW-1 OPEN --> */}
+        {/* <--<-- ROW OPEN -->--> */}
         <Row>
-          <Col xl={6}>
+          <Col xl={12}>
             <Card>
               <Card.Header>
                 <Card.Title>Tabs style</Card.Title>
@@ -47,6 +47,7 @@ const BoostrapTabs = () => {
                 <div className="panel panel-default">
                   <Tabs defaultActiveKey="tab1">
                     <Tab eventKey="tab1" title="Tabs1">
+                      <p>This is Tab 1</p>
                       <p>
                         page editors now use Lorem Ipsum as their default model
                         text, and a search for 'lorem ipsum' will uncover many
@@ -62,8 +63,8 @@ const BoostrapTabs = () => {
                       </p>
                     </Tab>
                     <Tab eventKey="tab2" title="Tabs2">
+                      <p>This is Tab 2</p>
                       <p>
-                        {" "}
                         default model text, and a search for 'lorem ipsum' will
                         uncover many web sites still in their infancy. Various
                         versions have evolved over the years, sometimes by
@@ -78,6 +79,7 @@ const BoostrapTabs = () => {
                       </p>
                     </Tab>
                     <Tab eventKey="tab3" title="Tabs3">
+                      <p>This is Tab 3</p>
                       <p>
                         over the years, sometimes by accident, sometimes on
                         purpose (injected humour and the like
@@ -90,6 +92,7 @@ const BoostrapTabs = () => {
                       </p>
                     </Tab>
                     <Tab eventKey="tab4" title="Tabs4">
+                      <p>This is Tab 4</p>
                       <p>
                         page editors now use Lorem Ipsum as their default model
                         text, and a search for 'lorem ipsum' will uncover many
@@ -109,76 +112,78 @@ const BoostrapTabs = () => {
                 <Collapse in={Default} className="mt-2">
                   <pre>
                     <code>
-                      {`<Tabs defaultActiveKey="tab1">
-                          <Tab eventKey="tab1" title="Tabs1">
-                            <p>
-                              page editors now use Lorem Ipsum as their default
-                              model text, and a search for 'lorem ipsum' will
-                              uncover many web sites still in their infancy.
-                              Various versions have evolved over the years,
-                              sometimes by accident, sometimes on purpose
-                              (injected humour and the like
-                            </p>
-                            <p>
-                              Lorem ipsum dolor sit amet, consetetur sadipscing
-                              elitr, sed diam nonumy eirmod tempor invidunt ut
-                              labore et dolore magna aliquyam erat, sed diam
-                              voluptua. At vero eos et
-                            </p>
-                          </Tab>
-                          <Tab eventKey="tab2" title="Tabs2">
-                            <p>
-                              {" "}
-                              default model text, and a search for 'lorem ipsum'
-                              will uncover many web sites still in their
-                              infancy. Various versions have evolved over the
-                              years, sometimes by accident, sometimes on purpose
-                              (injected humour and the like
-                            </p>
-                            <p>
-                              Lorem ipsum dolor sit amet, consetetur sadipscing
-                              elitr, sed diam nonumy eirmod tempor invidunt ut
-                              labore et dolore magna aliquyam erat, sed diam
-                              voluptua. At vero eos et
-                            </p>
-                          </Tab>
-                          <Tab eventKey="tab3" title="Tabs3">
-                            <p>
-                              over the years, sometimes by accident, sometimes
-                              on purpose (injected humour and the like
-                            </p>
-                            <p>
-                              Lorem ipsum dolor sit amet, consetetur sadipscing
-                              elitr, sed diam nonumy eirmod tempor invidunt ut
-                              labore et dolore magna aliquyam erat, sed diam
-                              voluptua. At vero eos et
-                            </p>
-                          </Tab>
-                          <Tab eventKey="tab4" title="Tabs4">
-                            <p>
-                              page editors now use Lorem Ipsum as their default
-                              model text, and a search for 'lorem ipsum' will
-                              uncover many web sites still in their infancy.
-                              Various versions have evolved over the years,
-                              sometimes by accident, sometimes on purpose
-                              (injected humour and the like
-                            </p>
-                            <p>
-                              Lorem ipsum dolor sit amet, consetetur sadipscing
-                              elitr, sed diam nonumy eirmod tempor invidunt ut
-                              labore et dolore magna aliquyam erat, sed diam
-                              voluptua. At vero eos et
-                            </p>
-                          </Tab>
-                        </Tabs>`}
+                      {`
+                      <Tabs defaultActiveKey="tab1">
+                      <Tab eventKey="tab1" title="Tabs1">
+                        <p>This is Tab 1</p>
+                        <p>
+                          page editors now use Lorem Ipsum as their default model
+                          text, and a search for 'lorem ipsum' will uncover many
+                          web sites still in their infancy. Various versions have
+                          evolved over the years, sometimes by accident, sometimes
+                          on purpose (injected humour and the like
+                        </p>
+                        <p>
+                          Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                          sed diam nonumy eirmod tempor invidunt ut labore et
+                          dolore magna aliquyam erat, sed diam voluptua. At vero
+                          eos et
+                        </p>
+                      </Tab>
+                      <Tab eventKey="tab2" title="Tabs2">
+                        <p>This is Tab 2</p>
+                        <p>
+                          default model text, and a search for 'lorem ipsum' will
+                          uncover many web sites still in their infancy. Various
+                          versions have evolved over the years, sometimes by
+                          accident, sometimes on purpose (injected humour and the
+                          like
+                        </p>
+                        <p>
+                          Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                          sed diam nonumy eirmod tempor invidunt ut labore et
+                          dolore magna aliquyam erat, sed diam voluptua. At vero
+                          eos et
+                        </p>
+                      </Tab>
+                      <Tab eventKey="tab3" title="Tabs3">
+                        <p>This is Tab 3</p>
+                        <p>
+                          over the years, sometimes by accident, sometimes on
+                          purpose (injected humour and the like
+                        </p>
+                        <p>
+                          Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                          sed diam nonumy eirmod tempor invidunt ut labore et
+                          dolore magna aliquyam erat, sed diam voluptua. At vero
+                          eos et
+                        </p>
+                      </Tab>
+                      <Tab eventKey="tab4" title="Tabs4">
+                        <p>This is Tab 4</p>
+                        <p>
+                          page editors now use Lorem Ipsum as their default model
+                          text, and a search for 'lorem ipsum' will uncover many
+                          web sites still in their infancy. Various versions have
+                          evolved over the years, sometimes by accident, sometimes
+                          on purpose (injected humour and the like
+                        </p>
+                        <p>
+                          Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                          sed diam nonumy eirmod tempor invidunt ut labore et
+                          dolore magna aliquyam erat, sed diam voluptua. At vero
+                          eos et
+                        </p>
+                      </Tab>
+                    </Tabs>`}
                     </code>
                   </pre>
                 </Collapse>
               </Card.Body>
             </Card>
           </Col>
-          {/* <!-- COL-END --> */}
-          <Col xl={6}>
+          {/* <--<- COL END ->--> */}
+          <Col xl={12}>
             <Card>
               <Card.Header>
                 <Card.Title>Tabs Style</Card.Title>
@@ -196,6 +201,7 @@ const BoostrapTabs = () => {
                 <div className="panel panel-tabs">
                   <Tabs defaultActiveKey="tab1">
                     <Tab className="tab-pane" eventKey="tab1" title="Tabs1">
+                      <p>This is Tab 1</p>
                       <p>
                         page editors now use Lorem Ipsum as their default model
                         text, and a search for 'lorem ipsum' will uncover many
@@ -211,8 +217,8 @@ const BoostrapTabs = () => {
                       </p>
                     </Tab>
                     <Tab className="tab-pane" eventKey="tab2" title="Tabs2">
+                      <p>This is Tab 2</p>
                       <p>
-                        {" "}
                         default model text, and a search for 'lorem ipsum' will
                         uncover many web sites still in their infancy. Various
                         versions have evolved over the years, sometimes by
@@ -227,6 +233,7 @@ const BoostrapTabs = () => {
                       </p>
                     </Tab>
                     <Tab className="tab-pane" eventKey="tab3" title="Tabs3">
+                      <p>This is Tab 3</p>
                       <p>
                         over the years, sometimes by accident, sometimes on
                         purpose (injected humour and the like
@@ -239,6 +246,7 @@ const BoostrapTabs = () => {
                       </p>
                     </Tab>
                     <Tab className="tab-pane" eventKey="tab4" title="Tabs4">
+                      <p>This is Tab 4</p>
                       <p>
                         page editors now use Lorem Ipsum as their default model
                         text, and a search for 'lorem ipsum' will uncover many
@@ -258,94 +266,78 @@ const BoostrapTabs = () => {
                 <Collapse in={tab} className="mt-2">
                   <pre>
                     <code>
-                      {` <div className="panel panel-tabs">
-                          <Tabs defaultActiveKey="tab1">
-                            <Tab
-                              className="tab-pane"
-                              eventKey="tab1"
-                              title="Tabs1"
-                            >
-                              <p>
-                                page editors now use Lorem Ipsum as their
-                                default model text, and a search for 'lorem
-                                ipsum' will uncover many web sites still in
-                                their infancy. Various versions have evolved
-                                over the years, sometimes by accident, sometimes
-                                on purpose (injected humour and the like
-                              </p>
-                              <p>
-                                Lorem ipsum dolor sit amet, consetetur
-                                sadipscing elitr, sed diam nonumy eirmod tempor
-                                invidunt ut labore et dolore magna aliquyam
-                                erat, sed diam voluptua. At vero eos et
-                              </p>
-                            </Tab>
-                            <Tab
-                              className="tab-pane"
-                              eventKey="tab2"
-                              title="Tabs2"
-                            >
-                              <p>
-                                {" "}
-                                default model text, and a search for 'lorem
-                                ipsum' will uncover many web sites still in
-                                their infancy. Various versions have evolved
-                                over the years, sometimes by accident, sometimes
-                                on purpose (injected humour and the like
-                              </p>
-                              <p>
-                                Lorem ipsum dolor sit amet, consetetur
-                                sadipscing elitr, sed diam nonumy eirmod tempor
-                                invidunt ut labore et dolore magna aliquyam
-                                erat, sed diam voluptua. At vero eos et
-                              </p>
-                            </Tab>
-                            <Tab
-                              className="tab-pane"
-                              eventKey="tab3"
-                              title="Tabs3"
-                            >
-                              <p>
-                                over the years, sometimes by accident, sometimes
-                                on purpose (injected humour and the like
-                              </p>
-                              <p>
-                                Lorem ipsum dolor sit amet, consetetur
-                                sadipscing elitr, sed diam nonumy eirmod tempor
-                                invidunt ut labore et dolore magna aliquyam
-                                erat, sed diam voluptua. At vero eos et
-                              </p>
-                            </Tab>
-                            <Tab
-                              className="tab-pane"
-                              eventKey="tab4"
-                              title="Tabs4"
-                            >
-                              <p>
-                                page editors now use Lorem Ipsum as their
-                                default model text, and a search for 'lorem
-                                ipsum' will uncover many web sites still in
-                                their infancy. Various versions have evolved
-                                over the years, sometimes by accident, sometimes
-                                on purpose (injected humour and the like
-                              </p>
-                              <p>
-                                Lorem ipsum dolor sit amet, consetetur
-                                sadipscing elitr, sed diam nonumy eirmod tempor
-                                invidunt ut labore et dolore magna aliquyam
-                                erat, sed diam voluptua. At vero eos et
-                              </p>
-                            </Tab>
-                          </Tabs>
-                        </div>`}
+                      {`
+                      <Tabs defaultActiveKey="tab1">
+                        <Tab className="tab-pane" eventKey="tab1" title="Tabs1">
+                          <p>This is Tab 1</p>
+                          <p>
+                            page editors now use Lorem Ipsum as their default model
+                            text, and a search for 'lorem ipsum' will uncover many
+                            web sites still in their infancy. Various versions have
+                            evolved over the years, sometimes by accident, sometimes
+                            on purpose (injected humour and the like
+                          </p>
+                          <p>
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                            sed diam nonumy eirmod tempor invidunt ut labore et
+                            dolore magna aliquyam erat, sed diam voluptua. At vero
+                            eos et
+                          </p>
+                        </Tab>
+                        <Tab className="tab-pane" eventKey="tab2" title="Tabs2">
+                          <p>This is Tab 2</p>
+                          <p>
+                            default model text, and a search for 'lorem ipsum' will
+                            uncover many web sites still in their infancy. Various
+                            versions have evolved over the years, sometimes by
+                            accident, sometimes on purpose (injected humour and the
+                            like
+                          </p>
+                          <p>
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                            sed diam nonumy eirmod tempor invidunt ut labore et
+                            dolore magna aliquyam erat, sed diam voluptua. At vero
+                            eos et
+                          </p>
+                        </Tab>
+                        <Tab className="tab-pane" eventKey="tab3" title="Tabs3">
+                          <p>This is Tab 3</p>
+                          <p>
+                            over the years, sometimes by accident, sometimes on
+                            purpose (injected humour and the like
+                          </p>
+                          <p>
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                            sed diam nonumy eirmod tempor invidunt ut labore et
+                            dolore magna aliquyam erat, sed diam voluptua. At vero
+                            eos et
+                          </p>
+                        </Tab>
+                        <Tab className="tab-pane" eventKey="tab4" title="Tabs4">
+                          <p>This is Tab 4</p>
+                          <p>
+                            page editors now use Lorem Ipsum as their default model
+                            text, and a search for 'lorem ipsum' will uncover many
+                            web sites still in their infancy. Various versions have
+                            evolved over the years, sometimes by accident, sometimes
+                            on purpose (injected humour and the like
+                          </p>
+                          <p>
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                            sed diam nonumy eirmod tempor invidunt ut labore et
+                            dolore magna aliquyam erat, sed diam voluptua. At vero
+                            eos et
+                          </p>
+                        </Tab>
+                      </Tabs>`}
                     </code>
                   </pre>
                 </Collapse>
               </Card.Body>
             </Card>
           </Col>
-          {/* <!-- COL-END --> */}
-          <Col xl={6}>
+          {/* <--<- COL END ->--> */}
+          <Col xl={12}>
             <Card>
               <Card.Header>
                 <Card.Title>Tabs style</Card.Title>
@@ -379,7 +371,6 @@ const BoostrapTabs = () => {
                     </Tab>
                     <Tab className="tab-pane" eventKey="tab2" title="Tabs2">
                       <p>
-                        {" "}
                         default model text, and a search for 'lorem ipsum' will
                         uncover many web sites still in their infancy. Various
                         versions have evolved over the years, sometimes by
@@ -453,7 +444,7 @@ const BoostrapTabs = () => {
                               title="Tabs2"
                             >
                               <p>
-                                {" "}
+                                
                                 default model text, and a search for 'lorem
                                 ipsum' will uncover many web sites still in
                                 their infancy. Various versions have evolved
@@ -511,8 +502,8 @@ const BoostrapTabs = () => {
               </Card.Body>
             </Card>
           </Col>
-          {/* <!-- COL-END --> */}
-          <Col xl={6}>
+          {/* <--<- COL END ->--> */}
+          <Col xl={12}>
             <Card>
               <Card.Header>
                 <Card.Title>Tabs Style</Card.Title>
@@ -546,7 +537,6 @@ const BoostrapTabs = () => {
                     </Tab>
                     <Tab className="tab-pane" eventKey="tab2" title="Tabs2">
                       <p>
-                        {" "}
                         default model text, and a search for 'lorem ipsum' will
                         uncover many web sites still in their infancy. Various
                         versions have evolved over the years, sometimes by
@@ -620,7 +610,7 @@ const BoostrapTabs = () => {
                               title="Tabs2"
                             >
                               <p>
-                                {" "}
+                                
                                 default model text, and a search for 'lorem
                                 ipsum' will uncover many web sites still in
                                 their infancy. Various versions have evolved
@@ -678,8 +668,8 @@ const BoostrapTabs = () => {
               </Card.Body>
             </Card>
           </Col>
-          {/* <!-- COL-END --> */}
-          <Col xl={6}>
+          {/* <--<- COL END ->--> */}
+          <Col xl={12}>
             <Card>
               <Card.Header>
                 <Card.Title>Secondary Tabs style</Card.Title>
@@ -744,7 +734,6 @@ const BoostrapTabs = () => {
                       </Tab.Pane>
                       <Tab.Pane eventKey="second">
                         <p>
-                          {" "}
                           default model text, and a search for 'lorem ipsum'
                           will uncover many web sites still in their infancy.
                           Various versions have evolved over the years,
@@ -844,7 +833,7 @@ const BoostrapTabs = () => {
                               </Tab.Pane>
                               <Tab.Pane eventKey="second">
                                 <p>
-                                  {" "}
+                                  
                                   default model text, and a search for 'lorem
                                   ipsum' will uncover many web sites still in
                                   their infancy. Various versions have evolved
@@ -901,8 +890,8 @@ const BoostrapTabs = () => {
               </Card.Body>
             </Card>
           </Col>
-          {/* <!-- COL-END --> */}
-          <Col xl={6}>
+          {/* <--<- COL END ->--> */}
+          <Col xl={12}>
             <Card>
               <Card.Header>
                 <Card.Title>Danger Tabs style</Card.Title>
@@ -967,7 +956,6 @@ const BoostrapTabs = () => {
                       </Tab.Pane>
                       <Tab.Pane eventKey="secondA">
                         <p>
-                          {" "}
                           default model text, and a search for 'lorem ipsum'
                           will uncover many web sites still in their infancy.
                           Various versions have evolved over the years,
@@ -1067,7 +1055,7 @@ const BoostrapTabs = () => {
                               </Tab.Pane>
                               <Tab.Pane eventKey="secondA">
                                 <p>
-                                  {" "}
+                                  
                                   default model text, and a search for 'lorem
                                   ipsum' will uncover many web sites still in
                                   their infancy. Various versions have evolved
@@ -1124,8 +1112,8 @@ const BoostrapTabs = () => {
               </Card.Body>
             </Card>
           </Col>
-          {/* <!-- COL-END --> */}
-          <Col xl={6}>
+          {/* <--<- COL END ->--> */}
+          <Col xl={12}>
             <Card>
               <Card.Header>
                 <Card.Title>Success Tabs style</Card.Title>
@@ -1190,7 +1178,6 @@ const BoostrapTabs = () => {
                       </Tab.Pane>
                       <Tab.Pane eventKey="secondB">
                         <p>
-                          {" "}
                           default model text, and a search for 'lorem ipsum'
                           will uncover many web sites still in their infancy.
                           Various versions have evolved over the years,
@@ -1290,7 +1277,7 @@ const BoostrapTabs = () => {
                               </Tab.Pane>
                               <Tab.Pane eventKey="secondB">
                                 <p>
-                                  {" "}
+                                  
                                   default model text, and a search for 'lorem
                                   ipsum' will uncover many web sites still in
                                   their infancy. Various versions have evolved
@@ -1347,8 +1334,8 @@ const BoostrapTabs = () => {
               </Card.Body>
             </Card>
           </Col>
-          {/* <!-- COL-END --> */}
-          <Col xl={6}>
+          {/* <--<- COL END ->--> */}
+          <Col xl={12}>
             <Card>
               <Card.Header>
                 <Card.Title>Info Tabs style</Card.Title>
@@ -1413,7 +1400,6 @@ const BoostrapTabs = () => {
                       </Tab.Pane>
                       <Tab.Pane eventKey="secondC">
                         <p>
-                          {" "}
                           default model text, and a search for 'lorem ipsum'
                           will uncover many web sites still in their infancy.
                           Various versions have evolved over the years,
@@ -1513,7 +1499,7 @@ const BoostrapTabs = () => {
                               </Tab.Pane>
                               <Tab.Pane eventKey="secondC">
                                 <p>
-                                  {" "}
+                                  
                                   default model text, and a search for 'lorem
                                   ipsum' will uncover many web sites still in
                                   their infancy. Various versions have evolved
@@ -1570,7 +1556,7 @@ const BoostrapTabs = () => {
               </Card.Body>
             </Card>
           </Col>
-          {/* <!-- COL-END --> */}
+          {/* <--<- COL END ->--> */}
           <Col md={12}>
             <Card>
               <Card.Header>
@@ -2112,9 +2098,9 @@ const BoostrapTabs = () => {
               </Card.Body>
             </Card>
           </Col>
-          {/* <!-- COL-END --> */}
+          {/* <--<- COL END ->--> */}
         </Row>
-        {/* <!-- ROW-1 CLOSED --> */}
+        {/* <--<-- ROW CLOSED -->--> */}
       </div>
     </React.Fragment>
   );

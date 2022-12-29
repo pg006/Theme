@@ -36,7 +36,7 @@ const Carousels = () => {
           active="Carousel"
           items={["Advanced Elements"]}
         />
-        {/* <!-- ROW-1 OPEN --> */}
+        {/* <--<-- ROW OPEN -->--> */}
         <Row>
           <Col lg={6} xl={4}>
             <Card>
@@ -116,6 +116,7 @@ const Carousels = () => {
               </Card.Body>
             </Card>
           </Col>
+          {/* <-- COL END --> */}
 
           <Col lg={6} xl={4}>
             <Card>
@@ -171,6 +172,7 @@ const Carousels = () => {
               </Card.Body>
             </Card>
           </Col>
+          {/* <-- COL END --> */}
 
           <Col lg={6} xl={4}>
             <Card>
@@ -191,7 +193,7 @@ const Carousels = () => {
                 <Collapse in={Bootstrap} className="mt-2">
                   <pre>
                     <code>
-                     {`
+                      {`
                      export const CarouselwithCaption = () => {
                       return (
                         <Carousel>
@@ -243,7 +245,8 @@ const Carousels = () => {
               </Card.Body>
             </Card>
           </Col>
-          
+          {/* <-- COL END --> */}
+
           <Col lg={6} xl={4}>
             <Card>
               <Card.Header>
@@ -306,6 +309,7 @@ const Carousels = () => {
               </Card.Body>
             </Card>
           </Col>
+          {/* <-- COL END --> */}
 
           <Col lg={6} xl={4}>
             <Card>
@@ -332,7 +336,7 @@ const Carousels = () => {
                 <Collapse in={Top} className="mt-2">
                   <pre>
                     <code>
-                     {`
+                      {`
                      export const CarouselwithTopIndicator = () => {
                       const settings = {
                         dots: true,
@@ -367,6 +371,7 @@ const Carousels = () => {
               </Card.Body>
             </Card>
           </Col>
+          {/* <-- COL END --> */}
 
           <Col lg={6} xl={4}>
             <Card>
@@ -432,6 +437,7 @@ const Carousels = () => {
               </Card.Body>
             </Card>
           </Col>
+          {/* <-- COL END --> */}
 
           <Col lg={6} xl={4}>
             <Card>
@@ -461,43 +467,41 @@ const Carousels = () => {
                   <pre>
                     <code>
                       {`
-                        export class CarouselwithbottomLeftIndicator extends Component {
-                         render() {
-                             const settings = {
-                                 dots: true,
-                                 infinite: true,
-                                 speed: 500,
-                                 slidesToShow: 1,
-                                 slidesToScroll: 1,
-                                 arrows: false,
-                                 autoplay: true,
-                                 autoplaySpeed: 2000,
-                                 cssEase: "linear"
-                             };
-                             return (
-                                 <div className="bottom-left">
-                                     <Slider {...settings}>
-
-                                                 <img className="d-block w-100 br-5" alt="" src={require("../../assets/images/media/9.jpg")}/>
-
-                                                 <img className="d-block w-100 br-5" alt="" src={require("../../assets/images/media/10.jpg")}/>
-
-                                                 <img className="d-block w-100 br-5" alt="" src={require("../../assets/images/media/11.jpg")}/>
-
-                                                 <img className="d-block w-100 br-5" alt="" src={require("../../assets/images/media/12.jpg")}/>
-
-                                                 <img className="d-block w-100 br-5" alt="" src={require("../../assets/images/media/13.jpg")}/>
-                                     </Slider>
-                                 </div>
-                             );
-                         }
-                        }`}
+                    export const CarouselwithbottomLeftIndicator = () => {
+                      const settings = {
+                        dots: true,
+                        infinite: true,
+                        speed: 500,
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        arrows: false,
+                        autoplay: true,
+                        autoplaySpeed: 2000,
+                        cssEase: "linear",
+                      };
+                      return (
+                        <div className="bottom-left">
+                          <Slider {...settings}>
+                            <img className="d-block w-100 br-5" alt="" src={L16} />
+                    
+                            <img className="d-block w-100 br-5" alt="" src={L17} />
+                    
+                            <img className="d-block w-100 br-5" alt="" src={L18} />
+                    
+                            <img className="d-block w-100 br-5" alt="" src={L19} />
+                    
+                            <img className="d-block w-100 br-5" alt="" src={L20} />
+                          </Slider>
+                        </div>
+                      );
+                    };`}
                     </code>
                   </pre>
                 </Collapse>
               </Card.Body>
             </Card>
           </Col>
+          {/* <-- COL END --> */}
 
           <Col lg={6} xl={4}>
             <Card>
@@ -535,15 +539,15 @@ const Carousels = () => {
                         return (
                           <div>
                             <Slider {...settings}>
-                              <img className="d-block w-100 br-5" alt="" src={S6} />
+                              <img className="d-block w-100 br-5" alt="" src={L21} />
                       
-                              <img className="d-block w-100 br-5" alt="" src={S7} />
+                              <img className="d-block w-100 br-5" alt="" src={L22} />
                       
-                              <img className="d-block w-100 br-5" alt="" src={S8} />
+                              <img className="d-block w-100 br-5" alt="" src={L23} />
                       
-                              <img className="d-block w-100 br-5" alt="" src={S9} />
+                              <img className="d-block w-100 br-5" alt="" src={L24} />
                       
-                              <img className="d-block w-100 br-5" alt="" src={S10} />
+                              <img className="d-block w-100 br-5" alt="" src={L25} />
                             </Slider>
                           </div>
                         );
@@ -554,6 +558,7 @@ const Carousels = () => {
               </Card.Body>
             </Card>
           </Col>
+          {/* <-- COL END --> */}
 
           <Col lg={6} xl={4}>
             <Card>
@@ -583,45 +588,147 @@ const Carousels = () => {
                   <pre>
                     <code>
                       {`
-                        export class CarouselwithbottomRightIndicator extends Component {
-                         render() {
-                             const settings = {
-                                 dots: true,
-                                 infinite: true,
-                                 speed: 500,
-                                 slidesToShow: 1,
-                                 slidesToScroll: 1,
-                                 arrows: false,
-                                 autoplay: true,
-                                 autoplaySpeed: 2000,
-                                 cssEase: "linear"
-                             };
-                             return (
-                                 <div className="bottom-right">
-                                     <Slider {...settings}>
-                              
-                                                 <img className="d-block w-100 br-5" alt="" src={require("../../assets/images/media/4.jpg")}/>
-                              
-                                                 <img className="d-block w-100 br-5" alt="" src={require("../../assets/images/media/5.jpg")}/>
-                              
-                                                 <img className="d-block w-100 br-5" alt="" src={require("../../assets/images/media/6.jpg")}/>
-                              
-                                                 <img className="d-block w-100 br-5" alt="" src={require("../../assets/images/media/7.jpg")}/>
-                              
-                                                 <img className="d-block w-100 br-5" alt="" src={require("../../assets/images/media/8.jpg")}/>
-                                     </Slider>
-                                 </div>
-                             );
-`}
+                     export const CarouselwithbottomRightIndicator = () => {
+                      const settings = {
+                        dots: true,
+                        infinite: true,
+                        speed: 500,
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        arrows: false,
+                        autoplay: true,
+                        autoplaySpeed: 2000,
+                        cssEase: "linear",
+                      };
+                      return (
+                        <div className="bottom-right">
+                          <Slider {...settings}>
+                            <img className="d-block w-100 br-5" alt="" src={L26} />
+                    
+                            <img className="d-block w-100 br-5" alt="" src={L27} />
+                    
+                            <img className="d-block w-100 br-5" alt="" src={L28} />
+                    
+                            <img className="d-block w-100 br-5" alt="" src={L29} />
+                    
+                            <img className="d-block w-100 br-5" alt="" src={L30} />
+                          </Slider>
+                        </div>
+                      );
+                    };`}
                     </code>
                   </pre>
                 </Collapse>
               </Card.Body>
             </Card>
           </Col>
+          {/* <-- COL END --> */}
 
-          {/* <!-- COL-END --> */}
-          <div className="col-md-12 col-lg-6">
+          <Col md={12} lg={6}>
+            <Card>
+              <Card.Header>
+                <Card.Title as="h3">
+                  Carousel with GradientBackground caption
+                </Card.Title>
+                <Form className="ms-auto">
+                  <Form.Check
+                    type="switch"
+                    label="Show Code"
+                    id="custom-switch"
+                    onClick={() => setGradientBG(!GradientBG)}
+                    className="showcode d-flex ms-auto mx-2"
+                  />
+                </Form>
+              </Card.Header>
+              <Card.Body className="h-100">
+                <CarouselwithGradientBackgroundCaption />
+                <Collapse in={GradientBG} className="mt-2">
+                  <pre>
+                    <code>
+                      {`
+                    export const CarouselwithGradientBackgroundCaption = () =>{
+                      return (
+                        <Carousel>
+                          <Carousel.Item>
+                            <img
+                              className="d-block w-100 br-5 active"
+                              src={G1}
+                              alt="First slide"
+                            />
+                            <Carousel.Caption>
+                              <h3>Slide label</h3>
+                              <p>
+                                The wise man therefore always holds in these matters to this
+                                principle of selection he rejects pleasures.
+                              </p>
+                            </Carousel.Caption>
+                          </Carousel.Item>
+                          <Carousel.Item>
+                            <img
+                              className="d-block w-100 br-5"
+                              src={G2}
+                              alt="Second slide"
+                            />
+                    
+                            <Carousel.Caption>
+                              <h3>Slide label</h3>
+                              <p>
+                                The wise man therefore always holds in these matters to this
+                                principle of selection he rejects pleasures.
+                              </p>
+                            </Carousel.Caption>
+                          </Carousel.Item>
+                          <Carousel.Item>
+                            <img className="d-block w-100 br-5" src={G3} alt="Third slide" />
+                    
+                            <Carousel.Caption>
+                              <h3>Slide label</h3>
+                              <p>
+                                The wise man therefore always holds in these matters to this
+                                principle of selection he rejects pleasures.
+                              </p>
+                            </Carousel.Caption>
+                          </Carousel.Item>
+                          <Carousel.Item>
+                            <img
+                              className="d-block w-100 br-5 active"
+                              src={G4}
+                              alt="Forth slide"
+                            />
+                            <Carousel.Caption>
+                              <h3>Slide label</h3>
+                              <p>
+                                The wise man therefore always holds in these matters to this
+                                principle of selection he rejects pleasures.
+                              </p>
+                            </Carousel.Caption>
+                          </Carousel.Item>
+                          <Carousel.Item>
+                            <img
+                              className="d-block w-100 br-5 active"
+                              src={G5}
+                              alt="Fifth slide"
+                            />
+                            <Carousel.Caption>
+                              <h3>Slide label</h3>
+                              <p>
+                                The wise man therefore always holds in these matters to this
+                                principle of selection he rejects pleasures.
+                              </p>
+                            </Carousel.Caption>
+                          </Carousel.Item>
+                        </Carousel>
+                      );
+                    }`}
+                    </code>
+                  </pre>
+                </Collapse>
+              </Card.Body>
+            </Card>
+          </Col>
+          {/* <-- COL END --> */}
+
+          <Col md={12} lg={6}>
             <Card>
               <Card.Header>
                 <Card.Title as="h3">
@@ -690,79 +797,11 @@ const Carousels = () => {
                 </Collapse>
               </Card.Body>
             </Card>
-          </div>
-          {/* <!-- COL-END --> */}
-          <div className="col-md-12 col-lg-6">
-            <Card>
-              <Card.Header>
-                <Card.Title as="h3">
-                  Carousel with GradientBackground caption
-                </Card.Title>
-                <Form className="ms-auto">
-                  <Form.Check
-                    type="switch"
-                    label="Show Code"
-                    id="custom-switch"
-                    onClick={() => setGradientBG(!GradientBG)}
-                    className="showcode d-flex ms-auto mx-2"
-                  />
-                </Form>
-              </Card.Header>
-              <Card.Body className="h-100">
-                <CarouselwithGradientBackgroundCaption />
-                <Collapse in={GradientBG} className="mt-2">
-                  <pre>
-                    <code>
-                      {`
-                        export function CarouselwithGradientBackgroundCaption() {
-
-                        return (
-                        <Carousel>
-                          <Carousel.Item>
-                            <img
-                                className="d-block w-100 br-5 active"
-                                src={require("../../assets/images/media/gradient1.jpg")}
-                                alt="First slide"
-                            />
-                            <Carousel.Caption>
-                              <h3>Slide label</h3>
-                              <p>The wise man therefore always holds in these matters to this principle of selection he rejects pleasures.</p>
-                            </Carousel.Caption>
-                          </Carousel.Item>
-                          <Carousel.Item>
-                              <img
-                                  className="d-block w-100 br-5"
-                                  src={require("../../assets/images/media/gradient2.jpg")}
-                                  alt="Second slide"
-                              />
-
-                            <Carousel.Caption>
-                              <h3>Slide label</h3>
-                              <p>The wise man therefore always holds in these matters to this principle of selection he rejects pleasures.</p>
-                            </Carousel.Caption>
-                          </Carousel.Item>
-                          <Carousel.Item>
-                              <img
-                                  className="d-block w-100 br-5"
-                                  src={require("../../assets/images/media/gradient3.jpg")}
-                                  alt="Third slide"
-                              />
-      
-                          <Carousel.Caption>
-                              <h3>Slide label</h3>
-                              <p>The wise man therefore always holds in these matters to this principle of selection he rejects pleasures.</p>
-                          </Carousel.Caption>
-                        </Carousel.Item>
-                      </Carousel>)}`}
-                    </code>
-                  </pre>
-                </Collapse>
-              </Card.Body>
-            </Card>
-          </div>
-          {/* <!-- COL-END --> */}
+          </Col>
+          {/* <-- COL END --> */}
+          
         </Row>
-        {/* <!-- ROW-2 CLOSED --> */}
+        {/* <--<-- ROW CLOSED -->--> */}
       </div>
     </React.Fragment>
   );

@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import { Carousel } from "react-bootstrap";
 import Slider from "react-slick";
 
@@ -44,37 +44,39 @@ import L13 from "../../assets/images/CarouselImages/LandscapeImages/L13.jpg";
 import L14 from "../../assets/images/CarouselImages/LandscapeImages/L14.jpg";
 import L15 from "../../assets/images/CarouselImages/LandscapeImages/L15.jpg";
 
-import img1 from "../../assets/images/FileImages/File6.jpg";
-import img2 from "../../assets/images/FileImages/File6.jpg";
-import img3 from "../../assets/images/FileImages/File6.jpg";
-import img4 from "../../assets/images/FileImages/File6.jpg";
-import img5 from "../../assets/images/FileImages/File6.jpg";
-import img6 from "../../assets/images/FileImages/File6.jpg";
-import img7 from "../../assets/images/FileImages/File7.jpg";
-import img8 from "../../assets/images/FileImages/File8.jpg";
-import img9 from "../../assets/images/FileImages/File9.jpg";
-import img10 from "../../assets/images/FileImages/File10.jpg";
-import img11 from "../../assets/images/FileImages/File11.jpg";
-import img12 from "../../assets/images/FileImages/File12.jpg";
-import img13 from "../../assets/images/FileImages/File13.jpg";
-import img14 from "../../assets/images/FileImages/File14.jpg";
-import img15 from "../../assets/images/FileImages/File15.jpg";
-import img16 from "../../assets/images/FileImages/File16.jpg";
-import img17 from "../../assets/images/FileImages/File17.jpg";
-import img18 from "../../assets/images/FileImages/File18.jpg";
-import img19 from "../../assets/images/FileImages/File19.jpg";
-import img20 from "../../assets/images/FileImages/File20.jpg";
-import img21 from "../../assets/images/FileImages/File21.jpg";
-import img22 from "../../assets/images/FileImages/File22.jpg";
-import img23 from "../../assets/images/FileImages/File23.jpg";
-import img24 from "../../assets/images/FileImages/File24.jpg";
-import img25 from "../../assets/images/FileImages/File25.jpg";
-import red from "../../assets/images/FileImages/File25.jpg";
-import blue from "../../assets/images/FileImages/File25.jpg";
-import green from "../../assets/images/FileImages/File25.jpg";
-import gradient1 from "../../assets/images/FileImages/File25.jpg";
-import gradient2 from "../../assets/images/FileImages/File25.jpg";
-import gradient3 from "../../assets/images/FileImages/File25.jpg";
+// Carousel with bottom-left indicators
+import L16 from "../../assets/images/CarouselImages/LandscapeImages/L16.jpg";
+import L17 from "../../assets/images/CarouselImages/LandscapeImages/L17.jpg";
+import L18 from "../../assets/images/CarouselImages/LandscapeImages/L18.jpg";
+import L19 from "../../assets/images/CarouselImages/LandscapeImages/L19.jpg";
+import L20 from "../../assets/images/CarouselImages/LandscapeImages/L20.jpg";
+
+// Carousel with indicators
+import L21 from "../../assets/images/CarouselImages/LandscapeImages/L21.jpg";
+import L22 from "../../assets/images/CarouselImages/LandscapeImages/L22.jpg";
+import L23 from "../../assets/images/CarouselImages/LandscapeImages/L23.jpg";
+import L24 from "../../assets/images/CarouselImages/LandscapeImages/L24.jpg";
+import L25 from "../../assets/images/CarouselImages/LandscapeImages/L25.jpg";
+
+// Carousel with bottom-right indicators
+import L26 from "../../assets/images/CarouselImages/LandscapeImages/L26.jpg";
+import L27 from "../../assets/images/CarouselImages/LandscapeImages/L27.jpg";
+import L28 from "../../assets/images/CarouselImages/LandscapeImages/L28.jpg";
+import L29 from "../../assets/images/CarouselImages/LandscapeImages/L29.jpg";
+import L30 from "../../assets/images/CarouselImages/LandscapeImages/L30.jpg";
+
+// Carousel with GradientBackground caption
+import G1 from '../../assets/images/CarouselImages/GradientImages/G1.jpg'
+import G2 from '../../assets/images/CarouselImages/GradientImages/G2.jpg'
+import G3 from '../../assets/images/CarouselImages/GradientImages/G3.jpg'
+import G4 from '../../assets/images/CarouselImages/GradientImages/G4.jpg'
+import G5 from '../../assets/images/CarouselImages/GradientImages/G5.jpg'
+
+// Carousel with Background color captions
+import C1 from '../../assets/images/CarouselImages/ColorImages/C1.jpg'
+import C2 from '../../assets/images/CarouselImages/ColorImages/C2.jpg'
+import C3 from '../../assets/images/CarouselImages/ColorImages/C3.jpg'
+import C4 from '../../assets/images/CarouselImages/ColorImages/C4.jpg'
 
 // Default Carousel
 export const DefaultCarousel = () => {
@@ -128,36 +130,6 @@ export const DefaultCarousel = () => {
         />
       </Slider>
     </React.Fragment>
-  );
-};
-
-// Carousel with indicators
-export const CarouselwithIndicator = () => {
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: false,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    cssEase: "linear",
-  };
-  return (
-    <div>
-      <Slider {...settings}>
-        <img className="d-block w-100 br-5" alt="" src={S6} />
-
-        <img className="d-block w-100 br-5" alt="" src={S7} />
-
-        <img className="d-block w-100 br-5" alt="" src={S8} />
-
-        <img className="d-block w-100 br-5" alt="" src={S9} />
-
-        <img className="d-block w-100 br-5" alt="" src={S10} />
-      </Slider>
-    </div>
   );
 };
 
@@ -267,7 +239,7 @@ export const CarouselwithTopLeftIndicator = () => {
       </Slider>
     </div>
   );
-}
+};
 
 // Carousel with top indicators
 export const CarouselwithTopIndicator = () => {
@@ -302,109 +274,133 @@ export const CarouselwithTopIndicator = () => {
 // Carousel with top-right indicators
 
 export const CarouselwithTopRightIndicator = () => {
-    const settings = {
-      dots: true,
-      infinite: true,
-      speed: 500,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      arrows: false,
-      autoplay: true,
-      autoplaySpeed: 2000,
-      cssEase: "linear",
-    };
-    return (
-      <div className="Top-right">
-        <Slider {...settings}>
-          <img className="d-block w-100 br-5" alt="" src={L11} />
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    cssEase: "linear",
+  };
+  return (
+    <div className="Top-right">
+      <Slider {...settings}>
+        <img className="d-block w-100 br-5" alt="" src={L11} />
 
-          <img className="d-block w-100 br-5" alt="" src={L12} />
+        <img className="d-block w-100 br-5" alt="" src={L12} />
 
-          <img className="d-block w-100 br-5" alt="" src={L13} />
+        <img className="d-block w-100 br-5" alt="" src={L13} />
 
-          <img className="d-block w-100 br-5" alt="" src={L14} />
+        <img className="d-block w-100 br-5" alt="" src={L14} />
 
-          <img className="d-block w-100 br-5" alt="" src={L15} />
-        </Slider>
-      </div>
-    );
-  }
-
-// Carousel with bottom-right indicators
-
-export class CarouselwithbottomRightIndicator extends Component {
-  render() {
-    const settings = {
-      dots: true,
-      infinite: true,
-      speed: 500,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      arrows: false,
-      autoplay: true,
-      autoplaySpeed: 2000,
-      cssEase: "linear",
-    };
-    return (
-      <div className="bottom-right">
-        <Slider {...settings}>
-          <img className="d-block w-100 br-5" alt="" src={img4} />
-
-          <img className="d-block w-100 br-5" alt="" src={img5} />
-
-          <img className="d-block w-100 br-5" alt="" src={img6} />
-
-          <img className="d-block w-100 br-5" alt="" src={img7} />
-
-          <img className="d-block w-100 br-5" alt="" src={img8} />
-        </Slider>
-      </div>
-    );
-  }
-}
+        <img className="d-block w-100 br-5" alt="" src={L15} />
+      </Slider>
+    </div>
+  );
+};
 
 // Carousel with bottom-left indicators
 
-export class CarouselwithbottomLeftIndicator extends Component {
-  render() {
-    const settings = {
-      dots: true,
-      infinite: true,
-      speed: 500,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      arrows: false,
-      autoplay: true,
-      autoplaySpeed: 2000,
-      cssEase: "linear",
-    };
-    return (
-      <div className="bottom-left">
-        <Slider {...settings}>
-          <img className="d-block w-100 br-5" alt="" src={img9} />
+export const CarouselwithbottomLeftIndicator = () => {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    cssEase: "linear",
+  };
+  return (
+    <div className="bottom-left">
+      <Slider {...settings}>
+        <img className="d-block w-100 br-5" alt="" src={L16} />
 
-          <img className="d-block w-100 br-5" alt="" src={img10} />
+        <img className="d-block w-100 br-5" alt="" src={L17} />
 
-          <img className="d-block w-100 br-5" alt="" src={img11} />
+        <img className="d-block w-100 br-5" alt="" src={L18} />
 
-          <img className="d-block w-100 br-5" alt="" src={img12} />
+        <img className="d-block w-100 br-5" alt="" src={L19} />
 
-          <img className="d-block w-100 br-5" alt="" src={img13} />
-        </Slider>
-      </div>
-    );
-  }
-}
+        <img className="d-block w-100 br-5" alt="" src={L20} />
+      </Slider>
+    </div>
+  );
+};
+
+// Carousel with indicators
+export const CarouselwithIndicator = () => {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    cssEase: "linear",
+  };
+  return (
+    <div>
+      <Slider {...settings}>
+        <img className="d-block w-100 br-5" alt="" src={L21} />
+
+        <img className="d-block w-100 br-5" alt="" src={L22} />
+
+        <img className="d-block w-100 br-5" alt="" src={L23} />
+
+        <img className="d-block w-100 br-5" alt="" src={L24} />
+
+        <img className="d-block w-100 br-5" alt="" src={L25} />
+      </Slider>
+    </div>
+  );
+};
+
+// Carousel with bottom-right indicators
+export const CarouselwithbottomRightIndicator = () => {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    cssEase: "linear",
+  };
+  return (
+    <div className="bottom-right">
+      <Slider {...settings}>
+        <img className="d-block w-100 br-5" alt="" src={L26} />
+
+        <img className="d-block w-100 br-5" alt="" src={L27} />
+
+        <img className="d-block w-100 br-5" alt="" src={L28} />
+
+        <img className="d-block w-100 br-5" alt="" src={L29} />
+
+        <img className="d-block w-100 br-5" alt="" src={L30} />
+      </Slider>
+    </div>
+  );
+};
 
 // Carousel with Background color captions
-
-export function CarouselwithBackgroundColorCaption() {
+export const CarouselwithBackgroundColorCaption = () => {
   return (
     <Carousel>
       <Carousel.Item>
         <img
           className="d-block w-100 br-5 active"
-          src={red}
+          src={C1}
           alt="First slide"
         />
         <Carousel.Caption>
@@ -416,7 +412,7 @@ export function CarouselwithBackgroundColorCaption() {
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <img className="d-block w-100 br-5" src={blue} alt="Second slide" />
+        <img className="d-block w-100 br-5" src={C2} alt="Second slide" />
 
         <Carousel.Caption>
           <h3>Slide label</h3>
@@ -427,8 +423,22 @@ export function CarouselwithBackgroundColorCaption() {
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <img className="d-block w-100 br-5" src={green} alt="Third slide" />
+        <img className="d-block w-100 br-5" src={C3} alt="Third slide" />
 
+        <Carousel.Caption>
+          <h3>Slide label</h3>
+          <p>
+            The wise man therefore always holds in these matters to this
+            principle of selection he rejects pleasures.
+          </p>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="d-block w-100 br-5 active"
+          src={C4}
+          alt="Forth slide"
+        />
         <Carousel.Caption>
           <h3>Slide label</h3>
           <p>
@@ -442,14 +452,13 @@ export function CarouselwithBackgroundColorCaption() {
 }
 
 // Carousel with GradientBackground caption
-
-export function CarouselwithGradientBackgroundCaption() {
+export const CarouselwithGradientBackgroundCaption = () =>{
   return (
     <Carousel>
       <Carousel.Item>
         <img
           className="d-block w-100 br-5 active"
-          src={gradient1}
+          src={G1}
           alt="First slide"
         />
         <Carousel.Caption>
@@ -463,7 +472,7 @@ export function CarouselwithGradientBackgroundCaption() {
       <Carousel.Item>
         <img
           className="d-block w-100 br-5"
-          src={gradient2}
+          src={G2}
           alt="Second slide"
         />
 
@@ -476,8 +485,36 @@ export function CarouselwithGradientBackgroundCaption() {
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <img className="d-block w-100 br-5" src={gradient3} alt="Third slide" />
+        <img className="d-block w-100 br-5" src={G3} alt="Third slide" />
 
+        <Carousel.Caption>
+          <h3>Slide label</h3>
+          <p>
+            The wise man therefore always holds in these matters to this
+            principle of selection he rejects pleasures.
+          </p>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="d-block w-100 br-5 active"
+          src={G4}
+          alt="Forth slide"
+        />
+        <Carousel.Caption>
+          <h3>Slide label</h3>
+          <p>
+            The wise man therefore always holds in these matters to this
+            principle of selection he rejects pleasures.
+          </p>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="d-block w-100 br-5 active"
+          src={G5}
+          alt="Fifth slide"
+        />
         <Carousel.Caption>
           <h3>Slide label</h3>
           <p>

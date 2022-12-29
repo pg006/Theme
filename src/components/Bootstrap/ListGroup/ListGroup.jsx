@@ -1,5 +1,12 @@
 import React from "react";
-import { Badge, Card, Col, ListGroup, ListGroupItem, Row } from 'react-bootstrap';
+import {
+  Badge,
+  Card,
+  Col,
+  ListGroup,
+  ListGroupItem,
+  Row,
+} from "react-bootstrap";
 import PageHeader from "../../../commonComponents/PageHeader/PageHeader";
 import "./ListGroup.scss";
 
@@ -12,7 +19,7 @@ const ListGroups = () => {
           active="List Group"
           items={["Componets"]}
         />
-        {/* <!-- ROW-1 OPEN --> */}
+        {/* <--<-- ROW OPEN -->--> */}
         <Row>
           <Col sm={12} lg={6}>
             <Card>
@@ -32,7 +39,8 @@ const ListGroups = () => {
               </Card.Body>
             </Card>
           </Col>
-          {/* <!-- COL END --> */}
+          {/* <--<- COL END ->--> */}
+
           <Col sm={12} lg={6}>
             <Card>
               <Card.Header>
@@ -51,12 +59,8 @@ const ListGroups = () => {
               </Card.Body>
             </Card>
           </Col>
-          {/* <!-- COL END --> */}
-        </Row>
-        {/* <!-- ROW-1 CLOSED --> */}
+          {/* <--<- COL END ->--> */}
 
-        {/* <!-- ROW-2 OPEN --> */}
-        <Row>
           <Col sm={12} lg={6}>
             <Card>
               <Card.Header>
@@ -79,7 +83,8 @@ const ListGroups = () => {
               </Card.Body>
             </Card>
           </Col>
-          {/* <!-- COL END --> */}
+          {/* <--<- COL END ->--> */}
+
           <Col sm={12} lg={6}>
             <Card>
               <Card.Header>
@@ -108,7 +113,8 @@ const ListGroups = () => {
               </Card.Body>
             </Card>
           </Col>
-          {/* <!-- COL END --> */}
+          {/* <--<- COL END ->--> */}
+
           <Col sm={12} lg={6}>
             <Card>
               <Card.Header>
@@ -137,7 +143,8 @@ const ListGroups = () => {
               </Card.Body>
             </Card>
           </Col>
-          {/* <!-- COL END --> */}
+          {/* <--<- COL END ->--> */}
+
           <Col sm={12} lg={6}>
             <Card>
               <Card.Header>
@@ -166,12 +173,8 @@ const ListGroups = () => {
               </Card.Body>
             </Card>
           </Col>
-          {/* <!-- COL END --> */}
-        </Row>
-        {/* <!-- ROW-2 CLOSED --> */}
+          {/* <--<- COL END ->--> */}
 
-        {/* <!-- ROW-3 OPEN --> */}
-        <Row>
           <Col sm={12} lg={6}>
             <Card>
               <Card.Header>
@@ -196,7 +199,8 @@ const ListGroups = () => {
               </Card.Body>
             </Card>
           </Col>
-          {/* <!-- COL END --> */}
+          {/* <--<- COL END ->--> */}
+
           <Col sm={12} lg={6}>
             <Card>
               <Card.Header>
@@ -223,12 +227,8 @@ const ListGroups = () => {
               </Card.Body>
             </Card>
           </Col>
-          {/* <!-- COL END --> */}
-        </Row>
-        {/* <!-- ROW-3 CLOSED --> */}
+          {/* <--<- COL END ->--> */}
 
-        {/* <!-- ROW-4 OPEN --> */}
-        <Row>
           <Col sm={12} lg={6}>
             <Card>
               <Card.Header>
@@ -262,8 +262,8 @@ const ListGroups = () => {
               </Card.Body>
             </Card>
           </Col>
+          {/* <--<- COL END ->--> */}
 
-          {/* <!-- COL END --> */}
           <Col sm={12} lg={6}>
             <Card>
               <Card.Header>
@@ -297,7 +297,7 @@ const ListGroups = () => {
               </Card.Body>
             </Card>
           </Col>
-          {/* <!-- COL END --> */}
+          {/* <--<- COL END ->--> */}
 
           <Col sm={12} lg={6}>
             <Card>
@@ -357,7 +357,7 @@ const ListGroups = () => {
               </Card.Body>
             </Card>
           </Col>
-          {/* <!-- COL END --> */}
+          {/* <--<- COL END ->--> */}
 
           <Col sm={12} lg={6}>
             <Card>
@@ -417,12 +417,8 @@ const ListGroups = () => {
               </Card.Body>
             </Card>
           </Col>
-          {/* <!-- COL END --> */}
-        </Row>
-        {/* <!-- ROW-4 CLOSED --> */}
+          {/* <--<- COL END ->--> */}
 
-        {/* <!-- ROW-5 OPEN --> */}
-        <Row>
           <Col sm={12} md={12}>
             <Card>
               <Card.Header>
@@ -475,7 +471,8 @@ const ListGroups = () => {
               </Card.Body>
             </Card>
           </Col>
-          {/* <!-- COL END --> */}
+          {/* <--<- COL END ->--> */}
+
           <Col sm={12} md={12}>
             <Card>
               <Card.Header>
@@ -528,229 +525,9 @@ const ListGroups = () => {
               </Card.Body>
             </Card>
           </Col>
-          {/* <!-- COL END --> */}
-        </Row>
-        {/* <!-- ROW-5 CLOSED --> */}
+          {/* <--<- COL END ->--> */}
 
-        {/* <!-- ROW OPEN--> */}
-        <Row>
-          <Col lg={6}>
-            <Card>
-              <Card.Header>
-                <Card.Title>Unorder List Style</Card.Title>
-              </Card.Header>
-              <Card.Body className="px-5">
-                <ul className="list-style-1">
-                  <li>Lorem ipsum dolor sit amet</li>
-                  <li>Consectetur adipiscing elit</li>
-                  <li>Integer molestie lorem at massa</li>
-                  <li>Facilisis in pretium nisl aliquet</li>
-                  <li>
-                    Nulla volutpat aliquam velit
-                    <ul>
-                      <li>Phasellus iaculis neque</li>
-                      <li>Purus sodales ultricies</li>
-                      <li>Vestibulum laoreet porttitor sem</li>
-                      <li>Ac tristique libero volutpat at</li>
-                    </ul>
-                  </li>
-                  <li>Faucibus porta lacus fringilla vel</li>
-                  <li>Aenean sit amet erat nunc</li>
-                  <li>Eget porttitor lorem</li>
-                </ul>
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col lg={6}>
-            <Card>
-              <Card.Header>
-                <Card.Title>Unorder List Style2</Card.Title>
-              </Card.Header>
-              <Card.Body className="px-5">
-                <ul className="list-style2">
-                  <li>Lorem ipsum dolor sit amet</li>
-                  <li>Consectetur adipiscing elit</li>
-                  <li>Integer molestie lorem at massa</li>
-                  <li>Facilisis in pretium nisl aliquet</li>
-                  <li>
-                    Nulla volutpat aliquam velit
-                    <ul>
-                      <li>Phasellus iaculis neque</li>
-                      <li>Purus sodales ultricies</li>
-                      <li>Vestibulum laoreet porttitor sem</li>
-                      <li>Ac tristique libero volutpat at</li>
-                    </ul>
-                  </li>
-                  <li>Faucibus porta lacus fringilla vel</li>
-                  <li>Aenean sit amet erat nunc</li>
-                  <li>Eget porttitor lorem</li>
-                </ul>
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col lg={6}>
-            <Card>
-              <Card.Header>
-                <Card.Title>Unorder List Style3</Card.Title>
-              </Card.Header>
-              <Card.Body className="px-5">
-                <ul className="list-style3">
-                  <li>Lorem ipsum dolor sit amet</li>
-                  <li>Consectetur adipiscing elit</li>
-                  <li>Integer molestie lorem at massa</li>
-                  <li>Facilisis in pretium nisl aliquet</li>
-                  <li>
-                    Nulla volutpat aliquam velit
-                    <ul>
-                      <li>Phasellus iaculis neque</li>
-                      <li>Purus sodales ultricies</li>
-                      <li>Vestibulum laoreet porttitor sem</li>
-                      <li>Ac tristique libero volutpat at</li>
-                    </ul>
-                  </li>
-                  <li>Faucibus porta lacus fringilla vel</li>
-                  <li>Aenean sit amet erat nunc</li>
-                  <li>Eget porttitor lorem</li>
-                </ul>
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col lg={6}>
-            <Card>
-              <Card.Header>
-                <Card.Title>Unorder List Style4</Card.Title>
-              </Card.Header>
-              <Card.Body className="px-5">
-                <ul className="list-style4">
-                  <li>Lorem ipsum dolor sit amet</li>
-                  <li>Consectetur adipiscing elit</li>
-                  <li>Integer molestie lorem at massa</li>
-                  <li>Facilisis in pretium nisl aliquet</li>
-                  <li>
-                    Nulla volutpat aliquam velit
-                    <ul>
-                      <li>Phasellus iaculis neque</li>
-                      <li>Purus sodales ultricies</li>
-                      <li>Vestibulum laoreet porttitor sem</li>
-                      <li>Ac tristique libero volutpat at</li>
-                    </ul>
-                  </li>
-                  <li>Faucibus porta lacus fringilla vel</li>
-                  <li>Aenean sit amet erat nunc</li>
-                  <li>Eget porttitor lorem</li>
-                </ul>
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col lg={6}>
-            <Card>
-              <Card.Header>
-                <Card.Title>Unorder List Style5</Card.Title>
-              </Card.Header>
-              <Card.Body className="px-5">
-                <ul className="list-style5">
-                  <li>Lorem ipsum dolor sit amet</li>
-                  <li>Consectetur adipiscing elit</li>
-                  <li>Integer molestie lorem at massa</li>
-                  <li>Facilisis in pretium nisl aliquet</li>
-                  <li>
-                    Nulla volutpat aliquam velit
-                    <ul>
-                      <li>Phasellus iaculis neque</li>
-                      <li>Purus sodales ultricies</li>
-                      <li>Vestibulum laoreet porttitor sem</li>
-                      <li>Ac tristique libero volutpat at</li>
-                    </ul>
-                  </li>
-                  <li>Faucibus porta lacus fringilla vel</li>
-                  <li>Aenean sit amet erat nunc</li>
-                  <li>Eget porttitor lorem</li>
-                </ul>
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col lg={6}>
-            <Card>
-              <Card.Header>
-                <Card.Title>Unorder List Style6</Card.Title>
-              </Card.Header>
-              <Card.Body className="px-5">
-                <ul className="list-style6">
-                  <li>Lorem ipsum dolor sit amet</li>
-                  <li>Consectetur adipiscing elit</li>
-                  <li>Integer molestie lorem at massa</li>
-                  <li>Facilisis in pretium nisl aliquet</li>
-                  <li>
-                    Nulla volutpat aliquam velit
-                    <ul>
-                      <li>Phasellus iaculis neque</li>
-                      <li>Purus sodales ultricies</li>
-                      <li>Vestibulum laoreet porttitor sem</li>
-                      <li>Ac tristique libero volutpat at</li>
-                    </ul>
-                  </li>
-                  <li>Faucibus porta lacus fringilla vel</li>
-                  <li>Aenean sit amet erat nunc</li>
-                  <li>Eget porttitor lorem</li>
-                </ul>
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col lg={6}>
-            <Card>
-              <Card.Header>
-                <Card.Title>Order list</Card.Title>
-              </Card.Header>
-              <Card.Body className="px-5">
-                <ol className="order-list">
-                  <li>Lorem ipsum dolor sit amet</li>
-                  <li>Consectetur adipiscing elit</li>
-                  <li>Integer molestie lorem at massa</li>
-                  <li>Facilisis in pretium nisl aliquet</li>
-                  <li>
-                    Nulla volutpat aliquam velit
-                    <ol className="order-list">
-                      <li>Phasellus iaculis neque</li>
-                      <li>Purus sodales ultricies</li>
-                      <li>Vestibulum laoreet porttitor sem</li>
-                      <li>Ac tristique libero volutpat at</li>
-                    </ol>
-                  </li>
-                  <li>Faucibus porta lacus fringilla vel</li>
-                  <li>Aenean sit amet erat nunc</li>
-                  <li>Eget porttitor lorem</li>
-                </ol>
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col lg={6}>
-            <Card>
-              <Card.Header>
-                <Card.Title>Order With unorder</Card.Title>
-              </Card.Header>
-              <Card.Body className="px-5">
-                <ol className="order-list">
-                  <li>Lorem ipsum dolor sit amet</li>
-                  <li>Consectetur adipiscing elit</li>
-                  <li>Integer molestie lorem at massa</li>
-                  <li>Facilisis in pretium nisl aliquet</li>
-                  <li>
-                    Nulla volutpat aliquam velit
-                    <ul className="list-style4 ps-5">
-                      <li>Phasellus iaculis neque</li>
-                      <li>Purus sodales ultricies</li>
-                      <li>Vestibulum laoreet porttitor sem</li>
-                      <li>Ac tristique libero volutpat at</li>
-                    </ul>
-                  </li>
-                  <li>Faucibus porta lacus fringilla vel</li>
-                  <li>Aenean sit amet erat nunc</li>
-                  <li>Eget porttitor lorem</li>
-                </ol>
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col lg={6}>
+          <Col lg={12}>
             <Card>
               <Card.Header>
                 <Card.Title>Paragraph with Order List</Card.Title>
@@ -781,7 +558,9 @@ const ListGroups = () => {
               </Card.Body>
             </Card>
           </Col>
-          <Col lg={6}>
+          {/* <--<- COL END ->--> */}
+
+          <Col lg={12}>
             <Card>
               <Card.Header>
                 <Card.Title>Paragraph with Unorder List</Card.Title>
@@ -812,8 +591,241 @@ const ListGroups = () => {
               </Card.Body>
             </Card>
           </Col>
+          {/* <--<- COL END ->--> */}
+
+          <Col lg={6}>
+            <Card>
+              <Card.Header>
+                <Card.Title>Unorder List Style</Card.Title>
+              </Card.Header>
+              <Card.Body className="px-5">
+                <ul className="list-style-1">
+                  <li>Lorem ipsum dolor sit amet</li>
+                  <li>Consectetur adipiscing elit</li>
+                  <li>Integer molestie lorem at massa</li>
+                  <li>Facilisis in pretium nisl aliquet</li>
+                  <li>
+                    Nulla volutpat aliquam velit
+                    <ul>
+                      <li>Phasellus iaculis neque</li>
+                      <li>Purus sodales ultricies</li>
+                      <li>Vestibulum laoreet porttitor sem</li>
+                      <li>Ac tristique libero volutpat at</li>
+                    </ul>
+                  </li>
+                  <li>Faucibus porta lacus fringilla vel</li>
+                  <li>Aenean sit amet erat nunc</li>
+                  <li>Eget porttitor lorem</li>
+                </ul>
+              </Card.Body>
+            </Card>
+          </Col>
+          {/* <--<- COL END ->--> */}
+
+          <Col lg={6}>
+            <Card>
+              <Card.Header>
+                <Card.Title>Unorder List Style2</Card.Title>
+              </Card.Header>
+              <Card.Body className="px-5">
+                <ul className="list-style2">
+                  <li>Lorem ipsum dolor sit amet</li>
+                  <li>Consectetur adipiscing elit</li>
+                  <li>Integer molestie lorem at massa</li>
+                  <li>Facilisis in pretium nisl aliquet</li>
+                  <li>
+                    Nulla volutpat aliquam velit
+                    <ul>
+                      <li>Phasellus iaculis neque</li>
+                      <li>Purus sodales ultricies</li>
+                      <li>Vestibulum laoreet porttitor sem</li>
+                      <li>Ac tristique libero volutpat at</li>
+                    </ul>
+                  </li>
+                  <li>Faucibus porta lacus fringilla vel</li>
+                  <li>Aenean sit amet erat nunc</li>
+                  <li>Eget porttitor lorem</li>
+                </ul>
+              </Card.Body>
+            </Card>
+          </Col>
+          {/* <--<- COL END ->--> */}
+
+          <Col lg={6}>
+            <Card>
+              <Card.Header>
+                <Card.Title>Unorder List Style3</Card.Title>
+              </Card.Header>
+              <Card.Body className="px-5">
+                <ul className="list-style3">
+                  <li>Lorem ipsum dolor sit amet</li>
+                  <li>Consectetur adipiscing elit</li>
+                  <li>Integer molestie lorem at massa</li>
+                  <li>Facilisis in pretium nisl aliquet</li>
+                  <li>
+                    Nulla volutpat aliquam velit
+                    <ul>
+                      <li>Phasellus iaculis neque</li>
+                      <li>Purus sodales ultricies</li>
+                      <li>Vestibulum laoreet porttitor sem</li>
+                      <li>Ac tristique libero volutpat at</li>
+                    </ul>
+                  </li>
+                  <li>Faucibus porta lacus fringilla vel</li>
+                  <li>Aenean sit amet erat nunc</li>
+                  <li>Eget porttitor lorem</li>
+                </ul>
+              </Card.Body>
+            </Card>
+          </Col>
+          {/* <--<- COL END ->--> */}
+
+          <Col lg={6}>
+            <Card>
+              <Card.Header>
+                <Card.Title>Unorder List Style4</Card.Title>
+              </Card.Header>
+              <Card.Body className="px-5">
+                <ul className="list-style4">
+                  <li>Lorem ipsum dolor sit amet</li>
+                  <li>Consectetur adipiscing elit</li>
+                  <li>Integer molestie lorem at massa</li>
+                  <li>Facilisis in pretium nisl aliquet</li>
+                  <li>
+                    Nulla volutpat aliquam velit
+                    <ul>
+                      <li>Phasellus iaculis neque</li>
+                      <li>Purus sodales ultricies</li>
+                      <li>Vestibulum laoreet porttitor sem</li>
+                      <li>Ac tristique libero volutpat at</li>
+                    </ul>
+                  </li>
+                  <li>Faucibus porta lacus fringilla vel</li>
+                  <li>Aenean sit amet erat nunc</li>
+                  <li>Eget porttitor lorem</li>
+                </ul>
+              </Card.Body>
+            </Card>
+          </Col>
+          {/* <--<- COL END ->--> */}
+
+          <Col lg={6}>
+            <Card>
+              <Card.Header>
+                <Card.Title>Unorder List Style5</Card.Title>
+              </Card.Header>
+              <Card.Body className="px-5">
+                <ul className="list-style5">
+                  <li>Lorem ipsum dolor sit amet</li>
+                  <li>Consectetur adipiscing elit</li>
+                  <li>Integer molestie lorem at massa</li>
+                  <li>Facilisis in pretium nisl aliquet</li>
+                  <li>
+                    Nulla volutpat aliquam velit
+                    <ul>
+                      <li>Phasellus iaculis neque</li>
+                      <li>Purus sodales ultricies</li>
+                      <li>Vestibulum laoreet porttitor sem</li>
+                      <li>Ac tristique libero volutpat at</li>
+                    </ul>
+                  </li>
+                  <li>Faucibus porta lacus fringilla vel</li>
+                  <li>Aenean sit amet erat nunc</li>
+                  <li>Eget porttitor lorem</li>
+                </ul>
+              </Card.Body>
+            </Card>
+          </Col>
+          {/* <--<- COL END ->--> */}
+
+          <Col lg={6}>
+            <Card>
+              <Card.Header>
+                <Card.Title>Unorder List Style6</Card.Title>
+              </Card.Header>
+              <Card.Body className="px-5">
+                <ul className="list-style6">
+                  <li>Lorem ipsum dolor sit amet</li>
+                  <li>Consectetur adipiscing elit</li>
+                  <li>Integer molestie lorem at massa</li>
+                  <li>Facilisis in pretium nisl aliquet</li>
+                  <li>
+                    Nulla volutpat aliquam velit
+                    <ul>
+                      <li>Phasellus iaculis neque</li>
+                      <li>Purus sodales ultricies</li>
+                      <li>Vestibulum laoreet porttitor sem</li>
+                      <li>Ac tristique libero volutpat at</li>
+                    </ul>
+                  </li>
+                  <li>Faucibus porta lacus fringilla vel</li>
+                  <li>Aenean sit amet erat nunc</li>
+                  <li>Eget porttitor lorem</li>
+                </ul>
+              </Card.Body>
+            </Card>
+          </Col>
+          {/* <--<- COL END ->--> */}
+
+          <Col lg={6}>
+            <Card>
+              <Card.Header>
+                <Card.Title>Order list</Card.Title>
+              </Card.Header>
+              <Card.Body className="px-5">
+                <ol className="order-list">
+                  <li>Lorem ipsum dolor sit amet</li>
+                  <li>Consectetur adipiscing elit</li>
+                  <li>Integer molestie lorem at massa</li>
+                  <li>Facilisis in pretium nisl aliquet</li>
+                  <li>
+                    Nulla volutpat aliquam velit
+                    <ol className="order-list">
+                      <li>Phasellus iaculis neque</li>
+                      <li>Purus sodales ultricies</li>
+                      <li>Vestibulum laoreet porttitor sem</li>
+                      <li>Ac tristique libero volutpat at</li>
+                    </ol>
+                  </li>
+                  <li>Faucibus porta lacus fringilla vel</li>
+                  <li>Aenean sit amet erat nunc</li>
+                  <li>Eget porttitor lorem</li>
+                </ol>
+              </Card.Body>
+            </Card>
+          </Col>
+          {/* <--<- COL END ->--> */}
+
+          <Col lg={6}>
+            <Card>
+              <Card.Header>
+                <Card.Title>Order With unorder</Card.Title>
+              </Card.Header>
+              <Card.Body className="px-5">
+                <ol className="order-list">
+                  <li>Lorem ipsum dolor sit amet</li>
+                  <li>Consectetur adipiscing elit</li>
+                  <li>Integer molestie lorem at massa</li>
+                  <li>Facilisis in pretium nisl aliquet</li>
+                  <li>
+                    Nulla volutpat aliquam velit
+                    <ul className="list-style4 ps-5">
+                      <li>Phasellus iaculis neque</li>
+                      <li>Purus sodales ultricies</li>
+                      <li>Vestibulum laoreet porttitor sem</li>
+                      <li>Ac tristique libero volutpat at</li>
+                    </ul>
+                  </li>
+                  <li>Faucibus porta lacus fringilla vel</li>
+                  <li>Aenean sit amet erat nunc</li>
+                  <li>Eget porttitor lorem</li>
+                </ol>
+              </Card.Body>
+            </Card>
+          </Col>
+          {/* <--<- COL END ->--> */}
         </Row>
-        {/* <!-- ROW CLOSED --> */}
+        {/* <--<-- ROW CLOSED -->--> */}
       </div>
     </React.Fragment>
   );
