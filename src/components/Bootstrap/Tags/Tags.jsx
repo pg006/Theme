@@ -17,9 +17,9 @@ const Tags = () => {
     <React.Fragment>
       <div>
         <PageHeader titles="Tags" active="Tags" items={["Componets"]} />
-        {/* <!-- ROW-1 OPEN --> */}
+        {/* <--<-- ROW OPEN -->--> */}
         <Row>
-          <Col xl={6} md={12}>
+          <Col xl={12} md={12}>
             <Card>
               <Card.Header>
                 <Card.Title>Default tag</Card.Title>
@@ -28,16 +28,30 @@ const Tags = () => {
                 <div className="text-wrap">
                   <div className="example">
                     <div className="tags">
-                      <span className="tag">First tag</span>
-                      <span className="tag">Second tag</span>
-                      <span className="tag">Third tag</span>
+                      <span className="tag me-4 px-4 py-2 fs-13">
+                        First tag
+                      </span>
+                      <span className="tag me-4 px-4 py-2 fs-13">
+                        Second tag
+                      </span>
+                      <span className="tag me-4 px-4 py-2 fs-13">
+                        Third tag
+                      </span>
+                      <span className="tag me-4 px-4 py-2 fs-13">
+                        Forth tag
+                      </span>
+                      <span className="tag me-4 px-4 py-2 fs-13">
+                        Fifth tag
+                      </span>
                     </div>
                   </div>
                 </div>
               </Card.Body>
             </Card>
           </Col>
-          <Col xl={6} md={12}>
+          {/* <--<- COL END ->--> */}
+
+          <Col xl={12} md={12}>
             <Card>
               <Card.Header>
                 <Card.Title>Link tag</Card.Title>
@@ -46,14 +60,20 @@ const Tags = () => {
                 <div className="text-wrap">
                   <div className="example">
                     <div className="tags">
-                      <Link to="#" className="tag">
+                      <Link to="#" className="tag me-4 px-4 py-2 fs-13">
                         First tag
                       </Link>
-                      <Link to="#" className="tag">
+                      <Link to="#" className="tag me-4 px-4 py-2 fs-13">
                         Second tag
                       </Link>
-                      <Link to="#" className="tag">
+                      <Link to="#" className="tag me-4 px-4 py-2 fs-13">
                         Third tag
+                      </Link>
+                      <Link to="#" className="tag me-4 px-4 py-2 fs-13">
+                        Forth tag
+                      </Link>
+                      <Link to="#" className="tag me-4 px-4 py-2 fs-13">
+                        Fifth tag
                       </Link>
                     </div>
                   </div>
@@ -61,12 +81,68 @@ const Tags = () => {
               </Card.Body>
             </Card>
           </Col>
-        </Row>
-        {/* <!-- ROW-1 CLOSED --> */}
+          {/* <--<- COL END ->--> */}
+          
+          <Col xl={12} md={12}>
+            <Card>
+              <Card.Header>
+                <Card.Title>Color tag</Card.Title>
+              </Card.Header>
+              <Card.Body>
+                <div className="text-wrap">
+                  <div className="example">
+                    <div className="tags">
+                      <span className="tag me-4 px-4 py-1 fs-13 tag-blue">
+                        Blue tag
+                      </span>
+                      <span className="tag me-4 px-4 py-1 fs-13 tag-azure">
+                        Azure tag
+                      </span>
+                      <span className="tag me-4 px-4 py-1 fs-13 tag-indigo">
+                        Indigo tag
+                      </span>
+                      <span className="tag me-4 px-4 py-1 fs-13 tag-purple">
+                        Purple tag
+                      </span>
+                      <span className="tag me-4 px-4 py-1 fs-13 tag-pink">
+                        Pink tag
+                      </span>
+                      <span className="tag me-4 px-4 py-1 fs-13 tag-red">
+                        Red tag
+                      </span>
+                      <span className="tag me-4 px-4 py-1 fs-13 tag-orange">
+                        Orange tag
+                      </span>
+                      <span className="tag me-4 px-4 py-1 fs-13 tag-yellow">
+                        Yellow tag
+                      </span>
+                      <span className="tag me-4 px-4 py-1 fs-13 tag-lime">
+                        Lime tag
+                      </span>
+                      <span className="tag me-4 px-4 py-1 fs-13 tag-green">
+                        Green tag
+                      </span>
+                      <span className="tag me-4 px-4 py-1 fs-13 tag-teal">
+                        Teal tag
+                      </span>
+                      <span className="tag me-4 px-4 py-1 fs-13 tag-cyan">
+                        Cyan tag
+                      </span>
+                      <span className="tag me-4 px-4 py-1 fs-13 tag-gray">
+                        Gray tag
+                      </span>
+                      <span className="tag me-4 px-4 py-1 fs-13 tag-gray-dark">
+                        Dark gray tag
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </Card.Body>
+            </Card>
+          </Col>
+          {/* <--<- COL END ->--> */}
 
-        {/* <!-- ROW-2 OPEN --> */}
-        <Row>
-          <Col xl={6}>
+          <Col xl={12} md={12}>
             <Card>
               <Card.Header>
                 <Card.Title>Rounded tag Style</Card.Title>
@@ -75,17 +151,20 @@ const Tags = () => {
                 <div className="text-wrap">
                   <div className="example">
                     <div className="tags">
-                      <span className="tag tag-radius tag-round tag-primary">
+                      <span className="tag tag-radius tag-round tag-primary me-4 px-3 py-1 fs-13">
                         First tag
                       </span>
-                      <span className="tag tag-radius tag-round tag-orange">
+                      <span className="tag tag-radius tag-round tag-orange me-4 px-3 py-1 fs-13">
                         Second tag
                       </span>
-                      <span className="tag tag-radius tag-round tag-teal">
+                      <span className="tag tag-radius tag-round tag-teal me-4 px-3 py-1 fs-13">
                         Third tag
                       </span>
-                      <span className="tag tag-radius tag-round tag-pink">
-                        Third tag
+                      <span className="tag tag-radius tag-round tag-pink me-4 px-3 py-1 fs-13">
+                        Forth tag
+                      </span>
+                      <span className="tag tag-radius tag-round tag-danger me-4 px-3 py-1 fs-13">
+                        Fifth tag
                       </span>
                     </div>
                   </div>
@@ -93,7 +172,9 @@ const Tags = () => {
               </Card.Body>
             </Card>
           </Col>
-          <Col xl={6}>
+          {/* <--<- COL END ->--> */}
+
+          <Col xl={12} md={12}>
             <Card>
               <Card.Header>
                 <Card.Title>Rounded tag Style</Card.Title>
@@ -102,23 +183,20 @@ const Tags = () => {
                 <div className="text-wrap">
                   <div className="example">
                     <div className="tags">
-                      <span className="tag tag-radius tag-round tag-outline-primary">
+                      <span className="tag tag-radius tag-round tag-outline-primary me-4 px-3 py-1 fs-13">
                         First tag
                       </span>
-                      <span className="tag tag-radius tag-round tag-outline-secondary">
+                      <span className="tag tag-radius tag-round tag-outline-secondary me-4 px-3 py-1 fs-13">
                         Second tag
                       </span>
-                      <span className="tag tag-radius tag-round tag-outline-danger">
+                      <span className="tag tag-radius tag-round tag-outline-danger me-4 px-3 py-1 fs-13">
                         Third tag
                       </span>
-                      <span className="tag tag-radius tag-round tag-outline-warning">
-                        Third tag
+                      <span className="tag tag-radius tag-round tag-outline-warning me-4 px-3 py-1 fs-13">
+                        Forth tag
                       </span>
-                      <span className="tag tag-radius tag-round tag-outline-success">
-                        Third tag
-                      </span>
-                      <span className="tag tag-radius tag-round tag-outline-info">
-                        Third tag
+                      <span className="tag tag-radius tag-round tag-outline-danger me-4 px-3 py-1 fs-13">
+                        Fifth tag
                       </span>
                     </div>
                   </div>
@@ -126,7 +204,9 @@ const Tags = () => {
               </Card.Body>
             </Card>
           </Col>
-          <Col xl={6}>
+          {/* <--<- COL END ->--> */}
+
+          <Col xl={12} md={12}>
             <Card>
               <Card.Header>
                 <Card.Title>Rounded tag with icon</Card.Title>
@@ -135,7 +215,7 @@ const Tags = () => {
                 <div className="text-wrap">
                   <div className="example">
                     <div className="tags">
-                      <span className="tag tag-rounded tag-icon tag-red">
+                      <span className="tag tag-rounded tag-icon tag-red me-4 px-3 py-1 fs-13">
                         <i className="fe fe-map-pin"></i>First tag
                         <Link
                           to="#"
@@ -144,7 +224,7 @@ const Tags = () => {
                           <i className="fe fe-x text-white m-1"></i>
                         </Link>
                       </span>
-                      <span className="tag tag-rounded tag-icon tag-green">
+                      <span className="tag tag-rounded tag-icon tag-green me-4 px-3 py-1 fs-13">
                         <i className="fe fe-calendar"></i>Second tag
                         <Link
                           to="#"
@@ -153,7 +233,7 @@ const Tags = () => {
                           <i className="fe fe-x text-white m-1"></i>
                         </Link>
                       </span>
-                      <span className="tag tag-rounded tag-icon tag-orange">
+                      <span className="tag tag-rounded tag-icon tag-orange me-4 px-3 py-1 fs-13">
                         <i className="fe fe-bell"></i>Third tag
                         <Link
                           to="#"
@@ -162,8 +242,8 @@ const Tags = () => {
                           <i className="fe fe-x text-white m-1"></i>
                         </Link>
                       </span>
-                      <span className="tag tag-rounded tag-icon tag-pink">
-                        <i className="fe fe-filter"></i>Third tag
+                      <span className="tag tag-rounded tag-icon tag-pink me-4 px-3 py-1 fs-13">
+                        <i className="fe fe-filter"></i>Forth tag
                         <Link
                           to="#"
                           className="tag-addon tag-addon-cross tag-pink"
@@ -177,30 +257,9 @@ const Tags = () => {
               </Card.Body>
             </Card>
           </Col>
-          <Col xl={6} md={12}>
-            <Card>
-              <Card.Header>
-                <Card.Title>Default tag</Card.Title>
-              </Card.Header>
-              <Card.Body>
-                <div className="text-wrap">
-                  <div className="example">
-                    <div className="tags">
-                      <span className="tag tag-border">First tag</span>
-                      <span className="tag tag-border">Second tag</span>
-                      <span className="tag tag-border">Third tag</span>
-                    </div>
-                  </div>
-                </div>
-              </Card.Body>
-            </Card>
-          </Col>
-        </Row>
-        {/* <!-- ROW-2 CLOSED --> */}
+          {/* <--<- COL END ->--> */}
 
-        {/* <!-- ROW-3 OPEN --> */}
-        <Row>
-          <Col xl={12}>
+          <Col xl={12} md={12}>
             <Card>
               <Card.Header>
                 <Card.Title>Rounded tag</Card.Title>
@@ -209,45 +268,112 @@ const Tags = () => {
                 <div className="text-wrap">
                   <div className="example">
                     <div className="tags">
-                      <span className="tag tag-rounded">First tag</span>
-                      <span className="tag tag-rounded">Second tag</span>
-                      <span className="tag tag-rounded">Third tag</span>
+                      <span className="tag tag-rounded me-4 px-4 py-1 fs-13 ">
+                        First tag
+                      </span>
+                      <span className="tag tag-rounded me-4 px-4 py-1 fs-13 ">
+                        Second tag
+                      </span>
+                      <span className="tag tag-rounded me-4 px-4 py-1 fs-13 ">
+                        Third tag
+                      </span>
+                      <span className="tag tag-rounded me-4 px-4 py-1 fs-13 ">
+                        Forth tag
+                      </span>
+                      <span className="tag tag-rounded me-4 px-4 py-1 fs-13 ">
+                        Fifth tag
+                      </span>
                     </div>
                   </div>
                 </div>
               </Card.Body>
             </Card>
           </Col>
-          <Col xl={12}>
+          {/* <--<- COL END ->--> */}
+
+          <Col md={12} xl={12}>
             <Card>
               <Card.Header>
-                <Card.Title>Color tag</Card.Title>
+                <Card.Title>Tag remove</Card.Title>
               </Card.Header>
               <Card.Body>
                 <div className="text-wrap">
                   <div className="example">
                     <div className="tags">
-                      <span className="tag tag-blue">Blue tag</span>
-                      <span className="tag tag-azure">Azure tag</span>
-                      <span className="tag tag-indigo">Indigo tag</span>
-                      <span className="tag tag-purple">Purple tag</span>
-                      <span className="tag tag-pink">Pink tag</span>
-                      <span className="tag tag-red">Red tag</span>
-                      <span className="tag tag-orange">Orange tag</span>
-                      <span className="tag tag-yellow">Yellow tag</span>
-                      <span className="tag tag-lime">Lime tag</span>
-                      <span className="tag tag-green">Green tag</span>
-                      <span className="tag tag-teal">Teal tag</span>
-                      <span className="tag tag-cyan">Cyan tag</span>
-                      <span className="tag tag-gray">Gray tag</span>
-                      <span className="tag tag-gray-dark">Dark gray tag</span>
+                      <span className="tag me-4 px-4 py-1 fs-13">
+                        One
+                        <Link to="#" className="tag-addon">
+                          <i className="fe fe-x"></i>
+                        </Link>
+                      </span>
+                      <span className="tag me-4 px-4 py-1 fs-13">
+                        Two
+                        <Link to="#" className="tag-addon">
+                          <i className="fe fe-x"></i>
+                        </Link>
+                      </span>
+                      <span className="tag me-4 px-4 py-1 fs-13">
+                        Three
+                        <Link to="#" className="tag-addon">
+                          <i className="fe fe-x"></i>
+                        </Link>
+                      </span>
+                      <span className="tag me-4 px-4 py-1 fs-13">
+                        Four
+                        <Link to="#" className="tag-addon">
+                          <i className="fe fe-x"></i>
+                        </Link>
+                      </span>
                     </div>
                   </div>
                 </div>
               </Card.Body>
             </Card>
           </Col>
-          <Col xl={12}>
+          {/* <--<- COL END ->--> */}
+
+          <Col md={12} xl={12}>
+            <Card>
+              <Card.Header>
+                <Card.Title>Tag addons</Card.Title>
+              </Card.Header>
+              <Card.Body>
+                <div className="text-wrap">
+                  <div className="example">
+                    <div className="tags">
+                      <div className="tag me-4 px-4 py-1 fs-13">
+                        npx
+                        <Link to="#" className="tag-addon">
+                          <i className="fe fe-x"></i>
+                        </Link>
+                      </div>
+                      <div className="tag tag-danger me-4 px-4 py-1 fs-13">
+                        npm
+                        <span className="tag-addon">
+                          <i className="fe fe-activity"></i>
+                        </span>
+                      </div>
+                      <div className="tag me-4 fs-13">
+                        <span className="py-1 fs-13">bundle</span>
+                        <span className="tag-addon tag-success py-1 fs-13">
+                          passing
+                        </span>
+                      </div>
+                      <span className="tag tag-dark">
+                        <span className="py-1 fs-13">CSS gzip size</span>
+                        <span className="tag-addon tag-warning py-1 fs-13">
+                          20.9 kB
+                        </span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </Card.Body>
+            </Card>
+          </Col>
+          {/* <--<- COL END ->--> */}
+
+          <Col xl={12} md={12}>
             <Card>
               <Card.Header>
                 <Card.Title>Avatar tag</Card.Title>
@@ -256,69 +382,69 @@ const Tags = () => {
                 <div className="text-wrap">
                   <div className="example">
                     <div className="tags">
-                      <span className="tag">
+                      <span className="tag me-4">
                         <img
                           className="tag-avatar avatar cover-image"
                           alt="user11"
                           src={U11}
                         />
-                        Victoria
+                        <span className="me-4 px-4 py-2 fs-13">Victoria</span>
                       </span>
-                      <span className="tag">
+                      <span className="tag me-4">
                         <img
                           className="tag-avatar avatar cover-image"
                           alt="user4"
                           src={U4}
                         />
-                        Nathan
+                        <span className="me-4 px-4 py-2 fs-13">Nathan</span>
                       </span>
-                      <span className="tag">
+                      <span className="tag me-4">
                         <img
                           className="tag-avatar avatar cover-image"
                           alt="user1"
                           src={U1}
                         />
-                        Alice
+                        <span className="me-4 px-4 py-2 fs-13">Alice</span>
                       </span>
-                      <span className="tag">
+                      <span className="tag me-4">
                         <img
                           className="tag-avatar avatar cover-image"
                           alt="user18"
                           src={U18}
                         />
-                        Rose
+                        <span className="me-4 px-4 py-2 fs-13">Rose</span>
                       </span>
-                      <span className="tag">
+                      <span className="tag me-4">
                         <img
                           className="tag-avatar avatar cover-image"
                           alt="user16"
                           src={U16}
                         />
-                        Peter
+                        <span className="me-4 px-4 py-2 fs-13">Peter</span>
                       </span>
-                      <span className="tag">
+                      <span className="tag me-4">
                         <img
                           className="tag-avatar avatar cover-image"
                           alt="user6"
                           src={U6}
                         />
-                        Wayne
+                        <span className="me-4 px-4 py-2 fs-13">Wayne</span>
                       </span>
-                      <span className="tag">
+                      <span className="tag me-4">
                         <img
                           className="tag-avatar avatar cover-image"
                           alt="user7"
                           src={U7}
                         />
-                        Michelle
+                        <span className="me-4 px-4 py-2 fs-13">Michelle</span>
                       </span>
-                      <span className="tag">
+                      <span className="tag me-4">
                         <img
                           className="tag-avatar avatar cover-image"
                           alt="user17"
                           src={U17}
                         />
-                        Debra
+                        <span className="me-4 px-4 py-2 fs-13">Debra</span>
                       </span>
                     </div>
                   </div>
@@ -326,7 +452,9 @@ const Tags = () => {
               </Card.Body>
             </Card>
           </Col>
-          <Col xl={12}>
+          {/* <--<- COL END ->--> */}
+
+          <Col xl={12} md={12}>
             <Card>
               <Card.Header>
                 <Card.Title>List of tags</Card.Title>
@@ -339,9 +467,15 @@ const Tags = () => {
                   </p>
                   <div className="example">
                     <div className="tags">
-                      <span className="tag">First tag</span>
-                      <span className="tag">Second tag</span>
-                      <span className="tag">Third tag</span>
+                      <span className="tag me-4 px-4 py-1 fs-13 ">
+                        First tag
+                      </span>
+                      <span className="tag me-4 px-4 py-1 fs-13 ">
+                        Second tag
+                      </span>
+                      <span className="tag me-4 px-4 py-1 fs-13 ">
+                        Third tag
+                      </span>
                     </div>
                   </div>
                   <p className="mt-4">
@@ -350,108 +484,45 @@ const Tags = () => {
                   </p>
                   <div className="example">
                     <div className="tags">
-                      <span className="tag">One</span>
-                      <span className="tag">Two</span>
-                      <span className="tag">Three</span>
-                      <span className="tag">Four</span>
-                      <span className="tag">Five</span>
-                      <span className="tag">Six</span>
-                      <span className="tag">Seven</span>
-                      <span className="tag">Eight</span>
-                      <span className="tag">Nine</span>
-                      <span className="tag">Ten</span>
-                      <span className="tag">Eleven</span>
-                      <span className="tag">Twelve</span>
-                      <span className="tag">Thirteen</span>
-                      <span className="tag">Fourteen</span>
-                      <span className="tag">Fifteen</span>
-                      <span className="tag">Sixteen</span>
-                      <span className="tag">Seventeen</span>
-                      <span className="tag">Eighteen</span>
-                      <span className="tag">Nineteen</span>
-                      <span className="tag">Twenty</span>
+                      <span className="tag me-4 px-4 py-1 fs-13 ">One</span>
+                      <span className="tag me-4 px-4 py-1 fs-13 ">Two</span>
+                      <span className="tag me-4 px-4 py-1 fs-13 ">Three</span>
+                      <span className="tag me-4 px-4 py-1 fs-13 ">Four</span>
+                      <span className="tag me-4 px-4 py-1 fs-13 ">Five</span>
+                      <span className="tag me-4 px-4 py-1 fs-13 ">Six</span>
+                      <span className="tag me-4 px-4 py-1 fs-13 ">Seven</span>
+                      <span className="tag me-4 px-4 py-1 fs-13 ">Eight</span>
+                      <span className="tag me-4 px-4 py-1 fs-13 ">Nine</span>
+                      <span className="tag me-4 px-4 py-1 fs-13 ">Ten</span>
+                      <span className="tag me-4 px-4 py-1 fs-13 ">Eleven</span>
+                      <span className="tag me-4 px-4 py-1 fs-13 ">Twelve</span>
+                      <span className="tag me-4 px-4 py-1 fs-13 ">
+                        Thirteen
+                      </span>
+                      <span className="tag me-4 px-4 py-1 fs-13 ">
+                        Fourteen
+                      </span>
+                      <span className="tag me-4 px-4 py-1 fs-13 ">Fifteen</span>
+                      <span className="tag me-4 px-4 py-1 fs-13 ">Sixteen</span>
+                      <span className="tag me-4 px-4 py-1 fs-13 ">
+                        Seventeen
+                      </span>
+                      <span className="tag me-4 px-4 py-1 fs-13 ">
+                        Eighteen
+                      </span>
+                      <span className="tag me-4 px-4 py-1 fs-13 ">
+                        Nineteen
+                      </span>
+                      <span className="tag me-4 px-4 py-1 fs-13 ">Twenty</span>
                     </div>
                   </div>
                 </div>
               </Card.Body>
             </Card>
           </Col>
-          <Col md={12} xl={6}>
-            <Card>
-              <Card.Header>
-                <Card.Title>Tag remove</Card.Title>
-              </Card.Header>
-              <Card.Body>
-                <div className="text-wrap">
-                  <div className="example">
-                    <div className="tags">
-                      <span className="tag">
-                        One
-                        <Link to="#" className="tag-addon">
-                          <i className="fe fe-x"></i>
-                        </Link>
-                      </span>
-                      <span className="tag">
-                        Two
-                        <Link to="#" className="tag-addon">
-                          <i className="fe fe-x"></i>
-                        </Link>
-                      </span>
-                      <span className="tag">
-                        Three
-                        <Link to="#" className="tag-addon">
-                          <i className="fe fe-x"></i>
-                        </Link>
-                      </span>
-                      <span className="tag">
-                        Four
-                        <Link to="#" className="tag-addon">
-                          <i className="fe fe-x"></i>
-                        </Link>
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col md={12} xl={6}>
-            <Card>
-              <Card.Header>
-                <Card.Title>Tag addons</Card.Title>
-              </Card.Header>
-              <Card.Body>
-                <div className="text-wrap">
-                  <div className="example">
-                    <div className="tags">
-                      <div className="tag">
-                        npm
-                        <Link to="#" className="tag-addon">
-                          <i className="fe fe-x"></i>
-                        </Link>
-                      </div>
-                      <div className="tag tag-danger">
-                        npm
-                        <span className="tag-addon">
-                          <i className="fe fe-activity"></i>
-                        </span>
-                      </div>
-                      <div className="tag">
-                        bundle
-                        <span className="tag-addon tag-success">passing</span>
-                      </div>
-                      <span className="tag tag-dark">
-                        CSS gzip size
-                        <span className="tag-addon tag-warning">20.9 kB</span>
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </Card.Body>
-            </Card>
-          </Col>
+          {/* <--<- COL END ->--> */}
         </Row>
-        {/* <!-- ROW-3 CLOSED --> */}
+        {/* <--<-- ROW CLOSED -->--> */}
       </div>
     </React.Fragment>
   );

@@ -1,7 +1,8 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { Alert, Form, InputGroup } from 'react-bootstrap';
+import { Alert, Form, InputGroup } from "react-bootstrap";
 import { auth } from "../Firebase/Firebase";
+import logoWhite from "../../../assets/images/Logo/logoWhite.png";
 
 const ThemeAuthSignUp = () => {
   const [err, setError] = useState("");
@@ -44,11 +45,7 @@ const ThemeAuthSignUp = () => {
             {/* <!-- CONTAINER OPEN --> */}
             <div className="col-login mx-auto mt-7">
               <div className="text-center">
-                <img
-                  src={require("../../../assets/images/brand/logo-white.png")}
-                  className="header-brand-img m-0"
-                  alt=""
-                />
+                <img src={logoWhite} className="header-brand-img m-0" alt="" />
               </div>
             </div>
             <div className="container-login100">

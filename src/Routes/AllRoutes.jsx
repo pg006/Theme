@@ -7,7 +7,7 @@ import Error403 from "../components/Authentication/errorPage/Error403/Error403";
 import Error404 from "../components/Authentication/errorPage/Error404/Error404";
 import Error500 from "../components/Authentication/errorPage/Error500/Error500";
 import Error503 from "../components/Authentication/errorPage/Error503/Error503";
-import ForgotPassword from "../components/Authentication/Forgot Password/ForgotPassword";
+import ForgotPassword from "../components/Authentication/ForgotPassword/ForgotPassword";
 import LockScreen from "../components/Authentication/LockScreen/LockScreen";
 import Login from "../components/Authentication/Login/Login";
 import Register from "../components/Authentication/Register/Register";

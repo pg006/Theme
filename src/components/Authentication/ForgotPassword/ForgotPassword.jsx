@@ -1,6 +1,7 @@
 import React from "react";
 import { Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import logoWhite from "../../../assets/images/Logo/logoWhite.png";
 
 const ForgotPassword = () => {
   return (
@@ -9,11 +10,7 @@ const ForgotPassword = () => {
         {/* <!-- CONTAINER OPEN --> */}
         <Col className="col-login mx-auto">
           <div className="text-center">
-            <img
-              src={require("../../../assets/images/brand/logo-white.png")}
-              className="header-brand-img m-0"
-              alt=""
-            />
+            <img src={logoWhite} className="header-brand-img m-0" alt="" />
           </div>
         </Col>
 

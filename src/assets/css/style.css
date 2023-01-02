@@ -9893,8 +9893,8 @@ a.tag-addon:hover {
 }
 
 .tag-avatar {
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 40px;
+    height: 40px;
     border-radius: 3px 0 0 3px;
     margin: 0 0.5rem 0 -0.5rem;
 }
@@ -10140,7 +10140,7 @@ a.tag-addon:hover {
 /*---------Thumbnails----------*/
 .thumbnail {
     display: block;
-    padding: 4px;
+    /* padding: 4px; */
     margin-bottom: 20px;
     line-height: 1.42857143;
     background-color: #fff;
@@ -10165,7 +10165,21 @@ a.tag-addon:hover {
     height: 100%;
     width: 100%;
     display: block;
+    border-radius: 7px 7px 0 0;
+}
+
+.basicthumbimg{
+    height: 100%;
+    width: 100%;
+    display: block;
     border-radius: 7px;
+}
+
+.thumbimgbuttom{
+    height: 100%;
+    width: 100%;
+    display: block;
+    border-radius: 0 0 7px 7px;
 }
 
 .thumbnail .caption {
@@ -20595,6 +20609,10 @@ ul.inbox-pagination li {
 .toast {
     border: 1px solid #e9edf4;
     box-shadow: 0 0.5rem 1rem rgba(104, 113, 123, 0.1);
+}
+
+.colorToster{
+    border-radius: 4px;
 }
 
 .world-map circle:nth-child(2) {

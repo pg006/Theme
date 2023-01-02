@@ -2,6 +2,10 @@ import React, { Fragment, useEffect, useState } from "react";
 import { Link, NavLink, useLocation } from "react-router-dom";
 import { MENUITEMS } from "./Sidemenu/Sidemenu";
 import PerfectScrollbar from "react-perfect-scrollbar";
+import logo from "../../assets/images/Logo/logo.png";
+import logo1 from "../../assets/images/Logo/logo1.png";
+import logo2 from "../../assets/images/Logo/logo2.png";
+import logo3 from "../../assets/images/Logo/logo3.png";
 
 const Onhover = () => {
   if (document.querySelector(".app")?.classList.contains("sidenav-toggled"))
@@ -199,24 +203,24 @@ export const Sidebar = () => {
               to={`${process.env.PUBLIC_URL}/dashboard/`}
             >
               <img
-                src={require("../../assets/images/brand/logo.png")}
+                src={logo}
                 className="header-brand-img desktop-logo"
                 alt="logo1"
               />
               <img
-                src={require("../../assets/images/brand/logo-1.png")}
+                src={logo1}
                 className="header-brand-img toggle-logo"
-                alt="logo-2"
+                alt="logo1"
               />
               <img
-                src={require("../../assets/images/brand/logo-2.png")}
+                src={logo2}
                 className="header-brand-img light-logo"
-                alt="logo-3"
+                alt="logo2"
               />
               <img
-                src={require("../../assets/images/brand/logo-3.png")}
+                src={logo3}
                 className="header-brand-img light-logo1"
-                alt="logo-4"
+                alt="logo3"
               />
             </Link>
           </div>

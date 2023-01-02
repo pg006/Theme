@@ -885,8 +885,7 @@ const TooltipPopover = () => {
                       <Tab eventKey="Static" title="Static" className="">
                         <pre>
                           <code>
-                            {
-                              `<div className="popover-static-demo mb-4 border br-3 pb-6">
+                            {`<div className="popover-static-demo mb-4 border br-3 pb-6">
                                 <Row className="row-sm">
                                   <Col md={6} className="mt-4">
                                     <Popover
@@ -925,8 +924,7 @@ const TooltipPopover = () => {
                                     </Popover>
                                   </Col>
                                 </Row>
-                              </div>`
-                            }
+                              </div>`}
                           </code>
                         </pre>
                       </Tab>

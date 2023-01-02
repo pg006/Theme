@@ -2,6 +2,7 @@ import React from "react";
 import { Col, Form, Tab, Tabs } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Password from "../../../Data/Authenticatepage/DataAuthentication";
+import logoWhite from "../../../assets/images/Logo/logoWhite.png";
 
 const Login = () => {
   const Log = () => {
@@ -17,11 +18,7 @@ const Login = () => {
         {/* <!-- CONTAINER OPEN --> */}
         <Col className="col-login mx-auto mt-7">
           <div className="text-center">
-            <img
-              src={require("../../../assets/images/brand/logo-white.png")}
-              className="header-brand-img"
-              alt=""
-            />
+            <img src={logoWhite} className="header-brand-img" alt="" />
           </div>
         </Col>
         <div className="container-login100">

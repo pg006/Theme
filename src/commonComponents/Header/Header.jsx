@@ -8,6 +8,8 @@ import U2 from "../../assets/images/UserImages/U2.jpg";
 import U3 from "../../assets/images/UserImages/U3.jpg";
 import U4 from "../../assets/images/UserImages/U4.jpg";
 import U9 from "../../assets/images/UserImages/U9.jpg";
+import logo from "../../assets/images/Logo/logo.png";
+import logo3 from "../../assets/images/Logo/logo3.png";
 const SideMenuIcon = () => {
   //leftsidemenu
   document.querySelector(".app")?.classList.toggle("sidenav-toggled");
@@ -87,12 +89,12 @@ const Header = () => {
               to={`${process.env.PUBLIC_URL}/Dashboard`}
             >
               <img
-                src={require("../../assets/images/brand/logo.png")}
+                src={logo}
                 className="header-brand-img desktop-logo"
                 alt="logo"
               />
               <img
-                src={require("../../assets/images/brand/logo-3.png")}
+                src={logo3}
                 className="header-brand-img light-logo1"
                 alt="logo"
               />

@@ -20,6 +20,8 @@ import {
   Features,
   Testimonials,
 } from "../../Data/LandingPageData/DataLandingPage";
+import logo from '../../assets/images/Logo/logo.png'
+import logo3 from '../../assets/images/Logo/logo3.png'
 
 const SidSwitcherIcon = () => {
   //leftsidemenu
@@ -61,12 +63,12 @@ const LandingPage = () => {
                     to={`${process.env.PUBLIC_URL}/dashboard`}
                   >
                     <img
-                      src={require("../../assets/images/brand/logo.png")}
+                      src={logo}
                       className="header-brand-img desktop-logo"
                       alt="logo"
                     />
                     <img
-                      src={require("../../assets/images/brand/logo-3.png")}
+                      src={logo3}
                       className="header-brand-img light-logo1"
                       alt="logo"
                     />
@@ -132,10 +134,10 @@ const LandingPage = () => {
                           <img
                             alt="logo-3"
                             className="logo-2"
-                            src={require("../../assets/images/brand/logo-3.png")}
+                            src={logo3}
                           />
                           <img
-                            src={require("../../assets/images/brand/logo.png")}
+                            src={logo}
                             className="logo-3"
                             alt="logo"
                           />

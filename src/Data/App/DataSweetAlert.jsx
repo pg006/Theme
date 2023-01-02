@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Swal from "sweetalert2";
 import { Button } from "react-bootstrap";
-import Media from "../../assets/images/brand/logo-2.png";
+import logo2 from "../../assets/images/Logo/logo2.png";
 
 // Sample Sweet Alerts
 
@@ -189,7 +189,7 @@ export class ImagewithAlert extends Component {
     Swal.fire({
       title: "Your message",
       text: "Your message",
-      imageUrl: Media,
+      imageUrl: logo2,
       imageAlt: "logo",
       allowOutsideClick: false,
     });

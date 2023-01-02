@@ -455,13 +455,15 @@ const Progress = () => {
                 <div className="example">
                   <ProgressBar
                     variant="pink"
-                    now={20}
+                    label={`${10}%`}
                     animated
+                    now={10}
                     className="mb-3"
                   />
 
                   <ProgressBar
                     variant="blue-1"
+                    label={`${20}%`}
                     animated
                     now={20}
                     className="mb-3"
@@ -470,7 +472,7 @@ const Progress = () => {
                   <ProgressBar
                     variant="yellow-1"
                     animated
-                    now={45}
+                    now={40}
                     label={`${40}%`}
                     className="mb-3"
                   />
@@ -478,7 +480,7 @@ const Progress = () => {
                   <ProgressBar
                     variant="green-1"
                     animated
-                    now={65}
+                    now={60}
                     label={`${60}%`}
                     className="mb-3"
                   />
@@ -488,8 +490,8 @@ const Progress = () => {
                     <code>
                       {`
                         <div className="example">
-                          <ProgressBar variant="pink" now={20} animated className="mb-3" />
-                          <ProgressBar variant="blue-1" animated now={20} className="mb-3" />
+                          <ProgressBar variant="pink" now={10} label={{10}} animated className="mb-3" />
+                          <ProgressBar variant="blue-1" animated now={20} label={{20}} className="mb-3" />
                           <ProgressBar variant="yellow-1" animated now={45} label={{40}} className="mb-3" />
                           <ProgressBar variant="green-1" animated now={65} label={{60}} className="mb-3" />
                         </div>`}
@@ -532,8 +534,7 @@ const Progress = () => {
                 <Collapse in={Animated} className="mt-2">
                   <pre>
                     <code>
-                      {
-                        `<div className="example">
+                      {`<div className="example">
                           <ProgressBar className="progress-md mb-3">
                             <ProgressBar className="progress-bar-indeterminate bg-pink"></ProgressBar>
                           </ProgressBar>
@@ -546,8 +547,7 @@ const Progress = () => {
                           <ProgressBar className="progress-md">
                             <ProgressBar className="progress-bar-indeterminate bg-purple-1"></ProgressBar>
                           </ProgressBar>
-                        </div>`
-                      }
+                        </div>`}
                     </code>
                   </pre>
                 </Collapse>

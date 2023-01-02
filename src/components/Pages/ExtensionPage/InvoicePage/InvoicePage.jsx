@@ -3,6 +3,8 @@ import PageHeader from "../../../../commonComponents/PageHeader/PageHeader";
 import "./InvoicePage.scss";
 import { Col, Row, Card, Table, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import logo from '../../../../assets/images/Logo/logo.png'
+import logo3 from '../../../../assets/images/Logo/logo3.png'
 
 const InvoicePage = () => {
   const print = () => {
@@ -24,12 +26,12 @@ const InvoicePage = () => {
                       to={`${process.env.PUBLIC_URL}/dashboard`}
                     >
                       <img
-                        src={require("../../../../assets/images/brand/logo-3.png")}
+                        src={logo3}
                         className="header-brand-img logo-3 m-0"
                         alt="Sash logo"
                       />
                       <img
-                        src={require("../../../../assets/images/brand/logo.png")}
+                        src={logo}
                         className="header-brand-img logo m-0"
                         alt="Sash logo"
                       />
