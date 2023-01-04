@@ -10,127 +10,113 @@ import {
 } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import PageHeader from "../../commonComponents/PageHeader/PageHeader";
-import {
-  RecentOrder,
-  SalesAnalytics,
-  TotalCost,
-  TotalExpenses,
-  TotalProfit,
-  TotalUser,
-  Worldmap,
-} from "../../Data/DataDashboard/DataDashboard";
+import { RecentOrder, Worldmap } from "../../Data/DataDashboard/DataDashboard";
+import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
+import { DashboardChart } from "../../Data/DataChart/DataApexChart";
 
 const Dashboard = () => {
   return (
     <React.Fragment>
       <div>
         <PageHeader titles="Dashboard" active="Dashboard" items={["Home"]} />
-        {/* <!-- ROW-1 --> */}
-
+        {/* <--<-- ROW START -->--> */}
         <Row>
-          <Col lg={12} md={12} sm={12} xl={12}>
-            <Row>
-              <Col lg={6} md={6} sm={12} xl={3}>
-                <Card className="overflow-hidden">
-                  <Card.Body>
-                    <div className="d-flex">
-                      <div className="mt-2">
-                        <h6 className="">Total Users</h6>
-                        <h2 className="mb-0 number-font">40,278</h2>
-                      </div>
-                      <div className="ms-auto">
-                        <div className="chart-wrapper mt-1">
-                          <TotalUser />
-                        </div>
-                      </div>
-                    </div>
-                    <span className="text-muted fs-12">
-                      <span className="text-secondary me-2">
-                        <i className="fe fe-arrow-up-circle  text-secondary"></i>
-                        5%
-                      </span>
-                      Last week
-                    </span>
-                  </Card.Body>
-                </Card>
-              </Col>
-              <Col lg={6} md={6} sm={12} xl={3}>
-                <div className="card overflow-hidden">
-                  <Card.Body>
-                    <div className="d-flex">
-                      <div className="mt-2">
-                        <h6 className="">Total Profit</h6>
-                        <h2 className="mb-0 number-font">77,987</h2>
-                      </div>
-                      <div className="ms-auto">
-                        <div className="chart-wrapper mt-1">
-                          <TotalProfit />
-                        </div>
-                      </div>
-                    </div>
-                    <span className="text-muted fs-12">
-                      <span className="text-pink me-2">
-                        <i className="fe fe-arrow-down-circle text-pink"></i>
-                        0.75%
-                      </span>
-                      Last 6 days
-                    </span>
-                  </Card.Body>
+          <Col sm={6} md={6} lg={6} xl={3}>
+            <Card>
+              <Card.Body>
+                <div className="text-center">
+                  <small className="text-muted">New users</small>
+                  <h2 className="mb-2 mt-0">6,997</h2>
+                  <CircularProgressbar
+                    className="mt-3 mb-3 chart-dropshadow-secondary w-25"
+                    value={65}
+                    styles={buildStyles({ pathColor: "#05c3fb" })}
+                  />
+                  <div className="chart-circle-value-3 text-secondary fs-20 mt-4">
+                    <i className="icon icon-user-follow"></i>
+                  </div>
+                  <p className="mb-0 text-start">
+                    <span className="dot-label bg-secondary me-2"></span>Monthly
+                    users <span className="float-end">65%</span>
+                  </p>
                 </div>
-              </Col>
-              <Col lg={6} md={6} sm={12} xl={3}>
-                <div className="card overflow-hidden">
-                  <Card.Body>
-                    <div className="d-flex">
-                      <div className="mt-2">
-                        <h6 className="">Total Expenses</h6>
-                        <h2 className="mb-0 number-font">$76,995</h2>
-                      </div>
-                      <div className="ms-auto">
-                        <div className="chart-wrapper mt-1">
-                          <TotalExpenses />
-                        </div>
-                      </div>
-                    </div>
-                    <span className="text-muted fs-12">
-                      <span className="text-green me-2">
-                        <i className="fe fe-arrow-up-circle text-green"></i>
-                        0.9%
-                      </span>
-                      Last 9 days
-                    </span>
-                  </Card.Body>
-                </div>
-              </Col>
-              <Col lg={6} md={6} sm={12} xl={3}>
-                <Card className="overflow-hidden">
-                  <Card.Body>
-                    <div className="d-flex">
-                      <div className="mt-2">
-                        <h6 className="">Total Cost</h6>
-                        <h2 className="mb-0 number-font">$69,765</h2>
-                      </div>
-                      <div className="ms-auto">
-                        <div className="chart-wrapper mt-1">
-                          <TotalCost />
-                        </div>
-                      </div>
-                    </div>
-                    <span className="text-muted fs-12">
-                      <span className="text-warning me-2">
-                        <i className="fe fe-arrow-up-circle text-warning"></i>
-                        0.6%
-                      </span>
-                      Last year
-                    </span>
-                  </Card.Body>
-                </Card>
-              </Col>
-            </Row>
+              </Card.Body>
+            </Card>
           </Col>
+          {/* <-- COL END --> */}
+          <Col sm={6} md={6} lg={6} xl={3}>
+            <Card>
+              <Card.Body>
+                <div className="widget text-center">
+                  <small className="text-muted">Total Tax</small>
+                  <h2 className="mb-2 mt-0">$10,993</h2>
+                  <CircularProgressbar
+                    className="mt-3 mb-3 chart-dropshadow-success w-25"
+                    value={55}
+                    styles={buildStyles({ pathColor: "#09ad95" })}
+                  />
+                  <div className="chart-circle-value-3 text-success fs-20">
+                    <i className="icon icon-briefcase mt-4"></i>
+                  </div>
+                  <p className="mb-0 text-start">
+                    <span className="dot-label bg-success me-2"></span>Monthly
+                    Income <span className="float-end">$11,998</span>
+                  </p>
+                </div>
+              </Card.Body>
+            </Card>
+          </Col>
+          {/* <-- COL END --> */}
+          <Col sm={6} md={6} lg={6} xl={3}>
+            <Card>
+              <Card.Body>
+                <div className="widget text-center">
+                  <small className="text-muted">Total Profit</small>
+                  <h2 className="mb-2 mt-0">$29,998</h2>
+                  <CircularProgressbar
+                    className="mt-3 mb-3 chart-dropshadow-warning w-25"
+                    value={85}
+                    styles={buildStyles({ pathColor: "#f7b731" })}
+                  />
+                  <div className="chart-circle-value-3 text-warning fs-20">
+                    <i className="icon icon-chart mt-4"></i>
+                  </div>
+                  <p className="mb-0 text-start">
+                    <span className="dot-label bg-warning me-2"></span>Monthly
+                    Profit <span className="float-end">$5,588</span>
+                  </p>
+                </div>
+              </Card.Body>
+            </Card>
+          </Col>
+          {/* <-- COL END --> */}
+          <Col sm={6} md={6} lg={6} xl={3}>
+            <Card>
+              <Card.Body>
+                <div className="widget text-center">
+                  <small className="text-muted">Total Sales</small>
+                  <h2 className="mb-2 mt-0">$58,599</h2>
+                  <CircularProgressbar
+                    className="mt-3 mb-3 chart-dropshadow-danger w-25"
+                    value={65}
+                    styles={buildStyles({ pathColor: "#e82646" })}
+                  />
+                  <div className="chart-circle-value-3 text-danger fs-20">
+                    <i className="icon icon-basket mt-4"></i>
+                  </div>
+                  <p className="mb-0 text-start">
+                    <span className="dot-label bg-danger me-2"></span>Monthly
+                    Sales <span className="float-end">$15,197</span>
+                  </p>
+                </div>
+              </Card.Body>
+            </Card>
+          </Col>
+          {/* <-- COL END --> */}
         </Row>
-        {/* <!-- ROW-1 END --> */}
-        {/* <!-- ROW-2 --> */}
+        {/* <--<-- ROW END -->--> */}
+
+        {/* <--<-- ROW START -->--> */}
         <Row>
           <Col sm={12} md={12} lg={12} xl={12}>
             <Card>
@@ -139,7 +125,7 @@ const Dashboard = () => {
               </Card.Header>
               <Card.Body>
                 <div className="chartjs-wrapper-demo myChartSaah">
-                  <SalesAnalytics />
+                  <DashboardChart />
                 </div>
               </Card.Body>
             </Card>
@@ -258,7 +244,7 @@ const Dashboard = () => {
                         <h6 className="mb-1">Firefox</h6>
                         <h6 className="fw-semibold mb-1">
                           24,635
-                          <span className="text-success fs-11">
+                          <span className="text-danger fs-11">
                             (<i className="fe fe-arrow-down"></i>11.63%)
                           </span>
                         </h6>
@@ -738,7 +724,9 @@ const Dashboard = () => {
             </Card>
           </Col>
         </Row>
-        {/* <!-- ROW-4 --> */}
+        {/* <--<-- ROW END -->--> */}
+
+       {/* <--<-- ROW START -->--> */}
         {/* <Row>
           <Col sm={12}>
             <Card>
@@ -819,7 +807,7 @@ const Dashboard = () => {
             </Card>
           </Col>
         </Row> */}
-        {/* <!-- ROW-4 END --> */}
+        {/* <--<-- ROW END -->--> */}
       </div>
     </React.Fragment>
   );

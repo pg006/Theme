@@ -1,23 +1,22 @@
 import React from "react";
 import PageHeader from "../../../../commonComponents/PageHeader/PageHeader";
-import { CutomValidation, FormvalidationWithTooltip } from "../../../../Data/Pages/Forms/DataFormValidation";
+import {
+  CutomValidation,
+  FormvalidationWithTooltip,
+} from "../../../../Data/Pages/Forms/DataFormValidation";
 import "./FormValidationPage.scss";
-import { Row, Col, Card, Form, Button, InputGroup } from 'react-bootstrap';
-import Select from 'react-select';
+import { Row, Col, Card, Form, Button, InputGroup } from "react-bootstrap";
+import Select from "react-select";
 
 const FormValidationPage = () => {
+  const State = [{ value: ".....", label: "....." }];
 
-    const State = [
-        { value: ".....", label: "....." },
-      ];
-      
-      const Option = [
-        { value: "One", label: "One" },
-        { value: "Two", label: "Two" },
-        { value: "Three", label: "Three" },
-        { value: "Four", label: "Four" },
-      
-      ];
+  const Option = [
+    { value: "One", label: "One" },
+    { value: "Two", label: "Two" },
+    { value: "Three", label: "Three" },
+    { value: "Four", label: "Four" },
+  ];
 
   return (
     <React.Fragment>
@@ -139,7 +138,6 @@ const FormValidationPage = () => {
                         isInvalid
                       />
                       <Form.Control.Feedback type="invalid">
-                        
                         Please provide a valid city.
                       </Form.Control.Feedback>
                     </Col>
@@ -151,7 +149,6 @@ const FormValidationPage = () => {
                         placeholder="State"
                       />
                       <Form.Control.Feedback type="invalid">
-                        
                         Please provide a valid state.
                       </Form.Control.Feedback>
                     </Col>
@@ -202,62 +199,67 @@ const FormValidationPage = () => {
                       Please enter a message in the Textarea
                     </Form.Control.Feedback>
                   </div>
+                  <Row>
+                    <Col lg={4} md={4} sm={12}>
+                      <div className="custom-control custom-checkbox mb-3">
+                        <input
+                          type="checkbox"
+                          className="custom-control-input"
+                          id="customControlValidation1"
+                          required
+                        />
 
-                  <div className="custom-control custom-checkbox mb-3">
-                    <input
-                      type="checkbox"
-                      className="custom-control-input"
-                      id="customControlValidation1"
-                      required
-                    />
+                        <Form.Label
+                          className="custom-control-label"
+                          forhtml="customControlValidation1"
+                        >
+                          Check this custom checkbox
+                        </Form.Label>
 
-                    <Form.Label
-                      className="custom-control-label"
-                      forhtml="customControlValidation1"
-                    >
-                      Check this custom checkbox
-                    </Form.Label>
+                        <div className="invalid-feedback">
+                          Example invalid feedback text
+                        </div>
+                      </div>
+                    </Col>
+                    <Col lg={4} md={4} sm={12}>
+                      <div className="custom-control custom-radio">
+                        <input
+                          type="radio"
+                          className="custom-control-input"
+                          id="customControlValidation2"
+                          name="radio-stacked"
+                          required
+                        />
 
-                    <div className="invalid-feedback">
-                      Example invalid feedback text
-                    </div>
-                  </div>
-
-                  <div className="custom-control custom-radio">
-                    <input
-                      type="radio"
-                      className="custom-control-input"
-                      id="customControlValidation2"
-                      name="radio-stacked"
-                      required
-                    />
-
-                    <Form.Label
-                      className="custom-control-label"
-                      forhtml="customControlValidation2"
-                    >
-                      Toggle this custom radio
-                    </Form.Label>
-                  </div>
-
-                  <div className="custom-control custom-radio mb-3">
-                    <input
-                      type="radio"
-                      className="custom-control-input"
-                      id="customControlValidation3"
-                      name="radio-stacked"
-                      required
-                    />
-                    <label
-                      className="custom-control-label"
-                      // for="customControlValidation3"
-                    >
-                      Or toggle this other custom radio
-                    </label>
-                    <div className="invalid-feedback">
-                      More example invalid feedback text
-                    </div>
-                  </div>
+                        <Form.Label
+                          className="custom-control-label"
+                          forhtml="customControlValidation2"
+                        >
+                          Toggle this custom radio
+                        </Form.Label>
+                      </div>
+                    </Col>
+                    <Col lg={4} md={4} sm={12}>
+                      <div className="custom-control custom-radio mb-3">
+                        <input
+                          type="radio"
+                          className="custom-control-input"
+                          id="customControlValidation3"
+                          name="radio-stacked"
+                          required
+                        />
+                        <label
+                          className="custom-control-label"
+                          // for="customControlValidation3"
+                        >
+                          Or toggle this other custom radio
+                        </label>
+                        <div className="invalid-feedback">
+                          More example invalid feedback text
+                        </div>
+                      </div>
+                    </Col>
+                  </Row>
 
                   <div className="mb-3">
                     <InputGroup hasValidation>
@@ -266,7 +268,6 @@ const FormValidationPage = () => {
                       </InputGroup.Text>
                       <Form.Control type="text" required isInvalid />
                       <Form.Control.Feedback type="invalid">
-                        
                         Example invalid input group feedback
                       </Form.Control.Feedback>
                     </InputGroup>
@@ -287,7 +288,6 @@ const FormValidationPage = () => {
                         placeholder="Select"
                       />
                       <Form.Control.Feedback type="invalid">
-                        
                         Example invalid input group feedback
                       </Form.Control.Feedback>
                     </InputGroup>

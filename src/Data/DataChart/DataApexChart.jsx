@@ -3944,3 +3944,107 @@ export const PolarMonochrome = () => {
   );
 };
 //  Radar Charts END******
+
+export const DashboardChart = () => {
+  const series = [
+    {
+      name: "Monthly users",
+      type: "column",
+      data: [25, 23, 11, 22, 27, 13, 22, 37, 21, 44, 22, 30],
+      color: "#05c3fb",
+    },
+    {
+      name: "Monthly Income",
+      type: "area",
+      data: [38, 44, 55, 41, 67, 22, 43, 21, 41, 56, 27, 43],
+      color: "#09ad95",
+    },
+    {
+      name: "Monthly Profit",
+      type: "line",
+      data: [50, 30, 25, 36, 30, 45, 35, 64, 52, 59, 36, 39],
+      color: "#f7b731",
+    },
+    {
+      name: "Monthly Sales",
+      type: "column",
+      data: [34, 44, 64, 31, 12, 53, 53, 23, 66, 36, 58, 55],
+      color: "#e82646",
+    },
+  ];
+  const options = {
+    chart: {
+      height: 350,
+      type: "line",
+      stacked: false,
+    },
+    stroke: {
+      width: [0, 2, 4, 0],
+      curve: "smooth",
+    },
+    plotOptions: {
+      bar: {
+        columnWidth: "40%",
+      },
+    },
+
+    fill: {
+      opacity: [0.85, 0.25, 1, 0.85],
+      gradient: {
+        inverseColors: false,
+        shade: "light",
+        type: "vertical",
+        opacityFrom: 0.85,
+        opacityTo: 0.55,
+        stops: [0, 100, 100, 100],
+      },
+    },
+    labels: [
+      "01/01/2022",
+      "02/01/2022",
+      "03/01/2022",
+      "04/01/2022",
+      "05/01/2022",
+      "06/01/2022",
+      "07/01/2022",
+      "08/01/2022",
+      "09/01/2022",
+      "10/01/2022",
+      "11/01/2022",
+      "12/01/2022",
+    ],
+
+    markers: {
+      size: 0,
+    },
+    xaxis: {
+      type: "datetime",
+    },
+    yaxis: {
+      min: 0,
+    },
+    tooltip: {
+      shared: true,
+      intersect: false,
+      y: {
+        formatter: function (y) {
+          if (typeof y !== "undefined") {
+            return y.toFixed(0) + " points";
+          }
+          return y;
+        },
+      },
+    },
+  };
+
+  return (
+    <div id="chart">
+      <ReactApexChart
+        options={options}
+        series={series}
+        type="line"
+        height={350}
+      />
+    </div>
+  );
+};

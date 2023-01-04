@@ -1,7 +1,17 @@
 import React from "react";
 import "./FormElementsPage.scss";
-import { Row, Col, Card, Form, InputGroup, FormControl, Button, Dropdown, ListGroup } from 'react-bootstrap';
-import Select from 'react-select';
+import {
+  Row,
+  Col,
+  Card,
+  Form,
+  InputGroup,
+  FormControl,
+  Button,
+  Dropdown,
+  ListGroup,
+} from "react-bootstrap";
+import Select from "react-select";
 import PageHeader from "../../../../commonComponents/PageHeader/PageHeader";
 import { YourSkills } from "../../../../Data/Pages/Forms/DataFormElement";
 
@@ -29,7 +39,7 @@ const FormElementsPage = () => {
         />
         {/* <!-- Row --> */}
         <Row>
-          <Col xl={6} lg={12}>
+          <Col xl={12} lg={12}>
             <Card>
               <Card.Header>
                 <Card.Title as="h3">Inputs & Textareas </Card.Title>
@@ -72,7 +82,7 @@ const FormElementsPage = () => {
                       className="form-control mb-4"
                       placeholder="Textarea"
                       defaultValue="Textarea"
-                      rows={4}
+                      rows={5}
                     ></textarea>
                   </div>
                   <div className="col-lg mg-t-10">
@@ -81,7 +91,7 @@ const FormElementsPage = () => {
                       placeholder="Textarea (readonly)"
                       defaultValue="Textarea (readonly)"
                       readOnly
-                      rows={4}
+                      rows={5}
                     ></textarea>
                   </div>
                   <div className="col-lg mg-t-10">
@@ -90,7 +100,7 @@ const FormElementsPage = () => {
                       disabled
                       placeholder="Texarea (disabled)"
                       defaultValue="Texarea (disabled)"
-                      rows={4}
+                      rows={5}
                     ></textarea>
                   </div>
                 </Row>
@@ -151,6 +161,7 @@ const FormElementsPage = () => {
                           className="form-control mb-4 is-valid state-valid"
                           placeholder="Textarea (success state)"
                           defaultValue="This is textaera"
+                          rows={5}
                         ></textarea>
                       </Form.Group>
                     </Col>
@@ -166,7 +177,7 @@ const FormElementsPage = () => {
                           className="form-control mb-4 is-invalid state-invalid"
                           placeholder="Textarea (invalid state)"
                           defaultValue="Textarea (invalid state)"
-                          rows={3}
+                          rows={5}
                         ></textarea>
                       </Form.Group>
                     </Col>
@@ -175,7 +186,7 @@ const FormElementsPage = () => {
               </Card.Body>
             </Card>
           </Col>
-          <Col xl={6} lg={12}>
+          <Col xl={12} lg={12}>
             <Card>
               <Card.Header>
                 <Card.Title as="h3">Readonly plain text</Card.Title>
@@ -194,35 +205,38 @@ const FormElementsPage = () => {
                   preserve the correct margin and padding .
                 </p>
                 <Row className="mb-3">
-                  <Form.Label
-                    htmlFor="staticEmail"
-                    className="col-sm-2 col-form-label"
-                  >
-                    Email
-                  </Form.Label>
-                  <Col sm={10}>
-                    <Form.Control
-                      type="text"
-                      readOnly
-                      className="form-control-plaintext"
-                      placeholder="email@example.com"
-                      id="staticEmail"
-                    />
+                  <Col lg={6} md={12} sm={12}>
+                    <Form.Label
+                      htmlFor="staticEmail"
+                      className="col-sm-2 col-form-label"
+                    >
+                      Email
+                    </Form.Label>
+                    <Col>
+                      <Form.Control
+                        type="text"
+                        readOnly
+                        className="form-control-plaintext"
+                        placeholder="email@example.com"
+                        id="staticEmail"
+                      />
+                    </Col>
                   </Col>
-                </Row>
-                <Row>
-                  <Form.Label
-                    htmlFor="inputPassword"
-                    className="col-sm-2 col-form-label"
-                  >
-                    Password
-                  </Form.Label>
-                  <Col sm={10}>
-                    <Form.Control
-                      type="password"
-                      id="inputPassword"
-                      placeholder=""
-                    />
+                  <Col lg={6} md={12} sm={12}>
+                    <Form.Label
+                      htmlFor="inputPassword"
+                      className="col-sm-2 col-form-label"
+                    >
+                      Password
+                    </Form.Label>
+                    <Col>
+                      <Form.Control
+                        type="password"
+                        id="inputPassword"
+                        placeholder="*******"
+                        readOnly
+                      />
+                    </Col>
                   </Col>
                 </Row>
               </Card.Body>
@@ -309,93 +323,108 @@ const FormElementsPage = () => {
 
         {/* <!-- Row --> */}
         <Row>
-          <Col xl={6} lg={12}>
+          <Col xl={12} lg={12}>
             <Card>
               <Card.Header>
                 <Card.Title as="h4">Gerenal Elements</Card.Title>
               </Card.Header>
               <Card.Body className="">
                 <Form className="form-horizontal">
-                  <Row className="mb-4">
-                    <Form.Label className="col-md-3">Text</Form.Label>
-                    <Col md={9}>
-                      <Form.Control type="text" placeholder="Typing....." />
+                  <Row>
+                    <Col lg={6} md={12} sm={12}>
+                      <Row className="mb-4">
+                        <Form.Label className="col-md-3">Text</Form.Label>
+                        <Col md={12}>
+                          <Form.Control type="text" placeholder="Typing....." />
+                        </Col>
+                      </Row>
+                      <Row className="mb-4">
+                        <Form.Label
+                          className="col-md-3"
+                          htmlFor="example-email"
+                        >
+                          Email
+                        </Form.Label>
+                        <Col md={12}>
+                          <Form.Control
+                            type="email"
+                            id="example-email"
+                            name="example-email"
+                            placeholder="Email"
+                          />
+                        </Col>
+                      </Row>
+                      <Row className="mb-4">
+                        <Form.Label className="col-md-3">Password</Form.Label>
+                        <Col md={12}>
+                          <Form.Control
+                            type="password"
+                            placeholder="password"
+                          />
+                        </Col>
+                      </Row>
+                      <Row className="mb-4">
+                        <Form.Label className="col-md-3">
+                          Placeholder
+                        </Form.Label>
+                        <Col md={12}>
+                          <Form.Control type="text" placeholder="text" />
+                        </Col>
+                      </Row>
+                      <Row className="mb-4">
+                        <Form.Label className="col-md-3">Readonly</Form.Label>
+                        <Col md={12}>
+                          <Form.Control
+                            type="text"
+                            readOnly
+                            placeholder="Readonly value"
+                          />
+                        </Col>
+                      </Row>
                     </Col>
-                  </Row>
-                  <Row className="mb-4">
-                    <Form.Label className="col-md-3" htmlFor="example-email">
-                      Email
-                    </Form.Label>
-                    <Col md={9}>
-                      <Form.Control
-                        type="email"
-                        id="example-email"
-                        name="example-email"
-                        placeholder="Email"
-                      />
-                    </Col>
-                  </Row>
-                  <Row className="mb-4">
-                    <Form.Label className="col-md-3">Password</Form.Label>
-                    <Col md={9}>
-                      <Form.Control type="password" placeholder="password" />
-                    </Col>
-                  </Row>
-                  <Row className="mb-4">
-                    <Form.Label className="col-md-3">Placeholder</Form.Label>
-                    <Col md={9}>
-                      <Form.Control type="text" placeholder="text" />
-                    </Col>
-                  </Row>
-                  <Row className="mb-4">
-                    <Form.Label className="col-md-3">Readonly</Form.Label>
-                    <Col md={9}>
-                      <Form.Control
-                        type="text"
-                        readOnly
-                        placeholder="Readonly value"
-                      />
-                    </Col>
-                  </Row>
-                  <Row className="mb-4">
-                    <Form.Label className="col-md-3">Disabled</Form.Label>
-                    <Col md={9}>
-                      <Form.Control
-                        type="text"
-                        disabled
-                        placeholder="Disabled value"
-                      />
-                    </Col>
-                  </Row>
-                  <Row className="mb-4 mb-4">
-                    <Form.Label className="col-md-3">Number</Form.Label>
-                    <Col md={9}>
-                      <Form.Control type="number" name="number" />
-                    </Col>
-                  </Row>
-                  <Row className="mb-4">
-                    <Form.Label className="col-md-3">URL</Form.Label>
-                    <Col md={9}>
-                      <Form.Control type="url" name="url" />
-                    </Col>
-                  </Row>
-                  <Row className="mb-4">
-                    <Form.Label className="col-md-3">Search</Form.Label>
-                    <Col md={9}>
-                      <Form.Control type="search" name="search" />
-                    </Col>
-                  </Row>
-                  <Row className="mb-0">
-                    <Form.Label className="col-md-3">Tel</Form.Label>
-                    <Col md={9}>
-                      <Form.Control type="tel" name="tel" />
+
+                    <Col lg={6} md={12} sm={12}>
+                      <Row className="mb-4">
+                        <Form.Label className="col-md-3">Disabled</Form.Label>
+                        <Col md={12}>
+                          <Form.Control
+                            type="text"
+                            disabled
+                            placeholder="Disabled value"
+                          />
+                        </Col>
+                      </Row>
+                      <Row className="mb-4 mb-4">
+                        <Form.Label className="col-md-3">Number</Form.Label>
+                        <Col md={12}>
+                          <Form.Control type="number" name="number" />
+                        </Col>
+                      </Row>
+                      <Row className="mb-4">
+                        <Form.Label className="col-md-3">URL</Form.Label>
+                        <Col md={12}>
+                          <Form.Control type="url" name="url" />
+                        </Col>
+                      </Row>
+                      <Row className="mb-4">
+                        <Form.Label className="col-md-3">Search</Form.Label>
+                        <Col md={12}>
+                          <Form.Control type="search" name="search" />
+                        </Col>
+                      </Row>
+                      <Row className="mb-0">
+                        <Form.Label className="col-md-3">Tel</Form.Label>
+                        <Col md={12}>
+                          <Form.Control type="tel" name="tel" />
+                        </Col>
+                      </Row>
                     </Col>
                   </Row>
                 </Form>
               </Card.Body>
             </Card>
           </Col>
-          <Col xl={6} lg={12}>
+          <Col xl={12} lg={12}>
             <Card>
               <Card.Header>
                 <Card.Title as="h3">Checksbox & Radio Buttons</Card.Title>
