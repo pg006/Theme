@@ -7,7 +7,7 @@ export const LightTheme = () => {
   SwitcherData.OpacityValuePrimary();
   localStorage.clear();
 };
-export function dark() {
+export const dark = () => {
   document.querySelector(".app")?.classList.add("dark-mode");
 
   document.querySelector(".app")?.classList.remove("light-mode");
@@ -42,7 +42,7 @@ export const RtltoLtr = () => {
   localStorage.setItem("sashltr", "true");
   localStorage.removeItem("sashrtl");
 };
-export function resetData() {
+export const resetData = () => {
   let lighttheme = document.querySelector("#myonoffswitch1");
   lighttheme.checked = true; //lighttheme
   let Ltr = document.querySelector("#myonoffswitch23");

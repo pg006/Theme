@@ -3,7 +3,7 @@ import { Card, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { ProductData } from "./Mock";
 
-export function DataWishlist() {
+export const DataWishlist = () => {
   const [product, setProduct] = React.useState(ProductData);
   function handleRemove(id) {
     const newList = product.filter((idx) => idx.id !== id);

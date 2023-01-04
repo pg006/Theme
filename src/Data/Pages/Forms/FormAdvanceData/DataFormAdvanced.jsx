@@ -10,7 +10,7 @@ import TextField from "@mui/material/TextField";
 import { AdapterDateFns } from "@mui/x-date-pickers/AdapterDateFns";
 import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
 import { TimePicker } from "@mui/x-date-pickers/TimePicker";
-import { createStyles, makeStyles, Theme } from "@material-ui/core/styles";
+import { createStyles, makeStyles } from "@material-ui/core/styles";
 import Stack from "@mui/material/Stack";
 import { DatePicker } from "@mui/x-date-pickers/DatePicker";
 import Badge from "@mui/material/Badge";
@@ -22,10 +22,19 @@ import "react-dual-listbox/lib/react-dual-listbox.css";
 import { ChromePicker, SketchPicker } from "react-color";
 import { Button } from "react-bootstrap";
 import ColorLensIcon from "@mui/icons-material/ColorLens";
+import {
+  BasicSelectOption,
+  Data,
+  dualListOptions,
+  groupedOptions,
+  selectBoxOptions,
+  selectBoxOptions2,
+  usersListOption,
+} from "./Mock";
 
 // File Upload 1
 
-export function FileUpload() {
+export const FileUpload = () => {
   const [fileNames, setFileNames] = useState([]);
   const handleDrop = (acceptedFiles) =>
     setFileNames(acceptedFiles.map((file) => file.name));
@@ -50,39 +59,32 @@ export function FileUpload() {
       </div>
     </div>
   );
-}
+};
 
 // File Upload 2
-
-export class FileuploadCustomised extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      files: [],
-    };
-  }
-  handleChange(files) {
-    this.setState({
-      files: files,
-    });
-  }
-  render() {
-    return (
-      <DropzoneArea
-        acceptedFiles={["image/*"]}
-        onChange={this.handleChange.bind(this)}
-        showFileNames
-        dropzoneText="Drag and Drop a file here or Click"
-        showAlerts={true}
-        filesLimit={20}
-      />
-    );
-  }
-}
+export const FileuploadCustomised = () => {
+  const [files, setFiles] = React.useState([]);
+  console.log(files);
+  const handleChange = (File) => {
+    setFiles(File);
+  };
+  return (
+    <DropzoneArea
+      acceptedFiles={["image/*"]}
+      onChange={(e) => {
+        handleChange(e);
+      }}
+      showFileNames
+      dropzoneText="Drag and Drop a file here or Click"
+      showAlerts={true}
+      filesLimit={20}
+    />
+  );
+};
 
 // File Upload 3
 
-export function DisabledFileDropZone() {
+export const DisabledFileDropZone = () => {
   const setFileNames = useState;
   const handleDrop = (acceptedFiles) =>
     setFileNames(acceptedFiles.map((file) => file.name));
@@ -100,164 +102,67 @@ export function DisabledFileDropZone() {
       </Dropzone>
     </div>
   );
-}
+};
 
 // Multiple Filedropzone
 
-export class CustomFileuploader extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      files: [],
-    };
-  }
-  handleChange(files) {
-    this.setState({
-      files: files,
-    });
-  }
-  render() {
-    return (
-      <DropzoneArea
-        acceptedFiles={["image/*"]}
-        onChange={this.handleChange.bind(this)}
-        showFileNames
-        showAlerts={true}
-        filesLimit={100}
-        dropzoneText="Drag and Drop a file here or Click"
-      />
-    );
-  }
-}
+export const CustomFileuploader = () => {
+  const [files, setFiles] = React.useState([]);
+  console.log(files);
+  const handleChange = (File) => {
+    setFiles(File);
+  };
+  return (
+    <DropzoneArea
+      acceptedFiles={["image/*"]}
+      onChange={(e) => {
+        handleChange(e);
+      }}
+      showFileNames
+      showAlerts={true}
+      filesLimit={100}
+      dropzoneText="Drag and Drop a file here or Click"
+    />
+  );
+};
 
 // Select2 elements START
 
 // Basic
-
-const options = [
-  { value: "Choose one", label: "Choose one", isDisabled: "true" },
-  { value: "Chuck Testa", label: "Chuck Testa" },
-  { value: "Sage Cattabriga-Alosa", label: "Sage Cattabriga-Alosa" },
-  { value: "Nikola Tesla", label: "Nikola Tesla" },
-  { value: "Cattabriga-Alosa", label: "Cattabriga-Alosa" },
-  { value: "Nikola Alosa", label: "Nikola Alosa" },
-];
-
-export class BasicSelect extends React.Component {
-  render() {
-    return (
-      <Select
-        options={options}
-        placeholder="choose one"
-        classNamePrefix="Select"
-      />
-    );
-  }
-}
+export const BasicSelect = () => {
+  return (
+    <Select
+      options={BasicSelectOption}
+      placeholder="choose one"
+      classNamePrefix="Select"
+    />
+  );
+};
 
 // Basic Select2
-
-export const CitiesData = [
-  { value: "Arizona", label: "Arizona", isDisabled: "true" },
-  { value: "Colorado", label: "Colorado" },
-  { value: "Idaho", label: "Idaho" },
-  { value: "Montana", label: "Montana" },
-  { value: "New Mexico", label: "New Mexico" },
-  { value: "North Dakota", label: "North Dakota" },
-  { value: "Utah", label: "Utah" },
-  { value: "Wyoming", label: "Wyoming" },
-];
-
-export const TimeZone = [
-  { value: "Alabama", label: "Alabama" },
-  { value: "Arkansas", label: "Arkansas" },
-  { value: "Illinois", label: "Illinois" },
-  { value: "Iowa", label: "Iowa" },
-  { value: "Kansas", label: "Kansas" },
-  { value: "Kentucky", label: "Kentucky" },
-  { value: "Louisiana", label: "Louisiana" },
-  { value: "Minnesota", label: "Minnesota" },
-  { value: "Mississippi", label: "Mississippi" },
-  { value: "Missouri", label: "Missouri" },
-  { value: "Oklahoma", label: "Oklahoma" },
-  { value: "South Dakota", label: "South Dakota" },
-  { value: "Texas", label: "Texas" },
-  { value: "Tennessee", label: "Tennessee" },
-  { value: "Wisconsin", label: "Wisconsin" },
-];
-
-export const groupedOptions = [
-  {
-    label: "Cities",
-    options: CitiesData,
-  },
-  {
-    label: "Central-TimeZone",
-    options: TimeZone,
-  },
-];
-
-export class BasicSelectCustom extends React.Component {
-  render() {
-    return <Select options={groupedOptions} classNamePrefix="Select" />;
-  }
-}
+export const BasicSelectCustom = () => {
+  return <Select options={groupedOptions} classNamePrefix="Select" />;
+};
 
 // Basic Select3
 
-export const Data = [
-  { value: "Arizona", label: "Arizona", isDisabled: "false" },
-  { value: "Colorado", label: "Colorado" },
-  { value: "Idaho", label: "Idaho" },
-  { value: "Montana", label: "Montana" },
-  { value: "New Mexico", label: "New Mexico" },
-  { value: "North Dakota", label: "North Dakota" },
-  { value: "Utah", label: "Utah" },
-  { value: "Wyoming", label: "Wyoming" },
-  { value: "Alabama", label: "Alabama" },
-  { value: "Arkansas", label: "Arkansas" },
-  { value: "Illinois", label: "Illinois" },
-  { value: "Iowa", label: "Iowa" },
-  { value: "Kansas", label: "Kansas" },
-  { value: "Kentucky", label: "Kentucky" },
-  { value: "Louisiana", label: "Louisiana" },
-  { value: "Minnesota", label: "Minnesota" },
-  { value: "Mississippi", label: "Mississippi" },
-  { value: "Missouri", label: "Missouri" },
-  { value: "Oklahoma", label: "Oklahoma" },
-  { value: "South Dakota", label: "South Dakota" },
-  { value: "Texas", label: "Texas" },
-  { value: "Tennessee", label: "Tennessee" },
-  { value: "Wisconsin", label: "Wisconsin" },
-];
-
-export class BasicSelectSearch extends React.Component {
-  render() {
-    return (
-      <Select
-        className="basic-single"
-        classNamePrefix="Select"
-        defaultValue={Data[0]}
-        name="color"
-        options={Data}
-      />
-    );
-  }
-}
+export const BasicSelectSearch = () => {
+  return (
+    <Select
+      className="basic-single"
+      classNamePrefix="Select"
+      defaultValue={Data[0]}
+      name="color"
+      options={Data}
+    />
+  );
+};
 
 // User List
 
 const animatedComponents = makeAnimated();
 
-export function Userslist() {
-  const option = [
-    { value: "Firefox", label: "Firefox" },
-    { value: "Chrome", label: "Chrome" },
-    { value: "Safari", label: "Safari" },
-    { value: "Opera", label: "Opera" },
-    { value: "Internet Explorer", label: "Internet Explorer" },
-  ];
-
+export const Userslist = () => {
   return (
     <div>
       <div>
@@ -266,13 +171,13 @@ export function Userslist() {
           components={animatedComponents}
           defaultValue={2}
           isMulti
-          options={option}
+          options={usersListOption}
           classNamePrefix="Select"
         />
       </div>
     </div>
   );
-}
+};
 
 // Select2 elements END
 
@@ -295,7 +200,7 @@ const useStyles = makeStyles((theme) =>
   })
 );
 
-export function TimePickers() {
+export const TimePickers = () => {
   const classes = useStyles();
 
   return (
@@ -315,13 +220,12 @@ export function TimePickers() {
       />
     </form>
   );
-}
+};
 
 // Basic Time picker2
 // Set the scroll position
 
-export function BasicTimePicker() {
-  //   const [value, setValue] = (React.useState < Date) | (null > null);
+export const BasicTimePicker = () => {
   const [value, setValue] = useState();
 
   return (
@@ -336,12 +240,11 @@ export function BasicTimePicker() {
       />
     </LocalizationProvider>
   );
-}
+};
 
 // Dynamically Time picker
 
-export function DynamicTimePicker() {
-  //   const [value, setValue] = (React.useState < Date) | (null > new Date())
+export const DynamicTimePicker = () => {
   const [value, setValue] = useState();
 
   return (
@@ -363,7 +266,7 @@ export function DynamicTimePicker() {
       </Stack>
     </LocalizationProvider>
   );
-}
+};
 
 // Time Picker END
 
@@ -371,7 +274,7 @@ export function DynamicTimePicker() {
 
 // Basic
 
-export function BasicStyle() {
+export const BasicStyle = () => {
   const [color, setColor] = useState("#6c5ffc");
   const [showColorPicker, setShowColorPicker] = useState(false);
 
@@ -402,62 +305,61 @@ export function BasicStyle() {
       )}
     </div>
   );
-}
+};
 
 // SketchExample style
 
-export class SketchExample extends React.Component {
-  state = {
-    displayColorPicker: false,
-    color: {
-      r: "241",
-      g: "112",
-      b: "19",
-      a: "1",
-    },
-  };
-  handleClick = () => {
-    this.setState({ displayColorPicker: !this.state.displayColorPicker });
+export const SketchExample = () => {
+  const [displayColorPicker, setDisplayColorPicker] = useState(false);
+  const [color, setColor] = useState({ r: "241", g: "112", b: "19", a: "1" });
+  const handleClick = () => {
+    setDisplayColorPicker(!displayColorPicker);
   };
 
-  handleClose = () => {
-    this.setState({ displayColorPicker: false });
+  const handleClose = () => {
+    setDisplayColorPicker(false);
   };
 
-  handleChange = (color) => {
-    this.setState({ color: color.rgb });
+  const handleChange = (color) => {
+    setColor(color.rgb);
   };
-  render() {
-    return (
-      <div>
-        <p className="mt-4 mb-1">
-          Show Adove photoshop with Alphaline and pallete.{" "}
-        </p>
-        <Button
-          className="btn-pill"
-          variant="primary"
-          size="sm"
-          onClick={this.handleClick}
-        >
-          <ColorLensIcon />
-        </Button>
-        {this.state.displayColorPicker ? (
-          <div>
-            <div onClick={this.handleClose} />
-            <SketchPicker
-              className="mt-3"
-              color={this.state.color}
-              onChange={this.handleChange}
-            />
-          </div>
-        ) : null}
-      </div>
-    );
-  }
-}
+  return (
+    <div>
+      <p className="mt-4 mb-1">
+        Show Adove photoshop with Alphaline and pallete.{" "}
+      </p>
+      <Button
+        className="btn-pill"
+        variant="primary"
+        size="sm"
+        onClick={() => {
+          handleClick();
+        }}
+      >
+        <ColorLensIcon />
+      </Button>
+      {displayColorPicker ? (
+        <div>
+          <div
+            onClick={() => {
+              handleClose();
+            }}
+          />
+          <SketchPicker
+            className="mt-3"
+            color={color}
+            onChange={(e) => {
+              handleChange(e);
+            }}
+          />
+        </div>
+      ) : null}
+    </div>
+  );
+};
 // Palettes Style
 
-export function PalettesStyle() {
+export const PalettesStyle = () => {
   const [hex, setHex] = useState("#fff");
   return (
     <div>
@@ -473,7 +375,7 @@ export function PalettesStyle() {
       />
     </div>
   );
-}
+};
 
 // Color Picker END
 
@@ -485,10 +387,8 @@ export function PalettesStyle() {
 
 // Date
 
-export function BasicDatePicker() {
+export const BasicDatePicker = () => {
   const [value, setValue] = useState();
-  //   const [value, setValue] = (React.useState < Date) | (null > null);
-
   return (
     <LocalizationProvider dateAdapter={AdapterDateFns}>
       <DatePicker
@@ -501,13 +401,12 @@ export function BasicDatePicker() {
       />
     </LocalizationProvider>
   );
-}
+};
 
 // Month
 
-export function MonthPicker() {
+export const MonthPicker = () => {
   const [value, setValue] = useState();
-  //   const [value, setValue] = (React.useState < Date) | (null > new Date());
 
   return (
     <LocalizationProvider dateAdapter={AdapterDateFns}>
@@ -524,10 +423,9 @@ export function MonthPicker() {
       />
     </LocalizationProvider>
   );
-}
+};
 
-export function YearPicker() {
-  //   const [value, setValue] = (React.useState < Date) | (null > new Date());
+export const YearPicker = () => {
   const [value, setValue] = useState();
 
   return (
@@ -543,14 +441,13 @@ export function YearPicker() {
       />
     </LocalizationProvider>
   );
-}
+};
 
 // Date, Month, Year Range Picker END
 
 // Default Date picker
 
-export function DefaultDatePicker() {
-  //   const [value, setValue] = (React.useState < Date) | (null > null);
+export const DefaultDatePicker = () => {
   const [value, setValue] = useState();
 
   return (
@@ -565,15 +462,15 @@ export function DefaultDatePicker() {
       />
     </LocalizationProvider>
   );
-}
+};
 
 // Multiple Months
 
-function getRandomNumber(min, max) {
+const getRandomNumber = (min, max) => {
   return Math.round(Math.random() * (max - min) + min);
-}
+};
 
-function fakeFetch(date, { signal }) {
+const fakeFetch = (date, { signal }) => {
   return new Promise((resolve, reject) => {
     const timeout = setTimeout(() => {
       const daysInMonth = getDaysInMonth(date);
@@ -589,15 +486,14 @@ function fakeFetch(date, { signal }) {
       reject(new DOMException("aborted", "AbortError"));
     };
   });
-}
+};
 
 const initialValue = new Date();
 
-export function MultipleMonths() {
+export const MultipleMonths = () => {
   const requestAbortController = useRef();
   const [isLoading, setIsLoading] = React.useState(false);
   const [highlightedDays, setHighlightedDays] = React.useState([1, 2, 15]);
-  //   const [value, setValue] = (React.useState < Date) | (null > initialValue);
   const [value, setValue] = useState();
 
   const fetchHighlightedDays = (date) => {
@@ -666,57 +562,29 @@ export function MultipleMonths() {
       />
     </LocalizationProvider>
   );
-}
+};
 
 // Dual List Box START
 
-const optionss = [
-  {
-    label: "Java Script",
-    options: [
-      { value: "Jquery", label: "Jquery" },
-      { value: "Angular JS", label: "Angular JS" },
-      { value: "React JS", label: "React JS" },
-      { value: "Vue JS", label: "Vue JS" },
-    ],
-  },
-  {
-    label: "Popular",
-    options: [
-      { value: "Java Script", label: "Java Script" },
-      { value: "Java", label: "Java" },
-      { value: "Python", label: "Python" },
-      { value: "TypeScript", label: "TypeScript" },
-      { value: "PHP", label: "PHP" },
-      { value: "Ruby on Rails", label: "Ruby on Rails" },
-    ],
-  },
-];
+export const DualList = () => {
+  const [selected, setSelected] = useState([]);
 
-export class DualList extends React.Component {
-  state = {
-    selected: [options[0]],
+  const onChange = (selected) => {
+    setSelected(selected);
   };
 
-  onChange = (selected) => {
-    console.log(selected);
-    this.setState({ selected });
-  };
-
-  render() {
-    const { selected } = this.state;
-
-    return (
-      <DualListBox
-        options={optionss}
-        selected={selected}
-        allowDuplicates
-        simpleValue={false}
-        onChange={this.onChange}
-      />
-    );
-  }
-}
+  return (
+    <DualListBox
+      options={dualListOptions}
+      selected={selected}
+      allowDuplicates
+      simpleValue={false}
+      onChange={(e) => {
+        onChange(e);
+      }}
+    />
+  );
+};
 
 // Dual List Box END
 
@@ -724,43 +592,24 @@ export class DualList extends React.Component {
 
 // Box 1
 
-export function SelectBox() {
-  let [value, setValue] = useState([""]);
-  function handleChange(selected) {
+export const SelectBox = () => {
+  let [value, setValue] = useState([]);
+  const handleChange = (selected) => {
     setValue(selected);
-    console.log(selected);
-  }
-  const options = [
-    { value: "HTML5", label: "HTML5" },
-    { value: "CSS 3", label: "CSS 3" },
-    { value: "PHP", label: "PHP" },
-    { value: "J-Query", label: "J-Query" },
-    { value: ".Net", label: ".Net" },
-    { value: "Java", label: "Java" },
-    { value: "Android", label: "Android" },
-    { value: "React JS", label: "React JS" },
-    { value: "Angular JS", label: "Angular JS" },
-    { value: "PhotoShop", label: "PhotoShop" },
-    { value: "Python", label: "Python" },
-    { value: "Sql", label: "Sql" },
-    { value: "JavaScript", label: "JavaScript" },
-  ];
+  };
 
   return (
     <DualListBox
       canFilter
       selected={value}
-      options={options}
+      options={selectBoxOptions}
       filterCallback={(option, filterInput) => {
         if (filterInput === "") {
           return true;
         }
-        console.log(option);
-        // return containsWord(option.label, filterInput);
         let words = filterInput.split(" ");
         let res = false;
         for (let word of words) {
-          console.log(word);
           res = new RegExp(word, "i").test(option.label);
           if (res === false) {
             break;
@@ -768,77 +617,30 @@ export function SelectBox() {
         }
         return res;
       }}
-      onChange={handleChange}
+      onChange={(e) => {
+        handleChange(e);
+      }}
     />
   );
-}
+};
 
 // Box 2
 
-export function SelectBoxwithLabel() {
-  let [value, setValue] = useState([""]);
-  function handleChange(selected) {
+export const SelectBoxwithLabel = () => {
+  const [value, setValue] = useState([]);
+  const handleChange = (selected) => {
     setValue(selected);
-    console.log(selected);
-  }
-  const options = [
-    {
-      label: "Software Side",
-      options: [
-        { value: "Web designer", label: "Web designer" },
-        {
-          value: "Web Developer",
-          label: "Web Developer",
-        },
-        {
-          value: "Application Developer",
-          label: "Application Developer",
-        },
-        {
-          value: "App Designer",
-          label: "App Designer",
-        },
-      ],
-    },
-    {
-      label: "Voice Side",
-      options: [
-        { value: "Tell Caller", label: "Tell Caller" },
-        {
-          value: "Recruiter",
-          label: "Recruiter",
-        },
-        {
-          value: "HR",
-          label: "HR",
-        },
-        {
-          value: "Data Entry",
-          label: "Data Entry",
-        },
-        {
-          value: "Mapping",
-          label: "Mapping",
-        },
-        {
-          value: "US Recruiter",
-          label: "US Recruiter",
-        },
-      ],
-    },
-  ];
-
+  };
   return (
     <DualListBox
       canFilter
       selected={value}
-      options={options}
+      options={selectBoxOptions2}
       filterCallback={(option, filterInput) => {
         if (filterInput === "") {
           return true;
         }
         console.log(option);
-        // return containsWord(option.label, filterInput);
         let words = filterInput.split(" ");
         let res = false;
         for (let word of words) {
@@ -850,10 +652,12 @@ export function SelectBoxwithLabel() {
         }
         return res;
       }}
-      onChange={handleChange}
+      onChange={(e) => {
+        handleChange(e);
+      }}
     />
   );
-}
+};
 
 // Select Box END
 

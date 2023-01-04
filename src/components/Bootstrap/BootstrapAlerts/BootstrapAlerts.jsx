@@ -13,7 +13,7 @@ import {
   LinkAlert,
   MultiIconAlert,
   Removeicon,
-} from "../../../Data/Boostrap/BooststrapAlertsData";
+} from "../../../Data/Boostrap/BootstrapAlertsData";
 import "./BootstrapAlerts.scss";
 
 const BootstrapAlerts = () => {

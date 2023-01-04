@@ -43,7 +43,7 @@ const OffCanvas = () => {
                   <pre>
                     <code>
                       {`
-                          export function Defaultlink() {
+                          export const Defaultlink = () => {
                           const [show, setShow] = useState(false);
                           
                           const handleClose = () => setShow(false);
@@ -81,7 +81,7 @@ const OffCanvas = () => {
                         }
 
 
-                        export function Databutton() {
+                        export const Databutton = () => {
                           const [show, setShow] = useState(false);
                         
                           const handleClose1 = () => setShow(false);
@@ -145,7 +145,7 @@ const OffCanvas = () => {
                   <pre>
                     <code>
                       {`
-export function Backdrop() {
+export const Backdrop = () => {
   return (
     <>
       {options.map((props, idx) => (
@@ -184,7 +184,7 @@ export function Backdrop() {
                   <pre>
                     <code>
                       {`
-export function Placementbutton() {
+export const Placementbutton = () => {
   return (
     <>
       {['top', 'end', 'bottom'].map((placement, idx) => (

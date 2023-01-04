@@ -3,7 +3,7 @@ import { ToggleButton, ToggleButtonGroup } from "react-bootstrap";
 
 // Radio Button Group START
 
-export function Buttondata() {
+export const Buttondata = () => {
   return (
     <div>
       <ToggleButtonGroup type="radio" name="options" defaultValue={1}>
@@ -19,13 +19,13 @@ export function Buttondata() {
       </ToggleButtonGroup>
     </div>
   );
-}
+};
 
 // Radio Button Group END
 
 // Checkbox Button Group START
 
-export function Checkedbutton() {
+export const Checkedbutton = () => {
   const [isChecked, setIsChecked] = useState(false);
 
   const handleOnChange = () => {
@@ -42,7 +42,7 @@ export function Checkedbutton() {
         value={1}
         onChange={handleOnChange}
       >
-        Checkbox{" "}
+        Checkbox
       </ToggleButton>
       <ToggleButton
         className="mb-2"
@@ -52,7 +52,7 @@ export function Checkedbutton() {
         value={2}
         onChange={handleOnChange}
       >
-        Checkbox{" "}
+        Checkbox
       </ToggleButton>
       <ToggleButton
         className="mb-2"
@@ -62,10 +62,10 @@ export function Checkedbutton() {
         value={3}
         onChange={handleOnChange}
       >
-        Checkbox{" "}
+        Checkbox
       </ToggleButton>
     </ToggleButtonGroup>
   );
-}
+};
 
 // Checkbox Button Group END

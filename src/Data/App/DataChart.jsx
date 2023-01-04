@@ -65,7 +65,7 @@ const options = {
   },
 };
 
-export function Chartdetails() {
+export const Chartdetails = () => {
   return (
     <Chart type="bar" data={data} options={options} className="appchart" />
   );

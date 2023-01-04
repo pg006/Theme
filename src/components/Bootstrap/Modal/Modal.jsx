@@ -1,8 +1,37 @@
 import React, { useState } from "react";
 import PageHeader from "../../../commonComponents/PageHeader/PageHeader";
-import { Button, Card, Col, Modal, ModalBody, ModalFooter, ModalHeader, ModalTitle, Row, Form, Collapse } from 'react-bootstrap';
+import {
+  Button,
+  Card,
+  Col,
+  Modal,
+  ModalBody,
+  ModalFooter,
+  ModalHeader,
+  ModalTitle,
+  Row,
+  Form,
+  Collapse,
+} from "react-bootstrap";
 import "./Modal.scss";
-import { Fullscreen ,ScrollModal, BasicModal, SuccessAlert, WarningAlert, ModalZoom, ModalFade, ModalFlip, ModalDoor, ModalRotate, ModalSlideUp, ModalslideDown, ModalslideLeft, ModalslideRight, SelectInsideModal, InputModal} from "../../../Data/Boostrap/ModalData";
+import {
+  Fullscreen,
+  ScrollModal,
+  BasicModal,
+  SuccessAlert,
+  WarningAlert,
+  ModalZoom,
+  ModalFade,
+  ModalFlip,
+  ModalDoor,
+  ModalRotate,
+  ModalSlideUp,
+  ModalslideDown,
+  ModalslideLeft,
+  ModalslideRight,
+  SelectInsideModal,
+  InputModal,
+} from "../../../Data/Boostrap/ModalData";
 
 const Modals = () => {
   const [show, setShow] = useState(false);
@@ -51,7 +80,7 @@ const Modals = () => {
           <Collapse in={Annimation} className="mt-2">
             <pre>
               <code>
-                {`export function ModalZoom() {
+                {`export const ModalZoom = () => {
                     
                     const [visible, setVisible] = useState(false);
                     
@@ -137,8 +166,8 @@ const Modals = () => {
               </Card.Header>
               <Card.Body className="text-center">
                 <p>
-                  Add <code className="highlighter-rouge">.modal-sm </code> or{" "}
-                  <code className="highlighter-rouge">.modal-lg </code> or{" "}
+                  Add <code className="highlighter-rouge">.modal-sm </code> or
+                  <code className="highlighter-rouge">.modal-lg </code> or
                   <code className="highlighter-rouge">.modal-xl </code> to
                   modal-dialog to increase and decrease the modal box sizes.
                 </p>
@@ -146,79 +175,145 @@ const Modals = () => {
                 <Button
                   variant="primary"
                   className="bg-primary-gradient mt-3 me-1"
-                  onClick={smallmodalShow}
+                  onClick={() => {
+                    smallmodalShow();
+                  }}
                 >
                   Small Modal
                 </Button>
 
-                <Modal size="sm" show={show} onHide={smallmodalClose}>
-                  <ModalHeader>
-                    <ModalTitle>Modal Titel</ModalTitle>
-                    <span className="d-flex ms-auto" onClick={smallmodalClose}>
-                      <i className="fe fe-x ms-auto"></i>
-                    </span>
-                  </ModalHeader>
-                  <ModalBody>Modal body text goes here..!</ModalBody>
-                  <ModalFooter>
-                    <Button variant="secondary" onClick={smallmodalClose}>
-                      Close
-                    </Button>
-                    <Button variant="primary" onClick={smallmodalClose}>
-                      Save Changes
-                    </Button>
-                  </ModalFooter>
-                </Modal>
-
-                <Button
-                  variant="success"
-                  className=" bg-success-gradient mt-3 me-1"
-                  onClick={largemodalShow}
+                <Modal
+                  size="sm"
+                  show={show}
+                  onHide={() => {
+                    smallmodalClose();
+                  }}
                 >
-                  large Modal
-                </Button>
-
-                <Modal size="lg" show={show1} onHide={largemodalClose}>
-                  <ModalHeader>
-                    <ModalTitle>Modal Titel</ModalTitle>
-                    <span className="d-flex ms-auto" onClick={largemodalClose}>
-                      <i className="fe fe-x ms-auto"></i>
-                    </span>
-                  </ModalHeader>
-                  <ModalBody>Modal body text goes here..!</ModalBody>
-                  <ModalFooter>
-                    <Button variant="secondary" onClick={largemodalClose}>
-                      Close
-                    </Button>
-                    <Button variant="primary" onClick={largemodalClose}>
-                      Save Changes
-                    </Button>
-                  </ModalFooter>
-                </Modal>
-
-                <Button
-                  variant="success"
-                  className=" bg-success-gradient mt-3 me-1"
-                  onClick={xtralargemodalShow}
-                >
-                  Extralarge Modal
-                </Button>
-
-                <Modal size="xl" show={show2} onHide={xtralargemodalClose}>
                   <ModalHeader>
                     <ModalTitle>Modal Titel</ModalTitle>
                     <span
                       className="d-flex ms-auto"
-                      onClick={xtralargemodalClose}
+                      onClick={() => {
+                        smallmodalClose();
+                      }}
                     >
                       <i className="fe fe-x ms-auto"></i>
                     </span>
                   </ModalHeader>
                   <ModalBody>Modal body text goes here..!</ModalBody>
                   <ModalFooter>
-                    <Button variant="secondary" onClick={xtralargemodalClose}>
+                    <Button
+                      variant="secondary"
+                      onClick={() => {
+                        smallmodalClose();
+                      }}
+                    >
                       Close
                     </Button>
-                    <Button variant="primary" onClick={xtralargemodalClose}>
+                    <Button
+                      variant="primary"
+                      onClick={() => {
+                        smallmodalClose();
+                      }}
+                    >
+                      Save Changes
+                    </Button>
+                  </ModalFooter>
+                </Modal>
+
+                <Button
+                  variant="success"
+                  className=" bg-success-gradient mt-3 me-1"
+                  onClick={() => {
+                    largemodalShow();
+                  }}
+                >
+                  large Modal
+                </Button>
+
+                <Modal
+                  size="lg"
+                  show={show1}
+                  onHide={() => {
+                    largemodalClose();
+                  }}
+                >
+                  <ModalHeader>
+                    <ModalTitle>Modal Titel</ModalTitle>
+                    <span
+                      className="d-flex ms-auto"
+                      onClick={() => {
+                        largemodalClose();
+                      }}
+                    >
+                      <i className="fe fe-x ms-auto"></i>
+                    </span>
+                  </ModalHeader>
+                  <ModalBody>Modal body text goes here..!</ModalBody>
+                  <ModalFooter>
+                    <Button
+                      variant="secondary"
+                      onClick={() => {
+                        largemodalClose();
+                      }}
+                    >
+                      Close
+                    </Button>
+                    <Button
+                      variant="primary"
+                      onClick={() => {
+                        largemodalClose();
+                      }}
+                    >
+                      Save Changes
+                    </Button>
+                  </ModalFooter>
+                </Modal>
+
+                <Button
+                  variant="success"
+                  className=" bg-success-gradient mt-3 me-1"
+                  onClick={() => {
+                    xtralargemodalShow();
+                  }}
+                >
+                  Extralarge Modal
+                </Button>
+
+                <Modal
+                  size="xl"
+                  show={show2}
+                  onHide={() => {
+                    xtralargemodalClose();
+                  }}
+                >
+                  <ModalHeader>
+                    <ModalTitle>Modal Titel</ModalTitle>
+                    <span
+                      className="d-flex ms-auto"
+                      onClick={() => {
+                        xtralargemodalClose();
+                      }}
+                    >
+                      <i className="fe fe-x ms-auto"></i>
+                    </span>
+                  </ModalHeader>
+                  <ModalBody>Modal body text goes here..!</ModalBody>
+                  <ModalFooter>
+                    <Button
+                      variant="secondary"
+                      onClick={() => {
+                        xtralargemodalClose();
+                      }}
+                    >
+                      Close
+                    </Button>
+                    <Button
+                      variant="primary"
+                      onClick={() => {
+                        xtralargemodalClose();
+                      }}
+                    >
                       Save Changes
                     </Button>
                   </ModalFooter>
@@ -231,7 +326,7 @@ const Modals = () => {
                   <pre>
                     <code>
                       {`
-                        export function Fullscreen() {
+                        export const Fullscreen = () => {
                         
                           let [fullScreen, setFullscreen] = useState("true");
                           const [show, setShow] = useState(false);
@@ -254,14 +349,14 @@ const Modals = () => {
                           <Modal show={show} fullscreen={fullScreen} onHide={() => setShow(false)}>
                               <Modal.Header>
                           <Modal.Title>Modal</Modal.Title>
-                          <span className="d-flex ms-auto" onClick={fullscreenmodalClose}><i className='fe fe-x ms-auto' ></i></span>
+                          <span className="d-flex ms-auto" onClick={()=>{fullscreenmodalClose()}}><i className='fe fe-x ms-auto' ></i></span>
                               </Modal.Header>
                               <Modal.Body>Modal body content</Modal.Body>
                               <Modal.Footer>
-                          <Button variant="secondary" onClick={fullscreenmodalClose}>
+                          <Button variant="secondary" onClick={()=>{fullscreenmodalClose()}}>
                               Close
                           </Button>
-                          <Button variant="primary" onClick={fullscreenmodalClose}>
+                          <Button variant="primary" onClick={()=>{fullscreenmodalClose()}}>
                               Save Changes
                           </Button>
                               </Modal.Footer>
@@ -304,7 +399,7 @@ const Modals = () => {
                   <pre>
                     <code>
                       {`
-                        export function SelectInsideModal() {
+                        export const SelectInsideModal = () => {
                           const [show, setShow] = useState(false);
                         
                           const handleClose = () => setShow(false);
@@ -312,11 +407,11 @@ const Modals = () => {
                         
                           return (
                               <>
-                                  <Button className="me-3 mt-2" variant="pink" onClick={handleShow}>Select2 Modal</Button>
-                                  <Modal show={show} onHide={handleClose}>
+                                  <Button className="me-3 mt-2" variant="pink" onClick={()=>{handleShow()}}>Select2 Modal</Button>
+                                  <Modal show={show} onHide={()=>{handleClose()}}>
                                       <Modal.Header>
                                           <Modal.Title>Select2 Modal</Modal.Title>
-                                          <span className="d-flex ms-auto" onClick={handleClose}><i className='fe fe-x ms-auto' ></i></span>
+                                          <span className="d-flex ms-auto" onClick={()=>{handleClose()}}><i className='fe fe-x ms-auto' ></i></span>
                                       </Modal.Header>
                                       <Modal.Body>
                                           <h6>Modal Body</h6>
@@ -331,10 +426,10 @@ const Modals = () => {
                                           <p className='mt-2'>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
                                       </Modal.Body>
                                       <Modal.Footer>
-                                          <Button variant="success" onClick={handleClose}>
+                                          <Button variant="success" onClick={()=>{handleClose()}}>
                                               Save Changes
                                           </Button>
-                                          <Button variant="danger" onClick={handleClose}>
+                                          <Button variant="danger" onClick={()=>{handleClose()}}>
                                               Close
                                           </Button>
                                       </Modal.Footer>
@@ -370,7 +465,7 @@ const Modals = () => {
                   <pre>
                     <code>
                       {`
-                          export function InputModal() {
+                          export const InputModal = () => {
                           const [show, setShow] = useState(false);
                           
                           const handleClose = () => setShow(false);
@@ -378,11 +473,11 @@ const Modals = () => {
                           
                           return (
                               <>
-                                  <Button className="me-3 mt-2" variant="green" onClick={handleShow}>Open modal for @mdo</Button>
-                                  <Modal show={show} onHide={handleClose}>
+                                  <Button className="me-3 mt-2" variant="green" onClick={()=>{handleShow()}}>Open modal for @mdo</Button>
+                                  <Modal show={show} onHide={()=>{handleClose()}}>
                                       <Modal.Header>
                                           <Modal.Title>New Message to @mdo</Modal.Title>
-                                          <span className="d-flex ms-auto" onClick={handleClose}><i className='fe fe-x ms-auto' ></i></span>
+                                          <span className="d-flex ms-auto" onClick={()=>{handleClose()}}><i className='fe fe-x ms-auto' ></i></span>
                                       </Modal.Header>
                                       <Modal.Body>
                                           <Form>
@@ -397,10 +492,10 @@ const Modals = () => {
                                           </Form>
                                       </Modal.Body>
                                       <Modal.Footer>
-                                          <Button variant="success" onClick={handleClose}>
+                                          <Button variant="success" onClick={()=>{handleClose()}}>
                                               Save Changes
                                           </Button>
-                                          <Button variant="danger" onClick={handleClose}>
+                                          <Button variant="danger" onClick={()=>{handleClose()}}>
                                               Close
                                           </Button>
                                       </Modal.Footer>
@@ -466,7 +561,7 @@ const Modals = () => {
                         <div className="modal-footer">
                           <button className="btn btn-primary">
                             Save changes
-                          </button>{" "}
+                          </button>
                           <button className="btn btn-light">Close</button>
                         </div>
                       </div>
@@ -482,7 +577,7 @@ const Modals = () => {
                   <pre>
                     <code>
                       {`
-                          export function BasicModal() {
+                          export const BasicModal = () => {
                           const [show, setShow] = useState(false);
                           
                           const viewDemoClose = () => setShow(false);
@@ -490,26 +585,26 @@ const Modals = () => {
                           
                           return (
                               <>
-                                  <Button variant="primary" onClick={viewDemoShow}>
+                                  <Button variant="primary" onClick={()=>{viewDemoShow()}}>
                                       View Live Demo
                                   </Button>
                           
                                   <Modal
                                       show={show}
-                                      onHide={viewDemoClose}
+                                      onHide={()=>{viewDemoShow()}}
                                       backdrop="static"
                                       keyboard={false}
                                   >
                                       <Modal.Header >
                                           <Modal.Title>Message Preview</Modal.Title>
-                                          <span className="d-flex ms-auto" onClick={viewDemoClose}><i className='fe fe-x ms-auto' ></i></span>
+                                          <span className="d-flex ms-auto" onClick={()=>{viewDemoShow()}}><i className='fe fe-x ms-auto' ></i></span>
                                       </Modal.Header>
                                       <Modal.Body>
                                           Why We Use Electoral College, Not Popular Vote<br /><br />It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
                                       </Modal.Body>
                                       <Modal.Footer>
                                           <Button variant="primary">Save Changes</Button>
-                                          <Button variant="light" onClick={viewDemoClose}>
+                                          <Button variant="light" onClick={()=>{viewDemoShow()}}>
                                               Close
                                           </Button>
                           
@@ -577,7 +672,7 @@ const Modals = () => {
                   <pre>
                     <code>
                       {`
-                        export function SuccessAlert() {
+                        export const SuccessAlert = () => {
                         const [show, setShow] = useState(false);
                         
                         const viewDemoClose = () => setShow(false);
@@ -585,23 +680,23 @@ const Modals = () => {
                         
                         return (
                             <>
-                                <Button variant="primary" onClick={viewDemoShow}>
+                                <Button variant="primary" onClick={()=>{viewDemoShow()}}>
                                     View Live Demo
                                 </Button>
                         
                                 <Modal
                                     show={show}
-                                    onHide={viewDemoClose}
+                                    onHide={()=>{viewDemoShow()}}
                                     backdrop="static"
                                 >
                                     <Modal.Header>
-                                    <span className="d-flex ms-auto" onClick={viewDemoClose}><i className='fe fe-x ms-auto' ></i></span>
+                                    <span className="d-flex ms-auto" onClick={()=>{viewDemoShow()}}><i className='fe fe-x ms-auto' ></i></span>
                                     </Modal.Header>
                                     <Modal.Body className="text-center p-4 pb-5" >
                                         <i className="icon icon-check fs-70 text-success lh-1 my-4 d-inline-block"></i>
                                         <h4 className="text-success mb-4">Congratulations!</h4>
                                         <p className="mb-4 mx-4">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</p>
-                                        <Button variant="success" onClick={viewDemoClose}>
+                                        <Button variant="success" onClick={()=>{viewDemoShow()}}>
                                             Continue
                                         </Button>
                                     </Modal.Body>
@@ -672,7 +767,7 @@ const Modals = () => {
                   <pre>
                     <code>
                       {`
-                          export function WarningAlert() {
+                          export const WarningAlert = () => {
                           const [show, setShow] = useState(false);
                           
                           const viewDemoClose = () => setShow(false);
@@ -680,24 +775,24 @@ const Modals = () => {
                           
                           return (
                               <>
-                                  <Button variant="primary" onClick={viewDemoShow}>
+                                  <Button variant="primary" onClick={()=>{viewDemoShow()}}>
                                       View Live Demo
                                   </Button>
                           
                                   <Modal
                                       show={show}
-                                      onHide={viewDemoClose}
+                                      onHide={()=>{viewDemoShow()}}
                                       backdrop="static"
                           
                                   >
                                       <Modal.Header >
-                                      <span className="d-flex ms-auto" onClick={viewDemoClose}><i className='fe fe-x ms-auto' ></i></span>
+                                      <span className="d-flex ms-auto" onClick={()=>{viewDemoShow()}}><i className='fe fe-x ms-auto' ></i></span>
                                       </Modal.Header>
                                       <Modal.Body className="text-center p-4 pb-5" >
                                           <i className="icon icon-close fs-70 text-danger lh-1 my-4 d-inline-block"></i>
                                           <h4 className="text-danger mb-20">Error: Cannot process your entry!</h4>
                                           <p className="mb-4 mx-4">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</p>
-                                          <Button variant="danger" onClick={viewDemoClose}>
+                                          <Button variant="danger" onClick={()=>{viewDemoShow()}}>
                                               Continue
                                           </Button>
                                       </Modal.Body>

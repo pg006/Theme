@@ -1,241 +1,122 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
 import Lightbox from "react-image-lightbox";
 import "react-image-lightbox/style.css";
 import Slider from "react-slick";
-
-import img1 from "../../assets/images/LightBoxImages/Img1.jpg";
-import img2 from "../../assets/images/LightBoxImages/Img2.jpg";
-import img3 from "../../assets/images/LightBoxImages/Img3.jpg";
-import img4 from "../../assets/images/LightBoxImages/Img4.jpg";
-import img5 from "../../assets/images/LightBoxImages/Img5.jpg";
-import img6 from "../../assets/images/LightBoxImages/Img6.jpg";
-import img7 from "../../assets/images/LightBoxImages/Img7.jpg";
-import img8 from "../../assets/images/LightBoxImages/Img8.jpg";
-import img9 from "../../assets/images/LightBoxImages/Img9.jpg";
-import DOC from "../../assets/images/FileImages/Document.png";
-import XLS from "../../assets/images/FileImages/XLS.png";
-import PNG from "../../assets/images/FileImages/PNG.png";
-import PDF from "../../assets/images/FileImages/PDF.png";
-
-
 import { Col, Row, Card } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import { images, imagesDetails } from "./Mock";
 
-const images = [img1, img2, img3, img4, img5, img6, img7, img8, img9];
+export const LightGallery = () => {
+  const [photoIndex, setPhotoIndex] = useState(0);
+  const [isOpen, setIsOpen] = useState(false);
 
-export class LightGallery extends React.Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      photoIndex: 0,
-      isOpen: false,
-    };
-  }
-
-  render() {
-    const { photoIndex, isOpen } = this.state;
-
-    return (
-      <div>
-        <Row className="masonry">
-          {images.map((item, index) => {
-            return (
-              <Col
-                xs={6}
-                sm={4}
-                md={4}
-                xl={4}
-                key={index}
-                className="mb-5  border-bottom-0"
+  return (
+    <div>
+      <Row className="masonry">
+        {images.map((item, index) => {
+          return (
+            <Col xs={6} sm={4} md={4} xl={4} className="brick" key={index}>
+              <img
+                src={item}
+                alt="media1"
                 onClick={() => {
-                  this.setState({ isOpen: true, photoIndex: index });
+                  setIsOpen(true);
+                  setPhotoIndex(index);
                 }}
-                data-sub-html=""
-              >
-                <Link to="">
-                  <img
-                    className="img-responsive br-5"
-                    src={item}
-                    alt="Thumb-1"
-                  />
+              />
+            </Col>
+          );
+        })}
+      </Row>
+      {isOpen && images[photoIndex] && (
+        <Lightbox
+          mainSrc={images[photoIndex]}
+          nextSrc={images[(photoIndex + 1) % images.length]}
+          prevSrc={images[(photoIndex + images.length - 1) % images.length]}
+          onCloseRequest={() => {
+            setIsOpen(false);
+          }}
+          onMovePrevRequest={() => {
+            setPhotoIndex((photoIndex + images.length - 1) % images.length);
+          }}
+          onMoveNextRequest={() => {
+            setPhotoIndex((photoIndex + 1) % images.length);
+          }}
+        />
+      )}
+    </div>
+  );
+};
+
+export const RecentFolder = () => {
+  const settings = {
+    className: "details",
+    dots: false,
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    speed: 2000,
+    autoplaySpeed: 2000,
+    cssEase: "linear",
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: false,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2,
+          dots: false,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
+  return (
+    <div>
+      <Slider {...settings}>
+        {imagesDetails.map((val, index) => {
+          return (
+            <div className="item p-2" key={index}>
+              <Card className="overflow-hidden border p-0 mb-0 bg-white">
+                <Link to={`${process.env.PUBLIC_URL}/FileManager/filedetails`}>
+                  <img src={val.img} alt="img" height="124" className="w-100" />
                 </Link>
-              </Col>
-            );
-          })}
-        </Row>
-        {isOpen && (
-          <Lightbox
-            mainSrc={images[photoIndex]}
-            nextSrc={images[(photoIndex + 1) % images.length]}
-            prevSrc={images[(photoIndex + images.length - 1) % images.length]}
-            onCloseRequest={() => this.setState({ isOpen: false })}
-            onMovePrevRequest={() =>
-              this.setState({
-                photoIndex: (photoIndex + images.length - 1) % images.length,
-              })
-            }
-            onMoveNextRequest={() =>
-              this.setState({
-                photoIndex: (photoIndex + 1) % images.length,
-              })
-            }
-          />
-        )}
-      </div>
-    );
-  }
-}
-
-// function SampleNextArrow(props) {
-//   const { className, style, onClick } = props;
-//   return (
-//     <div
-//       className={className}
-//       style={{ ...style, display: "block" }}
-//       onClick={onClick}
-//     />
-//   );
-// }
-
-// function SamplePrevArrow(props) {
-//   const { className, style, onClick } = props;
-//   return (
-//     <div
-//       className={className}
-//       style={{ ...style, display: "block" }}
-//       onClick={onClick}
-//     />
-//   );
-// }
-
-
-const imagesDetails=[
-  {
-    img:img1,
-    name:"Flower.jpg",
-    size:"66 KB"
-  },
-  {
-    img:PNG,
-    name:"PNG.png",
-    size:"66 KB"
-  },
-  {
-    img:img9,
-    name:"Bird.jpg",
-    size:"60 KB"
-  },
-  {
-    img:img3,
-    name:"Desert.jpg",
-    size:"50 KB"
-  },
-  {
-    img:DOC,
-    name:"Theme.doc",
-    size:"2 MB"
-  },
-  {
-    img:img8,
-    name:"Laptop.jpg",
-    size:"16 KB"
-  },
-  {
-    img:img5,
-    name:"Car.jpg",
-    size:"1 MB"
-  },
-  {
-    img:XLS,
-    name:"Sheet.xls",
-    size:"500 KB"
-  },
-  {
-    img:PDF,
-    name:"Theme.pdf",
-    size:"20 MB"
-  }
-]
-
-export class RecentFolder extends Component {
-  render() {
-    const settings = {
-      className: "details",
-      dots: false,
-      infinite: true,
-      slidesToShow: 3,
-      slidesToScroll: 1,
-      autoplay: true,
-      speed: 2000,
-      autoplaySpeed: 2000,
-      cssEase: "linear",
-      responsive: [
-        {
-          breakpoint: 1024,
-          settings: {
-            slidesToShow: 3,
-            slidesToScroll: 3,
-            infinite: true,
-            dots: false,
-          },
-        },
-        {
-          breakpoint: 600,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2,
-            initialSlide: 2,
-            dots: false,
-          },
-        },
-        {
-          breakpoint: 480,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-          },
-        },
-      ],
-    };
-    return (
-      <div>
-        <Slider {...settings}>
-          {imagesDetails.map((val, index) => {
-            return (
-              <div className="item p-2" key={index}>
-                <Card className="overflow-hidden border p-0 mb-0 bg-white">
-                  <Link
-                    to={`${process.env.PUBLIC_URL}/FileManager/filedetails`}
-                  >
-                    <img
-                      src={val.img}
-                      alt="img"
-                      height="124"
-                      className="w-100"
-                    />
-                  </Link>
-                  <Card.Footer>
-                    <div className="d-flex">
-                      <div className="">
-                        <h5 className="mb-0 fw-semibold text-break">
-                          {val.name}
-                        </h5>
-                      </div>
-                      <div className="ms-auto my-auto">
-                        <span className="text-muted mb-0">{val.size}</span>
-                      </div>
+                <Card.Footer>
+                  <div className="d-flex">
+                    <div className="">
+                      <h5 className="mb-0 fw-semibold text-break">
+                        {val.name}
+                      </h5>
                     </div>
-                  </Card.Footer>
-                </Card>
-              </div>
-            );
-          })}
-        </Slider>
-      </div>
-    );
-  }
-}
+                    <div className="ms-auto my-auto">
+                      <span className="text-muted mb-0">{val.size}</span>
+                    </div>
+                  </div>
+                </Card.Footer>
+              </Card>
+            </div>
+          );
+        })}
+      </Slider>
+    </div>
+  );
+};
 
 /*
 <Slider {...settings}>

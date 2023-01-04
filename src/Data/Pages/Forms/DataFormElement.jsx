@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { ToggleButton, ToggleButtonGroup } from "react-bootstrap";
 
-export function YourSkills() {
+export const YourSkills = () => {
   const [isChecked, setIsChecked] = useState(false);
 
   const handleOnChange = () => {

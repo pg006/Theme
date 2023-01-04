@@ -2,7 +2,7 @@ import React from "react";
 import { Tooltip, OverlayTrigger, Button, Table } from "react-bootstrap";
 import { CartData } from "./Mock";
 
-export function Cart() {
+export const Cart = () => {
 
   const [cartDataList, setCartDataList] = React.useState(CartData);
   const deleteProduct = (id) => {

@@ -204,7 +204,7 @@ export const StackingToast = () => {
           <Toast.Body>See? Just like this.</Toast.Body>
         </Toast>
       </div>
-      <div>
+      <div className="mt-4 mb-1">
         <Toast
           show={showA}
           onClose={() => {

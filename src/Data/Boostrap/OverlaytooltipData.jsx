@@ -1,35 +1,9 @@
 import React from "react";
 import { Button, Popover, OverlayTrigger, Col } from "react-bootstrap";
+import { ColoredTooltipData, StaticTooltipData, popoverData } from "./Mock";
 
 // Tooltip DefaultpopOver START
-
-const popoverData = [
-  {
-    id: "1",
-    variant: "primary",
-
-    placement: "top",
-  },
-  {
-    id: "2",
-    variant: "success",
-
-    placement: "left",
-  },
-  {
-    id: "3",
-    variant: "danger",
-
-    placement: "right",
-  },
-  {
-    id: "4",
-    variant: "warning",
-
-    placement: "bottom",
-  },
-];
-export function DefaultpopOver() {
+export const DefaultpopOver = () => {
   return (
     <>
       {popoverData.map((item, k) => (
@@ -61,22 +35,7 @@ export function DefaultpopOver() {
 
 // Static TooltipPopOver START
 
-const StaticTooltipData = [
-  {
-    id: "1",
-    variant: "primary",
-    classname: "bg-primary text-white",
-    placement: "top",
-  },
-  {
-    id: "2",
-    variant: "secondary",
-    classname: "bg-secondary text-white",
-    placement: "bottom",
-  },
-];
-
-export function StaticTooltip() {
+export const StaticTooltip = () => {
   return (
     <>
       {StaticTooltipData.map((item, k) => (
@@ -111,24 +70,7 @@ export function StaticTooltip() {
 
 // Colored Static TooltipPopOver START
 
-const ColoredTooltipData = [
-  {
-    id: "1",
-    variant: "primary",
-    popoverclass: "bg-primary",
-    popheaderclass: "bg-primary text-white",
-    placement: "top",
-  },
-  {
-    id: "2",
-    variant: "secondary",
-    popoverclass: "bg-secondary",
-    classname: "bg-secondary text-white",
-    placement: "bottom",
-  },
-];
-
-export function ColoredTooltip() {
+export const ColoredTooltip = () => {
   return (
     <>
       {ColoredTooltipData.map((item, k) => (

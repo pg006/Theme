@@ -5,7 +5,7 @@ import { Button } from "react-bootstrap";
 
 // Alerts Notifications
 
-export function Success() {
+export const Success = () => {
   const Toastslidewarn = () =>
     toast.success(
       <p className="text-white tx-16 mb-0">
@@ -28,7 +28,7 @@ export function Success() {
   );
 }
 
-export function Secondary() {
+export const Secondary = () => {
   const Toastslidewarn = () =>
     toast.error(
       <p className="text-white tx-16 mb-0">Oops! An Error Occurred</p>,
@@ -49,7 +49,7 @@ export function Secondary() {
   );
 }
 
-export function LeftNotifier() {
+export const LeftNotifier = () => {
   const Toastslidewarn = () =>
     toast.warn(
       <p className="text-white tx-16 mb-0">Warning: Something Went Wrong</p>,
@@ -70,7 +70,7 @@ export function LeftNotifier() {
   );
 }
 
-export function CenterInfo() {
+export const CenterInfo = () => {
   const Toastslidewarn = () =>
     toast.info(<p className="text-white tx-16 mb-0">Info: Some info here.</p>, {
       position: toast.POSITION.TOP_CENTER,
@@ -88,7 +88,7 @@ export function CenterInfo() {
   );
 }
 
-export function CenterDanger() {
+export const CenterDanger = () => {
   const Toastslidewarn = () =>
     toast.error(
       <p className="text-white tx-16 mb-0">
@@ -111,7 +111,7 @@ export function CenterDanger() {
   );
 }
 
-export function Centerwarning() {
+export const Centerwarning = () => {
   const Toastslidewarn = () =>
     toast.warn(<p className="text-white tx-16 mb-0">Opacity is cool!</p>, {
       position: toast.POSITION.TOP_CENTER,
@@ -131,7 +131,7 @@ export function Centerwarning() {
 
 // Side Alerts Notifications
 
-export function SuccessLeft() {
+export const SuccessLeft = () => {
   const Toastslidewarn = () =>
     toast.success(
       <p className="text-white tx-16 mb-0">
@@ -154,7 +154,7 @@ export function SuccessLeft() {
   );
 }
 
-export function WarningLeft() {
+export const WarningLeft = () => {
   const Toastslidewarn = () =>
     toast.warn(
       <p className="text-white tx-16 mb-0">
@@ -177,7 +177,7 @@ export function WarningLeft() {
   );
 }
 
-export function DangerLeft() {
+export const DangerLeft = () => {
   const Toastslidewarn = () =>
     toast.error(
       <p className="text-white tx-16 mb-0">
@@ -202,7 +202,7 @@ export function DangerLeft() {
 
 // Gradient Side Alerts Notifications
 
-export function GradientSuccess() {
+export const GradientSuccess = () => {
   const Toastslidewarn = () =>
     toast.success(
       <p className="text-white tx-16 mb-0">
@@ -229,7 +229,7 @@ export function GradientSuccess() {
   );
 }
 
-export function GradientWarning() {
+export const GradientWarning = () => {
   const Toastslidewarn = () =>
     toast.warn(
       <p className="text-white tx-16 mb-0">
@@ -256,7 +256,7 @@ export function GradientWarning() {
   );
 }
 
-export function GradientDanger() {
+export const GradientDanger = () => {
   const Toastslidewarn = () =>
     toast.error(
       <p className="text-white tx-16 mb-0">

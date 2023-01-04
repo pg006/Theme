@@ -1,9 +1,10 @@
 import { useState } from "react";
 import { Button, Dropdown, Offcanvas } from "react-bootstrap";
+import { BackDropOptions } from "./Mock";
 
 // Default link button OPEN
 
-export function Defaultlink() {
+export const Defaultlink = () => {
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -43,7 +44,7 @@ export function Defaultlink() {
 
 // Button with data-bs target OPEN
 
-export function Databutton() {
+export const Databutton = () => {
   const [show, setShow] = useState(false);
 
   const handleClose1 = () => setShow(false);
@@ -83,25 +84,6 @@ export function Databutton() {
 // Button with data-bs target END
 
 // BackDrop offcanvas OPEN
-
-const options = [
-  {
-    name: "Enable body scrolling",
-    scroll: true,
-    backdrop: false,
-  },
-  {
-    name: "Enable backdrop (default)",
-    scroll: false,
-    backdrop: true,
-  },
-  {
-    name: "Enable both scrolling & backdrop",
-    scroll: true,
-    backdrop: true,
-  },
-];
-
 function OffCanvasExample({ name, ...props }) {
   const [show, setShow] = useState(false);
 
@@ -137,10 +119,10 @@ function OffCanvasExample({ name, ...props }) {
   );
 }
 
-export function Backdrop() {
+export const Backdrop = () => {
   return (
     <>
-      {options.map((props, idx) => (
+      {BackDropOptions.map((props, idx) => (
         <OffCanvasExample key={idx} {...props} />
       ))}
     </>
@@ -178,7 +160,7 @@ function OffCanvasplacement({ name, ...props }) {
   );
 }
 
-export function Placementbutton() {
+export const Placementbutton = () => {
   return (
     <>
       {["top", "end", "bottom"].map((placement, idx) => (

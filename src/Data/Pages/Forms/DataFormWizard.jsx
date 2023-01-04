@@ -240,7 +240,13 @@ export default function BasicFormWizard() {
                 <React.Fragment>
                   <Box sx={{ display: "flex", flexDirection: "row", pt: 2 }}>
                     <Box sx={{ flex: "1 1 auto" }} />
-                    <Button onClick={handleReset}>Reset</Button>
+                    <Button
+                      onClick={() => {
+                        handleReset();
+                      }}
+                    >
+                      Reset
+                    </Button>
                   </Box>
                 </React.Fragment>
               </StepContent>
@@ -253,18 +259,32 @@ export default function BasicFormWizard() {
           <Button
             color="primary"
             disabled={activeStep === 0}
-            onClick={handleBack}
+            onClick={() => {
+              handleBack();
+            }}
             sx={{ mr: 1 }}
           >
             Back
           </Button>
           <Box sx={{ flex: "1 1 auto" }} />
           {isStepOptional(activeStep) && (
-            <Button color="inherit" onClick={handleSkip} sx={{ mr: 1 }}>
+            <Button
+              color="inherit"
+              onClick={() => {
+                handleSkip();
+              }}
+              sx={{ mr: 1 }}
+            >
               Skip
             </Button>
           )}
-          <Button className="ms-auto" color="primary" onClick={handleNext}>
+          <Button
+            className="ms-auto"
+            color="primary"
+            onClick={() => {
+              handleNext();
+            }}
+          >
             {activeStep === steps.length - 1 ? "SUBMIT" : "Next"}
           </Button>
         </Box>
@@ -406,7 +426,7 @@ export const BasicContentFormWizard = () => {
                   placeholder="Search for..."
                 />
                 <span className="input-group-text btn btn-info shadow-none mb-0">
-                  <i className="fa fa-cc-visa"></i> &nbsp;{" "}
+                  <i className="fa fa-cc-visa"></i> &nbsp;
                   <i className="fa fa-cc-amex"></i> &nbsp;
                   <i className="fa fa-cc-mastercard"></i>
                 </span>
@@ -496,7 +516,6 @@ function PersonalInformation({ nextStep, handleFormData, values }) {
               />
               {error ? (
                 <Form.Text style={{ color: "#dc3545" }}>
-                  {" "}
                   This value is required..
                 </Form.Text>
               ) : (
@@ -519,8 +538,7 @@ function PersonalInformation({ nextStep, handleFormData, values }) {
               />
               {error ? (
                 <Form.Text style={{ color: "#dc3545" }}>
-                  {" "}
-                  This value is required..{" "}
+                  This value is required..
                 </Form.Text>
               ) : (
                 ""
@@ -529,7 +547,6 @@ function PersonalInformation({ nextStep, handleFormData, values }) {
           </Col>
         </Row>
         <Button className="mt-4" type="submit">
-          {" "}
           Continue
         </Button>
       </Form>
@@ -556,7 +573,7 @@ function BillingInformation({ nextStep, handleFormData, prevStep, values }) {
       <Form onSubmit={submitFormData}>
         <Form.Group className="wd-xs-300">
           <Form.Label>
-            Email:<span className="text-danger">*</span>{" "}
+            Email:<span className="text-danger">*</span>
           </Form.Label>
 
           <Form.Control
@@ -574,12 +591,16 @@ function BillingInformation({ nextStep, handleFormData, prevStep, values }) {
           )}
         </Form.Group>
         <div>
-          <Button className="float-start mt-4" onClick={prevStep}>
-            {" "}
-            Previous{" "}
+          <Button
+            className="float-start mt-4"
+            onClick={() => {
+              prevStep();
+            }}
+          >
+            Previous
           </Button>
           <Button className="float-end mt-4" type="submit">
-            Submit{" "}
+            Submit
           </Button>
         </div>
       </Form>
@@ -617,8 +638,7 @@ function PaymentDetails({ nextStep, handleFormData, prevStep, values }) {
           <InputGroup>
             <Form.Control type="number" placeholder="Search for..." />
             <span className="input-group-text btn btn-info shadow-none mb-0">
-              {" "}
-              <i className="fa fa-cc-visa"></i> &nbsp;{" "}
+              <i className="fa fa-cc-visa"></i> &nbsp;
               <i className="fa fa-cc-amex"></i> &nbsp;
               <i className="fa fa-cc-mastercard"></i>
             </span>
@@ -629,7 +649,6 @@ function PaymentDetails({ nextStep, handleFormData, prevStep, values }) {
             <Form.Group className="mb-sm-0">
               <Form.Label>Expiration</Form.Label>
               <InputGroup>
-                {" "}
                 <Form.Control
                   type="number"
                   placeholder="MM"
@@ -656,11 +675,21 @@ function PaymentDetails({ nextStep, handleFormData, prevStep, values }) {
         </Row>
 
         <div>
-          <Button className="float-start mt-4" onClick={prevStep}>
-            {" "}
-            Previous{" "}
+          <Button
+            className="float-start mt-4"
+            onClick={() => {
+              prevStep();
+            }}
+          >
+            Previous
           </Button>
-          <Button className="float-end mt-4" type="submit" onClick={submitForm}>
+          <Button
+            className="float-end mt-4"
+            type="submit"
+            onClick={() => {
+              submitForm();
+            }}
+          >
             Finish
           </Button>
         </div>
@@ -669,7 +698,7 @@ function PaymentDetails({ nextStep, handleFormData, prevStep, values }) {
   );
 }
 
-export function ValidationForm() {
+export const ValidationForm = () => {
   const [step, setstep] = useState(1);
 
   const [formData, setFormData] = useState({
@@ -702,7 +731,6 @@ export function ValidationForm() {
     case 1:
       return (
         <div className="custom-margin">
-          {" "}
           <PersonalInformation
             nextStep={nextStep}
             handleFormData={handleInputData}
@@ -724,17 +752,17 @@ export function ValidationForm() {
     case 3:
       return (
         <div className="custom-margin">
-          {" "}
           <PaymentDetails
             nextStep={nextStep}
             prevStep={prevStep}
             handleFormData={handleInputData}
             values={formData}
-          />{" "}
+          />
         </div>
       );
+    default:
   }
-}
+};
 // Vertical Orientation Wizard
 export const VerticalOrientationWizard = () => {
   const [goSteps, setGoSteps] = useState(0);
@@ -849,7 +877,7 @@ export const VerticalOrientationWizard = () => {
               <span className="Stepperh3 d-flex p-4">
                 <span className="number step3 me-2">2</span>
                 <span className="title" onClick={() => setGoSteps(1)}>
-                  Billing Information{" "}
+                  Billing Information
                 </span>
               </span>
               <span className="Stepperh3 d-flex p-4">
@@ -920,7 +948,7 @@ export const VerticalOrientationWizard = () => {
               <span className="Stepperh3 d-flex p-4">
                 <span className="number step2 me-2">2</span>
                 <span className="title Step1" onClick={() => setGoSteps(1)}>
-                  Billing Information{" "}
+                  Billing Information
                 </span>
               </span>
               <span className="Stepperh3 d-flex p-4">
@@ -950,7 +978,7 @@ export const VerticalOrientationWizard = () => {
                       placeholder="Search for..."
                     />
                     <span className="input-group-text btn btn-info shadow-none mb-0">
-                      <i className="fa fa-cc-visa"></i> &nbsp;{" "}
+                      <i className="fa fa-cc-visa"></i> &nbsp;
                       <i className="fa fa-cc-amex"></i> &nbsp;
                       <i className="fa fa-cc-mastercard"></i>
                     </span>
@@ -989,7 +1017,6 @@ export const VerticalOrientationWizard = () => {
             </div>
             <div className="col-sm-4 border-right"></div>
             <div className="col-sm-8 p-4">
-              {" "}
               <button
                 className="btn btn-primary float-end mt-4"
                 onClick={() => {

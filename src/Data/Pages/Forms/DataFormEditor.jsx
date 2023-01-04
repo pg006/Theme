@@ -20,7 +20,7 @@ export const FormTextEditor = props => {
 // Quill Editor 
 
 
-export function QuillEditor() {
+export const QuillEditor = () => {
   const { quill, quillRef } = useQuill();
 
   React.useEffect(() => {
@@ -75,7 +75,7 @@ export const ModalEditor = () => {
 
 const htmlWithTableImages = `<center>  </center>`;
    
-export function App() {
+export const App = () => {
   // replace with initial value with different html variables to reproduce bugs
   const [value, setValue] = React.useState(htmlWithTableImages);
 

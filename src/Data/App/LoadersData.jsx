@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 // Loader with double-bounce
 
-export function LoaderwithDoublebounce() {
+export const LoaderwithDoublebounce = () => {
   const [expanded, setExpanded] = useState(true);
 
   const handleExpandClick = () => {
@@ -50,7 +50,7 @@ export function LoaderwithDoublebounce() {
 
 // Loader with cube
 
-export function LoaderwithCube() {
+export const LoaderwithCube = () => {
   const [expanded, setExpanded] = useState(true);
 
   const handleExpandClick = () => {
@@ -95,7 +95,7 @@ export function LoaderwithCube() {
 
 // Loader with Spinner
 
-export function LoaderwithSpinner() {
+export const LoaderwithSpinner = () => {
   const [expanded, setExpanded] = useState(true);
 
   const handleExpandClick = () => {
@@ -137,7 +137,7 @@ export function LoaderwithSpinner() {
 
 // Loader with lds-ring
 
-export function LoaderwithRing() {
+export const LoaderwithRing = () => {
   const [expanded, setExpanded] = useState(true);
 
   const handleExpandClick = () => {
@@ -184,7 +184,7 @@ export function LoaderwithRing() {
 
 // Loader with lds-hourglass
 
-export function LoaderwithHourGlass() {
+export const LoaderwithHourGlass = () => {
   const [expanded, setExpanded] = useState(true);
 
   const handleExpandClick = () => {
@@ -226,7 +226,7 @@ export function LoaderwithHourGlass() {
 
 // Loader with lds-heart
 
-export function LoaderwithHeart() {
+export const LoaderwithHeart = () => {
   const [expanded, setExpanded] = useState(true);
 
   const handleExpandClick = () => {

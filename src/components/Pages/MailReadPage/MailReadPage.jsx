@@ -1,9 +1,26 @@
 import React from "react";
 import PageHeader from "../../../commonComponents/PageHeader/PageHeader";
 import "./MailReadPage.scss";
-import { Link } from 'react-router-dom';
-import { Row, Col, Card, ListGroup, Badge, OverlayTrigger, Tooltip, Button, Dropdown } from 'react-bootstrap';
-import U6 from '../../../assets/images/UserImages/U6.jpg'
+import { Link } from "react-router-dom";
+import {
+  Row,
+  Col,
+  Card,
+  ListGroup,
+  Badge,
+  OverlayTrigger,
+  Tooltip,
+  Button,
+  Dropdown,
+} from "react-bootstrap";
+import U6 from "../../../assets/images/UserImages/U6.jpg";
+
+import IMG1 from '../../../assets/images/CarouselImages/LandscapeImages/L25.jpg'
+import IMG2 from '../../../assets/images/CarouselImages/LandscapeImages/L11.jpg'
+import IMG3 from '../../../assets/images/CarouselImages/LandscapeImages/L29.jpg'
+
+
+
 const MailReadPage = () => {
   return (
     <React.Fragment>
@@ -35,8 +52,8 @@ const MailReadPage = () => {
                   >
                     <span className="icons">
                       <i className="ri-mail-line"></i>
-                    </span>{" "}
-                    Inbox{" "}
+                    </span>
+                    Inbox
                     <Badge bg="secondary" className="ms-auto bradius">
                       14
                     </Badge>
@@ -49,7 +66,7 @@ const MailReadPage = () => {
                   >
                     <span className="icons">
                       <i className="ri-mail-open-line"></i>
-                    </span>{" "}
+                    </span>
                     Drafts
                   </ListGroup.Item>
                 </Link>
@@ -60,8 +77,8 @@ const MailReadPage = () => {
                   >
                     <span className="icons">
                       <i className="ri-star-line"></i>
-                    </span>{" "}
-                    Starred{" "}
+                    </span>
+                    Starred
                     <Badge bg="success" className="ms-auto bradius">
                       03
                     </Badge>
@@ -74,7 +91,7 @@ const MailReadPage = () => {
                   >
                     <span className="icons">
                       <i className="ri-price-tag-3-line"></i>
-                    </span>{" "}
+                    </span>
                     Tags
                   </ListGroup.Item>
                 </Link>
@@ -85,7 +102,7 @@ const MailReadPage = () => {
                   >
                     <span className="icons">
                       <i className="ri-mail-send-line"></i>
-                    </span>{" "}
+                    </span>
                     Sent Mail
                   </ListGroup.Item>
                 </Link>
@@ -96,7 +113,7 @@ const MailReadPage = () => {
                   >
                     <span className="icons">
                       <i className="ri-delete-bin-line"></i>
-                    </span>{" "}
+                    </span>
                     Trash
                   </ListGroup.Item>
                 </Link>
@@ -107,42 +124,42 @@ const MailReadPage = () => {
                     href="#"
                     className="list-group-item-action d-flex align-items-center py-2"
                   >
-                    <span className="w-3 h-3 brround bg-primary me-2"></span>{" "}
+                    <span className="w-3 h-3 brround bg-primary me-2"></span>
                     Friends
                   </ListGroup.Item>
                   <ListGroup.Item
                     href="#"
                     className="list-group-item-action d-flex align-items-center py-2"
                   >
-                    <span className="w-3 h-3 brround bg-secondary me-2"></span>{" "}
+                    <span className="w-3 h-3 brround bg-secondary me-2"></span>
                     Family
                   </ListGroup.Item>
                   <ListGroup.Item
                     href="#"
                     className="list-group-item-action d-flex align-items-center py-2"
                   >
-                    <span className="w-3 h-3 brround bg-success me-2"></span>{" "}
+                    <span className="w-3 h-3 brround bg-success me-2"></span>
                     Social
                   </ListGroup.Item>
                   <ListGroup.Item
                     href="#"
                     className="list-group-item-action d-flex align-items-center py-2"
                   >
-                    <span className="w-3 h-3 brround bg-info me-2"></span>{" "}
+                    <span className="w-3 h-3 brround bg-info me-2"></span>
                     Office
                   </ListGroup.Item>
                   <ListGroup.Item
                     href="#"
                     className="list-group-item-action d-flex align-items-center py-2"
                   >
-                    <span className="w-3 h-3 brround bg-warning me-2"></span>{" "}
+                    <span className="w-3 h-3 brround bg-warning me-2"></span>
                     Work
                   </ListGroup.Item>
                   <ListGroup.Item
                     href="#"
                     className="list-group-item-action d-flex align-items-center py-2"
                   >
-                    <span className="w-3 h-3 brround bg-danger me-2"></span>{" "}
+                    <span className="w-3 h-3 brround bg-danger me-2"></span>
                     Settings
                   </ListGroup.Item>
                 </ListGroup>
@@ -165,7 +182,7 @@ const MailReadPage = () => {
                     <div className="media-body pt-0 overflow-visible">
                       <div className="float-end d-none d-md-flex fs-15">
                         <small className="me-3 mt-3 text-muted">
-                          Sep 13 , 2021 12:45 pm
+                          Jan 01 , 2022 09:15 am
                         </small>
                         <OverlayTrigger
                           placement="top"
@@ -219,13 +236,13 @@ const MailReadPage = () => {
                         </Dropdown>
                       </div>
                       <div className="media-title text-dark font-weight-semibold mt-1">
-                        Cherry Blossom{" "}
+                        Oliver Miller
                         <span className="text-muted font-weight-semibold">
-                          ( cherryblosso@gmail.com )
+                          ( olivermiller@gmail.com )
                         </span>
                       </div>
                       <small className="mb-0">
-                        to Olivia Smith ( percykewshun@gmail.com ){" "}
+                        to Olivia Smith ( oliviasmith@gmail.com )
                       </small>
                       <small className="me-2 d-md-none">
                         June 15 , 2021 10:30 AM
@@ -244,16 +261,14 @@ const MailReadPage = () => {
                     quasi architecto beatae vitae dicta sunt explicabo. Nemo
                     enim ipsam voluptatem quia voluptas sit aspernatur aut odit
                     aut fugit, sed quia consequuntur magni dolores eos qui
-                    ratione voluptatem sequi nesciunt.{" "}
+                    ratione voluptatem sequi nesciunt.
                   </p>
                   <p>
-                    {" "}
                     Duis aute irure dolor in reprehenderit in voluptate velit
                     esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
                     occaecat cupidatat non proident, sunt in culpa qui officia.
                   </p>
                   <p>
-                    {" "}
                     Nor again is there anyone who loves or pursues or desires to
                     obtain pain of itself, because it is pain, but because
                     occasionally circumstances occur in which toil and pain can
@@ -267,7 +282,7 @@ const MailReadPage = () => {
                   <hr />
                   <div className="email-attch">
                     <h6 className="font-weight-semibold">
-                      3 Attachments{" "}
+                      3 Attachments
                       <Link
                         to={`${process.env.PUBLIC_URL}/FileManager/filedetails`}
                       >
@@ -282,7 +297,7 @@ const MailReadPage = () => {
                           to={`${process.env.PUBLIC_URL}/filemanager/filedetails`}
                         >
                           <img
-                            src={require("../../../assets/images/media/8.jpg")}
+                            src={IMG1}
                             className="card-img-top"
                             alt="img"
                           />
@@ -294,7 +309,7 @@ const MailReadPage = () => {
                           >
                             Image.jpg
                           </Link>
-                          <p className="text-muted.ms-2 mb-0 fs-11">(223 KB)</p>
+                          <p className="text-muted.ms-2 mb-0 fs-11">(250 KB)</p>
                         </div>
                       </div>
                     </Col>
@@ -304,7 +319,7 @@ const MailReadPage = () => {
                           to={`${process.env.PUBLIC_URL}/filemanager/filedetails`}
                         >
                           <img
-                            src={require("../../../assets/images/media/22.jpg")}
+                            src={IMG2}
                             className="card-img-top"
                             alt="img"
                           />
@@ -316,7 +331,7 @@ const MailReadPage = () => {
                           >
                             Image2.jpg
                           </Link>
-                          <p className="text-muted.ms-2 mb-0 fs-11">(122 KB)</p>
+                          <p className="text-muted.ms-2 mb-0 fs-11">(150 KB)</p>
                         </div>
                       </div>
                     </Col>
@@ -326,7 +341,7 @@ const MailReadPage = () => {
                           to={`${process.env.PUBLIC_URL}/filemanager/filedetails`}
                         >
                           <img
-                            src={require("../../../assets/images/media/6.jpg")}
+                            src={IMG3}
                             className="card-img-top"
                             alt="img"
                           />
@@ -338,7 +353,7 @@ const MailReadPage = () => {
                           >
                             Image3.jpg
                           </Link>
-                          <p className="text-muted.ms-2 mb-0 fs-11">(345 KB)</p>
+                          <p className="text-muted.ms-2 mb-0 fs-11">(200 KB)</p>
                         </div>
                       </div>
                     </Col>

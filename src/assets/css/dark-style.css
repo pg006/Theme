@@ -8829,11 +8829,11 @@ body.dark-mode *:hover::-webkit-scrollbar-thumb {
 }
 
 .dark-mode .multi-select .dropdown-content {
-    background-color: #1e2448;
+    background-color: #254E58;
 }
 
 .dark-mode .multi-select .dropdown-content div {
-    background-color: #1e2448;
+    background-color: #254E58;
 }
 
 .dark-mode .multi-select .dropdown-content div label:hover,
@@ -8842,12 +8842,12 @@ body.dark-mode *:hover::-webkit-scrollbar-thumb {
 }
 
 .dark-mode .rmsc .dropdown-container {
-    background-color: #1e2448;
+    background-color: #254E58;
     border: 1px solid rgba(255, 255, 255, 0.1) !important;
 }
 
 .dark-mode .rmsc .dropdown-content {
-    background-color: #1e2448 !important;
+    background-color: #254E58 !important;
     border: 1px solid rgba(255, 255, 255, 0.1) !important;
 }
 
@@ -8856,11 +8856,11 @@ body.dark-mode *:hover::-webkit-scrollbar-thumb {
 }
 
 .dark-mode .rmsc.multi-select .dropdown-content {
-    background-color: #1e2448;
+    background-color: #254E58;
 }
 
 .dark-mode .Select2__option {
-    background-color: #1e2448;
+    background-color: #254E58;
     border-left: 1px solid rgba(255, 255, 255, 0.1);
     border-right: 1px solid rgba(255, 255, 255, 0.1);
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);

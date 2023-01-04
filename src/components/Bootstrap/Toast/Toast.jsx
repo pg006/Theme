@@ -333,9 +333,7 @@ const Toast = () => {
               </Card.Header>
               <Card.Body>
                 <div className="p-4 bg-light border">
-                  <div className="toast-container">
                     <StackingToast />
-                  </div>
                 </div>
                 <Collapse in={Stacking} className="mt-2">
                   <pre>

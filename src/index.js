@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import "./index.scss"
+import "./index.scss";
 import reportWebVitals from "./reportWebVitals";
 import AllRoutes from "./Routes/AllRoutes";
 

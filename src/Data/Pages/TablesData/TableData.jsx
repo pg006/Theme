@@ -1807,7 +1807,9 @@ export const DataTabless = () => {
         variant=""
         className="btn btn-primary mt-2"
         key="delete"
-        onClick={handleDelete}
+        onClick={() => {
+          handleDelete();
+        }}
       >
         Delete
       </Button>

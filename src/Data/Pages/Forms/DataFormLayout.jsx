@@ -12,7 +12,7 @@ import {
   Tooltip,
 } from "react-bootstrap";
 
-export function DataForm() {
+export const DataForm = () => {
   return (
     <div className="users">
       <Tab.Container id="left-tabs-example" defaultActiveKey="creditcard">

@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import Countdown from "react-countdown";
 import { Row, Col } from "react-bootstrap";
 import Timer from "react-timer-wrapper";
@@ -6,38 +6,32 @@ import Timecode from "react-timecode";
 
 // Time Counting From 0
 
-export class DataCount extends Component {
-  render() {
-    return (
-      <Timer className="h3" active duration={6000000}>
-        <Timecode className="text-break" />
-      </Timer>
-    );
-  }
-}
+export const DataCount = () => {
+  return (
+    <Timer className="h3" active duration={6000000}>
+      <Timecode className="text-break" />
+    </Timer>
+  );
+};
 
 // TimeMinutesCounter
 
-export class TimeMinutesCounter extends React.Component {
-  render() {
-    return (
-      <h2>
-        <Countdown className="text-break" date={Date.now() + 1440000} />
-      </h2>
-    );
-  }
-}
+export const TimeMinutesCounter = () => {
+  return (
+    <h2>
+      <Countdown className="text-break" date={Date.now() + 1440000} />
+    </h2>
+  );
+};
 // Time Counting From 60 to 20
 
-export class TimeCounting extends React.Component {
-  render() {
-    return (
-      <h2>
-        <Countdown className="text-break" date={Date.now() + 60000} />
-      </h2>
-    );
-  }
-}
+export const TimeCounting = () => {
+  return (
+    <h2>
+      <Countdown className="text-break" date={Date.now() + 60000} />
+    </h2>
+  );
+};
 
 // Time Counting days Limit **********************
 
@@ -58,11 +52,9 @@ const renderer = ({ days, hours, minutes, seconds, completed }) => {
     );
   }
 };
-export class CountDaysLimit extends React.Component {
-  render() {
-    return <Countdown date={Date.now() + 459200000} renderer={renderer} />;
-  }
-}
+export const CountDaysLimit = () => {
+  return <Countdown date={Date.now() + 459200000} renderer={renderer} />;
+};
 
 // Time Counting days Limit **********************
 
@@ -113,8 +105,6 @@ const rendering = ({ days, hours, minutes, seconds, completed }) => {
     );
   }
 };
-export class DayCounter extends React.Component {
-  render() {
-    return <Countdown date={Date.now() + 1010100000} renderer={rendering} />;
-  }
-}
+export const DayCounter = () => {
+  return <Countdown date={Date.now() + 1010100000} renderer={rendering} />;
+};

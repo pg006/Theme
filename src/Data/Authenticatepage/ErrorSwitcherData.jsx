@@ -65,7 +65,7 @@ export const Transparent = () => {
     OpacityValuePrimary();
 };
 
-// export function checkHoriMenu() {
+// export const checkHoriMenu = () => {
 //     let menuWidth = document.querySelector(".horizontal-main");
 //     let menuItems = document.querySelector(".side-menu");
 //     let mainSidemenuWidth = document.querySelector(".main-sidemenu");
@@ -115,7 +115,7 @@ export const Transparent = () => {
 //     }
 // }
 
-export function handleThemeUpdate(cssVars) {
+export const handleThemeUpdate = (cssVars) => {
     // console.log(cssVars);
 
     const root = document.querySelector(":root");
@@ -146,7 +146,7 @@ const getAlphafloat = (a, alpha) => {
 
 // convertion of hex code to rgba code
 
-export function hexToRgba(hexValue, alpha = 1) {
+export const hexToRgba = (hexValue, alpha = 1) => {
     if (!isValidHex(hexValue)) {
         return null;
     }
@@ -158,7 +158,7 @@ export function hexToRgba(hexValue, alpha = 1) {
 
 // LIGHT PRIMARY
 
-export function dynamicLightPrimaryColor(primaryColor, color) {
+export const dynamicLightPrimaryColor = (primaryColor, color) => {
     primaryColor.forEach((item) => {
         const cssPropName = `--primary-${item.getAttribute("data-id")}`;
         const cssPropName1 = `--primary-${item.getAttribute("data-id1")}`;
@@ -172,7 +172,7 @@ export function dynamicLightPrimaryColor(primaryColor, color) {
 }
 // DARK PRIMARY
 
-export function dynamicDarkPrimaryColor(events, color) {
+export const dynamicDarkPrimaryColor = (events, color) => {
     console.log(color);
 
     events.forEach((item) => {
@@ -188,7 +188,7 @@ export function dynamicDarkPrimaryColor(events, color) {
 };
 // TRANSPERENT PRIMARY
 
-export function dynamicTransparentPrimaryColor(events, color) {
+export const dynamicTransparentPrimaryColor = (events, color) => {
     events.forEach((item) => {
         const cssPropName = `--primary-bg-color`;
         const cssPropName1 = `--primary-bg-hover`;
@@ -203,7 +203,7 @@ export function dynamicTransparentPrimaryColor(events, color) {
 
 // TRANSPERENT BG PRIMARY
 
-export function dynamicBgTransparentBackground(primaryColor, color) {
+export const dynamicBgTransparentBackground = (primaryColor, color) => {
     primaryColor.forEach((item) => {
         const cssPropName1 = `--transparent-${item.getAttribute("data-id5")}`;
         handleThemeUpdate({
@@ -212,7 +212,7 @@ export function dynamicBgTransparentBackground(primaryColor, color) {
     });
 }
 
-export function dynamicBgImgTransparentPrimaryColor(primaryColor, color) {
+export const dynamicBgImgTransparentPrimaryColor = (primaryColor, color) => {
     primaryColor.forEach((item) => {
       const cssPropName = `--primary-${item.getAttribute("data-id")}`;
       const cssPropName1 = `--primary-${item.getAttribute("data-id1")}`;
@@ -229,7 +229,7 @@ export function dynamicBgImgTransparentPrimaryColor(primaryColor, color) {
 
 // BG IMAGE-1
 
-export function bgimage1() {
+export const bgimage1 = () => {
     document.querySelector(".app")?.classList.add("bg-img1");
     document.querySelector(".app")?.classList.remove("bg-img2");
     document.querySelector(".app")?.classList.remove("bg-img3");
@@ -262,7 +262,7 @@ export function bgimage1() {
 
 // BG IMAGE-2
 
-export function bgimage2() {
+export const bgimage2 = () => {
    
     document.querySelector(".app")?.classList.add("bg-img2");
     document.querySelector(".app")?.classList.remove("bg-img1");
@@ -294,7 +294,7 @@ export function bgimage2() {
 
 // BG IMAGE-3
 
-export function bgimage3() {
+export const bgimage3 = () => {
     document.querySelector(".app")?.classList.add("bg-img3");
     document.querySelector(".app")?.classList.remove("bg-img1");
     document.querySelector(".app")?.classList.remove("bg-img2");
@@ -326,7 +326,7 @@ export function bgimage3() {
 }
 
 // BG IMAGE-4
-export function bgimage4() {
+export const bgimage4 = () => {
     document.querySelector(".app")?.classList.add("bg-img4");
     document.querySelector(".app")?.classList.remove("bg-img1");
     document.querySelector(".app")?.classList.remove("bg-img2");
@@ -358,7 +358,7 @@ export function bgimage4() {
 
 // RESET DATA
 
-export function resetData() {
+export const resetData = () => {
     let lighttheme = document.querySelector("#myonoffswitch1")
     lighttheme.checked = true;   //lighttheme
     
@@ -392,7 +392,7 @@ export function resetData() {
 
 // COLOUR VARIABLE
 
-export function OpacityValuePrimary() {
+export const OpacityValuePrimary = () => {
     let primaryColorVal = getComputedStyle(document.documentElement)
         .getPropertyValue("--primary-bg-color")
         .trim();
@@ -430,7 +430,7 @@ OpacityValuePrimary();
 
 //   LOCAL STORAGE BACK-UP
 
-export function localStorageBackUp() {
+export const localStorageBackUp = () => {
     let html = document.querySelector("html")?.style;
     let body = document.querySelector("body");
     if (localStorage.getItem("sashprimaryColor") !== null) {

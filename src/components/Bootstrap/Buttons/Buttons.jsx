@@ -1740,7 +1740,7 @@ const Buttons = () => {
                   <pre>
                     <code>
                       {`
-                        export function Checkedbutton() {
+                        export const Checkedbutton = () => {
                           const [isChecked, setIsChecked] = useState(false);
                           
                           const handleOnChange = () => {
@@ -1801,7 +1801,7 @@ const Buttons = () => {
                   <pre>
                     <code>
                       {`
-                        export function Buttondata() {
+                        export const Buttondata = () => {
                           return (
                               <div className="btn-group radiobtns" role="group" aria-label="Basic radio toggle button group">
                                   <ToggleButtonGroup type="radio" name="options" defaultValue={1}>

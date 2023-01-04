@@ -6,7 +6,7 @@ import Select from "react-select";
 
 // Basic Form validation
 
-export function CutomValidation() {
+export const CutomValidation = () => {
   const [validated, setValidated] = useState(false);
   const state = [{ value: ".....", label: "....." }];
   const handleSubmit = (event) => {
@@ -96,7 +96,7 @@ const schema = Yup.object().shape({
   terms: Yup.bool().required().oneOf([true], "terms must be accepted"),
 });
 
-export function FormvalidationWithTooltip() {
+export const FormvalidationWithTooltip = () => {
   const state = [{ value: "....", label: "...." }];
 
   return (

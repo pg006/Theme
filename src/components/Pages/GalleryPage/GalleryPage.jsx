@@ -24,7 +24,7 @@ const GalleryPage = () => {
         {/* <!-- PAGINATION OPEN --> */}
         <Row className="mb-5">
           <Col md={6} className="mt-1 d-none d-md-block">
-            1 - 10 of 234 photos
+            1 - 11 of 150 photos
           </Col>
           <Col md={6}>
             <div className=" float-end">

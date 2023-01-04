@@ -27,7 +27,7 @@ function valuetext(value) {
   return `${value}`;
 }
 
-export function RangeSliderDefault() {
+export const RangeSliderDefault = () => {
   return (
     <Box sx={{ width: "100%" }}>
       <Slider
@@ -59,7 +59,7 @@ function valuetext1(value) {
   return `${value}`;
 }
 
-export function DiscreteSlider() {
+export const DiscreteSlider = () => {
   return (
     <Box sx={{ width: "100%" }}>
       <Slider
@@ -104,7 +104,7 @@ function valuetext4(value) {
   return `${value}°C`;
 }
 
-export function TrackInvertedSlider() {
+export const TrackInvertedSlider = () => {
   const [value, setValue] = React.useState([200, 800]);
 
   const handleChange = (event, newValue) => {
@@ -152,11 +152,11 @@ const Marking = [
   },
 ];
 
-export function valuetext3(value) {
+export const valuetext3 = (value) => {
   return `${value}$`;
 }
 
-export function DiscreteSliderSteps() {
+export const DiscreteSliderSteps = () => {
   const [value, setValue] = React.useState([-750, 750]);
 
   const handleChange1 = (event, newValue) => {
@@ -243,7 +243,7 @@ const IOSSlider = styled(Slider)(({ theme }) => ({
   },
 }));
 
-export function CustomizedSlider() {
+export const CustomizedSlider = () => {
   return (
     <Box sx={{ width: "100%" }}>
       <IOSSlider
@@ -341,7 +341,7 @@ function ValueLabelComponent2(props) {
     </Tooltip>
   );
 }
-export function ValueLabel() {
+export const ValueLabel = () => {
   return (
     <Box sx={{ width: "100%" }}>
       <Slider
@@ -428,7 +428,7 @@ function AirbnbThumbComponent(props) {
   );
 }
 
-export function PriceSelector() {
+export const PriceSelector = () => {
   return (
     <AirbnbSlider
       components={{ Thumb: AirbnbThumbComponent }}
@@ -455,7 +455,7 @@ const Input = styled(MuiInput)`
   width: 42px;
 `;
 
-export function InputSlider() {
+export const InputSlider = () => {
   const [value, setValue] = React.useState(30);
 
   const handleSliderChange = (event, newValue) => {
@@ -539,7 +539,7 @@ function valuetext6(value) {
   return `${value}°C`;
 }
 
-export function TrackInvertedDesign() {
+export const TrackInvertedDesign = () => {
   return (
     <Box sx={{ width: "100%" }}>
       <Typography id="track-inverted-range-slider" gutterBottom>
@@ -577,7 +577,7 @@ function calculateValue(value) {
   return 2 ** value;
 }
 
-export function StorageSlider() {
+export const StorageSlider = () => {
   const [value, setValue] = useState();
 
   const handleChange = (event, newValue) => {

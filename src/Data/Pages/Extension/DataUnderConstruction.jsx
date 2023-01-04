@@ -43,6 +43,6 @@ const rendering = ({ days, hours, minutes, seconds, completed }) => {
     );
   }
 };
-export function DayCounter() {
+export const DayCounter = () => {
   return <Countdown date={Date.now() + 12999800000} renderer={rendering} />;
 }

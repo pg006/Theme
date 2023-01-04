@@ -6,7 +6,7 @@ import "rodal/lib/rodal.css";
 
 // Fullscreen Modal END
 
-export function Fullscreen() {
+export const Fullscreen = () => {
   let [fullScreen, setFullscreen] = useState("true");
   const [show, setShow] = useState(false);
 
@@ -46,12 +46,12 @@ export function Fullscreen() {
       </Modal>
     </>
   );
-}
+};
 // Fullscreen Modal END
 
 // Scroll Modal OPEN
 
-export function ScrollModal() {
+export const ScrollModal = () => {
   const [show, setShow] = useState(false);
 
   const handleClose1 = () => setShow(false);
@@ -128,13 +128,13 @@ export function ScrollModal() {
       </Modal>
     </>
   );
-}
+};
 
 // Scroll Modal END
 
 // Basic Modal OPEN
 
-export function BasicModal() {
+export const BasicModal = () => {
   const [show, setShow] = useState(false);
 
   const viewDemoClose = () => setShow(false);
@@ -177,12 +177,12 @@ export function BasicModal() {
       </Modal>
     </>
   );
-}
+};
 
 // Basic Modal END
 
 // SUCCESS ALERT Modal START
-export function SuccessAlert() {
+export const SuccessAlert = () => {
   const [show, setShow] = useState(false);
 
   const viewDemoClose = () => setShow(false);
@@ -214,13 +214,13 @@ export function SuccessAlert() {
       </Modal>
     </>
   );
-}
+};
 
 // SUCCESS ALERT Modal END
 
 //  Warning Alert Messages START
 
-export function WarningAlert() {
+export const WarningAlert = () => {
   const [show, setShow] = useState(false);
 
   const viewDemoClose = () => setShow(false);
@@ -254,7 +254,7 @@ export function WarningAlert() {
       </Modal>
     </>
   );
-}
+};
 
 //  Warning Alert Messages END
 
@@ -262,7 +262,7 @@ export function WarningAlert() {
 
 // Zoom
 
-export function ModalZoom() {
+export const ModalZoom = () => {
   const [visible, setVisible] = useState(false);
 
   const show = () => {
@@ -286,7 +286,6 @@ export function ModalZoom() {
         <div>Mesage Preview</div>
         <hr />
         <p>
-          {" "}
           Why We Use Electoral College, Not Popular Vote It is a long
           established fact that a reader will be distracted by the readable
           content of a page when looking at its layout. The point of using Lorem
@@ -304,11 +303,11 @@ export function ModalZoom() {
       </Rodal>
     </div>
   );
-}
+};
 
 //   Fade
 
-export function ModalFade() {
+export const ModalFade = () => {
   const [visible, setVisible] = useState(false);
 
   const show = () => {
@@ -332,7 +331,6 @@ export function ModalFade() {
         <div>Mesage Preview</div>
         <hr />
         <p>
-          {" "}
           Why We Use Electoral College, Not Popular Vote It is a long
           established fact that a reader will be distracted by the readable
           content of a page when looking at its layout. The point of using Lorem
@@ -350,11 +348,11 @@ export function ModalFade() {
       </Rodal>
     </div>
   );
-}
+};
 
 //   flip
 
-export function ModalFlip() {
+export const ModalFlip = () => {
   const [visible, setVisible] = useState(false);
 
   const show = () => {
@@ -378,7 +376,6 @@ export function ModalFlip() {
         <div>Mesage Preview</div>
         <hr />
         <p>
-          {" "}
           Why We Use Electoral College, Not Popular Vote It is a long
           established fact that a reader will be distracted by the readable
           content of a page when looking at its layout. The point of using Lorem
@@ -396,11 +393,11 @@ export function ModalFlip() {
       </Rodal>
     </div>
   );
-}
+};
 
 //   door
 
-export function ModalDoor() {
+export const ModalDoor = () => {
   const [visible, setVisible] = useState(false);
 
   const show = () => {
@@ -424,7 +421,6 @@ export function ModalDoor() {
         <div>Mesage Preview</div>
         <hr />
         <p>
-          {" "}
           Why We Use Electoral College, Not Popular Vote It is a long
           established fact that a reader will be distracted by the readable
           content of a page when looking at its layout. The point of using Lorem
@@ -442,11 +438,11 @@ export function ModalDoor() {
       </Rodal>
     </div>
   );
-}
+};
 
 //   rotate
 
-export function ModalRotate() {
+export const ModalRotate = () => {
   const [visible, setVisible] = useState(false);
 
   const show = () => {
@@ -470,7 +466,6 @@ export function ModalRotate() {
         <div>Mesage Preview</div>
         <hr />
         <p>
-          {" "}
           Why We Use Electoral College, Not Popular Vote It is a long
           established fact that a reader will be distracted by the readable
           content of a page when looking at its layout. The point of using Lorem
@@ -488,10 +483,10 @@ export function ModalRotate() {
       </Rodal>
     </div>
   );
-}
+};
 
 //   slideUp
-export function ModalSlideUp() {
+export const ModalSlideUp = () => {
   const [visible, setVisible] = useState(false);
 
   const show = () => {
@@ -515,7 +510,6 @@ export function ModalSlideUp() {
         <div>Mesage Preview</div>
         <hr />
         <p>
-          {" "}
           Why We Use Electoral College, Not Popular Vote It is a long
           established fact that a reader will be distracted by the readable
           content of a page when looking at its layout. The point of using Lorem
@@ -533,10 +527,10 @@ export function ModalSlideUp() {
       </Rodal>
     </div>
   );
-}
+};
 
 //   slideDown
-export function ModalslideDown() {
+export const ModalslideDown = () => {
   const [visible, setVisible] = useState(false);
 
   const show = () => {
@@ -565,7 +559,6 @@ export function ModalslideDown() {
         <div>Mesage Preview</div>
         <hr />
         <p>
-          {" "}
           Why We Use Electoral College, Not Popular Vote It is a long
           established fact that a reader will be distracted by the readable
           content of a page when looking at its layout. The point of using Lorem
@@ -583,10 +576,10 @@ export function ModalslideDown() {
       </Rodal>
     </div>
   );
-}
+};
 
 //   slideLeft
-export function ModalslideLeft() {
+export const ModalslideLeft = () => {
   const [visible, setVisible] = useState(false);
 
   const show = () => {
@@ -615,7 +608,6 @@ export function ModalslideLeft() {
         <div>Mesage Preview</div>
         <hr />
         <p>
-          {" "}
           Why We Use Electoral College, Not Popular Vote It is a long
           established fact that a reader will be distracted by the readable
           content of a page when looking at its layout. The point of using Lorem
@@ -633,11 +625,11 @@ export function ModalslideLeft() {
       </Rodal>
     </div>
   );
-}
+};
 
 //   slideRight
 
-export function ModalslideRight() {
+export const ModalslideRight = () => {
   const [visible, setVisible] = useState(false);
 
   const show = () => {
@@ -666,7 +658,6 @@ export function ModalslideRight() {
         <div>Mesage Preview</div>
         <hr />
         <p>
-          {" "}
           Why We Use Electoral College, Not Popular Vote It is a long
           established fact that a reader will be distracted by the readable
           content of a page when looking at its layout. The point of using Lorem
@@ -684,11 +675,11 @@ export function ModalslideRight() {
       </Rodal>
     </div>
   );
-}
+};
 
 // Select2 Inside Modals
 
-export function SelectInsideModal() {
+export const SelectInsideModal = () => {
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -733,11 +724,11 @@ export function SelectInsideModal() {
       </Modal>
     </>
   );
-}
+};
 
 // Input Modal
 
-export function InputModal() {
+export const InputModal = () => {
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -781,4 +772,4 @@ export function InputModal() {
       </Modal>
     </>
   );
-}
+};

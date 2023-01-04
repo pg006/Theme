@@ -401,36 +401,34 @@ const Carousels = () => {
                   <pre>
                     <code>
                       {`
-                      export class CarouselwithbottomRightIndicator extends Component {
-                        render() {
-                          const settings = {
-                            dots: true,
-                            infinite: true,
-                            speed: 500,
-                            slidesToShow: 1,
-                            slidesToScroll: 1,
-                            arrows: false,
-                            autoplay: true,
-                            autoplaySpeed: 2000,
-                            cssEase: "linear",
-                          };
-                          return (
-                            <div className="bottom-right">
-                              <Slider {...settings}>
-                                <img className="d-block w-100 br-5" alt="" src={img4} />
+                      export const CarouselwithTopRightIndicator = () => {
+                        const settings = {
+                          dots: true,
+                          infinite: true,
+                          speed: 500,
+                          slidesToShow: 1,
+                          slidesToScroll: 1,
+                          arrows: false,
+                          autoplay: true,
+                          autoplaySpeed: 2000,
+                          cssEase: "linear",
+                        };
+                        return (
+                          <div className="Top-right">
+                            <Slider {...settings}>
+                              <img className="d-block w-100 br-5" alt="" src={L11} />
                       
-                                <img className="d-block w-100 br-5" alt="" src={img5} />
+                              <img className="d-block w-100 br-5" alt="" src={L12} />
                       
-                                <img className="d-block w-100 br-5" alt="" src={img6} />
+                              <img className="d-block w-100 br-5" alt="" src={L13} />
                       
-                                <img className="d-block w-100 br-5" alt="" src={img7} />
+                              <img className="d-block w-100 br-5" alt="" src={L14} />
                       
-                                <img className="d-block w-100 br-5" alt="" src={img8} />
-                              </Slider>
-                            </div>
-                          );
-                        }
-                      }`}
+                              <img className="d-block w-100 br-5" alt="" src={L15} />
+                            </Slider>
+                          </div>
+                        );
+                      };`}
                     </code>
                   </pre>
                 </Collapse>
@@ -750,7 +748,7 @@ const Carousels = () => {
                   <pre>
                     <code>
                       {`
-                        export function CarouselwithBackgroundColorCaption() {
+                        export const CarouselwithBackgroundColorCaption = () => {
                         
                           return (
                         <Carousel>

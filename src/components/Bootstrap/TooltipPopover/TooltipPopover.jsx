@@ -641,7 +641,7 @@ const TooltipPopover = () => {
                         <pre>
                           <code>
                             {`
-                              export function DefaultpopOver() {
+                              export const DefaultpopOver = () => {
                                 return (
                                   <>
                                     {popoverData.map((item:any, k:any) => (
@@ -786,7 +786,7 @@ const TooltipPopover = () => {
                         <pre>
                           <code>
                             {`
-                              export function StaticTooltip() {
+                              export const StaticTooltip = () => {
 
                               
                                 return (
@@ -932,7 +932,7 @@ const TooltipPopover = () => {
                         <pre>
                           <code>
                             {`
-                                export function ColoredTooltip() {
+                                export const ColoredTooltip = () => {
 
                                   return (
                                     <>

@@ -12,7 +12,7 @@ import { styled } from "@mui/material/styles";
 
 // Star Rating
 
-export function StarRating() {
+export const StarRating = () => {
   return (
     <div className="rating-stars block">
       <Box
@@ -30,7 +30,7 @@ export function StarRating() {
 
 const StyledRating = styled(Rating)({ color: "#F1C40F" });
 
-export function HeartRating() {
+export const HeartRating = () => {
   return (
     <div className="rating-stars block">
       <Box
@@ -53,7 +53,7 @@ export function HeartRating() {
 
 const StyledStarRating = styled(Rating)({ color: "#E74C3C" });
 
-export function MultiStarRating() {
+export const MultiStarRating = () => {
   return (
     <div className="rating-stars block">
       <Box
@@ -71,7 +71,7 @@ export function MultiStarRating() {
 
 const StyledheartRating = styled(Rating)({ color: "#E74C3C" });
 
-export function MultiHeartRating() {
+export const MultiHeartRating = () => {
   return (
     <div className="rating-stars block">
       <Box
@@ -94,7 +94,7 @@ export function MultiHeartRating() {
 
 // Multi circle Rating
 
-export function MulticircleRating() {
+export const MulticircleRating = () => {
   return (
     <div className="rating-stars block">
       <Box
@@ -117,7 +117,7 @@ export function MulticircleRating() {
 
 // Thumbs-up Rating
 
-export function ThumbsUpRating() {
+export const ThumbsUpRating = () => {
   return (
     <div className="rating-stars block">
       <Box
@@ -140,7 +140,7 @@ export function ThumbsUpRating() {
 
 // Basic Star Rating
 
-export function BasicStarRating() {
+export const BasicStarRating = () => {
   return (
     <Stack spacing={1} className="rating-stars block my-rating">
       <Rating
@@ -157,7 +157,7 @@ export function BasicStarRating() {
 
 // Rounded star Rating
 
-export function RoundedStarRating() {
+export const RoundedStarRating = () => {
   return (
     <Stack spacing={1} className="rating-stars  block my-rating-4">
       <Rating
@@ -174,7 +174,7 @@ export function RoundedStarRating() {
 
 // gradients Rating
 
-export function GradientsRating() {
+export const GradientsRating = () => {
   return (
     <Stack spacing={1} className="rating-stars block my-rating-5">
       <Rating
@@ -191,7 +191,7 @@ export function GradientsRating() {
 
 // Execute callback when rating
 
-export function ExecuteCallback(value) {
+export const ExecuteCallback = (value) => {
   const onChange = (value) => {
     window.alert(`rating is ${value}`);
   };
@@ -212,7 +212,7 @@ export function ExecuteCallback(value) {
 
 // read only mode
 
-export function ReadOnlyMode() {
+export const ReadOnlyMode = () => {
   return (
     <Stack spacing={1} className="rating-stars block my-rating-7">
       <Rating name="half-rating-read" value={3} max={5} size="large" readOnly />
@@ -241,7 +241,7 @@ function getLabelText(value) {
   return `${value} Star${value !== 1 ? "s" : ""}, ${labels[value]}`;
 }
 
-export function OnHoverEvent() {
+export const OnHoverEvent = () => {
   const [value, setValue] = useState();
   const [hover, setHover] = useState(-1);
 

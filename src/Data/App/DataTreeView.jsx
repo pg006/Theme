@@ -1,7 +1,6 @@
 import React, { useState } from "react";
-import { TreeItemProps, treeItemClasses } from "@mui/lab/TreeItem";
+import { treeItemClasses } from "@mui/lab/TreeItem";
 import { styled } from "@mui/material/styles";
-import { SvgIconProps } from "@mui/material/SvgIcon";
 import TreeView from "@mui/lab/TreeView";
 import Button from "@mui/material/Button";
 
@@ -37,7 +36,7 @@ import PersonIcon from "@mui/icons-material/Person";
 
 // BASIC TREEVIEW 1
 
-export function FileSystemNavigator() {
+export const FileSystemNavigator = () => {
   return (
     <TreeView
       aria-label="file system navigator"
@@ -64,7 +63,7 @@ export function FileSystemNavigator() {
 
 // BASIC TREEVIEW 2
 
-export function BasicTreeviewexample() {
+export const BasicTreeviewexample = () => {
   return (
     <TreeView
       aria-label="file system navigator"
@@ -91,7 +90,7 @@ export function BasicTreeviewexample() {
 
 // BASIC TREEVIEW 3
 
-export function BasicTreeview() {
+export const BasicTreeview = () => {
   return (
     <TreeView
       aria-label="file system navigator"
@@ -120,7 +119,7 @@ export function BasicTreeview() {
 
 // style 1
 
-export function TreeviewStyle() {
+export const TreeviewStyle = () => {
   return (
     <TreeView
       aria-label="file system navigator"
@@ -283,7 +282,7 @@ export function TreeviewStyle() {
 
 // Style2
 
-export function TreeviewStylecolord() {
+export const TreeviewStylecolord = () => {
   return (
     <TreeView
       aria-label="file system navigator"
@@ -542,7 +541,7 @@ export function TreeviewStylecolord() {
 
 // Style3
 
-export function TreeViewwithbutton() {
+export const TreeViewwithbutton = () => {
   const [expanded, setExpanded] = useState([]);
   const [selected, setSelected] = useState([]);
 

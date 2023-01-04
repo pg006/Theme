@@ -19,21 +19,21 @@ const NotificationListPage = () => {
           active="Notifications List"
           items={["Pages"]}
         />
-        {/* <!-- Row --> */}
-        {/* <!-- Container --> */}
+        {/* <--<-- Row -->--> */}
+        {/* <-- Container --> */}
         <Container>
           <ul className="notification">
             <li>
               <div className="notification-time">
                 <span className="date">Today</span>
-                <span className="time">02:31</span>
+                <span className="time">05:22</span>
               </div>
               <div className="notification-icon">
                 <Link to="#"></Link>
               </div>
               <div className="notification-time-date mb-2 d-block d-md-none">
                 <span className="date">Today</span>
-                <span className="time mx-2">02:31</span>
+                <span className="time mx-2">05:22</span>
               </div>
               <div className="notification-body">
                 <div className="media mt-0">
@@ -68,10 +68,10 @@ const NotificationListPage = () => {
               <div className="notification-icon">
                 <Link to="#"></Link>
               </div>
-              <div className="notification-time-date mb-2 d-block d-md-none">
+              {/* <div className="notification-time-date mb-2 d-block d-md-none">
                 <span className="date">Yesterday</span>
                 <span className="time mx-2">18:47</span>
-              </div>
+              </div> */}
               <div className="notification-body">
                 <div className="media mt-0">
                   <div className="main-avatar avatar-md offline">
@@ -359,8 +359,8 @@ const NotificationListPage = () => {
             </Button>
           </div>
         </Container>
-        {/* <!-- End Container --> */}
-        {/* <!-- /Row --> */}
+        {/* <-- Container END --> */}
+        {/* <--<-- Row END -->--> */}
       </div>
     </React.Fragment>
   );

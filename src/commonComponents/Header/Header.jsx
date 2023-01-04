@@ -113,7 +113,9 @@ const Header = () => {
                     <div className="d-flex country">
                       <Link
                         to="#"
-                        onClick={handleShow}
+                        onClick={() => {
+                          handleShow();
+                        }}
                         className="nav-link icon text-center"
                       >
                         <i className="fe fe-globe"></i>
@@ -131,7 +133,9 @@ const Header = () => {
                           <Modal.Title as="h6">Choose Country</Modal.Title>
                           <span
                             className="d-flex ms-auto"
-                            onClick={handleClose}
+                            onClick={() => {
+                              handleClose();
+                            }}
                           >
                             <i className="fe fe-x ms-auto"></i>
                           </span>
