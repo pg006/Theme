@@ -7,14 +7,15 @@ const Ribbons = () => {
   return (
     <React.Fragment>
       <div>
-        {/* <!-- CONTAINER --> */}
+        {/* <!-- CONTAINER --> */}  
 
         <PageHeader titles="Ribbons" active="Ribbons" items={["Componets"]} />
 
         <div className="main-container container-fluid">
-          {/* <!-- Row--> */}
+          {/* <--<-- ROW START -->--> */}
 
           <Row>
+            {/* <--<-- RIBBON STYLE 1 START -->--> */}
             <h5 className="fw-semibold mb-4">Ribbon Style 1</h5>
             <Col xl={3} md={6}>
               <Card className="ribbone-card">
@@ -29,15 +30,18 @@ const Ribbons = () => {
                   </h6>
                   <p className="card-text">
                     Some quick example text to build on the card title. Some
-                    quick example text to build on the card title
+                    quick example text to build on the card title. Some quick
+                    example text to build on the card title. Some quick example
+                    text to build on the card title
                   </p>
                 </Card.Body>
               </Card>
             </Col>
+
             <Col xl={3} md={6}>
               <Card className="ribbone-card">
-                <div className="power-ribbone power-ribbone-bottom-left text-primary">
-                  <span className="bg-primary">
+                <div className="power-ribbone power-ribbone-bottom-left text-secondary">
+                  <span className="bg-secondary">
                     <i className="fa fa-bolt"></i>
                   </span>
                 </div>
@@ -47,29 +51,14 @@ const Ribbons = () => {
                   </h6>
                   <p className="card-text">
                     Some quick example text to build on the card title. some
-                    quick example text to build on the card title
+                    quick example text to build on the card title.Some quick
+                    example text to build on the card title. some quick example
+                    text to build on the card title
                   </p>
                 </Card.Body>
               </Card>
             </Col>
-            <Col xl={3} md={6}>
-              <Card className="ribbone-card">
-                <div className="power-ribbone power-ribbone-top-right text-danger">
-                  <span className="bg-danger">
-                    <i className="fa fa-bolt"></i>
-                  </span>
-                </div>
-                <Card.Body className="p-6">
-                  <h6 className="card-subtitle mb-2 text-dark fw-bold">
-                    Card subtitle
-                  </h6>
-                  <p className="card-text">
-                    Some quick example text to build on the card title. Some
-                    quick example text to build on the card title
-                  </p>
-                </Card.Body>
-              </Card>
-            </Col>
+
             <Col xl={3} md={6}>
               <Card className="ribbone-card">
                 <div className="power-ribbone power-ribbone-bottom-right text-success">
@@ -83,16 +72,37 @@ const Ribbons = () => {
                   </h6>
                   <p className="card-text">
                     Some quick example text to build on the card title. Some
-                    quick example text to build on the card title
+                    quick example text to build on the card title. Some quick
+                    example text to build on the card title. Some quick example
+                    text to build on the card title
                   </p>
                 </Card.Body>
               </Card>
             </Col>
-          </Row>
-          {/* <!-- End Row--> */}
 
-          {/* <!-- Row--> */}
-          <Row>
+            <Col xl={3} md={6}>
+              <Card className="ribbone-card">
+                <div className="power-ribbone power-ribbone-top-right text-danger">
+                  <span className="bg-danger">
+                    <i className="fa fa-bolt"></i>
+                  </span>
+                </div>
+                <Card.Body className="p-6">
+                  <h6 className="card-subtitle mb-2 text-dark fw-bold">
+                    Card subtitle
+                  </h6>
+                  <p className="card-text">
+                    Some quick example text to build on the card title. Some
+                    quick example text to build on the card title. Some quick
+                    example text to build on the card title. Some quick example
+                    text to build on the card title
+                  </p>
+                </Card.Body>
+              </Card>
+            </Col>
+            {/* <--<-- RIBBON STYLE 1 END -->--> */}
+
+            {/* <--<-- RIBBON STYLE 2 START -->--> */}
             <h5 className="fw-semibold mb-4">Ribbon Style 2</h5>
             <Col xl={3} md={6}>
               <Card className="ribbone-card">
@@ -105,11 +115,52 @@ const Ribbons = () => {
                   </h6>
                   <p className="card-text">
                     Some quick example text to build on the card title. Some
-                    quick example text to build on the card title
+                    quick example text to build on the card title. Some quick
+                    example text to build on the card title. Some quick example
+                    text to build on the card title
                   </p>
                 </Card.Body>
               </Card>
             </Col>
+
+            <Col xl={3} md={6}>
+              <Card className="ribbone-card">
+                <div className="ribbone ribbone-bottom-left text-secondary">
+                  <span className="bg-secondary">Update</span>
+                </div>
+                <Card.Body className="p-6">
+                  <h6 className="card-subtitle mb-2 text-dark fw-bold text-start">
+                    Card subtitle
+                  </h6>
+                  <p className="card-text">
+                    Some quick example text to build on the card title. Some
+                    quick example text to build on the card title. Some quick
+                    example text to build on the card title. Some quick example
+                    text to build on the card title
+                  </p>
+                </Card.Body>
+              </Card>
+            </Col>
+
+            <Col xl={3} md={6}>
+              <Card className="ribbone-card  sold-out">
+                <div className="ribbone ribbone-bottom-right text-success">
+                  <span className="bg-success">Open</span>
+                </div>
+                <Card.Body className="p-6">
+                  <h6 className="card-subtitle mb-2 text-dark fw-bold">
+                    Card subtitle
+                  </h6>
+                  <p className="card-text">
+                    Some quick example text to build on the card title. Some
+                    quick example text to build on the card title. Some quick
+                    example text to build on the card title. Some quick example
+                    text to build on the card title
+                  </p>
+                </Card.Body>
+              </Card>
+            </Col>
+
             <Col xl={3} md={6}>
               <Card className="ribbone-card  sold-out">
                 <div className="ribbone ribbone-top-right text-danger">
@@ -121,114 +172,96 @@ const Ribbons = () => {
                   </h6>
                   <p className="card-text">
                     Some quick example text to build on the card title. Some
-                    quick example text to build on the card title
+                    quick example text to build on the card title. Some quick
+                    example text to build on the card title. Some quick example
+                    text to build on the card title
                   </p>
                 </Card.Body>
               </Card>
             </Col>
-            <Col xl={3} md={6}>
-              <Card className="ribbone-card">
-                <div className="ribbone ribbone-top-left text-success">
-                  <span className="bg-success">Update</span>
-                </div>
-                <Card.Body className="p-6">
-                  <h6 className="card-subtitle mb-2 text-dark fw-bold text-end">
-                    Card subtitle
-                  </h6>
-                  <p className="card-text">
-                    Some quick example text to build on the card title. Some
-                    quick example text to build on the card title
-                  </p>
-                </Card.Body>
-              </Card>
-            </Col>
-            <Col xl={3} md={6}>
-              <Card className="ribbone-card  sold-out">
-                <div className="ribbone ribbone-top-right text-warning">
-                  <span className="bg-warning">Open</span>
-                </div>
-                <Card.Body className="p-6">
-                  <h6 className="card-subtitle mb-2 text-dark fw-bold">
-                    Card subtitle
-                  </h6>
-                  <p className="card-text">
-                    Some quick example text to build on the card title. Some
-                    quick example text to build on the card title
-                  </p>
-                </Card.Body>
-              </Card>
-            </Col>
-          </Row>
-          {/* <!-- End Row--> */}
+            {/* <--<-- RIBBON STYLE 2 END -->--> */}
 
-          {/* <!-- Row--> */}
-          <Row>
+            {/* <--<-- RIBBON STYLE 3 START -->--> */}
             <h5 className="fw-semibold mb-4">Ribbon Style 3</h5>
             <Col xl={3} md={6}>
               <Card className="ribbone-card">
-                <div className="arrow-ribbone-left bg-secondary">Sale</div>
+                <div className="arrow-ribbone-left bg-primary">Sale</div>
                 <Card.Body className="p-6">
                   <h6 className="card-subtitle mb-2 text-dark fw-bold text-end">
                     Card subtitle
                   </h6>
                   <p className="card-text">
                     Some quick example text to build on the card title. Some
-                    quick example text to build on the card title
+                    quick example text to build on the card title. Some quick
+                    example text to build on the card title. Some quick example
+                    text to build on the card title
                   </p>
                 </Card.Body>
               </Card>
             </Col>
-            <Col xl={3} md={6}>
-              <Card className="ribbone-card">
-                <div className="arrow-ribbone-right bg-info">Price</div>
-                <Card.Body className="p-6">
-                  <h6 className="card-subtitle mb-2 text-dark fw-bold">
-                    Card subtitle
-                  </h6>
-                  <p className="card-text">
-                    Some quick example text to build on the card title. Some
-                    quick example text to build on the card title
-                  </p>
-                </Card.Body>
-              </Card>
-            </Col>
-            <Col xl={3} md={6}>
-              <Card className="ribbone-card">
-                <div className="arrow-ribbone-left bg-warning">Service</div>
-                <Card.Body className="p-6">
-                  <h6 className="card-subtitle mb-2 text-dark fw-bold text-end">
-                    Card subtitle
-                  </h6>
-                  <p className="card-text">
-                    Some quick example text to build on the card title. Some
-                    quick example text to build on the card title
-                  </p>
-                </Card.Body>
-              </Card>
-            </Col>
-            <Col xl={3} md={6}>
-              <Card className="ribbone-card">
-                <div className="arrow-ribbone-right bg-teal">Offer</div>
-                <Card.Body className="p-6">
-                  <h6 className="card-subtitle mb-2 text-dark fw-bold">
-                    Card subtitle
-                  </h6>
-                  <p className="card-text">
-                    Some quick example text to build on the card title. Some
-                    quick example text to build on the card title
-                  </p>
-                </Card.Body>
-              </Card>
-            </Col>
-          </Row>
-          {/* <!-- End Row--> */}
 
-          {/* <!-- Row--> */}
-          <Row>
+            <Col xl={3} md={6}>
+              <Card className="ribbone-card">
+                <div className="arrow-ribbone-bottom-left bg-secondary">
+                  Price
+                </div>
+                <Card.Body className="p-6">
+                  <h6 className="card-subtitle mb-2 text-dark fw-bold">
+                    Card subtitle
+                  </h6>
+                  <p className="card-text">
+                    Some quick example text to build on the card title. Some
+                    quick example text to build on the card title. Some quick
+                    example text to build on the card title. Some quick example
+                    text to build on the card title
+                  </p>
+                </Card.Body>
+              </Card>
+            </Col>
+
+            <Col xl={3} md={6}>
+              <Card className="ribbone-card">
+                <div className="arrow-ribbone-bottom-right bg-success">
+                  Service
+                </div>
+                <Card.Body className="p-6">
+                  <h6 className="card-subtitle mb-2 text-dark fw-bold text-start">
+                    Card subtitle
+                  </h6>
+                  <p className="card-text">
+                    Some quick example text to build on the card title. Some
+                    quick example text to build on the card title. Some quick
+                    example text to build on the card title. Some quick example
+                    text to build on the card title
+                  </p>
+                </Card.Body>
+              </Card>
+            </Col>
+
+            <Col xl={3} md={6}>
+              <Card className="ribbone-card">
+                <div className="arrow-ribbone-right bg-danger">Offer</div>
+                <Card.Body className="p-6">
+                  <h6 className="card-subtitle mb-2 text-dark fw-bold">
+                    Card subtitle
+                  </h6>
+                  <p className="card-text">
+                    Some quick example text to build on the card title. Some
+                    quick example text to build on the card title. Some quick
+                    example text to build on the card title. Some quick example
+                    text to build on the card title
+                  </p>
+                </Card.Body>
+              </Card>
+            </Col>
+            {/* <--<-- RIBBON STYLE 3 END -->--> */}
+
+            {/* <--<-- RIBBON STYLE 4 START -->--> */}
+
             <h5 className="fw-semibold mb-4">Ribbon Style 4</h5>
             <Col xl={3} md={6}>
               <div className="card">
-                <span className="ribbone-success-left">
+                <span className="ribbone-primary-left">
                   <span>
                     <i className="fe fe-zap"></i>
                   </span>
@@ -239,14 +272,17 @@ const Ribbons = () => {
                   </h6>
                   <p className="card-text">
                     Some quick example text to build on the card title. Some
-                    quick example text to build on the card title
+                    quick example text to build on the card title. Some quick
+                    example text to build on the card title. Some quick example
+                    text to build on the card title
                   </p>
                 </Card.Body>
               </div>
             </Col>
+
             <Col xl={3} md={6}>
               <div className="card">
-                <span className="ribbone-warning-right">
+                <span className="ribbone-secondary-left-bottom">
                   <span>
                     <i className="fe fe-zap"></i>
                   </span>
@@ -257,14 +293,17 @@ const Ribbons = () => {
                   </h6>
                   <p className="card-text">
                     Some quick example text to build on the card title. Some
-                    quick example text to build on the card title
+                    quick example text to build on the card title. Some quick
+                    example text to build on the card title. Some quick example
+                    text to build on the card title
                   </p>
                 </Card.Body>
               </div>
             </Col>
+
             <Col xl={3} md={6}>
               <div className="card">
-                <span className="ribbone-info-left">
+                <span className="ribbone-success-right-bottom">
                   <span>
                     <i className="fe fe-zap"></i>
                   </span>
@@ -275,11 +314,14 @@ const Ribbons = () => {
                   </h6>
                   <p className="card-text">
                     Some quick example text to build on the card title. Some
-                    quick example text to build on the card title
+                    quick example text to build on the card title. Some quick
+                    example text to build on the card title. Some quick example
+                    text to build on the card title
                   </p>
                 </Card.Body>
               </div>
             </Col>
+
             <Col xl={3} md={6}>
               <div className="card">
                 <span className="ribbone-danger-right">
@@ -293,20 +335,21 @@ const Ribbons = () => {
                   </h6>
                   <p className="card-text">
                     Some quick example text to build on the card title. Some
-                    quick example text to build on the card title
+                    quick example text to build on the card title. Some quick
+                    example text to build on the card title. Some quick example
+                    text to build on the card title
                   </p>
                 </Card.Body>
               </div>
             </Col>
-          </Row>
-          {/* <!-- End Row--> */}
+            {/* <--<-- RIBBON STYLE 4 END -->--> */}
 
-          {/* <!-- Row--> */}
-          <Row>
+            {/* <--<-- RIBBON STYLE 5 START -->--> */}
+
             <h5 className="fw-semibold mb-4">Ribbon Style 5</h5>
             <Col xl={3} md={6}>
-              <div className="card">
-                <span className="bookmark-ribbone-danger-left">
+              <Card className="card">
+                <span className="bookmark-ribbone-primary-left">
                   <span>Jul</span>
                 </span>
                 <Card.Body className="p-6">
@@ -315,14 +358,17 @@ const Ribbons = () => {
                   </h6>
                   <p className="card-text">
                     Some quick example text to build on the card title. Some
-                    quick example text to build on the card title
+                    quick example text to build on the card title. Some quick
+                    example text to build on the card title. Some quick example
+                    text to build on the card title
                   </p>
                 </Card.Body>
-              </div>
+              </Card>
             </Col>
+
             <Col xl={3} md={6}>
-              <div className="card">
-                <span className="bookmark-ribbone-secondary-right">
+              <Card>
+                <span className="bookmark-ribbone-secondary-left-bottom">
                   <span>Aug</span>
                 </span>
                 <Card.Body className="p-6">
@@ -331,30 +377,36 @@ const Ribbons = () => {
                   </h6>
                   <p className="card-text">
                     Some quick example text to build on the card title. Some
-                    quick example text to build on the card title
+                    quick example text to build on the card title. Some quick
+                    example text to build on the card title. Some quick example
+                    text to build on the card title
                   </p>
                 </Card.Body>
-              </div>
+              </Card>
             </Col>
+
             <Col xl={3} md={6}>
-              <div className="card">
-                <span className="bookmark-sideleft-ribbone-success-left">
+              <Card>
+                <span className="bookmark-ribbone-success-right-bottom">
                   <span>Sept</span>
                 </span>
                 <Card.Body className="p-6">
-                  <h6 className="card-subtitle mb-2 text-dark fw-bold text-end">
+                  <h6 className="card-subtitle mb-2 text-dark fw-bold text-start">
                     Card subtitle
                   </h6>
                   <p className="card-text">
                     Some quick example text to build on the card title. Some
-                    quick example text to build on the card title
+                    quick example text to build on the card title. Some quick
+                    example text to build on the card title. Some quick example
+                    text to build on the card title
                   </p>
                 </Card.Body>
-              </div>
+              </Card>
             </Col>
+
             <Col xl={3} md={6}>
-              <div className="card">
-                <span className="bookmark-sideright-ribbone-primary-right">
+              <Card>
+                <span className="bookmark-ribbone-danger-right">
                   <span>Oct</span>
                 </span>
                 <Card.Body className="p-6">
@@ -363,107 +415,124 @@ const Ribbons = () => {
                   </h6>
                   <p className="card-text">
                     Some quick example text to build on the card title. Some
-                    quick example text to build on the card title
+                    quick example text to build on the card title. Some quick
+                    example text to build on the card title. Some quick example
+                    text to build on the card title
                   </p>
                 </Card.Body>
+              </Card>
+            </Col>
+            {/* <--<-- RIBBON STYLE 5 END -->--> */}
+
+            {/* <--<-- RIBBON STYLE 6 START -->--> */}
+            <h5 className="fw-semibold mb-4">Ribbon Style 6</h5>
+            <Col xl={3} md={6}>
+              <div className="px-6">
+                <Card>
+                  <span className="fullwidth-primary-ribbons">
+                    <div className="bar">
+                      CSS Ribbon
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                  </span>
+                  <Card.Body className="p-6">
+                    <h6 className="card-subtitle mb-2 text-dark fw-bold">
+                      Card subtitle
+                    </h6>
+                    <p className="card-text">
+                      Some quick example text to build on the card title. Some
+                      quick example text to build on the card title. Some quick
+                      example text to build on the card title. Some quick
+                      example text to build on the card title
+                    </p>
+                  </Card.Body>
+                </Card>
               </div>
             </Col>
+            <Col xl={3} md={6}>
+              <div className="px-6">
+                <Card>
+                  <span className="fullwidth-secondary-ribbons">
+                    <div className="bar">
+                      CSS Ribbon
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                  </span>
+                  <Card.Body className="p-6">
+                    <h6 className="card-subtitle mb-2 text-dark fw-bold">
+                      Card subtitle
+                    </h6>
+                    <p className="card-text">
+                      Some quick example text to build on the card title. Some
+                      quick example text to build on the card title. Some quick
+                      example text to build on the card title. Some quick
+                      example text to build on the card title
+                    </p>
+                  </Card.Body>
+                </Card>
+              </div>
+            </Col>
+            <Col xl={3} md={6}>
+              <div className="px-6">
+                <Card>
+                  <span className="fullwidth-arrow-success-ribbons">
+                    <div className="bar">
+                      CSS Ribbon
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                  </span>
+                  <Card.Body className="p-6">
+                    <h6 className="card-subtitle mb-2 text-dark fw-bold">
+                      Card subtitle
+                    </h6>
+                    <p className="card-text">
+                      Some quick example text to build on the card title. Some
+                      quick example text to build on the card title. Some quick
+                      example text to build on the card title. Some quick
+                      example text to build on the card title
+                    </p>
+                  </Card.Body>
+                </Card>
+              </div>
+            </Col>
+            <Col xl={3} md={6}>
+              <div className="px-6">
+                <Card>
+                  <span className="fullwidth-arrow-danger-ribbons-right">
+                    <div className="bar">
+                      CSS Ribbon
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                  </span>
+                  <Card.Body className="p-6">
+                    <h6 className="card-subtitle mb-2 text-dark fw-bold">
+                      Card subtitle
+                    </h6>
+                    <p className="card-text">
+                      Some quick example text to build on the card title. Some
+                      quick example text to build on the card title. Some quick
+                      example text to build on the card title. Some quick
+                      example text to build on the card title
+                    </p>
+                  </Card.Body>
+                </Card>
+              </div>
+            </Col>
+            {/* <--<-- RIBBON STYLE 6 END -->--> */}
           </Row>
-          {/* <!-- End Row--> */}
-
-          {/* <!-- Row--> */}
-          <Row>
-            <h5 className="fw-semibold mb-4">Ribbon Style 6</h5>
-            <div className="col-xxl-2 col-lg-4 col-md-4 col-sm-10 mx-0 mx-sm-7">
-              <div className="card br-0">
-                <span className="fullwidth-secondary-ribbons">
-                  <div className="bar">
-                    CSS Ribbon
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                  </div>
-                </span>
-                <Card.Body className="p-6">
-                  <h6 className="card-subtitle mb-2 text-dark fw-bold">
-                    Card subtitle
-                  </h6>
-                  <p className="card-text">
-                    Some quick example text to build on the card title. Some
-                    quick example text to build on the card title
-                  </p>
-                </Card.Body>
-              </div>
-            </div>
-            <div className="col-xxl-2 col-lg-4 col-md-4 col-sm-10 mx-0 mx-sm-7">
-              <div className="card br-0">
-                <span className="fullwidth-primary-ribbons">
-                  <div className="bar">
-                    CSS Ribbon
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                  </div>
-                </span>
-                <Card.Body className="p-6">
-                  <h6 className="card-subtitle mb-2 text-dark fw-bold">
-                    Card subtitle
-                  </h6>
-                  <p className="card-text">
-                    Some quick example text to build on the card title. Some
-                    quick example text to build on the card title
-                  </p>
-                </Card.Body>
-              </div>
-            </div>
-            <div className="col-xxl-2 col-lg-4 col-md-4 col-sm-10 mx-0 mx-sm-7">
-              <div className="card br-0">
-                <span className="fullwidth-arrow-warning-ribbons">
-                  <div className="bar">
-                    CSS Ribbon
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                  </div>
-                </span>
-                <Card.Body className="p-6">
-                  <h6 className="card-subtitle mb-2 text-dark fw-bold">
-                    Card subtitle
-                  </h6>
-                  <p className="card-text">
-                    Some quick example text to build on the card title. Some
-                    quick example text to build on the card title
-                  </p>
-                </Card.Body>
-              </div>
-            </div>
-            <div className="col-xxl-2 col-lg-4 col-md-4 col-sm-10 mx-0 mx-sm-7">
-              <div className="card br-0">
-                <span className="fullwidth-arrow-danger-ribbons-right">
-                  <div className="bar">
-                    CSS Ribbon
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                  </div>
-                </span>
-                <Card.Body className="p-6">
-                  <h6 className="card-subtitle mb-2 text-dark fw-bold">
-                    Card subtitle
-                  </h6>
-                  <p className="card-text">
-                    Some quick example text to build on the card title. Some
-                    quick example text to build on the card title
-                  </p>
-                </Card.Body>
-              </div>
-            </div>
-          </Row>
-          {/* <!-- End Row--> */}
+          {/* <--<-- ROW END -->--> */}
         </div>
         {/* <!-- CONTAINER CLOSED --> */}
       </div>
