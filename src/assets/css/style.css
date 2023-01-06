@@ -8640,6 +8640,11 @@ body.fixed-header .page {
     border-radius: 5px;
 }
 
+.page-header-bg{
+    background-color: #fff;
+    border-radius: 7px;
+}
+
 .page-title {
     margin: 0;
     font-size: 20px;
@@ -20561,7 +20566,7 @@ ul.inbox-pagination li {
 }
 
 .bg-recentorder {
-    background-image: url("../images/media/bg10.jpg");
+    background-image: url("../images/LandingImages/bg10.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -23310,7 +23315,7 @@ img {
 }
 
 .landing-top-header {
-    background-image: url(../images/landing/bg4.png);
+    background-image: url(../images/LandingImages/bg4.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -23332,7 +23337,7 @@ img {
     width: 30%;
     height: 70%;
     overflow: hidden;
-    background-image: url(../images/landing/bg.png);
+    background-image: url(../images/LandingImages/bg.png);
 }
 
 .landing-top-header .top {
@@ -23501,19 +23506,19 @@ img {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background: url(../images/landing/10.jpg) no-repeat;
+    background: url(../images/UserImages/U10.jpg) no-repeat;
     background-size: cover;
     transition: all 0.3s ease-in-out 0s;
     margin-right: 7px;
 }
 
 .landing-page .owl-controls .owl-page:nth-child(2) {
-    background: url(../images/landing/16.jpg) no-repeat;
+    background: url(../images/UserImages/U16.jpg) no-repeat;
     background-size: cover;
 }
 
 .landing-page .owl-controls .owl-page:nth-child(3) {
-    background: url(../images/landing/21.jpg) no-repeat;
+    background: url(../images/UserImages/U9.jpg) no-repeat;
     background-size: cover;
 }
 
@@ -23687,7 +23692,7 @@ img {
 }
 
 .landing-page .bg-image-landing {
-    background-image: url(../images/landing/bg4.png);
+    background-image: url(../images/LandingImages/bg4.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -23707,7 +23712,7 @@ img {
     right: 0;
     width: 35%;
     height: 65%;
-    background-image: url(../images/landing/bg.png);
+    background-image: url(../images/LandingImages/bg.png);
 }
 
 .landing-page .landing-statistics .card-body {
@@ -23719,7 +23724,7 @@ img {
 }
 
 .landing-page .testimonial-owl-landing {
-    background-image: url(../images/landing/bg10.jpg);
+    background-image: url(../images/LandingImages/bg10.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -24564,7 +24569,7 @@ img {
 }
 
 .bg-image-style {
-    background-image: url(../images/landing/bg3.png);
+    background-image: url(../images/LandingImages/bg3.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -24712,11 +24717,11 @@ img {
 }
 
 .dark-mode.landing-page .landing-top-header {
-    background-image: url(../images/landing/bg5-dark.png);
+    background-image: url(../images/LandingImages/bg5-dark.png);
 }
 
 .dark-mode.landing-page .landing-top-header::before {
-    background-image: url(../images/landing/bg7-dark.png);
+    background-image: url(../images/LandingImages/bg7-dark.png);
 }
 
 .dark-mode.landing-page .logo-2 {
@@ -24778,15 +24783,15 @@ img {
 }
 
 .dark-mode.landing-page .bg-image-landing {
-    background-image: url(../images/landing/bg5-dark.png);
+    background-image: url(../images/LandingImages/bg5-dark.png);
 }
 
 .dark-mode.landing-page .bg-image-landing::before {
-    background-image: url(../images/landing/bg7-dark.png);
+    background-image: url(../images/LandingImages/bg7-dark.png);
 }
 
 .dark-mode.landing-page .bg-image-style {
-    background-image: url(../images/landing/bg6-dark.png);
+    background-image: url(../images/LandingImages/bg6-dark.png);
 }
 
 .dark-mode.landing-page .card .card {

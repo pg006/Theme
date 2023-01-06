@@ -8,19 +8,18 @@ import {
   Col,
   Dropdown,
   Form,
-  FormControl,
-  InputGroup,
   ListGroup,
   Nav,
   Row,
 } from "react-bootstrap";
 import "./BlogDetailsPage.scss";
-import U1 from '../../../../assets/images/UserImages/U1.jpg'
-import U2 from '../../../../assets/images/UserImages/U2.jpg'
-import U3 from '../../../../assets/images/UserImages/U3.jpg'
-import U5 from '../../../../assets/images/UserImages/U5.jpg'
-import U8 from '../../../../assets/images/UserImages/U8.jpg'
-import U15 from '../../../../assets/images/UserImages/U15.jpg'
+
+import U5 from "../../../../assets/images/UserImages/U1.jpg";
+import U2 from "../../../../assets/images/UserImages/U2.jpg";
+import U15 from "../../../../assets/images/UserImages/U3.jpg";
+import U8 from "../../../../assets/images/UserImages/U15.jpg";
+import File32 from "../../../../assets/images/FileImages/File32.jpg";
+import { Categories, ProfessionalWriters, RecentPost } from "./Mock";
 
 const BlogDetailsPage = () => {
   return (
@@ -34,11 +33,7 @@ const BlogDetailsPage = () => {
         <Row>
           <Col xl={8}>
             <Card>
-              <img
-                className="card-img-top "
-                src={require("../../../../assets/images/media/blog11.jpg")}
-                alt="blog11"
-              />
+              <img className="card-img-top " src={File32} alt="blog11" />
               <Card.Body>
                 <div className="d-md-flex">
                   <Link to="#" className="d-flex me-4 mb-2">
@@ -91,6 +86,93 @@ const BlogDetailsPage = () => {
                 </p>
               </Card.Body>
             </Card>
+          </Col>
+          <Col xl={4}>
+            <Card>
+              <Card.Header>
+                <Card.Title>Categories</Card.Title>
+              </Card.Header>
+              <Card.Body>
+                <ListGroup>
+                  {Categories.map((val, index) => {
+                    return (
+                      <ListGroup.Item className="border-0 p-0" key={index}>
+                        <Link to="#">
+                          <i className="fe fe-chevron-right"></i> {val.name}
+                        </Link>
+                        <span className="product-label">{val.lable}</span>
+                      </ListGroup.Item>
+                    );
+                  })}
+                </ListGroup>
+              </Card.Body>
+            </Card>
+
+            <Card>
+              <Card.Header>
+                <Card.Title>Professional Blog Writers</Card.Title>
+              </Card.Header>
+              <Card.Body>
+                <div className="">
+                  {ProfessionalWriters.map((val, index) => {
+                    return (
+                      <div className="d-flex overflow-visible mt-5" key={index}>
+                        <img
+                          className="avatar bradius avatar-xl me-3"
+                          src={val.img}
+                          alt="avatar-img"
+                        />
+                        <div className="media-body valign-middle">
+                          <Link
+                            to={`${process.env.PUBLIC_URL}/pages/profile`}
+                            className="fw-semibold text-dark"
+                          >
+                            {val.name}
+                          </Link>
+                          <p className="text-muted mb-0">{val.text}</p>
+                        </div>
+                      </div>
+                    );
+                  })}
+                </div>
+              </Card.Body>
+            </Card>
+
+            <Card>
+              <Card.Header>
+                <Card.Title>Tags</Card.Title>
+              </Card.Header>
+              <Card.Body>
+                <div className="tags">
+                  <Link to="#" className="tag">
+                    Development
+                  </Link>
+                  <Link to="#" className="tag">
+                    Design
+                  </Link>
+                  <Link to="#" className="tag">
+                    Technology
+                  </Link>
+                  <Link to="#" className="tag">
+                    Popular
+                  </Link>
+                  <Link to="#" className="tag">
+                    Codiegniter
+                  </Link>
+                  <Link to="#" className="tag">
+                    JavaScript
+                  </Link>
+                  <Link to="#" className="tag">
+                    Bootstrap
+                  </Link>
+                  <Link to="#" className="tag">
+                    PHP
+                  </Link>
+                </div>
+              </Card.Body>
+            </Card>
+          </Col>
+          <Col xl={12}>
             <Card>
               <Card.Header>
                 <Card.Title>Comments</Card.Title>
@@ -592,267 +674,42 @@ const BlogDetailsPage = () => {
               </Card.Body>
             </Card>
           </Col>
-          <Col xl={4}>
-            <Card>
-              <Card.Body>
-                <InputGroup>
-                  <FormControl
-                    type="text"
-                    className="border-end-0"
-                    placeholder="Search ..."
-                  />
-                  <InputGroup.Text className="bg-transparent border-start-0 text-muted">
-                    <i className="fe fe-search" aria-hidden="true"></i>
-                  </InputGroup.Text>
-                </InputGroup>
-              </Card.Body>
-            </Card>
-
-            <Card>
-              <Card.Header>
-                <Card.Title>Categories</Card.Title>
-              </Card.Header>
-              <Card.Body>
-                <ListGroup>
-                  <ListGroup.Item className="border-0 p-0">
-                    <Link to="#">
-                      <i className="fe fe-chevron-right"></i> Development
-                    </Link>
-                    <span className="product-label">22</span>
-                  </ListGroup.Item>
-                  <ListGroup.Item className="border-0 p-0">
-                    <Link to="#">
-                      <i className="fe fe-chevron-right"></i> Web Design
-                    </Link>
-                    <span className="product-label">15</span>
-                  </ListGroup.Item>
-                  <ListGroup.Item className="border-0 p-0">
-                    <Link to="#">
-                      <i className="fe fe-chevron-right"></i> Technology
-                    </Link>
-                    <span className="product-label">10</span>
-                  </ListGroup.Item>
-                  <ListGroup.Item className="border-0 p-0">
-                    <Link to="#">
-                      <i className="fe fe-chevron-right"></i> Sports
-                    </Link>
-                    <span className="product-label">88</span>
-                  </ListGroup.Item>
-                </ListGroup>
-              </Card.Body>
-            </Card>
-
-            <Card>
-              <Card.Header>
-                <Card.Title>Professional Blog Writers</Card.Title>
-              </Card.Header>
-              <Card.Body>
-                <div className="">
-                  <div className="d-flex overflow-visible">
-                    <img
-                      className="avatar bradius avatar-xl me-3"
-                      src={U1}
-                      alt="avatar-img"
-                    />
-                    <div className="media-body valign-middle">
-                      <Link
-                        to={`${process.env.PUBLIC_URL}/pages/profile`}
-                        className="fw-semibold text-dark"
-                      >
-                        Simon Sais
-                      </Link>
-                      <p className="text-muted mb-0">
-                        There are many variations of passages of Lorem Ipsum
-                        available ...
-                      </p>
-                    </div>
-                  </div>
-                  <div className="d-flex overflow-visible mt-5">
-                    <img
-                      className="avatar bradius avatar-xl me-3"
-                      src={U3}
-                      alt="avatar-img"
-                    />
-                    <div className="media-body valign-middle">
-                      <Link
-                        to={`${process.env.PUBLIC_URL}/pages/profile`}
-                        className="fw-semibold text-dark"
-                      >
-                        Cherry Blossom
-                      </Link>
-                      <p className="text-muted mb-0">
-                        There are many variations of passages of Lorem Ipsum
-                        available ...
-                      </p>
-                    </div>
-                  </div>
-                  <div className="d-flex overflow-visible mt-5">
-                    <img
-                      className="avatar bradius avatar-xl me-3"
-                      src={U5}
-                      alt="avatar-img"
-                    />
-                    <div className="media-body valign-middle">
-                      <Link
-                        to={`${process.env.PUBLIC_URL}/pages/profile`}
-                        className="fw-semibold text-dark"
-                      >
-                        Ivan Notheridiya
-                      </Link>
-                      <p className="text-muted mb-0">
-                        There are many variations of passages of Lorem Ipsum
-                        available ...
-                      </p>
-                    </div>
-                  </div>
-                  <div className="d-flex overflow-visible mt-5">
-                    <img
-                      className="avatar bradius avatar-xl me-3"
-                      src={U15}
-                      alt="avatar-img"
-                    />
-                    <div className="media-body valign-middle">
-                      <Link
-                        to={`${process.env.PUBLIC_URL}/pages/profile`}
-                        className="fw-semibold text-dark"
-                      >
-                        Manny Jah
-                      </Link>
-                      <p className="text-muted mb-0">
-                        There are many variations of passages of Lorem Ipsum
-                        available ...
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </Card.Body>
-            </Card>
-
+          <Col xl={12}>
             <Card>
               <Card.Header>
                 <Card.Title>Recent Posts</Card.Title>
               </Card.Header>
               <Card.Body>
-                <div className="">
-                  <div className="d-flex overflow-visible">
-                    <img
-                      className="card-aside-column br-5 cover-image"
-                      alt="media19"
-                      src={require("../../../../assets/images/media/19.jpg")}
-                    />
-                    <div className="ps-3 flex-column">
-                      <h4>
-                        <Link
-                          to={`${process.env.PUBLIC_URL}/pages/extension/blogdetails`}
-                        >
-                          Generator on the Internet..
-                        </Link>
-                      </h4>
-                      <div className="text-muted">
-                        Excepteur sint occaecat cupidatat non proident,
-                        accusantium sunt in culpa qui officia deserunt mollit
-                        anim id est laborum....
-                      </div>
-                    </div>
-                  </div>
-                  <div className="d-flex overflow-visible mt-5">
-                    <img
-                      className="card-aside-column br-5 cover-image"
-                      alt="media22"
-                      src={require("../../../../assets/images/media/22.jpg")}
-                    />
-                    <div className="ps-3 flex-column">
-                      <h4>
-                        <Link
-                          to={`${process.env.PUBLIC_URL}/pages/extension/blogdetails`}
-                        >
-                          Voluptatem quia voluptas...
-                        </Link>
-                      </h4>
-                      <div className="text-muted">
-                        Excepteur sint occaecat cupidatat non proident,
-                        accusantium sunt in culpa qui officia deserunt mollit
-                        anim id est laborum....
-                      </div>
-                    </div>
-                  </div>
-                  <div className="d-flex overflow-visible mt-5">
-                    <img
-                      className="card-aside-column br-5 cover-image"
-                      alt="media12"
-                      src={require("../../../../assets/images/media/12.jpg")}
-                    />
-                    <div className="ps-3 flex-column">
-                      <h4>
-                        <Link
-                          to={`${process.env.PUBLIC_URL}/pages/extension/blogdetails`}
-                        >
-                          Generator on the Internet..
-                        </Link>
-                      </h4>
-                      <div className="text-muted">
-                        Excepteur sint occaecat cupidatat non proident,
-                        accusantium sunt in culpa qui officia deserunt mollit
-                        anim id est laborum....
-                      </div>
-                    </div>
-                  </div>
-                  <div className="d-flex overflow-visible mt-5">
-                    <img
-                      className="card-aside-column br-5 cover-image"
-                      alt="media25"
-                      src={require("../../../../assets/images/media/25.jpg")}
-                    />
-                    <div className="ps-3 flex-column">
-                      <h4>
-                        <Link
-                          to={`${process.env.PUBLIC_URL}/pages/extension/blogdetails`}
-                        >
-                          Voluptatem quia voluptas...
-                        </Link>
-                      </h4>
-                      <div className="text-muted">
-                        Excepteur sint occaecat cupidatat non proident,
-                        accusantium sunt in culpa qui officia deserunt mollit
-                        anim id est laborum....
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </Card.Body>
-            </Card>
-
-            <Card>
-              <Card.Header>
-                <Card.Title>Tags</Card.Title>
-              </Card.Header>
-              <Card.Body>
-                <div className="tags">
-                  <Link to="#" className="tag">
-                    Development
-                  </Link>
-                  <Link to="#" className="tag">
-                    Design
-                  </Link>
-                  <Link to="#" className="tag">
-                    Technology
-                  </Link>
-                  <Link to="#" className="tag">
-                    Popular
-                  </Link>
-                  <Link to="#" className="tag">
-                    Codiegniter
-                  </Link>
-                  <Link to="#" className="tag">
-                    JavaScript
-                  </Link>
-                  <Link to="#" className="tag">
-                    Bootstrap
-                  </Link>
-                  <Link to="#" className="tag">
-                    PHP
-                  </Link>
-                </div>
+                <Row>
+                  {RecentPost.map((val, index) => {
+                    return (
+                      <Col xl={6} key={index}>
+                        <div className="d-flex overflow-visible mt-5">
+                          <img
+                            className="card-aside-column br-5 cover-image"
+                            alt="media19"
+                            src={val.img}
+                          />
+                          <div className="ps-3 flex-column">
+                            {val.badge ? (
+                              <Badge bg="danger" className="me-1 mb-1 mt-1">
+                                {val.badge}
+                              </Badge>
+                            ) : null}
+                            <h4>
+                              <Link
+                                to={`${process.env.PUBLIC_URL}/pages/extension/blogdetails`}
+                              >
+                                {val.title}
+                              </Link>
+                            </h4>
+                            <div className="text-muted">{val.details}</div>
+                          </div>
+                        </div>
+                      </Col>
+                    );
+                  })}
+                </Row>
               </Card.Body>
             </Card>
           </Col>

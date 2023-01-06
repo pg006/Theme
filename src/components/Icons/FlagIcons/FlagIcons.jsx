@@ -20,7 +20,6 @@ const FlagIcons = () => {
                 <Row>
                   <Col lg={12} sm={12}>
                     <p>
-                      {" "}
                       For more info <Link to="#">click here</Link>.
                     </p>
                     <p>

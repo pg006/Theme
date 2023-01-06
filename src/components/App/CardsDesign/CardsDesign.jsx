@@ -465,7 +465,7 @@ const CardsDesign = () => {
                     aliqua.
                   </Card.Text>
                   <small className="text-muted">
-                    so awesome this title{" "}
+                    so awesome this title
                     <cite title="Source Title">-magna aliqua</cite>
                   </small>
                 </blockquote>
@@ -482,7 +482,7 @@ const CardsDesign = () => {
                     aliqua.
                   </Card.Text>
                   <small className="text-muted">
-                    so awesome this title{" "}
+                    so awesome this title
                     <cite title="Source Title">-magna aliqua</cite>
                   </small>
                 </blockquote>
@@ -499,7 +499,7 @@ const CardsDesign = () => {
                     aliqua.
                   </Card.Text>
                   <small className="text-muted">
-                    so awesome this title{" "}
+                    so awesome this title
                     <cite title="Source Title">-magna aliqua</cite>
                   </small>
                 </blockquote>

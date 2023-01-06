@@ -106,7 +106,7 @@ export const DataForm = () => {
               <p className="mb-0">
                 <strong>Note:</strong> Nemo enim ipsam voluptatem quia voluptas
                 sit aspernatur aut odit aut fugit, sed quia consequuntur magni
-                dolores eos qui ratione voluptatem sequi nesciunt.{" "}
+                dolores eos qui ratione voluptatem sequi nesciunt.
               </p>
             </div>
           </Tab.Pane>
@@ -128,7 +128,7 @@ export const DataForm = () => {
               <p className="mb-0">
                 <strong>Note:</strong> Nemo enim ipsam voluptatem quia voluptas
                 sit aspernatur aut odit aut fugit, sed quia consequuntur magni
-                dolores eos qui ratione voluptatem sequi nesciunt.{" "}
+                dolores eos qui ratione voluptatem sequi nesciunt.
               </p>
             </div>
           </Tab.Pane>
@@ -136,4 +136,4 @@ export const DataForm = () => {
       </Tab.Container>
     </div>
   );
-}
+};

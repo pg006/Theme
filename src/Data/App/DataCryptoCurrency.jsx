@@ -337,10 +337,10 @@ export const Crypto = () => {
           </table>
           <div className="d-flex mt-4 ">
             <span className="">
-              Page{" "}
+              Page
               <strong>
                 {pageIndex + 1} of {pageOptions.length}
-              </strong>{" "}
+              </strong>
             </span>
             <span className="ms-auto ">
               <Button

@@ -2,13 +2,13 @@ import React, { useState } from "react";
 import Lightbox from "react-image-lightbox";
 import "react-image-lightbox/style.css";
 
-import img1 from "../../assets/images/media/files/01.jpg";
-import img2 from "../../assets/images/media/files/02.jpg";
-import img3 from "../../assets/images/media/files/03.jpg";
-import img4 from "../../assets/images/media/files/04.jpg";
-import img5 from "../../assets/images/media/files/05.jpg";
-import img6 from "../../assets/images/media/files/06.jpg";
-import img7 from "../../assets/images/media/files/07.jpg";
+import img1 from "../../assets/images/FileImages/File7.jpg";
+import img2 from "../../assets/images/FileImages/File8.jpg";
+import img3 from "../../assets/images/FileImages/File9.jpg";
+import img4 from "../../assets/images/FileImages/File10.jpg";
+import img5 from "../../assets/images/FileImages/File11.jpg";
+import img6 from "../../assets/images/FileImages/File12.jpg";
+import img7 from "../../assets/images/FileImages/File13.jpg";
 import { Card, Col, Row } from "react-bootstrap";
 
 export const Media = () => {

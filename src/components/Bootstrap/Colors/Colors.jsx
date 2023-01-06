@@ -1,6 +1,6 @@
 import React from "react";
 import PageHeader from "../../../commonComponents/PageHeader/PageHeader";
-import { Card, Col, Row, Table } from 'react-bootstrap';
+import { Card, Col, Row, Table } from "react-bootstrap";
 import "./Colors.scss";
 
 const Colors = () => {
@@ -120,7 +120,7 @@ const Colors = () => {
                         <Card.Body>
                           <strong className="mb-0">Secondary</strong>
                           <p className="mb-0 text-secondary">
-                            .bg-secondary-transparent{" "}
+                            .bg-secondary-transparent
                           </p>
                         </Card.Body>
                       </Card>
@@ -209,7 +209,7 @@ const Colors = () => {
                         </Card.Header>
                         <Card.Body className="my-auto">
                           <p className="mb-0 text-secondary fw-semibold">
-                            Secondary{" "}
+                            Secondary
                           </p>
                         </Card.Body>
                       </Card>

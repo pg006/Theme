@@ -1,55 +1,12 @@
 import React, { Fragment, useState } from "react";
 import { Button, Form, Modal } from "react-bootstrap";
 import { nanoid } from "nanoid";
+import { BasicEditTableData, SavetableData } from "./Mock";
 
 // Basic Edit Table
 
 export const BasicEditTable = () => {
-  const data = [
-    {
-      id: 1,
-      fullName: "Bella Chloe",
-      position: "System Developer",
-      salary: "$654,765",
-      email: "b.Chloe@datatables.net",
-    },
-    {
-      id: 2,
-      fullName: "Donna Bond",
-      position: "Account Manager",
-      salary: "	$543,654",
-      email: "d.bond@datatables.net",
-    },
-    {
-      id: 3,
-      fullName: "Harry	Carr",
-      position: "Technical Manager",
-      salary: "$86,000",
-      email: "h.carr@datatables.net",
-    },
-    {
-      id: 4,
-      fullName: "Lucas Dyer",
-      position: "Javascript Developer",
-      salary: "$456,123",
-      email: "l.dyer@datatables.net",
-    },
-    {
-      id: 5,
-      fullName: "Karen Hill",
-      position: "Sales Manager",
-      salary: "$432,230",
-      email: "k.hill@datatables.net",
-    },
-    {
-      id: 6,
-      fullName: "Dominic Hudson",
-      position: "Sales Assistant",
-      salary: "$654,300",
-      email: "d.hudson@datatables.net",
-    },
-  ];
-  const [contacts, setContacts] = useState(data);
+  const [contacts, setContacts] = useState(BasicEditTableData);
 
   const [editFormData, setEditFormData] = useState({
     fullName: "",
@@ -257,57 +214,7 @@ const ReadOnlyRows = ({ contact, handleEditClick, handleDeleteClick }) => {
 // Add New Row with Edit Table
 export const Savetable = () => {
   const [modalShow, setModalShow] = React.useState(false);
-  const data = [
-    {
-      id: 1,
-      fullName: "Bella Chloe",
-      position: "System Developer",
-      start: "2018/03/12",
-      salary: "$654,765",
-      email: "b.Chloe@datatables.net",
-    },
-    {
-      id: 2,
-      fullName: "Donna Bond",
-      position: "Account Manager",
-      start: "2012/02/21",
-      salary: "	$543,654",
-      email: "d.bond@datatables.net",
-    },
-    {
-      id: 3,
-      fullName: "Harry Carr",
-      position: "Technical Manager",
-      start: "2011/02/17",
-      salary: "$86,000",
-      email: "h.carr@datatables.net",
-    },
-    {
-      id: 4,
-      fullName: "Lucas Dyer",
-      position: "Javascript Developer",
-      start: "2014/08/23",
-      salary: "$456,123",
-      email: "l.dyer@datatables.net",
-    },
-    {
-      id: 5,
-      fullName: "Karen Hill",
-      position: "Sales Manager",
-      start: "2010/7/14",
-      salary: "$432,230",
-      email: "k.hill@datatables.net",
-    },
-    {
-      id: 6,
-      fullName: "Dominic Hudson",
-      position: "Sales Assistant",
-      start: "2015/10/16",
-      salary: "$654,300",
-      email: "d.hudson@datatables.net",
-    },
-  ];
-  const [contacts, setContacts] = useState(data);
+  const [contacts, setContacts] = useState(SavetableData);
   const [addFormData, setAddFormData] = useState({
     fullName: "",
     position: "",

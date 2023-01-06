@@ -20,8 +20,8 @@ const Footers = () => {
                 <div className="container">
                   <Row className="align-items-center flex-row-reverse">
                     <Col lg={12} sm={12} className="mt-3 mt-lg-0 text-center">
-                      Copyright © 2022 <Link to="#">Sash</Link>. Designed with{" "}
-                      <span className="fa fa-heart text-danger"></span> by{" "}
+                      Copyright © 2022 <Link to="#">Sash</Link>. Designed with
+                      <span className="fa fa-heart text-danger"></span> by
                       <Link to="#"> Spruko </Link> All rights reserved.
                     </Col>
                   </Row>
@@ -147,8 +147,8 @@ const Footers = () => {
                       md={7}
                       className="mt-3 mt-lg-0 text-center"
                     >
-                      Copyright © 2022 <Link to="#">Sash</Link>. Designed with{" "}
-                      <span className="fa fa-heart text-danger"></span> by{" "}
+                      Copyright © 2022 <Link to="#">Sash</Link>. Designed with
+                      <span className="fa fa-heart text-danger"></span> by
                       <Link to="#"> Spruko </Link> All rights reserved.
                     </Col>
                   </Row>
@@ -220,8 +220,8 @@ const Footers = () => {
                   </Row>
                   <Row className="align-items-center flex-row-reverse">
                     <Col lg={12} sm={12} className="mt-3 mt-lg-0 text-center">
-                      Copyright © 2022 <Link to="#">Sash</Link>. Designed with{" "}
-                      <span className="fa fa-heart text-danger"></span> by{" "}
+                      Copyright © 2022 <Link to="#">Sash</Link>. Designed with
+                      <span className="fa fa-heart text-danger"></span> by
                       <Link to="#"> Spruko </Link> All rights reserved.
                     </Col>
                   </Row>
@@ -337,8 +337,8 @@ const Footers = () => {
                 <footer className="main-footer ps-0 pe-0">
                   <Row>
                     <Col xl={8} lg={12} md={12} className="footer1">
-                      Copyright © 2022 <Link to="#">Sash</Link>. Designed with{" "}
-                      <span className="fa fa-heart text-danger"></span> by{" "}
+                      Copyright © 2022 <Link to="#">Sash</Link>. Designed with
+                      <span className="fa fa-heart text-danger"></span> by
                       <Link to="#"> Spruko </Link>
                     </Col>
                     <Col xl={4} lg={12} md={12} className="ms-auto text-end">
@@ -517,8 +517,8 @@ const Footers = () => {
                 <footer className="main-footer ps-0 pe-0">
                   <Row>
                     <Col xl={8} lg={12} md={12} className="footer1">
-                      Copyright © 2022 <Link to="#">Sash</Link>. Designed with{" "}
-                      <span className="fa fa-heart text-danger"></span> by{" "}
+                      Copyright © 2022 <Link to="#">Sash</Link>. Designed with
+                      <span className="fa fa-heart text-danger"></span> by
                       <Link to="#"> Spruko </Link>
                     </Col>
                     <Col xl={4} lg={12} md={12} className="ms-auto text-end">

@@ -1,6 +1,15 @@
 import React from "react";
 import "./PricingPage.scss";
-import { Col, Row, ListGroup, Card, Button, Badge,Tab, Nav } from 'react-bootstrap';
+import {
+  Col,
+  Row,
+  ListGroup,
+  Card,
+  Button,
+  Badge,
+  Tab,
+  Nav,
+} from "react-bootstrap";
 import PageHeader from "../../../../commonComponents/PageHeader/PageHeader";
 
 const PricingPage = () => {
@@ -16,7 +25,7 @@ const PricingPage = () => {
                 <h3 className="pb-2">Personal</h3>
                 <span>
                   Try it Free, Get access to all Features for 60 days. No plan
-                  credit card required.{" "}
+                  credit card required.
                 </span>
               </div>
               <div className="panel-body p-0 ps-5">
@@ -63,7 +72,7 @@ const PricingPage = () => {
                 <h3 className="pb-2">Team</h3>
                 <span>
                   Try it Free, Get access to all Features for 60 days. No plan
-                  credit card required.{" "}
+                  credit card required.
                 </span>
               </div>
               <div className="panel-body p-0 ps-5">
@@ -108,14 +117,14 @@ const PricingPage = () => {
             <div className="panel price panel-color bg-success-transparent">
               <div className="pb-4 ps-5 border-bottom">
                 <h3 className="pb-2">
-                  Business{" "}
+                  Business
                   <span className="badge bg-success ms-5 mb-1 mt-1 fs-12 text-end">
                     Recommended
                   </span>
                 </h3>
                 <span>
                   Try it Free, Get access to all Features for 60 days. No plan
-                  credit card required.{" "}
+                  credit card required.
                 </span>
               </div>
               <div className="panel-body p-0 ps-5">
@@ -162,7 +171,7 @@ const PricingPage = () => {
                 <h3 className="pb-2">Corporate</h3>
                 <span>
                   Try it Free, Get access to all Features for 60 days. No plan
-                  credit card required.{" "}
+                  credit card required.
                 </span>
               </div>
               <div className="panel-body p-0 ps-5">
@@ -407,7 +416,7 @@ const PricingPage = () => {
                     </svg>
                   </span>
                   <h4 className="display-5 text-primary fw-bold my-3">
-                    <span className="h3">$</span> 120{" "}
+                    <span className="h3">$</span> 120
                     <span className="h5">/mo</span>
                   </h4>
                 </div>
@@ -427,7 +436,7 @@ const PricingPage = () => {
                     </ListGroup.Item>
                     <ListGroup.Item>
                       <i className="fe fe-check text-primary p-2 fw-bold"></i>
-                      <b> 24/7</b> support{" "}
+                      <b> 24/7</b> support
                     </ListGroup.Item>
                     <ListGroup.Item className="border-bottom-0">
                       <i className="fe fe-check text-primary p-2 fw-bold"></i>
@@ -464,7 +473,7 @@ const PricingPage = () => {
                     </svg>
                   </span>
                   <h4 className="display-5 text-danger fw-bold my-3">
-                    <span className="h3">$</span> 180{" "}
+                    <span className="h3">$</span> 180
                     <span className="h5">/mo</span>
                   </h4>
                 </div>
@@ -523,7 +532,7 @@ const PricingPage = () => {
                     </svg>
                   </span>
                   <h4 className="display-5 text-success fw-bold my-3">
-                    <span className="h3">$</span> 200{" "}
+                    <span className="h3">$</span> 200
                     <span className="h5">/mo</span>
                   </h4>
                 </div>
@@ -585,7 +594,7 @@ const PricingPage = () => {
                     </svg>
                   </span>
                   <h4 className="display-5 text-secondary fw-bold my-3">
-                    <span className="h3">$</span> 150{" "}
+                    <span className="h3">$</span> 150
                     <span className="h5">/mo</span>
                   </h4>
                 </div>
@@ -645,13 +654,12 @@ const PricingPage = () => {
                         <Card.Header className="card-header d-block text-justified pt-2">
                           <p className="fs-18 fw-semibold mb-1">Basic</p>
                           <p className="text-justify fw-semibold mb-1">
-                            {" "}
                             <span className="fs-30 me-2">$</span>
                             <span className="fs-30 me-1">39</span>
                             <span className="fs-25">
                               <span className="op-0-5 text-muted text-20">
                                 /
-                              </span>{" "}
+                              </span>
                               month
                             </span>
                           </p>
@@ -670,7 +678,7 @@ const PricingPage = () => {
                               <strong> 2 Free</strong> Domain Name
                             </li>
                             <li>
-                              <i className="mdi mdi-checkbox-marked-circle-outline p-2 fs-16 text-secondary"></i>{" "}
+                              <i className="mdi mdi-checkbox-marked-circle-outline p-2 fs-16 text-secondary"></i>
                               <strong>3 </strong> One-Click Apps
                             </li>
                             <li className="text-muted">
@@ -708,13 +716,12 @@ const PricingPage = () => {
                             </span>
                           </p>
                           <p className="text-justify fw-semibold mb-1">
-                            {" "}
                             <span className="fs-30 me-2">$</span>
                             <span className="fs-30 me-1">199</span>
                             <span className="fs-25">
                               <span className="op-0-5 text-muted text-20">
                                 /
-                              </span>{" "}
+                              </span>
                               month
                             </span>
                           </p>
@@ -729,7 +736,7 @@ const PricingPage = () => {
                         <Card.Body className="pt-2">
                           <ul className="text-justify pricing-body ps-0">
                             <li>
-                              <i className="mdi mdi-checkbox-marked-circle-outline text-primary p-2 fs-16"></i>{" "}
+                              <i className="mdi mdi-checkbox-marked-circle-outline text-primary p-2 fs-16"></i>
                               <strong> 5 Free</strong> Domain Name
                             </li>
                             <li>
@@ -766,13 +773,12 @@ const PricingPage = () => {
                         <Card.Header className="card-header d-block text-justified pt-2">
                           <p className="fs-18 fw-semibold mb-1">Regular</p>
                           <p className="text-justify fw-semibold mb-1">
-                            {" "}
                             <span className="fs-30 me-2">$</span>
                             <span className="fs-30 me-1">69</span>
                             <span className="fs-25">
                               <span className="op-0-5 text-muted text-20">
                                 /
-                              </span>{" "}
+                              </span>
                               month
                             </span>
                           </p>
@@ -824,13 +830,12 @@ const PricingPage = () => {
                         <Card.Header className="card-header d-block text-justified pt-2">
                           <p className="fs-18 fw-semibold mb-1">Premium</p>
                           <p className="text-justify fw-semibold mb-1">
-                            {" "}
                             <span className="fs-30 me-2">$</span>
                             <span className="fs-30 me-1">99</span>
                             <span className="fs-25">
                               <span className="op-0-5 text-muted text-20">
                                 /
-                              </span>{" "}
+                              </span>
                               month
                             </span>
                           </p>
@@ -888,13 +893,12 @@ const PricingPage = () => {
                         <Card.Header className="card-header d-block text-justified pt-2">
                           <p className="fs-18 fw-semibold mb-1">Basic</p>
                           <p className="text-justify fw-semibold mb-1">
-                            {" "}
                             <span className="fs-30 me-2">$</span>
                             <span className="fs-30 me-1">399</span>
                             <span className="fs-25">
                               <span className="op-0-5 text-muted text-20">
                                 /
-                              </span>{" "}
+                              </span>
                               year
                             </span>
                           </p>
@@ -913,7 +917,7 @@ const PricingPage = () => {
                               <strong> 2 Free</strong> Domain Name
                             </li>
                             <li>
-                              <i className="mdi mdi-checkbox-marked-circle-outline p-2 fs-16 text-secondary"></i>{" "}
+                              <i className="mdi mdi-checkbox-marked-circle-outline p-2 fs-16 text-secondary"></i>
                               <strong>3 </strong> One-Click Apps
                             </li>
                             <li className="text-muted">
@@ -951,13 +955,12 @@ const PricingPage = () => {
                             </span>
                           </p>
                           <p className="text-justify fw-semibold mb-1">
-                            {" "}
                             <span className="fs-30 me-2">$</span>
                             <span className="fs-30 me-1">1,299</span>
                             <span className="fs-25">
                               <span className="op-0-5 text-muted text-20">
                                 /
-                              </span>{" "}
+                              </span>
                               year
                             </span>
                           </p>
@@ -972,7 +975,7 @@ const PricingPage = () => {
                         <Card.Body className="pt-2">
                           <ul className="text-justify pricing-body ps-0">
                             <li>
-                              <i className="mdi mdi-checkbox-marked-circle-outline text-primary p-2 fs-16"></i>{" "}
+                              <i className="mdi mdi-checkbox-marked-circle-outline text-primary p-2 fs-16"></i>
                               <strong> 5 Free</strong> Domain Name
                             </li>
                             <li>
@@ -1009,13 +1012,12 @@ const PricingPage = () => {
                         <Card.Header className="card-header d-block text-justified pt-2">
                           <p className="fs-18 fw-semibold mb-1">Regular</p>
                           <p className="text-justify fw-semibold mb-1">
-                            {" "}
                             <span className="fs-30 me-2">$</span>
                             <span className="fs-30 me-1">699</span>
                             <span className="fs-25">
                               <span className="op-0-5 text-muted text-20">
                                 /
-                              </span>{" "}
+                              </span>
                               year
                             </span>
                           </p>
@@ -1067,13 +1069,12 @@ const PricingPage = () => {
                         <Card.Header className="card-header d-block text-justified pt-2">
                           <p className="fs-18 fw-semibold mb-1">Premium</p>
                           <p className="text-justify fw-semibold mb-1">
-                            {" "}
                             <span className="fs-30 me-2">$</span>
                             <span className="fs-30 me-1">999</span>
                             <span className="fs-25">
                               <span className="op-0-5 text-muted text-20">
                                 /
-                              </span>{" "}
+                              </span>
                               year
                             </span>
                           </p>

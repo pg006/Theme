@@ -7,6 +7,8 @@ import U2 from '../../../../assets/images/UserImages/U2.jpg'
 import U4 from '../../../../assets/images/UserImages/U4.jpg'
 import U7 from '../../../../assets/images/UserImages/U7.jpg'
 import U15 from '../../../../assets/images/UserImages/U15.jpg'
+import team from '../../../../assets/images/FileImages/File30.jpg'
+import teamStartuprequire from '../../../../assets/images/FileImages/teamStartup.png'
 
 const AboutCompanyPage = () => {
   return (
@@ -38,7 +40,7 @@ const AboutCompanyPage = () => {
           <Row>
             <Col lg={12}>
               <img
-                src={require("../../../../assets/images/media/team.jpg")}
+                src={team}
                 alt="team"
                 className="br-5"
               />
@@ -89,7 +91,7 @@ const AboutCompanyPage = () => {
                       <Col xl={6}>
                         <div className="text-center">
                           <img
-                            src={require("../../../../assets/images/media/team-startup.png")}
+                            src={teamStartuprequire}
                             alt="team-s"
                           />
                         </div>

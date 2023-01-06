@@ -1064,6 +1064,11 @@ body.dark-mode *:hover::-webkit-scrollbar-thumb {
     border-color: transparent;
 }
 
+.dark-mode .page-header-bg {
+    background-color: #112D32;
+    border-radius: 7px;
+}
+
 .dark-mode .panel-title-landing {
     color: #1643a3 !important;
 }

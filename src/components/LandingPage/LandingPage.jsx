@@ -22,6 +22,13 @@ import {
 } from "../../Data/LandingPageData/DataLandingPage";
 import logo from '../../assets/images/Logo/logo.png'
 import logo3 from '../../assets/images/Logo/logo3.png'
+import market from '../../assets/images/LandingImages/market4.png'
+import businessTeam from '../../assets/images/LandingImages/business-team-working-on-business-plan.png'
+import frequentlyAsked from '../../assets/images/LandingImages/frequently-asked-questions.png'
+import img12 from '../../assets/images/FileImages/File26.jpg'
+import img22 from '../../assets/images/FileImages/File27.jpg'
+import img25 from '../../assets/images/FileImages/File29.jpg'
+import about from '../../assets/images/FileImages/File28.jpg'
 
 const SidSwitcherIcon = () => {
   //leftsidemenu
@@ -278,7 +285,7 @@ const LandingPage = () => {
                     </Col>
                     <Col xl={6} lg={6} className="my-auto">
                       <img
-                        src={require("../../assets/images/landing/market4.png")}
+                        src={market}
                         alt=""
                       />
                     </Col>
@@ -1082,7 +1089,7 @@ const LandingPage = () => {
                                     <Col xl={6} lg={6} className="ps-0">
                                       <div className="text-center mb-3">
                                         <img
-                                          src={require("../../assets/images/landing/business-team-working-on-business-plan.png")}
+                                          src={businessTeam}
                                           alt=""
                                           className="br-5"
                                         />
@@ -2121,7 +2128,7 @@ const LandingPage = () => {
                               </Col>
                               <Col md={12} lg={6} className="">
                                 <img
-                                  src={require("../../assets/images/landing/frequently-asked-questions.png")}
+                                  src={frequentlyAsked}
                                   alt=""
                                 />
                               </Col>
@@ -2150,7 +2157,7 @@ const LandingPage = () => {
                                   <img
                                     className="card-aside-column br-5 cover-image"
                                     alt="media-12"
-                                    src={require("../../assets/images/media/12.jpg")}
+                                    src={img12}
                                   />
                                   <div className="ps-3 flex-column">
                                     <Badge
@@ -2184,7 +2191,7 @@ const LandingPage = () => {
                                   <img
                                     className="card-aside-column br-5 cover-image"
                                     alt="media-22"
-                                    src={require("../../assets/images/media/22.jpg")}
+                                    src={img22}
                                   />
 
                                   <div className="ps-3 flex-column">
@@ -2220,7 +2227,7 @@ const LandingPage = () => {
                                   <img
                                     className="card-aside-column br-5 cover-image"
                                     alt="about"
-                                    src={require("../../assets/images/media/about.jpg")}
+                                    src={about}
                                   />
 
                                   <div className="ps-3 flex-column">
@@ -2256,7 +2263,7 @@ const LandingPage = () => {
                                   <img
                                     className="card-aside-column br-5 cover-image"
                                     alt="media-25"
-                                    src={require("../../assets/images/media/25.jpg")}
+                                    src={img25}
                                   />
 
                                   <div className="ps-3 flex-column">

@@ -3,6 +3,9 @@ import { Collapse } from "@mui/material";
 import { Alert, Button, Card, Form, Modal, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import U15 from '../../assets/images/UserImages/U15.jpg'
+import U16 from '../../assets/images/UserImages/U16.jpg'
+import U17 from '../../assets/images/UserImages/U17.jpg'
+import U19 from '../../assets/images/UserImages/U19.jpg'
 import U18 from '../../assets/images/UserImages/U18.jpg'
 import U20 from '../../assets/images/UserImages/U20.jpg'
 
@@ -108,7 +111,7 @@ export const ContactCard2 = () => {
             <Card.Body className="text-center">
               <img
                 className="avatar-xxl brround cover-image"
-                src={U15}
+                src={U16}
                 alt="user15"
               />
               <h4 className="mb-0 mt-3">Laura Norda</h4>
@@ -175,7 +178,7 @@ export const ContactCard3 = () => {
             <Card.Body className="text-center">
               <img
                 className="avatar-xxl brround cover-image"
-                src={U15}
+                src={U17}
                 alt="user15"
               />
               <h4 className="mb-0 mt-3">Willie Makit</h4>
@@ -241,7 +244,7 @@ export const ContactCard4 = () => {
             <Card.Body className="text-center">
               <img
                 className="avatar-xxl brround cover-image"
-                src={U15}
+                src={U19}
                 alt="user15"
               />
               <h4 className="mb-0 mt-3">Don Messwidme</h4>

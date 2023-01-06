@@ -320,7 +320,6 @@ const Header = () => {
                         variant=""
                         className="nav-link icon text-center no-caret"
                       >
-                        {" "}
                         <i className="fe fe-shopping-cart"></i>
                         <span className="badge bg-secondary header-badge">
                           4
@@ -330,7 +329,6 @@ const Header = () => {
                         <div className="drop-heading border-bottom">
                           <div className="d-flex">
                             <h6 className="mt-1 mb-0 fs-16 fw-semibold text-dark">
-                              {" "}
                               My Shopping Cart
                             </h6>
                             <div className="ms-auto">
@@ -359,7 +357,7 @@ const Header = () => {
                                 Flower Pot for Home Decor
                               </h5>
                               <span>
-                                Status:{" "}
+                                Status:
                                 <span className="text-success">In Stock</span>
                               </span>
                               <p className="fs-13 text-muted mb-0">
@@ -387,7 +385,7 @@ const Header = () => {
                             <div className="wd-50p">
                               <h5 className="mb-1">Black Digital Camera</h5>
                               <span>
-                                Status:{" "}
+                                Status:
                                 <span className="text-danger">Out Stock</span>
                               </span>
                               <p className="fs-13 text-muted mb-0">
@@ -417,7 +415,7 @@ const Header = () => {
                                 Stylish Rockerz 255 Ear Pods
                               </h5>
                               <span>
-                                Status:{" "}
+                                Status:
                                 <span className="text-success">In Stock</span>
                               </span>
                               <p className="fs-13 text-muted mb-0">
@@ -445,7 +443,7 @@ const Header = () => {
                             <div className="wd-50p">
                               <h5 className="mb-1">Women Party Wear Dress</h5>
                               <span>
-                                Status:{" "}
+                                Status:
                                 <span className="text-success">In Stock</span>
                               </span>
                               <p className="fs-13 text-muted mb-0">
@@ -473,7 +471,7 @@ const Header = () => {
                             <div className="wd-50p">
                               <h5 className="mb-1">Running Shoes for men</h5>
                               <span>
-                                Status:{" "}
+                                Status:
                                 <span className="text-success">In Stock</span>
                               </span>
                               <p className="fs-13 text-muted mb-0">
@@ -779,14 +777,14 @@ const Header = () => {
                           className="dropdown-item"
                           href={`${process.env.PUBLIC_URL}/Authentication/lockscreen`}
                         >
-                          <i className="dropdown-icon fe fe-lock"></i>{" "}
+                          <i className="dropdown-icon fe fe-lock"></i>
                           Lockscreen
                         </Dropdown.Item>
                         <Dropdown.Item
                           className="dropdown-item"
                           href={`${process.env.PUBLIC_URL}/Authentication/firebaseAuth/login`}
                         >
-                          <i className="dropdown-icon fe fe-alert-circle"></i>{" "}
+                          <i className="dropdown-icon fe fe-alert-circle"></i>
                           Sign out
                         </Dropdown.Item>
                       </Dropdown.Menu>

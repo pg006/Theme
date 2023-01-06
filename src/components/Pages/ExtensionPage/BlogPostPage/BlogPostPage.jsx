@@ -6,20 +6,9 @@ import Select from "react-select";
 import "./BlogPostPage.scss";
 import { FormTextEditor } from "../../../../Data/Pages/Forms/DataFormEditor";
 import { FileuploadCustomised } from "../../../../Data/Pages/Forms/FormAdvanceData/DataFormAdvanced";
-import U12 from '../../../../assets/images/UserImages/U12.jpg'
-import U2 from '../../../../assets/images/UserImages/U2.jpg'
-import U9 from '../../../../assets/images/UserImages/U9.jpg'
-import U4 from '../../../../assets/images/UserImages/U4.jpg'
+import { ProfessionalWriters, RecentPost, Tech } from "./Mock";
 
 const BlogPostPage = () => {
-
-  const Tech = [
-    { value: "Technology", label: "Technology" },
-    { value: "Travel", label: "Travel" },
-    { value: "Food", label: "Food" },
-    { value: "Fashion", label: "Fashion" },
-  ];
-
   return (
     <React.Fragment>
       <div>
@@ -28,7 +17,7 @@ const BlogPostPage = () => {
         {/* <!-- Row --> */}
 
         <Row>
-          <Col xl={8}>
+          <Col xl={12}>
             <Card>
               <Card.Header>
                 <Card.Title>Add New Post</Card.Title>
@@ -80,195 +69,75 @@ const BlogPostPage = () => {
               </Card.Footer>
             </Card>
           </Col>
-          <Col xl={4}>
+          <Col xl={12}>
             <Card>
               <Card.Header>
                 <Card.Title>Recent Posts</Card.Title>
               </Card.Header>
               <Card.Body>
-                <div className="">
-                  <div className="d-flex overflow-visible">
-                    <img
-                      className="card-aside-column br-5 cover-image"
-                      alt="media19"
-                      src={require("../../../../assets/images/media/19.jpg")}
-                    />
-                    <div className="ps-3 flex-column">
-                      <Badge bg="danger" className="me-1 mb-1 mt-1">
-                        Lifestyle
-                      </Badge>
-                      <h4>
-                        <Link
-                          to={`${process.env.PUBLIC_URL}/pages/extension/blogdetails`}
-                        >
-                          Generator on the Internet..
-                        </Link>
-                      </h4>
-                      <div className="text-muted">
-                        Excepteur sint occaecat cupidatat non proident,
-                        accusantium sunt in culpa qui officia deserunt mollit
-                        anim id est laborum....
-                      </div>
-                    </div>
-                  </div>
-                  <div className="d-flex overflow-visible mt-5">
-                    <img
-                      className="card-aside-column br-5 cover-image"
-                      alt="media19"
-                      src={require("../../../../assets/images/media/22.jpg")}
-                    />
-                    <div className="ps-3 flex-column">
-                      <Badge bg="primary" className="me-1 mb-1 mt-1">
-                        Business
-                      </Badge>
-                      <h4>
-                        <Link
-                          to={`${process.env.PUBLIC_URL}/pages/extension/blogdetails`}
-                        >
-                          Voluptatem quia voluptas...
-                        </Link>
-                      </h4>
-                      <div className="text-muted">
-                        Excepteur sint occaecat cupidatat non proident,
-                        accusantium sunt in culpa qui officia deserunt mollit
-                        anim id est laborum....
-                      </div>
-                    </div>
-                  </div>
-                  <div className="d-flex overflow-visible mt-5">
-                    <img
-                      className="card-aside-column br-5 cover-image"
-                      alt="media19"
-                      src={require("../../../../assets/images/media/12.jpg")}
-                    />
-                    <div className="ps-3 flex-column">
-                      <Badge bg="secondary" className="me-1 mb-1 mt-1">
-                        Travel
-                      </Badge>
-                      <h4>
-                        <Link
-                          to={`${process.env.PUBLIC_URL}/pages/extension/blogdetails`}
-                        >
-                          Generator on the Internet..
-                        </Link>
-                      </h4>
-                      <div className="text-muted">
-                        Excepteur sint occaecat cupidatat non proident,
-                        accusantium sunt in culpa qui officia deserunt mollit
-                        anim id est laborum....
-                      </div>
-                    </div>
-                  </div>
-                  <div className="d-flex overflow-visible mt-5">
-                    <img
-                      className="card-aside-column br-5 cover-image"
-                      alt="media19"
-                      src={require("../../../../assets/images/media/25.jpg")}
-                    />
-                    <div className="ps-3 flex-column">
-                      <Badge bg="success" className="me-1 mb-1 mt-1">
-                        Meeting
-                      </Badge>
-                      <h4>
-                        <Link
-                          to={`${process.env.PUBLIC_URL}/pages/extension/blogdetails`}
-                        >
-                          Voluptatem quia voluptas...
-                        </Link>
-                      </h4>
-                      <div className="text-muted">
-                        Excepteur sint occaecat cupidatat non proident,
-                        accusantium sunt in culpa qui officia deserunt mollit
-                        anim id est laborum....
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                <Row>
+                  {RecentPost.map((val, index) => {
+                    return (
+                      <Col xl={6} key={index}>
+                        <div className="d-flex overflow-visible mt-5">
+                          <img
+                            className="card-aside-column br-5 cover-image"
+                            alt="media19"
+                            src={val.img}
+                          />
+                          <div className="ps-3 flex-column">
+                            {val.badge ? (
+                              <Badge bg="danger" className="me-1 mb-1 mt-1">
+                                {val.badge}
+                              </Badge>
+                            ) : null}
+                            <h4>
+                              <Link
+                                to={`${process.env.PUBLIC_URL}/pages/extension/blogdetails`}
+                              >
+                                {val.title}
+                              </Link>
+                            </h4>
+                            <div className="text-muted">{val.details}</div>
+                          </div>
+                        </div>
+                      </Col>
+                    );
+                  })}
+                </Row>
               </Card.Body>
             </Card>
+          </Col>
+          <Col xl={12}>
             <Card>
               <Card.Header>
                 <Card.Title>Professional Blog Writers</Card.Title>
               </Card.Header>
               <Card.Body>
-                <div className="">
-                  <div className="d-flex overflow-visible">
-                    <img
-                      className="avatar bradius avatar-xl me-3"
-                      src={U12}
-                      alt="avatar-img"
-                    />
-                    <div className="media-body valign-middle">
-                      <Link
-                        to={`${process.env.PUBLIC_URL}/pages/profile`}
-                        className="fw-semibold text-dark"
-                      >
-                        John Paige
-                      </Link>
-                      <p className="text-muted mb-0">
-                        There are many variations of passages of Lorem Ipsum
-                        available ...
-                      </p>
-                    </div>
-                  </div>
-                  <div className="d-flex overflow-visible mt-5">
-                    <img
-                      className="avatar bradius avatar-xl me-3"
-                      src={U2}
-                      alt="avatar-img"
-                    />
-                    <div className="media-body valign-middle">
-                      <Link
-                        to={`${process.env.PUBLIC_URL}/pages/profile`}
-                        className="fw-semibold text-dark"
-                      >
-                        Peter Hill
-                      </Link>
-                      <p className="text-muted mb-0">
-                        There are many variations of passages of Lorem Ipsum
-                        available ...
-                      </p>
-                    </div>
-                  </div>
-                  <div className="d-flex overflow-visible mt-5">
-                    <img
-                      className="avatar bradius avatar-xl me-3"
-                      src={U9}
-                      alt="avatar-img"
-                    />
-                    <div className="media-body valign-middle">
-                      <Link
-                        to={`${process.env.PUBLIC_URL}/pages/profile`}
-                        className="fw-semibold text-dark"
-                      >
-                        Irene Harris
-                      </Link>
-                      <p className="text-muted mb-0">
-                        There are many variations of passages of Lorem Ipsum
-                        available ...
-                      </p>
-                    </div>
-                  </div>
-                  <div className="d-flex overflow-visible mt-5">
-                    <img
-                      className="avatar bradius avatar-xl me-3"
-                      src={U4}
-                      alt="avatar-img"
-                    />
-                    <div className="media-body valign-middle">
-                      <Link
-                        to={`${process.env.PUBLIC_URL}/pages/profile`}
-                        className="fw-semibold text-dark"
-                      >
-                        Harry Fisher
-                      </Link>
-                      <p className="text-muted mb-0">
-                        There are many variations of passages of Lorem Ipsum
-                        available ...
-                      </p>
-                    </div>
-                  </div>
-                </div>
+                <Row>
+                  {ProfessionalWriters.map((val, index) => {
+                    return (
+                      <Col xl={6} key={index}>
+                        <div className="d-flex overflow-visible mt-5">
+                          <img
+                            className="avatar bradius avatar-xl me-3"
+                            src={val.img}
+                            alt="avatar-img"
+                          />
+                          <div className="media-body valign-middle">
+                            <Link
+                              to={`${process.env.PUBLIC_URL}/pages/profile`}
+                              className="fw-semibold text-dark"
+                            >
+                              {val.name}
+                            </Link>
+                            <p className="text-muted mb-0">{val.text}</p>
+                          </div>
+                        </div>
+                      </Col>
+                    );
+                  })}
+                </Row>
               </Card.Body>
             </Card>
           </Col>

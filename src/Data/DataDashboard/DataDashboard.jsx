@@ -11384,7 +11384,7 @@ export const MapData = ({ setTooltipContent }) => {
                       outline: "none",
                     },
                     hover: {
-                      fill: "#6c5ffc",
+                      fill: "#f7b731",
                       outline: "none",
                     },
                     pressed: {
@@ -11529,7 +11529,7 @@ export const AllProduct = () => {
       sortable: true,
       cell: (row) => (
         <div className="align-middle">
-          <img className="w-5 h-5 me-2 br-5" alt="" src={row.icon} />{" "}
+          <img className="w-5 h-5 me-2 br-5" alt="" src={row.icon} />
           <span>{row.product}</span>
         </div>
       ),
@@ -11724,7 +11724,7 @@ export const Shipped = () => {
       selector: (row) => [row.icon],
       cell: (row) => (
         <div className="align-middle">
-          <img className="w-5 h-5 me-2 br-5" alt="" src={row.icon} />{" "}
+          <img className="w-5 h-5 me-2 br-5" alt="" src={row.icon} />
           <span>{row.product}</span>
         </div>
       ),
@@ -11886,7 +11886,7 @@ export const Pending = () => {
       selector: (row) => [row.icon],
       cell: (row) => (
         <div className="align-middle">
-          <img className="w-5 h-5 me-2 br-5" alt="" src={row.icon} />{" "}
+          <img className="w-5 h-5 me-2 br-5" alt="" src={row.icon} />
           <span>{row.product}</span>
         </div>
       ),
@@ -12041,7 +12041,7 @@ export const Cancelled = () => {
       selector: (row) => [row.icon],
       cell: (row) => (
         <div className="align-middle">
-          <img className="w-5 h-5 me-2 br-5" alt="" src={row.icon} />{" "}
+          <img className="w-5 h-5 me-2 br-5" alt="" src={row.icon} />
           <span>{row.product}</span>
         </div>
       ),

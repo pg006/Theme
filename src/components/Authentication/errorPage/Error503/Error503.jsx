@@ -64,8 +64,8 @@ const Error503 = () => {
                     className="btn btn-secondary mt-5 mb-5"
                     to={`${process.env.PUBLIC_URL}/dashboard`}
                   >
-                    {" "}
-                    <i className="fa fa-long-arrow-left"></i> Back to Home{" "}
+                    
+                    <i className="fa fa-long-arrow-left"></i> Back to Home
                   </Link>
                 </div>
               </div>

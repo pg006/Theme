@@ -442,7 +442,7 @@ a.text-primary:focus {
 
 .login-img {
     position: relative;
-    background-image: url(../images/media/bg10.jpg);
+    background-image: url(../images/LandingImages/bg10.jpg);
 }
 
 .login-img::before {

@@ -23,7 +23,7 @@ const SimpleLineIcons = () => {
                 <Row>
                   <Col lg={12} sm={12}>
                     <p>
-                      Simply beautiful open source icons. For more info{" "}
+                      Simply beautiful open source icons. For more info
                       <a href="https://simplelineicons.github.io/">
                         click here
                       </a>

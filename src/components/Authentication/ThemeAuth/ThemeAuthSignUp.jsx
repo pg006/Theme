@@ -67,7 +67,7 @@ const ThemeAuthSignUp = () => {
                       placeholder="User name"
                       value={fullname}
                       onChange={changeHandler}
-                    />{" "}
+                    />
                   </div>
                   <div className="wrap-input100 validate-input input-group">
                     <Link
@@ -83,7 +83,7 @@ const ThemeAuthSignUp = () => {
                       placeholder="Email"
                       value={email}
                       onChange={changeHandler}
-                    />{" "}
+                    />
                   </div>
 
                   <InputGroup
@@ -109,12 +109,12 @@ const ThemeAuthSignUp = () => {
                       value={password}
                       onChange={changeHandler}
                       required
-                    />{" "}
+                    />
                   </InputGroup>
                   <label className="custom-control custom-checkbox mt-4">
                     <input type="checkbox" className="custom-control-input" />
                     <span className="custom-control-label">
-                      Agree the{" "}
+                      Agree the
                       <Link
                         to={`${process.env.PUBLIC_URL}/pages/extension/term`}
                       >
@@ -128,7 +128,7 @@ const ThemeAuthSignUp = () => {
                       onClick={Signup}
                       className="login100-form-btn btn-primary"
                     >
-                      {" "}
+                      
                       Register
                       {Loader ? (
                         <span

@@ -111,7 +111,7 @@ const TermsPage = () => {
                   <li>
                     <i className="fa fa-angle-double-right"></i> ducimus qui
                     blanditiis praesentium voluptatum deleniti atque corrupti
-                    quos dolores{" "}
+                    quos dolores
                   </li>
                   <li>
                     <i className="fa fa-angle-double-right"></i> quas molestias

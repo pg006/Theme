@@ -23,7 +23,7 @@ const IonicIcons = () => {
                 <Row>
                   <Col lg={12} sm={12}>
                     <p>
-                      Simply beautiful open source icons. For more info{" "}
+                      Simply beautiful open source icons. For more info
                       <a href="https://ionicons.com/">click here</a>.
                     </p>
                     <p>

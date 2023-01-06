@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const PageHeader = (props) => {
   return (
     <React.Fragment>
-      <div>
+      <div className="page-header-bg px-3">
         {/* <!-- PAGE-HEADER --> */}
         <div className="page-header">
           <h1 className="page-title">{props.titles}</h1>

@@ -159,7 +159,7 @@ const Navigation = () => {
 
                   <Dropdown className="nav-item">
                     <Dropdown.Toggle variant="" className="px-4 m-2 py-2">
-                      Dropdown{" "}
+                      Dropdown
                     </Dropdown.Toggle>
                     <Dropdown.Menu>
                       <Dropdown.Item eventKey="1">Action</Dropdown.Item>
@@ -201,7 +201,7 @@ const Navigation = () => {
                               variant=""
                               className="px-4 m-2 py-2"
                             >
-                              Dropdown{" "}
+                              Dropdown
                             </Dropdown.Toggle>
                             <Dropdown.Menu>
                               <Dropdown.Item eventKey="1">Action</Dropdown.Item>
@@ -366,7 +366,6 @@ const Navigation = () => {
                       className="border w-8 h-8 text-center br-100 m-2"
                       eventKey="home"
                     >
-                      {" "}
                       <span className="text-center mx-auto">
                         <i className="fe fe-home fs-20"></i>
                       </span>
@@ -427,7 +426,7 @@ const Navigation = () => {
                               className="border w-8 h-8 text-center br-100 m-2"
                               eventKey="home"
                             >
-                              {" "}
+                              
                               <span className="text-center mx-auto">
                                 <i className="fe fe-home fs-20"></i>
                               </span>

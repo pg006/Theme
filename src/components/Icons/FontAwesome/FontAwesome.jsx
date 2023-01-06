@@ -23,7 +23,7 @@ const FontAwesome = () => {
                 <Row>
                   <Col lg={12} sm={12}>
                     <p>
-                      Powered by Font Awesome set. For more info{" "}
+                      Powered by Font Awesome set. For more info
                       <a href="https://fontawesome.com/v4.7/icons/">
                         click here
                       </a>

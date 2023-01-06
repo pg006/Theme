@@ -1,5 +1,5 @@
 import React from "react";
-import { Row, Col, Card } from 'react-bootstrap';
+import { Row, Col, Card } from "react-bootstrap";
 import PageHeader from "../../../commonComponents/PageHeader/PageHeader";
 import "./Typography.scss";
 
@@ -22,7 +22,7 @@ const Typography = () => {
               <Card.Body>
                 <div className="text-wrap">
                   <p>
-                    Examples using standard <code>h1</code> to <code>h6</code>{" "}
+                    Examples using standard <code>h1</code> to <code>h6</code>
                     html tags
                   </p>
                   <div className="example">
@@ -46,7 +46,7 @@ const Typography = () => {
               <Card.Body>
                 <div className="text-wrap">
                   <p>
-                    Examples using standard <code>h1</code> to <code>h6</code>{" "}
+                    Examples using standard <code>h1</code> to <code>h6</code>
                     html tags
                   </p>
                   <div className="example">
@@ -75,7 +75,7 @@ const Typography = () => {
               <Card.Body>
                 <div className="text-wrap">
                   <p>
-                    Examples using standard <code>display-1</code> to{" "}
+                    Examples using standard <code>display-1</code> to
                     <code>display-6</code> html tags
                   </p>
                   <div className="example">
@@ -101,7 +101,7 @@ const Typography = () => {
               <Card.Body>
                 <div className="text-wrap">
                   <p>
-                    Examples using standard <code>display-1</code> to{" "}
+                    Examples using standard <code>display-1</code> to
                     <code>display-6</code> html tags
                   </p>
                   <div className="example">
@@ -369,7 +369,7 @@ const Typography = () => {
               <Card.Body>
                 <p>
                   The HTML spec requires that blockquote attribution be placed
-                  outside the{" "}
+                  outside the
                   <code className="highlighter-rouge">&lt;blockquote&gt;</code>.
                 </p>
                 <div className="example mb-5">
@@ -379,7 +379,7 @@ const Typography = () => {
                       Integer posuere erat a ante.
                     </p>
                     <footer className="blockquote-footer">
-                      Someone famous in{" "}
+                      Someone famous in
                       <cite title="Source Title">Source Title</cite>
                     </footer>
                   </blockquote>
@@ -395,14 +395,14 @@ const Typography = () => {
                       Integer posuere erat a ante.
                     </p>
                     <footer className="blockquote-footer">
-                      Someone famous in{" "}
+                      Someone famous in
                       <cite title="Source Title">Source Title</cite>
                     </footer>
                   </blockquote>
                 </div>
                 <p>
                   The HTML spec requires that blockquote attribution be placed
-                  in the{" "}
+                  in the
                   <code className="highlighter-rouge">.blockquote-reverse</code>
                   .
                 </p>
@@ -413,7 +413,7 @@ const Typography = () => {
                       Integer posuere erat a ante.
                     </p>
                     <footer className="blockquote-footer">
-                      Someone famous in{" "}
+                      Someone famous in
                       <cite title="Source Title">Source Title</cite>
                     </footer>
                   </blockquote>

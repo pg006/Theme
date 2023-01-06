@@ -1,7 +1,7 @@
 import React from "react";
 import PageHeader from "../../../../commonComponents/PageHeader/PageHeader";
-import { Link } from 'react-router-dom';
-import { Card, Col, Row, ListGroup } from 'react-bootstrap';
+import { Link } from "react-router-dom";
+import { Card, Col, Row, ListGroup } from "react-bootstrap";
 import "./SettingsPage.scss";
 
 const SettingsPage = () => {
@@ -47,7 +47,7 @@ const SettingsPage = () => {
                         href="#link2"
                         className="d-flex align-items-center px-0"
                       >
-                        <i className="fe fe-eye fs-18 me-2 text-primary p-2"></i>{" "}
+                        <i className="fe fe-eye fs-18 me-2 text-primary p-2"></i>
                         Appearances
                       </ListGroup.Item>
                     </Link>
@@ -58,7 +58,7 @@ const SettingsPage = () => {
                         href="#link3"
                         className="d-flex align-items-center px-0"
                       >
-                        <i className="fe fe-lock fs-18 me-2 text-warning p-2"></i>{" "}
+                        <i className="fe fe-lock fs-18 me-2 text-warning p-2"></i>
                         Privacy & Security
                       </ListGroup.Item>
                     </Link>
@@ -69,7 +69,7 @@ const SettingsPage = () => {
                         href="#link4"
                         className="d-flex align-items-center px-0"
                       >
-                        <i className="fe fe-headphones fs-18 me-2 text-info p-2"></i>{" "}
+                        <i className="fe fe-headphones fs-18 me-2 text-info p-2"></i>
                         Help & Support
                       </ListGroup.Item>
                     </Link>
@@ -80,7 +80,7 @@ const SettingsPage = () => {
                         href="#link5"
                         className="d-flex align-items-center px-0"
                       >
-                        <i className="fe fe-database fs-18 me-2 text-pink p-2"></i>{" "}
+                        <i className="fe fe-database fs-18 me-2 text-pink p-2"></i>
                         Data Usage Control
                       </ListGroup.Item>
                     </Link>
@@ -91,7 +91,7 @@ const SettingsPage = () => {
                         href="#link6"
                         className="d-flex align-items-center px-0"
                       >
-                        <i className="fe fe-battery-charging fs-18 me-2 text-green p-2"></i>{" "}
+                        <i className="fe fe-battery-charging fs-18 me-2 text-green p-2"></i>
                         Power Saving Management
                       </ListGroup.Item>
                     </Link>
@@ -102,7 +102,7 @@ const SettingsPage = () => {
                         href="#link7"
                         className="d-flex align-items-center px-0"
                       >
-                        <i className="fe fe-help-circle fs-18 me-2 text-danger p-2"></i>{" "}
+                        <i className="fe fe-help-circle fs-18 me-2 text-danger p-2"></i>
                         About
                       </ListGroup.Item>
                     </Link>
@@ -133,7 +133,7 @@ const SettingsPage = () => {
                           general and advanced settings.
                         </p>
                         <Link to="">
-                          Change Settings{" "}
+                          Change Settings
                           <i className="ion-chevron-right fs-10 ms-1"></i>
                         </Link>
                       </Col>
@@ -161,7 +161,7 @@ const SettingsPage = () => {
                           can be Controlled.
                         </p>
                         <Link to="">
-                          Change Settings{" "}
+                          Change Settings
                           <i className="ion-chevron-right fs-10 ms-1"></i>
                         </Link>
                       </Col>
@@ -189,7 +189,7 @@ const SettingsPage = () => {
                           notifications privacy and security.
                         </p>
                         <Link to="">
-                          Change Settings{" "}
+                          Change Settings
                           <i className="ion-chevron-right fs-10 ms-1"></i>
                         </Link>
                       </Col>
@@ -217,7 +217,7 @@ const SettingsPage = () => {
                           to web apps can be Controlled.
                         </p>
                         <Link to="">
-                          Change Settings{" "}
+                          Change Settings
                           <i className="ion-chevron-right fs-10 ms-1"></i>
                         </Link>
                       </Col>
@@ -245,7 +245,7 @@ const SettingsPage = () => {
                           your Region & language.
                         </p>
                         <Link to="">
-                          Change Settings{" "}
+                          Change Settings
                           <i className="ion-chevron-right fs-10 ms-1"></i>
                         </Link>
                       </Col>
@@ -273,7 +273,7 @@ const SettingsPage = () => {
                           and more can be controlled.
                         </p>
                         <Link to="">
-                          Change Settings{" "}
+                          Change Settings
                           <i className="ion-chevron-right fs-10 ms-1"></i>
                         </Link>
                       </Col>
@@ -301,7 +301,7 @@ const SettingsPage = () => {
                           and social media can be controlled..
                         </p>
                         <Link to="">
-                          Change Settings{" "}
+                          Change Settings
                           <i className="ion-chevron-right fs-10 ms-1"></i>
                         </Link>
                       </Col>
@@ -329,7 +329,7 @@ const SettingsPage = () => {
                           related to email can be controlled.
                         </p>
                         <Link to="">
-                          Change Settings{" "}
+                          Change Settings
                           <i className="ion-chevron-right fs-10 ms-1"></i>
                         </Link>
                       </Col>

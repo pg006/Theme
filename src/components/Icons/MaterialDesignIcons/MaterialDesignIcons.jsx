@@ -23,7 +23,7 @@ const MaterialDesignIcons = () => {
                 <Row>
                   <Col lg={12} sm={12}>
                     <p>
-                      Simply beautiful open source icons. For more info{" "}
+                      Simply beautiful open source icons. For more info
                       <a href="https://materialdesignicons.com/">click here</a>.
                     </p>
                     <p>
@@ -2753,7 +2753,7 @@ const MaterialDesignIcons = () => {
                 <Row>
                   <Col lg={12} sm={12}>
                     <p>
-                      Simply beautiful open source icons. For more info{" "}
+                      Simply beautiful open source icons. For more info
                       <a href="https://materialdesignicons.com/">click here</a>.
                     </p>
                     <p>

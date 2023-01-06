@@ -48,7 +48,7 @@ const Register = () => {
               <label className="custom-control custom-checkbox mt-4">
                 <input type="checkbox" className="custom-control-input" />
                 <span className="custom-control-label">
-                  Agree the{" "}
+                  Agree the
                   <Link to={`${process.env.PUBLIC_URL}/pages/extension/term`}>
                     terms and policy
                   </Link>

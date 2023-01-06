@@ -1,7 +1,7 @@
 import React from "react";
 import PageHeader from "../../../../commonComponents/PageHeader/PageHeader";
-import { Row, Col, Card, Table } from 'react-bootstrap';
-import './DefaultTablePage.scss'
+import { Row, Col, Card, Table } from "react-bootstrap";
+import "./DefaultTablePage.scss";
 
 const DefaultTablePage = () => {
   return (
@@ -18,7 +18,7 @@ const DefaultTablePage = () => {
               </Card.Header>
               <Card.Body>
                 <p>
-                  Using the most basic table markup, here’s how{" "}
+                  Using the most basic table markup, here’s how
                   <code className="highlighter-rouge">.table</code> based tables
                   look in Bootstrap.
                 </p>
@@ -77,7 +77,7 @@ const DefaultTablePage = () => {
               <Card.Body>
                 <p>
                   Use <code className="highlighter-rouge">.table-striped</code>
-                  to add zebra-striping to any table row within the{" "}
+                  to add zebra-striping to any table row within the
                   <code className="highlighter-rouge">.tbody</code>.
                 </p>
                 <div className="table-responsive">
@@ -140,7 +140,7 @@ const DefaultTablePage = () => {
               <Card.Body>
                 <p>
                   Use <code className="highlighter-rouge">.table-bordered</code>
-                  to add zebra-striping to any table row within the{" "}
+                  to add zebra-striping to any table row within the
                   <code className="highlighter-rouge">.tbody</code>.
                 </p>
                 <div className="table-responsive">
@@ -198,7 +198,7 @@ const DefaultTablePage = () => {
               <Card.Body>
                 <p>
                   Use <code className="highlighter-rouge">.table-hover</code>to
-                  add zebra-striping to any table row within the{" "}
+                  add zebra-striping to any table row within the
                   <code className="highlighter-rouge">.tbody</code>.
                 </p>
                 <div className="table-responsive">
@@ -260,9 +260,9 @@ const DefaultTablePage = () => {
               </Card.Header>
               <Card.Body>
                 <p>
-                  Use{" "}
+                  Use
                   <code className="highlighter-rouge">.table-borderless</code>to
-                  add zebra-striping to any table row within the{" "}
+                  add zebra-striping to any table row within the
                   <code className="highlighter-rouge">.tbody</code>.
                 </p>
                 <div className="table-responsive">
@@ -314,8 +314,8 @@ const DefaultTablePage = () => {
               <Card.Body>
                 <p>
                   Add <code className="highlighter-rouge">.table-sm</code> to
-                  make any <code className="highlighter-rouge">.table</code>{" "}
-                  more compact by cutting all cell{" "}
+                  make any <code className="highlighter-rouge">.table</code>
+                  more compact by cutting all cell
                   <code className="highlighter-rouge">padding</code> in half.
                 </p>
                 <div className="table-responsive">
@@ -554,9 +554,9 @@ const DefaultTablePage = () => {
               </Card.Header>
               <Card.Body>
                 <p>
-                  Similar to tables and dark tables, use the modifier classes{" "}
-                  <code className="highlighter-rouge">.table-primary</code> or{" "}
-                  <code className="highlighter-rouge">.table-dark</code> to make{" "}
+                  Similar to tables and dark tables, use the modifier classes
+                  <code className="highlighter-rouge">.table-primary</code> or
+                  <code className="highlighter-rouge">.table-dark</code> to make
                   <code className="highlighter-rouge">&lt;thead&gt;</code>
                 </p>
                 <div className="table-responsive">
@@ -608,7 +608,7 @@ const DefaultTablePage = () => {
               <Card.Body>
                 <p>
                   Use <code className="highlighter-rouge">.table-dark</code>to
-                  add zebra-striping to any table row within the{" "}
+                  add zebra-striping to any table row within the
                   <code className="highlighter-rouge">.tbody</code>.
                 </p>
                 <div className="table-responsive">

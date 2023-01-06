@@ -1,17 +1,17 @@
 import React from "react";
 import PageHeader from "../../../commonComponents/PageHeader/PageHeader";
-import { Card, Col, Row } from 'react-bootstrap';
+import { Card, Col, Row } from "react-bootstrap";
 import "./AvatarSquare.scss";
-import U1 from '../../../assets/images/UserImages/U1.jpg'
-import U2 from '../../../assets/images/UserImages/U2.jpg'
-import U3 from '../../../assets/images/UserImages/U3.jpg'
-import U4 from '../../../assets/images/UserImages/U4.jpg'
-import U5 from '../../../assets/images/UserImages/U5.jpg'
-import U6 from '../../../assets/images/UserImages/U6.jpg'
-import U7 from '../../../assets/images/UserImages/U7.jpg'
-import U8 from '../../../assets/images/UserImages/U8.jpg'
-import U9 from '../../../assets/images/UserImages/U9.jpg'
-import U11 from '../../../assets/images/UserImages/U11.jpg'
+import U1 from "../../../assets/images/UserImages/U1.jpg";
+import U2 from "../../../assets/images/UserImages/U2.jpg";
+import U3 from "../../../assets/images/UserImages/U3.jpg";
+import U4 from "../../../assets/images/UserImages/U4.jpg";
+import U5 from "../../../assets/images/UserImages/U5.jpg";
+import U6 from "../../../assets/images/UserImages/U6.jpg";
+import U7 from "../../../assets/images/UserImages/U7.jpg";
+import U8 from "../../../assets/images/UserImages/U8.jpg";
+import U9 from "../../../assets/images/UserImages/U9.jpg";
+import U11 from "../../../assets/images/UserImages/U11.jpg";
 
 const AvatarSquare = () => {
   return (
@@ -77,8 +77,8 @@ const AvatarSquare = () => {
               <Card.Body>
                 <div className="text-wrap">
                   <p>
-                    Use classes{" "}
-                    <code className="highlighter-rouge">.avatar-list </code> and{" "}
+                    Use classes
+                    <code className="highlighter-rouge">.avatar-list </code> and
                     <code className="highlighter-rouge">
                       .avatar-list-stacked
                     </code>
@@ -132,7 +132,7 @@ const AvatarSquare = () => {
               <Card.Body>
                 <div className="text-wrap">
                   <p>
-                    Use classes{" "}
+                    Use classes
                     <code className="highlighter-rouge">.avatar-status</code> .
                   </p>
                   <div className="example">
@@ -193,7 +193,7 @@ const AvatarSquare = () => {
               <Card.Body>
                 <div className="text-wrap">
                   <p>
-                    Use classes{" "}
+                    Use classes
                     <code className="highlighter-rouge">.avatar-badges</code> .
                   </p>
                   <div className="example">
@@ -272,61 +272,41 @@ const AvatarSquare = () => {
               <Card.Body>
                 <div className="text-wrap">
                   <p>
-                    Use classes{" "}
+                    Use classes
                     <code className="highlighter-rouge">.avatar-icons</code> .
                   </p>
                   <div className="example">
                     <div className="avatar-list">
                       <div className="avatar avatar-xl cover-image">
-                        <img
-                          className="cover-image"
-                          alt="user21"
-                          src={U9}
-                        />
+                        <img className="cover-image" alt="user21" src={U9} />
                         <span className="badge rounded-pill avatar-icons bg-primary">
                           <i className="fe fe-edit fs-12"></i>
                         </span>
                       </div>
 
                       <div className="avatar avatar-xl cover-image">
-                        <img
-                          className="cover-image"
-                          alt="user5"
-                          src={U5}
-                        />
+                        <img className="cover-image" alt="user5" src={U5} />
                         <span className="badge rounded-pill avatar-icons bg-secondary">
                           <i className="fe fe-arrow-down fs-12"></i>
                         </span>
                       </div>
 
                       <div className="avatar avatar-xl cover-image">
-                        <img
-                          className="cover-image"
-                          alt="user9"
-                          src={U8}
-                        />
+                        <img className="cover-image" alt="user9" src={U8} />
                         <span className="badge rounded-pill avatar-icons bg-red">
                           <i className="fe fe-lock fs-12"></i>
                         </span>
                       </div>
 
                       <div className="avatar avatar-xl cover-image">
-                        <img
-                          className="cover-image"
-                          alt="user6"
-                          src={U6}
-                        />
+                        <img className="cover-image" alt="user6" src={U6} />
                         <span className="badge rounded-pill avatar-icons bg-green">
                           <i className="fe fe-camera fs-12"></i>
                         </span>
                       </div>
 
                       <div className="avatar avatar-xl cover-image">
-                        <img
-                          className="cover-image"
-                          alt="user7"
-                          src={U7}
-                        />
+                        <img className="cover-image" alt="user7" src={U7} />
                         <span className="badge rounded-pill avatar-icons bg-green">
                           <i className="fe fe-bell fs-12"></i>
                         </span>
@@ -347,11 +327,11 @@ const AvatarSquare = () => {
                 <div className="text-wrap">
                   <div className="example">
                     <p>
-                      Use classes{" "}
-                      <code className="highlighter-rouge">.avatar-sm</code> ,{" "}
-                      <code className="highlighter-rouge">.avatar-md</code> ,{" "}
-                      <code className="highlighter-rouge">.avatar-lg</code> ,{" "}
-                      <code className="highlighter-rouge">.avatar-xl</code> ,{" "}
+                      Use classes
+                      <code className="highlighter-rouge">.avatar-sm</code> ,
+                      <code className="highlighter-rouge">.avatar-md</code> ,
+                      <code className="highlighter-rouge">.avatar-lg</code> ,
+                      <code className="highlighter-rouge">.avatar-xl</code> ,
                       <code className="highlighter-rouge">.avatar-xxl</code> .
                     </p>
                     <div className="avatar-list">
@@ -401,11 +381,11 @@ const AvatarSquare = () => {
                 <div className="text-wrap">
                   <div className="example">
                     <p>
-                      Use classes{" "}
-                      <code className="highlighter-rouge">.avatar-sm</code> ,{" "}
-                      <code className="highlighter-rouge">.avatar-md</code> ,{" "}
-                      <code className="highlighter-rouge">.avatar-lg</code> ,{" "}
-                      <code className="highlighter-rouge">.avatar-xl</code> ,{" "}
+                      Use classes
+                      <code className="highlighter-rouge">.avatar-sm</code> ,
+                      <code className="highlighter-rouge">.avatar-md</code> ,
+                      <code className="highlighter-rouge">.avatar-lg</code> ,
+                      <code className="highlighter-rouge">.avatar-xl</code> ,
                       <code className="highlighter-rouge">.avatar-xxl</code> .
                     </p>
                     <div className="avatar-list">

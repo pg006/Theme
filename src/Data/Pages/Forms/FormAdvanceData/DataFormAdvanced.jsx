@@ -326,7 +326,7 @@ export const SketchExample = () => {
   return (
     <div>
       <p className="mt-4 mb-1">
-        Show Adove photoshop with Alphaline and pallete.{" "}
+        Show Adove photoshop with Alphaline and pallete.
       </p>
       <Button
         className="btn-pill"

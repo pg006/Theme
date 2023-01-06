@@ -1,7 +1,18 @@
 import React from "react";
-import { Button, Card, Col, Form, Row, InputGroup, FormControl, ButtonGroup, DropdownButton, Dropdown } from 'react-bootstrap';
+import {
+  Button,
+  Card,
+  Col,
+  Form,
+  Row,
+  InputGroup,
+  FormControl,
+  ButtonGroup,
+  DropdownButton,
+  Dropdown,
+} from "react-bootstrap";
 import PageHeader from "../../../../commonComponents/PageHeader/PageHeader";
-import Select from 'react-select';
+import Select from "react-select";
 import { DataForm } from "../../../../Data/Pages/Forms/DataFormLayout";
 
 const FormLayoutsPage = () => {
@@ -452,21 +463,21 @@ const FormLayoutsPage = () => {
               </Card.Header>
               <Card.Body>
                 <p>
-                  Be sure to use{" "}
-                  <code className="highlighter-rouge">.col-form-label-sm</code>{" "}
-                  or{" "}
-                  <code className="highlighter-rouge">.col-form-label-lg</code>{" "}
-                  to your{" "}
-                  <code className="highlighter-rouge">&lt;label&gt;</code> s or{" "}
+                  Be sure to use
+                  <code className="highlighter-rouge">.col-form-label-sm</code>
+                  or
+                  <code className="highlighter-rouge">.col-form-label-lg</code>
+                  to your
+                  <code className="highlighter-rouge">&lt;label&gt;</code> s or
                   <code className="highlighter-rouge">&lt;legend&gt;</code>s to
-                  correctly follow the size of{" "}
+                  correctly follow the size of
                   <code className="highlighter-rouge">
                     &lt;.form-control-lg&gt;
-                  </code>{" "}
-                  and{" "}
+                  </code>
+                  and
                   <code className="highlighter-rouge">
                     &lt;.form-control-sm&gt;
-                  </code>{" "}
+                  </code>
                   .
                 </p>
                 <Row className="mb-0">
@@ -613,7 +624,7 @@ const FormLayoutsPage = () => {
             <Card>
               <Card.Header>
                 <Card.Title as="h3">
-                  Floating Labels Inputs, textarea{" "}
+                  Floating Labels Inputs, textarea
                 </Card.Title>
               </Card.Header>
               <Card.Body>
