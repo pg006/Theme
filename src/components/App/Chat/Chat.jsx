@@ -31,6 +31,10 @@ import U19 from '../../../assets/images/UserImages/U19.jpg'
 import U20 from '../../../assets/images/UserImages/U20.jpg'
 import U21 from '../../../assets/images/UserImages/U21.jpg'
 
+import img3 from '../../../assets/images/FileImages/File26.jpg'
+import img4 from '../../../assets/images/FileImages/File25.jpg'
+import img5 from '../../../assets/images/FileImages/File24.jpg'
+
 const Chat = () => {
   return (
     <React.Fragment>
@@ -1322,17 +1326,17 @@ const Chat = () => {
                               <img
                                 alt="avatar"
                                 className="w-10 h-10 me-1"
-                                src={require("../../../assets/images/media/3.jpg")}
+                                src={img3}
                               />
                               <img
                                 alt="avatar"
                                 className="w-10 h-10 me-1"
-                                src={require("../../../assets/images/media/4.jpg")}
+                                src={img4}
                               />
                               <img
                                 alt="avatar"
                                 className="w-10 h-10 me-1"
-                                src={require("../../../assets/images/media/5.jpg")}
+                                src={img5}
                               />
                             </div>
                             <div>

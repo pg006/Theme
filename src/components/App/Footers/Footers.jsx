@@ -3,7 +3,10 @@ import PageHeader from "../../../commonComponents/PageHeader/PageHeader";
 import "./Footers.scss";
 import { Card, Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-
+import img1 from '../../../assets/images/CarouselImages/SquareImages/S1.jpg'
+import img2 from '../../../assets/images/CarouselImages/SquareImages/S2.jpg'
+import img3 from '../../../assets/images/CarouselImages/SquareImages/S3.jpg'
+import img4 from '../../../assets/images/CarouselImages/SquareImages/S4.jpg'
 const Footers = () => {
   return (
     <React.Fragment>
@@ -452,20 +455,20 @@ const Footers = () => {
                     <Col lg={4} sm={12} md={4}>
                       <h6>Posts</h6>
                       <img
-                        alt=""
-                        src={require("../../../assets/images/media/media1.jpg")}
+                        alt="img1"
+                        src={img1}
                       />
                       <img
-                        alt=""
-                        src={require("../../../assets/images/media/media2.jpg")}
+                        alt="img2"
+                        src={img2}
                       />
                       <img
-                        alt=""
-                        src={require("../../../assets/images/media/media3.jpg")}
+                        alt="img3"
+                        src={img3}
                       />
                       <img
-                        alt=""
-                        src={require("../../../assets/images/media/media4.jpg")}
+                        alt="img4"
+                        src={img4}
                       />
                       <hr />
                       <h6 className="mb-0 m-t-30">Payments</h6>

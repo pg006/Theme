@@ -7,6 +7,8 @@ import Header from "./commonComponents/Header/Header";
 import Rightside from "./commonComponents/Rightside/Rightside";
 import { Sidebar } from "./commonComponents/Sidebar/Sidebar";
 import Switcher from "./commonComponents/Switcher/Switcher";
+import * as  SwitcherData from "./Data/Pages/SwitcherData/SwitcherData"
+
 
 function App() {
   document
@@ -28,7 +30,7 @@ function App() {
             <div className="jumps-prevent" style={{ paddingTop: "74px" }}></div>
             <div
               className="main-content app-content mt-0"
-              // onClick={() => SwitcherData.responsiveSidebarclose()}
+              onClick={() => SwitcherData.responsiveSidebarclose()}
             >
               <div className="side-app">
                 <div className="main-container container-fluid">

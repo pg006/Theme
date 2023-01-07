@@ -522,7 +522,7 @@ const Switcher = () => {
                           onClick={() => SwitcherData.bgimage1()}
                         >
                           <img
-                            src={require("../../assets/images/media/bg-img1.jpg")}
+                            src={require("../../assets/images/Background/BG3.jpg")}
                             alt="Bg-1"
                             id="bgimage1"
                           />
@@ -533,7 +533,7 @@ const Switcher = () => {
                           onClick={() => SwitcherData.bgimage2()}
                         >
                           <img
-                            src={require("../../assets/images/media/bg-img2.jpg")}
+                            src={require("../../assets/images/Background/BG2.jpg")}
                             alt="Bg-2"
                             id="bgimage2"
                           />
@@ -544,7 +544,7 @@ const Switcher = () => {
                           onClick={() => SwitcherData.bgimage3()}
                         >
                           <img
-                            src={require("../../assets/images/media/bg-img3.jpg")}
+                            src={require("../../assets/images/Background/BG1.jpg")}
                             alt="Bg-3"
                             id="bgimage3"
                           />
@@ -555,7 +555,7 @@ const Switcher = () => {
                           onClick={() => SwitcherData.bgimage4()}
                         >
                           <img
-                            src={require("../../assets/images/media/bg-img4.jpg")}
+                            src={require("../../assets/images/Background/BG4.jpg")}
                             alt="Bg-4"
                             id="bgimage4"
                           />

@@ -3,6 +3,7 @@ import PageHeader from "../../../commonComponents/PageHeader/PageHeader.jsx";
 import { Card, Col, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "./TimeLine.scss";
+import img1 from '../../../assets/images/FileImages/File27.jpg'
 
 const TimeLine = () => {
   return (
@@ -152,7 +153,7 @@ const TimeLine = () => {
                           astonished travelling are particular.
                         </p>
                         <img
-                          src={require("../../../assets/images/media/1.jpg")}
+                          src={img1}
                           className="mb-3"
                           alt="img"
                         />
