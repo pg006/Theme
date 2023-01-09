@@ -449,7 +449,9 @@
 
 .gradient-header .app-header,
 .gradient-header .hor-header {
-    background: linear-gradient(to right, var(--primary-bg-color) 0%, #8e77fa 100%) !important;
+    background: linear-gradient(to right,
+            var(--primary-bg-color) 0%,
+            #8e77fa 100%) !important;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -628,7 +630,9 @@
 
 .dark-mode.gradient-header .app-header,
 .dark-mode.gradient-header .hor-header {
-    background: linear-gradient(to right, var(--primary-bg-color) 0%, #8e77fa 100%) !important;
+    background: linear-gradient(to right,
+            var(--primary-bg-color) 0%,
+            #8e77fa 100%) !important;
 }
 
 .dark-mode.gradient-header .header .form-inline .form-control {
@@ -855,7 +859,9 @@
 
 .color-menu .app-sidebar .side-header .side-menu__item.active:hover,
 .color-menu .app-sidebar .side-header .side-menu__item.active:focus {
-    background: linear-gradient(to right, var(--primary-bg-color) 0%, #8e77fa 100%) !important;
+    background: linear-gradient(to right,
+            var(--primary-bg-color) 0%,
+            #8e77fa 100%) !important;
 }
 
 .color-menu .app-sidebar .side-header .side-menu__item:hover .side-menu__label,
@@ -1225,7 +1231,9 @@
 
 /*Graident-Color*/
 .gradient-menu .app-sidebar {
-    background: linear-gradient(to bottom, var(--primary-bg-color) 0%, #8e77fa 100%) !important;
+    background: linear-gradient(to bottom,
+            var(--primary-bg-color) 0%,
+            #8e77fa 100%) !important;
 }
 
 .gradient-menu .app-sidebar .side-item.side-item-category {
@@ -1323,11 +1331,15 @@
 }
 
 .gradient-menu.hover-submenu.sidebar-mini.sidenav-toggled .slide-menu {
-    background: linear-gradient(to bottom, var(--primary-bg-color) 0%, #8e77fa 100%) !important;
+    background: linear-gradient(to bottom,
+            var(--primary-bg-color) 0%,
+            #8e77fa 100%) !important;
 }
 
 .gradient-menu.hover-submenu1.sidebar-mini.sidenav-toggled .slide-menu {
-    background: linear-gradient(to bottom, var(--primary-bg-color) 0%, #8e77fa 100%) !important;
+    background: linear-gradient(to bottom,
+            var(--primary-bg-color) 0%,
+            #8e77fa 100%) !important;
 }
 
 @media (min-width: 992px) {
@@ -1375,13 +1387,17 @@
     .gradient-menu.horizontal .horizontal-main .slide .slide-menu,
     .gradient-menu.horizontal .horizontal-main .slide .sub-slide-menu,
     .gradient-menu.horizontal .horizontal-main .slide .sub-slide-menu2 {
-        background: linear-gradient(to bottom, var(--primary-bg-color) 0%, #8e77fa 100%);
+        background: linear-gradient(to bottom,
+                var(--primary-bg-color) 0%,
+                #8e77fa 100%);
         border-color: rgba(255, 255, 255, 0.1);
     }
 }
 
 .dark-mode.gradient-menu .app-sidebar {
-    background: linear-gradient(to bottom, var(--primary-bg-color) 0%, #8e77fa 100%) !important;
+    background: linear-gradient(to bottom,
+            var(--primary-bg-color) 0%,
+            #8e77fa 100%) !important;
 }
 
 .dark-mode.gradient-menu .app-sidebar .side-menu .slide a {
@@ -1782,7 +1798,9 @@
 }
 
 .gradient-header .mobile-header.hor-mobile-header {
-    background: linear-gradient(to right, var(--primary-bg-color) 0%, #8e77fa 100%) !important;
+    background: linear-gradient(to right,
+            var(--primary-bg-color) 0%,
+            #8e77fa 100%) !important;
 }
 
 @media (max-width: 991px) {
@@ -1903,7 +1921,8 @@
 
     body.transparent-mode.layout-boxed .page {
         background: var(--transparent-body);
-        box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 0px 0px, rgba(0, 0, 0, 0.3) 0px 5px 25px 0px;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 0px 0px,
+            rgba(0, 0, 0, 0.3) 0px 5px 25px 0px;
     }
 
     body.transparent-mode.layout-boxed.bg-img1 .page {
@@ -1975,8 +1994,10 @@
         flex-direction: column;
         -ms-flex-pack: center;
         -webkit-box-pack: center;
-        -webkit-box-shadow: rgba(104, 113, 123, 0.3) 0px 5px 0px 0px, rgba(104, 113, 123, 0.3) 0px 5px 25px 0px;
-        box-shadow: rgba(104, 113, 123, 0.3) 0px 5px 0px 0px, rgba(104, 113, 123, 0.3) 0px 5px 25px 0px;
+        -webkit-box-shadow: rgba(104, 113, 123, 0.3) 0px 5px 0px 0px,
+            rgba(104, 113, 123, 0.3) 0px 5px 25px 0px;
+        box-shadow: rgba(104, 113, 123, 0.3) 0px 5px 0px 0px,
+            rgba(104, 113, 123, 0.3) 0px 5px 25px 0px;
     }
 
     .layout-boxed .app-header.header {
@@ -2026,8 +2047,10 @@
     }
 
     .dark-mode.layout-boxed .page {
-        -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 0px 0px, rgba(0, 0, 0, 0.3) 0px 5px 25px 0px;
-        box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 0px 0px, rgba(0, 0, 0, 0.3) 0px 5px 25px 0px;
+        -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 0px 0px,
+            rgba(0, 0, 0, 0.3) 0px 5px 25px 0px;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 0px 0px,
+            rgba(0, 0, 0, 0.3) 0px 5px 25px 0px;
     }
 }
 
@@ -2310,11 +2333,15 @@
 }
 
 .transparent-mode.gradient-menu .app-sidebar {
-    background: linear-gradient(to bottom, var(--primary-bg-color) 0%, #8e77fa 100%) !important;
+    background: linear-gradient(to bottom,
+            var(--primary-bg-color) 0%,
+            #8e77fa 100%) !important;
 }
 
 .transparent-mode.gradient-menu.sidenav-toggled.sidenav-toggled-open .app-sidebar {
-    background: linear-gradient(to bottom, var(--primary-bg-color) 0%, #8e77fa 100%) !important;
+    background: linear-gradient(to bottom,
+            var(--primary-bg-color) 0%,
+            #8e77fa 100%) !important;
 }
 
 .transparent-mode.gradient-menu.hover-submenu.sidebar-mini.sidenav-toggled.sidenav-toggled-open .slide-menu {
@@ -2532,11 +2559,15 @@
     }
 
     .transparent-mode.gradient-menu .app-sidebar {
-        background: linear-gradient(to bottom, var(--primary-bg-color) 0%, #8e77fa 100%) !important;
+        background: linear-gradient(to bottom,
+                var(--primary-bg-color) 0%,
+                #8e77fa 100%) !important;
     }
 
     .transparent-mode.gradient-menu.sidenav-toggled.sidenav-toggled-open .app-sidebar {
-        background: linear-gradient(to bottom, var(--primary-bg-color) 0%, #8e77fa 100%) !important;
+        background: linear-gradient(to bottom,
+                var(--primary-bg-color) 0%,
+                #8e77fa 100%) !important;
     }
 
     .transparent-mode.gradient-menu.hover-submenu.sidebar-mini.sidenav-toggled.sidenav-toggled-open .slide-menu {
@@ -2610,7 +2641,8 @@
 
 .layout-boxed .login-img .page {
     background: rgba(0, 0, 0, 0.1);
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 0px 0px, rgba(0, 0, 0, 0.5) 0px 5px 25px 0px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 0px 0px,
+        rgba(0, 0, 0, 0.5) 0px 5px 25px 0px;
 }
 
 @media (min-width: 1400px) {
@@ -2637,7 +2669,9 @@
     }
 
     .gradient-header .responsive-navbar .navbar-collapse {
-        background: linear-gradient(to right, var(--primary-bg-color) 0%, #8e77fa 100%);
+        background: linear-gradient(to right,
+                var(--primary-bg-color) 0%,
+                #8e77fa 100%);
     }
 
     .dark-mode.header-light .responsive-navbar .navbar-collapse {
@@ -3024,7 +3058,7 @@
 
     .dark-mode .main-sidemenu .slide-left,
     .dark-mode .main-sidemenu .slide-right {
-        background: #112D32;
+        background: #112d32;
         border: 1px solid rgba(255, 255, 255, 0.1);
     }
 
@@ -3701,4 +3735,5 @@
         background-color: #fff;
     }
 }
+
 /*# sourceMappingURL=skin-modes.css.map */

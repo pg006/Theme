@@ -10,6 +10,7 @@ import U4 from "../../assets/images/UserImages/U4.jpg";
 import U9 from "../../assets/images/UserImages/U9.jpg";
 import logo from "../../assets/images/Logo/logo.png";
 import logo3 from "../../assets/images/Logo/logo3.png";
+import { MyShoppingCartData } from "../../Data/DataDashboard/Mock";
 const SideMenuIcon = () => {
   //leftsidemenu
   document.querySelector(".app")?.classList.toggle("sidenav-toggled");
@@ -322,7 +323,7 @@ const Header = () => {
                       >
                         <i className="fe fe-shopping-cart"></i>
                         <span className="badge bg-secondary header-badge">
-                          4
+                          8
                         </span>
                       </Dropdown.Toggle>
                       <Dropdown.Menu className="dropdown-menu-end dropdown-menu-arrow">
@@ -343,150 +344,47 @@ const Header = () => {
                         </div>
                         {/* <div className="header-dropdown-list message-menu"> */}
                         <PerfectScrollbar style={{ height: "300px" }}>
-                          <Dropdown.Item
-                            href={`${process.env.PUBLIC_URL}/Ecommerce/shoppingcart`}
-                            className="d-flex p-4"
-                          >
-                            <img
-                              className="avatar avatar-xl br-5 me-3 align-self-center cover-image"
-                              src={require("../../assets/images/pngs/4.jpg")}
-                              alt="pngs-4"
-                            />
-                            <div className="wd-50p">
-                              <h5 className="mb-1">
-                                Flower Pot for Home Decor
-                              </h5>
-                              <span>
-                                Status:
-                                <span className="text-success">In Stock</span>
-                              </span>
-                              <p className="fs-13 text-muted mb-0">
-                                Quantity: 01
-                              </p>
-                            </div>
-                            <div className="ms-auto text-end d-flex fs-16">
-                              <span className="fs-16 text-dark d-none d-sm-block px-4">
-                                $438
-                              </span>
-                              <span className="fs-16 btn p-0 cart-trash">
-                                <i className="fe fe-trash-2 border text-danger brround d-block p-2"></i>
-                              </span>
-                            </div>
-                          </Dropdown.Item>
-                          <Dropdown.Item
-                            href={`${process.env.PUBLIC_URL}/Ecommerce/shoppingcart`}
-                            className="d-flex p-4"
-                          >
-                            <img
-                              className="avatar avatar-xl br-5 me-3 align-self-center cover-image"
-                              alt="pngs-6"
-                              src={require("../../assets/images/pngs/6.jpg")}
-                            />
-                            <div className="wd-50p">
-                              <h5 className="mb-1">Black Digital Camera</h5>
-                              <span>
-                                Status:
-                                <span className="text-danger">Out Stock</span>
-                              </span>
-                              <p className="fs-13 text-muted mb-0">
-                                Quantity: 06
-                              </p>
-                            </div>
-                            <div className="ms-auto text-end d-flex">
-                              <span className="fs-16 text-dark d-none d-sm-block px-4">
-                                $867
-                              </span>
-                              <span className="fs-16 btn p-0 cart-trash">
-                                <i className="fe fe-trash-2 border text-danger brround d-block p-2"></i>
-                              </span>
-                            </div>
-                          </Dropdown.Item>
-                          <Dropdown.Item
-                            href={`${process.env.PUBLIC_URL}/Ecommerce/shoppingcart`}
-                            className="d-flex p-4"
-                          >
-                            <img
-                              className="avatar avatar-xl br-5 me-3 align-self-center cover-image"
-                              alt="pngs-8"
-                              src={require("../../assets/images/pngs/8.jpg")}
-                            />
-                            <div className="wd-50p">
-                              <h5 className="mb-1">
-                                Stylish Rockerz 255 Ear Pods
-                              </h5>
-                              <span>
-                                Status:
-                                <span className="text-success">In Stock</span>
-                              </span>
-                              <p className="fs-13 text-muted mb-0">
-                                Quantity: 05
-                              </p>
-                            </div>
-                            <div className="ms-auto text-end d-flex">
-                              <span className="fs-16 text-dark d-none d-sm-block px-4">
-                                $323
-                              </span>
-                              <span className="fs-16 btn p-0 cart-trash">
-                                <i className="fe fe-trash-2 border text-danger brround d-block p-2"></i>
-                              </span>
-                            </div>
-                          </Dropdown.Item>
-                          <Dropdown.Item
-                            href={`${process.env.PUBLIC_URL}/Ecommerce/shoppingcart`}
-                            className="d-flex p-4"
-                          >
-                            <img
-                              className="avatar avatar-xl br-5 me-3 align-self-center cover-image"
-                              alt="pngs-1"
-                              src={require("../../assets/images/pngs/1.jpg")}
-                            />
-                            <div className="wd-50p">
-                              <h5 className="mb-1">Women Party Wear Dress</h5>
-                              <span>
-                                Status:
-                                <span className="text-success">In Stock</span>
-                              </span>
-                              <p className="fs-13 text-muted mb-0">
-                                Quantity: 05
-                              </p>
-                            </div>
-                            <div className="ms-auto text-end d-flex">
-                              <span className="fs-16 text-dark d-none d-sm-block px-4">
-                                $867
-                              </span>
-                              <span className="fs-16 btn p-0 cart-trash">
-                                <i className="fe fe-trash-2 border text-danger brround d-block p-2"></i>
-                              </span>
-                            </div>
-                          </Dropdown.Item>
-                          <Dropdown.Item
-                            href={`${process.env.PUBLIC_URL}/Ecommerce/shoppingcart`}
-                            className="d-flex p-4"
-                          >
-                            <img
-                              className="avatar avatar-xl br-5 me-3 align-self-center cover-image"
-                              alt="pngs-3"
-                              src={require("../../assets/images/pngs/3.jpg")}
-                            />
-                            <div className="wd-50p">
-                              <h5 className="mb-1">Running Shoes for men</h5>
-                              <span>
-                                Status:
-                                <span className="text-success">In Stock</span>
-                              </span>
-                              <p className="fs-13 text-muted mb-0">
-                                Quantity: 05
-                              </p>
-                            </div>
-                            <div className="ms-auto text-end d-flex">
-                              <span className="fs-16 text-dark d-none d-sm-block px-4">
-                                $456
-                              </span>
-                              <span className="fs-16 btn p-0 cart-trash">
-                                <i className="fe fe-trash-2 border text-danger brround d-block p-2"></i>
-                              </span>
-                            </div>
-                          </Dropdown.Item>
+                          {MyShoppingCartData.map((val, index) => {
+                            return (
+                              <Dropdown.Item
+                                href={`${process.env.PUBLIC_URL}/Ecommerce/shoppingcart`}
+                                className="d-flex p-4"
+                                key={index}
+                              >
+                                <img
+                                  className="avatar avatar-xl br-5 me-3 align-self-center cover-image"
+                                  src={val.img}
+                                  alt="pngs-4"
+                                />
+                                <div className="wd-50p">
+                                  <h5 className="mb-1">{val.productName}</h5>
+                                  <span>
+                                    Status:
+                                    <span
+                                      className={
+                                        val.status === "In Stock"
+                                          ? "text-success"
+                                          : "text-danger"
+                                      }
+                                    >
+                                      {val.status}
+                                    </span>
+                                  </span>
+                                  <p className="fs-13 text-muted mb-0">
+                                    Quantity: {val.quantity}
+                                  </p>
+                                </div>
+                                <div className="ms-auto text-end d-flex fs-16">
+                                  <span className="fs-16 text-dark d-none d-sm-block px-4">
+                                    {val.price}
+                                  </span>
+                                  <span className="fs-16 btn p-0 cart-trash">
+                                    <i className="fe fe-trash-2 border text-danger brround d-block p-2"></i>
+                                  </span>
+                                </div>
+                              </Dropdown.Item>
+                            );
+                          })}
                         </PerfectScrollbar>
                         <Dropdown.Divider className="m-0" />
                         <div className="dropdown-footer">
