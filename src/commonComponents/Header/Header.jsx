@@ -10,7 +10,7 @@ import U4 from "../../assets/images/UserImages/U4.jpg";
 import U9 from "../../assets/images/UserImages/U9.jpg";
 import logo from "../../assets/images/Logo/logo.png";
 import logo3 from "../../assets/images/Logo/logo3.png";
-import { MyShoppingCartData } from "../../Data/DataDashboard/Mock";
+import { CountryData, MyShoppingCartData } from "../../Data/DataDashboard/Mock";
 const SideMenuIcon = () => {
   //leftsidemenu
   document.querySelector(".app")?.classList.toggle("sidenav-toggled");
@@ -70,8 +70,7 @@ const Header = () => {
 
   // For CountrySelector Modal
   const [show, setShow] = useState(false);
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
+  const [selectedCountry, setSelectedCountry] = useState("English");
 
   return (
     <div className={styles.Header}>
@@ -115,19 +114,21 @@ const Header = () => {
                       <Link
                         to="#"
                         onClick={() => {
-                          handleShow();
+                          setShow(true);
                         }}
                         className="nav-link icon text-center"
                       >
                         <i className="fe fe-globe"></i>
                         <span className="fs-16 ms-2 d-none d-xl-block">
-                          English
+                          {selectedCountry}
                         </span>
                       </Link>
                       <Modal
                         className="modal fade"
                         show={show}
-                        onHide={handleClose}
+                        onHide={() => {
+                          setShow(false);
+                        }}
                         centered
                       >
                         <Modal.Header>
@@ -135,7 +136,7 @@ const Header = () => {
                           <span
                             className="d-flex ms-auto"
                             onClick={() => {
-                              handleClose();
+                              setShow(false);
                             }}
                           >
                             <i className="fe fe-x ms-auto"></i>
@@ -143,156 +144,34 @@ const Header = () => {
                         </Modal.Header>
                         <Modal.Body>
                           <Row as="ul" className="p-3">
-                            <Col lg={6} as="li" className="mb-2">
-                              <Link
-                                to="#"
-                                className="btn btn-country btn-lg btn-block active"
-                              >
-                                <span className="country-selector">
-                                  <img
-                                    alt=""
-                                    src={require("../../assets/images/flags/us_flag.jpg")}
-                                    className="me-3 language"
-                                  />
-                                </span>
-                                USA
-                              </Link>
-                            </Col>
-                            <Col lg={6} as="li" className="mb-2">
-                              <Link
-                                to="#"
-                                className="btn btn-country btn-lg btn-block"
-                              >
-                                <span className="country-selector">
-                                  <img
-                                    alt=""
-                                    src={require("../../assets/images/flags/italy_flag.jpg")}
-                                    className="me-3 language"
-                                  />
-                                </span>
-                                Italy
-                              </Link>
-                            </Col>
-                            <Col lg={6} as="li" className="mb-2">
-                              <Link
-                                to="#"
-                                className="btn btn-country btn-lg btn-block"
-                              >
-                                <span className="country-selector">
-                                  <img
-                                    alt=""
-                                    src={require("../../assets/images/flags/spain_flag.jpg")}
-                                    className="me-3 language"
-                                  />
-                                </span>
-                                Spain
-                              </Link>
-                            </Col>
-                            <Col lg={6} as="li" className="mb-2">
-                              <Link
-                                to="#"
-                                className="btn btn-country btn-lg btn-block"
-                              >
-                                <span className="country-selector">
-                                  <img
-                                    alt=""
-                                    src={require("../../assets/images/flags/india_flag.jpg")}
-                                    className="me-3 language"
-                                  />
-                                </span>
-                                India
-                              </Link>
-                            </Col>
-                            <Col lg={6} as="li" className="mb-2">
-                              <Link
-                                to="#"
-                                className="btn btn-country btn-lg btn-block"
-                              >
-                                <span className="country-selector">
-                                  <img
-                                    alt=""
-                                    src={require("../../assets/images/flags/french_flag.jpg")}
-                                    className="me-3 language"
-                                  />
-                                </span>
-                                French
-                              </Link>
-                            </Col>
-                            <Col lg={6} as="li" className="mb-2">
-                              <Link
-                                to="#"
-                                className="btn btn-country btn-lg btn-block"
-                              >
-                                <span className="country-selector">
-                                  <img
-                                    alt=""
-                                    src={require("../../assets/images/flags/russia_flag.jpg")}
-                                    className="me-3 language"
-                                  />
-                                </span>
-                                Russia
-                              </Link>
-                            </Col>
-                            <Col lg={6} as="li" className="mb-2">
-                              <Link
-                                to="#"
-                                className="btn btn-country btn-lg btn-block"
-                              >
-                                <span className="country-selector">
-                                  <img
-                                    alt=""
-                                    src={require("../../assets/images/flags/germany_flag.jpg")}
-                                    className="me-3 language"
-                                  />
-                                </span>
-                                Germany
-                              </Link>
-                            </Col>
-                            <Col lg={6} as="li" className="mb-2">
-                              <Link
-                                to="#"
-                                className="btn btn-country btn-lg btn-block"
-                              >
-                                <span className="country-selector">
-                                  <img
-                                    alt=""
-                                    src={require("../../assets/images/flags/argentina.jpg")}
-                                    className="me-3 language"
-                                  />
-                                </span>
-                                Argentina
-                              </Link>
-                            </Col>
-                            <Col lg={6} as="li" className="mb-2">
-                              <Link
-                                to="#"
-                                className="btn btn-country btn-lg btn-block"
-                              >
-                                <span className="country-selector">
-                                  <img
-                                    alt=""
-                                    src={require("../../assets/images/flags/malaysia.jpg")}
-                                    className="me-3 language"
-                                  />
-                                </span>
-                                Malaysia
-                              </Link>
-                            </Col>
-                            <Col lg={6} as="li" className="mb-2">
-                              <Link
-                                to="#"
-                                className="btn btn-country btn-lg btn-block"
-                              >
-                                <span className="country-selector">
-                                  <img
-                                    alt=""
-                                    src={require("../../assets/images/flags/turkey.jpg")}
-                                    className="me-3 language"
-                                  />
-                                </span>
-                                Turkey
-                              </Link>
-                            </Col>
+                            {CountryData.map((val, index) => {
+                              return (
+                                <Col
+                                  lg={6}
+                                  as="li"
+                                  className="mb-2"
+                                  key={index}
+                                  onClick={() => {
+                                    setSelectedCountry(val.name);
+                                    setShow(false);
+                                  }}
+                                >
+                                  <Link
+                                    to="#"
+                                    className={"btn btn-country btn-lg btn-block " + (selectedCountry === val.name ? "active" : "")}
+                                  >
+                                    <span className="country-selector">
+                                      <img
+                                        alt=""
+                                        src={val.flag}
+                                        className="me-3 language"
+                                      />
+                                    </span>
+                                    {val.name}
+                                  </Link>
+                                </Col>
+                              );
+                            })}
                           </Row>
                         </Modal.Body>
                       </Modal>
