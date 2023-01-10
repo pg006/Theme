@@ -9,8 +9,13 @@ import {
   Marker,
   Annotation,
   Graticule,
+  Line,
+  Sphere
 } from "react-simple-maps";
 import ReactTooltip from "react-tooltip";
+import { PatternLines } from "@vx/pattern";
+import { texturedata } from "./Mock";
+
 // WORLD MAP
 export const MapData = ({ setTooltipContent }) => {
   const [position, setPosition] = React.useState({
@@ -11332,7 +11337,12 @@ export const MapData = ({ setTooltipContent }) => {
     <div>
       <div className="controls">
         <ButtonGroup>
-          <Button variant="primary" onClick={()=>{handleZoomIn()}}>
+          <Button
+            variant="primary"
+            onClick={() => {
+              handleZoomIn();
+            }}
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -11345,7 +11355,13 @@ export const MapData = ({ setTooltipContent }) => {
               <line x1="5" y1="12" x2="19" y2="12" />
             </svg>
           </Button>
-          <Button variant="primary" className="me-2" onClick={()=>{handleZoomOut()}}>
+          <Button
+            variant="primary"
+            className="me-2"
+            onClick={() => {
+              handleZoomOut();
+            }}
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -11695,6 +11711,117 @@ export const MapChart = () => {
           </text>
         </Marker>
       ))}
+    </ComposableMap>
+  );
+};
+
+export const MapChartTexture = () => {
+  const highlighted = [
+    "BRA",
+    "VNM",
+    "COL",
+    "IDN",
+    "ETH",
+    "HND",
+    "IND",
+    "UGA",
+    "MEX",
+    "GTM",
+    "PER",
+    "NIC",
+    "CHN",
+    "CIV",
+    "CRI",
+    "KEN",
+    "PNG",
+    "TZA",
+    "SLV",
+    "ECU",
+    "CMR",
+    "LAO",
+    "MDG",
+    "GAB",
+    "THA",
+    "VEN",
+    "DOM",
+    "HTI",
+    "COD",
+    "RWA",
+    "BDI",
+    "PHL",
+    "TGO",
+    "GIN",
+    "YEM",
+    "CUB",
+    "PAN",
+    "BOL",
+    "TLS",
+    "CAF",
+    "NGA",
+    "GHA",
+    "SLE",
+    "AGO",
+    "JAM",
+    "PRY",
+    "MWI",
+    "TTO",
+    "ZWE",
+    "LBR",
+  ];
+  const generateCircle = (deg) => {
+    if (!deg)
+      return [
+        [-180, 0],
+        [-90, 0],
+        [0, 0],
+        [90, 0],
+        [180, 0],
+      ];
+    return new Array(361).fill(1).map((d, i) => {
+      return [-180 + i, deg];
+    });
+  };
+  return (
+    <ComposableMap projection="geoEqualEarth">
+      <PatternLines
+        id="lines"
+        height={6}
+        width={6}
+        stroke="#776865"
+        strokeWidth={1}
+        background="#F6F0E9"
+        orientation={["diagonal"]}
+      />
+      <Sphere stroke="#DDD" />
+      <Graticule stroke="#DDD" />
+      <Geographies geography={texturedata} stroke="#FFF" strokeWidth={0.5}>
+        {({ geographies }) =>
+          geographies.map((geo) => {
+            const isHighlighted = highlighted.indexOf(geo.id) !== -1;
+            return (
+              <Geography
+                key={geo.rsmKey}
+                geography={geo}
+                fill={isHighlighted ? "url('#lines')" : "#F6F0E9"}
+                onClick={() => console.log(geo.properties.name)}
+              />
+            );
+          })
+        }
+      </Geographies>
+      <Line coordinates={generateCircle(0)} stroke="#F53" strokeWidth={2} />
+      <Line
+        coordinates={generateCircle(23)}
+        stroke="#776865"
+        strokeWidth={1}
+        strokeDasharray={[5, 5]}
+      />
+      <Line
+        coordinates={generateCircle(-24)}
+        stroke="#776865"
+        strokeWidth={1}
+        strokeDasharray={[5, 5]}
+      />
     </ComposableMap>
   );
 };

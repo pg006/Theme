@@ -3,8 +3,8 @@ import "./SimpleMaps.scss";
 import PageHeader from "../../../commonComponents/PageHeader/PageHeader";
 import { Card, Col, Row } from "react-bootstrap";
 import {
-  EuropeMap,
   MapChart,
+  MapChartTexture,
   USState,
   WorldMap,
 } from "../../../Data/DataMaps/DataWorldMap";
@@ -52,11 +52,12 @@ const SimpleMaps = () => {
           <Col lg={6}>
             <Card>
               <Card.Header>
-                <Card.Title as="h3">Europe Map</Card.Title>
+                <Card.Title as="h3">Mapchart with texture</Card.Title>
               </Card.Header>
               <Card.Body>
                 <div id="vmap3" className="stateh h-400">
-                  <EuropeMap />
+                  {/* <EuropeMap /> */}
+                  <MapChartTexture />
                 </div>
               </Card.Body>
             </Card>
