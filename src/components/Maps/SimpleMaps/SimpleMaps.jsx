@@ -3,7 +3,7 @@ import "./SimpleMaps.scss";
 import PageHeader from "../../../commonComponents/PageHeader/PageHeader";
 import { Card, Col, Row } from "react-bootstrap";
 import {
-  MapChart,
+  LineMapchart,
   MapChartTexture,
   USState,
   WorldMap,
@@ -37,11 +37,11 @@ const SimpleMaps = () => {
           <Col lg={6}>
             <Card className="m-b-20">
               <Card.Header>
-                <Card.Title as="h3">SouthAmerica Map</Card.Title>
+                <Card.Title as="h3">Line Map</Card.Title>
               </Card.Header>
               <Card.Body>
                 <div id="vmap2" className="stateh h-400">
-                  <MapChart />
+                  <LineMapchart />
                 </div>
               </Card.Body>
             </Card>

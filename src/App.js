@@ -10,7 +10,7 @@ import Switcher from "./commonComponents/Switcher/Switcher";
 import * as  SwitcherData from "./Data/Pages/SwitcherData/SwitcherData"
 
 
-function App() {
+const App = () => {
   document
     .querySelector("body")
     ?.classList.remove("login-img", "landing-page", "horizontal");
